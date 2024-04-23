@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F353738B-C1C3-46CA-8339-F75AA9602B2F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sw.Hospital.HealthExaminationSystem.Common</RootNamespace>
+    <AssemblyName>HealthExaminationSystem.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;Common</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;Common</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;Common</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.1.UI, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\03项目引用\From\DevExpress.XtraGrid.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.gregn6Lib">
+      <HintPath>..\..\..\..\..\03项目引用\Interop.gregn6Lib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Newtonsoft.Json.12.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\NPOI.2.3.0\lib\net40\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\NPOI.2.3.0\lib\net40\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="SelfControl">
+      <HintPath>..\..\..\..\..\03项目引用\From\SelfControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Mains\HealthExaminationSystem.Win\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Bases\PermissionManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Bases\PermissionManager.Designer.cs">
+      <DependentUpon>PermissionManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bases\ProvidedProperties.cs" />
+    <Compile Include="Bases\UserBaseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Bases\UserBaseControl.Designer.cs">
+      <DependentUpon>UserBaseControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bases\UserBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bases\UserBaseForm.Designer.cs">
+      <DependentUpon>UserBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bases\UserWaitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bases\UserWaitForm.Designer.cs">
+      <DependentUpon>UserWaitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonFormat\CommonFormat.cs" />
+    <Compile Include="CommonFormat\ZYBDictionaryType.cs" />
+    <Compile Include="CommonTools\BindCustomGridLookUpEdit.cs" />
+    <Compile Include="CommonTools\CreateIDNumber.cs" />
+    <Compile Include="CommonTools\HttpDldFile.cs" />
+    <Compile Include="CommonTools\ModelHandler.cs" />
+    <Compile Include="DefinitionControls\XtraUserGridControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DefinitionControls\XtraUserGridControl.Designer.cs">
+      <DependentUpon>XtraUserGridControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\AbnormalResults.cs" />
+    <Compile Include="Enums\AddMinusType.cs" />
+    <Compile Include="Enums\ApplySate.cs" />
+    <Compile Include="Enums\BasicDictionaryType.cs" />
+    <Compile Include="Enums\CabCRSate.cs" />
+    <Compile Include="Enums\CabinetSate.cs" />
+    <Compile Include="Enums\CalculationTypeState.cs" />
+    <Compile Include="Enums\CallBackState.cs" />
+    <Compile Include="Enums\CallBackType.cs" />
+    <Compile Include="Enums\ClientZKState.cs" />
+    <Compile Include="Enums\CollectionState.cs" />
+    <Compile Include="Enums\ConfirmState.cs" />
+    <Compile Include="Enums\CrisisMsgStatecs.cs" />
+    <Compile Include="Enums\CrisisType.cs" />
+    <Compile Include="Enums\CrisisVisitSate.cs" />
+    <Compile Include="Enums\CriticalTypeState.cs" />
+    <Compile Include="Enums\DiagnSate.cs" />
+    <Compile Include="Enums\ExportSate.cs" />
+    <Compile Include="Enums\IllnessLevel.cs" />
+    <Compile Include="Enums\IsZYBState.cs" />
+    <Compile Include="Enums\JSState.cs" />
+    <Compile Include="Enums\LogsTypes.cs" />
+    <Compile Include="Enums\MessageState.cs" />
+    <Compile Include="Enums\OAApState.cs" />
+    <Compile Include="Enums\OAOKState.cs" />
+    <Compile Include="Enums\OperatorState.cs" />
+    <Compile Include="Enums\QueState.cs" />
+    <Compile Include="Enums\SeeState.cs" />
+    <Compile Include="Enums\SellTypeState.cs" />
+    <Compile Include="Enums\ShortMessageState.cs" />
+    <Compile Include="Enums\Summary.cs" />
+    <Compile Include="Enums\SummSate.cs" />
+    <Compile Include="Enums\PrintSate.cs" />
+    <Compile Include="Enums\BlindSate.cs" />
+    <Compile Include="Enums\BloodState.cs" />
+    <Compile Include="Enums\BreakfastType.cs" />
+    <Compile Include="Enums\BreedState.cs" />
+    <Compile Include="Enums\ChargeApply.cs" />
+    <Compile Include="Enums\CrisisSate.cs" />
+    <Compile Include="Enums\ExaminationCategory.cs" />
+    <Compile Include="Enums\ExaminationStatus.cs" />
+    <Compile Include="Enums\IllnessSate.cs" />
+    <Compile Include="Enums\PhysicalType.cs" />
+    <Compile Include="Enums\CustomerType.cs" />
+    <Compile Include="Enums\DepartmentType.cs" />
+    <Compile Include="Enums\EditModeType.cs" />
+    <Compile Include="Enums\ExamPlace.cs" />
+    <Compile Include="Enums\GroupPayerCat.cs" />
+    <Compile Include="Enums\InvoiceState.cs" />
+    <Compile Include="Enums\InvoiceStatus.cs" />
+    <Compile Include="Enums\InvoiceType.cs" />
+    <Compile Include="Enums\ItemSuitType.cs" />
+    <Compile Include="Enums\MessageEmailState.cs" />
+    <Compile Include="Enums\PayerCatType.cs" />
+    <Compile Include="Enums\PaymentMethod.cs" />
+    <Compile Include="Enums\PositiveSate.cs" />
+    <Compile Include="Enums\ProjectIState.cs" />
+    <Compile Include="Enums\PhysicalEState.cs" />
+    <Compile Include="Enums\ClientCheckSate.cs" />
+    <Compile Include="Enums\ClientSate.cs" />
+    <Compile Include="Enums\ControlDate.cs" />
+    <Compile Include="Enums\CostState.cs" />
+    <Compile Include="Enums\FZState.cs" />
+    <Compile Include="Enums\ReceiptState.cs" />
+    <Compile Include="Enums\ReceiveSate.cs" />
+    <Compile Include="Enums\RegisterState.cs" />
+    <Compile Include="Enums\ReportState.cs" />
+    <Compile Include="Enums\ReviewSate.cs" />
+    <Compile Include="Enums\SDState.cs" />
+    <Compile Include="Enums\SendToConfirm.cs" />
+    <Compile Include="Enums\Symbol.cs" />
+    <Compile Include="Enums\UploadState.cs" />
+    <Compile Include="Enums\UsedState.cs" />
+    <Compile Include="Enums\VisiteState.cs" />
+    <Compile Include="Enums\VisitType.cs" />
+    <Compile Include="Enums\ZYBBasicDictionaryType.cs" />
+    <Compile Include="GlobalSources\DoctorStation.cs" />
+    <Compile Include="GlobalSources\DrawBloodDepartment.cs" />
+    <Compile Include="Helpers\AddMinusTypeHelper.cs" />
+    <Compile Include="Helpers\AdministrativeDivisionHelper.cs" />
+    <Compile Include="Helpers\BaseViewHelper.cs" />
+    <Compile Include="Helpers\BloodStateHelper.cs" />
+    <Compile Include="Helpers\BreakfastTypeHelper.cs" />
+    <Compile Include="Helpers\BreedStateHelper.cs" />
+    <Compile Include="Helpers\CabinetHelper.cs" />
+    <Compile Include="Helpers\CacheHelper.cs" />
+    <Compile Include="Helpers\CalculationTypeStateHelper.cs" />
+    <Compile Include="Helpers\CallBackEnumHelper.cs" />
+    <Compile Include="Helpers\ChargeApplyHelper.cs" />
+    <Compile Include="Helpers\ClientZKStateHelper.cs" />
+    <Compile Include="Helpers\CollectionStateHelper.cs" />
+    <Compile Include="Helpers\CommonHelper.cs" />
+    <Compile Include="Helpers\ComplaintExigencyLevelHelper.cs" />
+    <Compile Include="Helpers\ComplaintProcessStateHelper.cs" />
+    <Compile Include="Helpers\CrisisVisitSateHelper.cs" />
+    <Compile Include="Helpers\CriticalTypeStateHelper.cs" />
+    <Compile Include="Helpers\DynamicColumnConfigurationHelper.cs" />
+    <Compile Include="Helpers\FZStateHelper.cs" />
+    <Compile Include="Helpers\IllnessLevelHelp.cs" />
+    <Compile Include="Helpers\IsZYBStateHelper.cs" />
+    <Compile Include="Helpers\JSStateHelper.cs" />
+    <Compile Include="Helpers\LogsTypesHelper.cs" />
+    <Compile Include="Helpers\MessageStateHelper.cs" />
+    <Compile Include="Helpers\OAApStateHelper.cs" />
+    <Compile Include="Helpers\OAOKStateHelper.cs" />
+    <Compile Include="Helpers\OperatorStateHelper.cs" />
+    <Compile Include="Helpers\PhysicaPrintState.cs" />
+    <Compile Include="Helpers\PrintSateHelper.cs" />
+    <Compile Include="Helpers\PrintTypeHelper.cs" />
+    <Compile Include="Helpers\QueStateHelper.cs" />
+    <Compile Include="Helpers\RegisterStateHelper.cs" />
+    <Compile Include="Helpers\RsaHelper.cs" />
+    <Compile Include="Helpers\SellTypeStateHelper.cs" />
+    <Compile Include="Helpers\ShortMessageStateHelper.cs" />
+    <Compile Include="Helpers\SummSateHelper.cs" />
+    <Compile Include="Helpers\UploadStateHelper.cs" />
+    <Compile Include="Helpers\UsedStateHelper.cs" />
+    <Compile Include="Helpers\ConfigHelper.cs" />
+    <Compile Include="Helpers\CostStateHelper.cs" />
+    <Compile Include="Helpers\CrisisSateHelper.cs" />
+    <Compile Include="Helpers\CustomerTypeHelper.cs" />
+    <Compile Include="Helpers\ExaminationCategoryHelper.cs" />
+    <Compile Include="Helpers\ExaminationStatusHelper.cs" />
+    <Compile Include="Helpers\GroupPayerCatHelper.cs" />
+    <Compile Include="Helpers\IllnessSateHelp.cs" />
+    <Compile Include="Helpers\InvoiceStatusHelper.cs" />
+    <Compile Include="Helpers\PhysicalTypeHelper.cs" />
+    <Compile Include="Enums\ExaminationSource.cs" />
+    <Compile Include="Enums\IfType.cs" />
+    <Compile Include="Enums\ItemType.cs" />
+    <Compile Include="Enums\JobStatus.cs" />
+    <Compile Include="Enums\MarrySate.cs" />
+    <Compile Include="Enums\PaymentType.cs" />
+    <Compile Include="Enums\PictureBelong.cs" />
+    <Compile Include="Enums\ResultJudgementState.cs" />
+    <Compile Include="Helpers\AbnormalResultsHelper.cs" />
+    <Compile Include="Helpers\ExcelHelper.cs" />
+    <Compile Include="Helpers\GridControlHelper.cs" />
+    <Compile Include="Helpers\GridppHelper.cs" />
+    <Compile Include="Helpers\IfTypeHelper.cs" />
+    <Compile Include="Helpers\ImageHelper.cs" />
+    <Compile Include="Helpers\InvoiceStateHelper.cs" />
+    <Compile Include="Helpers\InvoiceTypeHelper.cs" />
+    <Compile Include="Helpers\ItemTypeHelper.cs" />
+    <Compile Include="Helpers\JobStatusHelper.cs" />
+    <Compile Include="Helpers\LookUpEditHelper.cs" />
+    <Compile Include="Helpers\MarrySateHelper.cs" />
+    <Compile Include="Helpers\MessageEmailStateHelper.cs" />
+    <Compile Include="Helpers\ModelHelper.cs" />
+    <Compile Include="Helpers\PayerCatTypeHelper.cs" />
+    <Compile Include="Helpers\PaymentMethodHelper.cs" />
+    <Compile Include="Helpers\PaymentTypeHelper.cs" />
+    <Compile Include="Helpers\PhysicalEStateHelper.cs" />
+    <Compile Include="Helpers\PositiveStateHelper.cs" />
+    <Compile Include="Helpers\ProjectIStateHelper.cs" />
+    <Compile Include="Helpers\ReceiveSateHelper.cs" />
+    <Compile Include="Helpers\ReportStateHelper.cs" />
+    <Compile Include="Helpers\ResultJudgementStateHelper.cs" />
+    <Compile Include="Helpers\CheckSateHelper.cs" />
+    <Compile Include="Helpers\ReviewSateTypeHelper.cs" />
+    <Compile Include="Helpers\SeeStateHelper.cs" />
+    <Compile Include="Helpers\SendToConfirmHelper.cs" />
+    <Compile Include="Helpers\SymbolHelper.cs" />
+    <Compile Include="Helpers\VisiteStateHelper.cs" />
+    <Compile Include="Helpers\VisitTypeHelper.cs" />
+    <Compile Include="Helpers\WorkTypeHelper.cs" />
+    <Compile Include="Helpers\WuBiHelper.cs" />
+    <Compile Include="Helpers\XmlConvertor.cs" />
+    <Compile Include="Interfaces\IPage.cs" />
+    <Compile Include="Models\AbnormalResultsModel.cs" />
+    <Compile Include="Models\AddMinusTypeModel.cs" />
+    <Compile Include="Models\BloodStateModel.cs" />
+    <Compile Include="Models\BreedStateModel.cs" />
+    <Compile Include="Models\CabinetModel.cs" />
+    <Compile Include="Models\CalculationTypeStateModel.cs" />
+    <Compile Include="Models\ChargeApplyModel.cs" />
+    <Compile Include="Models\ClientZKStateModel.cs" />
+    <Compile Include="Models\CollectionStateModel.cs" />
+    <Compile Include="Models\CostStateModel.cs" />
+    <Compile Include="Models\CrisisSateModel.cs" />
+    <Compile Include="Models\CrisisVisitSateModel.cs" />
+    <Compile Include="Models\CriticalTypeStateModel.cs" />
+    <Compile Include="Models\FZStateModel.cs" />
+    <Compile Include="Models\IllnessLevelModel.cs" />
+    <Compile Include="Models\IllnessSateModel.cs" />
+    <Compile Include="Models\GroupPayerCatModel.cs" />
+    <Compile Include="Models\IfTypeModel.cs" />
+    <Compile Include="Models\InvoiceStateModel.cs" />
+    <Compile Include="Models\InvoiceTypeModel.cs" />
+    <Compile Include="Models\IsZYBStateModel.cs" />
+    <Compile Include="Models\ItemTypeModel.cs" />
+    <Compile Include="Models\JobStatusModel.cs" />
+    <Compile Include="Models\JSStateModel.cs" />
+    <Compile Include="Models\LabelingStateModel.cs" />
+    <Compile Include="Models\LogsTypesModel.cs" />
+    <Compile Include="Models\MarrySateModel.cs" />
+    <Compile Include="Models\MessageStateModel.cs" />
+    <Compile Include="Models\OAApStateModel.cs" />
+    <Compile Include="Models\OAOKStateModel.cs" />
+    <Compile Include="Models\OperatorStateModel.cs" />
+    <Compile Include="Models\PayerCatTypeModel.cs" />
+    <Compile Include="Models\PaymentMethodModel.cs" />
+    <Compile Include="Models\PaymentTypeModel.cs" />
+    <Compile Include="Models\PhysicalEStateModel.cs" />
+    <Compile Include="Models\PositiveStateModel.cs" />
+    <Compile Include="Models\PrintSateModel.cs" />
+    <Compile Include="Models\ProjectIStateModel.cs" />
+    <Compile Include="Models\QueStateModel.cs" />
+    <Compile Include="Models\ResultJudgementStateModel.cs" />
+    <Compile Include="Models\SeeStateModel.cs" />
+    <Compile Include="Models\SellTypeStateModel.cs" />
+    <Compile Include="Models\SendToConfirmModel.cs" />
+    <Compile Include="Models\PhysicalTypeModel.cs" />
+    <Compile Include="Enums\WorkState.cs" />
+    <Compile Include="Enums\WorkType.cs" />
+    <Compile Include="GlobalSources\CustomCache.cs" />
+    <Compile Include="GlobalSources\Variables.cs" />
+    <Compile Include="Models\ShortMessageStateModel.cs" />
+    <Compile Include="Models\UploadStateModel.cs" />
+    <Compile Include="Models\UsedStateModel.cs" />
+    <Compile Include="Models\VisiteStateModel.cs" />
+    <Compile Include="Models\VisitTypeModel.cs" />
+    <Compile Include="Models\WorkTypeModel.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserCache\CacheHelper.cs" />
+    <Compile Include="UserCache\DefinedApiProxy.cs" />
+    <Compile Include="UserCache\DefinedCacheHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Bases\UserBaseControl.resx">
+      <DependentUpon>UserBaseControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bases\UserBaseForm.resx">
+      <DependentUpon>UserBaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bases\UserWaitForm.resx">
+      <DependentUpon>UserWaitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefinitionControls\XtraUserGridControl.resx">
+      <DependentUpon>XtraUserGridControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HealthExaminationSystem.ApiProxy\HealthExaminationSystem.ApiProxy.csproj">
+      <Project>{7de60574-b63a-454c-848b-45cea2782273}</Project>
+      <Name>HealthExaminationSystem.ApiProxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HealthExaminationSystem.Enumerations\HealthExaminationSystem.Enumerations.csproj">
+      <Project>{55e602fa-21e2-4eeb-ad64-a32bb93ca772}</Project>
+      <Name>HealthExaminationSystem.Enumerations</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormIco.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon-20190130051221435.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

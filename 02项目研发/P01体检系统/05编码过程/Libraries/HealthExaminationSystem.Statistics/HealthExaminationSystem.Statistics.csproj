@@ -1,0 +1,724 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1382220D-B0AC-46C5-8103-BA20319C9364}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sw.Hospital.HealthExaminationSystem.Statistics</RootNamespace>
+    <AssemblyName>HealthExaminationSystem.Statistics</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="AxInterop.gregn6Lib, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\03项目引用\AxInterop.gregn6Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v17.1.UI, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Persistent.Base.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Spreadsheet.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1.UI, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.1.Extensions, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1.UI, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1.Wizard, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Interop.gregn6Lib">
+      <HintPath>..\..\..\..\..\03项目引用\Interop.gregn6Lib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualC" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.1.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Newtonsoft.Json.12.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="SelfControl">
+      <HintPath>..\..\..\..\..\03项目引用\From\SelfControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Sw.His.Common.CustomTools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Sw.His.Common.CustomTools.1.0.0\lib\net40\Sw.His.Common.CustomTools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Input.Manipulations" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Mains\HealthExaminationSystem.Win\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="AddStatistics\AddStatiList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStatistics\AddStatiList.Designer.cs">
+      <DependentUpon>AddStatiList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStatistics\StateSum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStatistics\StateSum.Designer.cs">
+      <DependentUpon>StateSum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charge\BallCheckStatic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charge\BallCheckStatic.Designer.cs">
+      <DependentUpon>BallCheckStatic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charge\CheckGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charge\CheckGroup.Designer.cs">
+      <DependentUpon>CheckGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charge\DailyList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charge\DailyList.Designer.cs">
+      <DependentUpon>DailyList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charge\DoctorDeparmentStatic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charge\DoctorDeparmentStatic.Designer.cs">
+      <DependentUpon>DoctorDeparmentStatic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charge\frmBusClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charge\frmBusClient.Designer.cs">
+      <DependentUpon>frmBusClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charge\frmChargeDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charge\frmChargeDetails.Designer.cs">
+      <DependentUpon>frmChargeDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charge\FrmClientStatistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charge\FrmClientStatistic.Designer.cs">
+      <DependentUpon>FrmClientStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charge\FrmGroupBilling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charge\FrmGroupBilling.Designer.cs">
+      <DependentUpon>FrmGroupBilling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charge\frmGRPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charge\frmGRPayment.Designer.cs">
+      <DependentUpon>frmGRPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charge\FrmJSTJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charge\FrmJSTJ.Designer.cs">
+      <DependentUpon>FrmJSTJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charge\FrmKSFYTJcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charge\FrmKSFYTJcs.Designer.cs">
+      <DependentUpon>FrmKSFYTJcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charge\FrmMoneySummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charge\FrmMoneySummary.Designer.cs">
+      <DependentUpon>FrmMoneySummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charge\FrmTTJZD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charge\FrmTTJZD.Designer.cs">
+      <DependentUpon>FrmTTJZD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charge\frmWebCharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charge\frmWebCharge.Designer.cs">
+      <DependentUpon>frmWebCharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charge\FrmXMGZLTJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charge\FrmXMGZLTJ.Designer.cs">
+      <DependentUpon>FrmXMGZLTJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charge\FinancialStatement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charge\FinancialStatement.Designer.cs">
+      <DependentUpon>FinancialStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charge\GroupToCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charge\GroupToCheck.Designer.cs">
+      <DependentUpon>GroupToCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charge\IndividualityStatic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charge\IndividualityStatic.Designer.cs">
+      <DependentUpon>IndividualityStatic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charge\PrintGroupBilling.cs" />
+    <Compile Include="CusRegStatis\frmCusRegStatiscs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CusRegStatis\frmCusRegStatiscs.Designer.cs">
+      <DependentUpon>frmCusRegStatiscs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CusRegStatis\FrmMakeCollect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CusRegStatis\FrmMakeCollect.Designer.cs">
+      <DependentUpon>FrmMakeCollect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CusRegStatis\frmRegList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CusRegStatis\frmRegList.Designer.cs">
+      <DependentUpon>frmRegList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CusReSultStatus\frmDepartList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CusReSultStatus\frmDepartList.Designer.cs">
+      <DependentUpon>frmDepartList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CusReSultStatus\frmItemGroupList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CusReSultStatus\frmItemGroupList.Designer.cs">
+      <DependentUpon>frmItemGroupList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CusReSultStatus\FrmItemInfoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CusReSultStatus\FrmItemInfoList.Designer.cs">
+      <DependentUpon>FrmItemInfoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CusReSultStatus\ReSultStstis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CusReSultStatus\ReSultStstis.Designer.cs">
+      <DependentUpon>ReSultStstis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CusReSultStatus\ReSultSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CusReSultStatus\ReSultSet.Designer.cs">
+      <DependentUpon>ReSultSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerNumber\FrmTJRSTJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerNumber\FrmTJRSTJ.Designer.cs">
+      <DependentUpon>FrmTJRSTJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Department\DiseaseStatic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Department\DiseaseStatic.Designer.cs">
+      <DependentUpon>DiseaseStatic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Department\FrmKSYL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Department\FrmKSYL.Designer.cs">
+      <DependentUpon>FrmKSYL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Department\FrmKSGZLQTTJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Department\FrmKSGZLQTTJ.Designer.cs">
+      <DependentUpon>FrmKSGZLQTTJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Department\FrmKSGZLTJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Department\FrmKSGZLTJ.Designer.cs">
+      <DependentUpon>FrmKSGZLTJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Department\FrmKSGZLTJTX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Department\FrmKSGZLTJTX.Designer.cs">
+      <DependentUpon>FrmKSGZLTJTX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Department\FrmKSHBGZLTJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Department\FrmKSHBGZLTJ.Designer.cs">
+      <DependentUpon>FrmKSHBGZLTJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Department\FrmKSHZCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Department\FrmKSHZCX.Designer.cs">
+      <DependentUpon>FrmKSHZCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiseaseStatistics\Disease.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiseaseStatistics\Disease.Designer.cs">
+      <DependentUpon>Disease.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiseaseStatistics\frmIllState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiseaseStatistics\frmIllState.Designer.cs">
+      <DependentUpon>frmIllState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralDoctor\FrmZJYSGZL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralDoctor\FrmZJYSGZL.Designer.cs">
+      <DependentUpon>FrmZJYSGZL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedicalExaminer\FrmDoctorWorkload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalExaminer\FrmDoctorWorkload.Designer.cs">
+      <DependentUpon>FrmDoctorWorkload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccStatis\frmOccYearsStatis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccStatis\frmOccYearsStatis.Designer.cs">
+      <DependentUpon>frmOccYearsStatis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PositiveStatistics\FrmBHTJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PositiveStatistics\FrmBHTJ.Designer.cs">
+      <DependentUpon>FrmBHTJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PositiveStatistics\FrmYXCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PositiveStatistics\FrmYXCX.Designer.cs">
+      <DependentUpon>FrmYXCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PositiveStatistics\FrmYXHZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PositiveStatistics\FrmYXHZ.Designer.cs">
+      <DependentUpon>FrmYXHZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectStatistics\FrmHZJCXMTJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectStatistics\FrmHZJCXMTJ.Designer.cs">
+      <DependentUpon>FrmHZJCXMTJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectStatistics\FrmJCXMTJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectStatistics\FrmJCXMTJ.Designer.cs">
+      <DependentUpon>FrmJCXMTJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectStatistics\FrmKSRYTJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectStatistics\FrmKSRYTJ.Designer.cs">
+      <DependentUpon>FrmKSRYTJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectStatistics\FrmTCTJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectStatistics\FrmTCTJ.Designer.cs">
+      <DependentUpon>FrmTCTJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Roster\AppointmentStatisticsByYears.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roster\AppointmentStatisticsByYears.Designer.cs">
+      <DependentUpon>AppointmentStatisticsByYears.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Roster\Companys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roster\Companys.Designer.cs">
+      <DependentUpon>Companys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Roster\FormBusCus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roster\FormBusCus.Designer.cs">
+      <DependentUpon>FormBusCus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Roster\FrmInspectionTotalShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roster\FrmInspectionTotalShow.Designer.cs">
+      <DependentUpon>FrmInspectionTotalShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Roster\frmJKZCX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roster\frmJKZCX.Designer.cs">
+      <DependentUpon>frmJKZCX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Roster\RosterSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roster\RosterSetting.designer.cs">
+      <DependentUpon>RosterSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Roster\SetMealChoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roster\SetMealChoice.Designer.cs">
+      <DependentUpon>SetMealChoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settlement\FrmDailyNewspaper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settlement\FrmDailyNewspaper.Designer.cs">
+      <DependentUpon>FrmDailyNewspaper.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HealthExaminationSystem.ApiProxy\HealthExaminationSystem.ApiProxy.csproj">
+      <Project>{7DE60574-B63A-454C-848B-45CEA2782273}</Project>
+      <Name>HealthExaminationSystem.ApiProxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HealthExaminationSystem.Common\HealthExaminationSystem.Common.csproj">
+      <Project>{f353738b-c1c3-46ca-8339-f75aa9602b2f}</Project>
+      <Name>HealthExaminationSystem.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HealthExaminationSystem.Enumerations\HealthExaminationSystem.Enumerations.csproj">
+      <Project>{55e602fa-21e2-4eeb-ad64-a32bb93ca772}</Project>
+      <Name>HealthExaminationSystem.Enumerations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HealthExaminationSystem.Forms\HealthExaminationSystem.Forms.csproj">
+      <Project>{6A2D331F-A67E-4822-B095-FD9C686043D4}</Project>
+      <Name>HealthExaminationSystem.Forms</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddStatistics\AddStatiList.resx">
+      <DependentUpon>AddStatiList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStatistics\StateSum.resx">
+      <DependentUpon>StateSum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charge\BallCheckStatic.resx">
+      <DependentUpon>BallCheckStatic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charge\CheckGroup.resx">
+      <DependentUpon>CheckGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charge\DailyList.resx">
+      <DependentUpon>DailyList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charge\DoctorDeparmentStatic.resx">
+      <DependentUpon>DoctorDeparmentStatic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charge\frmBusClient.resx">
+      <DependentUpon>frmBusClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charge\frmChargeDetails.resx">
+      <DependentUpon>frmChargeDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charge\FrmClientStatistic.resx">
+      <DependentUpon>FrmClientStatistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charge\FrmGroupBilling.resx">
+      <DependentUpon>FrmGroupBilling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charge\frmGRPayment.resx">
+      <DependentUpon>frmGRPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charge\FrmJSTJ.resx">
+      <DependentUpon>FrmJSTJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charge\FrmKSFYTJcs.resx">
+      <DependentUpon>FrmKSFYTJcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charge\FrmMoneySummary.resx">
+      <DependentUpon>FrmMoneySummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charge\FrmTTJZD.resx">
+      <DependentUpon>FrmTTJZD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charge\frmWebCharge.resx">
+      <DependentUpon>frmWebCharge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charge\FrmXMGZLTJ.resx">
+      <DependentUpon>FrmXMGZLTJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charge\FinancialStatement.resx">
+      <DependentUpon>FinancialStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charge\GroupToCheck.resx">
+      <DependentUpon>GroupToCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charge\IndividualityStatic.resx">
+      <DependentUpon>IndividualityStatic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CusRegStatis\frmCusRegStatiscs.resx">
+      <DependentUpon>frmCusRegStatiscs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CusRegStatis\FrmMakeCollect.resx">
+      <DependentUpon>FrmMakeCollect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CusRegStatis\frmRegList.resx">
+      <DependentUpon>frmRegList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CusReSultStatus\frmDepartList.resx">
+      <DependentUpon>frmDepartList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CusReSultStatus\frmItemGroupList.resx">
+      <DependentUpon>frmItemGroupList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CusReSultStatus\FrmItemInfoList.resx">
+      <DependentUpon>FrmItemInfoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CusReSultStatus\ReSultStstis.resx">
+      <DependentUpon>ReSultStstis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CusReSultStatus\ReSultSet.resx">
+      <DependentUpon>ReSultSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerNumber\FrmTJRSTJ.resx">
+      <DependentUpon>FrmTJRSTJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Department\DiseaseStatic.resx">
+      <DependentUpon>DiseaseStatic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Department\FrmKSYL.resx">
+      <DependentUpon>FrmKSYL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Department\FrmKSGZLQTTJ.resx">
+      <DependentUpon>FrmKSGZLQTTJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Department\FrmKSGZLTJ.resx">
+      <DependentUpon>FrmKSGZLTJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Department\FrmKSGZLTJTX.resx">
+      <DependentUpon>FrmKSGZLTJTX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Department\FrmKSHBGZLTJ.resx">
+      <DependentUpon>FrmKSHBGZLTJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Department\FrmKSHZCX.resx">
+      <DependentUpon>FrmKSHZCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiseaseStatistics\Disease.resx">
+      <DependentUpon>Disease.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiseaseStatistics\frmIllState.resx">
+      <DependentUpon>frmIllState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralDoctor\FrmZJYSGZL.resx">
+      <DependentUpon>FrmZJYSGZL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalExaminer\FrmDoctorWorkload.resx">
+      <DependentUpon>FrmDoctorWorkload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccStatis\frmOccYearsStatis.resx">
+      <DependentUpon>frmOccYearsStatis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PositiveStatistics\FrmBHTJ.resx">
+      <DependentUpon>FrmBHTJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PositiveStatistics\FrmYXCX.resx">
+      <DependentUpon>FrmYXCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PositiveStatistics\FrmYXHZ.resx">
+      <DependentUpon>FrmYXHZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectStatistics\FrmHZJCXMTJ.resx">
+      <DependentUpon>FrmHZJCXMTJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectStatistics\FrmJCXMTJ.resx">
+      <DependentUpon>FrmJCXMTJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectStatistics\FrmKSRYTJ.resx">
+      <DependentUpon>FrmKSRYTJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectStatistics\FrmTCTJ.resx">
+      <DependentUpon>FrmTCTJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roster\AppointmentStatisticsByYears.resx">
+      <DependentUpon>AppointmentStatisticsByYears.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roster\Companys.resx">
+      <DependentUpon>Companys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roster\FormBusCus.resx">
+      <DependentUpon>FormBusCus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roster\FrmInspectionTotalShow.resx">
+      <DependentUpon>FrmInspectionTotalShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roster\frmJKZCX.resx">
+      <DependentUpon>frmJKZCX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roster\RosterSetting.resx">
+      <DependentUpon>RosterSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roster\SetMealChoice.resx">
+      <DependentUpon>SetMealChoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settlement\FrmDailyNewspaper.resx">
+      <DependentUpon>FrmDailyNewspaper.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Axgrdes6Lib">
+      <Guid>{C5A16330-A084-48C9-BC0F-0D0B37A14123}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="grdes6Lib">
+      <Guid>{C5A16330-A084-48C9-BC0F-0D0B37A14123}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

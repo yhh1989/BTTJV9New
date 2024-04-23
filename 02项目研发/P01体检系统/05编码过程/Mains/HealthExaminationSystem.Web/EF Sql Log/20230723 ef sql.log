@@ -1,0 +1,960 @@
+﻿已于 2023-10-23 15:07:02 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 15:07:02' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 15:07:02 +08:00
+ 执行
+-- 已在 7 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 15:07:02 +08:00
+ 关闭了连接
+已于 2023-10-23 15:07:07 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 15:07:07' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 15:07:07 +08:00
+ 执行
+-- 已在 8 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 15:07:07 +08:00
+ 关闭了连接
+已于 2023-10-23 15:07:12 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 15:07:12' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 15:07:12 +08:00
+ 执行
+-- 已在 12 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 15:07:12 +08:00
+ 关闭了连接
+已于 2023-10-23 15:07:17 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 15:07:17' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 15:07:17 +08:00
+ 执行
+-- 已在 7 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 15:07:17 +08:00
+ 关闭了连接
+已于 2023-10-23 15:07:22 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 15:07:22' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 15:07:22 +08:00
+ 执行
+-- 已在 14 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 15:07:22 +08:00
+ 关闭了连接
+已于 2023-10-23 15:07:27 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 15:07:27' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 15:07:27 +08:00
+ 执行
+-- 已在 7 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 15:07:27 +08:00
+ 关闭了连接
+已于 2023-10-23 15:07:32 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 15:07:32' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 15:07:32 +08:00
+ 执行
+-- 已在 8 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 15:07:32 +08:00
+ 关闭了连接
+已于 2023-10-23 15:07:37 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 15:07:37' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 15:07:37 +08:00
+ 执行
+-- 已在 9 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 15:07:38 +08:00
+ 关闭了连接
+已于 2023-10-23 15:07:43 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 15:07:43' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 15:07:43 +08:00
+ 执行
+-- 已在 7 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 15:07:43 +08:00
+ 关闭了连接
+已于 2023-10-23 15:07:48 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 15:07:48' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 15:07:48 +08:00
+ 执行
+-- 已在 7 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 15:07:48 +08:00
+ 关闭了连接
+已于 2023-10-23 15:07:53 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 15:07:53' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 15:07:53 +08:00
+ 执行
+-- 已在 7 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 15:07:53 +08:00
+ 关闭了连接
+已于 2023-10-23 15:07:58 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 15:07:58' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 15:07:58 +08:00
+ 执行
+-- 已在 14 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 15:07:58 +08:00
+ 关闭了连接
+已于 2023-10-23 16:07:03 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 16:07:03' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 16:07:03 +08:00
+ 执行
+-- 已在 7 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 16:07:03 +08:00
+ 关闭了连接
+已于 2023-10-23 16:07:08 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 16:07:08' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 16:07:08 +08:00
+ 执行
+-- 已在 10 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 16:07:08 +08:00
+ 关闭了连接
+已于 2023-10-23 16:07:13 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 16:07:13' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 16:07:13 +08:00
+ 执行
+-- 已在 7 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 16:07:13 +08:00
+ 关闭了连接
+已于 2023-10-23 16:07:18 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 16:07:18' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 16:07:18 +08:00
+ 执行
+-- 已在 10 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 16:07:18 +08:00
+ 关闭了连接
+已于 2023-10-23 16:07:24 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 16:07:24' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 16:07:24 +08:00
+ 执行
+-- 已在 7 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 16:07:24 +08:00
+ 关闭了连接
+已于 2023-10-23 16:07:29 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 16:07:29' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 16:07:29 +08:00
+ 执行
+-- 已在 7 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 16:07:29 +08:00
+ 关闭了连接
+已于 2023-10-23 16:07:34 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 16:07:34' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 16:07:34 +08:00
+ 执行
+-- 已在 10 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 16:07:34 +08:00
+ 关闭了连接
+已于 2023-10-23 16:07:39 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 16:07:39' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 16:07:39 +08:00
+ 执行
+-- 已在 7 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 16:07:39 +08:00
+ 关闭了连接
+已于 2023-10-23 16:07:44 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 16:07:44' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 16:07:44 +08:00
+ 执行
+-- 已在 7 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 16:07:44 +08:00
+ 关闭了连接
+已于 2023-10-23 16:07:49 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 16:07:49' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 16:07:49 +08:00
+ 执行
+-- 已在 12 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 16:07:49 +08:00
+ 关闭了连接
+已于 2023-10-23 16:07:54 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 16:07:54' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 16:07:54 +08:00
+ 执行
+-- 已在 16 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 16:07:54 +08:00
+ 关闭了连接
+已于 2023-10-23 16:07:59 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 16:07:59' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 16:07:59 +08:00
+ 执行
+-- 已在 7 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 16:07:59 +08:00
+ 关闭了连接

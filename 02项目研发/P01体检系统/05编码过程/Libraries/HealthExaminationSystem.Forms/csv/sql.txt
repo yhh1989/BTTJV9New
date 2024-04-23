@@ -1,0 +1,394 @@
+  
+
+CREATE VIEW [dbo].[word_chaosheng] AS select a.CustomerBM, b.ItemName , b.ItemResultChar, b.Unit, b.Stand, b.Symbol,f.ItemGroupSum,
+uu.Name as InspecUsertName,f.ItemGroupDiagnosis, 
+uu1.Name as CheckUserName, d.Name as departmentName,
+e.ItemGroupName,f.FirstDateTime,g.ItemBM,d.DepartmentBM,e.ItemGroupBM from TjlCustomerRegs a 
+inner join TjlCustomerRegItems  b on  a.Id=b.CustomerRegId 
+inner join TbmDepartments d on b.DepartmentId=d.Id 
+inner join TbmItemGroups e on b.ItemGroupBMId=e.Id 
+inner join TjlCustomerItemGroups f on b.CustomerItemGroupBMid=f.Id 
+inner join AbpUsers uu on uu.Id=f.InspectEmployeeBMId
+inner join AbpUsers uu1 on uu1.Id=f.CheckEmployeeBMId 
+inner join TbmItemInfoes g on b.ItemId=g.Id
+where 
+--a.CustomerBM=@CustomerBM and 
+b.IsDeleted=0 and f.IsAddMinus!=3 and f.IsDeleted=0 
+and d.Name in ('彩超','核磁室','眩晕科','脑电科','乳透(A201)') 
+and ItemName like '%所见%'
+and f.IsDeleted=0  
+ --order by d.OrderNum,e.OrderNum,b.ItemOrder
+GO
+
+ 
+CREATE VIEW [dbo].[word_ct] AS select  a.CustomerBM,b.ItemName , b.ItemResultChar, b.Unit, b.Stand, b.Symbol,f.ItemGroupSum,
+uu.Name as InspecUsertName,f.ItemGroupDiagnosis, 
+uu1.Name as CheckUserName, d.Name as departmentName,
+e.ItemGroupName,f.FirstDateTime,g.ItemBM,d.DepartmentBM,e.ItemGroupBM from TjlCustomerRegs a 
+inner join TjlCustomerRegItems  b on  a.Id=b.CustomerRegId 
+inner join TbmDepartments d on b.DepartmentId=d.Id 
+inner join TbmItemGroups e on b.ItemGroupBMId=e.Id 
+inner join TjlCustomerItemGroups f on b.CustomerItemGroupBMid=f.Id 
+inner join AbpUsers uu on uu.Id=f.InspectEmployeeBMId
+inner join AbpUsers uu1 on uu1.Id=f.CheckEmployeeBMId 
+inner join TbmItemInfoes g on b.ItemId=g.Id
+where 
+--a.CustomerBM=@CustomerBM and 
+b.IsDeleted=0 and f.IsAddMinus!=3 and f.IsDeleted=0 
+and d.Name in ('CT室') 
+and ItemName like '%所见%' 
+and f.IsDeleted=0   
+--order by d.OrderNum,e.OrderNum,b.ItemOrder
+GO
+
+
+ 
+CREATE VIEW [dbo].[word_dtCusRegItem] AS select  a.CustomerBM, uu.Name as InspecUsertName,uu1.Name as CheckUserName, d.Name as departmentName,e.ItemGroupName ,f.FirstDateTime,f.ItemGroupSum,f.ItemGroupDiagnosis,d.DepartmentBM,e.ItemGroupBM,g.ItemBM, b.* from TjlCustomerRegs a 
+inner join TjlCustomerRegItems  b on  a.Id=b.CustomerRegId 
+inner join TbmDepartments d on b.DepartmentId=d.Id 
+inner join TbmItemGroups e on b.ItemGroupBMId=e.Id 
+inner join TjlCustomerItemGroups f on b.CustomerItemGroupBMid=f.Id 
+inner join AbpUsers uu on uu.Id=f.InspectEmployeeBMId
+inner join AbpUsers uu1 on uu1.Id=f.CheckEmployeeBMId 
+inner join TbmItemInfoes g on b.ItemId=g.Id
+where  b.IsDeleted=0 and f.IsAddMinus!=3 and f.IsDeleted=0 and f.IsDeleted=0
+GO
+
+
+ 
+
+
+CREATE  VIEW [dbo].[word_dtCusSum]
+AS
+ 
+select  a.CustomerBM,c.Name as shName,e.Name as emName,  b.* from TjlCustomerRegs a 
+left join TjlCustomerSummarizes  b on  a.Id=b.CustomerRegId 
+left join AbpUsers c on b.ShEmployeeBMId=c.Id 
+left join AbpUsers e on b.EmployeeBMId=e.Id 
+where b.IsDeleted=0 
+--and  a.CustomerBM=@CustomerBM
+
+GO
+
+ 
+
+CREATE VIEW [dbo].[word_fangshe] AS select  a.CustomerBM,b.ItemName , b.ItemResultChar, b.Unit, b.Stand, b.Symbol,f.ItemGroupSum,
+uu.Name as InspecUsertName,f.ItemGroupDiagnosis, 
+uu1.Name as CheckUserName, d.Name as departmentName,
+e.ItemGroupName,f.FirstDateTime,g.ItemBM,d.DepartmentBM,e.ItemGroupBM from TjlCustomerRegs a 
+inner join TjlCustomerRegItems  b on  a.Id=b.CustomerRegId 
+inner join TbmDepartments d on b.DepartmentId=d.Id 
+inner join TbmItemGroups e on b.ItemGroupBMId=e.Id 
+inner join TjlCustomerItemGroups f on b.CustomerItemGroupBMid=f.Id 
+inner join AbpUsers uu on uu.Id=f.InspectEmployeeBMId
+inner join AbpUsers uu1 on uu1.Id=f.CheckEmployeeBMId 
+inner join TbmItemInfoes g on b.ItemId=g.Id
+where 
+--a.CustomerBM=@CustomerBM and 
+b.IsDeleted=0 and f.IsAddMinus!=3 and f.IsDeleted=0 
+and d.Name in ('放射科') 
+and ItemName like '%结论%'
+and f.IsDeleted=0  
+ --order by d.OrderNum,e.OrderNum,b.ItemOrder
+GO
+
+
+ 
+
+create  VIEW [dbo].[word_gerenxinxi]
+AS
+ 
+select 
+d.ClientName as '单位',
+a.CustomerBM as '体检号',
+b.Name as '姓名',
+b.Sex  as '性别',
+b.Birthday  as '出生日期',
+b.MarriageStatus  as '婚姻状况',
+b.IDCardNo as '身份证号',
+'' as '工作证号',
+b.Mobile as '手机号',
+'健康体检' as '体检类别',
+'安徽省皖南康复医院.芜湖市第五人民医院' as '体检医院',
+a.ItemSuitName as '套餐名称',
+a.*
+from TjlCustomerRegs a
+inner join TjlCustomers b on a.CustomerId=b.Id 
+left join TjlClientInfoes d on a.ClientInfoId = d.id
+where  
+--(a.CustomerBM=@CustomerBM  or    isnull(@CustomerBM,'')='')   and 
+ b.IsDeleted=0
+
+ 
+ 
+ 
+GO
+
+ 
+
+CREATE VIEW [dbo].[word_jianyan] AS select  a.CustomerBM,b.ItemName , b.ItemResultChar, b.Unit, b.Stand, 
+ CASE b.Symbol  
+  when 'N' THEN '' when '-' THEN ''when 'H' then '↑' when 'HH' then '↑↑'when 'LL' then '↓↓'when 'L' then '↓' when 'P' THEN 'P' END AS 
+Symbol
+,f.ItemGroupSum,
+uu.Name as InspecUsertName,f.ItemGroupDiagnosis, 
+uu1.Name as CheckUserName, d.Name as departmentName,
+e.ItemGroupName,f.FirstDateTime,g.ItemBM,d.DepartmentBM,e.ItemGroupBM
+ from TjlCustomerRegs a 
+inner join TjlCustomerRegItems  b on  a.Id=b.CustomerRegId 
+inner join TbmDepartments d on b.DepartmentId=d.Id 
+inner join TbmItemGroups e on b.ItemGroupBMId=e.Id 
+inner join TjlCustomerItemGroups f on b.CustomerItemGroupBMid=f.Id 
+inner join AbpUsers uu on uu.Id=f.InspectEmployeeBMId
+inner join AbpUsers uu1 on uu1.Id=f.CheckEmployeeBMId 
+inner join TbmItemInfoes g on b.ItemId=g.Id
+where 
+--a.CustomerBM='02230411788' and 
+b.IsDeleted=0 and f.IsAddMinus!=3 and f.IsDeleted=0 
+and d.Name in ('检验科','检验中心(迪安)','尿检')
+and f.IsDeleted=0  and b.ItemResultChar is not null   and b.ItemResultChar != ''  
+ --order by d.OrderNum,e.OrderNum,b.ItemOrder
+GO
+
+
+ 
+
+
+
+create VIEW [dbo].[word_jianyi]
+AS
+ 
+select    
+--top 1 
+ CharacterSummary,advice =REPLACE(  
+(select  CONVERT(nvarchar(10), SummarizeOrderNum)+'、'+ REPLACE(SummarizeName,'
+','')+':'+ Advice +'
+' +'
+' 
+ from TjlCustomerSummarizeBMs ss
+ where CustomerRegID = A.Id order by  ss.SummarizeOrderNum for xml path('')  ) ,'&#x0D;',''),a.CustomerBM from TjlCustomerRegs   as A
+ inner join TjlCustomerSummarizes b on a.Id=b.CustomerRegID and b.IsDeleted=0 
+ where b.IsDeleted=0 
+ --and CustomerBM = '02230331023'
+ --and CustomerRegID='0054D4B8-3422-49AF-BBC9-010BD5CA492C'
+
+
+
+
+
+
+
+
+
+GO
+
+
+ 
+
+CREATE VIEW [dbo].[word_xindian] AS select  a.CustomerBM,b.ItemName , b.ItemResultChar, b.Unit, b.Stand, b.Symbol,f.ItemGroupSum,
+uu.Name as InspecUsertName,f.ItemGroupDiagnosis, 
+uu1.Name as CheckUserName, d.Name as departmentName,
+e.ItemGroupName,f.FirstDateTime,g.ItemBM,d.DepartmentBM,e.ItemGroupBM from TjlCustomerRegs a 
+inner join TjlCustomerRegItems  b on  a.Id=b.CustomerRegId 
+inner join TbmDepartments d on b.DepartmentId=d.Id 
+inner join TbmItemGroups e on b.ItemGroupBMId=e.Id 
+inner join TjlCustomerItemGroups f on b.CustomerItemGroupBMid=f.Id 
+inner join AbpUsers uu on uu.Id=f.InspectEmployeeBMId
+inner join AbpUsers uu1 on uu1.Id=f.CheckEmployeeBMId 
+inner join TbmItemInfoes g on b.ItemId=g.Id
+where 
+--a.CustomerBM=@CustomerBM and 
+b.IsDeleted=0 and f.IsAddMinus!=3 and f.IsDeleted=0 
+and d.Name in ('骨密度','心电图','动脉硬化检测')
+and f.IsDeleted=0  
+ --order by d.OrderNum,e.OrderNum,b.ItemOrder
+GO
+
+
+
+
+
+
+
+ 
+
+
+
+CREATE VIEW [dbo].[word_BookMarks]
+AS
+SELECT  TOP (100) PERCENT dbo.TbmItemInfoes.Name AS 项目名称, dbo.TbmItemInfoes.Id AS 项目ID, 
+                   dbo.TbmItemInfoes.ItemBM AS 项目编码, dbo.TbmItemGroups.ItemGroupName AS 组合名称, 
+                   dbo.TbmItemGroups.Id AS 组合ID, dbo.TbmItemGroups.ItemGroupBM AS 组合编码, dbo.TbmDepartments.Id AS 科室ID, 
+                   dbo.TbmDepartments.Name AS 科室名称, dbo.TbmDepartments.DepartmentBM AS 科室编码
+FROM      dbo.TbmItemInfoes INNER JOIN
+                   dbo.TbmItemInfoTbmItemGroups ON dbo.TbmItemInfoes.Id = dbo.TbmItemInfoTbmItemGroups.TbmItemInfo_Id INNER JOIN
+                   dbo.TbmItemGroups ON dbo.TbmItemInfoTbmItemGroups.TbmItemGroup_Id = dbo.TbmItemGroups.Id INNER JOIN
+                   dbo.TbmDepartments ON dbo.TbmItemGroups.DepartmentId = dbo.TbmDepartments.Id
+WHERE   (dbo.TbmDepartments.IsDeleted = 0) AND (dbo.TbmItemGroups.IsDeleted = 0)
+ORDER BY TbmDepartments.OrderNum, TbmItemGroups.OrderNum, TbmItemInfoes.OrderNum 
+
+
+
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_DiagramPane1', @value=N'[0E232FF0-B466-11cf-A24F-00AA00A3EFFF, 1.00]
+Begin DesignProperties = 
+   Begin PaneConfigurations = 
+      Begin PaneConfiguration = 0
+         NumPanes = 4
+         Configuration = "(H (1[40] 4[20] 2[20] 3) )"
+      End
+      Begin PaneConfiguration = 1
+         NumPanes = 3
+         Configuration = "(H (1 [50] 4 [25] 3))"
+      End
+      Begin PaneConfiguration = 2
+         NumPanes = 3
+         Configuration = "(H (1 [50] 2 [25] 3))"
+      End
+      Begin PaneConfiguration = 3
+         NumPanes = 3
+         Configuration = "(H (4 [30] 2 [40] 3))"
+      End
+      Begin PaneConfiguration = 4
+         NumPanes = 2
+         Configuration = "(H (1 [56] 3))"
+      End
+      Begin PaneConfiguration = 5
+         NumPanes = 2
+         Configuration = "(H (2 [66] 3))"
+      End
+      Begin PaneConfiguration = 6
+         NumPanes = 2
+         Configuration = "(H (4 [50] 3))"
+      End
+      Begin PaneConfiguration = 7
+         NumPanes = 1
+         Configuration = "(V (3))"
+      End
+      Begin PaneConfiguration = 8
+         NumPanes = 3
+         Configuration = "(H (1[56] 4[18] 2) )"
+      End
+      Begin PaneConfiguration = 9
+         NumPanes = 2
+         Configuration = "(H (1 [75] 4))"
+      End
+      Begin PaneConfiguration = 10
+         NumPanes = 2
+         Configuration = "(H (1[66] 2) )"
+      End
+      Begin PaneConfiguration = 11
+         NumPanes = 2
+         Configuration = "(H (4 [60] 2))"
+      End
+      Begin PaneConfiguration = 12
+         NumPanes = 1
+         Configuration = "(H (1) )"
+      End
+      Begin PaneConfiguration = 13
+         NumPanes = 1
+         Configuration = "(V (4))"
+      End
+      Begin PaneConfiguration = 14
+         NumPanes = 1
+         Configuration = "(V (2))"
+      End
+      ActivePaneConfig = 0
+   End
+   Begin DiagramPane = 
+      Begin Origin = 
+         Top = 0
+         Left = 0
+      End
+      Begin Tables = 
+         Begin Table = "TbmItemInfoes"
+            Begin Extent = 
+               Top = 7
+               Left = 48
+               Bottom = 170
+               Right = 310
+            End
+            DisplayFlags = 280
+            TopColumn = 0
+         End
+         Begin Table = "TbmItemInfoTbmItemGroups"
+            Begin Extent = 
+               Top = 7
+               Left = 358
+               Bottom = 126
+               Right = 586
+            End
+            DisplayFlags = 280
+            TopColumn = 0
+         End
+         Begin Table = "TbmItemGroups"
+            Begin Extent = 
+               Top = 7
+               Left = 634
+               Bottom = 170
+               Right = 887
+            End
+            DisplayFlags = 280
+            TopColumn = 0
+         End
+         Begin Table = "TbmDepartments"
+            Begin Extent = 
+               Top = 7
+               Left = 935
+               Bottom = 170
+               Right = 1188
+            End
+            DisplayFlags = 280
+            TopColumn = 0
+         End
+      End
+   End
+   Begin SQLPane = 
+   End
+   Begin DataPane = 
+      Begin ParameterDefaults = ""
+      End
+      Begin ColumnWidths = 9
+         Width = 284
+         Width = 1200
+         Width = 1200
+         Width = 1200
+         Width = 1200
+         Width = 1200
+         Width = 1200
+         Width = 1200
+         Width = 1200
+      End
+   End
+   Begin CriteriaPane = 
+      Begin ColumnWidths = 11
+         Column = 1440
+         Alias = 900
+         Table = 1170
+         Output = 720
+         Append = 1400
+         NewValue = 1170
+         SortType = 1350
+         SortOrder = 1410
+         GroupBy = 1350
+         Filter = 1350
+         Or = 1350
+         Or = 1350
+' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'VIEW',@level1name=N'word_BookMarks'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_DiagramPane2', @value=N'
+         Or = 1350
+      End
+   End
+End
+' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'VIEW',@level1name=N'word_BookMarks'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_DiagramPaneCount', @value=2 , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'VIEW',@level1name=N'word_BookMarks'
+GO
+
+
+
+

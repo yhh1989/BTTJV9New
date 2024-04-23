@@ -1,0 +1,271 @@
+﻿Object Report
+	Version='6.0.0.5'
+	Title='Grid++Report'
+	PrintAsDesignPaper=F
+	Object Font
+		Name='宋体'
+		Size=90000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+		LeftMargin=1
+		RightMargin=1
+	End
+	Object DetailGrid
+		Object Recordset
+			Items Field
+				Item
+					Name='分组名称'
+					DBFieldName='TeamName'
+				End
+				Item
+					Name='适用性别'
+					GetDisplayTextScript='if(Sender.AsInteger==1)\r\n    Sender.DisplayText="男";\r\nelse if(Sender.AsInteger==2)\r\n    Sender.DisplayText="女";\r\nelse if(Sender.AsInteger==9)\r\n    Sender.DisplayText="不限";\r\n'
+					DBFieldName='Sex'
+				End
+				Item
+					Name='最小年龄'
+					DBFieldName='MinAge'
+				End
+				Item
+					Name='最大年龄'
+					DBFieldName='MaxAge'
+				End
+				Item
+					Name='结婚状态'
+					DBFieldName='MaritalStatus'
+				End
+				Item
+					Name='是否备孕'
+					DBFieldName='ConceiveStatus'
+				End
+				Item
+					Name='科室名称'
+					DBFieldName='DepartmentName'
+				End
+				Item
+					Name='项目名称'
+					DBFieldName='ItemGroupName'
+				End
+				Item
+					Name='组合价格'
+					Type=Currency
+					DBFieldName='ItemGroupMoney'
+				End
+				Item
+					Name='折扣率'
+					Type=Float
+					Format='0.00%'
+					DBFieldName='Discount'
+				End
+				Item
+					Name='折后价格'
+					Type=Currency
+					Format='￥#,##0.00'
+					DBFieldName='ItemGroupDiscountMoney'
+				End
+			End
+		End
+		Items Column
+			Item
+				Name='空白列'
+				Width=1.98438
+			End
+			Item
+				Name='项目名称'
+				Width=13.9965
+			End
+			Item
+				Name='折后价格'
+			End
+		End
+		Object ColumnContent
+			Height=0.635
+			Items ColumnContentCell
+				Item
+					Column='空白列'
+				End
+				Item
+					Column='项目名称'
+					DataField='项目名称'
+				End
+				Item
+					Column='折后价格'
+					DataField='折后价格'
+				End
+			End
+		End
+		Object ColumnTitle
+			Visible=F
+			Height=0.608542
+			Items ColumnTitleCell
+				Item
+					GroupTitle=F
+					Column='空白列'
+					TextAlign=MiddleCenter
+				End
+				Item
+					GroupTitle=F
+					Column='项目名称'
+					TextAlign=MiddleCenter
+					Text='项目名称'
+				End
+				Item
+					GroupTitle=F
+					Column='折后价格'
+					TextAlign=MiddleCenter
+					Text='价格'
+				End
+			End
+		End
+		Items Group
+			Item
+				Name='组单分组Group'
+				ByFields='分组名称'
+				Object GroupHeader
+					BackColor=00CCFFFF
+					Height=0.6
+					Items Control
+						Item
+							Type=MemoBox
+							Name='分组MemoBox'
+							BackColor=White
+							Width=18.9971
+							Height=0.6
+							Object Font
+								Name='宋体'
+								Size=90000,0
+								Bold=T
+								Charset=134
+							End
+							Text='[#分组名称#]    适用性别：[#适用性别#]   适用年龄：[#最小年龄#] - [#最大年龄#]'
+						End
+					End
+				End
+				Object GroupFooter
+					Height=0.6
+					Items Control
+						Item
+							Type=SummaryBox
+							Name='ItemGroupSum'
+							Width=5
+							Height=0.6
+							DataField='折后价格'
+							Format='分组合计：￥#,##0.00'
+						End
+					End
+				End
+			End
+			Item
+				Name='项目科室Group'
+				ByFields='科室名称'
+				Object GroupHeader
+					Height=0.6
+					Items Control
+						Item
+							Type=MemoBox
+							Name='MemoBox20'
+							Width=18.9971
+							Height=0.6
+							Object Font
+								Name='宋体'
+								Size=90000,0
+								Bold=T
+								Charset=134
+							End
+							Text='    体检科室：[#科室名称#]'
+						End
+					End
+				End
+				Object GroupFooter
+					Visible=F
+					Height=0
+				End
+			End
+		End
+	End
+	Object PageFooter
+		Height=1.00542
+		Items Control
+			Item
+				Type=StaticBox
+				Name='StaticBox39'
+				Left=0.211667
+				Width=10.2129
+				Height=0.79375
+				Text='海军青岛第一疗养院体检中心    咨询电话:0532-51885555'
+			End
+			Item
+				Type=MemoBox
+				Name='MemoBox17'
+				Left=10.8215
+				Width=7.99042
+				Height=0.79375
+				TextAlign=MiddleRight
+				Text='第 [#SystemVar(PageNumber)#] / [#SystemVar(PageCount)#] 页'
+			End
+		End
+	End
+	Items Parameter
+		Item
+			Name='ReportTitle'
+		End
+	End
+	Items ReportHeader
+		Item
+			Height=1.79917
+			Items Control
+				Item
+					Type=StaticBox
+					Name='StaticBox1'
+					Width=18.9971
+					Height=1.00542
+					Object Font
+						Name='宋体'
+						Size=157500,0
+						Bold=T
+						Charset=134
+					End
+					TextAlign=MiddleCenter
+					Text='组单'
+					Parameter='ReportTitle'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox18'
+					Left=-0.767292
+					Top=-0.767292
+					Width=4.6355
+					Height=0.740833
+					Text='[#支付方式#]'
+				End
+				Item
+					Type=SummaryBox
+					Name='SummaryBox1'
+					Top=1.19063
+					Width=5
+					Height=0.6
+					DataField='折后价格'
+					Format='组单合计：￥#,##0.00'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox21'
+					Left=11.0067
+					Top=1.19063
+					Width=8
+					Height=0.6
+					TextAlign=MiddleRight
+					Text='打印时间：[#SystemVar(CurrentDateTime)#]'
+				End
+			End
+		End
+	End
+	Items ReportFooter
+		Item
+			Name='ReportFooter1'
+			Height=0.79375
+		End
+	End
+End

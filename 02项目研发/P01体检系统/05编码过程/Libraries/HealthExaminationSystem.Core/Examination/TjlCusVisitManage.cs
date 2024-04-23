@@ -1,0 +1,75 @@
+﻿using Abp.Domain.Entities;
+using Abp.Domain.Entities.Auditing;
+using Sw.Hospital.HealthExaminationSystem.Core.Authorization.Users;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Sw.Hospital.HealthExaminationSystem.Core.Examination
+{
+    /// <summary>
+    /// 回访管理
+    /// </summary>
+   public class TjlCusVisitManage : FullAuditedEntity<Guid>, IMustHaveTenant
+    {
+        ///// <summary>
+        ///// 体检人外键---需要加上这个字段，linq查询时才可以判子表的条件，不然tolist时会报错。
+        ///// </summary>
+        //[ForeignKey("Customer")]
+        //public virtual Guid CustomerId { get; set; }
+
+        ///// <summary>
+        ///// 体检人
+        ///// </summary>
+        //public virtual TjlCustomer Customer { get; set; }
+        /// <summary>
+        /// 预约标识
+        /// </summary>
+        [ForeignKey("CustomerReg")]
+        public virtual Guid CustomerRegID { get; set; }
+        /// <summary>
+        /// 预约
+        /// </summary>
+        public virtual TjlCustomerReg CustomerReg { get; set; }
+        /// <summary>
+        /// 回访状态0未回访1已回访3已取消
+        /// </summary>
+        public virtual int? VisitState { get; set; }
+
+        /// <summary>
+        ///回访日期
+        /// </summary>
+        public virtual DateTime? VisitDate { get; set; }
+
+        /// <summary>
+        /// 回访方式1短信2电话
+        /// </summary>
+        [MaxLength(32)]
+        public virtual string VisitType { get; set; }
+
+        /// <summary>
+        /// 备注
+        /// </summary>
+        [MaxLength(32)]
+        public virtual string remarks { get; set; }
+
+        /// <summary>
+        /// 回访人外键
+        /// </summary>
+        [ForeignKey("VisitEmployeeBM")]
+        public virtual long? VisitEmployeeId { get; set; }
+
+        /// <summary>
+        /// 回访人
+        /// </summary>
+        public virtual User VisitEmployeeBM { get; set; }
+
+        /// <inheritdoc />
+        public int TenantId { get; set; }
+
+    }
+}

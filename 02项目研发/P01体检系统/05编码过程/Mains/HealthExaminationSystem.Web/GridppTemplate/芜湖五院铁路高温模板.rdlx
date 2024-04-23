@@ -1,0 +1,615 @@
+﻿<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">芜湖五院铁路高温模板.rdlx</dd:Name>
+	<Body>
+		<Height>16.8cm</Height>
+		<ReportItems>
+			<Table Name="Table1">
+				<Top>0.1322917cm</Top>
+				<Left>0cm</Left>
+				<Width>26.4cm</Width>
+				<Height>2.4cm</Height>
+				<Style>
+					<FontFamily>微软雅黑</FontFamily>
+					<FontSize>24pt</FontSize>
+					<FontStyle>Normal</FontStyle>
+					<FontWeight>400</FontWeight>
+					<BorderStyle>
+						<Default>Outset</Default>
+					</BorderStyle>
+				</Style>
+				<DataSetName>DataSet1</DataSetName>
+				<Header>
+					<TableRows>
+						<TableRow>
+							<Height>0.6cm</Height>
+							<TableCells>
+								<TableCell>
+									<dd:RowSpan xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">2</dd:RowSpan>
+									<ReportItems>
+										<Textbox Name="TextBox21">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Center</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+												<BorderStyle>
+													<Default>Outset</Default>
+												</BorderStyle>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<Value>序号</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<dd:RowSpan xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">2</dd:RowSpan>
+									<ReportItems>
+										<Textbox Name="TextBox22">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Center</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+												<BorderStyle>
+													<Default>Outset</Default>
+												</BorderStyle>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<Value>单位</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<dd:RowSpan xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">2</dd:RowSpan>
+									<ReportItems>
+										<Textbox Name="TextBox23">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>General</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+												<BorderStyle>
+													<Default>Outset</Default>
+												</BorderStyle>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<Value>部门</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<dd:RowSpan xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">2</dd:RowSpan>
+									<ReportItems>
+										<Textbox Name="TextBox24">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Center</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+												<BorderStyle>
+													<Default>Outset</Default>
+												</BorderStyle>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<Value>姓名</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<dd:RowSpan xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">2</dd:RowSpan>
+									<ReportItems>
+										<Textbox Name="TextBox25">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Center</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+												<BorderStyle>
+													<Default>Outset</Default>
+												</BorderStyle>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<Value>性别</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<dd:RowSpan xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">2</dd:RowSpan>
+									<ReportItems>
+										<Textbox Name="TextBox26">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Center</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+												<BorderStyle>
+													<Default>Outset</Default>
+												</BorderStyle>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<Value>身份证号</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<dd:RowSpan xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">2</dd:RowSpan>
+									<ReportItems>
+										<Textbox Name="TextBox27">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Center</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+												<BorderStyle>
+													<Default>Outset</Default>
+												</BorderStyle>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<Value>血糖
+mmol/L</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ColSpan>2</ColSpan>
+									<ReportItems>
+										<Textbox Name="TextBox28">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Center</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+												<BorderStyle>
+													<Default>Outset</Default>
+												</BorderStyle>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<Value>血压（mmHg）</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<dd:RowSpan xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">2</dd:RowSpan>
+									<ReportItems>
+										<Textbox Name="TextBox30">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Center</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+												<BorderStyle>
+													<Default>Outset</Default>
+												</BorderStyle>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<Value>内科检查</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+							</TableCells>
+						</TableRow>
+						<TableRow>
+							<Height>0.6cm</Height>
+							<TableCells>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox15">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Center</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+												<BorderStyle>
+													<Default>Outset</Default>
+												</BorderStyle>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<Value>收缩压</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox17">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Center</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+												<BorderStyle>
+													<Default>Outset</Default>
+												</BorderStyle>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<Value>舒张压</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+							</TableCells>
+						</TableRow>
+					</TableRows>
+				</Header>
+				<Details>
+					<TableRows>
+						<TableRow>
+							<Height>1.2cm</Height>
+							<TableCells>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox1">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<BorderStyle>
+													<Default>Solid</Default>
+												</BorderStyle>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<Value>=RowNumber()</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox5">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Center</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+												<BorderStyle>
+													<Default>Outset</Default>
+												</BorderStyle>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<DataElementName>单位</DataElementName>
+											<Value>=Fields!单位.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox6">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>General</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+												<BorderStyle>
+													<Default>Outset</Default>
+												</BorderStyle>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<DataElementName>部门</DataElementName>
+											<Value>=Fields!部门.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox8">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Center</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+												<BorderStyle>
+													<Default>Outset</Default>
+												</BorderStyle>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<DataElementName>Name</DataElementName>
+											<Value>=Fields!Name.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox10">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Right</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+												<BorderStyle>
+													<Default>Outset</Default>
+												</BorderStyle>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<DataElementName>Sex</DataElementName>
+											<Value>=IIF(Fields!Sex.Value=1,“男”,"女")</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox12">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Center</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+												<BorderStyle>
+													<Default>Outset</Default>
+												</BorderStyle>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<DataElementName>IDCard No</DataElementName>
+											<Value>=Fields!IDCardNo.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox14">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Center</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+												<BorderStyle>
+													<Default>Outset</Default>
+												</BorderStyle>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<DataElementName>血糖</DataElementName>
+											<Value>=Fields!血糖.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox16">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Center</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+												<BorderStyle>
+													<Default>Outset</Default>
+												</BorderStyle>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<DataElementName>收缩压</DataElementName>
+											<Value>=Fields!收缩压.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox18">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Center</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+												<BorderStyle>
+													<Default>Outset</Default>
+												</BorderStyle>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<DataElementName>舒张压</DataElementName>
+											<Value>=Fields!舒张压.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox20">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Left</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+												<BorderStyle>
+													<Default>Outset</Default>
+												</BorderStyle>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<DataElementName>内科检查</DataElementName>
+											<Value>=Fields!内科检查.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+							</TableCells>
+						</TableRow>
+					</TableRows>
+				</Details>
+				<TableColumns>
+					<TableColumn>
+						<Width>1.6cm</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>6cm</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>2.2cm</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>1.8cm</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>1.4cm</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>6.2cm</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>1.8cm</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>1.8cm</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>1.8cm</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>1.8cm</Width>
+					</TableColumn>
+				</TableColumns>
+			</Table>
+		</ReportItems>
+	</Body>
+	<PageHeight>29.7cm</PageHeight>
+	<PageWidth>40cm</PageWidth>
+	<Width>31cm</Width>
+	<ReportParameters>
+		<ReportParameter Name="体检号">
+			<DataType>String</DataType>
+			<Nullable>true</Nullable>
+			<Prompt>请输入体检号</Prompt>
+		</ReportParameter>
+		<ReportParameter Name="姓名">
+			<DataType>String</DataType>
+			<Nullable>true</Nullable>
+			<Prompt>请输入姓名</Prompt>
+		</ReportParameter>
+		<ReportParameter Name="单位名称">
+			<DataType>String</DataType>
+			<Nullable>true</Nullable>
+			<Prompt>请输入单位名称</Prompt>
+		</ReportParameter>
+		<ReportParameter Name="登记开始时间">
+			<DataType>DateTime</DataType>
+			<Prompt>开始时间</Prompt>
+		</ReportParameter>
+		<ReportParameter Name="登记结束时间">
+			<DataType>DateTime</DataType>
+			<Prompt>结束时间</Prompt>
+		</ReportParameter>
+	</ReportParameters>
+	<DataSources>
+		<DataSource Name="DataSource1">
+			<ConnectionProperties>
+				<ConnectString>password=bingtai777.;data source=116.255.233.40;initial catalog=wuhuwuyuan;user id=sa;</ConnectString>
+				<DataProvider>SQL</DataProvider>
+			</ConnectionProperties>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="DataSet1">
+			<Fields>
+				<Field Name="单位">
+					<DataField>单位</DataField>
+				</Field>
+				<Field Name="部门">
+					<DataField>部门</DataField>
+				</Field>
+				<Field Name="Name">
+					<DataField>Name</DataField>
+				</Field>
+				<Field Name="Sex">
+					<DataField>Sex</DataField>
+				</Field>
+				<Field Name="IDCardNo">
+					<DataField>IDCardNo</DataField>
+				</Field>
+				<Field Name="血糖">
+					<DataField>血糖</DataField>
+				</Field>
+				<Field Name="收缩压">
+					<DataField>收缩压</DataField>
+				</Field>
+				<Field Name="舒张压">
+					<DataField>舒张压</DataField>
+				</Field>
+				<Field Name="心电图">
+					<DataField>心电图</DataField>
+				</Field>
+				<Field Name="内科检查">
+					<DataField>内科检查</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>select 
+d.ClientName as '单位',
+'芜湖站' as '部门',
+b.Name,
+b.Sex,
+b.IDCardNo,
+isnull(I3.ItemResultChar,'') as '血糖',
+isnull(I4.ItemResultChar,'') as '收缩压',
+isnull(I5.ItemResultChar,'') as '舒张压',
+isnull(I1.ItemResultChar,'') as '心电图',
+isnull(i2.CharacterSummary  ,'')as '内科检查' 
+from TjlCustomerRegs a
+inner join TjlCustomers b on a.CustomerId=b.Id 
+left join TjlClientInfoes c on a.ClientInfoId=c.Id 
+left join TjlClientInfoes d on a.ClientInfoId = d.id
+left join TjlCustomerRegItems I1 on a.Id=I1.CustomerRegId and I1.ItemName='十二通道常规心电图检查' and I1.IsDeleted=0 
+left join dbo.TjlCustomerDepSummaries I2 on a.Id=I2.CustomerRegId and I2.DepartmentName = '内科'  and I1.IsDeleted=0 
+left join TjlCustomerRegItems I3 on a.Id=I3.CustomerRegId and I3.ItemName='葡萄糖'  and I1.IsDeleted=0 
+left join TjlCustomerRegItems I4 on a.Id=I4.CustomerRegId and I4.ItemName='收缩压'  and I1.IsDeleted=0
+left join TjlCustomerRegItems I5 on a.Id=I5.CustomerRegId and I5.ItemName='舒张压'  and I1.IsDeleted=0
+inner join TbmDepartments d1 on I1.DepartmentId=d1.Id  
+inner join TjlCustomerItemGroups f on I1.CustomerItemGroupBMid=f.Id 
+where  a.LoginDate between @LoginDate1 and @LoginDate2  and
+(a.CustomerBM=@CustomerBM  or    isnull(@CustomerBM,'')='')   
+and    (b.Name=@Name or   isnull(@Name,'')='')   
+and (d.ClientName = @ClientName or    isnull(@ClientName,'')='')
+ and b.IsDeleted=0 and f.IsAddMinus!=3 
+and f.IsDeleted=0 and f.IsDeleted=0 </CommandText>
+				<DataSourceName>DataSource1</DataSourceName>
+				<QueryParameters>
+					<QueryParameter Name="@CustomerBM">
+						<Value>=Parameters!体检号.Value</Value>
+					</QueryParameter>
+					<QueryParameter Name="@ClientName">
+						<Value>=Parameters!单位名称.Value</Value>
+					</QueryParameter>
+					<QueryParameter Name="@LoginDate1">
+						<Value>=Parameters!登记开始时间.Value</Value>
+					</QueryParameter>
+					<QueryParameter Name="@LoginDate2">
+						<Value>=Parameters!登记结束时间.Value</Value>
+					</QueryParameter>
+					<QueryParameter Name="@Name">
+						<Value>=Parameters!姓名.Value</Value>
+					</QueryParameter>
+				</QueryParameters>
+			</Query>
+		</DataSet>
+	</DataSets>
+</Report>

@@ -1,0 +1,1045 @@
+DEBUG 2023-01-06 12:03:31,357 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Compose.Dto.FullComposeGroupDto
+DEBUG 2023-01-06 12:03:31,391 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Compose.Dto.FullComposeDto
+DEBUG 2023-01-06 12:03:31,392 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Compose.Dto.ComposeDto
+DEBUG 2023-01-06 12:03:31,392 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Compose.Dto.ComposeGroupDto
+DEBUG 2023-01-06 12:03:31,392 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DailyNewspaper.Dto.SearchCustomerDto
+DEBUG 2023-01-06 12:03:31,393 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DailyNewspaper.Dto.SearchCustomerRegDto
+DEBUG 2023-01-06 12:03:31,393 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DailyNewspaper.Dto.SearchMPaymentDto
+DEBUG 2023-01-06 12:03:31,393 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DailyNewspaper.Dto.SearchMReceiptDetailsDto
+DEBUG 2023-01-06 12:03:31,394 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DailyNewspaper.Dto.SearchMReceiptInfoDto
+DEBUG 2023-01-06 12:03:31,395 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ClientInfoes.Dto.ClientInfoesDto
+DEBUG 2023-01-06 12:03:31,395 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ClientInfoes.Dto.ClientInfosNameDto
+DEBUG 2023-01-06 12:03:31,396 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ClientInfoes.Dto.ClientInfosViewDto
+DEBUG 2023-01-06 12:03:31,396 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ClientInfoes.Dto.ClientInfoesListInput
+DEBUG 2023-01-06 12:03:31,397 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.HistoryComparison.Dto.HisDepartSumDto
+DEBUG 2023-01-06 12:03:31,397 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.HistoryComparison.Dto.HistoryItemDBDto
+DEBUG 2023-01-06 12:03:31,397 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.HistoryComparison.Dto.SearchHisClassDto
+DEBUG 2023-01-06 12:03:31,398 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.HistoryComparison.Dto.SearchCustomerDepSummaryDto
+DEBUG 2023-01-06 12:03:31,398 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.HistoryComparison.Dto.CustomerItemGroupDto
+DEBUG 2023-01-06 12:03:31,399 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.HistoryComparison.Dto.SearchCustomerRegDto
+DEBUG 2023-01-06 12:03:31,400 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.HistoryComparison.Dto.SearchCustomerRegItemDto
+DEBUG 2023-01-06 12:03:31,400 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.HistoryComparison.Dto.SearchCustomerSummaryDto
+DEBUG 2023-01-06 12:03:31,400 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.HistoryComparison.Dto.SrachCustomerItemPicDto
+DEBUG 2023-01-06 12:03:31,400 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.HisInterface.HisPriceDtos
+DEBUG 2023-01-06 12:03:31,401 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.HisInterface.InCarNumPriceDto
+DEBUG 2023-01-06 12:03:31,401 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.HisInterface.TJSQDto
+DEBUG 2023-01-06 12:03:31,403 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GroupReport.Dto.DepartTypeDto
+DEBUG 2023-01-06 12:03:31,403 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GroupReport.Dto.GroupClientGroupDto
+DEBUG 2023-01-06 12:03:31,403 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GroupReport.Dto.GroupCusGroupDto
+DEBUG 2023-01-06 12:03:31,403 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GroupReport.Dto.GroupNoCheckCusDtocs
+DEBUG 2023-01-06 12:03:31,404 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GroupReport.Dto.GroupClientSumDto
+DEBUG 2023-01-06 12:03:31,404 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GroupReport.Dto.GroupClientCusDto
+DEBUG 2023-01-06 12:03:31,406 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GroupReport.Dto.GroupClientInfoDto
+DEBUG 2023-01-06 12:03:31,406 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GroupReport.Dto.GroupClientRegDto
+DEBUG 2023-01-06 12:03:31,406 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GroupReport.Dto.GroupClientTeamInfoDto
+DEBUG 2023-01-06 12:03:31,406 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GroupReport.Dto.GroupCustomerDto
+DEBUG 2023-01-06 12:03:31,406 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GroupReport.Dto.GroupCustomerRegDto
+DEBUG 2023-01-06 12:03:31,406 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GroupReport.Dto.SelectClientRewDto
+DEBUG 2023-01-06 12:03:31,406 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GroupReport.Dto.SelectGroupClientInfoDto
+DEBUG 2023-01-06 12:03:31,406 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Foreground.Dto.BarSettingsDto
+DEBUG 2023-01-06 12:03:31,407 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Foreground.Dto.CompanyInformation52Dto
+DEBUG 2023-01-06 12:03:31,407 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Foreground.Dto.Customer52Dto
+DEBUG 2023-01-06 12:03:31,407 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Foreground.Dto.CustomerRegister52Dto1
+DEBUG 2023-01-06 12:03:31,408 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Foreground.Dto.CustomerRegisterBarCodePrintInformationDto
+DEBUG 2023-01-06 12:03:31,408 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.TjlCustomerRegForDoctorDto
+DEBUG 2023-01-06 12:03:31,410 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.CusReViewGroupDto
+DEBUG 2023-01-06 12:03:31,410 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.CustomerGroupSumDto
+DEBUG 2023-01-06 12:03:31,410 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.BeforSumCustomerRegDto
+DEBUG 2023-01-06 12:03:31,411 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.CustomerItemGroupZYBDto
+DEBUG 2023-01-06 12:03:31,411 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.CustomerRegInspectGroupDto
+DEBUG 2023-01-06 12:03:31,412 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.CusTypeGroupStateDto
+DEBUG 2023-01-06 12:03:31,412 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.DepartCategoryDto
+DEBUG 2023-01-06 12:03:31,412 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.DepartmentOrderDto
+DEBUG 2023-01-06 12:03:31,413 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.INCusSumSateDto
+DEBUG 2023-01-06 12:03:31,413 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.ItemGroupOrderDto
+DEBUG 2023-01-06 12:03:31,413 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.OccCustomerHazardSumDto
+DEBUG 2023-01-06 12:03:31,413 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.OccEditCustomerRegStateDto
+DEBUG 2023-01-06 12:03:31,414 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.TjlCustomerRegForInspectionTotalSearchDto
+DEBUG 2023-01-06 12:03:31,416 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.CraetOccCustomerOccDiseasesDto
+DEBUG 2023-01-06 12:03:31,416 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.CreateCustomerSummarizeDto
+DEBUG 2023-01-06 12:03:31,416 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.CreatOccCustomerContraindicationDto
+DEBUG 2023-01-06 12:03:31,416 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.CusReViewDto
+DEBUG 2023-01-06 12:03:31,416 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.CustomerRegDateDto
+DEBUG 2023-01-06 12:03:31,417 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.CustomerRegInspectItemDto
+DEBUG 2023-01-06 12:03:31,417 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.EditCustomerRegStateDto
+DEBUG 2023-01-06 12:03:31,417 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.CreatOccCustomerSumDto
+DEBUG 2023-01-06 12:03:31,418 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.OccTargetDiseaseByRisk
+DEBUG 2023-01-06 12:03:31,418 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.OccCusContraindicationDto
+DEBUG 2023-01-06 12:03:31,418 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.TbmSumHideDto
+DEBUG 2023-01-06 12:03:31,418 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.TjlCustomerItemGroupDto
+DEBUG 2023-01-06 12:03:31,418 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.TjlClientInfoDto
+DEBUG 2023-01-06 12:03:31,419 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.InspectionTotalListDto
+DEBUG 2023-01-06 12:03:31,419 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.TjlCustomerSummBackDto
+DEBUG 2023-01-06 12:03:31,420 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.TjlCustomerRegItemDto
+DEBUG 2023-01-06 12:03:31,420 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.TjlCustomerSummarizeBMViewDto
+DEBUG 2023-01-06 12:03:31,420 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.TjlCustomerSummarizeBMDto
+DEBUG 2023-01-06 12:03:31,421 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.TjlCustomerSummarizeDto
+DEBUG 2023-01-06 12:03:31,421 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.TjlCustomerForInspectionTotalDto
+DEBUG 2023-01-06 12:03:31,421 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.TjlCustomerRegForInspectionTotalDto
+DEBUG 2023-01-06 12:03:31,422 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.CustomerRegisterItemAppServiceDto.CustomerRegisterItemDto
+DEBUG 2023-01-06 12:03:31,423 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.CusGroupStateDto
+DEBUG 2023-01-06 12:03:31,423 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.SearchClientInfoDto
+DEBUG 2023-01-06 12:03:31,423 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.InterfaceCustomerRegDto
+DEBUG 2023-01-06 12:03:31,424 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.CustomerItemGroupPrintViewDto
+DEBUG 2023-01-06 12:03:31,424 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.ATjlCustomerItemGroupPrintGuidanceDto
+DEBUG 2023-01-06 12:03:31,424 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.CreateCustomerDepSummary
+DEBUG 2023-01-06 12:03:31,425 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.CustomerDepSummaryViewDto
+DEBUG 2023-01-06 12:03:31,425 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.CustomerItemPicDto
+DEBUG 2023-01-06 12:03:31,425 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.SearchCustomerRegIdDto
+DEBUG 2023-01-06 12:03:31,426 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.SearchItemStandardDto
+DEBUG 2023-01-06 12:03:31,426 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.SearchTbmSummarizeAdviceDto
+DEBUG 2023-01-06 12:03:31,426 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.SearchTjlCustomerSummaryDto
+DEBUG 2023-01-06 12:03:31,426 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.TjlCustomerRegItemReoprtDto
+DEBUG 2023-01-06 12:03:31,427 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.UpdateCustomerItemGroupDto
+DEBUG 2023-01-06 12:03:31,427 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.UpdateCustomerRegItemDto
+DEBUG 2023-01-06 12:03:31,428 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.ATbmDepartmentDto
+DEBUG 2023-01-06 12:03:31,428 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.ATjlClientInfoDto
+DEBUG 2023-01-06 12:03:31,428 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.ATjlClientRegDto
+DEBUG 2023-01-06 12:03:31,428 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.BTbmDepartmentDto
+DEBUG 2023-01-06 12:03:31,428 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.CTbmDepartmentDto
+DEBUG 2023-01-06 12:03:31,429 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.BTbmItemDictionaryDto
+DEBUG 2023-01-06 12:03:31,429 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.BTbmItemInfoDto
+DEBUG 2023-01-06 12:03:31,429 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.ATjlClientTeamInfoDto
+DEBUG 2023-01-06 12:03:31,429 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.ATjlCustomerDepSummaryDto
+DEBUG 2023-01-06 12:03:31,429 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.ATjlCustomerDto
+DEBUG 2023-01-06 12:03:31,430 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.ATjlCustomerItemGroupDto
+DEBUG 2023-01-06 12:03:31,430 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.ATjlCustomerRegDto
+DEBUG 2023-01-06 12:03:31,431 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.ATjlCustomerRegItemDto
+DEBUG 2023-01-06 12:03:31,432 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.ATjlOAHistoryDto
+DEBUG 2023-01-06 12:03:31,432 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.ATjlOHistoryDto
+DEBUG 2023-01-06 12:03:31,432 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.CTbmSummarizeAdviceDto
+DEBUG 2023-01-06 12:03:31,433 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Diagnosis.Dto.ItemInfoGroupDto
+DEBUG 2023-01-06 12:03:31,433 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Diagnosis.Dto.TbmDiagnosisDataDto
+DEBUG 2023-01-06 12:03:31,433 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Diagnosis.Dto.TbmDiagnosisDto
+DEBUG 2023-01-06 12:03:31,434 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.ClientCabitCRDto
+DEBUG 2023-01-06 12:03:31,434 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.ClientInfoOfPrintPreviewDto
+DEBUG 2023-01-06 12:03:31,434 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.ClientRegForPrintPreviewDto
+DEBUG 2023-01-06 12:03:31,435 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.ClientRegUpCatDto
+DEBUG 2023-01-06 12:03:31,435 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.CusCabitLQDto
+DEBUG 2023-01-06 12:03:31,435 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.CustomerForPrintPreviewDto
+DEBUG 2023-01-06 12:03:31,435 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.CustomerRegForPrintPreviewDto
+DEBUG 2023-01-06 12:03:31,436 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.CustomerUpCatDto
+DEBUG 2023-01-06 12:03:31,436 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.ReportOccQueAllDto
+DEBUG 2023-01-06 12:03:31,436 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.ReportOccQuesDto
+DEBUG 2023-01-06 12:03:31,437 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.ReportOccQuesFamilyHistoryDto
+DEBUG 2023-01-06 12:03:31,437 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.ReportOccQuesPastHistoryDto
+DEBUG 2023-01-06 12:03:31,438 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.ReportOccQuesSymNameDto
+DEBUG 2023-01-06 12:03:31,438 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.TbmCabinetDto
+DEBUG 2023-01-06 12:03:31,438 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.TjlCusCabitCRDto
+DEBUG 2023-01-06 12:03:31,438 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.TjlCusCabitDto
+DEBUG 2023-01-06 12:03:31,438 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.CustomerReportDto
+DEBUG 2023-01-06 12:03:31,439 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.CustomerReportFullDto
+DEBUG 2023-01-06 12:03:31,439 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerRegisterSummarize.Dto.CustomerRegisterSummarizeDto
+DEBUG 2023-01-06 12:03:31,439 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReSultStatus.Dto.AddResultSetDto
+DEBUG 2023-01-06 12:03:31,439 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReSultStatus.Dto.FullReSultSetDto
+DEBUG 2023-01-06 12:03:31,439 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReSultStatus.Dto.ReSultCusGroupDto
+DEBUG 2023-01-06 12:03:31,440 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReSultStatus.Dto.ReSultDepartDto
+DEBUG 2023-01-06 12:03:31,440 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReSultStatus.Dto.ReSultCusItemDto
+DEBUG 2023-01-06 12:03:31,440 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReSultStatus.Dto.ReSultSetDto
+DEBUG 2023-01-06 12:03:31,441 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.AbpUsersDto
+DEBUG 2023-01-06 12:03:31,441 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.ApplicationDto
+DEBUG 2023-01-06 12:03:31,441 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.CardToSuitNameDto
+DEBUG 2023-01-06 12:03:31,441 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.CustomerAddPackageDto
+DEBUG 2023-01-06 12:03:31,442 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.CustomerAddPackageItemDto
+DEBUG 2023-01-06 12:03:31,442 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.CustomerQuestionDto
+DEBUG 2023-01-06 12:03:31,442 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.CustomerRegCostDto
+DEBUG 2023-01-06 12:03:31,442 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.CustomerRegRosterDto
+DEBUG 2023-01-06 12:03:31,443 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.JLItemGroupDto
+DEBUG 2023-01-06 12:03:31,444 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.OccQueCusDto
+DEBUG 2023-01-06 12:03:31,444 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.OneAddQuestionsDto
+DEBUG 2023-01-06 12:03:31,444 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.PersonTypeDto
+DEBUG 2023-01-06 12:03:31,444 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.QueryAllForNumberDto
+DEBUG 2023-01-06 12:03:31,445 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.QueryAllForPayMoneyDto
+DEBUG 2023-01-06 12:03:31,445 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.QueryAllForPersonDto
+DEBUG 2023-01-06 12:03:31,446 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.StartupAlertCusRegDto
+DEBUG 2023-01-06 12:03:31,446 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.StartupAlertDto
+DEBUG 2023-01-06 12:03:31,446 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.CustomerRegSimpleViewDto
+DEBUG 2023-01-06 12:03:31,447 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.CustomerRegOrItemViewDto
+DEBUG 2023-01-06 12:03:31,448 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.GuideUpdateCustomerItemGroupDto
+DEBUG 2023-01-06 12:03:31,448 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.GuideUpdateCustomerRegDto
+DEBUG 2023-01-06 12:03:31,449 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.CustomerItemGroupBarItemDto
+DEBUG 2023-01-06 12:03:31,449 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.CustomerRegViewDto
+DEBUG 2023-01-06 12:03:31,450 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.GroupCusReg
+DEBUG 2023-01-06 12:03:31,451 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.CustomerRegDto
+DEBUG 2023-01-06 12:03:31,452 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.CustomerEssentialInfoViewDto
+DEBUG 2023-01-06 12:03:31,453 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.CustomerRegEssentialInfoViewDto
+DEBUG 2023-01-06 12:03:31,453 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.ClientRegDto
+DEBUG 2023-01-06 12:03:31,453 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.ClientTeamInfoDto
+DEBUG 2023-01-06 12:03:31,454 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.QueryClientInfoDto
+DEBUG 2023-01-06 12:03:31,454 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.QueryCustomerDto
+DEBUG 2023-01-06 12:03:31,455 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.QueryCustomerRegDto
+DEBUG 2023-01-06 12:03:31,456 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.TjlCustomerDto
+DEBUG 2023-01-06 12:03:31,456 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.TjlCustomerItemGroupDto
+DEBUG 2023-01-06 12:03:31,457 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.TjlCustomerRegDto
+DEBUG 2023-01-06 12:03:31,458 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CrossTable.Dto.CusGiveUpDto
+DEBUG 2023-01-06 12:03:31,458 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CrossTable.Dto.CustomerRegForCrossTableDto
+DEBUG 2023-01-06 12:03:31,459 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CrossTable.Dto.CustomerRegForCrossTableViewDto
+DEBUG 2023-01-06 12:03:31,460 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CrossTable.Dto.CustomerBloodNumDto
+DEBUG 2023-01-06 12:03:31,460 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CrossTable.Dto.CustomerItemGroupDto
+DEBUG 2023-01-06 12:03:31,460 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CrossTable.Dto.CustomerRegItemDto
+DEBUG 2023-01-06 12:03:31,461 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Critical.Dto.CriticalDto
+DEBUG 2023-01-06 12:03:31,461 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Crisis.Dto.CallBackDto
+DEBUG 2023-01-06 12:03:31,461 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Crisis.Dto.ReviewSetDto
+DEBUG 2023-01-06 12:03:31,461 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Crisis.Dto.TjlCrisisSetDto
+DEBUG 2023-01-06 12:03:31,462 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.CreateClientRegDto
+DEBUG 2023-01-06 12:03:31,462 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.ClientCustomerRegDto
+DEBUG 2023-01-06 12:03:31,463 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.ClientRegLQDto
+DEBUG 2023-01-06 12:03:31,463 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.GetClientVerSionDto
+DEBUG 2023-01-06 12:03:31,463 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.ShortMessageDto
+DEBUG 2023-01-06 12:03:31,464 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.UpClientMZDto
+DEBUG 2023-01-06 12:03:31,464 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.ClientInfoRegDto
+DEBUG 2023-01-06 12:03:31,464 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.ClientTeamInfoesViewDto
+DEBUG 2023-01-06 12:03:31,464 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.ClientTeamInfosDto
+DEBUG 2023-01-06 12:03:31,464 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.ClientTeamRegitemViewDto
+DEBUG 2023-01-06 12:03:31,465 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.CreateClientTeamInfoesDto
+DEBUG 2023-01-06 12:03:31,466 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.CreateClientTeamRegItemDto
+DEBUG 2023-01-06 12:03:31,466 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.CustomerRegsViewDto
+DEBUG 2023-01-06 12:03:31,467 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.CustomersViewDto
+DEBUG 2023-01-06 12:03:31,467 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.RegsChargeCusDto
+DEBUG 2023-01-06 12:03:31,467 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.GroupClientItemsDto
+DEBUG 2023-01-06 12:03:31,467 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.FullClientRegDto
+DEBUG 2023-01-06 12:03:31,467 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Common.Dto.CreateOpLogDto
+DEBUG 2023-01-06 12:03:31,468 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Common.Dto.AdministrativeDivisionDto
+DEBUG 2023-01-06 12:03:31,468 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ClientGroupMoneyDto
+DEBUG 2023-01-06 12:03:31,468 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ClientInfoSimpDto
+DEBUG 2023-01-06 12:03:31,468 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ClientPaymentDto
+DEBUG 2023-01-06 12:03:31,469 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CusChageListDto
+DEBUG 2023-01-06 12:03:31,469 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CusGroupTTDto
+DEBUG 2023-01-06 12:03:31,469 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CusPayTTDto
+DEBUG 2023-01-06 12:03:31,469 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CustomerGroupMoneyDto
+DEBUG 2023-01-06 12:03:31,470 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CustomerSFTypeCusRegDto
+DEBUG 2023-01-06 12:03:31,470 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CustomerSFTypeDto
+DEBUG 2023-01-06 12:03:31,470 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CusTTDto
+DEBUG 2023-01-06 12:03:31,471 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.DoctorDeparmentDto
+DEBUG 2023-01-06 12:03:31,471 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.GroupClientNameDto
+DEBUG 2023-01-06 12:03:31,471 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.IndividualityDto
+DEBUG 2023-01-06 12:03:31,471 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ReceiptClientDto
+DEBUG 2023-01-06 12:03:31,472 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.showCustomerItemGroupsDto
+DEBUG 2023-01-06 12:03:31,472 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.WebChargeDto
+DEBUG 2023-01-06 12:03:31,473 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ChargeClientDto
+DEBUG 2023-01-06 12:03:31,473 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ChargeClientRegDto
+DEBUG 2023-01-06 12:03:31,473 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ChargeCusDto
+DEBUG 2023-01-06 12:03:31,474 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ChargeCusInfoDto
+DEBUG 2023-01-06 12:03:31,474 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ChargeCusRegDto
+DEBUG 2023-01-06 12:03:31,475 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ChargeCusStateDto
+DEBUG 2023-01-06 12:03:31,475 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ChargeTeamMoneyViewDto
+DEBUG 2023-01-06 12:03:31,475 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ChargeTeamNameDto
+DEBUG 2023-01-06 12:03:31,475 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ChargeTypeDto
+DEBUG 2023-01-06 12:03:31,476 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ChargQueryCusDto
+DEBUG 2023-01-06 12:03:31,477 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ClientPayCusLisViewDto
+DEBUG 2023-01-06 12:03:31,477 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ClientPayMoneyViewDto
+DEBUG 2023-01-06 12:03:31,477 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CreateInvoiceRecordDto
+DEBUG 2023-01-06 12:03:31,477 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CreateMReceiptInfoDetailedDto
+DEBUG 2023-01-06 12:03:31,477 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CreatePaymentDto
+DEBUG 2023-01-06 12:03:31,478 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CreateReceiptInfoDto
+DEBUG 2023-01-06 12:03:31,478 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CreateTjlMDiurnalTableDto
+DEBUG 2023-01-06 12:03:31,478 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CusGroupMoneyDto
+DEBUG 2023-01-06 12:03:31,478 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CusPayMoneyViewDto
+DEBUG 2023-01-06 12:03:31,478 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CusRegSimpleDto
+DEBUG 2023-01-06 12:03:31,479 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.InvoiceRecordViewDto
+DEBUG 2023-01-06 12:03:31,479 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.MReceiptClientDto
+DEBUG 2023-01-06 12:03:31,479 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.MReceiptInfoDetailedViewDto
+DEBUG 2023-01-06 12:03:31,479 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.MReceiptInfoPerDto
+DEBUG 2023-01-06 12:03:31,480 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.MReceiptInfoPerViewDto
+DEBUG 2023-01-06 12:03:31,480 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.MReceiptOrCustomerViewDto
+DEBUG 2023-01-06 12:03:31,480 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.PersonnelCategoryDto
+DEBUG 2023-01-06 12:03:31,480 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ReceiptInfoPerViewDto
+DEBUG 2023-01-06 12:03:31,480 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.UpdateTjlMcusMoneyDto
+DEBUG 2023-01-06 12:03:31,480 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ChargeGroupsDto
+DEBUG 2023-01-06 12:03:31,481 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ChargeInfoDto
+DEBUG 2023-01-06 12:03:31,482 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.MDiurnalTableDto
+DEBUG 2023-01-06 12:03:31,482 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.MInvoiceRecordDto
+DEBUG 2023-01-06 12:03:31,482 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.MReceiptInfoDto
+DEBUG 2023-01-06 12:03:31,483 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.MRiseDto
+DEBUG 2023-01-06 12:03:31,484 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CarSend.Dto.SaveTbmCardDto
+DEBUG 2023-01-06 12:03:31,484 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CarSend.Dto.SimpCardTypeDto
+DEBUG 2023-01-06 12:03:31,484 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BasicDictionary.Dto.CreateBasicDictionaryDto
+DEBUG 2023-01-06 12:03:31,484 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BasicDictionary.Dto.UpdateBasicDictionaryDto
+DEBUG 2023-01-06 12:03:31,484 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BasicDictionary.Dto.BasicDictionaryDto
+DEBUG 2023-01-06 12:03:31,484 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.CreateCustomerBarPrintInfoDto
+DEBUG 2023-01-06 12:03:31,485 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.CustomerBarPrintInfoItemDto
+DEBUG 2023-01-06 12:03:31,485 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.CustomerBarPrintInfoQueryDto
+DEBUG 2023-01-06 12:03:31,485 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.CustomerBarPrintInfoDto
+DEBUG 2023-01-06 12:03:31,485 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.BarCodeViewDto
+DEBUG 2023-01-06 12:03:31,485 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.BarItembViewDto
+DEBUG 2023-01-06 12:03:31,485 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.CreateOrUpdateBarSettingDto
+DEBUG 2023-01-06 12:03:31,486 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.BarItemViewDto
+DEBUG 2023-01-06 12:03:31,486 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.SimpleBarSettingDto
+DEBUG 2023-01-06 12:03:31,486 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.ItemGroupViewDto
+DEBUG 2023-01-06 12:03:31,486 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.BarItemDto
+DEBUG 2023-01-06 12:03:31,486 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.FullBarItemDto
+DEBUG 2023-01-06 12:03:31,486 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.FullBarSettingDto
+DEBUG 2023-01-06 12:03:31,487 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.BarSettingDto
+DEBUG 2023-01-06 12:03:31,487 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarPrintInfoItemGroup.Dto.CreateBarPrintInfoItemGroupDto
+DEBUG 2023-01-06 12:03:31,487 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarPrintInfoItemGroup.Dto.BarPrintInfoItemGroupQueryDto
+DEBUG 2023-01-06 12:03:31,487 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarPrintInfoItemGroup.Dto.BarPrintInfoItemGroupDto
+DEBUG 2023-01-06 12:03:31,487 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Web.Models.Account.TenantChangeViewModel
+DEBUG 2023-01-06 12:03:31,488 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2023-01-06 12:03:35,371 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.WorkType.IWorkTypeAppService' with service name 'app/workType'.
+DEBUG 2023-01-06 12:03:35,374 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.WeChat.IWeChatAppService' with service name 'app/weChat'.
+DEBUG 2023-01-06 12:03:35,376 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Test.ITestTable1AppService' with service name 'app/testTable1'.
+DEBUG 2023-01-06 12:03:35,379 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.TargetDisease.ITargetDiseaseAppService' with service name 'app/targetDisease'.
+DEBUG 2023-01-06 12:03:35,381 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2023-01-06 12:03:35,382 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2023-01-06 12:03:35,384 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2023-01-06 12:03:35,385 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.InvoiceManagement.IInvoiceManagementAppService' with service name 'app/invoiceManagement'.
+DEBUG 2023-01-06 12:03:35,386 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2023-01-06 12:03:35,388 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.BaseModule.IFormModuleAppService' with service name 'app/formModule'.
+DEBUG 2023-01-06 12:03:35,390 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.SetSysSetting.ISetSysSettingAppService' with service name 'app/setSysSetting'.
+DEBUG 2023-01-06 12:03:35,391 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Users.IFormRoleAppService' with service name 'app/formRole'.
+DEBUG 2023-01-06 12:03:35,392 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Users.IPersonnelIndividuationConfigAppService' with service name 'app/personnelIndividuationConfig'.
+DEBUG 2023-01-06 12:03:35,394 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2023-01-06 12:03:35,395 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.SummarizeAdvice.ISummarizeAdviceAppService' with service name 'app/summarizeAdvice'.
+DEBUG 2023-01-06 12:03:35,397 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Scheduling.ISchedulingAppService' with service name 'app/scheduling'.
+DEBUG 2023-01-06 12:03:35,398 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.ReVisitTime.IReVisitTimeAppService' with service name 'app/reVisitTime'.
+DEBUG 2023-01-06 12:03:35,400 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Regist.IRegistAppService' with service name 'app/regist'.
+DEBUG 2023-01-06 12:03:35,402 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Questionnaire.IQuestionnaireAppService' with service name 'app/questionnaire'.
+DEBUG 2023-01-06 12:03:35,404 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Picture.IPictureAppService' with service name 'app/picture'.
+DEBUG 2023-01-06 12:03:35,405 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.PhysicalExamination.IPhysicalExaminationAppService' with service name 'app/physicalExamination'.
+DEBUG 2023-01-06 12:03:35,406 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.PersonnelCategorys.IPersonnelCategoryAppService' with service name 'app/personnelCategory'.
+DEBUG 2023-01-06 12:03:35,407 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.PaymentMethod.IPaymentStatisticAppService' with service name 'app/paymentStatistic'.
+DEBUG 2023-01-06 12:03:35,409 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.PaymentMethod.IPaymentMethodAppService' with service name 'app/paymentMethod'.
+DEBUG 2023-01-06 12:03:35,410 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OutInspects.IOutInspectsQueryAppService' with service name 'app/outInspectsQuery'.
+DEBUG 2023-01-06 12:03:35,412 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccupationalDiseases.OPostState.IPostStateAppService' with service name 'app/postState'.
+DEBUG 2023-01-06 12:03:35,413 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccupationalDiseases.RiskFactor.IOConDictionaryAppService' with service name 'app/oConDictionary'.
+DEBUG 2023-01-06 12:03:35,415 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccupationalDiseases.ORiskFactor.IRiskFactorAppService' with service name 'app/riskFactor'.
+DEBUG 2023-01-06 12:03:35,416 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccTargetDisease.IOccTargetDiseaseAppService' with service name 'app/occTargetDisease'.
+DEBUG 2023-01-06 12:03:35,418 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccReview.IOccReviewAppService' with service name 'app/occReview'.
+DEBUG 2023-01-06 12:03:35,419 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccNationalDisease.IOccNationalDiseaseAppService' with service name 'app/occNationalDisease'.
+DEBUG 2023-01-06 12:03:35,420 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccHazardFactor.IOccHazardFactorAppService' with service name 'app/occHazardFactor'.
+DEBUG 2023-01-06 12:03:35,422 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccHarmFul.IOccHarmFulAppService' with service name 'app/occHarmFul'.
+DEBUG 2023-01-06 12:03:35,423 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccDisRequisition.IOccDisRequisitionAppService' with service name 'app/occDisRequisition'.
+DEBUG 2023-01-06 12:03:35,424 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccDisProposalNew.IOccDisProposalNewAppService' with service name 'app/occDisProposalNew'.
+DEBUG 2023-01-06 12:03:35,426 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccdiseaseSet.OccdiseaseMain.IOccDiseaseAppService' with service name 'app/occDisease'.
+DEBUG 2023-01-06 12:03:35,427 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccdiseaseConsulitation.IOccdiseaseConsulitationAppService' with service name 'app/occdiseaseConsulitation'.
+DEBUG 2023-01-06 12:03:35,429 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccDayStatic.IOccDayStaticAppService' with service name 'app/occDayStatic'.
+DEBUG 2023-01-06 12:03:35,430 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccCusInfoOut.IOccCusInfoOutAppService' with service name 'app/occCusInfoOut'.
+DEBUG 2023-01-06 12:03:35,432 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccConclusionYear.IOccConclusionYearAppService' with service name 'app/occConclusionYear'.
+DEBUG 2023-01-06 12:03:35,433 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccConclusionTarget.IOccConclusionTargetAppService' with service name 'app/occConclusionTarget'.
+DEBUG 2023-01-06 12:03:35,435 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccGroupReport.IOccGroupReportAppService' with service name 'app/occGroupReport'.
+DEBUG 2023-01-06 12:03:35,436 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccConclusionSuspected.IOccConclusionSuspectedAppService' with service name 'app/occConclusionSuspected'.
+DEBUG 2023-01-06 12:03:35,438 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccConclusionStatistics.IOccConclusionStatisticsAppService' with service name 'app/occConclusionStatistics'.
+DEBUG 2023-01-06 12:03:35,440 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccConclusioncontraindication.IOccupationalcontraindicationAppService' with service name 'app/occupationalcontraindication'.
+DEBUG 2023-01-06 12:03:35,441 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccAbnormalResult.IOccAbnormalResultAppService' with service name 'app/occAbnormalResult'.
+DEBUG 2023-01-06 12:03:35,443 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OAApproval.IOAApprovalAppService' with service name 'app/oAApproval'.
+DEBUG 2023-01-06 12:03:35,444 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.MRise.IMRiseAppService' with service name 'app/mRise'.
+DEBUG 2023-01-06 12:03:35,447 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.MemberShipCard.IMemberShipCardAppService' with service name 'app/memberShipCard'.
+DEBUG 2023-01-06 12:03:35,449 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Market.IComplaintAppService' with service name 'app/complaint'.
+DEBUG 2023-01-06 12:03:35,451 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Market.IContractAppService' with service name 'app/contract'.
+DEBUG 2023-01-06 12:03:35,453 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.ItemSuit.IItemSuitAppService' with service name 'app/itemSuit'.
+DEBUG 2023-01-06 12:03:35,454 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.ItemInfo.IItemInfoAppService' with service name 'app/itemInfo'.
+DEBUG 2023-01-06 12:03:35,456 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.ItemGroup.IItemGroupAppService' with service name 'app/itemGroup'.
+DEBUG 2023-01-06 12:03:35,458 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.InterfaceItemComparison.IInterfaceEmployeeComparison' with service name 'app/interfaceEmployeeComparison'.
+DEBUG 2023-01-06 12:03:35,459 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.InterfaceItemComparison.IInterfaceItemAppService' with service name 'app/interfaceItem'.
+DEBUG 2023-01-06 12:03:35,461 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.InterfaceItemComparison.IInterfaceItemGroupComparison' with service name 'app/interfaceItemGroupComparison'.
+DEBUG 2023-01-06 12:03:35,464 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.InterfaceItemComparison.IInterfaceItemComparisonAppService' with service name 'app/interfaceItemComparison'.
+DEBUG 2023-01-06 12:03:35,467 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.IDNumber.IIDNumberAppService' with service name 'app/iDNumber'.
+DEBUG 2023-01-06 12:03:35,469 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.GuideListCollection.IGuideListCollectionAppService' with service name 'app/guideListCollection'.
+DEBUG 2023-01-06 12:03:35,470 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.FrmSeleteItemGroup.ISeleteItemGroupAppService' with service name 'app/seleteItemGroup'.
+DEBUG 2023-01-06 12:03:35,472 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Dictionary.IDictionaryAppService' with service name 'app/dictionary'.
+DEBUG 2023-01-06 12:03:35,474 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Department.IDepartmentAppService' with service name 'app/department'.
+DEBUG 2023-01-06 12:03:35,476 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Compose.IComposeAppService' with service name 'app/compose'.
+DEBUG 2023-01-06 12:03:35,478 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.DailyNewspaper.IDailyNewspaperAppService' with service name 'app/dailyNewspaper'.
+DEBUG 2023-01-06 12:03:35,482 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.ClientInfoes.IClientInfoesAppService' with service name 'app/clientInfoes'.
+DEBUG 2023-01-06 12:03:35,484 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.HistoryComparison.IHistoryComparisonAppService' with service name 'app/historyComparison'.
+DEBUG 2023-01-06 12:03:35,486 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.GroupReport.IGroupReportAppService' with service name 'app/groupReport'.
+DEBUG 2023-01-06 12:03:35,487 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.FrmMakeCollect.IFrmMakeCollectAppService' with service name 'app/frmMakeCollect'.
+DEBUG 2023-01-06 12:03:35,489 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Foreground.IBloodWorkstationAppService' with service name 'app/bloodWorkstation'.
+DEBUG 2023-01-06 12:03:35,490 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.ICustomerRegisterItemAppService' with service name 'app/customerRegisterItem'.
+DEBUG 2023-01-06 12:03:35,492 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.ICustomerRegisterDepartmentSummaryAppService' with service name 'app/customerRegisterDepartmentSummary'.
+DEBUG 2023-01-06 12:03:35,494 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.IInspectionTotalAppService' with service name 'app/inspectionTotal'.
+DEBUG 2023-01-06 12:03:35,496 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.IDoctorStationAppService' with service name 'app/doctorStation'.
+DEBUG 2023-01-06 12:03:35,498 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Diagnosis.IDiagnosisAppService' with service name 'app/diagnosis'.
+DEBUG 2023-01-06 12:03:35,500 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.IPrintPreviewAppService' with service name 'app/printPreview'.
+DEBUG 2023-01-06 12:03:35,502 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.ICustomerReportAppService' with service name 'app/customerReport'.
+DEBUG 2023-01-06 12:03:35,503 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.CustomerRegister.ICustomerRegisterAppService' with service name 'app/customerRegister'.
+DEBUG 2023-01-06 12:03:35,505 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.CustomerRegisterSummarize.ICustomerRegisterSummarizeAppService' with service name 'app/customerRegisterSummarize'.
+DEBUG 2023-01-06 12:03:35,507 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.CustomerRegisterItemPicture.ICustomerRegisterItemPictureAppService' with service name 'app/customerRegisterItemPicture'.
+DEBUG 2023-01-06 12:03:35,508 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.CusReSultStatus.ICusReSultStatusAppService' with service name 'app/cusReSultStatus'.
+DEBUG 2023-01-06 12:03:35,510 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.CusReg.ICustomerAppService' with service name 'app/customer'.
+DEBUG 2023-01-06 12:03:35,513 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.CrossTable.ICrossTableAppService' with service name 'app/crossTable'.
+DEBUG 2023-01-06 12:03:35,515 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Critical.ICriticalAppService' with service name 'app/critical'.
+DEBUG 2023-01-06 12:03:35,517 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Crisis.ICrisisAppService' with service name 'app/crisis'.
+DEBUG 2023-01-06 12:03:35,518 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Company.IClientRegAppService' with service name 'app/clientReg'.
+DEBUG 2023-01-06 12:03:35,520 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Common.ICommonAppService' with service name 'app/common'.
+DEBUG 2023-01-06 12:03:35,522 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.ClearData.IClearDataAppService' with service name 'app/clearData'.
+DEBUG 2023-01-06 12:03:35,523 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Charge.IChargeAppService' with service name 'app/charge'.
+DEBUG 2023-01-06 12:03:35,525 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.CarSend.ICardSendAppService' with service name 'app/cardSend'.
+DEBUG 2023-01-06 12:03:35,527 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.BasicDictionary.IBasicDictionaryAppService' with service name 'app/basicDictionary'.
+DEBUG 2023-01-06 12:03:35,529 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.BarPrint.IBarPrintAppService' with service name 'app/barPrint'.
+DEBUG 2023-01-06 12:03:35,531 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.BarSetting.IBarSettingAppService' with service name 'app/barSetting'.
+DEBUG 2023-01-06 12:03:35,533 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.BarPrintInfoItemGroup.IBarPrintInfoItemGroupAppService' with service name 'app/barPrintInfoItemGroup'.
+DEBUG 2023-01-06 12:03:35,535 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2023-01-06 12:03:35,536 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.AddStatistics.IAddStatisticsAppService' with service name 'app/addStatistics'.
+WARN  2023-01-06 12:03:45,727 [13   ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   在 Abp.Authorization.AuthorizationHelper.Authorize(IEnumerable`1 authorizeAttributes)
+   在 Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type)
+   在 Abp.Authorization.AuthorizationHelper.Authorize(MethodInfo methodInfo, Type type)
+   在 Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   在 Abp.Authorization.AuthorizationHelper.Authorize(IEnumerable`1 authorizeAttributes)
+   在 Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type)
+   在 Abp.Authorization.AuthorizationHelper.Authorize(MethodInfo methodInfo, Type type)
+   在 Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+ERROR 2023-01-06 12:39:38,872 [150  ] System.Web.Controllers.PictureController - 内存不足。
+System.OutOfMemoryException: 内存不足。
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 Sw.Hospital.HealthExaminationSystem.Web.Controllers.PictureController.Uploading(HttpPostedFileWrapper file, String belong, Nullable`1 id) 位置 E:\秉泰源码\秉泰体检V9新\02项目研发\P01体检系统\05编码过程\Mains\HealthExaminationSystem.Web\Controllers\PictureController.cs:行号 68
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+DEBUG 2023-01-06 12:42:38,389 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2023-01-06 12:42:41,698 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2023-01-06 12:42:41,708 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Sw.Hospital.HealthExaminationSystem.Web.MyProjectWebModule, HealthExaminationSystem.Web, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-01-06 12:42:41,711 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Sw.Hospital.HealthExaminationSystem.EntityFramework.MyProjectDataModule, HealthExaminationSystem.EntityFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-01-06 12:42:41,711 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=6.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-01-06 12:42:41,711 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=6.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-01-06 12:42:41,711 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=6.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-01-06 12:42:41,711 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=6.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-01-06 12:42:41,712 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=6.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-01-06 12:42:41,712 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=6.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-01-06 12:42:41,713 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Sw.Hospital.HealthExaminationSystem.Core.MyProjectCoreModule, HealthExaminationSystem.Core, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-01-06 12:42:41,713 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Sw.Hospital.HealthExaminationSystem.Application.MyProjectApplicationModule, HealthExaminationSystem.Application, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-01-06 12:42:41,713 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=6.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-01-06 12:42:41,714 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Sw.Hospital.HealthExaminationSystem.WebApi.Api.MyProjectWebApiModule, HealthExaminationSystem.WebApi, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-01-06 12:42:41,714 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=6.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-01-06 12:42:41,714 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=6.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-01-06 12:42:41,714 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=6.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-01-06 12:42:41,714 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=6.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-01-06 12:42:41,715 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=6.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-01-06 12:42:41,720 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2023-01-06 12:42:42,395 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-01-06 12:42:42,396 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-01-06 12:42:42,396 [1    ] o.Configuration.LanguageManagementConfig - Converted MyProject (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-01-06 12:42:42,396 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2023-01-06 12:42:43,142 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Sw.Hospital.HealthExaminationSystem.EntityFramework.EntityFramework.MyProjectDbContext, HealthExaminationSystem.EntityFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2023-01-06 12:42:45,184 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2023-01-06 12:42:45,290 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2023-01-06 12:42:45,360 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2023-01-06 12:42:45,397 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MyProject
+DEBUG 2023-01-06 12:42:45,442 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2023-01-06 12:42:45,524 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2023-01-06 12:42:45,615 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 500 classes define auto mapping attributes
+DEBUG 2023-01-06 12:42:45,615 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.WorkType.Dto.WorkTypeDto
+DEBUG 2023-01-06 12:42:45,621 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.WeChat.Dto.ClientInfoDto
+DEBUG 2023-01-06 12:42:45,622 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.WeChat.Dto.CustomerJson
+DEBUG 2023-01-06 12:42:45,622 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.WeChat.Dto.DepDto
+DEBUG 2023-01-06 12:42:45,623 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.WeChat.Dto.RepCustomerRegDto
+DEBUG 2023-01-06 12:42:45,623 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.WeChat.Dto.CustomerSummarizeDto
+DEBUG 2023-01-06 12:42:45,624 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.WeChat.Dto.InCusInfoDto
+DEBUG 2023-01-06 12:42:45,624 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.WeChat.Dto.TjlCusQuestionDto
+DEBUG 2023-01-06 12:42:45,625 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.WeChat.Dto.TjlQuestionBomDto
+DEBUG 2023-01-06 12:42:45,625 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.WeChat.Dto.TjlQuestiontemDto
+DEBUG 2023-01-06 12:42:45,625 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.WeChat.Dto.UserDto
+DEBUG 2023-01-06 12:42:45,627 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.WeChat.Dto.WXClientInfoDto
+DEBUG 2023-01-06 12:42:45,628 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.WeChat.Dto.WXClientRegDto
+DEBUG 2023-01-06 12:42:45,629 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.WeChat.Dto.WXClientTeamInfoDto
+DEBUG 2023-01-06 12:42:45,630 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Test.Dto.TestTable11Dto
+DEBUG 2023-01-06 12:42:45,630 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Test.Dto.TestTable1Dto
+DEBUG 2023-01-06 12:42:45,630 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.TargetDisease.Dto.DiseaseContraindicationExplainDto
+DEBUG 2023-01-06 12:42:45,630 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.TargetDisease.Dto.SearchOccupationalDiseaseIncludeItemGroupDto
+DEBUG 2023-01-06 12:42:45,631 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.TargetDisease.Dto.UpdateDiseaseContraindicationExplainDto
+DEBUG 2023-01-06 12:42:45,631 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.TargetDisease.Dto.UpdateHumanBodySystemDto
+DEBUG 2023-01-06 12:42:45,631 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.TargetDisease.Dto.UpdateSymptomDto
+DEBUG 2023-01-06 12:42:45,631 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2023-01-06 12:42:45,631 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Sessions.Dto.UserLoginInfoDto
+DEBUG 2023-01-06 12:42:45,632 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Roles.Dto.CreateRoleDto
+DEBUG 2023-01-06 12:42:45,632 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Roles.Dto.PermissionDto
+DEBUG 2023-01-06 12:42:45,632 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Roles.Dto.RoleDto
+DEBUG 2023-01-06 12:42:45,632 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2023-01-06 12:42:45,632 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.MultiTenancy.Dto.EditTenantDto
+DEBUG 2023-01-06 12:42:45,632 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.MultiTenancy.Dto.TenantDto
+DEBUG 2023-01-06 12:42:45,632 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InvoiceManagement.Dto.MReceiptManagerDto
+DEBUG 2023-01-06 12:42:45,633 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BaseModule.Dto.FormModuleDto
+DEBUG 2023-01-06 12:42:45,633 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.SetSysSetting.Dto.QuerySetSysSettingDto
+DEBUG 2023-01-06 12:42:45,633 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.SetSysSetting.Dto.SetSysSettingDto
+DEBUG 2023-01-06 12:42:45,633 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Users.Dto.LoginlistDto
+DEBUG 2023-01-06 12:42:45,633 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Users.Dto.CreateFormRoleDto
+DEBUG 2023-01-06 12:42:45,633 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Users.Dto.CreateOrUpdatePersonnelIndividuationConfigDto
+DEBUG 2023-01-06 12:42:45,633 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Users.Dto.CreateUserDto
+DEBUG 2023-01-06 12:42:45,634 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Users.Dto.CreateUserFormDto
+DEBUG 2023-01-06 12:42:45,634 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Users.Dto.CreateUserFormTeandIDDto
+DEBUG 2023-01-06 12:42:45,634 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Users.Dto.FormModuleViewDto
+DEBUG 2023-01-06 12:42:45,634 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Users.Dto.FormRoleDto
+DEBUG 2023-01-06 12:42:45,634 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Users.Dto.FormRoleViewDto
+DEBUG 2023-01-06 12:42:45,634 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Users.Dto.PersonnelIndividuationConfigDto
+DEBUG 2023-01-06 12:42:45,634 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Users.Dto.StartupMenuBarDto
+DEBUG 2023-01-06 12:42:45,635 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Users.Dto.UpdateFormRoleDto
+DEBUG 2023-01-06 12:42:45,635 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Users.Dto.UpdateUserDto
+DEBUG 2023-01-06 12:42:45,635 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Users.Dto.UpdateUserFormDto
+DEBUG 2023-01-06 12:42:45,635 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Users.Dto.UserClientZKDto
+DEBUG 2023-01-06 12:42:45,635 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Users.Dto.UserDto
+DEBUG 2023-01-06 12:42:45,635 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Users.Dto.UserFormDto
+DEBUG 2023-01-06 12:42:45,636 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Users.Dto.UserIndividuationConfigsDto
+DEBUG 2023-01-06 12:42:45,636 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Users.Dto.UserRegsDto
+DEBUG 2023-01-06 12:42:45,636 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Users.Dto.UserForComboDto
+DEBUG 2023-01-06 12:42:45,636 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Users.Dto.UserViewDto
+DEBUG 2023-01-06 12:42:45,637 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.SummarizeAdvice.Dto.TbmSummHBDto
+DEBUG 2023-01-06 12:42:45,637 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.SummarizeAdvice.Dto.CreateOrUpdateSummarizeAdviceDto
+DEBUG 2023-01-06 12:42:45,638 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.SummarizeAdvice.Dto.SumConflictDto
+DEBUG 2023-01-06 12:42:45,638 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.SummarizeAdvice.Dto.SummarizeAdviceDto
+DEBUG 2023-01-06 12:42:45,639 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.SummarizeAdvice.Dto.FullSummarizeAdviceDto
+DEBUG 2023-01-06 12:42:45,639 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.SummarizeAdvice.Dto.SimpleSummarizeAdviceDto
+DEBUG 2023-01-06 12:42:45,640 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Scheduling.Dto.ItemGroupOfScheduleDto
+DEBUG 2023-01-06 12:42:45,640 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Scheduling.Dto.SchedulingNewDto
+DEBUG 2023-01-06 12:42:45,641 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Scheduling.Dto.SimpleClientRegDto
+DEBUG 2023-01-06 12:42:45,641 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Scheduling.Dto.SimpleClientInfoDto
+DEBUG 2023-01-06 12:42:45,641 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Scheduling.Dto.SimpleClientRegTeamDto
+DEBUG 2023-01-06 12:42:45,641 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Scheduling.Dto.SimpleCustomerRegDto
+DEBUG 2023-01-06 12:42:45,643 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Scheduling.Dto.CustomerSchedulingInput
+DEBUG 2023-01-06 12:42:45,643 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Scheduling.Dto.ClientTeamSchedulingInput
+DEBUG 2023-01-06 12:42:45,643 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Scheduling.Dto.SchedulingDto
+DEBUG 2023-01-06 12:42:45,643 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Scheduling.Dto.SimpleCustomerDto
+DEBUG 2023-01-06 12:42:45,643 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ReVisitTime.Dto.InsertReVisitTimeDto
+DEBUG 2023-01-06 12:42:45,643 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ReVisitTime.Dto.QueryCheckReview
+DEBUG 2023-01-06 12:42:45,644 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ReVisitTime.Dto.SearchItemGroupDto
+DEBUG 2023-01-06 12:42:45,644 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ReVisitTime.Dto.SearchReVisitTimeDto
+DEBUG 2023-01-06 12:42:45,644 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ReVisitTime.Dto.TbmItemGroupDto
+DEBUG 2023-01-06 12:42:45,644 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Questionnaire.Dto.QuestionBomDto
+DEBUG 2023-01-06 12:42:45,644 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Questionnaire.Dto.QuestionnaireDto
+DEBUG 2023-01-06 12:42:45,645 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Questionnaire.Dto.QuestiontemReportDto
+DEBUG 2023-01-06 12:42:45,645 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Questionnaire.Dto.QuestiontemDto
+DEBUG 2023-01-06 12:42:45,645 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Picture.Dto.CreateOrUpdatePictureTenIdDto
+DEBUG 2023-01-06 12:42:45,645 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Picture.Dto.CreateOrUpdatePictureDto
+DEBUG 2023-01-06 12:42:45,645 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Picture.Dto.PictureDto
+DEBUG 2023-01-06 12:42:45,645 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.PhysicalExamination.ClientInfoPhysicalDto
+DEBUG 2023-01-06 12:42:45,646 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.PhysicalExamination.ClientRegPhysicalDto
+DEBUG 2023-01-06 12:42:45,646 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.PhysicalExamination.CustomerRegPhysicalDto
+DEBUG 2023-01-06 12:42:45,646 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.PhysicalExamination.Dto.ClientTeamPhysicalDto
+DEBUG 2023-01-06 12:42:45,646 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.PhysicalExamination.Dto.CustomerPhysicalDto
+DEBUG 2023-01-06 12:42:45,647 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.PersonnelCategorys.Dto.PersonnelCategoryViewDto
+DEBUG 2023-01-06 12:42:45,647 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.PaymentMethod.Dto.MChargeTypeDto
+DEBUG 2023-01-06 12:42:45,647 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccupationalDiseases.proposal.Dto.OProposalDto
+DEBUG 2023-01-06 12:42:45,647 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccupationalDiseases.WorkType.Dto.JobCategoryDto
+DEBUG 2023-01-06 12:42:45,647 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccupationalDiseases.WorkType.Dto.PostStateDto
+DEBUG 2023-01-06 12:42:45,648 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccupationalDiseases.WorkType.Dto.WorkTypeDto
+DEBUG 2023-01-06 12:42:45,648 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccupationalDiseases.ORiskFactor.Dto.OConDictionaryDto
+DEBUG 2023-01-06 12:42:45,648 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccupationalDiseases.ORiskFactor.Dto.ORiskFactorDto
+DEBUG 2023-01-06 12:42:45,648 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccupationalDiseases.OConDictionary.Dto.ORisItemGroupDto
+DEBUG 2023-01-06 12:42:45,648 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccTargetDisease.Dto.CreateOrUpdateTargetDiseaseDto
+DEBUG 2023-01-06 12:42:45,649 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccTargetDisease.Dto.FullItemGroup
+DEBUG 2023-01-06 12:42:45,649 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccTargetDisease.Dto.OutTbmOccTargetDiseaseDto
+DEBUG 2023-01-06 12:42:45,650 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccTargetDisease.Dto.ParentTargetDiseaseDto
+DEBUG 2023-01-06 12:42:45,650 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccTargetDisease.Dto.TbmItemGroupDto
+DEBUG 2023-01-06 12:42:45,650 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccTargetDisease.Dto.TbmOccDiseaseDto
+DEBUG 2023-01-06 12:42:45,650 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccTargetDisease.Dto.TbmOccTargetDiseaseContraindicationDto
+DEBUG 2023-01-06 12:42:45,651 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccTargetDisease.Dto.TbmOccTargetDiseaseSymptomsDto
+DEBUG 2023-01-06 12:42:45,651 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccReview.Dto.CusVisitDto
+DEBUG 2023-01-06 12:42:45,651 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccReview.Dto.OutOccReviewDto
+DEBUG 2023-01-06 12:42:45,651 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccReview.Dto.SaveCusVisitManageDto
+DEBUG 2023-01-06 12:42:45,651 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccReview.Dto.VisiteCusRegDto
+DEBUG 2023-01-06 12:42:45,652 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccReview.Dto.VisiteCustomerDto
+DEBUG 2023-01-06 12:42:45,652 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccNationalDisease.Dto.CreateCountrySet
+DEBUG 2023-01-06 12:42:45,653 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccHazardFactor.Dto.CreateOrUpdateHazardFactorDto
+DEBUG 2023-01-06 12:42:45,653 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccHazardFactor.Dto.HazardFactorsProtective
+DEBUG 2023-01-06 12:42:45,653 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccHazardFactor.Dto.RadiationDto
+DEBUG 2023-01-06 12:42:45,653 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccHazardFactor.Dto.OutOccHazardFactorDto
+DEBUG 2023-01-06 12:42:45,653 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccHazardFactor.Dto.ParentHazardFactorDto
+DEBUG 2023-01-06 12:42:45,654 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccHazardFactor.Dto.ShowOccHazardFactorDto
+DEBUG 2023-01-06 12:42:45,654 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccHarmFul.Dto.OutOccFactoryDto
+DEBUG 2023-01-06 12:42:45,654 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccDisRequisition.Dto.OutOccCustomerSumDto
+DEBUG 2023-01-06 12:42:45,654 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccDisProposalNew.Dto.OutOccDictionaryDto
+DEBUG 2023-01-06 12:42:45,654 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccDisProposalNew.Dto.ShowOccDictionary
+DEBUG 2023-01-06 12:42:45,654 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccDisProposalNew.Dto.TbmOccDictionaryDto
+DEBUG 2023-01-06 12:42:45,654 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccdiseaseSet.OccdiseaseMain.Dto.CreatOccDiseaseDto
+DEBUG 2023-01-06 12:42:45,654 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccdiseaseSet.OccdiseaseMain.Dto.OccCreateOrUpdateDto
+DEBUG 2023-01-06 12:42:45,654 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccdiseaseSet.OccdiseaseMain.Dto.OccDiseaseStandardDto
+DEBUG 2023-01-06 12:42:45,655 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccdiseaseSet.OccdiseaseMain.Dto.OutOccDiseaseDto
+DEBUG 2023-01-06 12:42:45,655 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccdiseaseSet.OccdiseaseMain.Dto.ParentDicDto
+DEBUG 2023-01-06 12:42:45,655 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccdiseaseConsulitation.Dto.OccReportQuesMerriyHistoryDto
+DEBUG 2023-01-06 12:42:45,655 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccdiseaseConsulitation.Dto.OccQuesMerriyHistoryDto
+DEBUG 2023-01-06 12:42:45,655 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccdiseaseConsulitation.Dto.OccQuesRadioactiveCareerHistoryDto
+DEBUG 2023-01-06 12:42:45,656 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccdiseaseConsulitation.Dto.OccdieaseHurtDto
+DEBUG 2023-01-06 12:42:45,656 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccdiseaseConsulitation.Dto.OccdieaseProtectDto
+DEBUG 2023-01-06 12:42:45,656 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccdiseaseConsulitation.Dto.OccQuesFamilyHistoryDto
+DEBUG 2023-01-06 12:42:45,656 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccdiseaseConsulitation.Dto.OccQuesPastHistoryDto
+DEBUG 2023-01-06 12:42:45,656 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccdiseaseConsulitation.Dto.OccQuesSymptomDto
+DEBUG 2023-01-06 12:42:45,657 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccdiseaseConsulitation.Dto.OccQuestionnaireDto
+DEBUG 2023-01-06 12:42:45,658 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccdiseaseConsulitation.Dto.OccReportQuesRadioactiveCareerHistoryDto
+DEBUG 2023-01-06 12:42:45,659 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccdiseaseConsulitation.Dto.OccupationHistoryDto
+DEBUG 2023-01-06 12:42:45,659 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccDayStatic.Dto.OutOccDayDto
+DEBUG 2023-01-06 12:42:45,659 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccGroupReport.Dto.cusSumRevITemsDto
+DEBUG 2023-01-06 12:42:45,660 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccGroupReport.Dto.OccCusInfoDto
+DEBUG 2023-01-06 12:42:45,660 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccGroupReport.Dto.OccCusRegDto
+DEBUG 2023-01-06 12:42:45,660 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccGroupReport.Dto.OccCustomerContraindicationDto
+DEBUG 2023-01-06 12:42:45,660 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccGroupReport.Dto.OccCustomerRegHazardSumDto
+DEBUG 2023-01-06 12:42:45,661 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccGroupReport.Dto.OccCustomerItemDto
+DEBUG 2023-01-06 12:42:45,661 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccGroupReport.Dto.OccCustomerOccDiseasesDto
+DEBUG 2023-01-06 12:42:45,661 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccGroupReport.Dto.OccCustomerSumDto
+DEBUG 2023-01-06 12:42:45,662 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccConclusionSuspected.Dto.OccConclusionSuspectedShow
+DEBUG 2023-01-06 12:42:45,662 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccConclusionStatistics.Dto.DQQuery
+DEBUG 2023-01-06 12:42:45,662 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccConclusionStatistics.Dto.TjlCustomerDto
+DEBUG 2023-01-06 12:42:45,663 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccConclusionStatistics.Dto.TjlCustomerRegDto
+DEBUG 2023-01-06 12:42:45,663 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccConclusioncontraindication.Dto.OccConclusioncontraindicationShowDto
+DEBUG 2023-01-06 12:42:45,663 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OccAbnormalResult.Dto.OutOccAbnormalResult
+DEBUG 2023-01-06 12:42:45,664 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OAApproval.Dto.CreateClientXKSetDto
+DEBUG 2023-01-06 12:42:45,664 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OAApproval.Dto.CreatOAApproValcsDto
+DEBUG 2023-01-06 12:42:45,664 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.OAApproval.Dto.UpOAApproValcsDto
+DEBUG 2023-01-06 12:42:45,664 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.MemberShipCard.Dto.ItemSuitsDto
+DEBUG 2023-01-06 12:42:45,665 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.MemberShipCard.Dto.ShowTbmCardTypeDto
+DEBUG 2023-01-06 12:42:45,665 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.MemberShipCard.Dto.TbmCardTypeDto
+DEBUG 2023-01-06 12:42:45,665 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.MemberShipCard.Dto.TbmItemSuitDto
+DEBUG 2023-01-06 12:42:45,665 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Market.Dto.CompanyDtoForComboBox
+DEBUG 2023-01-06 12:42:45,666 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Market.Dto.CompanyDtoForComplaint
+DEBUG 2023-01-06 12:42:45,666 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Market.Dto.CompanyRegisterDtoForComboBox
+DEBUG 2023-01-06 12:42:45,666 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Market.Dto.CompanyRegisterDtoForComplaint
+DEBUG 2023-01-06 12:42:45,666 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Market.Dto.CompanyRegisterTeamDtoForComplaint
+DEBUG 2023-01-06 12:42:45,666 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Market.Dto.ComplaintInformationDto
+DEBUG 2023-01-06 12:42:45,667 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Market.Dto.ContractAdjunctDto
+DEBUG 2023-01-06 12:42:45,667 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Market.Dto.ContractCategoryDto
+DEBUG 2023-01-06 12:42:45,667 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Market.Dto.ContractInformationDto
+DEBUG 2023-01-06 12:42:45,667 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Market.Dto.ContractInformationFullDto
+DEBUG 2023-01-06 12:42:45,668 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Market.Dto.ContractInvoiceDto
+DEBUG 2023-01-06 12:42:45,668 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Market.Dto.ContractProceedsDto
+DEBUG 2023-01-06 12:42:45,668 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Market.Dto.CustomerDtoForComplaint
+DEBUG 2023-01-06 12:42:45,668 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Market.Dto.CustomerRegisterDtoForComplaint
+DEBUG 2023-01-06 12:42:45,669 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Market.Dto.UpdateComplaintInformationDto
+DEBUG 2023-01-06 12:42:45,669 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ItemSuit.Dto.CreateOrUpdateItemSuitDto
+DEBUG 2023-01-06 12:42:45,669 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ItemSuit.Dto.ItemSuitGroupSimpDto
+DEBUG 2023-01-06 12:42:45,669 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ItemSuit.Dto.SimpleSubsetItemSuitDto
+DEBUG 2023-01-06 12:42:45,669 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ItemSuit.Dto.SimpleItemSuitDto
+DEBUG 2023-01-06 12:42:45,670 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ItemSuit.Dto.FullItemSuitDto
+DEBUG 2023-01-06 12:42:45,670 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ItemSuit.Dto.ItemSuitDto
+DEBUG 2023-01-06 12:42:45,670 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ItemSuit.Dto.ItemSuitItemGroupContrastFullDto
+DEBUG 2023-01-06 12:42:45,670 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ItemSuit.Dto.ItemSuitItemGroupContrastDto
+DEBUG 2023-01-06 12:42:45,670 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ItemSuit.Dto.ItemSuitOutput
+DEBUG 2023-01-06 12:42:45,671 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ItemInfo.Dto.CreateItemProExpressDto
+DEBUG 2023-01-06 12:42:45,671 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ItemInfo.Dto.ItemProcExpressDto
+DEBUG 2023-01-06 12:42:45,671 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ItemInfo.Dto.ItemInfoSimpleDto
+DEBUG 2023-01-06 12:42:45,671 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ItemInfo.Dto.ItemInfoDiagnosisDto
+DEBUG 2023-01-06 12:42:45,672 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ItemInfo.Dto.ItemInfoDto
+DEBUG 2023-01-06 12:42:45,672 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ItemInfo.Dto.ItemInfoViewDto
+DEBUG 2023-01-06 12:42:45,672 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ItemInfo.Dto.ItemStandardDto
+DEBUG 2023-01-06 12:42:45,672 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ItemGroup.Dto.CreateOrUpdateItemGroup
+DEBUG 2023-01-06 12:42:45,673 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ItemGroup.Dto.priceSynDto
+DEBUG 2023-01-06 12:42:45,673 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ItemGroup.Dto.TbmGroupRePriceSynchronizesDto
+DEBUG 2023-01-06 12:42:45,674 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ItemGroup.Dto.SimpleItemGroupDto
+DEBUG 2023-01-06 12:42:45,674 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ItemGroup.Dto.ItemGroupDto
+DEBUG 2023-01-06 12:42:45,675 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ItemGroup.Dto.FullItemGroupDto
+DEBUG 2023-01-06 12:42:45,676 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InterfaceItemComparison.Dto.InsertInterfaceEmpDto
+DEBUG 2023-01-06 12:42:45,676 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InterfaceItemComparison.Dto.InsertInterfaceItemDto
+DEBUG 2023-01-06 12:42:45,676 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InterfaceItemComparison.Dto.InsertInterfaceItemGroupDto
+DEBUG 2023-01-06 12:42:45,677 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InterfaceItemComparison.Dto.InterfaceDepartmentDto
+DEBUG 2023-01-06 12:42:45,677 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InterfaceItemComparison.Dto.InterfaceGroupDto
+DEBUG 2023-01-06 12:42:45,677 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InterfaceItemComparison.Dto.InterfaceItemDto
+DEBUG 2023-01-06 12:42:45,678 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InterfaceItemComparison.Dto.InterfaceItemsDto
+DEBUG 2023-01-06 12:42:45,678 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InterfaceItemComparison.Dto.InterfaceUserDto
+DEBUG 2023-01-06 12:42:45,678 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InterfaceItemComparison.Dto.InterfaceItemGroupsDto
+DEBUG 2023-01-06 12:42:45,678 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.IDNumber.Dto.CreateIdNumberDto
+DEBUG 2023-01-06 12:42:45,678 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.IDNumber.Dto.IDNumberDto
+DEBUG 2023-01-06 12:42:45,678 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GuideListCollection.Dto.CustomerQuery
+DEBUG 2023-01-06 12:42:45,679 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GuideListCollection.Dto.CustomerRegQuery
+DEBUG 2023-01-06 12:42:45,679 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.FrmSeleteItemGroup.Dto.SelectDepartmentDto
+DEBUG 2023-01-06 12:42:45,679 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.FrmSeleteItemGroup.Dto.SeleteItemGroupDto
+DEBUG 2023-01-06 12:42:45,679 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Dictionary.Dto.DictionaryDepartmentDto
+DEBUG 2023-01-06 12:42:45,679 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Dictionary.Dto.DictionaryItemDictionaryDto
+DEBUG 2023-01-06 12:42:45,680 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Dictionary.Dto.DictionaryItemInfoDto
+DEBUG 2023-01-06 12:42:45,680 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Department.Dto.DepartmentSimpleDto
+DEBUG 2023-01-06 12:42:45,680 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Department.Dto.CreateDepartmentDto
+DEBUG 2023-01-06 12:42:45,680 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Department.Dto.DepartmentIdNameDto
+DEBUG 2023-01-06 12:42:45,680 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Department.Dto.TbmDepartmentDto
+DEBUG 2023-01-06 12:42:45,681 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Department.Dto.UpdateDepartmentDto
+DEBUG 2023-01-06 12:42:45,681 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Compose.Dto.ComposeGroupItemDto
+DEBUG 2023-01-06 12:42:45,681 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Compose.Dto.CreateOrUpdateComposeGroupItemDto
+DEBUG 2023-01-06 12:42:45,681 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Compose.Dto.CreateOrUpdateComposeDto
+DEBUG 2023-01-06 12:42:45,681 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Compose.Dto.CreateOrUpdateComposeGroupDto
+DEBUG 2023-01-06 12:42:45,681 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Compose.Dto.FullComposeGroupDto
+DEBUG 2023-01-06 12:42:45,682 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Compose.Dto.FullComposeDto
+DEBUG 2023-01-06 12:42:45,682 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Compose.Dto.ComposeDto
+DEBUG 2023-01-06 12:42:45,682 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Compose.Dto.ComposeGroupDto
+DEBUG 2023-01-06 12:42:45,682 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DailyNewspaper.Dto.SearchCustomerDto
+DEBUG 2023-01-06 12:42:45,682 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DailyNewspaper.Dto.SearchCustomerRegDto
+DEBUG 2023-01-06 12:42:45,683 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DailyNewspaper.Dto.SearchMPaymentDto
+DEBUG 2023-01-06 12:42:45,683 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DailyNewspaper.Dto.SearchMReceiptDetailsDto
+DEBUG 2023-01-06 12:42:45,683 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DailyNewspaper.Dto.SearchMReceiptInfoDto
+DEBUG 2023-01-06 12:42:45,684 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ClientInfoes.Dto.ClientInfoesDto
+DEBUG 2023-01-06 12:42:45,684 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ClientInfoes.Dto.ClientInfosNameDto
+DEBUG 2023-01-06 12:42:45,684 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ClientInfoes.Dto.ClientInfosViewDto
+DEBUG 2023-01-06 12:42:45,684 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.ClientInfoes.Dto.ClientInfoesListInput
+DEBUG 2023-01-06 12:42:45,685 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.HistoryComparison.Dto.HisDepartSumDto
+DEBUG 2023-01-06 12:42:45,685 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.HistoryComparison.Dto.HistoryItemDBDto
+DEBUG 2023-01-06 12:42:45,685 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.HistoryComparison.Dto.SearchHisClassDto
+DEBUG 2023-01-06 12:42:45,685 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.HistoryComparison.Dto.SearchCustomerDepSummaryDto
+DEBUG 2023-01-06 12:42:45,686 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.HistoryComparison.Dto.CustomerItemGroupDto
+DEBUG 2023-01-06 12:42:45,686 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.HistoryComparison.Dto.SearchCustomerRegDto
+DEBUG 2023-01-06 12:42:45,686 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.HistoryComparison.Dto.SearchCustomerRegItemDto
+DEBUG 2023-01-06 12:42:45,687 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.HistoryComparison.Dto.SearchCustomerSummaryDto
+DEBUG 2023-01-06 12:42:45,687 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.HistoryComparison.Dto.SrachCustomerItemPicDto
+DEBUG 2023-01-06 12:42:45,687 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.HisInterface.HisPriceDtos
+DEBUG 2023-01-06 12:42:45,687 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.HisInterface.InCarNumPriceDto
+DEBUG 2023-01-06 12:42:45,687 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.HisInterface.TJSQDto
+DEBUG 2023-01-06 12:42:45,689 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GroupReport.Dto.DepartTypeDto
+DEBUG 2023-01-06 12:42:45,690 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GroupReport.Dto.GroupClientGroupDto
+DEBUG 2023-01-06 12:42:45,690 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GroupReport.Dto.GroupCusGroupDto
+DEBUG 2023-01-06 12:42:45,691 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GroupReport.Dto.GroupNoCheckCusDtocs
+DEBUG 2023-01-06 12:42:45,691 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GroupReport.Dto.GroupClientSumDto
+DEBUG 2023-01-06 12:42:45,692 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GroupReport.Dto.GroupClientCusDto
+DEBUG 2023-01-06 12:42:45,693 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GroupReport.Dto.GroupClientInfoDto
+DEBUG 2023-01-06 12:42:45,693 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GroupReport.Dto.GroupClientRegDto
+DEBUG 2023-01-06 12:42:45,693 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GroupReport.Dto.GroupClientTeamInfoDto
+DEBUG 2023-01-06 12:42:45,694 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GroupReport.Dto.GroupCustomerDto
+DEBUG 2023-01-06 12:42:45,694 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GroupReport.Dto.GroupCustomerRegDto
+DEBUG 2023-01-06 12:42:45,694 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GroupReport.Dto.SelectClientRewDto
+DEBUG 2023-01-06 12:42:45,695 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.GroupReport.Dto.SelectGroupClientInfoDto
+DEBUG 2023-01-06 12:42:45,695 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Foreground.Dto.BarSettingsDto
+DEBUG 2023-01-06 12:42:45,695 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Foreground.Dto.CompanyInformation52Dto
+DEBUG 2023-01-06 12:42:45,695 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Foreground.Dto.Customer52Dto
+DEBUG 2023-01-06 12:42:45,695 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Foreground.Dto.CustomerRegister52Dto1
+DEBUG 2023-01-06 12:42:45,696 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Foreground.Dto.CustomerRegisterBarCodePrintInformationDto
+DEBUG 2023-01-06 12:42:45,696 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.TjlCustomerRegForDoctorDto
+DEBUG 2023-01-06 12:42:45,697 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.CusReViewGroupDto
+DEBUG 2023-01-06 12:42:45,698 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.CustomerGroupSumDto
+DEBUG 2023-01-06 12:42:45,698 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.BeforSumCustomerRegDto
+DEBUG 2023-01-06 12:42:45,698 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.CustomerItemGroupZYBDto
+DEBUG 2023-01-06 12:42:45,699 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.CustomerRegInspectGroupDto
+DEBUG 2023-01-06 12:42:45,699 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.CusTypeGroupStateDto
+DEBUG 2023-01-06 12:42:45,699 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.DepartCategoryDto
+DEBUG 2023-01-06 12:42:45,699 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.DepartmentOrderDto
+DEBUG 2023-01-06 12:42:45,699 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.INCusSumSateDto
+DEBUG 2023-01-06 12:42:45,700 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.ItemGroupOrderDto
+DEBUG 2023-01-06 12:42:45,700 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.OccCustomerHazardSumDto
+DEBUG 2023-01-06 12:42:45,700 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.OccEditCustomerRegStateDto
+DEBUG 2023-01-06 12:42:45,700 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.TjlCustomerRegForInspectionTotalSearchDto
+DEBUG 2023-01-06 12:42:45,701 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.CraetOccCustomerOccDiseasesDto
+DEBUG 2023-01-06 12:42:45,701 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.CreateCustomerSummarizeDto
+DEBUG 2023-01-06 12:42:45,702 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.CreatOccCustomerContraindicationDto
+DEBUG 2023-01-06 12:42:45,702 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.CusReViewDto
+DEBUG 2023-01-06 12:42:45,702 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.CustomerRegDateDto
+DEBUG 2023-01-06 12:42:45,703 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.CustomerRegInspectItemDto
+DEBUG 2023-01-06 12:42:45,703 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.EditCustomerRegStateDto
+DEBUG 2023-01-06 12:42:45,703 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.CreatOccCustomerSumDto
+DEBUG 2023-01-06 12:42:45,703 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.OccTargetDiseaseByRisk
+DEBUG 2023-01-06 12:42:45,704 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.OccCusContraindicationDto
+DEBUG 2023-01-06 12:42:45,704 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.TbmSumHideDto
+DEBUG 2023-01-06 12:42:45,704 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.TjlCustomerItemGroupDto
+DEBUG 2023-01-06 12:42:45,705 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.TjlClientInfoDto
+DEBUG 2023-01-06 12:42:45,705 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.InspectionTotalListDto
+DEBUG 2023-01-06 12:42:45,706 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.TjlCustomerSummBackDto
+DEBUG 2023-01-06 12:42:45,706 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.TjlCustomerRegItemDto
+DEBUG 2023-01-06 12:42:45,706 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.TjlCustomerSummarizeBMViewDto
+DEBUG 2023-01-06 12:42:45,707 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.TjlCustomerSummarizeBMDto
+DEBUG 2023-01-06 12:42:45,707 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.TjlCustomerSummarizeDto
+DEBUG 2023-01-06 12:42:45,707 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.TjlCustomerForInspectionTotalDto
+DEBUG 2023-01-06 12:42:45,708 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.TjlCustomerRegForInspectionTotalDto
+DEBUG 2023-01-06 12:42:45,709 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.Dto.CustomerRegisterItemAppServiceDto.CustomerRegisterItemDto
+DEBUG 2023-01-06 12:42:45,709 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.CusGroupStateDto
+DEBUG 2023-01-06 12:42:45,709 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.SearchClientInfoDto
+DEBUG 2023-01-06 12:42:45,709 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.InterfaceCustomerRegDto
+DEBUG 2023-01-06 12:42:45,710 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.CustomerItemGroupPrintViewDto
+DEBUG 2023-01-06 12:42:45,710 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.ATjlCustomerItemGroupPrintGuidanceDto
+DEBUG 2023-01-06 12:42:45,710 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.CreateCustomerDepSummary
+DEBUG 2023-01-06 12:42:45,711 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.CustomerDepSummaryViewDto
+DEBUG 2023-01-06 12:42:45,711 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.CustomerItemPicDto
+DEBUG 2023-01-06 12:42:45,711 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.SearchCustomerRegIdDto
+DEBUG 2023-01-06 12:42:45,711 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.SearchItemStandardDto
+DEBUG 2023-01-06 12:42:45,711 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.SearchTbmSummarizeAdviceDto
+DEBUG 2023-01-06 12:42:45,712 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.SearchTjlCustomerSummaryDto
+DEBUG 2023-01-06 12:42:45,712 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.TjlCustomerRegItemReoprtDto
+DEBUG 2023-01-06 12:42:45,712 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.UpdateCustomerItemGroupDto
+DEBUG 2023-01-06 12:42:45,713 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.UpdateCustomerRegItemDto
+DEBUG 2023-01-06 12:42:45,713 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.ATbmDepartmentDto
+DEBUG 2023-01-06 12:42:45,713 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.ATjlClientInfoDto
+DEBUG 2023-01-06 12:42:45,713 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.ATjlClientRegDto
+DEBUG 2023-01-06 12:42:45,713 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.BTbmDepartmentDto
+DEBUG 2023-01-06 12:42:45,714 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.CTbmDepartmentDto
+DEBUG 2023-01-06 12:42:45,714 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.BTbmItemDictionaryDto
+DEBUG 2023-01-06 12:42:45,714 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.BTbmItemInfoDto
+DEBUG 2023-01-06 12:42:45,714 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.ATjlClientTeamInfoDto
+DEBUG 2023-01-06 12:42:45,714 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.ATjlCustomerDepSummaryDto
+DEBUG 2023-01-06 12:42:45,715 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.ATjlCustomerDto
+DEBUG 2023-01-06 12:42:45,715 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.ATjlCustomerItemGroupDto
+DEBUG 2023-01-06 12:42:45,716 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.ATjlCustomerRegDto
+DEBUG 2023-01-06 12:42:45,716 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.ATjlCustomerRegItemDto
+DEBUG 2023-01-06 12:42:45,717 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.ATjlOAHistoryDto
+DEBUG 2023-01-06 12:42:45,717 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.ATjlOHistoryDto
+DEBUG 2023-01-06 12:42:45,717 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.Dto.CTbmSummarizeAdviceDto
+DEBUG 2023-01-06 12:42:45,717 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Diagnosis.Dto.ItemInfoGroupDto
+DEBUG 2023-01-06 12:42:45,718 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Diagnosis.Dto.TbmDiagnosisDataDto
+DEBUG 2023-01-06 12:42:45,718 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Diagnosis.Dto.TbmDiagnosisDto
+DEBUG 2023-01-06 12:42:45,719 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.ClientCabitCRDto
+DEBUG 2023-01-06 12:42:45,719 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.ClientInfoOfPrintPreviewDto
+DEBUG 2023-01-06 12:42:45,720 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.ClientRegForPrintPreviewDto
+DEBUG 2023-01-06 12:42:45,720 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.ClientRegUpCatDto
+DEBUG 2023-01-06 12:42:45,721 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.CusCabitLQDto
+DEBUG 2023-01-06 12:42:45,721 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.CustomerForPrintPreviewDto
+DEBUG 2023-01-06 12:42:45,721 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.CustomerRegForPrintPreviewDto
+DEBUG 2023-01-06 12:42:45,722 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.CustomerUpCatDto
+DEBUG 2023-01-06 12:42:45,722 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.ReportOccQueAllDto
+DEBUG 2023-01-06 12:42:45,722 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.ReportOccQuesDto
+DEBUG 2023-01-06 12:42:45,723 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.ReportOccQuesFamilyHistoryDto
+DEBUG 2023-01-06 12:42:45,723 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.ReportOccQuesPastHistoryDto
+DEBUG 2023-01-06 12:42:45,724 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.ReportOccQuesSymNameDto
+DEBUG 2023-01-06 12:42:45,724 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.TbmCabinetDto
+DEBUG 2023-01-06 12:42:45,724 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.TjlCusCabitCRDto
+DEBUG 2023-01-06 12:42:45,724 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.TjlCusCabitDto
+DEBUG 2023-01-06 12:42:45,725 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.CustomerReportDto
+DEBUG 2023-01-06 12:42:45,725 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.Dto.CustomerReportFullDto
+DEBUG 2023-01-06 12:42:45,725 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CustomerRegisterSummarize.Dto.CustomerRegisterSummarizeDto
+DEBUG 2023-01-06 12:42:45,726 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReSultStatus.Dto.AddResultSetDto
+DEBUG 2023-01-06 12:42:45,726 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReSultStatus.Dto.FullReSultSetDto
+DEBUG 2023-01-06 12:42:45,726 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReSultStatus.Dto.ReSultCusGroupDto
+DEBUG 2023-01-06 12:42:45,726 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReSultStatus.Dto.ReSultDepartDto
+DEBUG 2023-01-06 12:42:45,727 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReSultStatus.Dto.ReSultCusItemDto
+DEBUG 2023-01-06 12:42:45,727 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReSultStatus.Dto.ReSultSetDto
+DEBUG 2023-01-06 12:42:45,728 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.AbpUsersDto
+DEBUG 2023-01-06 12:42:45,728 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.ApplicationDto
+DEBUG 2023-01-06 12:42:45,728 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.CardToSuitNameDto
+DEBUG 2023-01-06 12:42:45,728 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.CustomerAddPackageDto
+DEBUG 2023-01-06 12:42:45,729 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.CustomerAddPackageItemDto
+DEBUG 2023-01-06 12:42:45,729 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.CustomerQuestionDto
+DEBUG 2023-01-06 12:42:45,729 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.CustomerRegCostDto
+DEBUG 2023-01-06 12:42:45,730 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.CustomerRegRosterDto
+DEBUG 2023-01-06 12:42:45,730 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.JLItemGroupDto
+DEBUG 2023-01-06 12:42:45,731 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.OccQueCusDto
+DEBUG 2023-01-06 12:42:45,731 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.OneAddQuestionsDto
+DEBUG 2023-01-06 12:42:45,732 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.PersonTypeDto
+DEBUG 2023-01-06 12:42:45,732 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.QueryAllForNumberDto
+DEBUG 2023-01-06 12:42:45,732 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.QueryAllForPayMoneyDto
+DEBUG 2023-01-06 12:42:45,732 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.QueryAllForPersonDto
+DEBUG 2023-01-06 12:42:45,733 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.StartupAlertCusRegDto
+DEBUG 2023-01-06 12:42:45,734 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.StartupAlertDto
+DEBUG 2023-01-06 12:42:45,734 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.CustomerRegSimpleViewDto
+DEBUG 2023-01-06 12:42:45,734 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.CustomerRegOrItemViewDto
+DEBUG 2023-01-06 12:42:45,735 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.GuideUpdateCustomerItemGroupDto
+DEBUG 2023-01-06 12:42:45,735 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.GuideUpdateCustomerRegDto
+DEBUG 2023-01-06 12:42:45,735 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.CustomerItemGroupBarItemDto
+DEBUG 2023-01-06 12:42:45,736 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.CustomerRegViewDto
+DEBUG 2023-01-06 12:42:45,736 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.GroupCusReg
+DEBUG 2023-01-06 12:42:45,737 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.CustomerRegDto
+DEBUG 2023-01-06 12:42:45,738 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.CustomerEssentialInfoViewDto
+DEBUG 2023-01-06 12:42:45,738 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.CustomerRegEssentialInfoViewDto
+DEBUG 2023-01-06 12:42:45,739 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.ClientRegDto
+DEBUG 2023-01-06 12:42:45,739 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.ClientTeamInfoDto
+DEBUG 2023-01-06 12:42:45,740 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.QueryClientInfoDto
+DEBUG 2023-01-06 12:42:45,740 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.QueryCustomerDto
+DEBUG 2023-01-06 12:42:45,740 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.QueryCustomerRegDto
+DEBUG 2023-01-06 12:42:45,741 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.TjlCustomerDto
+DEBUG 2023-01-06 12:42:45,742 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.TjlCustomerItemGroupDto
+DEBUG 2023-01-06 12:42:45,743 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CusReg.Dto.TjlCustomerRegDto
+DEBUG 2023-01-06 12:42:45,744 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CrossTable.Dto.CusGiveUpDto
+DEBUG 2023-01-06 12:42:45,745 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CrossTable.Dto.CustomerRegForCrossTableDto
+DEBUG 2023-01-06 12:42:45,745 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CrossTable.Dto.CustomerRegForCrossTableViewDto
+DEBUG 2023-01-06 12:42:45,746 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CrossTable.Dto.CustomerBloodNumDto
+DEBUG 2023-01-06 12:42:45,747 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CrossTable.Dto.CustomerItemGroupDto
+DEBUG 2023-01-06 12:42:45,747 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CrossTable.Dto.CustomerRegItemDto
+DEBUG 2023-01-06 12:42:45,747 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Critical.Dto.CriticalDto
+DEBUG 2023-01-06 12:42:45,748 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Crisis.Dto.CallBackDto
+DEBUG 2023-01-06 12:42:45,748 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Crisis.Dto.ReviewSetDto
+DEBUG 2023-01-06 12:42:45,749 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Crisis.Dto.TjlCrisisSetDto
+DEBUG 2023-01-06 12:42:45,749 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.CreateClientRegDto
+DEBUG 2023-01-06 12:42:45,749 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.ClientCustomerRegDto
+DEBUG 2023-01-06 12:42:45,750 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.ClientRegLQDto
+DEBUG 2023-01-06 12:42:45,750 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.GetClientVerSionDto
+DEBUG 2023-01-06 12:42:45,750 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.ShortMessageDto
+DEBUG 2023-01-06 12:42:45,750 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.UpClientMZDto
+DEBUG 2023-01-06 12:42:45,750 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.ClientInfoRegDto
+DEBUG 2023-01-06 12:42:45,751 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.ClientTeamInfoesViewDto
+DEBUG 2023-01-06 12:42:45,751 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.ClientTeamInfosDto
+DEBUG 2023-01-06 12:42:45,751 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.ClientTeamRegitemViewDto
+DEBUG 2023-01-06 12:42:45,751 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.CreateClientTeamInfoesDto
+DEBUG 2023-01-06 12:42:45,752 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.CreateClientTeamRegItemDto
+DEBUG 2023-01-06 12:42:45,752 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.CustomerRegsViewDto
+DEBUG 2023-01-06 12:42:45,753 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.CustomersViewDto
+DEBUG 2023-01-06 12:42:45,753 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.RegsChargeCusDto
+DEBUG 2023-01-06 12:42:45,753 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.GroupClientItemsDto
+DEBUG 2023-01-06 12:42:45,753 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Company.Dto.FullClientRegDto
+DEBUG 2023-01-06 12:42:45,754 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Common.Dto.CreateOpLogDto
+DEBUG 2023-01-06 12:42:45,755 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Common.Dto.AdministrativeDivisionDto
+DEBUG 2023-01-06 12:42:45,755 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ClientGroupMoneyDto
+DEBUG 2023-01-06 12:42:45,755 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ClientInfoSimpDto
+DEBUG 2023-01-06 12:42:45,756 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ClientPaymentDto
+DEBUG 2023-01-06 12:42:45,756 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CusChageListDto
+DEBUG 2023-01-06 12:42:45,757 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CusGroupTTDto
+DEBUG 2023-01-06 12:42:45,757 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CusPayTTDto
+DEBUG 2023-01-06 12:42:45,757 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CustomerGroupMoneyDto
+DEBUG 2023-01-06 12:42:45,758 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CustomerSFTypeCusRegDto
+DEBUG 2023-01-06 12:42:45,758 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CustomerSFTypeDto
+DEBUG 2023-01-06 12:42:45,759 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CusTTDto
+DEBUG 2023-01-06 12:42:45,759 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.DoctorDeparmentDto
+DEBUG 2023-01-06 12:42:45,760 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.GroupClientNameDto
+DEBUG 2023-01-06 12:42:45,760 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.IndividualityDto
+DEBUG 2023-01-06 12:42:45,761 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ReceiptClientDto
+DEBUG 2023-01-06 12:42:45,761 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.showCustomerItemGroupsDto
+DEBUG 2023-01-06 12:42:45,761 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.WebChargeDto
+DEBUG 2023-01-06 12:42:45,762 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ChargeClientDto
+DEBUG 2023-01-06 12:42:45,762 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ChargeClientRegDto
+DEBUG 2023-01-06 12:42:45,762 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ChargeCusDto
+DEBUG 2023-01-06 12:42:45,763 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ChargeCusInfoDto
+DEBUG 2023-01-06 12:42:45,763 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ChargeCusRegDto
+DEBUG 2023-01-06 12:42:45,763 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ChargeCusStateDto
+DEBUG 2023-01-06 12:42:45,764 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ChargeTeamMoneyViewDto
+DEBUG 2023-01-06 12:42:45,764 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ChargeTeamNameDto
+DEBUG 2023-01-06 12:42:45,764 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ChargeTypeDto
+DEBUG 2023-01-06 12:42:45,764 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ChargQueryCusDto
+DEBUG 2023-01-06 12:42:45,765 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ClientPayCusLisViewDto
+DEBUG 2023-01-06 12:42:45,765 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ClientPayMoneyViewDto
+DEBUG 2023-01-06 12:42:45,765 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CreateInvoiceRecordDto
+DEBUG 2023-01-06 12:42:45,766 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CreateMReceiptInfoDetailedDto
+DEBUG 2023-01-06 12:42:45,766 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CreatePaymentDto
+DEBUG 2023-01-06 12:42:45,766 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CreateReceiptInfoDto
+DEBUG 2023-01-06 12:42:45,766 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CreateTjlMDiurnalTableDto
+DEBUG 2023-01-06 12:42:45,766 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CusGroupMoneyDto
+DEBUG 2023-01-06 12:42:45,767 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CusPayMoneyViewDto
+DEBUG 2023-01-06 12:42:45,767 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.CusRegSimpleDto
+DEBUG 2023-01-06 12:42:45,768 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.InvoiceRecordViewDto
+DEBUG 2023-01-06 12:42:45,768 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.MReceiptClientDto
+DEBUG 2023-01-06 12:42:45,768 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.MReceiptInfoDetailedViewDto
+DEBUG 2023-01-06 12:42:45,769 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.MReceiptInfoPerDto
+DEBUG 2023-01-06 12:42:45,769 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.MReceiptInfoPerViewDto
+DEBUG 2023-01-06 12:42:45,769 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.MReceiptOrCustomerViewDto
+DEBUG 2023-01-06 12:42:45,769 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.PersonnelCategoryDto
+DEBUG 2023-01-06 12:42:45,769 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ReceiptInfoPerViewDto
+DEBUG 2023-01-06 12:42:45,770 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.UpdateTjlMcusMoneyDto
+DEBUG 2023-01-06 12:42:45,770 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ChargeGroupsDto
+DEBUG 2023-01-06 12:42:45,770 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.ChargeInfoDto
+DEBUG 2023-01-06 12:42:45,771 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.MDiurnalTableDto
+DEBUG 2023-01-06 12:42:45,771 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.MInvoiceRecordDto
+DEBUG 2023-01-06 12:42:45,771 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.MReceiptInfoDto
+DEBUG 2023-01-06 12:42:45,771 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.Charge.Dto.MRiseDto
+DEBUG 2023-01-06 12:42:45,772 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CarSend.Dto.SaveTbmCardDto
+DEBUG 2023-01-06 12:42:45,772 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.CarSend.Dto.SimpCardTypeDto
+DEBUG 2023-01-06 12:42:45,772 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BasicDictionary.Dto.CreateBasicDictionaryDto
+DEBUG 2023-01-06 12:42:45,772 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BasicDictionary.Dto.UpdateBasicDictionaryDto
+DEBUG 2023-01-06 12:42:45,772 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BasicDictionary.Dto.BasicDictionaryDto
+DEBUG 2023-01-06 12:42:45,772 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.CreateCustomerBarPrintInfoDto
+DEBUG 2023-01-06 12:42:45,773 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.CustomerBarPrintInfoItemDto
+DEBUG 2023-01-06 12:42:45,773 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.CustomerBarPrintInfoQueryDto
+DEBUG 2023-01-06 12:42:45,773 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.CustomerBarPrintInfoDto
+DEBUG 2023-01-06 12:42:45,773 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.BarCodeViewDto
+DEBUG 2023-01-06 12:42:45,773 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.BarItembViewDto
+DEBUG 2023-01-06 12:42:45,773 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.CreateOrUpdateBarSettingDto
+DEBUG 2023-01-06 12:42:45,773 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.BarItemViewDto
+DEBUG 2023-01-06 12:42:45,774 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.SimpleBarSettingDto
+DEBUG 2023-01-06 12:42:45,774 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.ItemGroupViewDto
+DEBUG 2023-01-06 12:42:45,774 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.BarItemDto
+DEBUG 2023-01-06 12:42:45,774 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.FullBarItemDto
+DEBUG 2023-01-06 12:42:45,774 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.FullBarSettingDto
+DEBUG 2023-01-06 12:42:45,775 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarSetting.Dto.BarSettingDto
+DEBUG 2023-01-06 12:42:45,775 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarPrintInfoItemGroup.Dto.CreateBarPrintInfoItemGroupDto
+DEBUG 2023-01-06 12:42:45,775 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarPrintInfoItemGroup.Dto.BarPrintInfoItemGroupQueryDto
+DEBUG 2023-01-06 12:42:45,775 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Application.BarPrintInfoItemGroup.Dto.BarPrintInfoItemGroupDto
+DEBUG 2023-01-06 12:42:45,775 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Web.Models.Account.TenantChangeViewModel
+DEBUG 2023-01-06 12:42:45,776 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Sw.Hospital.HealthExaminationSystem.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2023-01-06 12:42:49,066 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.WorkType.IWorkTypeAppService' with service name 'app/workType'.
+DEBUG 2023-01-06 12:42:49,067 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.WeChat.IWeChatAppService' with service name 'app/weChat'.
+DEBUG 2023-01-06 12:42:49,069 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Test.ITestTable1AppService' with service name 'app/testTable1'.
+DEBUG 2023-01-06 12:42:49,070 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.TargetDisease.ITargetDiseaseAppService' with service name 'app/targetDisease'.
+DEBUG 2023-01-06 12:42:49,072 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2023-01-06 12:42:49,073 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2023-01-06 12:42:49,075 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2023-01-06 12:42:49,076 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.InvoiceManagement.IInvoiceManagementAppService' with service name 'app/invoiceManagement'.
+DEBUG 2023-01-06 12:42:49,078 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2023-01-06 12:42:49,079 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.BaseModule.IFormModuleAppService' with service name 'app/formModule'.
+DEBUG 2023-01-06 12:42:49,080 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.SetSysSetting.ISetSysSettingAppService' with service name 'app/setSysSetting'.
+DEBUG 2023-01-06 12:42:49,081 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Users.IFormRoleAppService' with service name 'app/formRole'.
+DEBUG 2023-01-06 12:42:49,082 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Users.IPersonnelIndividuationConfigAppService' with service name 'app/personnelIndividuationConfig'.
+DEBUG 2023-01-06 12:42:49,084 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2023-01-06 12:42:49,085 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.SummarizeAdvice.ISummarizeAdviceAppService' with service name 'app/summarizeAdvice'.
+DEBUG 2023-01-06 12:42:49,086 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Scheduling.ISchedulingAppService' with service name 'app/scheduling'.
+DEBUG 2023-01-06 12:42:49,087 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.ReVisitTime.IReVisitTimeAppService' with service name 'app/reVisitTime'.
+DEBUG 2023-01-06 12:42:49,089 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Regist.IRegistAppService' with service name 'app/regist'.
+DEBUG 2023-01-06 12:42:49,091 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Questionnaire.IQuestionnaireAppService' with service name 'app/questionnaire'.
+DEBUG 2023-01-06 12:42:49,092 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Picture.IPictureAppService' with service name 'app/picture'.
+DEBUG 2023-01-06 12:42:49,093 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.PhysicalExamination.IPhysicalExaminationAppService' with service name 'app/physicalExamination'.
+DEBUG 2023-01-06 12:42:49,095 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.PersonnelCategorys.IPersonnelCategoryAppService' with service name 'app/personnelCategory'.
+DEBUG 2023-01-06 12:42:49,096 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.PaymentMethod.IPaymentStatisticAppService' with service name 'app/paymentStatistic'.
+DEBUG 2023-01-06 12:42:49,097 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.PaymentMethod.IPaymentMethodAppService' with service name 'app/paymentMethod'.
+DEBUG 2023-01-06 12:42:49,098 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OutInspects.IOutInspectsQueryAppService' with service name 'app/outInspectsQuery'.
+DEBUG 2023-01-06 12:42:49,099 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccupationalDiseases.OPostState.IPostStateAppService' with service name 'app/postState'.
+DEBUG 2023-01-06 12:42:49,101 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccupationalDiseases.RiskFactor.IOConDictionaryAppService' with service name 'app/oConDictionary'.
+DEBUG 2023-01-06 12:42:49,102 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccupationalDiseases.ORiskFactor.IRiskFactorAppService' with service name 'app/riskFactor'.
+DEBUG 2023-01-06 12:42:49,104 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccTargetDisease.IOccTargetDiseaseAppService' with service name 'app/occTargetDisease'.
+DEBUG 2023-01-06 12:42:49,105 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccReview.IOccReviewAppService' with service name 'app/occReview'.
+DEBUG 2023-01-06 12:42:49,107 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccNationalDisease.IOccNationalDiseaseAppService' with service name 'app/occNationalDisease'.
+DEBUG 2023-01-06 12:42:49,108 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccHazardFactor.IOccHazardFactorAppService' with service name 'app/occHazardFactor'.
+DEBUG 2023-01-06 12:42:49,109 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccHarmFul.IOccHarmFulAppService' with service name 'app/occHarmFul'.
+DEBUG 2023-01-06 12:42:49,110 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccDisRequisition.IOccDisRequisitionAppService' with service name 'app/occDisRequisition'.
+DEBUG 2023-01-06 12:42:49,112 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccDisProposalNew.IOccDisProposalNewAppService' with service name 'app/occDisProposalNew'.
+DEBUG 2023-01-06 12:42:49,113 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccdiseaseSet.OccdiseaseMain.IOccDiseaseAppService' with service name 'app/occDisease'.
+DEBUG 2023-01-06 12:42:49,115 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccdiseaseConsulitation.IOccdiseaseConsulitationAppService' with service name 'app/occdiseaseConsulitation'.
+DEBUG 2023-01-06 12:42:49,116 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccDayStatic.IOccDayStaticAppService' with service name 'app/occDayStatic'.
+DEBUG 2023-01-06 12:42:49,118 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccCusInfoOut.IOccCusInfoOutAppService' with service name 'app/occCusInfoOut'.
+DEBUG 2023-01-06 12:42:49,120 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccConclusionYear.IOccConclusionYearAppService' with service name 'app/occConclusionYear'.
+DEBUG 2023-01-06 12:42:49,122 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccConclusionTarget.IOccConclusionTargetAppService' with service name 'app/occConclusionTarget'.
+DEBUG 2023-01-06 12:42:49,124 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccGroupReport.IOccGroupReportAppService' with service name 'app/occGroupReport'.
+DEBUG 2023-01-06 12:42:49,125 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccConclusionSuspected.IOccConclusionSuspectedAppService' with service name 'app/occConclusionSuspected'.
+DEBUG 2023-01-06 12:42:49,127 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccConclusionStatistics.IOccConclusionStatisticsAppService' with service name 'app/occConclusionStatistics'.
+DEBUG 2023-01-06 12:42:49,128 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccConclusioncontraindication.IOccupationalcontraindicationAppService' with service name 'app/occupationalcontraindication'.
+DEBUG 2023-01-06 12:42:49,129 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OccAbnormalResult.IOccAbnormalResultAppService' with service name 'app/occAbnormalResult'.
+DEBUG 2023-01-06 12:42:49,131 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.OAApproval.IOAApprovalAppService' with service name 'app/oAApproval'.
+DEBUG 2023-01-06 12:42:49,133 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.MRise.IMRiseAppService' with service name 'app/mRise'.
+DEBUG 2023-01-06 12:42:49,134 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.MemberShipCard.IMemberShipCardAppService' with service name 'app/memberShipCard'.
+DEBUG 2023-01-06 12:42:49,135 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Market.IComplaintAppService' with service name 'app/complaint'.
+DEBUG 2023-01-06 12:42:49,137 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Market.IContractAppService' with service name 'app/contract'.
+DEBUG 2023-01-06 12:42:49,138 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.ItemSuit.IItemSuitAppService' with service name 'app/itemSuit'.
+DEBUG 2023-01-06 12:42:49,140 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.ItemInfo.IItemInfoAppService' with service name 'app/itemInfo'.
+DEBUG 2023-01-06 12:42:49,141 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.ItemGroup.IItemGroupAppService' with service name 'app/itemGroup'.
+DEBUG 2023-01-06 12:42:49,142 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.InterfaceItemComparison.IInterfaceEmployeeComparison' with service name 'app/interfaceEmployeeComparison'.
+DEBUG 2023-01-06 12:42:49,144 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.InterfaceItemComparison.IInterfaceItemAppService' with service name 'app/interfaceItem'.
+DEBUG 2023-01-06 12:42:49,145 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.InterfaceItemComparison.IInterfaceItemGroupComparison' with service name 'app/interfaceItemGroupComparison'.
+DEBUG 2023-01-06 12:42:49,146 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.InterfaceItemComparison.IInterfaceItemComparisonAppService' with service name 'app/interfaceItemComparison'.
+DEBUG 2023-01-06 12:42:49,148 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.IDNumber.IIDNumberAppService' with service name 'app/iDNumber'.
+DEBUG 2023-01-06 12:42:49,150 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.GuideListCollection.IGuideListCollectionAppService' with service name 'app/guideListCollection'.
+DEBUG 2023-01-06 12:42:49,152 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.FrmSeleteItemGroup.ISeleteItemGroupAppService' with service name 'app/seleteItemGroup'.
+DEBUG 2023-01-06 12:42:49,153 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Dictionary.IDictionaryAppService' with service name 'app/dictionary'.
+DEBUG 2023-01-06 12:42:49,155 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Department.IDepartmentAppService' with service name 'app/department'.
+DEBUG 2023-01-06 12:42:49,158 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Compose.IComposeAppService' with service name 'app/compose'.
+DEBUG 2023-01-06 12:42:49,159 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.DailyNewspaper.IDailyNewspaperAppService' with service name 'app/dailyNewspaper'.
+DEBUG 2023-01-06 12:42:49,161 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.ClientInfoes.IClientInfoesAppService' with service name 'app/clientInfoes'.
+DEBUG 2023-01-06 12:42:49,162 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.HistoryComparison.IHistoryComparisonAppService' with service name 'app/historyComparison'.
+DEBUG 2023-01-06 12:42:49,164 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.GroupReport.IGroupReportAppService' with service name 'app/groupReport'.
+DEBUG 2023-01-06 12:42:49,165 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.FrmMakeCollect.IFrmMakeCollectAppService' with service name 'app/frmMakeCollect'.
+DEBUG 2023-01-06 12:42:49,166 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Foreground.IBloodWorkstationAppService' with service name 'app/bloodWorkstation'.
+DEBUG 2023-01-06 12:42:49,167 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.ICustomerRegisterItemAppService' with service name 'app/customerRegisterItem'.
+DEBUG 2023-01-06 12:42:49,168 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.ICustomerRegisterDepartmentSummaryAppService' with service name 'app/customerRegisterDepartmentSummary'.
+DEBUG 2023-01-06 12:42:49,170 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.IInspectionTotalAppService' with service name 'app/inspectionTotal'.
+DEBUG 2023-01-06 12:42:49,171 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.IDoctorStationAppService' with service name 'app/doctorStation'.
+DEBUG 2023-01-06 12:42:49,173 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Diagnosis.IDiagnosisAppService' with service name 'app/diagnosis'.
+DEBUG 2023-01-06 12:42:49,175 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.IPrintPreviewAppService' with service name 'app/printPreview'.
+DEBUG 2023-01-06 12:42:49,177 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.CustomerReport.ICustomerReportAppService' with service name 'app/customerReport'.
+DEBUG 2023-01-06 12:42:49,179 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.CustomerRegister.ICustomerRegisterAppService' with service name 'app/customerRegister'.
+DEBUG 2023-01-06 12:42:49,180 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.CustomerRegisterSummarize.ICustomerRegisterSummarizeAppService' with service name 'app/customerRegisterSummarize'.
+DEBUG 2023-01-06 12:42:49,181 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.CustomerRegisterItemPicture.ICustomerRegisterItemPictureAppService' with service name 'app/customerRegisterItemPicture'.
+DEBUG 2023-01-06 12:42:49,183 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.CusReSultStatus.ICusReSultStatusAppService' with service name 'app/cusReSultStatus'.
+DEBUG 2023-01-06 12:42:49,184 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.CusReg.ICustomerAppService' with service name 'app/customer'.
+DEBUG 2023-01-06 12:42:49,185 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.CrossTable.ICrossTableAppService' with service name 'app/crossTable'.
+DEBUG 2023-01-06 12:42:49,187 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Critical.ICriticalAppService' with service name 'app/critical'.
+DEBUG 2023-01-06 12:42:49,189 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Crisis.ICrisisAppService' with service name 'app/crisis'.
+DEBUG 2023-01-06 12:42:49,191 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Company.IClientRegAppService' with service name 'app/clientReg'.
+DEBUG 2023-01-06 12:42:49,193 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Common.ICommonAppService' with service name 'app/common'.
+DEBUG 2023-01-06 12:42:49,195 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.ClearData.IClearDataAppService' with service name 'app/clearData'.
+DEBUG 2023-01-06 12:42:49,198 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Charge.IChargeAppService' with service name 'app/charge'.
+DEBUG 2023-01-06 12:42:49,200 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.CarSend.ICardSendAppService' with service name 'app/cardSend'.
+DEBUG 2023-01-06 12:42:49,202 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.BasicDictionary.IBasicDictionaryAppService' with service name 'app/basicDictionary'.
+DEBUG 2023-01-06 12:42:49,205 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.BarPrint.IBarPrintAppService' with service name 'app/barPrint'.
+DEBUG 2023-01-06 12:42:49,207 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.BarSetting.IBarSettingAppService' with service name 'app/barSetting'.
+DEBUG 2023-01-06 12:42:49,209 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.BarPrintInfoItemGroup.IBarPrintInfoItemGroupAppService' with service name 'app/barPrintInfoItemGroup'.
+DEBUG 2023-01-06 12:42:49,211 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2023-01-06 12:42:49,213 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Sw.Hospital.HealthExaminationSystem.Application.AddStatistics.IAddStatisticsAppService' with service name 'app/addStatistics'.
+WARN  2023-01-06 12:42:59,222 [11   ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   在 Abp.Authorization.AuthorizationHelper.Authorize(IEnumerable`1 authorizeAttributes)
+   在 Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type)
+   在 Abp.Authorization.AuthorizationHelper.Authorize(MethodInfo methodInfo, Type type)
+   在 Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   在 Abp.Authorization.AuthorizationHelper.Authorize(IEnumerable`1 authorizeAttributes)
+   在 Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type)
+   在 Abp.Authorization.AuthorizationHelper.Authorize(MethodInfo methodInfo, Type type)
+   在 Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)

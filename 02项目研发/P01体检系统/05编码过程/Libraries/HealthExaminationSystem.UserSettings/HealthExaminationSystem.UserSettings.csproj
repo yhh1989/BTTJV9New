@@ -1,0 +1,1347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{020ABDA4-42C3-4126-9D61-0DD0D478A1C7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sw.Hospital.HealthExaminationSystem.UserSettings</RootNamespace>
+    <AssemblyName>HealthExaminationSystem.UserSettings</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="AxInterop.gregn6Lib">
+      <HintPath>..\..\..\..\..\03项目引用\From\AxInterop.gregn6Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.HWPenSignLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\03项目引用\AxInterop.HWPenSignLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v17.1.UI, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.1.UI, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraBars.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1.Extensions, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.1.UI, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1.Wizard, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.1.Extensions, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraTreeList.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Interop.gregn6Lib">
+      <HintPath>..\..\..\..\..\03项目引用\Interop.gregn6Lib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.HWPenSignLib">
+      <HintPath>..\..\..\..\..\03项目引用\Interop.HWPenSignLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Newtonsoft.Json.12.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\NPOI.2.3.0\lib\net40\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\NPOI.2.3.0\lib\net40\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SelfControl">
+      <HintPath>..\..\..\..\..\03项目引用\SelfControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Sw.His.Common.CustomTools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Sw.His.Common.CustomTools.1.0.0\lib\net40\Sw.His.Common.CustomTools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Mains\HealthExaminationSystem.Win\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="BarSetting\BarCodeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarSetting\BarCodeList.Designer.cs">
+      <DependentUpon>BarCodeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarSetting\BarCodeEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarSetting\BarCodeEditor.Designer.cs">
+      <DependentUpon>BarCodeEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicDictionary\BasicDictionaryList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicDictionary\BasicDictionaryList.Designer.cs">
+      <DependentUpon>BasicDictionaryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicDictionary\BasicDictionaryEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicDictionary\BasicDictionaryEditor.Designer.cs">
+      <DependentUpon>BasicDictionaryEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicDictionary\BExcelIntput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicDictionary\BExcelIntput.Designer.cs">
+      <DependentUpon>BExcelIntput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicDictionary\frmDepartSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicDictionary\frmDepartSelect.Designer.cs">
+      <DependentUpon>frmDepartSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicDictionary\GuidanceSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicDictionary\GuidanceSet.Designer.cs">
+      <DependentUpon>GuidanceSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardSend\CardSeach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardSend\CardSeach.Designer.cs">
+      <DependentUpon>CardSeach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardSend\CardSendEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardSend\CardSendEdit.Designer.cs">
+      <DependentUpon>CardSendEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardSend\CardSendList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardSend\CardSendList.Designer.cs">
+      <DependentUpon>CardSendList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClearData\DeleteData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClearData\DeleteData.Designer.cs">
+      <DependentUpon>DeleteData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClearData\frmCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClearData\frmCheck.Designer.cs">
+      <DependentUpon>frmCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClearData\frmClearData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClearData\frmClearData.Designer.cs">
+      <DependentUpon>frmClearData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeManager\CodeConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeManager\CodeConfig.Designer.cs">
+      <DependentUpon>CodeConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeManager\CodeEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeManager\CodeEditor.Designer.cs">
+      <DependentUpon>CodeEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonFormat.cs" />
+    <Compile Include="DynamicColumnDirectory\FormDynamicColumnConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DynamicColumnDirectory\FormDynamicColumnConfiguration.Designer.cs">
+      <DependentUpon>FormDynamicColumnConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicColumnDirectory\FormDynamicColumnTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DynamicColumnDirectory\FormDynamicColumnTest.Designer.cs">
+      <DependentUpon>FormDynamicColumnTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccdiseaseConsulitation\frmzz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccdiseaseConsulitation\frmzz.Designer.cs">
+      <DependentUpon>frmzz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccdiseaseConsulitation\OccQueDto.cs" />
+    <Compile Include="OccdiseaseSet\frmProtective.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccdiseaseSet\frmProtective.Designer.cs">
+      <DependentUpon>frmProtective.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccdiseaseSet\frmSelectHazard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccdiseaseSet\frmSelectHazard.Designer.cs">
+      <DependentUpon>frmSelectHazard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Critical\CriticalList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Critical\CriticalList.Designer.cs">
+      <DependentUpon>CriticalList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Critical\CriticalSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Critical\CriticalSet.Designer.cs">
+      <DependentUpon>CriticalSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Department\DepartmentManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Department\DepartmentManager.Designer.cs">
+      <DependentUpon>DepartmentManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Department\DepartmentEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Department\DepartmentEditor.Designer.cs">
+      <DependentUpon>DepartmentEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnosis\Diagnosis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnosis\Diagnosis.Designer.cs">
+      <DependentUpon>Diagnosis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnosis\DiagnosisTop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnosis\DiagnosisTop.Designer.cs">
+      <DependentUpon>DiagnosisTop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dictionary\DictionaryEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dictionary\DictionaryEdit.Designer.cs">
+      <DependentUpon>DictionaryEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dictionary\DictionarySetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dictionary\DictionarySetting.Designer.cs">
+      <DependentUpon>DictionarySetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupConsumables\frmGroupConsumSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupConsumables\frmGroupConsumSet.Designer.cs">
+      <DependentUpon>frmGroupConsumSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuidanceList\ExaminationQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuidanceList\ExaminationQuery.Designer.cs">
+      <DependentUpon>ExaminationQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuidanceList\GuidanceList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuidanceList\GuidanceList.Designer.cs">
+      <DependentUpon>GuidanceList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuidanceList\NumberQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuidanceList\NumberQuery.Designer.cs">
+      <DependentUpon>NumberQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceManagement\InterfaceImportExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceManagement\InterfaceImportExcel.Designer.cs">
+      <DependentUpon>InterfaceImportExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceManagement\InterfaceList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceManagement\InterfaceList.Designer.cs">
+      <DependentUpon>InterfaceList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\FrmInvoiceManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice\FrmInvoiceManagement.Designer.cs">
+      <DependentUpon>FrmInvoiceManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemGroup\ItemGroupList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemGroup\ItemGroupList.Designer.cs">
+      <DependentUpon>ItemGroupList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemGroup\PriceSynchronize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemGroup\PriceSynchronize.Designer.cs">
+      <DependentUpon>PriceSynchronize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemInfo\frmHCITems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemInfo\frmHCITems.Designer.cs">
+      <DependentUpon>frmHCITems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemInfo\frmProcExpress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemInfo\frmProcExpress.Designer.cs">
+      <DependentUpon>frmProcExpress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemInfo\ItemEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemInfo\ItemEditor.Designer.cs">
+      <DependentUpon>ItemEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemGroup\ItemGroupEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemGroup\ItemGroupEditor.Designer.cs">
+      <DependentUpon>ItemGroupEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemInfo\ItemList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemInfo\ItemList.Designer.cs">
+      <DependentUpon>ItemList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemInfo\ItemProcExpressList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemInfo\ItemProcExpressList.Designer.cs">
+      <DependentUpon>ItemProcExpressList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemInfo\ItemStandardEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemInfo\ItemStandardEditor.Designer.cs">
+      <DependentUpon>ItemStandardEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemSuit\CopyItemSuit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemSuit\CopyItemSuit.Designer.cs">
+      <DependentUpon>CopyItemSuit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemSuit\ItemSuitList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemSuit\ItemSuitList.Designer.cs">
+      <DependentUpon>ItemSuitList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemSuit\ItemSuitEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemSuit\ItemSuitEditor.Designer.cs">
+      <DependentUpon>ItemSuitEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogSet\FrmLogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogSet\FrmLogs.Designer.cs">
+      <DependentUpon>FrmLogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Market\ContractCategoryEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Market\ContractCategoryEditor.Designer.cs">
+      <DependentUpon>ContractCategoryEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Market\ContractCategoryManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Market\ContractCategoryManager.Designer.cs">
+      <DependentUpon>ContractCategoryManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberShipCard\ItemSuitLists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberShipCard\ItemSuitLists.Designer.cs">
+      <DependentUpon>ItemSuitLists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberShipCard\MemberShipCardEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberShipCard\MemberShipCardEdit.Designer.cs">
+      <DependentUpon>MemberShipCardEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberShipCard\MemberShipCardList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberShipCard\MemberShipCardList.Designer.cs">
+      <DependentUpon>MemberShipCardList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OAApprovalSet\FrmOAZKSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OAApprovalSet\FrmOAZKSet.Designer.cs">
+      <DependentUpon>FrmOAZKSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccAbnormalResult\OccAbnormalResultList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccAbnormalResult\OccAbnormalResultList.Designer.cs">
+      <DependentUpon>OccAbnormalResultList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccAbnormalResult\OccAbnormalResultStatic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccAbnormalResult\OccAbnormalResultStatic.Designer.cs">
+      <DependentUpon>OccAbnormalResultStatic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccConclusioncontraindication\ContraindicationsChar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccConclusioncontraindication\ContraindicationsChar.Designer.cs">
+      <DependentUpon>ContraindicationsChar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccConclusioncontraindication\Occupationalcontraindications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccConclusioncontraindication\Occupationalcontraindications.Designer.cs">
+      <DependentUpon>Occupationalcontraindications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccConclusionStatistics\OccConclusionStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccConclusionStatistics\OccConclusionStatistics.Designer.cs">
+      <DependentUpon>OccConclusionStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccConclusionStatistics\OccConclusionYear\frmOccConclusionYearChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccConclusionStatistics\OccConclusionYear\frmOccConclusionYearChart.Designer.cs">
+      <DependentUpon>frmOccConclusionYearChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccConclusionStatistics\StatistalChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccConclusionStatistics\StatistalChart.Designer.cs">
+      <DependentUpon>StatistalChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccConclusionSuspected\OccConclusionSuspected.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccConclusionSuspected\OccConclusionSuspected.Designer.cs">
+      <DependentUpon>OccConclusionSuspected.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccConclusionSuspected\SuspectedChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccConclusionSuspected\SuspectedChart.Designer.cs">
+      <DependentUpon>SuspectedChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccConclusionTarget\OccConclusionTarget.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccConclusionTarget\OccConclusionTarget.Designer.cs">
+      <DependentUpon>OccConclusionTarget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccConclusionTarget\TargetChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccConclusionTarget\TargetChart.Designer.cs">
+      <DependentUpon>TargetChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccConclusionStatistics\OccConclusionYear\OccConclusionYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccConclusionStatistics\OccConclusionYear\OccConclusionYear.Designer.cs">
+      <DependentUpon>OccConclusionYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccDayStatic\frmOccDayStatic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccDayStatic\frmOccDayStatic.Designer.cs">
+      <DependentUpon>frmOccDayStatic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccDayStatic\OccDayStaticList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccDayStatic\OccDayStaticList.Designer.cs">
+      <DependentUpon>OccDayStaticList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccdiseaseConsulitation\OccCusList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccdiseaseConsulitation\OccCusList.Designer.cs">
+      <DependentUpon>OccCusList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccdiseaseConsulitation\frmsxqm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccdiseaseConsulitation\frmsxqm.Designer.cs">
+      <DependentUpon>frmsxqm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccdiseaseConsulitation\OccdieaseConsultation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccdiseaseConsulitation\OccdieaseConsultation.Designer.cs">
+      <DependentUpon>OccdieaseConsultation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccdiseaseConsulitation\OccQuesFamilyHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccdiseaseConsulitation\OccQuesFamilyHistory.Designer.cs">
+      <DependentUpon>OccQuesFamilyHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccdiseaseConsulitation\OccQuesPastHistoryEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccdiseaseConsulitation\OccQuesPastHistoryEdit.Designer.cs">
+      <DependentUpon>OccQuesPastHistoryEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccdiseaseConsulitation\OccQuestionSymptom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccdiseaseConsulitation\OccQuestionSymptom.Designer.cs">
+      <DependentUpon>OccQuestionSymptom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccdiseaseConsulitation\OccupationHistoryEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccdiseaseConsulitation\OccupationHistoryEdit.Designer.cs">
+      <DependentUpon>OccupationHistoryEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccdiseaseSet\OccdiseaseMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccdiseaseSet\OccdiseaseMain.Designer.cs">
+      <DependentUpon>OccdiseaseMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccdiseaseSet\OccduseaseAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccdiseaseSet\OccduseaseAdd.Designer.cs">
+      <DependentUpon>OccduseaseAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccDisProposalNew\ExcelIntput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccDisProposalNew\ExcelIntput.Designer.cs">
+      <DependentUpon>ExcelIntput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccDisProposalNew\InputOccTarget.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccDisProposalNew\InputOccTarget.Designer.cs">
+      <DependentUpon>InputOccTarget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccDisProposalNew\OccBasicDictionaryEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccDisProposalNew\OccBasicDictionaryEdit.Designer.cs">
+      <DependentUpon>OccBasicDictionaryEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccDisProposalNew\OccBasicDictionaryList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccDisProposalNew\OccBasicDictionaryList.Designer.cs">
+      <DependentUpon>OccBasicDictionaryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccDisProposalNew\OccTargetDiseaseEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccDisProposalNew\OccTargetDiseaseEdit.Designer.cs">
+      <DependentUpon>OccTargetDiseaseEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccDisProposalNew\OccTargetDiseaseList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccDisProposalNew\OccTargetDiseaseList.Designer.cs">
+      <DependentUpon>OccTargetDiseaseList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccDisProposal\DictionariesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccDisProposal\DictionariesList.Designer.cs">
+      <DependentUpon>DictionariesList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccDisProposal\DictionariesSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccDisProposal\DictionariesSet.Designer.cs">
+      <DependentUpon>DictionariesSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccDisProposal\HazardCategorySetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccDisProposal\HazardCategorySetting.designer.cs">
+      <DependentUpon>HazardCategorySetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccDisProposal\HazardFactorsSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccDisProposal\HazardFactorsSetting.designer.cs">
+      <DependentUpon>HazardFactorsSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccDisProposal\JobCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccDisProposal\JobCategory.designer.cs">
+      <DependentUpon>JobCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccDisProposal\OccupationalLis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccDisProposal\OccupationalLis.Designer.cs">
+      <DependentUpon>OccupationalLis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccDisProposal\OccupationalSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccDisProposal\OccupationalSet.Designer.cs">
+      <DependentUpon>OccupationalSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccDisProposal\OccupationalStandardList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccDisProposal\OccupationalStandardList.Designer.cs">
+      <DependentUpon>OccupationalStandardList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccDisProposal\OccupationalStandardSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccDisProposal\OccupationalStandardSet.Designer.cs">
+      <DependentUpon>OccupationalStandardSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccDisProposal\ProposalSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccDisProposal\ProposalSetting.Designer.cs">
+      <DependentUpon>ProposalSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccDisProposal\PostSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccDisProposal\PostSetting.Designer.cs">
+      <DependentUpon>PostSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccDisProposal\SuggestionEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccDisProposal\SuggestionEditor.Designer.cs">
+      <DependentUpon>SuggestionEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccDisProposal\WorkType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccDisProposal\WorkType.Designer.cs">
+      <DependentUpon>WorkType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccDisRequisition\GroupReportConsomer.cs" />
+    <Compile Include="OccDisRequisition\OccDisRequisitionList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccDisRequisition\OccDisRequisitionList.Designer.cs">
+      <DependentUpon>OccDisRequisitionList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccHarmFul\OccHarmFulList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccHarmFul\OccHarmFulList.Designer.cs">
+      <DependentUpon>OccHarmFulList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccHarmFul\OccHarmFulStatic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccHarmFul\OccHarmFulStatic.Designer.cs">
+      <DependentUpon>OccHarmFulStatic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccHazardFactor\OccRadiationEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccHazardFactor\OccRadiationEdit.Designer.cs">
+      <DependentUpon>OccRadiationEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccHazardFactor\OccHazardFactorEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccHazardFactor\OccHazardFactorEdit.Designer.cs">
+      <DependentUpon>OccHazardFactorEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccHazardFactor\OccRadiationList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccHazardFactor\OccRadiationList.Designer.cs">
+      <DependentUpon>OccRadiationList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccHazardFactor\OccHazardFactorList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccHazardFactor\OccHazardFactorList.Designer.cs">
+      <DependentUpon>OccHazardFactorList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccReview\OccReviewList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccReview\OccReviewList.Designer.cs">
+      <DependentUpon>OccReviewList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OccReview\OccReviewStatic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccReview\OccReviewStatic.Designer.cs">
+      <DependentUpon>OccReviewStatic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentMethod\PayMethod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentMethod\PayMethod.Designer.cs">
+      <DependentUpon>PayMethod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonnelCategory\PersonnelCategoryList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonnelCategory\PersonnelCategoryList.Designer.cs">
+      <DependentUpon>PersonnelCategoryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ReportSetting.Designer.cs">
+      <DependentUpon>ReportSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Review\ReviewEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Review\ReviewEdit.Designer.cs">
+      <DependentUpon>ReviewEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Review\ReviewList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Review\ReviewList.Designer.cs">
+      <DependentUpon>ReviewList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Suggest\frmSumConflict.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suggest\frmSumConflict.Designer.cs">
+      <DependentUpon>frmSumConflict.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Suggest\frmSumConflictList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suggest\frmSumConflictList.Designer.cs">
+      <DependentUpon>frmSumConflictList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Suggest\frmSumHB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suggest\frmSumHB.Designer.cs">
+      <DependentUpon>frmSumHB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Suggest\SuggestList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suggest\SuggestList.Designer.cs">
+      <DependentUpon>SuggestList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Suggest\SuggestEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suggest\SuggestEditor.Designer.cs">
+      <DependentUpon>SuggestEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SumHide\FrmSumHideList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SumHide\FrmSumHideList.Designer.cs">
+      <DependentUpon>FrmSumHideList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TargetDisease\HumanBodySystemAdministration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TargetDisease\HumanBodySystemAdministration.designer.cs">
+      <DependentUpon>HumanBodySystemAdministration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TargetDisease\OccupationalDiseaseIncludeItemGroupAdministration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TargetDisease\OccupationalDiseaseIncludeItemGroupAdministration.designer.cs">
+      <DependentUpon>OccupationalDiseaseIncludeItemGroupAdministration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TargetDisease\SymptomAdministration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TargetDisease\SymptomAdministration.designer.cs">
+      <DependentUpon>SymptomAdministration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TargetDisease\TargetDisease.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TargetDisease\TargetDisease.designer.cs">
+      <DependentUpon>TargetDisease.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UserEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\UserEditor.Designer.cs">
+      <DependentUpon>UserEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\UserList.Designer.cs">
+      <DependentUpon>UserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UserPassUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\UserPassUpdate.Designer.cs">
+      <DependentUpon>UserPassUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkType\WorkTypeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkType\WorkTypeList.Designer.cs">
+      <DependentUpon>WorkTypeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkType\WorkTypeEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkType\WorkTypeEditor.Designer.cs">
+      <DependentUpon>WorkTypeEditor.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HealthExaminationSystem.ApiProxy\HealthExaminationSystem.ApiProxy.csproj">
+      <Project>{7de60574-b63a-454c-848b-45cea2782273}</Project>
+      <Name>HealthExaminationSystem.ApiProxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HealthExaminationSystem.Common\HealthExaminationSystem.Common.csproj">
+      <Project>{f353738b-c1c3-46ca-8339-f75aa9602b2f}</Project>
+      <Name>HealthExaminationSystem.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HealthExaminationSystem.Enumerations\HealthExaminationSystem.Enumerations.csproj">
+      <Project>{55e602fa-21e2-4eeb-ad64-a32bb93ca772}</Project>
+      <Name>HealthExaminationSystem.Enumerations</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BarSetting\BarCodeList.resx">
+      <DependentUpon>BarCodeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarSetting\BarCodeEditor.resx">
+      <DependentUpon>BarCodeEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicDictionary\BasicDictionaryList.resx">
+      <DependentUpon>BasicDictionaryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicDictionary\BasicDictionaryEditor.resx">
+      <DependentUpon>BasicDictionaryEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicDictionary\BExcelIntput.resx">
+      <DependentUpon>BExcelIntput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicDictionary\frmDepartSelect.resx">
+      <DependentUpon>frmDepartSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicDictionary\GuidanceSet.resx">
+      <DependentUpon>GuidanceSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardSend\CardSeach.resx">
+      <DependentUpon>CardSeach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardSend\CardSendEdit.resx">
+      <DependentUpon>CardSendEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardSend\CardSendList.resx">
+      <DependentUpon>CardSendList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClearData\DeleteData.resx">
+      <DependentUpon>DeleteData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClearData\frmCheck.resx">
+      <DependentUpon>frmCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClearData\frmClearData.resx">
+      <DependentUpon>frmClearData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeManager\CodeConfig.resx">
+      <DependentUpon>CodeConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeManager\CodeEditor.resx">
+      <DependentUpon>CodeEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DynamicColumnDirectory\FormDynamicColumnConfiguration.resx">
+      <DependentUpon>FormDynamicColumnConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DynamicColumnDirectory\FormDynamicColumnTest.resx">
+      <DependentUpon>FormDynamicColumnTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccdiseaseConsulitation\frmzz.resx">
+      <DependentUpon>frmzz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccdiseaseSet\frmProtective.resx">
+      <DependentUpon>frmProtective.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccdiseaseSet\frmSelectHazard.resx">
+      <DependentUpon>frmSelectHazard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Critical\CriticalList.resx">
+      <DependentUpon>CriticalList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Critical\CriticalSet.resx">
+      <DependentUpon>CriticalSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Department\DepartmentManager.resx">
+      <DependentUpon>DepartmentManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Department\DepartmentEditor.resx">
+      <DependentUpon>DepartmentEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagnosis\Diagnosis.resx">
+      <DependentUpon>Diagnosis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagnosis\DiagnosisTop.resx">
+      <DependentUpon>DiagnosisTop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dictionary\DictionaryEdit.resx">
+      <DependentUpon>DictionaryEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dictionary\DictionarySetting.resx">
+      <DependentUpon>DictionarySetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupConsumables\frmGroupConsumSet.resx">
+      <DependentUpon>frmGroupConsumSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuidanceList\ExaminationQuery.resx">
+      <DependentUpon>ExaminationQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuidanceList\GuidanceList.resx">
+      <DependentUpon>GuidanceList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuidanceList\NumberQuery.resx">
+      <DependentUpon>NumberQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceManagement\InterfaceImportExcel.resx">
+      <DependentUpon>InterfaceImportExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceManagement\InterfaceList.resx">
+      <DependentUpon>InterfaceList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\FrmInvoiceManagement.resx">
+      <DependentUpon>FrmInvoiceManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemGroup\ItemGroupList.resx">
+      <DependentUpon>ItemGroupList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemGroup\PriceSynchronize.resx">
+      <DependentUpon>PriceSynchronize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemInfo\frmHCITems.resx">
+      <DependentUpon>frmHCITems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemInfo\frmProcExpress.resx">
+      <DependentUpon>frmProcExpress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemInfo\ItemEditor.resx">
+      <DependentUpon>ItemEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemInfo\ItemList.resx">
+      <DependentUpon>ItemList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemInfo\ItemProcExpressList.resx">
+      <DependentUpon>ItemProcExpressList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemInfo\ItemStandardEditor.resx">
+      <DependentUpon>ItemStandardEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemSuit\CopyItemSuit.resx">
+      <DependentUpon>CopyItemSuit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemSuit\ItemSuitList.resx">
+      <DependentUpon>ItemSuitList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemSuit\ItemSuitEditor.resx">
+      <DependentUpon>ItemSuitEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemGroup\ItemGroupEditor.resx">
+      <DependentUpon>ItemGroupEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="LogSet\FrmLogs.resx">
+      <DependentUpon>FrmLogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Market\ContractCategoryEditor.resx">
+      <DependentUpon>ContractCategoryEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Market\ContractCategoryManager.resx">
+      <DependentUpon>ContractCategoryManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberShipCard\ItemSuitLists.resx">
+      <DependentUpon>ItemSuitLists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberShipCard\MemberShipCardEdit.resx">
+      <DependentUpon>MemberShipCardEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberShipCard\MemberShipCardList.resx">
+      <DependentUpon>MemberShipCardList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OAApprovalSet\FrmOAZKSet.resx">
+      <DependentUpon>FrmOAZKSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccAbnormalResult\OccAbnormalResultList.resx">
+      <DependentUpon>OccAbnormalResultList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccAbnormalResult\OccAbnormalResultStatic.resx">
+      <DependentUpon>OccAbnormalResultStatic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccConclusioncontraindication\ContraindicationsChar.resx">
+      <DependentUpon>ContraindicationsChar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccConclusioncontraindication\Occupationalcontraindications.resx">
+      <DependentUpon>Occupationalcontraindications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccConclusionStatistics\OccConclusionStatistics.resx">
+      <DependentUpon>OccConclusionStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccConclusionStatistics\OccConclusionYear\frmOccConclusionYearChart.resx">
+      <DependentUpon>frmOccConclusionYearChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccConclusionStatistics\StatistalChart.resx">
+      <DependentUpon>StatistalChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccConclusionSuspected\OccConclusionSuspected.resx">
+      <DependentUpon>OccConclusionSuspected.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccConclusionSuspected\SuspectedChart.resx">
+      <DependentUpon>SuspectedChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccConclusionTarget\OccConclusionTarget.resx">
+      <DependentUpon>OccConclusionTarget.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccConclusionTarget\TargetChart.resx">
+      <DependentUpon>TargetChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccConclusionStatistics\OccConclusionYear\OccConclusionYear.resx">
+      <DependentUpon>OccConclusionYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccDayStatic\frmOccDayStatic.resx">
+      <DependentUpon>frmOccDayStatic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccDayStatic\OccDayStaticList.resx">
+      <DependentUpon>OccDayStaticList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccdiseaseConsulitation\OccCusList.resx">
+      <DependentUpon>OccCusList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccdiseaseConsulitation\frmsxqm.resx">
+      <DependentUpon>frmsxqm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccdiseaseConsulitation\OccdieaseConsultation.resx">
+      <DependentUpon>OccdieaseConsultation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccdiseaseConsulitation\OccQuesFamilyHistory.resx">
+      <DependentUpon>OccQuesFamilyHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccdiseaseConsulitation\OccQuesPastHistoryEdit.resx">
+      <DependentUpon>OccQuesPastHistoryEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccdiseaseConsulitation\OccQuestionSymptom.resx">
+      <DependentUpon>OccQuestionSymptom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccdiseaseConsulitation\OccupationHistoryEdit.resx">
+      <DependentUpon>OccupationHistoryEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccdiseaseSet\OccdiseaseMain.resx">
+      <DependentUpon>OccdiseaseMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccdiseaseSet\OccduseaseAdd.resx">
+      <DependentUpon>OccduseaseAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccDisProposalNew\ExcelIntput.resx">
+      <DependentUpon>ExcelIntput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccDisProposalNew\InputOccTarget.resx">
+      <DependentUpon>InputOccTarget.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccDisProposalNew\OccBasicDictionaryEdit.resx">
+      <DependentUpon>OccBasicDictionaryEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccDisProposalNew\OccBasicDictionaryList.resx">
+      <DependentUpon>OccBasicDictionaryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccDisProposalNew\OccTargetDiseaseEdit.resx">
+      <DependentUpon>OccTargetDiseaseEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccDisProposalNew\OccTargetDiseaseList.resx">
+      <DependentUpon>OccTargetDiseaseList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccDisProposal\DictionariesList.resx">
+      <DependentUpon>DictionariesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccDisProposal\DictionariesSet.resx">
+      <DependentUpon>DictionariesSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccDisProposal\HazardCategorySetting.resx">
+      <DependentUpon>HazardCategorySetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccDisProposal\HazardFactorsSetting.resx">
+      <DependentUpon>HazardFactorsSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccDisProposal\JobCategory.resx">
+      <DependentUpon>JobCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccDisProposal\OccupationalLis.resx">
+      <DependentUpon>OccupationalLis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccDisProposal\OccupationalSet.resx">
+      <DependentUpon>OccupationalSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccDisProposal\OccupationalStandardList.resx">
+      <DependentUpon>OccupationalStandardList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccDisProposal\OccupationalStandardSet.resx">
+      <DependentUpon>OccupationalStandardSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccDisProposal\ProposalSetting.resx">
+      <DependentUpon>ProposalSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccDisProposal\PostSetting.resx">
+      <DependentUpon>PostSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccDisProposal\SuggestionEditor.resx">
+      <DependentUpon>SuggestionEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccDisProposal\WorkType.resx">
+      <DependentUpon>WorkType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccDisRequisition\OccDisRequisitionList.resx">
+      <DependentUpon>OccDisRequisitionList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccHarmFul\OccHarmFulList.resx">
+      <DependentUpon>OccHarmFulList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccHarmFul\OccHarmFulStatic.resx">
+      <DependentUpon>OccHarmFulStatic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccHazardFactor\OccRadiationEdit.resx">
+      <DependentUpon>OccRadiationEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccHazardFactor\OccHazardFactorEdit.resx">
+      <DependentUpon>OccHazardFactorEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccHazardFactor\OccRadiationList.resx">
+      <DependentUpon>OccRadiationList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccHazardFactor\OccHazardFactorList.resx">
+      <DependentUpon>OccHazardFactorList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccReview\OccReviewList.resx">
+      <DependentUpon>OccReviewList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccReview\OccReviewStatic.resx">
+      <DependentUpon>OccReviewStatic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentMethod\PayMethod.resx">
+      <DependentUpon>PayMethod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonnelCategory\PersonnelCategoryList.resx">
+      <DependentUpon>PersonnelCategoryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportSetting.resx">
+      <DependentUpon>ReportSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Review\ReviewEdit.resx">
+      <DependentUpon>ReviewEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Review\ReviewList.resx">
+      <DependentUpon>ReviewList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suggest\frmSumConflict.resx">
+      <DependentUpon>frmSumConflict.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suggest\frmSumConflictList.resx">
+      <DependentUpon>frmSumConflictList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suggest\frmSumHB.resx">
+      <DependentUpon>frmSumHB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suggest\SuggestList.resx">
+      <DependentUpon>SuggestList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suggest\SuggestEditor.resx">
+      <DependentUpon>SuggestEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SumHide\FrmSumHideList.resx">
+      <DependentUpon>FrmSumHideList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TargetDisease\HumanBodySystemAdministration.resx">
+      <DependentUpon>HumanBodySystemAdministration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TargetDisease\OccupationalDiseaseIncludeItemGroupAdministration.resx">
+      <DependentUpon>OccupationalDiseaseIncludeItemGroupAdministration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TargetDisease\SymptomAdministration.resx">
+      <DependentUpon>SymptomAdministration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TargetDisease\TargetDisease.resx">
+      <DependentUpon>TargetDisease.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\UserEditor.resx">
+      <DependentUpon>UserEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\UserList.resx">
+      <DependentUpon>UserList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\UserPassUpdate.resx">
+      <DependentUpon>UserPassUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkType\WorkTypeList.resx">
+      <DependentUpon>WorkTypeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkType\WorkTypeEditor.resx">
+      <DependentUpon>WorkTypeEditor.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\ReadMe.txt" />
+    <None Include="Resources\微信截图_20210617163329.png" />
+    <None Include="Suggest\建议" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Individuation\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

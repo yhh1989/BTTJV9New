@@ -1,0 +1,1498 @@
+﻿已于 2023-10-20 21:32:58 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-20 21:32:58' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-20 21:32:58 +08:00
+ 执行
+-- 已在 18 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-20 21:32:58 +08:00
+ 关闭了连接
+已于 2023/10/20 21:32:59 +08:00
+ 打开了连接
+SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[IDName] AS [IDName], 
+    [Extent1].[IDType] AS [IDType], 
+    [Extent1].[prefix] AS [prefix], 
+    [Extent1].[Dateprefix] AS [Dateprefix], 
+    [Extent1].[IDValue] AS [IDValue], 
+    [Extent1].[IDTime] AS [IDTime], 
+    [Extent1].[RowVersion] AS [RowVersion], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM [dbo].[TdbIdNumbers] AS [Extent1]
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND (([Extent1].[IDType] = @p__linq__0) OR (([Extent1].[IDType] IS NULL) AND (@p__linq__0 IS NULL)))
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '18' (Type = String, Size = 4000)
+
+-- 正在 2023/10/20 21:32:59 +08:00
+ 执行
+-- 已在 47 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/20 21:32:59 +08:00
+ 关闭了连接
+已于 2023/10/20 21:32:59 +08:00
+ 打开了连接
+UPDATE [dbo].[TdbIdNumbers]
+SET [IDName] = @0, [IDType] = @1, [prefix] = @2, [Dateprefix] = @3, [IDValue] = @4, [IDTime] = @5, [TenantId] = @6, [IsDeleted] = @7, [DeleterUserId] = NULL, [DeletionTime] = NULL, [LastModificationTime] = @8, [LastModifierUserId] = @9, [CreationTime] = @10, [CreatorUserId] = @11
+WHERE (([Id] = @12) AND ([RowVersion] = @13))
+SELECT [RowVersion]
+FROM [dbo].[TdbIdNumbers]
+WHERE @@ROWCOUNT > 0 AND [Id] = @12
+
+
+-- @0: 'RegNum' (Type = String, Size = 64)
+
+-- @1: '18' (Type = String, Size = 64)
+
+-- @2: '' (Type = String, Size = 64)
+
+-- @3: '' (Type = String, Size = 64)
+
+-- @4: '2' (Type = Int32)
+
+-- @5: '2023/10/20 21:32:59' (Type = DateTime2)
+
+-- @6: '2' (Type = Int32)
+
+-- @7: 'False' (Type = Boolean)
+
+-- @8: '2023/10/20 21:32:59' (Type = DateTime2)
+
+-- @9: '3' (Type = Int64)
+
+-- @10: '2023/1/12 9:29:39' (Type = DateTime2)
+
+-- @11: '3' (Type = Int64)
+
+-- @12: '316661e0-7759-4782-9de5-5769f06ffa31' (Type = Guid)
+
+-- @13: 'System.Byte[]' (Type = Binary, Size = 8)
+
+-- 正在 2023/10/20 21:32:59 +08:00
+ 执行
+-- 已在 14 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/20 21:32:59 +08:00
+ 关闭了连接
+已于 2023/10/20 21:32:59 +08:00
+ 打开了连接
+已于 2023/10/20 21:32:59 +08:00
+ 启动了事务
+INSERT [dbo].[AbpAuditLogs]([TenantId], [UserId], [ServiceName], [MethodName], [Parameters], [ReturnValue], [ExecutionTime], [ExecutionDuration], [ClientIpAddress], [ClientName], [BrowserInfo], [ExceptionMessage], [Exception], [ImpersonatorUserId], [ImpersonatorTenantId], [CustomData])
+VALUES (@0, @1, @2, @3, @4, NULL, @5, @6, @7, @8, @9, NULL, NULL, NULL, NULL, NULL)
+SELECT [Id]
+FROM [dbo].[AbpAuditLogs]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+
+
+-- @0: '2' (Type = Int32)
+
+-- @1: '3' (Type = Int64)
+
+-- @2: 'Sw.Hospital.HealthExaminationSystem.Application.IDNumber.IDNumberAppService' (Type = String, Size = 256)
+
+-- @3: 'CreateRegNum' (Type = String, Size = 256)
+
+-- @4: '{}' (Type = String, Size = 1024)
+
+-- @5: '2023/10/20 21:32:59' (Type = DateTime2)
+
+-- @6: '155' (Type = Int32)
+
+-- @7: '::1' (Type = String, Size = 64)
+
+-- @8: 'LAPTOP-GECQGVPJ' (Type = String, Size = 128)
+
+-- @9: 'Unknown / 0.0 / Unknown' (Type = String, Size = 512)
+
+-- 正在 2023/10/20 21:32:59 +08:00
+ 执行
+-- 已在 13 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/20 21:32:59 +08:00
+ 提交了事务
+已于 2023/10/20 21:32:59 +08:00
+ 关闭了连接
+已于 2023/10/20 21:32:59 +08:00
+ 打开了连接
+SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Type] AS [Type], 
+    [Extent1].[Value] AS [Value], 
+    [Extent1].[Code] AS [Code], 
+    [Extent1].[Text] AS [Text], 
+    [Extent1].[helpChar] AS [helpChar], 
+    [Extent1].[Remarks] AS [Remarks], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM [dbo].[TbmBasicDictionaries] AS [Extent1]
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND (N'ForegroundFunctionControl' = [Extent1].[Type]) AND (22 = [Extent1].[Value])
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- 正在 2023/10/20 21:32:59 +08:00
+ 执行
+-- 已在 13 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/20 21:32:59 +08:00
+ 关闭了连接
+已于 2023/10/20 21:32:59 +08:00
+ 打开了连接
+SELECT 
+    [Limit1].[TenantId] AS [TenantId], 
+    [Limit1].[Id] AS [Id], 
+    [Limit1].[CustomerId] AS [CustomerId], 
+    [Limit1].[ClientTeamInfoId] AS [ClientTeamInfoId], 
+    [Limit1].[ClientInfoId] AS [ClientInfoId], 
+    [Limit1].[ClientRegId] AS [ClientRegId], 
+    [Limit1].[CustomerBM] AS [CustomerBM], 
+    [Limit1].[OrderNum] AS [OrderNum], 
+    [Limit1].[CustomerRegNum] AS [CustomerRegNum], 
+    [Limit1].[WebQueryCode] AS [WebQueryCode], 
+    [Limit1].[ExamPlace] AS [ExamPlace], 
+    [Limit1].[FamilyState] AS [FamilyState], 
+    [Limit1].[BookingDate] AS [BookingDate], 
+    [Limit1].[LoginDate] AS [LoginDate], 
+    [Limit1].[MarriageStatus] AS [MarriageStatus], 
+    [Limit1].[ItemSuitBMId] AS [ItemSuitBMId], 
+    [Limit1].[ItemSuitName] AS [ItemSuitName], 
+    [Limit1].[RegisterState] AS [RegisterState], 
+    [Limit1].[CheckSate] AS [CheckSate], 
+    [Limit1].[SummSate] AS [SummSate], 
+    [Limit1].[OccSummSate] AS [OccSummSate], 
+    [Limit1].[SummLocked] AS [SummLocked], 
+    [Limit1].[SummLockTime] AS [SummLockTime], 
+    [Limit1].[SummLockEmployeeBMId] AS [SummLockEmployeeBMId], 
+    [Limit1].[PrintSate] AS [PrintSate], 
+    [Limit1].[OccPrintSate] AS [OccPrintSate], 
+    [Limit1].[PrintCount] AS [PrintCount], 
+    [Limit1].[PrintTime] AS [PrintTime], 
+    [Limit1].[TZDPrintSate] AS [TZDPrintSate], 
+    [Limit1].[ExportSate] AS [ExportSate], 
+    [Limit1].[occExportSate] AS [occExportSate], 
+    [Limit1].[ReceiveSate] AS [ReceiveSate], 
+    [Limit1].[InfoSource] AS [InfoSource], 
+    [Limit1].[HaveBreakfast] AS [HaveBreakfast], 
+    [Limit1].[Message] AS [Message], 
+    [Limit1].[EmailReport] AS [EmailReport], 
+    [Limit1].[ReportBySelf] AS [ReportBySelf], 
+    [Limit1].[MailingReport] AS [MailingReport], 
+    [Limit1].[BlindSate] AS [BlindSate], 
+    [Limit1].[ReplaceSate] AS [ReplaceSate], 
+    [Limit1].[NavigationEmployeeBMId] AS [NavigationEmployeeBMId], 
+    [Limit1].[NavigationSate] AS [NavigationSate], 
+    [Limit1].[NavigationStartTime] AS [NavigationStartTime], 
+    [Limit1].[NavigationEndTime] AS [NavigationEndTime], 
+    [Limit1].[BespeakState] AS [BespeakState], 
+    [Limit1].[ReviewSate] AS [ReviewSate], 
+    [Limit1].[ReviewRegID] AS [ReviewRegID], 
+    [Limit1].[SupplementaryRegID] AS [SupplementaryRegID], 
+    [Limit1].[CostState] AS [CostState], 
+    [Limit1].[CSEmployeeId] AS [CSEmployeeId], 
+    [Limit1].[FSEmployeeId] AS [FSEmployeeId], 
+    [Limit1].[PreEmployeeId] AS [PreEmployeeId], 
+    [Limit1].[PreSumDate] AS [PreSumDate], 
+    [Limit1].[SendToConfirm] AS [SendToConfirm], 
+    [Limit1].[SendUserId] AS [SendUserId], 
+    [Limit1].[CustomerType] AS [CustomerType], 
+    [Limit1].[PhysicalType] AS [PhysicalType], 
+    [Limit1].[IsFree] AS [IsFree], 
+    [Limit1].[SendToConfirmDate] AS [SendToConfirmDate], 
+    [Limit1].[GuidanceSate] AS [GuidanceSate], 
+    [Limit1].[BarState] AS [BarState], 
+    [Limit1].[RequestState] AS [RequestState], 
+    [Limit1].[UrgentState] AS [UrgentState], 
+    [Limit1].[HowDayReport] AS [HowDayReport], 
+    [Limit1].[DrawCard] AS [DrawCard], 
+    [Limit1].[DrawTime] AS [DrawTime], 
+    [Limit1].[LastMenstruation] AS [LastMenstruation], 
+    [Limit1].[Gestation] AS [Gestation], 
+    [Limit1].[RegAge] AS [RegAge], 
+    [Limit1].[ICD10] AS [ICD10], 
+    [Limit1].[PrimaryName] AS [PrimaryName], 
+    [Limit1].[RiskS] AS [RiskS], 
+    [Limit1].[PostState] AS [PostState], 
+    [Limit1].[TypeWork] AS [TypeWork], 
+    [Limit1].[WorkName] AS [WorkName], 
+    [Limit1].[TotalWorkAge] AS [TotalWorkAge], 
+    [Limit1].[WorkAgeUnit] AS [WorkAgeUnit], 
+    [Limit1].[InjuryAge] AS [InjuryAge], 
+    [Limit1].[InjuryAgeUnit] AS [InjuryAgeUnit], 
+    [Limit1].[ClientType] AS [ClientType], 
+    [Limit1].[ReadyPregnancybirth] AS [ReadyPregnancybirth], 
+    [Limit1].[GuidanceNum] AS [GuidanceNum], 
+    [Limit1].[GuidancePrintNum] AS [GuidancePrintNum], 
+    [Limit1].[Introducer] AS [Introducer], 
+    [Limit1].[PersonnelCategoryId] AS [PersonnelCategoryId], 
+    [Limit1].[GuidancePhotoId] AS [GuidancePhotoId], 
+    [Limit1].[CusCabitBM] AS [CusCabitBM], 
+    [Limit1].[CusCabitState] AS [CusCabitState], 
+    [Limit1].[CusCabitTime] AS [CusCabitTime], 
+    [Limit1].[JKZBM] AS [JKZBM], 
+    [Limit1].[HGZBH] AS [HGZBH], 
+    [Limit1].[NucleicAcidType] AS [NucleicAcidType], 
+    [Limit1].[OrderUserId] AS [OrderUserId], 
+    [Limit1].[HisSectionNum] AS [HisSectionNum], 
+    [Limit1].[HisPatientId] AS [HisPatientId], 
+    [Limit1].[PacsBM] AS [PacsBM], 
+    [Limit1].[ClientRegNum] AS [ClientRegNum], 
+    [Limit1].[FPNo] AS [FPNo], 
+    [Limit1].[BookingStatus] AS [BookingStatus], 
+    [Limit1].[AppointmentTime] AS [AppointmentTime], 
+    [Limit1].[Remarks] AS [Remarks], 
+    [Limit1].[UploadState] AS [UploadState], 
+    [Limit1].[RegMessageState] AS [RegMessageState], 
+    [Limit1].[VisitSate] AS [VisitSate], 
+    [Limit1].[VisitType] AS [VisitType], 
+    [Limit1].[VisitEmployeeId] AS [VisitEmployeeId], 
+    [Limit1].[VisitTime] AS [VisitTime], 
+    [Limit1].[ReportMessageState] AS [ReportMessageState], 
+    [Limit1].[CrissMessageState] AS [CrissMessageState], 
+    [Limit1].[VisitMessageState] AS [VisitMessageState], 
+    [Limit1].[QuestionState] AS [QuestionState], 
+    [Limit1].[QuestionTime] AS [QuestionTime], 
+    [Limit1].[ArriveCheck] AS [ArriveCheck], 
+    [Limit1].[HospitalArea] AS [HospitalArea], 
+    [Limit1].[OccQuesPhotoId] AS [OccQuesPhotoId], 
+    [Limit1].[OccQuesDate] AS [OccQuesDate], 
+    [Limit1].[OccQuesSate] AS [OccQuesSate], 
+    [Limit1].[OccQuesUserId] AS [OccQuesUserId], 
+    [Limit1].[WXExportSate] AS [WXExportSate], 
+    [Limit1].[SignBmId] AS [SignBmId], 
+    [Limit1].[PhotoBmId] AS [PhotoBmId], 
+    [Limit1].[WJUploadState] AS [WJUploadState], 
+    [Limit1].[rgst_no] AS [rgst_no], 
+    [Limit1].[StarTime] AS [StarTime], 
+    [Limit1].[RadiationName] AS [RadiationName], 
+    [Limit1].[employerEnterpriseName] AS [employerEnterpriseName], 
+    [Limit1].[employerCreditCode] AS [employerCreditCode], 
+    [Limit1].[ReportDate] AS [ReportDate], 
+    [Limit1].[IsDeleted] AS [IsDeleted], 
+    [Limit1].[DeleterUserId] AS [DeleterUserId], 
+    [Limit1].[DeletionTime] AS [DeletionTime], 
+    [Limit1].[LastModificationTime] AS [LastModificationTime], 
+    [Limit1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Limit1].[CreationTime] AS [CreationTime], 
+    [Limit1].[CreatorUserId] AS [CreatorUserId], 
+    [Limit1].[NavigationOperation_Id] AS [NavigationOperation_Id]
+    FROM ( SELECT TOP (1) 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[CustomerId] AS [CustomerId], 
+        [Extent1].[ClientTeamInfoId] AS [ClientTeamInfoId], 
+        [Extent1].[ClientInfoId] AS [ClientInfoId], 
+        [Extent1].[ClientRegId] AS [ClientRegId], 
+        [Extent1].[CustomerBM] AS [CustomerBM], 
+        [Extent1].[OrderNum] AS [OrderNum], 
+        [Extent1].[CustomerRegNum] AS [CustomerRegNum], 
+        [Extent1].[WebQueryCode] AS [WebQueryCode], 
+        [Extent1].[ExamPlace] AS [ExamPlace], 
+        [Extent1].[FamilyState] AS [FamilyState], 
+        [Extent1].[BookingDate] AS [BookingDate], 
+        [Extent1].[LoginDate] AS [LoginDate], 
+        [Extent1].[MarriageStatus] AS [MarriageStatus], 
+        [Extent1].[ItemSuitBMId] AS [ItemSuitBMId], 
+        [Extent1].[ItemSuitName] AS [ItemSuitName], 
+        [Extent1].[RegisterState] AS [RegisterState], 
+        [Extent1].[CheckSate] AS [CheckSate], 
+        [Extent1].[SummSate] AS [SummSate], 
+        [Extent1].[OccSummSate] AS [OccSummSate], 
+        [Extent1].[SummLocked] AS [SummLocked], 
+        [Extent1].[SummLockTime] AS [SummLockTime], 
+        [Extent1].[SummLockEmployeeBMId] AS [SummLockEmployeeBMId], 
+        [Extent1].[PrintSate] AS [PrintSate], 
+        [Extent1].[OccPrintSate] AS [OccPrintSate], 
+        [Extent1].[PrintCount] AS [PrintCount], 
+        [Extent1].[PrintTime] AS [PrintTime], 
+        [Extent1].[TZDPrintSate] AS [TZDPrintSate], 
+        [Extent1].[ExportSate] AS [ExportSate], 
+        [Extent1].[occExportSate] AS [occExportSate], 
+        [Extent1].[ReceiveSate] AS [ReceiveSate], 
+        [Extent1].[InfoSource] AS [InfoSource], 
+        [Extent1].[HaveBreakfast] AS [HaveBreakfast], 
+        [Extent1].[Message] AS [Message], 
+        [Extent1].[EmailReport] AS [EmailReport], 
+        [Extent1].[ReportBySelf] AS [ReportBySelf], 
+        [Extent1].[MailingReport] AS [MailingReport], 
+        [Extent1].[BlindSate] AS [BlindSate], 
+        [Extent1].[ReplaceSate] AS [ReplaceSate], 
+        [Extent1].[NavigationEmployeeBMId] AS [NavigationEmployeeBMId], 
+        [Extent1].[NavigationSate] AS [NavigationSate], 
+        [Extent1].[NavigationStartTime] AS [NavigationStartTime], 
+        [Extent1].[NavigationEndTime] AS [NavigationEndTime], 
+        [Extent1].[BespeakState] AS [BespeakState], 
+        [Extent1].[ReviewSate] AS [ReviewSate], 
+        [Extent1].[ReviewRegID] AS [ReviewRegID], 
+        [Extent1].[SupplementaryRegID] AS [SupplementaryRegID], 
+        [Extent1].[CostState] AS [CostState], 
+        [Extent1].[CSEmployeeId] AS [CSEmployeeId], 
+        [Extent1].[FSEmployeeId] AS [FSEmployeeId], 
+        [Extent1].[PreEmployeeId] AS [PreEmployeeId], 
+        [Extent1].[PreSumDate] AS [PreSumDate], 
+        [Extent1].[SendToConfirm] AS [SendToConfirm], 
+        [Extent1].[SendUserId] AS [SendUserId], 
+        [Extent1].[CustomerType] AS [CustomerType], 
+        [Extent1].[PhysicalType] AS [PhysicalType], 
+        [Extent1].[IsFree] AS [IsFree], 
+        [Extent1].[SendToConfirmDate] AS [SendToConfirmDate], 
+        [Extent1].[GuidanceSate] AS [GuidanceSate], 
+        [Extent1].[BarState] AS [BarState], 
+        [Extent1].[RequestState] AS [RequestState], 
+        [Extent1].[UrgentState] AS [UrgentState], 
+        [Extent1].[HowDayReport] AS [HowDayReport], 
+        [Extent1].[DrawCard] AS [DrawCard], 
+        [Extent1].[DrawTime] AS [DrawTime], 
+        [Extent1].[LastMenstruation] AS [LastMenstruation], 
+        [Extent1].[Gestation] AS [Gestation], 
+        [Extent1].[RegAge] AS [RegAge], 
+        [Extent1].[ICD10] AS [ICD10], 
+        [Extent1].[PrimaryName] AS [PrimaryName], 
+        [Extent1].[RiskS] AS [RiskS], 
+        [Extent1].[PostState] AS [PostState], 
+        [Extent1].[TypeWork] AS [TypeWork], 
+        [Extent1].[WorkName] AS [WorkName], 
+        [Extent1].[TotalWorkAge] AS [TotalWorkAge], 
+        [Extent1].[WorkAgeUnit] AS [WorkAgeUnit], 
+        [Extent1].[InjuryAge] AS [InjuryAge], 
+        [Extent1].[InjuryAgeUnit] AS [InjuryAgeUnit], 
+        [Extent1].[ClientType] AS [ClientType], 
+        [Extent1].[ReadyPregnancybirth] AS [ReadyPregnancybirth], 
+        [Extent1].[GuidanceNum] AS [GuidanceNum], 
+        [Extent1].[GuidancePrintNum] AS [GuidancePrintNum], 
+        [Extent1].[Introducer] AS [Introducer], 
+        [Extent1].[PersonnelCategoryId] AS [PersonnelCategoryId], 
+        [Extent1].[GuidancePhotoId] AS [GuidancePhotoId], 
+        [Extent1].[CusCabitBM] AS [CusCabitBM], 
+        [Extent1].[CusCabitState] AS [CusCabitState], 
+        [Extent1].[CusCabitTime] AS [CusCabitTime], 
+        [Extent1].[JKZBM] AS [JKZBM], 
+        [Extent1].[HGZBH] AS [HGZBH], 
+        [Extent1].[TenantId] AS [TenantId], 
+        [Extent1].[NucleicAcidType] AS [NucleicAcidType], 
+        [Extent1].[OrderUserId] AS [OrderUserId], 
+        [Extent1].[HisSectionNum] AS [HisSectionNum], 
+        [Extent1].[HisPatientId] AS [HisPatientId], 
+        [Extent1].[PacsBM] AS [PacsBM], 
+        [Extent1].[ClientRegNum] AS [ClientRegNum], 
+        [Extent1].[FPNo] AS [FPNo], 
+        [Extent1].[BookingStatus] AS [BookingStatus], 
+        [Extent1].[AppointmentTime] AS [AppointmentTime], 
+        [Extent1].[Remarks] AS [Remarks], 
+        [Extent1].[UploadState] AS [UploadState], 
+        [Extent1].[RegMessageState] AS [RegMessageState], 
+        [Extent1].[VisitSate] AS [VisitSate], 
+        [Extent1].[VisitType] AS [VisitType], 
+        [Extent1].[VisitEmployeeId] AS [VisitEmployeeId], 
+        [Extent1].[VisitTime] AS [VisitTime], 
+        [Extent1].[ReportMessageState] AS [ReportMessageState], 
+        [Extent1].[CrissMessageState] AS [CrissMessageState], 
+        [Extent1].[VisitMessageState] AS [VisitMessageState], 
+        [Extent1].[QuestionState] AS [QuestionState], 
+        [Extent1].[QuestionTime] AS [QuestionTime], 
+        [Extent1].[ArriveCheck] AS [ArriveCheck], 
+        [Extent1].[HospitalArea] AS [HospitalArea], 
+        [Extent1].[OccQuesPhotoId] AS [OccQuesPhotoId], 
+        [Extent1].[OccQuesDate] AS [OccQuesDate], 
+        [Extent1].[OccQuesSate] AS [OccQuesSate], 
+        [Extent1].[OccQuesUserId] AS [OccQuesUserId], 
+        [Extent1].[WXExportSate] AS [WXExportSate], 
+        [Extent1].[SignBmId] AS [SignBmId], 
+        [Extent1].[PhotoBmId] AS [PhotoBmId], 
+        [Extent1].[WJUploadState] AS [WJUploadState], 
+        [Extent1].[rgst_no] AS [rgst_no], 
+        [Extent1].[StarTime] AS [StarTime], 
+        [Extent1].[RadiationName] AS [RadiationName], 
+        [Extent1].[employerEnterpriseName] AS [employerEnterpriseName], 
+        [Extent1].[employerCreditCode] AS [employerCreditCode], 
+        [Extent1].[ReportDate] AS [ReportDate], 
+        [Extent1].[IsDeleted] AS [IsDeleted], 
+        [Extent1].[DeleterUserId] AS [DeleterUserId], 
+        [Extent1].[DeletionTime] AS [DeletionTime], 
+        [Extent1].[LastModificationTime] AS [LastModificationTime], 
+        [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId], 
+        [Extent1].[NavigationOperation_Id] AS [NavigationOperation_Id]
+        FROM [dbo].[TjlCustomerRegs] AS [Extent1]
+        WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND (([Extent1].[CustomerBM] = @p__linq__0) OR (([Extent1].[CustomerBM] IS NULL) AND (@p__linq__0 IS NULL))) AND ([Extent1].[Id] <> @p__linq__1)
+    )  AS [Limit1]
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '01231020003' (Type = String, Size = 4000)
+
+-- p__linq__1: '00000000-0000-0000-0000-000000000000' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/20 21:32:59 +08:00
+ 执行
+-- 已在 19 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/20 21:32:59 +08:00
+ 关闭了连接
+已于 2023/10/20 21:32:59 +08:00
+ 打开了连接
+SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ArchivesNum] AS [ArchivesNum], 
+    [Extent1].[WorkNumber] AS [WorkNumber], 
+    [Extent1].[CardNumber] AS [CardNumber], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[Sex] AS [Sex], 
+    [Extent1].[Duty] AS [Duty], 
+    [Extent1].[Age] AS [Age], 
+    [Extent1].[AgeUnit] AS [AgeUnit], 
+    [Extent1].[Birthday] AS [Birthday], 
+    [Extent1].[MarriageStatus] AS [MarriageStatus], 
+    [Extent1].[Degree] AS [Degree], 
+    [Extent1].[IDCardType] AS [IDCardType], 
+    [Extent1].[IDCardNo] AS [IDCardNo], 
+    [Extent1].[Mobile] AS [Mobile], 
+    [Extent1].[Telephone] AS [Telephone], 
+    [Extent1].[StoreAdressP] AS [StoreAdressP], 
+    [Extent1].[StoreAdressS] AS [StoreAdressS], 
+    [Extent1].[StoreAdressQ] AS [StoreAdressQ], 
+    [Extent1].[Address] AS [Address], 
+    [Extent1].[HomeAddress] AS [HomeAddress], 
+    [Extent1].[PostgCode] AS [PostgCode], 
+    [Extent1].[Email] AS [Email], 
+    [Extent1].[Secretlevel] AS [Secretlevel], 
+    [Extent1].[CustomerType] AS [CustomerType], 
+    [Extent1].[CustomerTrade] AS [CustomerTrade], 
+    [Extent1].[CusPhotoBmId] AS [CusPhotoBmId], 
+    [Extent1].[GuoJi] AS [GuoJi], 
+    [Extent1].[Qq] AS [Qq], 
+    [Extent1].[NameAB] AS [NameAB], 
+    [Extent1].[WbCode] AS [WbCode], 
+    [Extent1].[VisitCard] AS [VisitCard], 
+    [Extent1].[MedicalCard] AS [MedicalCard], 
+    [Extent1].[SectionNum] AS [SectionNum], 
+    [Extent1].[HospitalNum] AS [HospitalNum], 
+    [Extent1].[Remarks] AS [Remarks], 
+    [Extent1].[Nation] AS [Nation], 
+    [Extent1].[Department] AS [Department], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[WJUploadState] AS [WJUploadState], 
+    [Extent1].[pid] AS [pid], 
+    [Extent1].[outpno] AS [outpno], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM [dbo].[TjlCustomers] AS [Extent1]
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND (([Extent1].[ArchivesNum] = @p__linq__0) OR (([Extent1].[ArchivesNum] IS NULL) AND (@p__linq__0 IS NULL)))
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '01231020003' (Type = String, Size = 4000)
+
+-- 正在 2023/10/20 21:32:59 +08:00
+ 执行
+-- 已在 22 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/20 21:32:59 +08:00
+ 关闭了连接
+已于 2023/10/20 21:32:59 +08:00
+ 打开了连接
+SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ClientInfoId] AS [ClientInfoId], 
+    [Extent1].[ClientRegBM] AS [ClientRegBM], 
+    [Extent1].[ClientRegNum] AS [ClientRegNum], 
+    [Extent1].[RegPersonCount] AS [RegPersonCount], 
+    [Extent1].[StartCheckDate] AS [StartCheckDate], 
+    [Extent1].[EndCheckDate] AS [EndCheckDate], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[RegInfo] AS [RegInfo], 
+    [Extent1].[linkMan] AS [linkMan], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[BlindSate] AS [BlindSate], 
+    [Extent1].[FZState] AS [FZState], 
+    [Extent1].[FZTime] AS [FZTime], 
+    [Extent1].[SDState] AS [SDState], 
+    [Extent1].[ConfirmState] AS [ConfirmState], 
+    [Extent1].[ControlDate] AS [ControlDate], 
+    [Extent1].[IsFree] AS [IsFree], 
+    [Extent1].[CheckNumber] AS [CheckNumber], 
+    [Extent1].[GeneralNumber] AS [GeneralNumber], 
+    [Extent1].[ClientSate] AS [ClientSate], 
+    [Extent1].[ClientCheckSate] AS [ClientCheckSate], 
+    [Extent1].[PersonnelCategoryId] AS [PersonnelCategoryId], 
+    [Extent1].[CusCabitBM] AS [CusCabitBM], 
+    [Extent1].[CusCabitState] AS [CusCabitState], 
+    [Extent1].[CusCabitTime] AS [CusCabitTime], 
+    [Extent1].[JSState] AS [JSState], 
+    [Extent1].[JStTime] AS [JStTime], 
+    [Extent1].[JSUserId] AS [JSUserId], 
+    [Extent1].[RowVersion] AS [RowVersion], 
+    [Extent1].[HospitalArea] AS [HospitalArea], 
+    [Extent1].[WJUploadState] AS [WJUploadState], 
+    [Extent1].[ReportDays] AS [ReportDays], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM [dbo].[TjlClientRegs] AS [Extent1]
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '590663a0-f2f3-4f8a-b8e1-396ab4b23671' (Type = Guid)
+
+-- 正在 2023/10/20 21:32:59 +08:00
+ 执行
+-- 已在 14 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/20 21:32:59 +08:00
+ 关闭了连接
+已于 2023/10/20 21:32:59 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ParentId] AS [ParentId], 
+    [Extent1].[ClientBM] AS [ClientBM], 
+    [Extent1].[ClientName] AS [ClientName], 
+    [Extent1].[ClientAbbreviation] AS [ClientAbbreviation], 
+    [Extent1].[HelpCode] AS [HelpCode], 
+    [Extent1].[WubiCode] AS [WubiCode], 
+    [Extent1].[OrganizationCode] AS [OrganizationCode], 
+    [Extent1].[StoreAdressP] AS [StoreAdressP], 
+    [Extent1].[StoreAdressS] AS [StoreAdressS], 
+    [Extent1].[StoreAdressQ] AS [StoreAdressQ], 
+    [Extent1].[StoreAdressX] AS [StoreAdressX], 
+    [Extent1].[Address] AS [Address], 
+    [Extent1].[ClientDegree] AS [ClientDegree], 
+    [Extent1].[ClientSource] AS [ClientSource], 
+    [Extent1].[Clientlndutry] AS [Clientlndutry], 
+    [Extent1].[ClientType] AS [ClientType], 
+    [Extent1].[Clientcontract] AS [Clientcontract], 
+    [Extent1].[Mobile] AS [Mobile], 
+    [Extent1].[Fax] AS [Fax], 
+    [Extent1].[LinkMan] AS [LinkMan], 
+    [Extent1].[PostCode] AS [PostCode], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[ClientEmail] AS [ClientEmail], 
+    [Extent1].[ClientQQ] AS [ClientQQ], 
+    [Extent1].[ClientBank] AS [ClientBank], 
+    [Extent1].[ClientAccount] AS [ClientAccount], 
+    [Extent1].[Telephone] AS [Telephone], 
+    [Extent1].[Limit] AS [Limit], 
+    [Extent1].[ClientSate] AS [ClientSate], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[SocialCredit] AS [SocialCredit], 
+    [Extent1].[EconomicType] AS [EconomicType], 
+    [Extent1].[HospitalArea] AS [HospitalArea], 
+    [Extent1].[WJUploadState] AS [WJUploadState], 
+    [Extent1].[Scale] AS [Scale], 
+    [Extent1].[Code] AS [Code], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM [dbo].[TjlClientInfoes] AS [Extent1]
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[Id] = @EntityKeyValue1)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- EntityKeyValue1: 'de520c14-915e-4eb6-abac-2fa0fee2f503' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/20 21:32:59 +08:00
+ 执行
+-- 已在 13 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/20 21:32:59 +08:00
+ 关闭了连接
+已于 2023/10/20 21:32:59 +08:00
+ 打开了连接
+已于 2023/10/20 21:32:59 +08:00
+ 启动了事务
+INSERT [dbo].[AbpAuditLogs]([TenantId], [UserId], [ServiceName], [MethodName], [Parameters], [ReturnValue], [ExecutionTime], [ExecutionDuration], [ClientIpAddress], [ClientName], [BrowserInfo], [ExceptionMessage], [Exception], [ImpersonatorUserId], [ImpersonatorTenantId], [CustomData])
+VALUES (@0, @1, @2, @3, @4, NULL, @5, @6, @7, @8, @9, NULL, NULL, NULL, NULL, NULL)
+SELECT [Id]
+FROM [dbo].[AbpAuditLogs]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+
+
+-- @0: '2' (Type = Int32)
+
+-- @1: '3' (Type = Int64)
+
+-- @2: 'Sw.Hospital.HealthExaminationSystem.Application.Common.CommonAppService' (Type = String, Size = 256)
+
+-- @3: 'GetHansBrief' (Type = String, Size = 256)
+
+-- @4: '{"input":{"hans":"gg"}}' (Type = String, Size = 1024)
+
+-- @5: '2023/10/20 21:32:59' (Type = DateTime2)
+
+-- @6: '0' (Type = Int32)
+
+-- @7: '::1' (Type = String, Size = 64)
+
+-- @8: 'LAPTOP-GECQGVPJ' (Type = String, Size = 128)
+
+-- @9: 'Unknown / 0.0 / Unknown' (Type = String, Size = 512)
+
+-- 正在 2023/10/20 21:32:59 +08:00
+ 执行
+-- 已在 24 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/20 21:32:59 +08:00
+ 提交了事务
+已于 2023/10/20 21:32:59 +08:00
+ 关闭了连接
+已于 2023/10/20 21:32:59 +08:00
+ 打开了连接
+SELECT 
+    [Limit1].[TenantId] AS [TenantId], 
+    [Limit1].[Id] AS [Id], 
+    [Limit1].[CustomerId] AS [CustomerId], 
+    [Limit1].[ClientTeamInfoId] AS [ClientTeamInfoId], 
+    [Limit1].[ClientInfoId] AS [ClientInfoId], 
+    [Limit1].[ClientRegId] AS [ClientRegId], 
+    [Limit1].[CustomerBM] AS [CustomerBM], 
+    [Limit1].[OrderNum] AS [OrderNum], 
+    [Limit1].[CustomerRegNum] AS [CustomerRegNum], 
+    [Limit1].[WebQueryCode] AS [WebQueryCode], 
+    [Limit1].[ExamPlace] AS [ExamPlace], 
+    [Limit1].[FamilyState] AS [FamilyState], 
+    [Limit1].[BookingDate] AS [BookingDate], 
+    [Limit1].[LoginDate] AS [LoginDate], 
+    [Limit1].[MarriageStatus] AS [MarriageStatus], 
+    [Limit1].[ItemSuitBMId] AS [ItemSuitBMId], 
+    [Limit1].[ItemSuitName] AS [ItemSuitName], 
+    [Limit1].[RegisterState] AS [RegisterState], 
+    [Limit1].[CheckSate] AS [CheckSate], 
+    [Limit1].[SummSate] AS [SummSate], 
+    [Limit1].[OccSummSate] AS [OccSummSate], 
+    [Limit1].[SummLocked] AS [SummLocked], 
+    [Limit1].[SummLockTime] AS [SummLockTime], 
+    [Limit1].[SummLockEmployeeBMId] AS [SummLockEmployeeBMId], 
+    [Limit1].[PrintSate] AS [PrintSate], 
+    [Limit1].[OccPrintSate] AS [OccPrintSate], 
+    [Limit1].[PrintCount] AS [PrintCount], 
+    [Limit1].[PrintTime] AS [PrintTime], 
+    [Limit1].[TZDPrintSate] AS [TZDPrintSate], 
+    [Limit1].[ExportSate] AS [ExportSate], 
+    [Limit1].[occExportSate] AS [occExportSate], 
+    [Limit1].[ReceiveSate] AS [ReceiveSate], 
+    [Limit1].[InfoSource] AS [InfoSource], 
+    [Limit1].[HaveBreakfast] AS [HaveBreakfast], 
+    [Limit1].[Message] AS [Message], 
+    [Limit1].[EmailReport] AS [EmailReport], 
+    [Limit1].[ReportBySelf] AS [ReportBySelf], 
+    [Limit1].[MailingReport] AS [MailingReport], 
+    [Limit1].[BlindSate] AS [BlindSate], 
+    [Limit1].[ReplaceSate] AS [ReplaceSate], 
+    [Limit1].[NavigationEmployeeBMId] AS [NavigationEmployeeBMId], 
+    [Limit1].[NavigationSate] AS [NavigationSate], 
+    [Limit1].[NavigationStartTime] AS [NavigationStartTime], 
+    [Limit1].[NavigationEndTime] AS [NavigationEndTime], 
+    [Limit1].[BespeakState] AS [BespeakState], 
+    [Limit1].[ReviewSate] AS [ReviewSate], 
+    [Limit1].[ReviewRegID] AS [ReviewRegID], 
+    [Limit1].[SupplementaryRegID] AS [SupplementaryRegID], 
+    [Limit1].[CostState] AS [CostState], 
+    [Limit1].[CSEmployeeId] AS [CSEmployeeId], 
+    [Limit1].[FSEmployeeId] AS [FSEmployeeId], 
+    [Limit1].[PreEmployeeId] AS [PreEmployeeId], 
+    [Limit1].[PreSumDate] AS [PreSumDate], 
+    [Limit1].[SendToConfirm] AS [SendToConfirm], 
+    [Limit1].[SendUserId] AS [SendUserId], 
+    [Limit1].[CustomerType] AS [CustomerType], 
+    [Limit1].[PhysicalType] AS [PhysicalType], 
+    [Limit1].[IsFree] AS [IsFree], 
+    [Limit1].[SendToConfirmDate] AS [SendToConfirmDate], 
+    [Limit1].[GuidanceSate] AS [GuidanceSate], 
+    [Limit1].[BarState] AS [BarState], 
+    [Limit1].[RequestState] AS [RequestState], 
+    [Limit1].[UrgentState] AS [UrgentState], 
+    [Limit1].[HowDayReport] AS [HowDayReport], 
+    [Limit1].[DrawCard] AS [DrawCard], 
+    [Limit1].[DrawTime] AS [DrawTime], 
+    [Limit1].[LastMenstruation] AS [LastMenstruation], 
+    [Limit1].[Gestation] AS [Gestation], 
+    [Limit1].[RegAge] AS [RegAge], 
+    [Limit1].[ICD10] AS [ICD10], 
+    [Limit1].[PrimaryName] AS [PrimaryName], 
+    [Limit1].[RiskS] AS [RiskS], 
+    [Limit1].[PostState] AS [PostState], 
+    [Limit1].[TypeWork] AS [TypeWork], 
+    [Limit1].[WorkName] AS [WorkName], 
+    [Limit1].[TotalWorkAge] AS [TotalWorkAge], 
+    [Limit1].[WorkAgeUnit] AS [WorkAgeUnit], 
+    [Limit1].[InjuryAge] AS [InjuryAge], 
+    [Limit1].[InjuryAgeUnit] AS [InjuryAgeUnit], 
+    [Limit1].[ClientType] AS [ClientType], 
+    [Limit1].[ReadyPregnancybirth] AS [ReadyPregnancybirth], 
+    [Limit1].[GuidanceNum] AS [GuidanceNum], 
+    [Limit1].[GuidancePrintNum] AS [GuidancePrintNum], 
+    [Limit1].[Introducer] AS [Introducer], 
+    [Limit1].[PersonnelCategoryId] AS [PersonnelCategoryId], 
+    [Limit1].[GuidancePhotoId] AS [GuidancePhotoId], 
+    [Limit1].[CusCabitBM] AS [CusCabitBM], 
+    [Limit1].[CusCabitState] AS [CusCabitState], 
+    [Limit1].[CusCabitTime] AS [CusCabitTime], 
+    [Limit1].[JKZBM] AS [JKZBM], 
+    [Limit1].[HGZBH] AS [HGZBH], 
+    [Limit1].[NucleicAcidType] AS [NucleicAcidType], 
+    [Limit1].[OrderUserId] AS [OrderUserId], 
+    [Limit1].[HisSectionNum] AS [HisSectionNum], 
+    [Limit1].[HisPatientId] AS [HisPatientId], 
+    [Limit1].[PacsBM] AS [PacsBM], 
+    [Limit1].[ClientRegNum] AS [ClientRegNum], 
+    [Limit1].[FPNo] AS [FPNo], 
+    [Limit1].[BookingStatus] AS [BookingStatus], 
+    [Limit1].[AppointmentTime] AS [AppointmentTime], 
+    [Limit1].[Remarks] AS [Remarks], 
+    [Limit1].[UploadState] AS [UploadState], 
+    [Limit1].[RegMessageState] AS [RegMessageState], 
+    [Limit1].[VisitSate] AS [VisitSate], 
+    [Limit1].[VisitType] AS [VisitType], 
+    [Limit1].[VisitEmployeeId] AS [VisitEmployeeId], 
+    [Limit1].[VisitTime] AS [VisitTime], 
+    [Limit1].[ReportMessageState] AS [ReportMessageState], 
+    [Limit1].[CrissMessageState] AS [CrissMessageState], 
+    [Limit1].[VisitMessageState] AS [VisitMessageState], 
+    [Limit1].[QuestionState] AS [QuestionState], 
+    [Limit1].[QuestionTime] AS [QuestionTime], 
+    [Limit1].[ArriveCheck] AS [ArriveCheck], 
+    [Limit1].[HospitalArea] AS [HospitalArea], 
+    [Limit1].[OccQuesPhotoId] AS [OccQuesPhotoId], 
+    [Limit1].[OccQuesDate] AS [OccQuesDate], 
+    [Limit1].[OccQuesSate] AS [OccQuesSate], 
+    [Limit1].[OccQuesUserId] AS [OccQuesUserId], 
+    [Limit1].[WXExportSate] AS [WXExportSate], 
+    [Limit1].[SignBmId] AS [SignBmId], 
+    [Limit1].[PhotoBmId] AS [PhotoBmId], 
+    [Limit1].[WJUploadState] AS [WJUploadState], 
+    [Limit1].[rgst_no] AS [rgst_no], 
+    [Limit1].[StarTime] AS [StarTime], 
+    [Limit1].[RadiationName] AS [RadiationName], 
+    [Limit1].[employerEnterpriseName] AS [employerEnterpriseName], 
+    [Limit1].[employerCreditCode] AS [employerCreditCode], 
+    [Limit1].[ReportDate] AS [ReportDate], 
+    [Limit1].[IsDeleted] AS [IsDeleted], 
+    [Limit1].[DeleterUserId] AS [DeleterUserId], 
+    [Limit1].[DeletionTime] AS [DeletionTime], 
+    [Limit1].[LastModificationTime] AS [LastModificationTime], 
+    [Limit1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Limit1].[CreationTime] AS [CreationTime], 
+    [Limit1].[CreatorUserId] AS [CreatorUserId], 
+    [Limit1].[NavigationOperation_Id] AS [NavigationOperation_Id]
+    FROM ( SELECT TOP (1) 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[CustomerId] AS [CustomerId], 
+        [Extent1].[ClientTeamInfoId] AS [ClientTeamInfoId], 
+        [Extent1].[ClientInfoId] AS [ClientInfoId], 
+        [Extent1].[ClientRegId] AS [ClientRegId], 
+        [Extent1].[CustomerBM] AS [CustomerBM], 
+        [Extent1].[OrderNum] AS [OrderNum], 
+        [Extent1].[CustomerRegNum] AS [CustomerRegNum], 
+        [Extent1].[WebQueryCode] AS [WebQueryCode], 
+        [Extent1].[ExamPlace] AS [ExamPlace], 
+        [Extent1].[FamilyState] AS [FamilyState], 
+        [Extent1].[BookingDate] AS [BookingDate], 
+        [Extent1].[LoginDate] AS [LoginDate], 
+        [Extent1].[MarriageStatus] AS [MarriageStatus], 
+        [Extent1].[ItemSuitBMId] AS [ItemSuitBMId], 
+        [Extent1].[ItemSuitName] AS [ItemSuitName], 
+        [Extent1].[RegisterState] AS [RegisterState], 
+        [Extent1].[CheckSate] AS [CheckSate], 
+        [Extent1].[SummSate] AS [SummSate], 
+        [Extent1].[OccSummSate] AS [OccSummSate], 
+        [Extent1].[SummLocked] AS [SummLocked], 
+        [Extent1].[SummLockTime] AS [SummLockTime], 
+        [Extent1].[SummLockEmployeeBMId] AS [SummLockEmployeeBMId], 
+        [Extent1].[PrintSate] AS [PrintSate], 
+        [Extent1].[OccPrintSate] AS [OccPrintSate], 
+        [Extent1].[PrintCount] AS [PrintCount], 
+        [Extent1].[PrintTime] AS [PrintTime], 
+        [Extent1].[TZDPrintSate] AS [TZDPrintSate], 
+        [Extent1].[ExportSate] AS [ExportSate], 
+        [Extent1].[occExportSate] AS [occExportSate], 
+        [Extent1].[ReceiveSate] AS [ReceiveSate], 
+        [Extent1].[InfoSource] AS [InfoSource], 
+        [Extent1].[HaveBreakfast] AS [HaveBreakfast], 
+        [Extent1].[Message] AS [Message], 
+        [Extent1].[EmailReport] AS [EmailReport], 
+        [Extent1].[ReportBySelf] AS [ReportBySelf], 
+        [Extent1].[MailingReport] AS [MailingReport], 
+        [Extent1].[BlindSate] AS [BlindSate], 
+        [Extent1].[ReplaceSate] AS [ReplaceSate], 
+        [Extent1].[NavigationEmployeeBMId] AS [NavigationEmployeeBMId], 
+        [Extent1].[NavigationSate] AS [NavigationSate], 
+        [Extent1].[NavigationStartTime] AS [NavigationStartTime], 
+        [Extent1].[NavigationEndTime] AS [NavigationEndTime], 
+        [Extent1].[BespeakState] AS [BespeakState], 
+        [Extent1].[ReviewSate] AS [ReviewSate], 
+        [Extent1].[ReviewRegID] AS [ReviewRegID], 
+        [Extent1].[SupplementaryRegID] AS [SupplementaryRegID], 
+        [Extent1].[CostState] AS [CostState], 
+        [Extent1].[CSEmployeeId] AS [CSEmployeeId], 
+        [Extent1].[FSEmployeeId] AS [FSEmployeeId], 
+        [Extent1].[PreEmployeeId] AS [PreEmployeeId], 
+        [Extent1].[PreSumDate] AS [PreSumDate], 
+        [Extent1].[SendToConfirm] AS [SendToConfirm], 
+        [Extent1].[SendUserId] AS [SendUserId], 
+        [Extent1].[CustomerType] AS [CustomerType], 
+        [Extent1].[PhysicalType] AS [PhysicalType], 
+        [Extent1].[IsFree] AS [IsFree], 
+        [Extent1].[SendToConfirmDate] AS [SendToConfirmDate], 
+        [Extent1].[GuidanceSate] AS [GuidanceSate], 
+        [Extent1].[BarState] AS [BarState], 
+        [Extent1].[RequestState] AS [RequestState], 
+        [Extent1].[UrgentState] AS [UrgentState], 
+        [Extent1].[HowDayReport] AS [HowDayReport], 
+        [Extent1].[DrawCard] AS [DrawCard], 
+        [Extent1].[DrawTime] AS [DrawTime], 
+        [Extent1].[LastMenstruation] AS [LastMenstruation], 
+        [Extent1].[Gestation] AS [Gestation], 
+        [Extent1].[RegAge] AS [RegAge], 
+        [Extent1].[ICD10] AS [ICD10], 
+        [Extent1].[PrimaryName] AS [PrimaryName], 
+        [Extent1].[RiskS] AS [RiskS], 
+        [Extent1].[PostState] AS [PostState], 
+        [Extent1].[TypeWork] AS [TypeWork], 
+        [Extent1].[WorkName] AS [WorkName], 
+        [Extent1].[TotalWorkAge] AS [TotalWorkAge], 
+        [Extent1].[WorkAgeUnit] AS [WorkAgeUnit], 
+        [Extent1].[InjuryAge] AS [InjuryAge], 
+        [Extent1].[InjuryAgeUnit] AS [InjuryAgeUnit], 
+        [Extent1].[ClientType] AS [ClientType], 
+        [Extent1].[ReadyPregnancybirth] AS [ReadyPregnancybirth], 
+        [Extent1].[GuidanceNum] AS [GuidanceNum], 
+        [Extent1].[GuidancePrintNum] AS [GuidancePrintNum], 
+        [Extent1].[Introducer] AS [Introducer], 
+        [Extent1].[PersonnelCategoryId] AS [PersonnelCategoryId], 
+        [Extent1].[GuidancePhotoId] AS [GuidancePhotoId], 
+        [Extent1].[CusCabitBM] AS [CusCabitBM], 
+        [Extent1].[CusCabitState] AS [CusCabitState], 
+        [Extent1].[CusCabitTime] AS [CusCabitTime], 
+        [Extent1].[JKZBM] AS [JKZBM], 
+        [Extent1].[HGZBH] AS [HGZBH], 
+        [Extent1].[TenantId] AS [TenantId], 
+        [Extent1].[NucleicAcidType] AS [NucleicAcidType], 
+        [Extent1].[OrderUserId] AS [OrderUserId], 
+        [Extent1].[HisSectionNum] AS [HisSectionNum], 
+        [Extent1].[HisPatientId] AS [HisPatientId], 
+        [Extent1].[PacsBM] AS [PacsBM], 
+        [Extent1].[ClientRegNum] AS [ClientRegNum], 
+        [Extent1].[FPNo] AS [FPNo], 
+        [Extent1].[BookingStatus] AS [BookingStatus], 
+        [Extent1].[AppointmentTime] AS [AppointmentTime], 
+        [Extent1].[Remarks] AS [Remarks], 
+        [Extent1].[UploadState] AS [UploadState], 
+        [Extent1].[RegMessageState] AS [RegMessageState], 
+        [Extent1].[VisitSate] AS [VisitSate], 
+        [Extent1].[VisitType] AS [VisitType], 
+        [Extent1].[VisitEmployeeId] AS [VisitEmployeeId], 
+        [Extent1].[VisitTime] AS [VisitTime], 
+        [Extent1].[ReportMessageState] AS [ReportMessageState], 
+        [Extent1].[CrissMessageState] AS [CrissMessageState], 
+        [Extent1].[VisitMessageState] AS [VisitMessageState], 
+        [Extent1].[QuestionState] AS [QuestionState], 
+        [Extent1].[QuestionTime] AS [QuestionTime], 
+        [Extent1].[ArriveCheck] AS [ArriveCheck], 
+        [Extent1].[HospitalArea] AS [HospitalArea], 
+        [Extent1].[OccQuesPhotoId] AS [OccQuesPhotoId], 
+        [Extent1].[OccQuesDate] AS [OccQuesDate], 
+        [Extent1].[OccQuesSate] AS [OccQuesSate], 
+        [Extent1].[OccQuesUserId] AS [OccQuesUserId], 
+        [Extent1].[WXExportSate] AS [WXExportSate], 
+        [Extent1].[SignBmId] AS [SignBmId], 
+        [Extent1].[PhotoBmId] AS [PhotoBmId], 
+        [Extent1].[WJUploadState] AS [WJUploadState], 
+        [Extent1].[rgst_no] AS [rgst_no], 
+        [Extent1].[StarTime] AS [StarTime], 
+        [Extent1].[RadiationName] AS [RadiationName], 
+        [Extent1].[employerEnterpriseName] AS [employerEnterpriseName], 
+        [Extent1].[employerCreditCode] AS [employerCreditCode], 
+        [Extent1].[ReportDate] AS [ReportDate], 
+        [Extent1].[IsDeleted] AS [IsDeleted], 
+        [Extent1].[DeleterUserId] AS [DeleterUserId], 
+        [Extent1].[DeletionTime] AS [DeletionTime], 
+        [Extent1].[LastModificationTime] AS [LastModificationTime], 
+        [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId], 
+        [Extent1].[NavigationOperation_Id] AS [NavigationOperation_Id]
+        FROM [dbo].[TjlCustomerRegs] AS [Extent1]
+        WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[Id] = @p__linq__0)
+    )  AS [Limit1]
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '00000000-0000-0000-0000-000000000000' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/20 21:32:59 +08:00
+ 执行
+-- 已在 14 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/20 21:32:59 +08:00
+ 关闭了连接
+已于 2023/10/20 21:32:59 +08:00
+ 打开了连接
+SELECT 
+    [Limit1].[TeamBM] AS [TeamBM], 
+    [Limit1].[Id] AS [Id], 
+    [Limit1].[TeamName] AS [TeamName], 
+    [Limit1].[ClientRegId] AS [ClientRegId], 
+    [Limit1].[Sex] AS [Sex], 
+    [Limit1].[MinAge] AS [MinAge], 
+    [Limit1].[MaxAge] AS [MaxAge], 
+    [Limit1].[MaritalStatus] AS [MaritalStatus], 
+    [Limit1].[RiskName] AS [RiskName], 
+    [Limit1].[CheckType] AS [CheckType], 
+    [Limit1].[WorkShop] AS [WorkShop], 
+    [Limit1].[WorkType] AS [WorkType], 
+    [Limit1].[ExamPlace] AS [ExamPlace], 
+    [Limit1].[ConceiveStatus] AS [ConceiveStatus], 
+    [Limit1].[ItemSuit_Id] AS [ItemSuit_Id], 
+    [Limit1].[ItemSuitName] AS [ItemSuitName], 
+    [Limit1].[PersonAmount] AS [PersonAmount], 
+    [Limit1].[BreakfastStatus] AS [BreakfastStatus], 
+    [Limit1].[MessageStatus] AS [MessageStatus], 
+    [Limit1].[EmailStatus] AS [EmailStatus], 
+    [Limit1].[HealthyMGStatus] AS [HealthyMGStatus], 
+    [Limit1].[BlindSate] AS [BlindSate], 
+    [Limit1].[Locking] AS [Locking], 
+    [Limit1].[TJType] AS [TJType], 
+    [Limit1].[HowDayReport] AS [HowDayReport], 
+    [Limit1].[TeamMoney] AS [TeamMoney], 
+    [Limit1].[TeamDiscount] AS [TeamDiscount], 
+    [Limit1].[TeamDiscountMoney] AS [TeamDiscountMoney], 
+    [Limit1].[CostType] AS [CostType], 
+    [Limit1].[JxType] AS [JxType], 
+    [Limit1].[Jxje] AS [Jxje], 
+    [Limit1].[Jxzk] AS [Jxzk], 
+    [Limit1].[Jxzkjg] AS [Jxzkjg], 
+    [Limit1].[SWjg] AS [SWjg], 
+    [Limit1].[QuotaMoney] AS [QuotaMoney], 
+    [Limit1].[HospitalArea] AS [HospitalArea], 
+    [Limit1].[WJUploadState] AS [WJUploadState], 
+    [Limit1].[TenantId] AS [TenantId], 
+    [Limit1].[IsDeleted] AS [IsDeleted], 
+    [Limit1].[DeleterUserId] AS [DeleterUserId], 
+    [Limit1].[DeletionTime] AS [DeletionTime], 
+    [Limit1].[LastModificationTime] AS [LastModificationTime], 
+    [Limit1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Limit1].[CreationTime] AS [CreationTime], 
+    [Limit1].[CreatorUserId] AS [CreatorUserId], 
+    [Limit1].[OPostState_Id] AS [OPostState_Id]
+    FROM ( SELECT TOP (1) 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[TeamBM] AS [TeamBM], 
+        [Extent1].[TeamName] AS [TeamName], 
+        [Extent1].[ClientRegId] AS [ClientRegId], 
+        [Extent1].[Sex] AS [Sex], 
+        [Extent1].[MinAge] AS [MinAge], 
+        [Extent1].[MaxAge] AS [MaxAge], 
+        [Extent1].[MaritalStatus] AS [MaritalStatus], 
+        [Extent1].[RiskName] AS [RiskName], 
+        [Extent1].[CheckType] AS [CheckType], 
+        [Extent1].[WorkShop] AS [WorkShop], 
+        [Extent1].[WorkType] AS [WorkType], 
+        [Extent1].[ExamPlace] AS [ExamPlace], 
+        [Extent1].[ConceiveStatus] AS [ConceiveStatus], 
+        [Extent1].[ItemSuit_Id] AS [ItemSuit_Id], 
+        [Extent1].[ItemSuitName] AS [ItemSuitName], 
+        [Extent1].[PersonAmount] AS [PersonAmount], 
+        [Extent1].[BreakfastStatus] AS [BreakfastStatus], 
+        [Extent1].[MessageStatus] AS [MessageStatus], 
+        [Extent1].[EmailStatus] AS [EmailStatus], 
+        [Extent1].[HealthyMGStatus] AS [HealthyMGStatus], 
+        [Extent1].[BlindSate] AS [BlindSate], 
+        [Extent1].[Locking] AS [Locking], 
+        [Extent1].[TJType] AS [TJType], 
+        [Extent1].[HowDayReport] AS [HowDayReport], 
+        [Extent1].[TeamMoney] AS [TeamMoney], 
+        [Extent1].[TeamDiscount] AS [TeamDiscount], 
+        [Extent1].[TeamDiscountMoney] AS [TeamDiscountMoney], 
+        [Extent1].[CostType] AS [CostType], 
+        [Extent1].[JxType] AS [JxType], 
+        [Extent1].[Jxje] AS [Jxje], 
+        [Extent1].[Jxzk] AS [Jxzk], 
+        [Extent1].[Jxzkjg] AS [Jxzkjg], 
+        [Extent1].[SWjg] AS [SWjg], 
+        [Extent1].[QuotaMoney] AS [QuotaMoney], 
+        [Extent1].[HospitalArea] AS [HospitalArea], 
+        [Extent1].[WJUploadState] AS [WJUploadState], 
+        [Extent1].[TenantId] AS [TenantId], 
+        [Extent1].[IsDeleted] AS [IsDeleted], 
+        [Extent1].[DeleterUserId] AS [DeleterUserId], 
+        [Extent1].[DeletionTime] AS [DeletionTime], 
+        [Extent1].[LastModificationTime] AS [LastModificationTime], 
+        [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId], 
+        [Extent1].[OPostState_Id] AS [OPostState_Id]
+        FROM [dbo].[TjlClientTeamInfoes] AS [Extent1]
+        WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[Id] = @p__linq__0)
+    )  AS [Limit1]
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '4c316b3d-a5aa-499b-888b-31caad52245f' (Type = Guid)
+
+-- 正在 2023/10/20 21:32:59 +08:00
+ 执行
+-- 已在 17 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/20 21:32:59 +08:00
+ 关闭了连接
+已于 2023/10/20 21:32:59 +08:00
+ 打开了连接
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        MAX([Extent1].[ClientRegNum]) AS [A1]
+        FROM [dbo].[TjlCustomerRegs] AS [Extent1]
+        WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND (([Extent1].[ClientRegId] = @p__linq__0) OR (([Extent1].[ClientRegId] IS NULL) AND (@p__linq__0 IS NULL))) AND ([Extent1].[ClientRegNum] IS NOT NULL)
+    )  AS [GroupBy1]
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '590663a0-f2f3-4f8a-b8e1-396ab4b23671' (Type = Guid)
+
+-- 正在 2023/10/20 21:32:59 +08:00
+ 执行
+-- 已在 14 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/20 21:32:59 +08:00
+ 关闭了连接
+已于 2023/10/20 21:32:59 +08:00
+ 打开了连接
+SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Type] AS [Type], 
+    [Extent1].[Value] AS [Value], 
+    [Extent1].[Code] AS [Code], 
+    [Extent1].[Text] AS [Text], 
+    [Extent1].[helpChar] AS [helpChar], 
+    [Extent1].[Remarks] AS [Remarks], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM [dbo].[TbmBasicDictionaries] AS [Extent1]
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND (N'ExaminationType' = [Extent1].[Type]) AND ([Extent1].[Value] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '1' (Type = Int32)
+
+-- 正在 2023/10/20 21:32:59 +08:00
+ 执行
+-- 已在 14 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/20 21:32:59 +08:00
+ 关闭了连接
+已于 2023/10/20 21:32:59 +08:00
+ 打开了连接
+SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[EmployeeNum] AS [EmployeeNum], 
+    [Extent1].[DomainName] AS [DomainName], 
+    [Extent1].[NovellAccount] AS [NovellAccount], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[Sex] AS [Sex], 
+    [Extent1].[Birthday] AS [Birthday], 
+    [Extent1].[Mobile] AS [Mobile], 
+    [Extent1].[Address] AS [Address], 
+    [Extent1].[SignImage] AS [SignImage], 
+    [Extent1].[State] AS [State], 
+    [Extent1].[Degree] AS [Degree], 
+    [Extent1].[Duty] AS [Duty], 
+    [Extent1].[CanPayment] AS [CanPayment], 
+    [Extent1].[EmPhoto] AS [EmPhoto], 
+    [Extent1].[QQ] AS [QQ], 
+    [Extent1].[WorkState] AS [WorkState], 
+    [Extent1].[LastClearTime] AS [LastClearTime], 
+    [Extent1].[OnlineState] AS [OnlineState], 
+    [Extent1].[Discount] AS [Discount], 
+    [Extent1].[ServiceStandard] AS [ServiceStandard], 
+    [Extent1].[Title] AS [Title], 
+    [Extent1].[ClinicalDepartment] AS [ClinicalDepartment], 
+    [Extent1].[GroupName] AS [GroupName], 
+    [Extent1].[ClientZKS] AS [ClientZKS], 
+    [Extent1].[HospitalArea] AS [HospitalArea], 
+    [Extent1].[NormalizedUserName] AS [NormalizedUserName], 
+    [Extent1].[NormalizedEmailAddress] AS [NormalizedEmailAddress], 
+    [Extent1].[AuthenticationSource] AS [AuthenticationSource], 
+    [Extent1].[UserName] AS [UserName], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[EmailAddress] AS [EmailAddress], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[Surname] AS [Surname], 
+    [Extent1].[Password] AS [Password], 
+    [Extent1].[EmailConfirmationCode] AS [EmailConfirmationCode], 
+    [Extent1].[PasswordResetCode] AS [PasswordResetCode], 
+    [Extent1].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+    [Extent1].[AccessFailedCount] AS [AccessFailedCount], 
+    [Extent1].[IsLockoutEnabled] AS [IsLockoutEnabled], 
+    [Extent1].[PhoneNumber] AS [PhoneNumber], 
+    [Extent1].[IsPhoneNumberConfirmed] AS [IsPhoneNumberConfirmed], 
+    [Extent1].[SecurityStamp] AS [SecurityStamp], 
+    [Extent1].[IsTwoFactorEnabled] AS [IsTwoFactorEnabled], 
+    [Extent1].[IsEmailConfirmed] AS [IsEmailConfirmed], 
+    [Extent1].[IsActive] AS [IsActive], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM [dbo].[AbpUsers] AS [Extent1]
+    WHERE ((([Extent1].[TenantId] IS NULL) AND (@DynamicFilterParam_000001 IS NULL)) OR (([Extent1].[TenantId] IS NOT NULL) AND (([Extent1].[TenantId] = @DynamicFilterParam_000001) OR (([Extent1].[TenantId] IS NULL) AND (@DynamicFilterParam_000001 IS NULL)))) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000001: '2' (Type = Int32)
+
+-- DynamicFilterParam_000002: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '3' (Type = Int64)
+
+-- 正在 2023/10/20 21:32:59 +08:00
+ 执行
+-- 已在 23 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/20 21:32:59 +08:00
+ 关闭了连接
+已于 2023/10/20 21:32:59 +08:00
+ 打开了连接
+SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ClientInfoId] AS [ClientInfoId], 
+    [Extent1].[ClientRegBM] AS [ClientRegBM], 
+    [Extent1].[ClientRegNum] AS [ClientRegNum], 
+    [Extent1].[RegPersonCount] AS [RegPersonCount], 
+    [Extent1].[StartCheckDate] AS [StartCheckDate], 
+    [Extent1].[EndCheckDate] AS [EndCheckDate], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[RegInfo] AS [RegInfo], 
+    [Extent1].[linkMan] AS [linkMan], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[BlindSate] AS [BlindSate], 
+    [Extent1].[FZState] AS [FZState], 
+    [Extent1].[FZTime] AS [FZTime], 
+    [Extent1].[SDState] AS [SDState], 
+    [Extent1].[ConfirmState] AS [ConfirmState], 
+    [Extent1].[ControlDate] AS [ControlDate], 
+    [Extent1].[IsFree] AS [IsFree], 
+    [Extent1].[CheckNumber] AS [CheckNumber], 
+    [Extent1].[GeneralNumber] AS [GeneralNumber], 
+    [Extent1].[ClientSate] AS [ClientSate], 
+    [Extent1].[ClientCheckSate] AS [ClientCheckSate], 
+    [Extent1].[PersonnelCategoryId] AS [PersonnelCategoryId], 
+    [Extent1].[CusCabitBM] AS [CusCabitBM], 
+    [Extent1].[CusCabitState] AS [CusCabitState], 
+    [Extent1].[CusCabitTime] AS [CusCabitTime], 
+    [Extent1].[JSState] AS [JSState], 
+    [Extent1].[JStTime] AS [JStTime], 
+    [Extent1].[JSUserId] AS [JSUserId], 
+    [Extent1].[RowVersion] AS [RowVersion], 
+    [Extent1].[HospitalArea] AS [HospitalArea], 
+    [Extent1].[WJUploadState] AS [WJUploadState], 
+    [Extent1].[ReportDays] AS [ReportDays], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM [dbo].[TjlClientRegs] AS [Extent1]
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '590663a0-f2f3-4f8a-b8e1-396ab4b23671' (Type = Guid)
+
+-- 正在 2023/10/20 21:32:59 +08:00
+ 执行
+-- 已在 15 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/20 21:32:59 +08:00
+ 关闭了连接
+已于 2023/10/20 21:32:59 +08:00
+ 打开了连接
+SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Type] AS [Type], 
+    [Extent1].[Value] AS [Value], 
+    [Extent1].[Code] AS [Code], 
+    [Extent1].[Text] AS [Text], 
+    [Extent1].[helpChar] AS [helpChar], 
+    [Extent1].[Remarks] AS [Remarks], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM [dbo].[TbmBasicDictionaries] AS [Extent1]
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND (N'ExaminationType' = [Extent1].[Type]) AND ([Extent1].[Value] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '1' (Type = Int32)
+
+-- 正在 2023/10/20 21:32:59 +08:00
+ 执行
+-- 已在 14 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/20 21:32:59 +08:00
+ 关闭了连接
+已于 2023/10/20 21:32:59 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[CustomerItemGroupBMid] AS [CustomerItemGroupBMid], 
+    [Extent1].[CustomerRegId] AS [CustomerRegId], 
+    [Extent1].[DepartmentId] AS [DepartmentId], 
+    [Extent1].[ItemGroupBMId] AS [ItemGroupBMId], 
+    [Extent1].[ItemId] AS [ItemId], 
+    [Extent1].[ItemCodeBM] AS [ItemCodeBM], 
+    [Extent1].[ItemName] AS [ItemName], 
+    [Extent1].[ItemTypeBM] AS [ItemTypeBM], 
+    [Extent1].[ItemOrder] AS [ItemOrder], 
+    [Extent1].[ProcessState] AS [ProcessState], 
+    [Extent1].[SuspendState] AS [SuspendState], 
+    [Extent1].[DiagnSate] AS [DiagnSate], 
+    [Extent1].[SummBackSate] AS [SummBackSate], 
+    [Extent1].[InspectEmployeeBMId] AS [InspectEmployeeBMId], 
+    [Extent1].[CheckEmployeeBMId] AS [CheckEmployeeBMId], 
+    [Extent1].[TotalEmployeeBMId] AS [TotalEmployeeBMId], 
+    [Extent1].[ItemResultChar] AS [ItemResultChar], 
+    [Extent1].[Symbol] AS [Symbol], 
+    [Extent1].[PositiveSate] AS [PositiveSate], 
+    [Extent1].[IllnessSate] AS [IllnessSate], 
+    [Extent1].[CrisisSate] AS [CrisisSate], 
+    [Extent1].[Instrument] AS [Instrument], 
+    [Extent1].[Stand] AS [Stand], 
+    [Extent1].[StandFrom] AS [StandFrom], 
+    [Extent1].[Unit] AS [Unit], 
+    [Extent1].[ItemSum] AS [ItemSum], 
+    [Extent1].[ItemDiagnosis] AS [ItemDiagnosis], 
+    [Extent1].[IllnessLevel] AS [IllnessLevel], 
+    [Extent1].[CrisisVisitSate] AS [CrisisVisitSate], 
+    [Extent1].[CrisisLever] AS [CrisisLever], 
+    [Extent1].[CrisiChar] AS [CrisiChar], 
+    [Extent1].[CrisiContent] AS [CrisiContent], 
+    [Extent1].[ExamineTime] AS [ExamineTime], 
+    [Extent1].[ExamineUserId] AS [ExamineUserId], 
+    [Extent1].[MessageTime] AS [MessageTime], 
+    [Extent1].[MessageUserId] AS [MessageUserId], 
+    [Extent1].[MessageState] AS [MessageState], 
+    [Extent1].[ReportBM] AS [ReportBM], 
+    [Extent1].[WJUploadState] AS [WJUploadState], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM [dbo].[TjlCustomerRegItems] AS [Extent1]
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[CustomerRegId] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '1d03e6e9-8b42-40e2-9b63-e6e3e5e5d2a9' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/20 21:32:59 +08:00
+ 执行

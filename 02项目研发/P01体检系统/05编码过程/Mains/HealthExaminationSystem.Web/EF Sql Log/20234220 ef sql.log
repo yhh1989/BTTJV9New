@@ -1,0 +1,174 @@
+﻿已于 2023-10-20 22:42:55 +08:00
+ 打开了连接
+已于 2023/10/20 22:42:55 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[DisplayName] AS [DisplayName], 
+    [Extent1].[Icon] AS [Icon], 
+    [Extent1].[IsDisabled] AS [IsDisabled], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM [dbo].[AbpLanguages] AS [Extent1]
+    WHERE ((([Extent1].[TenantId] IS NULL) AND (@DynamicFilterParam_000001 IS NULL)) OR (([Extent1].[TenantId] IS NOT NULL) AND (([Extent1].[TenantId] = @DynamicFilterParam_000001) OR (([Extent1].[TenantId] IS NULL) AND (@DynamicFilterParam_000001 IS NULL)))) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) )
+
+
+-- DynamicFilterParam_000001: 'null' (Type = Int32)
+
+-- DynamicFilterParam_000002: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- 正在 2023/10/20 22:42:58 +08:00
+ 执行
+-- p__linq__0: '2023-10-20 22:42:58' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-20 22:42:58 +08:00
+ 执行
+-- 已在 22 毫秒内完成，结果为: SqlDataReader
+
+
+
+-- 已在 25 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-20 22:42:58 +08:00
+ 关闭了连接
+已于 2023/10/20 22:42:58 +08:00
+ 关闭了连接
+已于 2023/10/20 22:42:58 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[UserId] AS [UserId], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[Value] AS [Value], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM [dbo].[AbpSettings] AS [Extent1]
+    WHERE ((([Extent1].[TenantId] IS NULL) AND (@DynamicFilterParam_000001 IS NULL)) OR (([Extent1].[TenantId] IS NOT NULL) AND (([Extent1].[TenantId] = @DynamicFilterParam_000001) OR (([Extent1].[TenantId] IS NULL) AND (@DynamicFilterParam_000001 IS NULL)))) OR (@DynamicFilterParam_000002 IS NOT NULL)) AND (([Extent1].[UserId] = @p__linq__0) OR (([Extent1].[UserId] IS NULL) AND (@p__linq__0 IS NULL))) AND (([Extent1].[TenantId] = @p__linq__1) OR (([Extent1].[TenantId] IS NULL) AND (@p__linq__1 IS NULL)))
+
+
+-- DynamicFilterParam_000001: 'null' (Type = Int32)
+
+-- DynamicFilterParam_000002: 'True' (Type = Boolean)
+
+-- p__linq__0: 'null' (Type = Int64)
+
+-- p__linq__1: 'null' (Type = Int32)
+
+-- 正在 2023/10/20 22:42:58 +08:00
+ 执行
+-- 已在 24 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/20 22:42:58 +08:00
+ 关闭了连接
+已于 2023/10/20 22:42:59 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[LanguageName] AS [LanguageName], 
+    [Extent1].[Source] AS [Source], 
+    [Extent1].[Key] AS [Key], 
+    [Extent1].[Value] AS [Value], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM [dbo].[AbpLanguageTexts] AS [Extent1]
+    WHERE ((([Extent1].[TenantId] IS NULL) AND (@DynamicFilterParam_000001 IS NULL)) OR (([Extent1].[TenantId] IS NOT NULL) AND (([Extent1].[TenantId] = @DynamicFilterParam_000001) OR (([Extent1].[TenantId] IS NULL) AND (@DynamicFilterParam_000001 IS NULL)))) ) AND ([Extent1].[Source] = @p__linq__0) AND ([Extent1].[LanguageName] = @p__linq__1)
+
+
+-- DynamicFilterParam_000001: 'null' (Type = Int32)
+
+-- DynamicFilterParam_000002: 'null' (Type = Boolean)
+
+-- p__linq__0: 'Abp' (Type = String, Size = 4000)
+
+-- p__linq__1: 'zh-CN' (Type = String, Size = 4000)
+
+-- 正在 2023/10/20 22:42:59 +08:00
+ 执行
+-- 已在 20 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/20 22:42:59 +08:00
+ 关闭了连接
+已于 2023/10/20 22:42:59 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[LanguageName] AS [LanguageName], 
+    [Extent1].[Source] AS [Source], 
+    [Extent1].[Key] AS [Key], 
+    [Extent1].[Value] AS [Value], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM [dbo].[AbpLanguageTexts] AS [Extent1]
+    WHERE ((([Extent1].[TenantId] IS NULL) AND (@DynamicFilterParam_000001 IS NULL)) OR (([Extent1].[TenantId] IS NOT NULL) AND (([Extent1].[TenantId] = @DynamicFilterParam_000001) OR (([Extent1].[TenantId] IS NULL) AND (@DynamicFilterParam_000001 IS NULL)))) ) AND ([Extent1].[Source] = @p__linq__0) AND ([Extent1].[LanguageName] = @p__linq__1)
+
+
+-- DynamicFilterParam_000001: 'null' (Type = Int32)
+
+-- DynamicFilterParam_000002: 'null' (Type = Boolean)
+
+-- p__linq__0: 'Abp' (Type = String, Size = 4000)
+
+-- p__linq__1: 'en' (Type = String, Size = 4000)
+
+-- 正在 2023/10/20 22:42:59 +08:00
+ 执行
+-- 已在 14 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/20 22:42:59 +08:00
+ 关闭了连接

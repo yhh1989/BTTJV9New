@@ -1,0 +1,3648 @@
+﻿已于 2023-10-23 14:58:04 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 14:58:04' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 14:58:04 +08:00
+ 执行
+-- 已在 7 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 14:58:04 +08:00
+ 关闭了连接
+已于 2023-10-23 14:58:09 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 14:58:09' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 14:58:09 +08:00
+ 执行
+-- 已在 8 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 14:58:09 +08:00
+ 关闭了连接
+已于 2023-10-23 14:58:14 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 14:58:14' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 14:58:14 +08:00
+ 执行
+-- 已在 8 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 14:58:14 +08:00
+ 关闭了连接
+已于 2023-10-23 14:58:20 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 14:58:20' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 14:58:20 +08:00
+ 执行
+-- 已在 7 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 14:58:20 +08:00
+ 关闭了连接
+已于 2023-10-23 14:58:25 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 14:58:25' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 14:58:25 +08:00
+ 执行
+-- 已在 7 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 14:58:25 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:27 +08:00
+ 打开了连接
+SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[RelativePath] AS [RelativePath], 
+    [Extent1].[Thumbnail] AS [Thumbnail], 
+    [Extent1].[Belong] AS [Belong], 
+    [Extent1].[WJUploadState] AS [WJUploadState], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM [dbo].[Pictures] AS [Extent1]
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND ([Extent1].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- p__linq__0: 'ce645101-4789-4c25-944c-c7759ba43116' (Type = Guid)
+
+-- 正在 2023/10/23 14:58:27 +08:00
+ 执行
+-- 已在 12 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:27 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:27 +08:00
+ 打开了连接
+已于 2023/10/23 14:58:27 +08:00
+ 启动了事务
+INSERT [dbo].[AbpAuditLogs]([TenantId], [UserId], [ServiceName], [MethodName], [Parameters], [ReturnValue], [ExecutionTime], [ExecutionDuration], [ClientIpAddress], [ClientName], [BrowserInfo], [ExceptionMessage], [Exception], [ImpersonatorUserId], [ImpersonatorTenantId], [CustomData])
+VALUES (@0, @1, @2, @3, @4, NULL, @5, @6, @7, @8, @9, NULL, NULL, NULL, NULL, NULL)
+SELECT [Id]
+FROM [dbo].[AbpAuditLogs]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+
+
+-- @0: '2' (Type = Int32)
+
+-- @1: '3' (Type = Int64)
+
+-- @2: 'Sw.Hospital.HealthExaminationSystem.Application.Picture.PictureAppService' (Type = String, Size = 256)
+
+-- @3: 'GetById' (Type = String, Size = 256)
+
+-- @4: '{"input":{"id":"ce645101-4789-4c25-944c-c7759ba43116"}}' (Type = String, Size = 1024)
+
+-- @5: '2023/10/23 14:58:27' (Type = DateTime2)
+
+-- @6: '66' (Type = Int32)
+
+-- @7: '::1' (Type = String, Size = 64)
+
+-- @8: 'LAPTOP-GECQGVPJ' (Type = String, Size = 128)
+
+-- @9: 'Unknown / 0.0 / Unknown' (Type = String, Size = 512)
+
+-- 正在 2023/10/23 14:58:27 +08:00
+ 执行
+-- 已在 12 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:27 +08:00
+ 提交了事务
+已于 2023/10/23 14:58:27 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:27 +08:00
+ 打开了连接
+已于 2023/10/23 14:58:27 +08:00
+ 启动了事务
+INSERT [dbo].[AbpAuditLogs]([TenantId], [UserId], [ServiceName], [MethodName], [Parameters], [ReturnValue], [ExecutionTime], [ExecutionDuration], [ClientIpAddress], [ClientName], [BrowserInfo], [ExceptionMessage], [Exception], [ImpersonatorUserId], [ImpersonatorTenantId], [CustomData])
+VALUES (@0, @1, @2, @3, @4, NULL, @5, @6, @7, @8, @9, NULL, NULL, NULL, NULL, NULL)
+SELECT [Id]
+FROM [dbo].[AbpAuditLogs]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+
+
+-- @0: '2' (Type = Int32)
+
+-- @1: '3' (Type = Int64)
+
+-- @2: 'Sw.Hospital.HealthExaminationSystem.Web.Controllers.PictureController' (Type = String, Size = 256)
+
+-- @3: 'GetUrl' (Type = String, Size = 256)
+
+-- @4: '{"id":"ce645101-4789-4c25-944c-c7759ba43116"}' (Type = String, Size = 1024)
+
+-- @5: '2023/10/23 14:58:27' (Type = DateTime2)
+
+-- @6: '160' (Type = Int32)
+
+-- @7: '::1' (Type = String, Size = 64)
+
+-- @8: 'LAPTOP-GECQGVPJ' (Type = String, Size = 128)
+
+-- @9: 'Unknown / 0.0 / Unknown' (Type = String, Size = 512)
+
+-- 正在 2023/10/23 14:58:27 +08:00
+ 执行
+-- 已在 9 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:27 +08:00
+ 提交了事务
+已于 2023/10/23 14:58:27 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:28 +08:00
+ 打开了连接
+SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[RelativePath] AS [RelativePath], 
+    [Extent1].[Thumbnail] AS [Thumbnail], 
+    [Extent1].[Belong] AS [Belong], 
+    [Extent1].[WJUploadState] AS [WJUploadState], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM [dbo].[Pictures] AS [Extent1]
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND ([Extent1].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- p__linq__0: 'f3c84c3a-8d5b-4d49-b55d-788630ab68af' (Type = Guid)
+
+-- 正在 2023/10/23 14:58:28 +08:00
+ 执行
+-- 已在 375 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:28 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:28 +08:00
+ 打开了连接
+已于 2023/10/23 14:58:28 +08:00
+ 启动了事务
+INSERT [dbo].[AbpAuditLogs]([TenantId], [UserId], [ServiceName], [MethodName], [Parameters], [ReturnValue], [ExecutionTime], [ExecutionDuration], [ClientIpAddress], [ClientName], [BrowserInfo], [ExceptionMessage], [Exception], [ImpersonatorUserId], [ImpersonatorTenantId], [CustomData])
+VALUES (@0, @1, @2, @3, @4, NULL, @5, @6, @7, @8, @9, NULL, NULL, NULL, NULL, NULL)
+SELECT [Id]
+FROM [dbo].[AbpAuditLogs]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+
+
+-- @0: '2' (Type = Int32)
+
+-- @1: '3' (Type = Int64)
+
+-- @2: 'Sw.Hospital.HealthExaminationSystem.Application.Picture.PictureAppService' (Type = String, Size = 256)
+
+-- @3: 'GetById' (Type = String, Size = 256)
+
+-- @4: '{"input":{"id":"f3c84c3a-8d5b-4d49-b55d-788630ab68af"}}' (Type = String, Size = 1024)
+
+-- @5: '2023/10/23 14:58:27' (Type = DateTime2)
+
+-- @6: '426' (Type = Int32)
+
+-- @7: '::1' (Type = String, Size = 64)
+
+-- @8: 'LAPTOP-GECQGVPJ' (Type = String, Size = 128)
+
+-- @9: 'Unknown / 0.0 / Unknown' (Type = String, Size = 512)
+
+-- 正在 2023/10/23 14:58:28 +08:00
+ 执行
+-- 已在 11 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:28 +08:00
+ 提交了事务
+已于 2023/10/23 14:58:28 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:28 +08:00
+ 打开了连接
+已于 2023/10/23 14:58:28 +08:00
+ 启动了事务
+INSERT [dbo].[AbpAuditLogs]([TenantId], [UserId], [ServiceName], [MethodName], [Parameters], [ReturnValue], [ExecutionTime], [ExecutionDuration], [ClientIpAddress], [ClientName], [BrowserInfo], [ExceptionMessage], [Exception], [ImpersonatorUserId], [ImpersonatorTenantId], [CustomData])
+VALUES (@0, @1, @2, @3, @4, NULL, @5, @6, @7, @8, @9, NULL, NULL, NULL, NULL, NULL)
+SELECT [Id]
+FROM [dbo].[AbpAuditLogs]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+
+
+-- @0: '2' (Type = Int32)
+
+-- @1: '3' (Type = Int64)
+
+-- @2: 'Sw.Hospital.HealthExaminationSystem.Web.Controllers.PictureController' (Type = String, Size = 256)
+
+-- @3: 'GetUrl' (Type = String, Size = 256)
+
+-- @4: '{"id":"f3c84c3a-8d5b-4d49-b55d-788630ab68af"}' (Type = String, Size = 1024)
+
+-- @5: '2023/10/23 14:58:27' (Type = DateTime2)
+
+-- @6: '509' (Type = Int32)
+
+-- @7: '::1' (Type = String, Size = 64)
+
+-- @8: 'LAPTOP-GECQGVPJ' (Type = String, Size = 128)
+
+-- @9: 'Unknown / 0.0 / Unknown' (Type = String, Size = 512)
+
+-- 正在 2023/10/23 14:58:28 +08:00
+ 执行
+-- 已在 9 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:28 +08:00
+ 提交了事务
+已于 2023/10/23 14:58:28 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:28 +08:00
+ 打开了连接
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM  [dbo].[TjlOccCustomerHazardSums] AS [Extent1]
+        INNER JOIN [dbo].[TjlCustomerRegs] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[CustomerRegBMId] = [Extent2].[Id])
+        WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[ReviewRegID] = @p__linq__0)
+    )  AS [GroupBy1]
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '5109eee9-930c-461b-be96-bbbf3c4bf406' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:28 +08:00
+ 执行
+-- 已在 87 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:28 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:29 +08:00
+ 打开了连接
+已于 2023/10/23 14:58:29 +08:00
+ 启动了事务
+INSERT [dbo].[AbpAuditLogs]([TenantId], [UserId], [ServiceName], [MethodName], [Parameters], [ReturnValue], [ExecutionTime], [ExecutionDuration], [ClientIpAddress], [ClientName], [BrowserInfo], [ExceptionMessage], [Exception], [ImpersonatorUserId], [ImpersonatorTenantId], [CustomData])
+VALUES (@0, @1, @2, @3, @4, NULL, @5, @6, @7, @8, @9, NULL, NULL, NULL, NULL, NULL)
+SELECT [Id]
+FROM [dbo].[AbpAuditLogs]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+
+
+-- @0: '2' (Type = Int32)
+
+-- @1: '3' (Type = Int64)
+
+-- @2: 'Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.InspectionTotalAppService' (Type = String, Size = 256)
+
+-- @3: 'GetCusReSum' (Type = String, Size = 256)
+
+-- @4: '{"input":{"id":"5109eee9-930c-461b-be96-bbbf3c4bf406"}}' (Type = String, Size = 1024)
+
+-- @5: '2023/10/23 14:58:28' (Type = DateTime2)
+
+-- @6: '232' (Type = Int32)
+
+-- @7: '::1' (Type = String, Size = 64)
+
+-- @8: 'LAPTOP-GECQGVPJ' (Type = String, Size = 128)
+
+-- @9: 'Unknown / 0.0 / Unknown' (Type = String, Size = 512)
+
+-- 正在 2023/10/23 14:58:29 +08:00
+ 执行
+-- 已在 12 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:29 +08:00
+ 提交了事务
+已于 2023/10/23 14:58:29 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:29 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[CustomerRegId] AS [CustomerRegId], 
+    [Extent1].[SummarizeAdviceId] AS [SummarizeAdviceId], 
+    [Extent1].[ReviewDay] AS [ReviewDay], 
+    [Extent1].[ReviewDate] AS [ReviewDate], 
+    [Extent1].[Remart] AS [Remart], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM [dbo].[TjlCusReviews] AS [Extent1]
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[CustomerRegId] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '5109eee9-930c-461b-be96-bbbf3c4bf406' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:29 +08:00
+ 执行
+-- 已在 24 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:29 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:29 +08:00
+ 打开了连接
+已于 2023/10/23 14:58:29 +08:00
+ 启动了事务
+INSERT [dbo].[AbpAuditLogs]([TenantId], [UserId], [ServiceName], [MethodName], [Parameters], [ReturnValue], [ExecutionTime], [ExecutionDuration], [ClientIpAddress], [ClientName], [BrowserInfo], [ExceptionMessage], [Exception], [ImpersonatorUserId], [ImpersonatorTenantId], [CustomData])
+VALUES (@0, @1, @2, @3, @4, NULL, @5, @6, @7, @8, @9, NULL, NULL, NULL, NULL, NULL)
+SELECT [Id]
+FROM [dbo].[AbpAuditLogs]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+
+
+-- @0: '2' (Type = Int32)
+
+-- @1: '3' (Type = Int64)
+
+-- @2: 'Sw.Hospital.HealthExaminationSystem.Application.InspectionTotal.InspectionTotalAppService' (Type = String, Size = 256)
+
+-- @3: 'GetCusReView' (Type = String, Size = 256)
+
+-- @4: '{"input":{"id":"5109eee9-930c-461b-be96-bbbf3c4bf406"}}' (Type = String, Size = 1024)
+
+-- @5: '2023/10/23 14:58:29' (Type = DateTime2)
+
+-- @6: '101' (Type = Int32)
+
+-- @7: '::1' (Type = String, Size = 64)
+
+-- @8: 'LAPTOP-GECQGVPJ' (Type = String, Size = 128)
+
+-- @9: 'Unknown / 0.0 / Unknown' (Type = String, Size = 512)
+
+-- 正在 2023/10/23 14:58:29 +08:00
+ 执行
+-- 已在 16 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:29 +08:00
+ 提交了事务
+已于 2023/10/23 14:58:29 +08:00
+ 关闭了连接
+已于 2023-10-23 14:58:30 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 14:58:30' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 14:58:30 +08:00
+ 执行
+-- 已在 7 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 14:58:30 +08:00
+ 关闭了连接
+已于 2023-10-23 14:58:35 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 14:58:35' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 14:58:35 +08:00
+ 执行
+-- 已在 7 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 14:58:35 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:39 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ItemId] AS [ItemId], 
+    [Extent1].[ItemName] AS [ItemName], 
+    [Extent1].[FormulaText] AS [FormulaText], 
+    [Extent1].[FormulaValue] AS [FormulaValue], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM [dbo].[TbmItemProcExpresses] AS [Extent1]
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) )
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- 正在 2023/10/23 14:58:39 +08:00
+ 执行
+-- 已在 23 毫秒内完成，结果为: SqlDataReader
+
+
+
+SELECT 
+    [Extent2].[Id] AS [Id], 
+    [Extent2].[DepartmentId] AS [DepartmentId], 
+    [Extent2].[Name] AS [Name], 
+    [Extent2].[ItemBM] AS [ItemBM], 
+    [Extent2].[NamePM] AS [NamePM], 
+    [Extent2].[NameEngAbr] AS [NameEngAbr], 
+    [Extent2].[HelpChar] AS [HelpChar], 
+    [Extent2].[WBCode] AS [WBCode], 
+    [Extent2].[Sex] AS [Sex], 
+    [Extent2].[MinAge] AS [MinAge], 
+    [Extent2].[MaxAge] AS [MaxAge], 
+    [Extent2].[Unit] AS [Unit], 
+    [Extent2].[Notice] AS [Notice], 
+    [Extent2].[Remark] AS [Remark], 
+    [Extent2].[OrderNum] AS [OrderNum], 
+    [Extent2].[moneyType] AS [moneyType], 
+    [Extent2].[Lclxid] AS [Lclxid], 
+    [Extent2].[Ckisrpot] AS [Ckisrpot], 
+    [Extent2].[ReportCode] AS [ReportCode], 
+    [Extent2].[HISCode] AS [HISCode], 
+    [Extent2].[StandardCode] AS [StandardCode], 
+    [Extent2].[DiagnosisComplexSate] AS [DiagnosisComplexSate], 
+    [Extent2].[IsSummary] AS [IsSummary], 
+    [Extent2].[IsSummaryName] AS [IsSummaryName], 
+    [Extent2].[ItemDecimal] AS [ItemDecimal], 
+    [Extent2].[SeeState] AS [SeeState], 
+    [Extent2].[TenantId] AS [TenantId], 
+    [Extent2].[IsActive] AS [IsActive], 
+    [Extent2].[GWBM] AS [GWBM], 
+    [Extent2].[WJUploadState] AS [WJUploadState], 
+    [Extent2].[UnitBM] AS [UnitBM], 
+    [Extent2].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[DeleterUserId] AS [DeleterUserId], 
+    [Extent2].[DeletionTime] AS [DeletionTime], 
+    [Extent2].[LastModificationTime] AS [LastModificationTime], 
+    [Extent2].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent2].[CreationTime] AS [CreationTime], 
+    [Extent2].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemProcExpressTbmItemInfoes] AS [Extent1]
+    INNER JOIN [dbo].[TbmItemInfoes] AS [Extent2] ON [Extent1].[TbmItemInfo_Id] = [Extent2].[Id]
+    WHERE ([Extent1].[TbmItemProcExpress_Id] = @EntityKeyValue1) AND (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) )
+
+
+-- EntityKeyValue1: 'fd783328-ee3a-4d36-9503-10e587bbf11d' (Type = Guid, IsNullable = false)
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- 正在 2023/10/23 14:58:39 +08:00
+ 执行
+-- 已在 16 毫秒内完成，结果为: SqlDataReader
+
+
+
+SELECT 
+    [Extent2].[Id] AS [Id], 
+    [Extent2].[DepartmentId] AS [DepartmentId], 
+    [Extent2].[Name] AS [Name], 
+    [Extent2].[ItemBM] AS [ItemBM], 
+    [Extent2].[NamePM] AS [NamePM], 
+    [Extent2].[NameEngAbr] AS [NameEngAbr], 
+    [Extent2].[HelpChar] AS [HelpChar], 
+    [Extent2].[WBCode] AS [WBCode], 
+    [Extent2].[Sex] AS [Sex], 
+    [Extent2].[MinAge] AS [MinAge], 
+    [Extent2].[MaxAge] AS [MaxAge], 
+    [Extent2].[Unit] AS [Unit], 
+    [Extent2].[Notice] AS [Notice], 
+    [Extent2].[Remark] AS [Remark], 
+    [Extent2].[OrderNum] AS [OrderNum], 
+    [Extent2].[moneyType] AS [moneyType], 
+    [Extent2].[Lclxid] AS [Lclxid], 
+    [Extent2].[Ckisrpot] AS [Ckisrpot], 
+    [Extent2].[ReportCode] AS [ReportCode], 
+    [Extent2].[HISCode] AS [HISCode], 
+    [Extent2].[StandardCode] AS [StandardCode], 
+    [Extent2].[DiagnosisComplexSate] AS [DiagnosisComplexSate], 
+    [Extent2].[IsSummary] AS [IsSummary], 
+    [Extent2].[IsSummaryName] AS [IsSummaryName], 
+    [Extent2].[ItemDecimal] AS [ItemDecimal], 
+    [Extent2].[SeeState] AS [SeeState], 
+    [Extent2].[TenantId] AS [TenantId], 
+    [Extent2].[IsActive] AS [IsActive], 
+    [Extent2].[GWBM] AS [GWBM], 
+    [Extent2].[WJUploadState] AS [WJUploadState], 
+    [Extent2].[UnitBM] AS [UnitBM], 
+    [Extent2].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[DeleterUserId] AS [DeleterUserId], 
+    [Extent2].[DeletionTime] AS [DeletionTime], 
+    [Extent2].[LastModificationTime] AS [LastModificationTime], 
+    [Extent2].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent2].[CreationTime] AS [CreationTime], 
+    [Extent2].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemProcExpressTbmItemInfoes] AS [Extent1]
+    INNER JOIN [dbo].[TbmItemInfoes] AS [Extent2] ON [Extent1].[TbmItemInfo_Id] = [Extent2].[Id]
+    WHERE ([Extent1].[TbmItemProcExpress_Id] = @EntityKeyValue1) AND (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) )
+
+
+-- EntityKeyValue1: '494c50e1-ebce-4d24-9cb2-24dca095db2c' (Type = Guid, IsNullable = false)
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- 正在 2023/10/23 14:58:39 +08:00
+ 执行
+-- 已在 15 毫秒内完成，结果为: SqlDataReader
+
+
+
+SELECT 
+    [Extent2].[Id] AS [Id], 
+    [Extent2].[DepartmentId] AS [DepartmentId], 
+    [Extent2].[Name] AS [Name], 
+    [Extent2].[ItemBM] AS [ItemBM], 
+    [Extent2].[NamePM] AS [NamePM], 
+    [Extent2].[NameEngAbr] AS [NameEngAbr], 
+    [Extent2].[HelpChar] AS [HelpChar], 
+    [Extent2].[WBCode] AS [WBCode], 
+    [Extent2].[Sex] AS [Sex], 
+    [Extent2].[MinAge] AS [MinAge], 
+    [Extent2].[MaxAge] AS [MaxAge], 
+    [Extent2].[Unit] AS [Unit], 
+    [Extent2].[Notice] AS [Notice], 
+    [Extent2].[Remark] AS [Remark], 
+    [Extent2].[OrderNum] AS [OrderNum], 
+    [Extent2].[moneyType] AS [moneyType], 
+    [Extent2].[Lclxid] AS [Lclxid], 
+    [Extent2].[Ckisrpot] AS [Ckisrpot], 
+    [Extent2].[ReportCode] AS [ReportCode], 
+    [Extent2].[HISCode] AS [HISCode], 
+    [Extent2].[StandardCode] AS [StandardCode], 
+    [Extent2].[DiagnosisComplexSate] AS [DiagnosisComplexSate], 
+    [Extent2].[IsSummary] AS [IsSummary], 
+    [Extent2].[IsSummaryName] AS [IsSummaryName], 
+    [Extent2].[ItemDecimal] AS [ItemDecimal], 
+    [Extent2].[SeeState] AS [SeeState], 
+    [Extent2].[TenantId] AS [TenantId], 
+    [Extent2].[IsActive] AS [IsActive], 
+    [Extent2].[GWBM] AS [GWBM], 
+    [Extent2].[WJUploadState] AS [WJUploadState], 
+    [Extent2].[UnitBM] AS [UnitBM], 
+    [Extent2].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[DeleterUserId] AS [DeleterUserId], 
+    [Extent2].[DeletionTime] AS [DeletionTime], 
+    [Extent2].[LastModificationTime] AS [LastModificationTime], 
+    [Extent2].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent2].[CreationTime] AS [CreationTime], 
+    [Extent2].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemProcExpressTbmItemInfoes] AS [Extent1]
+    INNER JOIN [dbo].[TbmItemInfoes] AS [Extent2] ON [Extent1].[TbmItemInfo_Id] = [Extent2].[Id]
+    WHERE ([Extent1].[TbmItemProcExpress_Id] = @EntityKeyValue1) AND (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) )
+
+
+-- EntityKeyValue1: '79f04279-b91b-452e-81c3-45cf5f21d0dd' (Type = Guid, IsNullable = false)
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- 正在 2023/10/23 14:58:39 +08:00
+ 执行
+-- 已在 15 毫秒内完成，结果为: SqlDataReader
+
+
+
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[DepartmentBM] AS [DepartmentBM], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[Category] AS [Category], 
+    [Extent1].[Duty] AS [Duty], 
+    [Extent1].[Sex] AS [Sex], 
+    [Extent1].[Remarks] AS [Remarks], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[MaxCheckDay] AS [MaxCheckDay], 
+    [Extent1].[Address] AS [Address], 
+    [Extent1].[WomenAddress] AS [WomenAddress], 
+    [Extent1].[MenAddress] AS [MenAddress], 
+    [Extent1].[SumFormat] AS [SumFormat], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[IsActive] AS [IsActive], 
+    [Extent1].[LargeDepart] AS [LargeDepart], 
+    [Extent1].[WJUploadState] AS [WJUploadState], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM [dbo].[TbmDepartments] AS [Extent1]
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[Id] = @EntityKeyValue1)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- EntityKeyValue1: 'f21a0dc4-785c-40fc-9e7f-69e5a4d3fd67' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:39 +08:00
+ 执行
+-- 已在 23 毫秒内完成，结果为: SqlDataReader
+
+
+
+SELECT 
+    [Extent2].[Id] AS [Id], 
+    [Extent2].[DepartmentId] AS [DepartmentId], 
+    [Extent2].[Name] AS [Name], 
+    [Extent2].[ItemBM] AS [ItemBM], 
+    [Extent2].[NamePM] AS [NamePM], 
+    [Extent2].[NameEngAbr] AS [NameEngAbr], 
+    [Extent2].[HelpChar] AS [HelpChar], 
+    [Extent2].[WBCode] AS [WBCode], 
+    [Extent2].[Sex] AS [Sex], 
+    [Extent2].[MinAge] AS [MinAge], 
+    [Extent2].[MaxAge] AS [MaxAge], 
+    [Extent2].[Unit] AS [Unit], 
+    [Extent2].[Notice] AS [Notice], 
+    [Extent2].[Remark] AS [Remark], 
+    [Extent2].[OrderNum] AS [OrderNum], 
+    [Extent2].[moneyType] AS [moneyType], 
+    [Extent2].[Lclxid] AS [Lclxid], 
+    [Extent2].[Ckisrpot] AS [Ckisrpot], 
+    [Extent2].[ReportCode] AS [ReportCode], 
+    [Extent2].[HISCode] AS [HISCode], 
+    [Extent2].[StandardCode] AS [StandardCode], 
+    [Extent2].[DiagnosisComplexSate] AS [DiagnosisComplexSate], 
+    [Extent2].[IsSummary] AS [IsSummary], 
+    [Extent2].[IsSummaryName] AS [IsSummaryName], 
+    [Extent2].[ItemDecimal] AS [ItemDecimal], 
+    [Extent2].[SeeState] AS [SeeState], 
+    [Extent2].[TenantId] AS [TenantId], 
+    [Extent2].[IsActive] AS [IsActive], 
+    [Extent2].[GWBM] AS [GWBM], 
+    [Extent2].[WJUploadState] AS [WJUploadState], 
+    [Extent2].[UnitBM] AS [UnitBM], 
+    [Extent2].[IsDeleted] AS [IsDeleted], 
+    [Extent2].[DeleterUserId] AS [DeleterUserId], 
+    [Extent2].[DeletionTime] AS [DeletionTime], 
+    [Extent2].[LastModificationTime] AS [LastModificationTime], 
+    [Extent2].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent2].[CreationTime] AS [CreationTime], 
+    [Extent2].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemProcExpressTbmItemInfoes] AS [Extent1]
+    INNER JOIN [dbo].[TbmItemInfoes] AS [Extent2] ON [Extent1].[TbmItemInfo_Id] = [Extent2].[Id]
+    WHERE ([Extent1].[TbmItemProcExpress_Id] = @EntityKeyValue1) AND (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) )
+
+
+-- EntityKeyValue1: '410195b2-c8c3-4c34-a2fc-fc4d8580daa7' (Type = Guid, IsNullable = false)
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- 正在 2023/10/23 14:58:39 +08:00
+ 执行
+-- 已在 16 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:39 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:39 +08:00
+ 打开了连接
+已于 2023/10/23 14:58:39 +08:00
+ 启动了事务
+INSERT [dbo].[AbpAuditLogs]([TenantId], [UserId], [ServiceName], [MethodName], [Parameters], [ReturnValue], [ExecutionTime], [ExecutionDuration], [ClientIpAddress], [ClientName], [BrowserInfo], [ExceptionMessage], [Exception], [ImpersonatorUserId], [ImpersonatorTenantId], [CustomData])
+VALUES (@0, @1, @2, @3, @4, NULL, @5, @6, @7, @8, @9, NULL, NULL, NULL, NULL, NULL)
+SELECT [Id]
+FROM [dbo].[AbpAuditLogs]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+
+
+-- @0: '2' (Type = Int32)
+
+-- @1: '3' (Type = Int64)
+
+-- @2: 'Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.DoctorStationAppService' (Type = String, Size = 256)
+
+-- @3: 'getItemProcExpress' (Type = String, Size = 256)
+
+-- @4: '{}' (Type = String, Size = 1024)
+
+-- @5: '2023/10/23 14:58:39' (Type = DateTime2)
+
+-- @6: '331' (Type = Int32)
+
+-- @7: '::1' (Type = String, Size = 64)
+
+-- @8: 'LAPTOP-GECQGVPJ' (Type = String, Size = 128)
+
+-- @9: 'Unknown / 0.0 / Unknown' (Type = String, Size = 512)
+
+-- 正在 2023/10/23 14:58:39 +08:00
+ 执行
+-- 已在 15 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:39 +08:00
+ 提交了事务
+已于 2023/10/23 14:58:39 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:40 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Type] AS [Type], 
+    [Extent1].[Value] AS [Value], 
+    [Extent1].[Code] AS [Code], 
+    [Extent1].[Text] AS [Text], 
+    [Extent1].[helpChar] AS [helpChar], 
+    [Extent1].[Remarks] AS [Remarks], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM [dbo].[TbmBasicDictionaries] AS [Extent1]
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND (N'DoctorStationDisplayColumn' = [Extent1].[Type])
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- 正在 2023/10/23 14:58:40 +08:00
+ 执行
+-- 已在 23 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:40 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:40 +08:00
+ 打开了连接
+已于 2023/10/23 14:58:40 +08:00
+ 启动了事务
+INSERT [dbo].[AbpAuditLogs]([TenantId], [UserId], [ServiceName], [MethodName], [Parameters], [ReturnValue], [ExecutionTime], [ExecutionDuration], [ClientIpAddress], [ClientName], [BrowserInfo], [ExceptionMessage], [Exception], [ImpersonatorUserId], [ImpersonatorTenantId], [CustomData])
+VALUES (@0, @1, @2, @3, @4, NULL, @5, @6, @7, @8, @9, NULL, NULL, NULL, NULL, NULL)
+SELECT [Id]
+FROM [dbo].[AbpAuditLogs]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+
+
+-- @0: '2' (Type = Int32)
+
+-- @1: '3' (Type = Int64)
+
+-- @2: 'Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.DoctorStationAppService' (Type = String, Size = 256)
+
+-- @3: 'GetDictionaryDto' (Type = String, Size = 256)
+
+-- @4: '{"query":{"basicDictionaryType":["DoctorStationDisplayColumn"]}}' (Type = String, Size = 1024)
+
+-- @5: '2023/10/23 14:58:40' (Type = DateTime2)
+
+-- @6: '92' (Type = Int32)
+
+-- @7: '::1' (Type = String, Size = 64)
+
+-- @8: 'LAPTOP-GECQGVPJ' (Type = String, Size = 128)
+
+-- @9: 'Unknown / 0.0 / Unknown' (Type = String, Size = 512)
+
+-- 正在 2023/10/23 14:58:40 +08:00
+ 执行
+-- 已在 19 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:40 +08:00
+ 提交了事务
+已于 2023/10/23 14:58:40 +08:00
+ 关闭了连接
+已于 2023-10-23 14:58:40 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 14:58:40' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 14:58:40 +08:00
+ 执行
+-- 已在 7 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 14:58:40 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:40 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: 'e77a1870-5134-42af-ae48-11ed25b33695' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:40 +08:00
+ 执行
+-- 已在 20 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:40 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:40 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '98766ade-17cf-410b-841c-12b995aa310d' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:40 +08:00
+ 执行
+-- 已在 14 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:40 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:40 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: 'ffb9b37b-cd90-41ac-b319-2169daa71faf' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:40 +08:00
+ 执行
+-- 已在 18 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:40 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:40 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: 'e6ed6616-8712-47b7-b8e1-243da7c53388' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:40 +08:00
+ 执行
+-- 已在 18 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:40 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:40 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: 'd0423685-c981-4654-ab96-2a64044b975e' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:40 +08:00
+ 执行
+-- 已在 18 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:40 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:40 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '13b61a56-8e8b-46a3-a18d-2c8b715a4570' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:40 +08:00
+ 执行
+-- 已在 15 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:40 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:40 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: 'b47e7746-3128-40f8-8ae8-31ce71b640a9' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:40 +08:00
+ 执行
+-- 已在 16 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:40 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:40 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '9983dc74-1785-47c6-8273-41382a3fd31d' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:40 +08:00
+ 执行
+-- 已在 14 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:40 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:40 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '42763192-83de-4602-adc2-58fd87303626' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:40 +08:00
+ 执行
+-- 已在 15 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:40 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:40 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '1aee0382-e2f4-48da-b28c-5cc8f5fc2bb0' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:40 +08:00
+ 执行
+-- 已在 18 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:40 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:40 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '2d925157-3ac3-4e9f-86a1-64088a5bc857' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:40 +08:00
+ 执行
+-- 已在 14 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:40 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:40 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: 'f21a0dc4-785c-40fc-9e7f-69e5a4d3fd67' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:40 +08:00
+ 执行
+-- 已在 15 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:40 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:40 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: 'dc745852-ae7a-409e-9dfa-6c5953834482' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:40 +08:00
+ 执行
+-- 已在 14 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:41 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:41 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: 'f04e454e-0374-4a51-8acb-7c395ce9423b' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:41 +08:00
+ 执行
+-- 已在 14 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:41 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:41 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: 'c93addd3-44e1-4151-b4db-7f2aed3056f4' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:41 +08:00
+ 执行
+-- 已在 15 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:41 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:41 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '7be9fd57-09a8-4f01-8810-833aa889b532' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:41 +08:00
+ 执行
+-- 已在 15 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:41 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:41 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '8933ae77-25a4-4df7-9be9-8d120b5347d3' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:41 +08:00
+ 执行
+-- 已在 15 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:41 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:41 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: 'f2919558-1743-4b99-815d-977e196e8e09' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:41 +08:00
+ 执行
+-- 已在 15 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:41 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:41 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: 'd3583c65-2a55-4371-a1e5-9bf2b9210a3f' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:41 +08:00
+ 执行
+-- 已在 20 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:41 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:41 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '0f8fb8fd-db85-439f-97ab-9e8533473e84' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:41 +08:00
+ 执行
+-- 已在 14 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:41 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:41 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '488680f6-5401-48c5-82ed-a27fc533a04a' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:41 +08:00
+ 执行
+-- 已在 15 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:41 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:41 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '59e21ed5-2581-4274-8004-a5a27993c37a' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:41 +08:00
+ 执行
+-- 已在 15 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:41 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:41 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: 'fda94d5b-2c5d-421e-9b9d-b2910cf96792' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:41 +08:00
+ 执行
+-- 已在 16 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:41 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:41 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '28f6f8f1-4893-4a48-9415-c83d80845778' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:41 +08:00
+ 执行
+-- 已在 15 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:41 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:41 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: 'fafb8582-0d8a-4007-9ac1-ca44308fc51d' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:41 +08:00
+ 执行
+-- 已在 14 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:41 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:41 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '0015f4e5-605c-49c1-b074-d07107a20ab8' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:41 +08:00
+ 执行
+-- 已在 15 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:41 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:41 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: 'f72b6061-42c3-42c0-880d-d29d65a7ae47' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:41 +08:00
+ 执行
+-- 已在 18 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:41 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:41 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '20ab13de-981c-4188-8cbf-d96deece9a76' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:41 +08:00
+ 执行
+-- 已在 16 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:41 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:41 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '78982d20-d3ac-45bc-a2d5-dc6f09205556' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:41 +08:00
+ 执行
+-- 已在 19 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:41 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:41 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '22fee34f-cc86-4d7d-b4fa-ea081db0da71' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:41 +08:00
+ 执行
+-- 已在 14 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:41 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:41 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '62846b9d-dc9e-48a3-8584-f146569f3095' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:41 +08:00
+ 执行
+-- 已在 17 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:41 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:41 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: 'a4d57627-7b74-4387-818d-f636346c5f8a' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:41 +08:00
+ 执行
+-- 已在 16 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:41 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:41 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '36838e74-522f-42e8-80fe-f7452f154398' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:41 +08:00
+ 执行
+-- 已在 14 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:41 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:41 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: 'c4ee4182-b33e-4039-8f7b-f8adeedfc49b' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:41 +08:00
+ 执行
+-- 已在 16 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:41 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:41 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '1426aba4-4c67-44ad-aa4c-f962b6bbd77d' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:41 +08:00
+ 执行
+-- 已在 16 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:41 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:41 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '70fb59af-0dba-48df-ae71-f9b430d7156c' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:41 +08:00
+ 执行
+-- 已在 14 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:41 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:41 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Word] AS [Word], 
+    [Extent1].[HelpChar] AS [HelpChar], 
+    [Extent1].[WBCode] AS [WBCode], 
+    [Extent1].[DepartmentBMId] AS [DepartmentBMId], 
+    [Extent1].[iteminfoBMId] AS [iteminfoBMId], 
+    [Extent1].[IsSickness] AS [IsSickness], 
+    [Extent1].[OrderNum] AS [OrderNum], 
+    [Extent1].[ApplySate] AS [ApplySate], 
+    [Extent1].[Period] AS [Period], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[GWBM] AS [GWBM], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM  [dbo].[TbmItemDictionaries] AS [Extent1]
+    INNER JOIN [dbo].[TbmDepartments] AS [Extent2] ON (([Extent2].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent2].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent1].[DepartmentBMId] = [Extent2].[Id])
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) ) AND ([Extent2].[Id] = @p__linq__0)
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- p__linq__0: '09d4aafa-78f2-4d85-afca-fdcf126ae7b1' (Type = Guid, IsNullable = false)
+
+-- 正在 2023/10/23 14:58:41 +08:00
+ 执行
+-- 已在 16 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:41 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:41 +08:00
+ 打开了连接
+已于 2023/10/23 14:58:41 +08:00
+ 启动了事务
+INSERT [dbo].[AbpAuditLogs]([TenantId], [UserId], [ServiceName], [MethodName], [Parameters], [ReturnValue], [ExecutionTime], [ExecutionDuration], [ClientIpAddress], [ClientName], [BrowserInfo], [ExceptionMessage], [Exception], [ImpersonatorUserId], [ImpersonatorTenantId], [CustomData])
+VALUES (@0, @1, @2, @3, @4, NULL, @5, @6, @7, @8, @9, NULL, NULL, NULL, NULL, NULL)
+SELECT [Id]
+FROM [dbo].[AbpAuditLogs]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+
+
+-- @0: '2' (Type = Int32)
+
+-- @1: '3' (Type = Int64)
+
+-- @2: 'Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.DoctorStationAppService' (Type = String, Size = 256)
+
+-- @3: 'GetItemDictionarylist' (Type = String, Size = 256)
+
+-- @4: '{"query":{"departmentBMList":["e77a1870-5134-42af-ae48-11ed25b33695","98766ade-17cf-410b-841c-12b995aa310d","ffb9b37b-cd90-41ac-b319-2169daa71faf","e6ed6616-8712-47b7-b8e1-243da7c53388","d0423685-c981-4654-ab96-2a64044b975e","13b61a56-8e8b-46a3-a18d-2c8b715a4570","b47e7746-3128-40f8-8ae8-31ce71b640a9","9983dc74-1785-47c6-8273-41382a3fd31d","42763192-83de-4602-adc2-58fd87303626","1aee0382-e2f4-48da-b28c-5cc8f5fc2bb0","2d925157-3ac3-4e9f-86a1-64088a5bc857","f21a0dc4-785c-40fc-9e7f-69e5a4d3fd67","dc745852-ae7a-409e-9dfa-6c5953834482","f04e454e-0374-4a51-8acb-7c395ce9423b","c93addd3-44e1-4151-b4db-7f2aed3056f4","7be9fd57-09a8-4f01-8810-833aa889b532","8933ae77-25a4-4df7-9be9-8d120b5347d3","f2919558-1743-4b99-815d-977e196e8e09","d3583c65-2a55-4371-a1e5-9bf2b9210a3f","0f8fb8fd-db85-439f-97ab-9e8533473e84","488680f6-5401-48c5-82ed-a27fc533a04a","59e21ed5-2581-4274-8004-a5a27993c37a","fda94d5b-2c5d-421e-9b9d-b2910cf96792","28f6f8f1-4893-4a48-9415-c83d80845778","fafb8582-0d8a-4007-9ac1-ca44308fc51d","0015f4e5-605c-4...' (Type = String, Size = 1024)
+
+-- @5: '2023/10/23 14:58:40' (Type = DateTime2)
+
+-- @6: '1273' (Type = Int32)
+
+-- @7: '::1' (Type = String, Size = 64)
+
+-- @8: 'LAPTOP-GECQGVPJ' (Type = String, Size = 128)
+
+-- @9: 'Unknown / 0.0 / Unknown' (Type = String, Size = 512)
+
+-- 正在 2023/10/23 14:58:41 +08:00
+ 执行
+-- 已在 12 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:41 +08:00
+ 提交了事务
+已于 2023/10/23 14:58:41 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:42 +08:00
+ 打开了连接
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[IsFree] AS [IsFree], 
+    [Extent1].[TenantId] AS [TenantId], 
+    [Extent1].[IsActive] AS [IsActive], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterUserId] AS [DeleterUserId], 
+    [Extent1].[DeletionTime] AS [DeletionTime], 
+    [Extent1].[LastModificationTime] AS [LastModificationTime], 
+    [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Extent1].[CreationTime] AS [CreationTime], 
+    [Extent1].[CreatorUserId] AS [CreatorUserId]
+    FROM [dbo].[PersonnelCategories] AS [Extent1]
+    WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) )
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- 正在 2023/10/23 14:58:42 +08:00
+ 执行
+-- 已在 20 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:42 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:42 +08:00
+ 打开了连接
+已于 2023/10/23 14:58:42 +08:00
+ 启动了事务
+INSERT [dbo].[AbpAuditLogs]([TenantId], [UserId], [ServiceName], [MethodName], [Parameters], [ReturnValue], [ExecutionTime], [ExecutionDuration], [ClientIpAddress], [ClientName], [BrowserInfo], [ExceptionMessage], [Exception], [ImpersonatorUserId], [ImpersonatorTenantId], [CustomData])
+VALUES (@0, @1, @2, @3, @4, NULL, @5, @6, @7, @8, @9, NULL, NULL, NULL, NULL, NULL)
+SELECT [Id]
+FROM [dbo].[AbpAuditLogs]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+
+
+-- @0: '2' (Type = Int32)
+
+-- @1: '3' (Type = Int64)
+
+-- @2: 'Sw.Hospital.HealthExaminationSystem.Application.PersonnelCategorys.PersonnelCategoryAppService' (Type = String, Size = 256)
+
+-- @3: 'QueryCategoryList' (Type = String, Size = 256)
+
+-- @4: '{"dto":{"isFree":false,"isActive":false,"id":"00000000-0000-0000-0000-000000000000"}}' (Type = String, Size = 1024)
+
+-- @5: '2023/10/23 14:58:41' (Type = DateTime2)
+
+-- @6: '134' (Type = Int32)
+
+-- @7: '::1' (Type = String, Size = 64)
+
+-- @8: 'LAPTOP-GECQGVPJ' (Type = String, Size = 128)
+
+-- @9: 'Unknown / 0.0 / Unknown' (Type = String, Size = 512)
+
+-- 正在 2023/10/23 14:58:42 +08:00
+ 执行
+-- 已在 16 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:42 +08:00
+ 提交了事务
+已于 2023/10/23 14:58:42 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:42 +08:00
+ 打开了连接
+SELECT 
+    [Project1].[TenantId] AS [TenantId], 
+    [Project1].[Id] AS [Id], 
+    [Project1].[ItemId] AS [ItemId], 
+    [Project1].[Sex] AS [Sex], 
+    [Project1].[MinAge] AS [MinAge], 
+    [Project1].[MaxAge] AS [MaxAge], 
+    [Project1].[MinValue] AS [MinValue], 
+    [Project1].[MaxValue] AS [MaxValue], 
+    [Project1].[PositiveSate] AS [PositiveSate], 
+    [Project1].[IsNormal] AS [IsNormal], 
+    [Project1].[CheckType] AS [CheckType], 
+    [Project1].[Symbol] AS [Symbol], 
+    [Project1].[Summ] AS [Summ], 
+    [Project1].[OrderNum] AS [OrderNum], 
+    [Project1].[Period] AS [Period], 
+    [Project1].[IsIndustrial] AS [IsIndustrial], 
+    [Project1].[WorkAgeStart] AS [WorkAgeStart], 
+    [Project1].[WorkAgeEnd] AS [WorkAgeEnd], 
+    [Project1].[HazardFactors] AS [HazardFactors], 
+    [Project1].[IllnessLevel] AS [IllnessLevel], 
+    [Project1].[PhysicalType] AS [PhysicalType], 
+    [Project1].[IsDeleted] AS [IsDeleted], 
+    [Project1].[DeleterUserId] AS [DeleterUserId], 
+    [Project1].[DeletionTime] AS [DeletionTime], 
+    [Project1].[LastModificationTime] AS [LastModificationTime], 
+    [Project1].[LastModifierUserId] AS [LastModifierUserId], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId], 
+    [Project1].[PostState_Id] AS [PostState_Id]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[ItemId] AS [ItemId], 
+        [Extent1].[Sex] AS [Sex], 
+        [Extent1].[MinAge] AS [MinAge], 
+        [Extent1].[MaxAge] AS [MaxAge], 
+        [Extent1].[MinValue] AS [MinValue], 
+        [Extent1].[MaxValue] AS [MaxValue], 
+        [Extent1].[PositiveSate] AS [PositiveSate], 
+        [Extent1].[IsNormal] AS [IsNormal], 
+        [Extent1].[CheckType] AS [CheckType], 
+        [Extent1].[Symbol] AS [Symbol], 
+        [Extent1].[Summ] AS [Summ], 
+        [Extent1].[OrderNum] AS [OrderNum], 
+        [Extent1].[Period] AS [Period], 
+        [Extent1].[IsIndustrial] AS [IsIndustrial], 
+        [Extent1].[WorkAgeStart] AS [WorkAgeStart], 
+        [Extent1].[WorkAgeEnd] AS [WorkAgeEnd], 
+        [Extent1].[HazardFactors] AS [HazardFactors], 
+        [Extent1].[IllnessLevel] AS [IllnessLevel], 
+        [Extent1].[PhysicalType] AS [PhysicalType], 
+        [Extent1].[TenantId] AS [TenantId], 
+        [Extent1].[IsDeleted] AS [IsDeleted], 
+        [Extent1].[DeleterUserId] AS [DeleterUserId], 
+        [Extent1].[DeletionTime] AS [DeletionTime], 
+        [Extent1].[LastModificationTime] AS [LastModificationTime], 
+        [Extent1].[LastModifierUserId] AS [LastModifierUserId], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId], 
+        [Extent1].[PostState_Id] AS [PostState_Id]
+        FROM [dbo].[TbmItemStandards] AS [Extent1]
+        WHERE (([Extent1].[TenantId] = @DynamicFilterParam_000005) ) AND (([Extent1].[IsDeleted] = @DynamicFilterParam_000003) )
+    )  AS [Project1]
+    ORDER BY [Project1].[OrderNum] ASC
+
+
+-- DynamicFilterParam_000005: '2' (Type = Int32)
+
+-- DynamicFilterParam_000006: 'null' (Type = Boolean)
+
+-- DynamicFilterParam_000003: 'False' (Type = Boolean, IsNullable = false)
+
+-- DynamicFilterParam_000004: 'null' (Type = Boolean)
+
+-- 正在 2023/10/23 14:58:42 +08:00
+ 执行
+-- 已在 34 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:42 +08:00
+ 关闭了连接
+已于 2023/10/23 14:58:42 +08:00
+ 打开了连接
+已于 2023/10/23 14:58:42 +08:00
+ 启动了事务
+INSERT [dbo].[AbpAuditLogs]([TenantId], [UserId], [ServiceName], [MethodName], [Parameters], [ReturnValue], [ExecutionTime], [ExecutionDuration], [ClientIpAddress], [ClientName], [BrowserInfo], [ExceptionMessage], [Exception], [ImpersonatorUserId], [ImpersonatorTenantId], [CustomData])
+VALUES (@0, @1, @2, @3, @4, NULL, @5, @6, @7, @8, @9, NULL, NULL, NULL, NULL, NULL)
+SELECT [Id]
+FROM [dbo].[AbpAuditLogs]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+
+
+-- @0: '2' (Type = Int32)
+
+-- @1: '3' (Type = Int64)
+
+-- @2: 'Sw.Hospital.HealthExaminationSystem.Application.DoctorStation.DoctorStationAppService' (Type = String, Size = 256)
+
+-- @3: 'GetGenerateSummary' (Type = String, Size = 256)
+
+-- @4: '{}' (Type = String, Size = 1024)
+
+-- @5: '2023/10/23 14:58:42' (Type = DateTime2)
+
+-- @6: '705' (Type = Int32)
+
+-- @7: '::1' (Type = String, Size = 64)
+
+-- @8: 'LAPTOP-GECQGVPJ' (Type = String, Size = 128)
+
+-- @9: 'Unknown / 0.0 / Unknown' (Type = String, Size = 512)
+
+-- 正在 2023/10/23 14:58:42 +08:00
+ 执行
+-- 已在 15 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023/10/23 14:58:42 +08:00
+ 提交了事务
+已于 2023/10/23 14:58:42 +08:00
+ 关闭了连接
+已于 2023-10-23 14:58:45 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 14:58:45' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 14:58:45 +08:00
+ 执行
+-- 已在 8 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 14:58:45 +08:00
+ 关闭了连接
+已于 2023-10-23 14:58:50 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 14:58:50' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 14:58:50 +08:00
+ 执行
+-- 已在 7 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 14:58:50 +08:00
+ 关闭了连接
+已于 2023-10-23 14:58:55 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 14:58:55' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 14:58:55 +08:00
+ 执行
+-- 已在 22 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 14:58:55 +08:00
+ 关闭了连接
+已于 2023-10-23 15:58:01 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 15:58:01' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 15:58:01 +08:00
+ 执行
+-- 已在 7 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 15:58:01 +08:00
+ 关闭了连接
+已于 2023-10-23 15:58:06 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 15:58:06' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 15:58:06 +08:00
+ 执行
+-- 已在 8 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 15:58:06 +08:00
+ 关闭了连接
+已于 2023-10-23 15:58:11 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 15:58:11' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 15:58:11 +08:00
+ 执行
+-- 已在 7 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 15:58:11 +08:00
+ 关闭了连接
+已于 2023-10-23 15:58:16 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 15:58:16' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 15:58:16 +08:00
+ 执行
+-- 已在 11 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 15:58:16 +08:00
+ 关闭了连接
+已于 2023-10-23 15:58:21 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 15:58:21' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 15:58:21 +08:00
+ 执行
+-- 已在 7 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 15:58:21 +08:00
+ 关闭了连接
+已于 2023-10-23 15:58:26 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 15:58:26' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 15:58:26 +08:00
+ 执行
+-- 已在 10 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 15:58:26 +08:00
+ 关闭了连接
+已于 2023-10-23 15:58:31 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 15:58:31' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 15:58:31 +08:00
+ 执行
+-- 已在 7 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 15:58:31 +08:00
+ 关闭了连接
+已于 2023-10-23 15:58:36 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 15:58:36' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 15:58:36 +08:00
+ 执行
+-- 已在 8 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 15:58:36 +08:00
+ 关闭了连接
+已于 2023-10-23 15:58:41 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 15:58:41' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 15:58:41 +08:00
+ 执行
+-- 已在 8 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 15:58:42 +08:00
+ 关闭了连接
+已于 2023-10-23 15:58:47 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 15:58:47' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 15:58:47 +08:00
+ 执行
+-- 已在 7 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 15:58:47 +08:00
+ 关闭了连接
+已于 2023-10-23 15:58:52 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 15:58:52' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 15:58:52 +08:00
+ 执行
+-- 已在 8 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 15:58:52 +08:00
+ 关闭了连接
+已于 2023-10-23 15:58:57 +08:00
+ 打开了连接
+SELECT TOP (1000) 
+    [Project1].[Id] AS [Id], 
+    [Project1].[JobType] AS [JobType], 
+    [Project1].[JobArgs] AS [JobArgs], 
+    [Project1].[TryCount] AS [TryCount], 
+    [Project1].[NextTryTime] AS [NextTryTime], 
+    [Project1].[LastTryTime] AS [LastTryTime], 
+    [Project1].[IsAbandoned] AS [IsAbandoned], 
+    [Project1].[Priority] AS [Priority], 
+    [Project1].[CreationTime] AS [CreationTime], 
+    [Project1].[CreatorUserId] AS [CreatorUserId]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[JobType] AS [JobType], 
+        [Extent1].[JobArgs] AS [JobArgs], 
+        [Extent1].[TryCount] AS [TryCount], 
+        [Extent1].[NextTryTime] AS [NextTryTime], 
+        [Extent1].[LastTryTime] AS [LastTryTime], 
+        [Extent1].[IsAbandoned] AS [IsAbandoned], 
+        [Extent1].[Priority] AS [Priority], 
+        [Extent1].[CreationTime] AS [CreationTime], 
+        [Extent1].[CreatorUserId] AS [CreatorUserId]
+        FROM [dbo].[AbpBackgroundJobs] AS [Extent1]
+        WHERE ([Extent1].[IsAbandoned] <> 1) AND ([Extent1].[NextTryTime] <= @p__linq__0)
+    )  AS [Project1]
+    ORDER BY [Project1].[Priority] DESC, [Project1].[TryCount] ASC, [Project1].[NextTryTime] ASC
+
+
+-- p__linq__0: '2023-10-23 15:58:57' (Type = DateTime2, IsNullable = false)
+
+-- 正在 2023-10-23 15:58:57 +08:00
+ 执行
+-- 已在 7 毫秒内完成，结果为: SqlDataReader
+
+
+
+已于 2023-10-23 15:58:57 +08:00
+ 关闭了连接

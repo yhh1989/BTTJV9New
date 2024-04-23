@@ -1,0 +1,320 @@
+﻿@*@using Abp.Web.Mvc.Extensions
+    @using Sw.Hospital.HealthExaminationSystem.Web
+    @model Sw.Hospital.HealthExaminationSystem.Web.Models.Roles.RoleListViewModel*@
+
+@{
+    ViewBag.Title = "统计查询";
+    ViewBag.ActiveMenu = "ResultStatic";
+    //ViewBag.ActiveMenu = PageNames.Result; //The menu item will be active for this page.
+    //Layout = null;
+}
+
+
+@section styles{
+    <link href="~/BdJs/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <link href="~/BdJs/style.css" rel="stylesheet" />
+    <link href="~/BdJs/bootstrap-table.min.css" rel="stylesheet" />
+    <link href="~/BdJs/bootstrap-table.css" rel="stylesheet" />
+    <link href="~/BdJs/jiastyle.css" rel="stylesheet" />
+    <link href="~/BdJs/box_style.css" rel="stylesheet" />
+    <link href="~/BdJs/select2New.css" rel="stylesheet" />
+}
+@section scripts{
+    <script src="~/Scripts/jquery.signalR-2.3.0.js"></script>
+    <script src="~/Scripts/umd/popper.js"></script>
+    <script src="~/BdJs/bootstrap-datetimepicker.min.js"></script>
+    <script src="~/BdJs/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script src="~/BdJs/bootstrap-table.js"></script>
+    <script src="~/BdJs/bootstrap-table-zh-CN.js"></script>
+    <script src="~/BdJs/jquery-ui-1.9.2.custom.js"></script>
+    <script src="~/BdJs/select2.js"></script>
+    <script src="~/BdJs/bootstrap.min.js"></script>
+    <script src="~/BdJs/jquery-editable-select.min.js"></script>
+    <script src="~/BdJs/select2.full.min.js"></script>
+    <script src="~/BdJs/FireFoxHelp.js"></script>
+    <script src="~/BdJs/jquery-ui-1.9.2.custom.js"></script>
+    <script src="~/BdJs/share.js"></script>
+    <script src="~/BdJs/Jquery-from.js"></script>
+
+
+    <script type="text/javascript">
+        var data;
+        $(function () {
+            Querycz();
+            Query();
+            data = [];
+            // 绑定列表
+            BindTable();
+            // 时间控价
+            bindDatetimepicker();
+            // 查询
+            $("#btnQuery").click(function () {
+                QueryData();
+            });
+        });
+
+        // 医生用作量统计列表
+        function BindTable() {
+            $("#tbInfo").bootstrapTable("destroy");
+            $("#tbInfo").bootstrapTable({
+                method: 'get',                      //请求方式（*）
+                data: data,
+                striped: true,                      //是否显示行间隔色
+                cache: false,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
+                pagination: true,                   //是否显示分页（*）
+                sortable: false,                     //是否启用排序
+                sortOrder: "asc",                   //排序方式
+                sidePagination: "client",           //分页方式：client客户端分页，server服务端分页（*）
+                pageNumber: 1,                       //初始化加载第一页，默认第一页
+                pageSize: 10,                       //每页的记录行数（*）
+                pageList: [10, 25, 50, 100],        //可供选择的每页的行数（*）
+                search: false,                       //是否显示表格搜索，此搜索是客户端搜索，不会进服务端，所以，个人感觉意义不大
+                strictSearch: false,
+                showColumns: false,                  //是否显示所有的列
+                showRefresh: false,                  //是否显示刷新按钮
+                minimumCountColumns: 2,             //最少允许的列数
+                clickToSelect: false,                //是否启用点击选中行
+                height: 520,                        //行高，如果没有设置height属性，表格自动根据记录条数觉得表格高度
+                uniqueId: "Id",                     //每一行的唯一标识，一般为主键列
+                showToggle: false,                    //是否显示详细视图和列表视图的切换按钮
+                cardView: false,                    //是否显示详细视图
+                detailView: false,                   //是否显示父子表
+                columns: [
+                    {
+                        checkbox: true
+                    },
+                    { field: 'Name', title: '体检机构', align: "center" },
+                    { field: 'NucleicAcidType', title: '村庄', align: "center" },
+                    { field: 'ItemName', title: '体检项目名称', align: "center" },
+                    { field: 'RCount', title: '体检人数', align: "center" },
+                    { field: 'ManSex', title: '男性人数', align: "center" },
+                    { field: 'WoManSex', title: '女性人数', align: "center" },
+                    { field: 'Symbol', title: '异常值人数', align: "center" },
+                    { field: 'SignPer', title: '异常值人数检出率', align: "center" },
+                    { field: 'GxyCount', title: '高血压检出量', align: "center" },
+                    { field: 'JclGxyCount', title: '高血压检出率', align: "center" },
+                    { field: 'OldGxyCount', title: '65岁以上老年高血压检出率', align: "center" },
+                    { field: 'TnbCount', title: '糖尿病检出量', align: "center" },
+                    { field: 'JclTnbCount', title: '糖尿病检出率', align: "center" },
+                ]
+            });
+        }
+        // 时间控价设定
+        function bindDatetimepicker() {
+            $("#dtTJStrartDate").datetimepicker({
+                bootcssVer: '3.3.7',
+                format: 'yyyy-mm-dd',
+                //minuteStep: 1,
+                minView: 'month',
+                language: 'zh-CN',
+                //timepicker: false,
+                minDate: '1970-01-02',
+                pickerPosition: 'bottom-right',
+                autoclose: true,
+            }).on("click", function () {
+                $("#dtTJStrartDate").datetimepicker("setEndDate", $("#dtTJEndDate").val());
+            });
+
+            $("#dtTJEndDate").datetimepicker({
+                bootcssVer: '3.3.7',
+                format: 'yyyy-mm-dd',
+                //minuteStep: 1,
+                minView: 'month',
+                language: 'zh-CN',
+                //timepicker: false,
+                minDate: '1970-01-02',
+                pickerPosition: 'bottom-right',
+                autoclose: true,
+            }).on("click", function () {
+                $("#dtTJEndDate").datetimepicker("setStartDate", $("#dtTJStrartDate").val());
+            });
+            $("#dtTJStrartDate").val((new Date().getFullYear()) + "-" + (new Date().getMonth() + 1) + "-" + (new Date().getDate()));
+            $("#dtTJEndDate").val((new Date().getFullYear()) + "-" + (new Date().getMonth() + 1) + "-" + (new Date().getDate()));
+        }
+        // 查询
+        function QueryData() {
+            $.ajax({
+                //请求方式
+                type: "GET",
+                //请求的媒体类型
+                contentType: "application/json;charset=UTF-8",
+                //请求地址
+                url: "/ResultStatic/GetResult",
+                //数据，json字符串
+                data: {
+                    "CustomerBM": $("#CustomerBM").val(),
+                    "sdateTime": $("#dtTJStrartDate").val(),
+                    "edateTime": $("#dtTJEndDate").val(),
+                    "TeamName": $("#TeamName").val(),
+                    "select": $("#select").val(),
+                    "select1": $("#CustomerCZ").val(),
+                },
+                //请求成功
+                success: function (result) {
+                    data = result;
+                    BindTable();
+                }
+            });
+
+        }
+        function Query() {
+            $.ajax({
+                //请求方式
+                type: "GET",
+                //请求的媒体类型
+                contentType: "application/json;charset=UTF-8",
+                //请求地址
+                url: "/ResultStatic/GetJg",
+                //数据，json字符串
+                //请求成功
+                success: function (data, status) {
+                    $.each(data, function (Index, item) {                        
+                        $("#select").append(
+                            "<option value='" + item.id + "'>" + item.text + "</option>");
+                    });
+                    $("#select").selectpicker("refresh");
+                }
+            })
+        }
+        //$("#select").change(function (e) {
+        //    init();
+        //});$("select").bind("change", function()
+        //$("#select").change(function)
+        //{
+        //    init();
+        //};
+        $("#select").change(function ()
+        {
+            init();
+        });
+
+        //$("#select").click(function () {
+        //    var evt = window.event;
+        //    var selectObj = evt ? evt.srcElement : null;
+        //    if (evt && selectObj && evt.offsetY && evt.button != 2
+        //        && (evt.offsetY > selectObj.offsetHeight || evt.offsetY < 0)) {
+        //        init();
+        //    }
+
+       
+        function init() {//绑定下拉菜单数据'
+           
+            //$('#CustomerCZ').select2('data', null);
+            $("#CustomerCZ").empty();
+            $.ajax({
+                type: "GET",
+                contentType: "application/json;charset=UTF-8",
+                //请求地址
+                url: "/ResultStatic/GetCZ",
+                data: {
+                    "TeamName": $("#select").val(),
+                },
+                success: function (data) {
+                    $.each(data, function (Index, item) {
+                        $("#CustomerCZ").append(
+                            "<option value='" + item.id + "'>" + item.text + "</option>");
+                    });
+
+                    $("#CustomerCZ").selectpicker("refresh");
+                }
+            })
+        }
+        function Querycz() {
+            $.ajax({
+                //请求方式
+                type: "GET",
+                //请求的媒体类型
+                contentType: "application/json;charset=UTF-8",
+                //请求地址
+                url: "/ResultStatic/GetCZ",
+                data: {
+                    "TeamName": $("#select").val(),
+                },
+                //数据，json字符串
+                //请求成功
+                success: function (data, status) {
+                    $.each(data, function (Index, item) {
+                        $("#CustomerCZ").append(
+                            "<option value='" + item.id + "'>" + item.text + "</option>");
+                    });
+                    $("#CustomerCZ").selectpicker("refresh");
+                }
+            })
+        }
+    </script>
+}
+<div class="content-wrapper" style="margin-left:0px;width:100%;">
+    <section class="content-header" style="width:100%;height:30px;">
+        <h1>
+            疾病分布统计
+        </h1>
+    </section>
+    <section style="padding-left:15px;padding-top:30px;width:100%">
+        <div class="row">
+
+            <div class="col-lg-12" style="width:100%">
+                <div class="box">
+                    <div class="box-body" style="width:100%">
+                        <table cellpadding="0" cellspacing="0" style="width:100%">
+                            <tbody>
+                                <tr>
+
+                                    <td>
+                                        <label for="dtTJStrartDate" class="control-label pull-right margin">起止日期：</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control margin" id="dtTJStrartDate" readonly="readonly" placeholder="体检开始日期" />
+                                    </td>
+                                    <td>
+                                        <label for="dtTJEndDate" class="control-label pull-right margin">至</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control margin" id="dtTJEndDate" readonly="readonly" placeholder="体检截止日期" />
+                                    </td>
+                                    <td>
+                                        <label for="CustomerBMs" class="control-label pull-right margin">体检机构：</label>
+                                    </td>
+                                    <td>
+                                        <select id="select" class="form-control margin selectpicker" style="width:100%">
+                                            <option value="">--请选择--</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <label for="CustomerBMs" class="control-label pull-right margin">村庄：</label>
+                                    </td>
+                                    <td>
+                                        <select id="CustomerCZ" class="form-control margin selectpicker" style="width:100%">
+                                            <option value="">--请选择--</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <label for="CustomerBM" class="control-label pull-right margin">体检项目名称：</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control margin" id="TeamName" placeholder="体检项目名称" />
+                                    </td>
+                                    <td style="vertical-align:middle;" colspan="2">
+                                        <button type="button" id="btnQuery" class="btn btn-primary btn-lg" style="font-size:12px; margin-left:240px; width:20%;">
+                                            <span></span> 查询
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12" style="width:100%">
+                <div class="box">
+                    <div class="box-body">
+                        <table id="tbInfo"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>

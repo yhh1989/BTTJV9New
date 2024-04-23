@@ -1,0 +1,1334 @@
+﻿<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">V9报告.rdlx</dd:Name>
+	<Body>
+		<Height>125.8cm</Height>
+		<ReportItems>
+			<Textbox Name="TextBox16">
+				<Top>7.4cm</Top>
+				<Left>5.6cm</Left>
+				<Width>8.2cm</Width>
+				<Height>0.75cm</Height>
+				<Style>
+					<Color>#20a196</Color>
+					<FontFamily>微软雅黑</FontFamily>
+					<FontSize>14pt</FontSize>
+					<FontStyle>Normal</FontStyle>
+					<FontWeight>400</FontWeight>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+					<TextAlign>Center</TextAlign>
+				</Style>
+				<ZIndex>5</ZIndex>
+				<CanGrow>true</CanGrow>
+				<Value>电话：029-8833****</Value>
+			</Textbox>
+			<Rectangle Name="Container2">
+				<Top>1cm</Top>
+				<Left>6cm</Left>
+				<Width>7.3097cm</Width>
+				<Height>5.8cm</Height>
+				<ZIndex>4</ZIndex>
+				<ReportItems>
+					<Textbox Name="TextBox4">
+						<Width>2.7781cm</Width>
+						<Height>0.75cm</Height>
+						<Style>
+							<Color>#20a196</Color>
+							<FontFamily>楷体</FontFamily>
+							<FontSize>14pt</FontSize>
+							<FontStyle>Normal</FontStyle>
+							<FontWeight>700</FontWeight>
+							<PaddingBottom>2pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<TextAlign>Justify</TextAlign>
+							<VerticalAlign>Middle</VerticalAlign>
+						</Style>
+						<CanGrow>true</CanGrow>
+						<Value>单位名称：</Value>
+					</Textbox>
+					<Textbox Name="TextBox5">
+						<Left>2.776926cm</Left>
+						<Width>4.2cm</Width>
+						<Height>0.75cm</Height>
+						<Style>
+							<Color>#4ed3fe</Color>
+							<FontFamily>微软雅黑</FontFamily>
+							<FontSize>10pt</FontSize>
+							<FontStyle>Normal</FontStyle>
+							<FontWeight>400</FontWeight>
+							<PaddingBottom>2pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<TextDecoration>None</TextDecoration>
+							<VerticalAlign>Bottom</VerticalAlign>
+							<BorderColor>
+								<Default>#20a196</Default>
+							</BorderColor>
+							<BorderStyle>
+								<Bottom>Solid</Bottom>
+							</BorderStyle>
+						</Style>
+						<ZIndex>1</ZIndex>
+						<CanGrow>true</CanGrow>
+						<DataElementName>Client Name</DataElementName>
+						<Value>=First(Fields!ClientName.Value, "dtCusInfo")</Value>
+					</Textbox>
+					<Textbox Name="TextBox6">
+						<Top>1cm</Top>
+						<Width>2.7781cm</Width>
+						<Height>0.75cm</Height>
+						<Style>
+							<Color>#20a196</Color>
+							<FontFamily>楷体</FontFamily>
+							<FontSize>14pt</FontSize>
+							<FontStyle>Normal</FontStyle>
+							<FontWeight>700</FontWeight>
+							<PaddingBottom>2pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<TextAlign>Justify</TextAlign>
+							<VerticalAlign>Middle</VerticalAlign>
+						</Style>
+						<Value>姓     名：</Value>
+					</Textbox>
+					<Textbox Name="TextBox7">
+						<Top>1cm</Top>
+						<Left>2.776926cm</Left>
+						<Width>4.2cm</Width>
+						<Height>0.75cm</Height>
+						<Style>
+							<Color>#4ed3fe</Color>
+							<FontFamily>微软雅黑</FontFamily>
+							<FontSize>10pt</FontSize>
+							<FontStyle>Normal</FontStyle>
+							<FontWeight>400</FontWeight>
+							<PaddingBottom>2pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<TextDecoration>None</TextDecoration>
+							<VerticalAlign>Bottom</VerticalAlign>
+							<BorderColor>
+								<Default>#20a196</Default>
+							</BorderColor>
+							<BorderStyle>
+								<Bottom>Solid</Bottom>
+							</BorderStyle>
+						</Style>
+						<ZIndex>1</ZIndex>
+						<CanGrow>true</CanGrow>
+						<DataElementName>Name</DataElementName>
+						<Value>=First(Fields!Name.Value, "dtCusInfo")</Value>
+					</Textbox>
+					<Textbox Name="TextBox8">
+						<Top>2cm</Top>
+						<Width>3.2cm</Width>
+						<Height>0.75cm</Height>
+						<Style>
+							<Color>#20a196</Color>
+							<FontFamily>楷体</FontFamily>
+							<FontSize>14pt</FontSize>
+							<FontStyle>Normal</FontStyle>
+							<FontWeight>700</FontWeight>
+							<PaddingBottom>2pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<TextAlign>Justify</TextAlign>
+							<VerticalAlign>Middle</VerticalAlign>
+						</Style>
+						<Value>性     别：</Value>
+					</Textbox>
+					<Textbox Name="TextBox9">
+						<Top>2cm</Top>
+						<Left>2.776925cm</Left>
+						<Width>4.2cm</Width>
+						<Height>0.75cm</Height>
+						<Style>
+							<Color>#4ed3fe</Color>
+							<FontFamily>微软雅黑</FontFamily>
+							<FontSize>10pt</FontSize>
+							<FontStyle>Normal</FontStyle>
+							<FontWeight>400</FontWeight>
+							<PaddingBottom>2pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<TextDecoration>None</TextDecoration>
+							<VerticalAlign>Bottom</VerticalAlign>
+							<BorderColor>
+								<Default>#20a196</Default>
+							</BorderColor>
+							<BorderStyle>
+								<Bottom>Solid</Bottom>
+							</BorderStyle>
+						</Style>
+						<ZIndex>1</ZIndex>
+						<CanGrow>true</CanGrow>
+						<DataElementName>Sex</DataElementName>
+						<Value>=Sum(Fields!Sex.Value, "dtCusInfo")</Value>
+					</Textbox>
+					<Textbox Name="TextBox10">
+						<Top>3cm</Top>
+						<Left>0.02645833cm</Left>
+						<Width>2.7735cm</Width>
+						<Height>0.75cm</Height>
+						<Style>
+							<Color>#20a196</Color>
+							<FontFamily>楷体</FontFamily>
+							<FontSize>14pt</FontSize>
+							<FontStyle>Normal</FontStyle>
+							<FontWeight>700</FontWeight>
+							<PaddingBottom>2pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<TextAlign>Justify</TextAlign>
+							<VerticalAlign>Middle</VerticalAlign>
+						</Style>
+						<CanGrow>true</CanGrow>
+						<Value>联系方式：</Value>
+					</Textbox>
+					<Textbox Name="TextBox11">
+						<Top>2.999999cm</Top>
+						<Left>2.776924cm</Left>
+						<Width>4.2cm</Width>
+						<Height>0.75cm</Height>
+						<Style>
+							<Color>#4ed3fe</Color>
+							<FontFamily>微软雅黑</FontFamily>
+							<FontSize>10pt</FontSize>
+							<FontStyle>Normal</FontStyle>
+							<FontWeight>400</FontWeight>
+							<PaddingBottom>2pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<TextDecoration>None</TextDecoration>
+							<VerticalAlign>Bottom</VerticalAlign>
+							<BorderColor>
+								<Default>#20a196</Default>
+							</BorderColor>
+							<BorderStyle>
+								<Bottom>Solid</Bottom>
+							</BorderStyle>
+						</Style>
+						<ZIndex>1</ZIndex>
+						<CanGrow>true</CanGrow>
+						<DataElementName>Mobile</DataElementName>
+						<Value>=First(Fields!Mobile.Value, "dtCusInfo")</Value>
+					</Textbox>
+					<Textbox Name="TextBox12">
+						<Top>4cm</Top>
+						<Left>2.784466cm</Left>
+						<Width>4.2cm</Width>
+						<Height>0.75cm</Height>
+						<Style>
+							<Color>#4ed3fe</Color>
+							<FontFamily>微软雅黑</FontFamily>
+							<FontSize>10pt</FontSize>
+							<FontStyle>Normal</FontStyle>
+							<FontWeight>400</FontWeight>
+							<PaddingBottom>2pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<TextDecoration>None</TextDecoration>
+							<VerticalAlign>Bottom</VerticalAlign>
+							<BorderColor>
+								<Default>#20a196</Default>
+							</BorderColor>
+							<BorderStyle>
+								<Bottom>Solid</Bottom>
+							</BorderStyle>
+						</Style>
+						<ZIndex>1</ZIndex>
+						<CanGrow>true</CanGrow>
+						<DataElementName>Customer BM</DataElementName>
+						<Value>=First(Fields!CustomerBM.Value, "dtCusInfo")</Value>
+					</Textbox>
+					<Textbox Name="TextBox13">
+						<Top>4cm</Top>
+						<Width>2.8cm</Width>
+						<Height>0.75cm</Height>
+						<Style>
+							<Color>#20a196</Color>
+							<FontFamily>楷体</FontFamily>
+							<FontSize>14pt</FontSize>
+							<FontStyle>Normal</FontStyle>
+							<FontWeight>700</FontWeight>
+							<PaddingBottom>2pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<TextAlign>Justify</TextAlign>
+							<VerticalAlign>Middle</VerticalAlign>
+						</Style>
+						<CanGrow>true</CanGrow>
+						<Value>体检编号：</Value>
+					</Textbox>
+					<Textbox Name="TextBox14">
+						<Top>5cm</Top>
+						<Left>2.776926cm</Left>
+						<Width>4.2cm</Width>
+						<Height>0.75cm</Height>
+						<Style>
+							<Color>#4ed3fe</Color>
+							<FontFamily>微软雅黑</FontFamily>
+							<FontSize>10pt</FontSize>
+							<FontStyle>Normal</FontStyle>
+							<FontWeight>400</FontWeight>
+							<PaddingBottom>2pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<TextAlign>Left</TextAlign>
+							<TextDecoration>None</TextDecoration>
+							<VerticalAlign>Bottom</VerticalAlign>
+							<BorderColor>
+								<Default>#20a196</Default>
+							</BorderColor>
+							<BorderStyle>
+								<Bottom>Solid</Bottom>
+							</BorderStyle>
+						</Style>
+						<ZIndex>1</ZIndex>
+						<CanGrow>true</CanGrow>
+						<DataElementName>Login Date</DataElementName>
+						<Value>=First(Fields!LoginDate.Value, "dtCusInfo")</Value>
+					</Textbox>
+					<Textbox Name="TextBox15">
+						<Top>5cm</Top>
+						<Left>0.02645833cm</Left>
+						<Width>2.7781cm</Width>
+						<Height>0.75cm</Height>
+						<Style>
+							<Color>#20a196</Color>
+							<FontFamily>楷体</FontFamily>
+							<FontSize>14pt</FontSize>
+							<FontStyle>Normal</FontStyle>
+							<FontWeight>700</FontWeight>
+							<PaddingBottom>2pt</PaddingBottom>
+							<PaddingLeft>2pt</PaddingLeft>
+							<PaddingRight>2pt</PaddingRight>
+							<PaddingTop>2pt</PaddingTop>
+							<TextAlign>Justify</TextAlign>
+							<VerticalAlign>Middle</VerticalAlign>
+						</Style>
+						<Value>体检日期：</Value>
+					</Textbox>
+				</ReportItems>
+			</Rectangle>
+			<Shape Name="Shape1">
+				<Top>0.6cm</Top>
+				<Left>5.8cm</Left>
+				<Width>8cm</Width>
+				<Height>6.6cm</Height>
+				<Style>
+					<BorderColor>
+						<Default>#20a196</Default>
+					</BorderColor>
+					<BorderStyle>
+						<Default>Solid</Default>
+					</BorderStyle>
+				</Style>
+				<ZIndex>3</ZIndex>
+				<dd:RoundingRadius xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">
+					<TopLeft>0.3571429cm</TopLeft>
+					<TopRight>0.3571429cm</TopRight>
+					<BottomLeft>0.3571429cm</BottomLeft>
+					<BottomRight>0.3571429cm</BottomRight>
+				</dd:RoundingRadius>
+				<dd:ShapeStyle xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">RoundRect</dd:ShapeStyle>
+			</Shape>
+			<Textbox Name="TextBox17">
+				<Top>8.2cm</Top>
+				<Left>5.6cm</Left>
+				<Width>8.2cm</Width>
+				<Height>0.75cm</Height>
+				<Style>
+					<Color>#20a196</Color>
+					<FontFamily>微软雅黑</FontFamily>
+					<FontSize>14pt</FontSize>
+					<FontStyle>Normal</FontStyle>
+					<FontWeight>400</FontWeight>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+					<TextAlign>Center</TextAlign>
+				</Style>
+				<ZIndex>5</ZIndex>
+				<CanGrow>true</CanGrow>
+				<Value>地址：西安市长安区凤西大道68号</Value>
+			</Textbox>
+			<Textbox Name="TextBox18">
+				<Top>13.6cm</Top>
+				<Left>1.2cm</Left>
+				<Width>16cm</Width>
+				<Height>3.2cm</Height>
+				<Style>
+					<FontFamily>微软雅黑</FontFamily>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+				</Style>
+				<ZIndex>6</ZIndex>
+				<CanGrow>true</CanGrow>
+				<DataElementName>Advice</DataElementName>
+				<Value>=First(Fields!Advice.Value, "dtCusSum")</Value>
+			</Textbox>
+			<Textbox Name="TextBox2">
+				<Top>10cm</Top>
+				<Left>1.4cm</Left>
+				<Width>16cm</Width>
+				<Height>3.2cm</Height>
+				<Style>
+					<FontFamily>微软雅黑</FontFamily>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+				</Style>
+				<ZIndex>6</ZIndex>
+				<CanGrow>true</CanGrow>
+				<DataElementName>Character Summary</DataElementName>
+				<Value>=First(Fields!CharacterSummary.Value, "dtCusSum")</Value>
+			</Textbox>
+			<Table Name="Table1">
+				<Top>18.28271cm</Top>
+				<Left>1.402292cm</Left>
+				<Width>15.4cm</Width>
+				<Height>3.137952cm</Height>
+				<ZIndex>6</ZIndex>
+				<DataSetName>dtCusRegItem</DataSetName>
+				<Header>
+					<TableRows>
+						<TableRow>
+							<Height>0.77211cm</Height>
+							<TableCells>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox29">
+											<Style>
+												<BackgroundColor>LightSkyBlue</BackgroundColor>
+												<Color>White</Color>
+												<FontFamily>微软雅黑</FontFamily>
+												<FontSize>11pt</FontSize>
+												<FontStyle>Normal</FontStyle>
+												<FontWeight>400</FontWeight>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Left</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<DataElementName>TextBox18</DataElementName>
+											<Value>项目</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox19">
+											<Style>
+												<BackgroundColor>LightSkyBlue</BackgroundColor>
+												<Color>White</Color>
+												<FontFamily>微软雅黑</FontFamily>
+												<FontSize>11pt</FontSize>
+												<FontStyle>Normal</FontStyle>
+												<FontWeight>400</FontWeight>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Center</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<Value>检查结果</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox20">
+											<Style>
+												<BackgroundColor>LightSkyBlue</BackgroundColor>
+												<Color>White</Color>
+												<FontFamily>微软雅黑</FontFamily>
+												<FontSize>11pt</FontSize>
+												<FontStyle>Normal</FontStyle>
+												<FontWeight>400</FontWeight>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Center</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<Value>单位</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox24">
+											<Style>
+												<BackgroundColor>LightSkyBlue</BackgroundColor>
+												<Color>White</Color>
+												<FontFamily>微软雅黑</FontFamily>
+												<FontSize>11pt</FontSize>
+												<FontStyle>Normal</FontStyle>
+												<FontWeight>400</FontWeight>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Center</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<Value>参考范围</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox26">
+											<Style>
+												<BackgroundColor>LightSkyBlue</BackgroundColor>
+												<Color>White</Color>
+												<FontFamily>微软雅黑</FontFamily>
+												<FontSize>11pt</FontSize>
+												<FontStyle>Normal</FontStyle>
+												<FontWeight>400</FontWeight>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Center</TextAlign>
+												<VerticalAlign>Middle</VerticalAlign>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<Value>提示</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+							</TableCells>
+						</TableRow>
+					</TableRows>
+				</Header>
+				<Details>
+					<TableRows>
+						<TableRow>
+							<Height>0.865843cm</Height>
+							<TableCells>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox21">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<DataElementName>Item Name</DataElementName>
+											<Value>=Fields!ItemName.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox22">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Right</TextAlign>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<DataElementName>Item Result Char</DataElementName>
+											<Value>=Fields!ItemResultChar.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox23">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+												<TextAlign>Right</TextAlign>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<DataElementName>Unit</DataElementName>
+											<Value>=Fields!Unit.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox25">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<DataElementName>Stand</DataElementName>
+											<Value>=Fields!Stand.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox27">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<DataElementName>Symbol</DataElementName>
+											<Value>=Fields!Symbol.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+							</TableCells>
+						</TableRow>
+					</TableRows>
+				</Details>
+				<TableColumns>
+					<TableColumn>
+						<Width>2.610984cm</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>3.80909cm</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>3.103893cm</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>3.265047cm</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>2.610984cm</Width>
+					</TableColumn>
+				</TableColumns>
+				<TableGroups>
+					<TableGroup>
+						<Header>
+							<TableRows>
+								<TableRow>
+									<Height>0.75cm</Height>
+									<TableCells>
+										<TableCell>
+											<ColSpan>5</ColSpan>
+											<ReportItems>
+												<Textbox Name="TextBox1">
+													<Style>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<DataElementName>Item Group Name</DataElementName>
+													<Value>=Fields!ItemGroupName.Value</Value>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+									</TableCells>
+								</TableRow>
+							</TableRows>
+						</Header>
+						<Footer>
+							<TableRows>
+								<TableRow>
+									<Height>0.75cm</Height>
+									<TableCells>
+										<TableCell>
+											<ColSpan>5</ColSpan>
+											<ReportItems>
+												<Textbox Name="TextBox35">
+													<Style>
+														<PaddingBottom>2pt</PaddingBottom>
+														<PaddingLeft>2pt</PaddingLeft>
+														<PaddingRight>2pt</PaddingRight>
+														<PaddingTop>2pt</PaddingTop>
+														<TextAlign>Right</TextAlign>
+														<WritingMode>lr-tb</WritingMode>
+													</Style>
+													<CanGrow>true</CanGrow>
+													<DataElementName>First Date Time</DataElementName>
+													<Value>=First(Fields!FirstDateTime.Value)</Value>
+													<ToggleImage>
+														<InitialState>False</InitialState>
+													</ToggleImage>
+												</Textbox>
+											</ReportItems>
+										</TableCell>
+									</TableCells>
+								</TableRow>
+							</TableRows>
+						</Footer>
+						<Grouping Name="Table1_Group1">
+							<GroupExpressions>
+								<GroupExpression>=Fields!ItemGroupName.Value</GroupExpression>
+							</GroupExpressions>
+						</Grouping>
+					</TableGroup>
+				</TableGroups>
+			</Table>
+			<Tablix Name="Tablix1">
+				<TablixCorner>
+					<TablixCornerRows>
+						<TablixCornerRow>
+							<TablixCornerCell>
+								<CellContents>
+									<Textbox Name="TextBox3">
+										<Style>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<CanGrow>true</CanGrow>
+										<Value />
+									</Textbox>
+								</CellContents>
+							</TablixCornerCell>
+						</TablixCornerRow>
+					</TablixCornerRows>
+				</TablixCorner>
+				<TablixBody>
+					<TablixColumns>
+						<TablixColumn>
+							<Width>2.5cm</Width>
+						</TablixColumn>
+					</TablixColumns>
+					<TablixRows>
+						<TablixRow>
+							<Height>0.75cm</Height>
+							<TablixCells>
+								<TablixCell>
+									<CellContents>
+										<Textbox Name="TextBox31">
+											<Style>
+												<PaddingBottom>2pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>2pt</PaddingTop>
+											</Style>
+											<CanGrow>true</CanGrow>
+											<DataElementName>Item Result Char</DataElementName>
+											<Value>=First(Fields!ItemResultChar.Value)</Value>
+										</Textbox>
+									</CellContents>
+								</TablixCell>
+							</TablixCells>
+						</TablixRow>
+					</TablixRows>
+				</TablixBody>
+				<TablixColumnHierarchy>
+					<TablixMembers>
+						<TablixMember>
+							<Group Name="Tablix1_ItemName1">
+								<GroupExpressions>
+									<GroupExpression>=Fields!ItemName.Value</GroupExpression>
+								</GroupExpressions>
+							</Group>
+							<TablixHeader>
+								<Size>0.75cm</Size>
+								<CellContents>
+									<Textbox Name="TextBox28">
+										<Style>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<CanGrow>true</CanGrow>
+										<DataElementName>Item Name</DataElementName>
+										<Value>=Fields!ItemName.Value</Value>
+									</Textbox>
+								</CellContents>
+							</TablixHeader>
+						</TablixMember>
+					</TablixMembers>
+				</TablixColumnHierarchy>
+				<TablixRowHierarchy>
+					<TablixMembers>
+						<TablixMember>
+							<Group Name="Tablix1_ItemResultChar1">
+								<GroupExpressions>
+									<GroupExpression>=Fields!ItemResultChar.Value</GroupExpression>
+								</GroupExpressions>
+							</Group>
+							<TablixHeader>
+								<Size>2.5cm</Size>
+								<CellContents>
+									<Textbox Name="TextBox30">
+										<Style>
+											<PaddingBottom>2pt</PaddingBottom>
+											<PaddingLeft>2pt</PaddingLeft>
+											<PaddingRight>2pt</PaddingRight>
+											<PaddingTop>2pt</PaddingTop>
+										</Style>
+										<CanGrow>true</CanGrow>
+										<DataElementName>Item Result Char</DataElementName>
+										<Value>jieguo </Value>
+									</Textbox>
+								</CellContents>
+							</TablixHeader>
+						</TablixMember>
+					</TablixMembers>
+				</TablixRowHierarchy>
+				<Top>31.6cm</Top>
+				<Left>6.4cm</Left>
+				<Width>5cm</Width>
+				<Height>1.5cm</Height>
+				<Style>
+					<FontFamily>微软雅黑</FontFamily>
+				</Style>
+				<ZIndex>7</ZIndex>
+				<DataSetName>dtCusRegItem</DataSetName>
+			</Tablix>
+		</ReportItems>
+	</Body>
+	<BottomMargin>0.5cm</BottomMargin>
+	<LeftMargin>0.5cm</LeftMargin>
+	<PageHeight>29.7cm</PageHeight>
+	<PageWidth>21cm</PageWidth>
+	<RightMargin>0.5cm</RightMargin>
+	<TopMargin>0.5cm</TopMargin>
+	<Width>22.83065cm</Width>
+	<ReportParameters>
+		<ReportParameter Name="体检号">
+			<DataType>String</DataType>
+			<Prompt>请输入体检号</Prompt>
+		</ReportParameter>
+	</ReportParameters>
+	<DataSources>
+		<DataSource Name="DataSource1">
+			<ConnectionProperties>
+				<ConnectString>user id=sa;data source=.;initial catalog=btv9k;password=123qwe;</ConnectString>
+				<DataProvider>SQL</DataProvider>
+			</ConnectionProperties>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="dtCusInfo">
+			<Fields>
+				<Field Name="ClientName">
+					<DataField>ClientName</DataField>
+				</Field>
+				<Field Name="Id">
+					<DataField>Id</DataField>
+				</Field>
+				<Field Name="ArchivesNum">
+					<DataField>ArchivesNum</DataField>
+				</Field>
+				<Field Name="WorkNumber">
+					<DataField>WorkNumber</DataField>
+				</Field>
+				<Field Name="CardNumber">
+					<DataField>CardNumber</DataField>
+				</Field>
+				<Field Name="Name">
+					<DataField>Name</DataField>
+				</Field>
+				<Field Name="Sex">
+					<DataField>Sex</DataField>
+				</Field>
+				<Field Name="Duty">
+					<DataField>Duty</DataField>
+				</Field>
+				<Field Name="Age">
+					<DataField>Age</DataField>
+				</Field>
+				<Field Name="AgeUnit">
+					<DataField>AgeUnit</DataField>
+				</Field>
+				<Field Name="Birthday">
+					<DataField>Birthday</DataField>
+				</Field>
+				<Field Name="MarriageStatus">
+					<DataField>MarriageStatus</DataField>
+				</Field>
+				<Field Name="Degree">
+					<DataField>Degree</DataField>
+				</Field>
+				<Field Name="IDCardType">
+					<DataField>IDCardType</DataField>
+				</Field>
+				<Field Name="IDCardNo">
+					<DataField>IDCardNo</DataField>
+				</Field>
+				<Field Name="Mobile">
+					<DataField>Mobile</DataField>
+				</Field>
+				<Field Name="Telephone">
+					<DataField>Telephone</DataField>
+				</Field>
+				<Field Name="StoreAdressP">
+					<DataField>StoreAdressP</DataField>
+				</Field>
+				<Field Name="StoreAdressS">
+					<DataField>StoreAdressS</DataField>
+				</Field>
+				<Field Name="StoreAdressQ">
+					<DataField>StoreAdressQ</DataField>
+				</Field>
+				<Field Name="Address">
+					<DataField>Address</DataField>
+				</Field>
+				<Field Name="PostgCode">
+					<DataField>PostgCode</DataField>
+				</Field>
+				<Field Name="Email">
+					<DataField>Email</DataField>
+				</Field>
+				<Field Name="Secretlevel">
+					<DataField>Secretlevel</DataField>
+				</Field>
+				<Field Name="CustomerType">
+					<DataField>CustomerType</DataField>
+				</Field>
+				<Field Name="CustomerTrade">
+					<DataField>CustomerTrade</DataField>
+				</Field>
+				<Field Name="CusPhotoBmId">
+					<DataField>CusPhotoBmId</DataField>
+				</Field>
+				<Field Name="GuoJi">
+					<DataField>GuoJi</DataField>
+				</Field>
+				<Field Name="Qq">
+					<DataField>Qq</DataField>
+				</Field>
+				<Field Name="NameAB">
+					<DataField>NameAB</DataField>
+				</Field>
+				<Field Name="WbCode">
+					<DataField>WbCode</DataField>
+				</Field>
+				<Field Name="VisitCard">
+					<DataField>VisitCard</DataField>
+				</Field>
+				<Field Name="MedicalCard">
+					<DataField>MedicalCard</DataField>
+				</Field>
+				<Field Name="SectionNum">
+					<DataField>SectionNum</DataField>
+				</Field>
+				<Field Name="HospitalNum">
+					<DataField>HospitalNum</DataField>
+				</Field>
+				<Field Name="Remarks">
+					<DataField>Remarks</DataField>
+				</Field>
+				<Field Name="Nation">
+					<DataField>Nation</DataField>
+				</Field>
+				<Field Name="Department">
+					<DataField>Department</DataField>
+				</Field>
+				<Field Name="TenantId">
+					<DataField>TenantId</DataField>
+				</Field>
+				<Field Name="IsDeleted">
+					<DataField>IsDeleted</DataField>
+				</Field>
+				<Field Name="DeleterUserId">
+					<DataField>DeleterUserId</DataField>
+				</Field>
+				<Field Name="DeletionTime">
+					<DataField>DeletionTime</DataField>
+				</Field>
+				<Field Name="LastModificationTime">
+					<DataField>LastModificationTime</DataField>
+				</Field>
+				<Field Name="LastModifierUserId">
+					<DataField>LastModifierUserId</DataField>
+				</Field>
+				<Field Name="CreationTime">
+					<DataField>CreationTime</DataField>
+				</Field>
+				<Field Name="CreatorUserId">
+					<DataField>CreatorUserId</DataField>
+				</Field>
+				<Field Name="HomeAddress">
+					<DataField>HomeAddress</DataField>
+				</Field>
+				<Field Name="CustomerBM">
+					<DataField>CustomerBM</DataField>
+				</Field>
+				<Field Name="LoginDate">
+					<DataField>LoginDate</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>select d.ClientName, b.* ,a.CustomerBM,a.LoginDate from TjlCustomerRegs a 
+inner join TjlCustomers b on  a.CustomerId=b.Id 
+left join TjlClientInfoes d on a.ClientInfoId=d.Id 
+where a.CustomerBM=@CustomerBM</CommandText>
+				<DataSourceName>DataSource1</DataSourceName>
+				<QueryParameters>
+					<QueryParameter Name="@CustomerBM">
+						<Value>=Parameters!体检号.Value</Value>
+					</QueryParameter>
+				</QueryParameters>
+			</Query>
+		</DataSet>
+		<DataSet Name="dtCusRegItem">
+			<Fields>
+				<Field Name="CustomerBM">
+					<DataField>CustomerBM</DataField>
+				</Field>
+				<Field Name="InspecUsertName">
+					<DataField>InspecUsertName</DataField>
+				</Field>
+				<Field Name="CheckUserName">
+					<DataField>CheckUserName</DataField>
+				</Field>
+				<Field Name="departmentName">
+					<DataField>departmentName</DataField>
+				</Field>
+				<Field Name="ItemGroupName">
+					<DataField>ItemGroupName</DataField>
+				</Field>
+				<Field Name="FirstDateTime">
+					<DataField>FirstDateTime</DataField>
+				</Field>
+				<Field Name="ItemGroupSum">
+					<DataField>ItemGroupSum</DataField>
+				</Field>
+				<Field Name="ItemGroupDiagnosis">
+					<DataField>ItemGroupDiagnosis</DataField>
+				</Field>
+				<Field Name="Id">
+					<DataField>Id</DataField>
+				</Field>
+				<Field Name="CustomerItemGroupBMid">
+					<DataField>CustomerItemGroupBMid</DataField>
+				</Field>
+				<Field Name="CustomerRegId">
+					<DataField>CustomerRegId</DataField>
+				</Field>
+				<Field Name="DepartmentId">
+					<DataField>DepartmentId</DataField>
+				</Field>
+				<Field Name="ItemGroupBMId">
+					<DataField>ItemGroupBMId</DataField>
+				</Field>
+				<Field Name="ItemId">
+					<DataField>ItemId</DataField>
+				</Field>
+				<Field Name="ItemCodeBM">
+					<DataField>ItemCodeBM</DataField>
+				</Field>
+				<Field Name="ItemName">
+					<DataField>ItemName</DataField>
+				</Field>
+				<Field Name="ItemTypeBM">
+					<DataField>ItemTypeBM</DataField>
+				</Field>
+				<Field Name="ItemOrder">
+					<DataField>ItemOrder</DataField>
+				</Field>
+				<Field Name="ProcessState">
+					<DataField>ProcessState</DataField>
+				</Field>
+				<Field Name="SuspendState">
+					<DataField>SuspendState</DataField>
+				</Field>
+				<Field Name="DiagnSate">
+					<DataField>DiagnSate</DataField>
+				</Field>
+				<Field Name="SummBackSate">
+					<DataField>SummBackSate</DataField>
+				</Field>
+				<Field Name="InspectEmployeeBMId">
+					<DataField>InspectEmployeeBMId</DataField>
+				</Field>
+				<Field Name="CheckEmployeeBMId">
+					<DataField>CheckEmployeeBMId</DataField>
+				</Field>
+				<Field Name="TotalEmployeeBMId">
+					<DataField>TotalEmployeeBMId</DataField>
+				</Field>
+				<Field Name="ItemResultChar">
+					<DataField>ItemResultChar</DataField>
+				</Field>
+				<Field Name="Symbol">
+					<DataField>Symbol</DataField>
+				</Field>
+				<Field Name="PositiveSate">
+					<DataField>PositiveSate</DataField>
+				</Field>
+				<Field Name="IllnessSate">
+					<DataField>IllnessSate</DataField>
+				</Field>
+				<Field Name="CrisisSate">
+					<DataField>CrisisSate</DataField>
+				</Field>
+				<Field Name="Instrument">
+					<DataField>Instrument</DataField>
+				</Field>
+				<Field Name="Stand">
+					<DataField>Stand</DataField>
+				</Field>
+				<Field Name="StandFrom">
+					<DataField>StandFrom</DataField>
+				</Field>
+				<Field Name="Unit">
+					<DataField>Unit</DataField>
+				</Field>
+				<Field Name="ItemSum">
+					<DataField>ItemSum</DataField>
+				</Field>
+				<Field Name="ItemDiagnosis">
+					<DataField>ItemDiagnosis</DataField>
+				</Field>
+				<Field Name="TenantId">
+					<DataField>TenantId</DataField>
+				</Field>
+				<Field Name="IsDeleted">
+					<DataField>IsDeleted</DataField>
+				</Field>
+				<Field Name="DeleterUserId">
+					<DataField>DeleterUserId</DataField>
+				</Field>
+				<Field Name="DeletionTime">
+					<DataField>DeletionTime</DataField>
+				</Field>
+				<Field Name="LastModificationTime">
+					<DataField>LastModificationTime</DataField>
+				</Field>
+				<Field Name="LastModifierUserId">
+					<DataField>LastModifierUserId</DataField>
+				</Field>
+				<Field Name="CreationTime">
+					<DataField>CreationTime</DataField>
+				</Field>
+				<Field Name="CreatorUserId">
+					<DataField>CreatorUserId</DataField>
+				</Field>
+				<Field Name="IllnessLevel">
+					<DataField>IllnessLevel</DataField>
+				</Field>
+				<Field Name="CrisisVisitSate">
+					<DataField>CrisisVisitSate</DataField>
+				</Field>
+				<Field Name="CrisisLever">
+					<DataField>CrisisLever</DataField>
+				</Field>
+				<Field Name="CrisiChar">
+					<DataField>CrisiChar</DataField>
+				</Field>
+				<Field Name="ExamineTime">
+					<DataField>ExamineTime</DataField>
+				</Field>
+				<Field Name="ExamineUserId">
+					<DataField>ExamineUserId</DataField>
+				</Field>
+				<Field Name="MessageTime">
+					<DataField>MessageTime</DataField>
+				</Field>
+				<Field Name="MessageUserId">
+					<DataField>MessageUserId</DataField>
+				</Field>
+				<Field Name="MessageState">
+					<DataField>MessageState</DataField>
+				</Field>
+				<Field Name="ReportBM">
+					<DataField>ReportBM</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>select  a.CustomerBM, uu.Name as InspecUsertName,uu1.Name as CheckUserName, d.Name as departmentName,e.ItemGroupName ,f.FirstDateTime,f.ItemGroupSum,f.ItemGroupDiagnosis, b.* from TjlCustomerRegs a 
+inner join TjlCustomerRegItems  b on  a.Id=b.CustomerRegId 
+inner join TbmDepartments d on b.DepartmentId=d.Id 
+inner join TbmItemGroups e on b.ItemGroupBMId=e.Id 
+inner join TjlCustomerItemGroups f on b.CustomerItemGroupBMid=f.Id 
+inner join AbpUsers uu on uu.Id=f.InspectEmployeeBMId
+inner join AbpUsers uu1 on uu1.Id=f.CheckEmployeeBMId 
+where a.CustomerBM=@CustomerBM and b.IsDeleted=0 and f.IsAddMinus!=3 and f.IsDeleted=0 and f.IsDeleted=0   order by d.OrderNum,e.OrderNum,b.ItemOrder </CommandText>
+				<DataSourceName>DataSource1</DataSourceName>
+				<QueryParameters>
+					<QueryParameter Name="@CustomerBM">
+						<Value>=Parameters!体检号.Value</Value>
+					</QueryParameter>
+				</QueryParameters>
+			</Query>
+		</DataSet>
+		<DataSet Name="dtCusSum">
+			<Fields>
+				<Field Name="shName">
+					<DataField>shName</DataField>
+				</Field>
+				<Field Name="emName">
+					<DataField>emName</DataField>
+				</Field>
+				<Field Name="Id">
+					<DataField>Id</DataField>
+				</Field>
+				<Field Name="CustomerRegID">
+					<DataField>CustomerRegID</DataField>
+				</Field>
+				<Field Name="ShEmployeeBMId">
+					<DataField>ShEmployeeBMId</DataField>
+				</Field>
+				<Field Name="EmployeeBMId">
+					<DataField>EmployeeBMId</DataField>
+				</Field>
+				<Field Name="CharacterSummary">
+					<DataField>CharacterSummary</DataField>
+				</Field>
+				<Field Name="DagnosisSummary">
+					<DataField>DagnosisSummary</DataField>
+				</Field>
+				<Field Name="Advice">
+					<DataField>Advice</DataField>
+				</Field>
+				<Field Name="Jkzs">
+					<DataField>Jkzs</DataField>
+				</Field>
+				<Field Name="ZYConclusion">
+					<DataField>ZYConclusion</DataField>
+				</Field>
+				<Field Name="ZYRiskName">
+					<DataField>ZYRiskName</DataField>
+				</Field>
+				<Field Name="ZYPostState">
+					<DataField>ZYPostState</DataField>
+				</Field>
+				<Field Name="ZYTabooIllness">
+					<DataField>ZYTabooIllness</DataField>
+				</Field>
+				<Field Name="ZYTreatmentAdvice">
+					<DataField>ZYTreatmentAdvice</DataField>
+				</Field>
+				<Field Name="ZYOccupationalName">
+					<DataField>ZYOccupationalName</DataField>
+				</Field>
+				<Field Name="ReviewContentCycle">
+					<DataField>ReviewContentCycle</DataField>
+				</Field>
+				<Field Name="ReviewContentDate">
+					<DataField>ReviewContentDate</DataField>
+				</Field>
+				<Field Name="ReviewContent">
+					<DataField>ReviewContent</DataField>
+				</Field>
+				<Field Name="ZYBasis">
+					<DataField>ZYBasis</DataField>
+				</Field>
+				<Field Name="ConclusionDate">
+					<DataField>ConclusionDate</DataField>
+				</Field>
+				<Field Name="ExamineDate">
+					<DataField>ExamineDate</DataField>
+				</Field>
+				<Field Name="CheckDate">
+					<DataField>CheckDate</DataField>
+				</Field>
+				<Field Name="CheckState">
+					<DataField>CheckState</DataField>
+				</Field>
+				<Field Name="SuspendState">
+					<DataField>SuspendState</DataField>
+				</Field>
+				<Field Name="BackSate">
+					<DataField>BackSate</DataField>
+				</Field>
+				<Field Name="Qualified">
+					<DataField>Qualified</DataField>
+				</Field>
+				<Field Name="TenantId">
+					<DataField>TenantId</DataField>
+				</Field>
+				<Field Name="IsDeleted">
+					<DataField>IsDeleted</DataField>
+				</Field>
+				<Field Name="DeleterUserId">
+					<DataField>DeleterUserId</DataField>
+				</Field>
+				<Field Name="DeletionTime">
+					<DataField>DeletionTime</DataField>
+				</Field>
+				<Field Name="LastModificationTime">
+					<DataField>LastModificationTime</DataField>
+				</Field>
+				<Field Name="LastModifierUserId">
+					<DataField>LastModifierUserId</DataField>
+				</Field>
+				<Field Name="CreationTime">
+					<DataField>CreationTime</DataField>
+				</Field>
+				<Field Name="CreatorUserId">
+					<DataField>CreatorUserId</DataField>
+				</Field>
+				<Field Name="PrivacyCharacterSummary">
+					<DataField>PrivacyCharacterSummary</DataField>
+				</Field>
+				<Field Name="Opinion">
+					<DataField>Opinion</DataField>
+				</Field>
+				<Field Name="occCharacterSummary">
+					<DataField>occCharacterSummary</DataField>
+				</Field>
+				<Field Name="occAdvice">
+					<DataField>occAdvice</DataField>
+				</Field>
+				<Field Name="occConclusionDate">
+					<DataField>occConclusionDate</DataField>
+				</Field>
+				<Field Name="occExamineDate">
+					<DataField>occExamineDate</DataField>
+				</Field>
+				<Field Name="occCheckState">
+					<DataField>occCheckState</DataField>
+				</Field>
+				<Field Name="occShEmployeeBMId">
+					<DataField>occShEmployeeBMId</DataField>
+				</Field>
+				<Field Name="occEmployeeBMId">
+					<DataField>occEmployeeBMId</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>select  c.Name as shName,e.Name as emName,  b.* from TjlCustomerRegs a 
+inner join TjlCustomerSummarizes  b on  a.Id=b.CustomerRegId 
+inner join AbpUsers c on b.ShEmployeeBMId=c.Id 
+inner join AbpUsers e on b.EmployeeBMId=e.Id 
+where b.IsDeleted=0 and  a.CustomerBM=@CustomerBM</CommandText>
+				<DataSourceName>DataSource1</DataSourceName>
+				<QueryParameters>
+					<QueryParameter Name="@CustomerBM">
+						<Value>=Parameters!体检号.Value</Value>
+					</QueryParameter>
+				</QueryParameters>
+			</Query>
+		</DataSet>
+	</DataSets>
+</Report>

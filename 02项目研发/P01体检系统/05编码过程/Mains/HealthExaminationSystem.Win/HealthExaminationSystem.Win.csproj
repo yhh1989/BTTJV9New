@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01EDA6B5-7251-44FC-A640-28B7F84608CA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HealthExaminationSystem.Win</RootNamespace>
+    <AssemblyName>秉泰体检2022</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>E:\V9发布\win\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon-20190220083815849.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>2</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>041F3B56BF6D59B94EE0A6DE0ED46B304D00BEF1</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>HealthExaminationSystem.Win_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\..\..\..\..\03项目引用\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="DecodeKey, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\DecodeKey.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraWizard.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Sw.His.Common.ConvertTools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Sw.His.Common.ConvertTools.1.0.0\lib\net40\Sw.His.Common.ConvertTools.dll</HintPath>
+    </Reference>
+    <Reference Include="Sw.His.Common.CustomTools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Sw.His.Common.CustomTools.1.0.0\lib\net40\Sw.His.Common.CustomTools.dll</HintPath>
+    </Reference>
+    <Reference Include="Sw.His.Common.NetworkTool, Version=1.0.0.9, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Sw.His.Common.NetworkTool.1.0.0.9\lib\net40\Sw.His.Common.NetworkTool.dll</HintPath>
+    </Reference>
+    <Reference Include="Sw.His.Updater.Plugin">
+      <HintPath>..\..\..\..\..\03项目引用\Updater\Sw.His.Updater.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Sw.MedicalInsurance.CHS.Core, Version=1.0.0.17, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Sw.MedicalInsurance.CHS.Core.1.0.0.17\lib\net40\Sw.MedicalInsurance.CHS.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Cng, Version=4.3.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\System.Security.Cryptography.Cng.4.5.0\lib\net461\System.Security.Cryptography.Cng.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebSocket4Net, Version=0.14.1.0, Culture=neutral, PublicKeyToken=eb4e154b696bf72a, processorArchitecture=MSIL">
+      <HintPath>packages\WebSocket4Net.0.14.1\lib\net45\WebSocket4Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\SettingHelper.cs" />
+    <Compile Include="ErrorInfo\Error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorInfo\Error.Designer.cs">
+      <DependentUpon>Error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorInfo\ClassModel.cs" />
+    <Compile Include="frmDeptDoctName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeptDoctName.Designer.cs">
+      <DependentUpon>frmDeptDoctName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegisEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegisEdit.Designer.cs">
+      <DependentUpon>frmRegisEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\FormHelper.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginNew.Designer.cs">
+      <DependentUpon>LoginNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logo\Logo.cs" />
+    <Compile Include="Navigation\DefinedControl\FinanceManagerXtraUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Navigation\DefinedControl\FinanceManagerXtraUserControl.Designer.cs">
+      <DependentUpon>FinanceManagerXtraUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\DefinedControl\SchedulingAnAppointmentXtraUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Navigation\DefinedControl\SchedulingAnAppointmentXtraUserControl.Designer.cs">
+      <DependentUpon>SchedulingAnAppointmentXtraUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\DefinedControl\XtraUserControl主任管理.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Navigation\DefinedControl\XtraUserControl主任管理.Designer.cs">
+      <DependentUpon>XtraUserControl主任管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\DefinedControl\XtraUserControl从业体检.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Navigation\DefinedControl\XtraUserControl从业体检.Designer.cs">
+      <DependentUpon>XtraUserControl从业体检.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\DefinedControl\XtraUserControl健康体检.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Navigation\DefinedControl\XtraUserControl健康体检.Designer.cs">
+      <DependentUpon>XtraUserControl健康体检.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\DefinedControl\XtraUserControl前台管理.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Navigation\DefinedControl\XtraUserControl前台管理.Designer.cs">
+      <DependentUpon>XtraUserControl前台管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\DefinedControl\XtraUserControl检后.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Navigation\DefinedControl\XtraUserControl检后.Designer.cs">
+      <DependentUpon>XtraUserControl检后.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\DefinedControl\XtraUserControl职业健康.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Navigation\DefinedControl\XtraUserControl职业健康.Designer.cs">
+      <DependentUpon>XtraUserControl职业健康.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Navigation\HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\NavigationEventArgs.cs" />
+    <Compile Include="Navigation\NavigationEvents.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ResClient.cs" />
+    <Compile Include="RibbonStartup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RibbonStartup.designer.cs">
+      <DependentUpon>RibbonStartup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RibbonStartupZYB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RibbonStartupZYB.designer.cs">
+      <DependentUpon>RibbonStartupZYB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Startup.Designer.cs">
+      <DependentUpon>Startup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartupTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartupTest.Designer.cs">
+      <DependentUpon>StartupTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WaitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm.Designer.cs">
+      <DependentUpon>WaitForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ErrorInfo\Error.resx">
+      <DependentUpon>Error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeptDoctName.resx">
+      <DependentUpon>frmDeptDoctName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegisEdit.resx">
+      <DependentUpon>frmRegisEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginNew.resx">
+      <DependentUpon>LoginNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Navigation\DefinedControl\FinanceManagerXtraUserControl.resx">
+      <DependentUpon>FinanceManagerXtraUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Navigation\DefinedControl\SchedulingAnAppointmentXtraUserControl.resx">
+      <DependentUpon>SchedulingAnAppointmentXtraUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Navigation\DefinedControl\XtraUserControl主任管理.resx">
+      <DependentUpon>XtraUserControl主任管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Navigation\DefinedControl\XtraUserControl从业体检.resx">
+      <DependentUpon>XtraUserControl从业体检.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Navigation\DefinedControl\XtraUserControl健康体检.resx">
+      <DependentUpon>XtraUserControl健康体检.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Navigation\DefinedControl\XtraUserControl前台管理.resx">
+      <DependentUpon>XtraUserControl前台管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Navigation\DefinedControl\XtraUserControl检后.resx">
+      <DependentUpon>XtraUserControl检后.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Navigation\DefinedControl\XtraUserControl职业健康.resx">
+      <DependentUpon>XtraUserControl职业健康.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Navigation\HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RibbonStartup.resx">
+      <DependentUpon>RibbonStartup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RibbonStartupZYB.resx">
+      <DependentUpon>RibbonStartupZYB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Startup.resx">
+      <DependentUpon>Startup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartupTest.resx">
+      <DependentUpon>StartupTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitForm.resx">
+      <DependentUpon>WaitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HealthExaminationSystem.Win_TemporaryKey.pfx" />
+    <None Include="Logo\Logo.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="UpdaterSettings.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\HealthExamination.HardwareDrivers\HealthExamination.HardwareDrivers.csproj">
+      <Project>{63f72b62-44f0-44f1-abde-7f5e71c5de88}</Project>
+      <Name>HealthExamination.HardwareDrivers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\HealthExaminationSystem.ApiProxy\HealthExaminationSystem.ApiProxy.csproj">
+      <Project>{7de60574-b63a-454c-848b-45cea2782273}</Project>
+      <Name>HealthExaminationSystem.ApiProxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\HealthExaminationSystem.Common\HealthExaminationSystem.Common.csproj">
+      <Project>{f353738b-c1c3-46ca-8339-f75aa9602b2f}</Project>
+      <Name>HealthExaminationSystem.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\HealthExaminationSystem.Enumerations\HealthExaminationSystem.Enumerations.csproj">
+      <Project>{55e602fa-21e2-4eeb-ad64-a32bb93ca772}</Project>
+      <Name>HealthExaminationSystem.Enumerations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\HealthExaminationSystem.Forms\HealthExaminationSystem.Forms.csproj">
+      <Project>{6a2d331f-a67e-4822-b095-fd9c686043d4}</Project>
+      <Name>HealthExaminationSystem.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\HealthExaminationSystem.PaymentManager\HealthExaminationSystem.PaymentManager.csproj">
+      <Project>{0b416ef7-68e3-4854-ad1e-d2164ecdec09}</Project>
+      <Name>HealthExaminationSystem.PaymentManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\HealthExaminationSystem.Permission\HealthExaminationSystem.Permission.csproj">
+      <Project>{e3f5a57b-20ce-4f61-b34e-759c1a0e2eb9}</Project>
+      <Name>HealthExaminationSystem.Permission</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\HealthExaminationSystem.Statistics\HealthExaminationSystem.Statistics.csproj">
+      <Project>{1382220d-b0ac-46c5-8103-ba20319c9364}</Project>
+      <Name>HealthExaminationSystem.Statistics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\HealthExaminationSystem.UserSettings\HealthExaminationSystem.UserSettings.csproj">
+      <Project>{020abda4-42c3-4126-9d61-0dd0d478a1c7}</Project>
+      <Name>HealthExaminationSystem.UserSettings</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\..\..\..\03项目引用\Updater\Target\Updater.exe">
+      <Link>Updater.exe</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\..\..\03项目引用\Updater\Target\Updater.pdb">
+      <Link>Updater.pdb</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\..\..\03项目引用\Updater\Target\Updater.xml">
+      <Link>Updater.xml</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bitbug_favicon.ico" />
+    <Content Include="favicon-20190130050904403.ico" />
+    <Content Include="favicon-20190130053241462.ico" />
+    <Content Include="favicon-20190130053659322.ico" />
+    <Content Include="favicon-20190220083815849.ico" />
+    <Content Include="Logo\Logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\登录页-卫美1.jpg" />
+    <None Include="Resources\首页卫美.jpg" />
+    <None Include="Resources\登录页-优康云体检.jpg" />
+    <None Include="Resources\首页优康云.png" />
+    <None Include="Resources\背景.png" />
+    <None Include="Resources\导航_左.png" />
+    <None Include="Resources\向右箭头.png" />
+    <None Include="Resources\下向右箭头.png" />
+    <None Include="Resources\向下箭头.png" />
+    <None Include="Resources\backgroundnew.png" />
+    <None Include="Resources\logonew.png" />
+    <None Include="Resources\password.png" />
+    <None Include="Resources\usernew.png" />
+    <None Include="Resources\金马杨名.png" />
+    <None Include="Resources\神威.png" />
+    <None Include="Resources\金马登录图.jpg" />
+    <Content Include="Properties\ReadMe.txt" />
+    <None Include="Resources\背景 - 无logo.png" />
+    <Content Include="wmoem-16.ico" />
+    <None Include="Resources\登录页-金马扬名14.jpg" />
+    <None Include="Resources\lALPD3lGsK5rr87NA7fNB4A_1920_9513.png" />
+    <None Include="Resources\lALPD3lGsK5rr87NA7fNB4A_1920_9512.png" />
+    <None Include="Resources\首页金马2.png" />
+    <None Include="Resources\登录页-金马扬名12.jpg" />
+    <None Include="Resources\背景2.png" />
+    <None Include="Resources\背景图.png" />
+    <None Include="Resources\背景图.jpg" />
+    <None Include="Resources\oem.jpg" />
+    <None Include="Resources\lALPGpb_5RnRAIjNAurNBgw_1548_7465.png" />
+    <None Include="Resources\lALPGpb_5RnRAIjNAurNBgw_1548_7464.png" />
+    <None Include="Resources\lALPGojJ8OQ6CO_NAoLNBL4_1214_6421.png" />
+    <None Include="Resources\lALPGojJ8OQ6CO_NAoLNBL4_1214_642.png" />
+    <None Include="Resources\lALPGpb_5RnRAIjNAurNBgw_1548_7463.png" />
+    <None Include="Resources\lALPGpb_5RnRAIjNAurNBgw_1548_7462.png" />
+    <None Include="Resources\lALPGpb_5RnRAIjNAurNBgw_1548_7461.png" />
+    <None Include="Resources\lALPGpb_5RnRAIjNAurNBgw_1548_746.png" />
+    <None Include="Resources\建档.png" />
+    <None Include="Resources\APP.png" />
+    <None Include="Resources\团体预约.png" />
+    <None Include="Resources\微信图片_20200317174622.png" />
+    <None Include="Resources\QQ截图20190419135240.jpg" />
+    <None Include="Resources\44.jpg" />
+    <None Include="Resources\222.jpg" />
+    <None Include="Resources\微信图片_20190419112548.png" />
+    <None Include="Resources\微信图片_20190419112552.png" />
+    <None Include="Resources\首页.png" />
+    <None Include="Resources\微信图片_201904101457421.png" />
+    <None Include="Resources\ggg.png" />
+    <None Include="Resources\微信图片_20190410145742.png" />
+    <None Include="Resources\微信图片_201904011230191.png" />
+    <None Include="Resources\微信图片_20190401123019.png" />
+    <None Include="Resources\首页-秉泰软件2.jpg" />
+    <None Include="Resources\登录按钮.png" />
+    <None Include="Resources\登录页-秉泰软件2.jpg" />
+    <None Include="Resources\loginBtn.jpg" />
+    <None Include="Resources\首页-秉泰软件1.jpg" />
+    <None Include="Resources\登录页-秉泰软件.jpg" />
+    <None Include="Resources\首页-秉泰软件.jpg" />
+    <None Include="Resources\登录页-秉泰软件1.jpg" />
+    <None Include="Resources\Main.png" />
+    <None Include="Resources\C582C72F-99FD-4ea5-B384-3938683B4B38.png" />
+    <None Include="Resources\bitbug_favicon.ico" />
+    <None Include="Resources\lALPDgQ9qdy8pZbNAiPNBVY_1366_547.png" />
+    <None Include="Resources\7E218DD7-94EB-4c2d-A503-42BF839623F1.png" />
+    <None Include="Resources\登录图2.jpg" />
+    <None Include="Resources\GroupBilling.png" />
+    <None Include="Resources\BulkRegistration.png" />
+    <None Include="Resources\BackgroundImage.png" />
+    <None Include="Resources\Seeker.png" />
+    <None Include="Resources\LargeLetters.png" />
+    <None Include="Resources\ExtraLarge.png" />
+    <None Include="Resources\StandardFont.png" />
+    <None Include="Resources\TypeOfWork.png" />
+    <None Include="Resources\Suggest.png" />
+    <None Include="Resources\SetMeal.png" />
+    <None Include="Resources\ModeOfPayment.png" />
+    <None Include="Resources\Item.png" />
+    <None Include="Resources\Dictionaries.png" />
+    <None Include="Resources\Department.png" />
+    <None Include="Resources\CompositeJudgment.png" />
+    <None Include="Resources\Combination.png" />
+    <None Include="Resources\BarCode.png" />
+    <None Include="Resources\Authority.png" />
+    <None Include="Resources\User.png" />
+    <None Include="Resources\PackageStatistics.png" />
+    <None Include="Resources\InspectionItem.png" />
+    <None Include="Resources\TotalPhysicianWorkload.png" />
+    <None Include="Resources\ReportFormQnquiry.png" />
+    <None Include="Resources\ReportCollection.png" />
+    <None Include="Resources\PrintPreview.png" />
+    <None Include="Resources\GroupReport.png" />
+    <None Include="Resources\ReportHandover.png" />
+    <None Include="Resources\InvoiceManagement.png" />
+    <None Include="Resources\InvoiceInvalid.png" />
+    <None Include="Resources\GroupsOfSettlement.png" />
+    <None Include="Resources\DailyStatement.png" />
+    <None Include="Resources\CheckupListing.png" />
+    <None Include="Resources\PersonalCharge.png" />
+    <None Include="Resources\DoctorWorkstation.png" />
+    <None Include="Resources\AlwaysCheckTheAudit.png" />
+    <None Include="Resources\Roster.png" />
+    <None Include="Resources\Schedule.png" />
+    <None Include="Resources\FormSubmit.png" />
+    <None Include="Resources\Register.png" />
+    <None Include="Resources\BookingStatisticsOverTheYears.png" />
+    <None Include="Resources\SetASingle.png" />
+    <None Include="Resources\MakeAnAppointment.png" />
+    <None Include="Resources\CompanyMaintain.png" />
+    <None Include="Resources\tray.png" />
+    <None Include="Resources\tray.ico" />
+    <None Include="Resources\Background.png" />
+    <None Include="Resources\formico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

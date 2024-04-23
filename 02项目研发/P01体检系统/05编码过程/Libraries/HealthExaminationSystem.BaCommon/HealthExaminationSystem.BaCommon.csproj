@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3D3251F0-9CA5-4A93-97A6-35DB095BC20B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sw.Hospital.HealthExaminationSystem.BaCommon</RootNamespace>
+    <AssemblyName>HealthExaminationSystem.BaCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Mains\HealthExaminationSystem.Web\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\AddMinusType.cs">
+      <Link>Enums\AddMinusType.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\BasicDictionaryType.cs">
+      <Link>Enums\BasicDictionaryType.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\BreedState.cs">
+      <Link>Enums\BreedState.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\CalculationTypeState.cs">
+      <Link>Enums\CalculationTypeState.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\ClientSate.cs">
+      <Link>Enums\ClientSate.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\ClientZKState.cs">
+      <Link>Enums\ClientZKState.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\ConfirmState.cs">
+      <Link>Enums\ConfirmState.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\CostState.cs">
+      <Link>Enums\CostState.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\CrisisMsgStatecs.cs">
+      <Link>Enums\CrisisMsgStatecs.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\CrisisSate.cs">
+      <Link>Enums\CrisisSate.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\CrisisType.cs">
+      <Link>Enums\CrisisType.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\CrisisVisitSate.cs">
+      <Link>Enums\CrisisVisitSate.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\CriticalTypeState.cs">
+      <Link>Enums\CriticalTypeState.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\DiagnSate.cs">
+      <Link>Enums\DiagnSate.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\EditModeType.cs">
+      <Link>Enums\EditModeType.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\ExaminationCategory.cs">
+      <Link>Enums\ExaminationCategory.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\ExaminationSource.cs">
+      <Link>Enums\ExaminationSource.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\ExaminationStatus.cs">
+      <Link>Enums\ExaminationStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\ExamPlace.cs">
+      <Link>Enums\ExamPlace.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\ExportSate.cs">
+      <Link>Enums\ExportSate.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\IllnessSate.cs">
+      <Link>Enums\IllnessSate.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\InvoiceStatus.cs">
+      <Link>Enums\InvoiceStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\ItemType.cs">
+      <Link>Enums\ItemType.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\LogsTypes.cs">
+      <Link>Enums\LogsTypes.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\MarrySate.cs">
+      <Link>Enums\MarrySate.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\OperatorState.cs">
+      <Link>Enums\OperatorState.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\PayerCatType.cs">
+      <Link>Enums\PayerCatType.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\PhysicalEState.cs">
+      <Link>Enums\PhysicalEState.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\PositiveSate.cs">
+      <Link>Enums\PositiveSate.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\PrintSate.cs">
+      <Link>Enums\PrintSate.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\ProjectIState.cs">
+      <Link>Enums\ProjectIState.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\ReceiptState.cs">
+      <Link>Enums\ReceiptState.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\ReceiveSate.cs">
+      <Link>Enums\ReceiveSate.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\RegisterState.cs">
+      <Link>Enums\RegisterState.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\ReportState.cs">
+      <Link>Enums\ReportState.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\SDState.cs">
+      <Link>Enums\SDState.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\SendToConfirm.cs">
+      <Link>Enums\SendToConfirm.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\Summary.cs">
+      <Link>Enums\Summary.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\SummSate.cs">
+      <Link>Enums\SummSate.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\Symbol.cs">
+      <Link>Enums\Symbol.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\VisiteState.cs">
+      <Link>Enums\VisiteState.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\VisitType.cs">
+      <Link>Enums\VisitType.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Enums\ZYBBasicDictionaryType.cs">
+      <Link>Enums\ZYBBasicDictionaryType.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\GlobalSources\Variables.cs">
+      <Link>GlobalSources\Variables.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Helpers\CheckSateHelper.cs">
+      <Link>Helpers\CheckSateHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Helpers\CostStateHelper.cs">
+      <Link>Helpers\CostStateHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Helpers\CriticalTypeStateHelper.cs">
+      <Link>Helpers\CriticalTypeStateHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Helpers\InvoiceStatusHelper.cs">
+      <Link>Helpers\InvoiceStatusHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Helpers\MarrySateHelper.cs">
+      <Link>Helpers\MarrySateHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Helpers\PayerCatTypeHelper.cs">
+      <Link>Helpers\PayerCatTypeHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Helpers\ReceiveSateHelper.cs">
+      <Link>Helpers\ReceiveSateHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Helpers\SendToConfirmHelper.cs">
+      <Link>Helpers\SendToConfirmHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Helpers\SummSateHelper.cs">
+      <Link>Helpers\SummSateHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Helpers\SymbolHelper.cs">
+      <Link>Helpers\SymbolHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Helpers\XmlConvertor.cs">
+      <Link>Helpers\XmlConvertor.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Models\CriticalTypeStateModel.cs">
+      <Link>Models\CriticalTypeStateModel.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Models\LabelingStateModel.cs">
+      <Link>Models\LabelingStateModel.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Models\MarrySateModel.cs">
+      <Link>Models\MarrySateModel.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Models\PayerCatTypeModel.cs">
+      <Link>Models\PayerCatTypeModel.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Common\Models\SendToConfirmModel.cs">
+      <Link>Models\SendToConfirmModel.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HealthExaminationSystem.Enumerations\HealthExaminationSystem.Enumerations.csproj">
+      <Project>{55e602fa-21e2-4eeb-ad64-a32bb93ca772}</Project>
+      <Name>HealthExaminationSystem.Enumerations</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

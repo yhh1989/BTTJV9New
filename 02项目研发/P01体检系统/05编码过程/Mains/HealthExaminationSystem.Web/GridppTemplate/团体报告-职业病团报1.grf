@@ -1,0 +1,3875 @@
+﻿Object Report
+	Version='6.3.0.1'
+	Title='你的报表标题'
+	PrintAsDesignPaper=F
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+		LeftMargin=1.2
+		TopMargin=2
+		RightMargin=1.2
+		BottomMargin=2
+	End
+	Object DetailGrid
+		CenterView=T
+		Object Recordset
+			Items Field
+				Item
+					Name='ClientName1'
+				End
+				Item
+					Name='ClientBM1'
+				End
+				Item
+					Name='ClientAbbreviation1'
+				End
+				Item
+					Name='EndCheckDate1'
+				End
+				Item
+					Name='StartCheckDate1'
+				End
+				Item
+					Name='linkMan1'
+				End
+				Item
+					Name='Address1'
+				End
+				Item
+					Name='ClientEmail1'
+				End
+				Item
+					Name='Telephone1'
+				End
+				Item
+					Name='No4'
+				End
+				Item
+					Name='No5'
+				End
+				Item
+					Name='No6'
+				End
+				Item
+					Name='No7'
+				End
+				Item
+					Name='No8'
+				End
+				Item
+					Name='No9'
+				End
+				Item
+					Name='No10'
+				End
+			End
+		End
+		Object ColumnContent
+			Height=0
+		End
+		Object ColumnTitle
+			Height=0
+		End
+	End
+	Object PageHeader
+		CanGrow=T
+		Height=1.19063
+		FormatScript='   //只在第一页不显示当前报表节\r\nSender.Visible=(Report.SystemVarValue(3)>1);\r\n\r\n\r\n//Sender.Visible=(Report.SystemVarValue(3)>1);'
+		Items Control
+			Item
+				Type=StaticBox
+				Name='StaticBox1'
+				Left=-1.29646
+				Top=0.15875
+				Width=1.27
+				Height=0.608542
+				Text='姓名：'
+			End
+			Item
+				Type=MemoBox
+				Name='MemoBox2'
+				Left=1.40229
+				Top=0.211667
+				Width=5.3975
+				Height=0.582083
+				Text='浠水县疾病预防控制中心'
+			End
+			Item
+				Type=FieldBox
+				Name='FieldBox1'
+				Left=8.81062
+				Top=0.211667
+				Width=8.99583
+				Height=0.582083
+				DataField='ClientName1'
+			End
+			Item
+				Type=Line
+				Name='Line3'
+				Left=0.211667
+				Top=1.00542
+				Width=18.2298
+				Object Pen
+					Width=3
+					Color=LtGray
+				End
+			End
+		End
+	End
+	Object PageFooter
+		Height=0.608542
+		FormatScript='//只在第一页不显示当前报表节\r\nSender.Visible=(Report.SystemVarValue(3)>1);'
+		Items Control
+			Item
+				Type=MemoBox
+				Name='MemoBox1'
+				Left=14.2081
+				Width=2.59292
+				Height=0.608542
+				Text='第[#SystemVar(PageNumber)#]页'
+			End
+		End
+	End
+	Items Parameter
+		Item
+			Name='Parameter1'
+		End
+	End
+	Items ReportHeader
+		Item
+			Name='ReportHeader1'
+			CanGrow=T
+			Height=13.9965
+			Object Font
+				Name='微软雅黑'
+				Size=105000,0
+				Weight=400
+				Charset=134
+			End
+			Items Control
+				Item
+					Type=SubReport
+					Name='体检目前未见异常人员名单'
+					Top=10.3981
+					Width=18.5
+					Height=0.79375
+					CanShrink=T
+					HideOnRecordsetEmpty=T
+Object Report
+	Version='6.3.0.1'
+	Title='你的报表标题'
+	PrintAsDesignPaper=F
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+		LeftMargin=1.2
+		TopMargin=2
+		RightMargin=1.2
+		BottomMargin=2
+	End
+	Object DetailGrid
+		CenterView=T
+		PageColumnDirection=AcrossDown
+		PageColumnCount=3
+		PageColumnGroupNA=T
+		Object Recordset
+			Items Field
+				Item
+					Name='Name'
+				End
+				Item
+					Name='Sex'
+				End
+				Item
+					Name='Age'
+				End
+				Item
+					Name='CheckDate'
+				End
+				Item
+					Name='ClientRegName'
+				End
+				Item
+					Name='ArchivesNum'
+				End
+				Item
+					Name='mobile'
+				End
+				Item
+					Name='Type'
+				End
+				Item
+					Name='Whys'
+				End
+				Item
+					Name='rsNum'
+				End
+				Item
+					Name='workName'
+				End
+				Item
+					Name='CustomItem1'
+				End
+				Item
+					Name='Jbmc'
+				End
+				Item
+					Name='Name1'
+				End
+				Item
+					Name='Sex1'
+				End
+				Item
+					Name='Age1'
+				End
+				Item
+					Name='Dadvice'
+				End
+				Item
+					Name='ArchivesNum'
+				End
+				Item
+					Name='mobile'
+				End
+				Item
+					Name='Name2'
+				End
+				Item
+					Name='Sex2'
+				End
+				Item
+					Name='Age2'
+				End
+				Item
+					Name='Name3'
+				End
+				Item
+					Name='Sex3'
+				End
+				Item
+					Name='Age3'
+				End
+			End
+		End
+		Items Column
+			Item
+				Name='Column1'
+				Width=2.16958
+			End
+			Item
+				Name='Column2'
+				Width=1.5875
+			End
+			Item
+				Name='Column3'
+				Width=1.61396
+			End
+		End
+		Object ColumnContent
+			Height=0.608542
+			Items ColumnContentCell
+				Item
+					Column='Column1'
+					TextAlign=MiddleCenter
+					DataField='Name'
+				End
+				Item
+					Column='Column2'
+					TextAlign=MiddleCenter
+					DataField='Sex'
+				End
+				Item
+					Column='Column3'
+					TextAlign=MiddleCenter
+					DataField='Age'
+				End
+			End
+		End
+		Object ColumnTitle
+			Height=0.79375
+			Items ColumnTitleCell
+				Item
+					GroupTitle=F
+					Column='Column1'
+					BackColor=LtGray
+					TextAlign=MiddleCenter
+					Text='姓名'
+				End
+				Item
+					GroupTitle=F
+					Column='Column2'
+					BackColor=LtGray
+					TextAlign=MiddleCenter
+					Text='性别'
+				End
+				Item
+					GroupTitle=F
+					Column='Column3'
+					BackColor=LtGray
+					TextAlign=MiddleCenter
+					Text='年龄'
+				End
+			End
+		End
+		Items Group
+			Item
+				Name='Group1'
+				Object GroupHeader
+					Height=0
+					Items Control
+						Item
+							Type=FieldBox
+							Name='FieldBox1'
+							Width=2.2225
+							Height=0.608542
+						End
+					End
+				End
+				Object GroupFooter
+					Height=0
+				End
+			End
+		End
+	End
+	Object PageFooter
+		Height=0
+	End
+	Items Parameter
+		Item
+			Name='Parameter1'
+		End
+	End
+	Items ReportHeader
+		Item
+			Name='headsy'
+			Height=1.40229
+			Object Font
+				Name='宋体'
+				Size=105000,0
+				Bold=T
+				Charset=134
+			End
+			Items Control
+				Item
+					Type=StaticBox
+					Name='StaticBox17'
+					Top=0.21
+					Width=16.1925
+					Height=1.00542
+					Object Font
+						Name='宋体'
+						Size=142500,0
+						Bold=T
+						Charset=134
+					End
+					Text='（八）体检目前未见异常人员名单'
+				End
+			End
+		End
+	End
+	Items ReportFooter
+		Item
+			Name='footsy'
+			Height=0
+		End
+	End
+End
+				End
+				Item
+					Type=SubReport
+					Name='职业健康检查基本情况'
+					Top=1.00542
+					Width=18.6002
+					Height=1.00542
+					CanShrink=T
+Object Report
+	Version='6.3.0.1'
+	Title='你的报表标题'
+	PrintAsDesignPaper=F
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+		LeftMargin=1.2
+		TopMargin=2
+		RightMargin=1.2
+		BottomMargin=2
+		PrintOffsetX=1.5
+	End
+	Object DetailGrid
+		CenterView=T
+		ShowColLine=F
+		ShowRowLine=F
+		Object Border
+			Object Pen
+				Width=0
+			End
+		End
+		Object Recordset
+			Items Field
+				Item
+					Name='NoCheckCont'
+				End
+				Item
+					Name='NoIllCount'
+				End
+				Item
+					Name='OccConCount'
+				End
+				Item
+					Name='OccDisCount'
+				End
+				Item
+					Name='OtherCount'
+				End
+				Item
+					Name='ReCheckCount'
+				End
+				Item
+					Name='Address'
+				End
+				Item
+					Name='ClientEmail'
+				End
+				Item
+					Name='ClientName'
+				End
+				Item
+					Name='EndCheckDate'
+				End
+				Item
+					Name='StartCheckDate'
+				End
+				Item
+					Name='Telephone'
+				End
+				Item
+					Name='linkMan'
+				End
+				Item
+					Name='AllCount'
+				End
+				Item
+					Name='CheckCount'
+				End
+				Item
+					Name='worknameDetail'
+				End
+				Item
+					Name='WorNameCount'
+				End
+				Item
+					Name='CheckPer'
+				End
+				Item
+					Name='WorkTypeCount'
+				End
+				Item
+					Name='YearsCount'
+				End
+				Item
+					Name='sgq'
+				End
+				Item
+					Name='zgs'
+				End
+				Item
+					Name='lgs'
+				End
+				Item
+					Name='lgh'
+				End
+				Item
+					Name='yj'
+				End
+				Item
+					Name='whys'
+				End
+				Item
+					Name='group'
+				End
+				Item
+					Name='Field8'
+				End
+				Item
+					Name='SearchStartDate'
+				End
+				Item
+					Name='SearchEndDate'
+				End
+				Item
+					Name='Reference'
+				End
+				Item
+					Name='Clientlndutry'
+				End
+				Item
+					Name='Clientcontract'
+				End
+				Item
+					Name='Scale'
+				End
+				Item
+					Name='RegInfo'
+				End
+				Item
+					Name='SocialCredit'
+				End
+			End
+		End
+		Object ColumnContent
+			Height=0.608542
+		End
+		Object ColumnTitle
+			Height=0.608542
+			RepeatStyle=OnGroupHeader
+		End
+	End
+	Items ReportHeader
+		Item
+			Name='ReportHeader2'
+			Visible=F
+			Height=0
+			NewPage=Before
+		End
+		Item
+			Name='ReportHeader1'
+			CanGrow=T
+			CanShrink=T
+			Height=20.7963
+			Items Control
+				Item
+					Type=StaticBox
+					Name='StaticBox17'
+					Left=0.79375
+					Top=1.37583
+					Width=8.81062
+					Height=1.00542
+					Object Font
+						Name='宋体'
+						Size=142500,0
+						Bold=T
+						Charset=134
+					End
+					Text='（一）职业健康检查基本情况'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox32'
+					Left=1.40229
+					Top=2.35479
+					Width=6.37646
+					Height=0.714375
+					Object Font
+						Name='宋体'
+						Size=142500,0
+						Bold=T
+						Charset=134
+					End
+					Text='1、单位体检基本信息'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox2'
+					Left=1.5875
+					Top=5.60917
+					Width=15.2135
+					Height=0.978958
+					Object Font
+						Name='宋体'
+						Size=120000,0
+						Weight=400
+						Charset=134
+					End
+					WordWrap=T
+					LnSpacing=10
+					Text=' [#StartCheckDate#]--[#EndCheckDate#][#ClientName#]委托浠水县疾病预防控制中心,对公司接触职业危害因素的员工依据《职业健康监护技术规范》(GBZ188-2014)进行职业健康检查。\r\n\r\n'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox34'
+					Left=1.48167
+					Top=3.59833
+					Width=5.79438
+					Height=0.608542
+					Object Border
+						Styles=[DrawLeft|DrawTop|DrawRight|DrawBottom]
+					End
+					TextAlign=MiddleCenter
+					Text='单位名称'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox35'
+					Left=1.48167
+					Top=4.18042
+					Width=1.37583
+					Height=0.582083
+					Object Border
+						Styles=[DrawLeft|DrawTop|DrawRight|DrawBottom]
+					End
+					Text='联系人'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox36'
+					Left=1.48167
+					Top=4.73604
+					Width=3.38667
+					Height=0.608542
+					Object Border
+						Styles=[DrawLeft|DrawTop|DrawRight|DrawBottom]
+					End
+					TextAlign=MiddleCenter
+					Text='地址'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox37'
+					Left=6.27063
+					Top=4.18042
+					Width=1.5875
+					Height=0.555625
+					Object Border
+						Styles=[DrawLeft|DrawTop|DrawRight]
+					End
+					Text='联系电话'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox38'
+					Left=11.2713
+					Top=4.15396
+					Width=1.79917
+					Height=0.608542
+					Object Border
+						Styles=[DrawRight|DrawBottom]
+					End
+					Text='法人代表'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox11'
+					Left=1.95792
+					Top=20.0554
+					Width=12.991
+					Height=0.608542
+					Object Font
+						Name='宋体'
+						Size=150000,0
+						Bold=T
+						Charset=134
+					End
+					TextAlign=TopLeft
+					Text='6、有未检项目：[#NoCheckCont#]人'
+				End
+				Item
+					Type=Chart
+					Name='distributionchar'
+					Left=15.6104
+					Top=11.1919
+					Width=12.5942
+					Height=3.01625
+					GroupCount=1
+					Object Recordset
+					End
+					Object XAxis
+						TextFormat='0.##'
+						Object CoordLinePen
+							Color=00FFC4C4
+						End
+					End
+					Object YAxis
+						TextFormat='0.##'
+						Object CoordLinePen
+							Color=00FFC4C4
+						End
+					End
+					Object Y2Axis
+						TextFormat='0.##'
+						Object CoordLinePen
+							Color=00FFC4C4
+						End
+					End
+					Items ChartSeries
+						Item
+							ChartType=PieChart
+							ValueFormat='0.##'
+						End
+					End
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox12'
+					Left=2.80458
+					Top=4.15396
+					Width=3.59833
+					Height=0.608542
+					Object Border
+						Styles=[DrawBottom]
+					End
+					Text='[#linkMan#]'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox13'
+					Left=7.75229
+					Top=4.20688
+					Width=3.59833
+					Height=0.555625
+					Object Border
+						Styles=[DrawRight]
+					End
+					Text='[#Telephone#]'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox14'
+					Anchor=[Left|Top|Right]
+					Left=12.991
+					Top=4.15396
+					Width=3.59833
+					Height=0.608542
+					Object Border
+						Styles=[DrawRight]
+					End
+					Text='[#ClientEmail#]'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox15'
+					Left=4.78896
+					Top=4.73604
+					Width=11.8004
+					Height=0.608542
+					Object Border
+						Styles=[DrawTop|DrawRight|DrawBottom]
+					End
+					Text='[#Address#]'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox16'
+					Left=7.19667
+					Top=3.59833
+					Width=9.39271
+					Height=0.608542
+					Object Border
+						Styles=[DrawTop|DrawRight|DrawBottom]
+					End
+					Text='[#ClientName#]'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox17'
+					Left=2.30188
+					Top=8.30792
+					Width=12.7794
+					Height=1.79917
+					Text='口上岗前 口在岗期间 口离岗时 口应急体检'
+				End
+				Item
+					Type=FieldBox
+					Name='FieldBox11'
+					Left=2.30188
+					Top=8.91646
+					Width=0.582083
+					Height=0.608542
+					DataField='sgq'
+				End
+				Item
+					Type=FieldBox
+					Name='FieldBox12'
+					Left=3.88938
+					Top=8.91646
+					Width=0.608542
+					Height=0.608542
+					DataField='zgs'
+				End
+				Item
+					Type=FieldBox
+					Name='FieldBox13'
+					Left=5.90021
+					Top=8.91646
+					Width=0.582083
+					Height=0.608542
+					DataField='lgs'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox18'
+					Left=2.19604
+					Top=10.2129
+					Width=12.5942
+					Height=2.19604
+					Text='危害因素：[#whys#]'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox19'
+					Left=2.19604
+					Top=12.409
+					Width=12.5942
+					Height=5.79438
+					CanGrow=T
+					WordWrap=T
+					Text='组合： [#group#]'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox20'
+					Left=8.20208
+					Top=1.40229
+					Width=8.38729
+					Height=2.40771
+					Text='[#SearchStartDate#]~[#SearchEndDate#]'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox21'
+					Left=1.5875
+					Top=6.58813
+					Width=16.0073
+					Height=1.21708
+					Text='行业：[#Clientlndutry#]'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox22'
+					Left=0.79375
+					Width=17.5948
+					Height=1.5875
+					Text='[#Clientcontract#] [#Clientlndutry#] [#Scale#] [#RegInfo#][#SocialCredit#]'
+				End
+			End
+			NewPage=Before
+		End
+	End
+	Items ReportFooter
+		Item
+			Name='footinfo'
+			Height=0.396875
+		End
+	End
+End
+				End
+				Item
+					Type=SubReport
+					Name='体检结果分析与结论统计'
+					Top=2.98979
+					Width=18.5
+					Height=1.00542
+					CanShrink=T
+Object Report
+	Version='6.3.0.1'
+	Title='你的报表标题'
+	PrintAsDesignPaper=F
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+		LeftMargin=1.2
+		TopMargin=2
+		RightMargin=1.2
+		BottomMargin=2
+	End
+	Object DetailGrid
+		CenterView=T
+		Object Recordset
+			Items Field
+				Item
+					Name='AllCount'
+				End
+				Item
+					Name='ManCount'
+				End
+				Item
+					Name='WomenCount'
+				End
+				Item
+					Name='CheckPercent'
+				End
+				Item
+					Name='NormalCount'
+				End
+				Item
+					Name='NormaPercent'
+				End
+				Item
+					Name='NormalManCount'
+				End
+				Item
+					Name='NormaManPercent'
+				End
+				Item
+					Name='NormalWomenCount'
+				End
+				Item
+					Name='NormaWomenPercent'
+				End
+				Item
+					Name='UnNormalCount'
+				End
+				Item
+					Name='UnNormaPercent'
+				End
+				Item
+					Name='UnNormalManCount'
+				End
+				Item
+					Name='UnNormaManPercent'
+				End
+				Item
+					Name='UnNormalWomenCount'
+				End
+				Item
+					Name='UnNormaWomenPercent'
+				End
+				Item
+					Name='CheckCount'
+				End
+			End
+		End
+		Object ColumnContent
+			Height=0
+		End
+		Object ColumnTitle
+			Height=0
+		End
+	End
+	Items ReportHeader
+		Item
+			Name='headres'
+			Height=14.3933
+			Items Control
+				Item
+					Type=StaticBox
+					Name='StaticBox17'
+					Top=0.21
+					Width=17.0127
+					Height=1.00542
+					Object Font
+						Name='宋体'
+						Size=142500,0
+						Bold=T
+						Charset=134
+					End
+					Text='（三）体检结果分析与结论统计'
+				End
+				Item
+					Type=Chart
+					Name='Chart1'
+					Left=2.43417
+					Top=2.80458
+					Width=11.0067
+					Height=5.18583
+					Object Recordset
+					End
+					Object XAxis
+						TextFormat='0.##'
+						Object CoordLinePen
+							Color=00FFC4C4
+						End
+					End
+					Object YAxis
+						TextFormat='0.##'
+						Object CoordLinePen
+							Color=00FFC4C4
+						End
+					End
+					Object Y2Axis
+						TextFormat='0.##'
+						Object CoordLinePen
+							Color=00FFC4C4
+						End
+					End
+					Items ChartSeries
+						Item
+							ValueFormat='0.##'
+							LabelText='[#ChartVar(YVal)#]'
+						End
+					End
+				End
+				Item
+					Type=Chart
+					Name='Chart2'
+					Left=2.43417
+					Top=8.81062
+					Width=10.795
+					Height=5.00063
+					Object Recordset
+					End
+					Object XAxis
+						TextFormat='0.##'
+						Object CoordLinePen
+							Color=00FFC4C4
+						End
+					End
+					Object YAxis
+						TextFormat='0.##'
+						Object CoordLinePen
+							Color=00FFC4C4
+						End
+					End
+					Object Y2Axis
+						TextFormat='0.##'
+						Object CoordLinePen
+							Color=00FFC4C4
+						End
+					End
+					Items ChartSeries
+						Item
+							ValueFormat='0.##'
+							LabelText='[#ChartVar(YVal)#]'
+						End
+					End
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox2'
+					Left=1.05833
+					Top=1.5875
+					Width=16.9333
+					Height=0.608542
+					Object Font
+						Name='宋体'
+						Size=120000,0
+						Weight=400
+						Charset=134
+					End
+					CanGrow=T
+					CanShrink=T
+					WordWrap=T
+					LnSpacing=10
+					Text='1.正常人员统计表'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox3'
+					Left=1.05833
+					Top=8.20208
+					Width=16.9333
+					Height=0.608542
+					CanGrow=T
+					CanShrink=T
+					WordWrap=T
+					LnSpacing=10
+					Text='2.异常人员统计表'
+				End
+			End
+			NewPage=Before
+		End
+	End
+	Items ReportFooter
+		Item
+			Name='footres'
+			Height=0
+		End
+	End
+End
+				End
+				Item
+					Type=SubReport
+					Name='主要异常分析'
+					Top=11.9592
+					Width=18.5
+					Height=0.79375
+					CanShrink=T
+					HideOnRecordsetEmpty=T
+Object Report
+	Version='6.3.0.1'
+	Title='你的报表标题'
+	PrintAsDesignPaper=F
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+		LeftMargin=1.2
+		TopMargin=2
+		RightMargin=1.2
+		BottomMargin=2
+	End
+	Object DetailGrid
+		CenterView=T
+		PageColumnDirection=AcrossDown
+		PageColumnCount=3
+		PageColumnGroupNA=T
+		Object Recordset
+			Items Field
+				Item
+					Name='AdviceName'
+				End
+				Item
+					Name='CustomerBM'
+				End
+				Item
+					Name='Name'
+				End
+				Item
+					Name='Sex'
+				End
+				Item
+					Name='Age'
+				End
+				Item
+					Name='WorkNameCon'
+				End
+				Item
+					Name='AgeCon'
+				End
+				Item
+					Name='AdviceDis'
+				End
+				Item
+					Name='Remark'
+				End
+			End
+		End
+		Items Column
+			Item
+				Name='Column1'
+				Width=2.56646
+			End
+			Item
+				Name='Column2'
+				Width=1.5875
+			End
+			Item
+				Name='Column3'
+				Width=1.5875
+			End
+		End
+		Object ColumnContent
+			Height=0.608542
+			FormatScript='function Report.DetailGrid.ColumnContent.FormatScript(Report, Sender)\r\n{\r\n   \r\n    var AmountField = Report.FieldByName("ReforenceValue");\r\n  var ResultField = Report.FieldByName("ItemResult");\r\n  var  ResulltContentCell = Sender.ContentCells.Item("ItemResult");\r\n    var FontBold;\r\n    var FontItalic;\r\n    var TextColor;\r\n    var BackColor;\r\n\r\n    if (AmountField.AsString!=ResultField.AsString)\r\n    {\r\n        FontBold = true;\r\n        FontItalic = false;\r\n        TextColor = GetColorValue(0, 255, 0);\r\n        BackColor = GetColorValue(255, 255, 255);\r\n    }\r\n    else\r\n    {\r\n        FontBold = false;\r\n        FontItalic = true;\r\n        TextColor = GetColorValue(255, 0, 0);\r\n        BackColor = GetColorValue(255, 255, 255);\r\n    }\r\n\r\n\r\n\r\n    ResulltContentCell .Font.Bold = FontBold;\r\n    ResulltContentCell .Font.Italic = FontItalic;\r\n    ResulltContentCell.ForeColor = TextColor;\r\n    AResulltContentCell.BackColor = BackColor;\r\n\r\n    //根据三原色求出颜色值\r\n\r\n    function GetColorValue(r,g,b)\r\n    {\r\n       return r + g*256 + b*256*256;\r\n    }\r\n}'
+			Items ColumnContentCell
+				Item
+					Column='Column1'
+					TextAlign=MiddleCenter
+					DataField='Name'
+				End
+				Item
+					Column='Column2'
+					WordWrap=T
+					TextAlign=MiddleCenter
+					CanGrow=T
+					DataField='Sex'
+				End
+				Item
+					Column='Column3'
+					TextAlign=MiddleCenter
+					DataField='Age'
+				End
+			End
+		End
+		Object ColumnTitle
+			Height=0.608542
+			RepeatStyle=OnGroupHeader
+			Items ColumnTitleCell
+				Item
+					GroupTitle=F
+					Column='Column1'
+					TextAlign=MiddleCenter
+					Text='姓名'
+				End
+				Item
+					GroupTitle=F
+					Column='Column2'
+					TextAlign=MiddleCenter
+					Text='性别'
+				End
+				Item
+					GroupTitle=F
+					Column='Column3'
+					TextAlign=MiddleCenter
+					Text='年龄'
+				End
+			End
+		End
+		Items Group
+			Item
+				Name='Group1'
+				ByFields='AdviceName'
+				Object GroupHeader
+					CanGrow=T
+					CanShrink=T
+					Height=1.19063
+					PrintGridBorder=F
+					Items Control
+						Item
+							Type=FieldBox
+							Name='FieldBox4'
+							Left=0.211667
+							Width=14.9754
+							Height=0.608542
+							Object Font
+								Name='宋体'
+								Size=120000,0
+								Bold=T
+								Charset=134
+							End
+							DataField='AdviceName'
+						End
+						Item
+							Type=MemoBox
+							Name='MemoBox5'
+							Left=0.211667
+							Top=0.608542
+							Width=18.1769
+							Height=0.582083
+							CanGrow=T
+							CanShrink=T
+							WordWrap=T
+							LnSpacing=10
+							FirstCharIndent=20
+							Text='[#AdviceDis#]'
+						End
+					End
+				End
+				Object GroupFooter
+					CanGrow=T
+					Height=0
+				End
+			End
+		End
+	End
+	Object PageFooter
+		Height=0
+	End
+	Items Parameter
+		Item
+			Name='Parameter1'
+		End
+	End
+	Items ReportHeader
+		Item
+			Name='ReportHeader1'
+			Height=1.19063
+			Object Font
+				Name='宋体'
+				Size=105000,0
+				Bold=T
+				Charset=134
+			End
+			Items Control
+				Item
+					Type=StaticBox
+					Name='StaticBox17'
+					Top=0.0529167
+					Width=13.3879
+					Height=1.00542
+					Object Font
+						Name='宋体'
+						Size=142500,0
+						Bold=T
+						Charset=134
+					End
+					CanGrow=T
+					Text='（十）与职业危害因素无关的其它疾病异常处理建议	'
+				End
+			End
+		End
+	End
+	Items ReportFooter
+		Item
+			Name='ReportFooter1'
+			Height=22.9923
+			Items Control
+				Item
+					Type=MemoBox
+					Name='MemoBox1'
+					Left=0.608542
+					Top=1.40229
+					Width=17.78
+					Height=21.1931
+					Object Font
+						Name='宋体'
+						Size=120000,0
+						Weight=400
+						Charset=134
+					End
+					TextAlign=TopLeft
+					LnSpacing=10
+					Text='    1、贵单位对作业场所中的职业病危害因素进行定期检测；对接触职业病危害因素的员工相\r\n关的法律法规进行上岗前、在岗期、离岗时的职业健康检查，建立健全职业卫生和职业健康监\r\n护档案妥善保管。\r\n   2、认真贯彻职业病防治法，为员工配备符合国家职业卫生标准的防尘口罩、防毒口罩、耳\r\n塞等劳动保护用品，指导并督促其正确使用，督促员工养成良好的工作、生活习惯。加强企业\r\n职业卫生宣传教育，增强员工的自我保护意识，在醒目及重要岗位张贴安全警示标语。\r\n   3、根据规定，我中心将此次体检情况报相关职能部门，此次体检结果，请你单位及时告知\r\n各参检人员，做好书面记录，并向我单位反馈进一步结果，也可到我中心职业卫生科进行健康\r\n咨询。\r\n\r\n\r\n\r\n主检医师：\r\n\r\n\r\n\r\n报告编制人：\r\n\r\n\r\n\r\n审核人：\r\n\r\n\r\n\r\n技术负责人：                               \r\n\r\n                                                                         公   章\r\n\r\n                                                                    年   月   日'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox2'
+					Left=0.71
+					Top=0.4
+					Width=9.97479
+					Height=0.608542
+					Object Font
+						Name='宋体'
+						Size=157500,0
+						Bold=T
+						Charset=134
+					End
+					Text='六、建议\r\n\r\n    '
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox8'
+					Left=2.19604
+					Top=7.59354
+					Width=14.3933
+					Height=1.40229
+					Text='[#Remark#]'
+				End
+			End
+			NewPage=Before
+		End
+		Item
+			Name='ReportFooter2'
+			Height=16.1925
+			Items Control
+				Item
+					Type=MemoBox
+					Name='MemoBox6'
+					Left=0.79375
+					Top=1.40229
+					Width=17.5948
+					Height=13.3879
+					Object Font
+						Name='宋体'
+						Size=120000,0
+						Weight=400
+						Charset=134
+					End
+					TextAlign=TopLeft
+					Text='     为您呈上的这份团检报告， 是以本次参检员工所检项目的异常结果为依据，进行统\r\n\r\n计和综合分析，健康指导建议是针对异常结果做出的健康评价和指导。个别异常情况无特\r\n\r\n殊临床意义，则未加分析和评价。由于所检项目不同，对以前一些明确诊断疾病，健康评\r\n\r\n价不一定包括在内，本次职业健康检查发现的其他疾病或异常，对检出的临床异常值，\r\n\r\n主检医生在所掌握的医学知识范围内给出了相应的建议，见个人体检报告，这些建议不\r\n\r\n构成任何诊断或治疗意见，仅供参考，某些体检结果涉及的临床意义较为复杂，需结合\r\n\r\n其他相关检查进行综合分析，必要时请到综合医院或相关专科进行进一步复查或诊治，\r\n\r\n限于篇幅，在本报告中未完全罗列，参检者若有疑问可直接前来咨询。\r\n\r\n     员工的职业健康是您和我们共同关注的问题，定期职业健康检查对员工健康非常重\r\n\r\n要， 通过职业健康体检发现健康问题， 争取有效和最佳治疗时机，从而促进健康是们共\r\n\r\n同的期望， 同时也是单位和企业体现关爱员工、 增强凝聚力、降低成本（主要指降低因\r\n\r\n病治疗的成本）、提高工作和生产效率的有效途径和措施。感谢您对我们的理解、信任和\r\n\r\n支持，更关注您提出的每一条意见和建议，我们将不断完善和改进服务，为您的健康保驾\r\n\r\n护航，再次感谢您的合作！谢谢！\r\n\r\n                                         \r\n                                         浠水县疾病预防控制中心\r\n                                                                                   					                                     	    \r\n'
+				End
+				Item
+					Type=SystemVarBox
+					Name='SystemVarBox2'
+					Left=10.0013
+					Top=15.1871
+					Width=3.59833
+					Height=0.608542
+					Object Font
+						Name='宋体'
+						Size=120000,0
+						Weight=400
+						Charset=134
+					End
+					Format='yyyy年M月d日'
+					SystemVar=CurrentDateTime
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox7'
+					Left=0.71
+					Top=0.4
+					Width=9.97479
+					Height=0.608542
+					Object Font
+						Name='宋体'
+						Size=157500,0
+						Bold=T
+						Charset=134
+					End
+					Text='七、结束语\r\n\r\n    '
+				End
+			End
+			NewPage=Before
+		End
+	End
+End
+				End
+				Item
+					Type=SubReport
+					Name='疑似职业病人员名单'
+					Top=4.92125
+					Width=18.4679
+					Height=0.79375
+					CanShrink=T
+					HideOnRecordsetEmpty=T
+Object Report
+	Version='6.3.0.1'
+	Title='你的报表标题'
+	PrintAsDesignPaper=F
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+		LeftMargin=1.2
+		TopMargin=2
+		RightMargin=1.2
+		BottomMargin=2
+	End
+	Object DetailGrid
+		CenterView=T
+		Object Recordset
+			Items Field
+				Item
+					Name='RiskNames'
+				End
+				Item
+					Name='CustomerBM'
+				End
+				Item
+					Name='Name'
+				End
+				Item
+					Name='Sex'
+				End
+				Item
+					Name='Age'
+				End
+				Item
+					Name='Conlutions'
+				End
+				Item
+					Name='OccDiss'
+				End
+				Item
+					Name='Opton'
+				End
+				Item
+					Name='RevGroups'
+				End
+				Item
+					Name='NoCheckGroups'
+				End
+				Item
+					Name='CheckType'
+				End
+				Item
+					Name='Description'
+				End
+				Item
+					Name='TypeWork'
+				End
+				Item
+					Name='MedicalAdvice'
+				End
+				Item
+					Name='Field1'
+				End
+			End
+		End
+		Items Column
+			Item
+				Name='Column10'
+				Width=0.978958
+			End
+			Item
+				Name='Column1'
+				Width=2.77813
+			End
+			Item
+				Name='Column3'
+				Width=2.16958
+			End
+			Item
+				Name='Column4'
+				Width=1.21708
+			End
+			Item
+				Name='Column5'
+				Width=1.03188
+			End
+			Item
+				Name='Column6'
+				Width=2.56646
+			End
+			Item
+				Name='Column7'
+				Width=3.59833
+			End
+			Item
+				Name='Column8'
+				Width=4.23333
+			End
+			Item
+				Name='Column11'
+			End
+			Item
+				Name='Column12'
+			End
+			Item
+				Name='Column13'
+			End
+		End
+		Object ColumnContent
+			Height=0.608542
+			Items ColumnContentCell
+				Item
+					Column='Column10'
+					FreeCell=T
+					Items Control
+						Item
+							Type=MemoBox
+							Name='MemoBox2'
+							Dock=Fill
+							Center=Horizontal
+							TextAlign=MiddleCenter
+							Text='[#SystemVar(RowNo)#]'
+						End
+					End
+				End
+				Item
+					Column='Column1'
+					WordWrap=T
+					TextAlign=MiddleCenter
+					CanGrow=T
+					CanShrink=T
+					DataField='RiskNames'
+				End
+				Item
+					Column='Column3'
+					TextAlign=MiddleCenter
+					DataField='Name'
+				End
+				Item
+					Column='Column4'
+					TextAlign=MiddleCenter
+					DataField='Sex'
+				End
+				Item
+					Column='Column5'
+					TextAlign=MiddleCenter
+					DataField='Age'
+				End
+				Item
+					Column='Column6'
+					WordWrap=T
+					TextAlign=MiddleCenter
+					CanGrow=T
+					CanShrink=T
+					DataField='Conlutions'
+				End
+				Item
+					Column='Column7'
+					WordWrap=T
+					CanGrow=T
+					CanShrink=T
+					DataField='Description'
+				End
+				Item
+					Column='Column8'
+					WordWrap=T
+					CanGrow=T
+					CanShrink=T
+					DataField='Conlutions'
+				End
+				Item
+					Column='Column11'
+					DataField='TypeWork'
+				End
+				Item
+					Column='Column12'
+					DataField='MedicalAdvice'
+				End
+				Item
+					Column='Column13'
+					DataField='Description'
+				End
+			End
+		End
+		Object ColumnTitle
+			Height=1.19063
+			Items ColumnTitleCell
+				Item
+					GroupTitle=F
+					Column='Column10'
+					BackColor=00CCCCCC
+					TextAlign=MiddleCenter
+					Text='序号'
+				End
+				Item
+					GroupTitle=F
+					Column='Column1'
+					BackColor=LtGray
+					TextAlign=MiddleCenter
+					Text='接触职业\r\n危害名称'
+				End
+				Item
+					GroupTitle=F
+					Column='Column3'
+					BackColor=LtGray
+					TextAlign=MiddleCenter
+					Text='姓名'
+				End
+				Item
+					GroupTitle=F
+					Column='Column4'
+					BackColor=LtGray
+					TextAlign=MiddleCenter
+					Text='性别'
+				End
+				Item
+					GroupTitle=F
+					Column='Column5'
+					BackColor=LtGray
+					TextAlign=MiddleCenter
+					Text='年龄'
+				End
+				Item
+					GroupTitle=F
+					Column='Column6'
+					BackColor=LtGray
+					TextAlign=MiddleCenter
+					Text='检查结论'
+				End
+				Item
+					GroupTitle=F
+					Column='Column7'
+					BackColor=LtGray
+					TextAlign=MiddleCenter
+					Text='结论描述'
+				End
+				Item
+					GroupTitle=F
+					Column='Column8'
+					BackColor=LtGray
+					TextAlign=MiddleCenter
+					Text='处理意见'
+				End
+				Item
+					GroupTitle=F
+					Column='Column11'
+					TextAlign=MiddleCenter
+					Text='工种'
+				End
+				Item
+					GroupTitle=F
+					Column='Column12'
+					TextAlign=MiddleCenter
+					Text='医学建议'
+				End
+				Item
+					GroupTitle=F
+					Column='Column13'
+					TextAlign=MiddleCenter
+					Text='结论解释'
+				End
+			End
+		End
+		Items Group
+			Item
+				Name='Group1'
+				Object GroupHeader
+					Height=0
+					Items Control
+						Item
+							Type=FieldBox
+							Name='FieldBox1'
+							Width=2.2225
+							Height=0.608542
+						End
+					End
+				End
+				Object GroupFooter
+					Height=0
+				End
+			End
+		End
+	End
+	Object PageFooter
+		Height=0
+	End
+	Items Parameter
+		Item
+			Name='Parameter1'
+		End
+	End
+	Items ReportHeader
+		Item
+			Name='ReportHeader1'
+			Height=0
+			Object Font
+				Name='宋体'
+				Size=105000,0
+				Bold=T
+				Charset=134
+			End
+			Items Control
+				Item
+					Type=MemoBox
+					Name='MemoBox1'
+					Left=13.9965
+					Width=2.80458
+					Height=0.608542
+					Text='MemoBox1'
+				End
+			End
+			NewPage=Before
+		End
+	End
+	Items ReportFooter
+		Item
+			Name='ReportFooter1'
+			Height=0
+		End
+	End
+End
+				End
+				Item
+					Type=SubReport
+					Name='危害因素及体检实施情况'
+					Top=2.01083
+					Width=18.5
+					Height=1.00542
+Object Report
+	Version='6.3.0.1'
+	Title='你的报表标题'
+	PrintAsDesignPaper=F
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+		LeftMargin=1.2
+		TopMargin=2
+		RightMargin=1.2
+		BottomMargin=2
+	End
+	Object DetailGrid
+		CenterView=T
+		Object Recordset
+			Items Field
+				Item
+					Name='RiskNames'
+				End
+				Item
+					Name='ChckType'
+				End
+				Item
+					Name='AllCount'
+				End
+				Item
+					Name='HasCount'
+				End
+				Item
+					Name='Groups'
+				End
+				Item
+					Name='Target'
+				End
+			End
+		End
+		Items Column
+			Item
+				Name='Column1'
+				Width=2.38125
+			End
+			Item
+				Name='Column2'
+				Width=2.59292
+			End
+			Item
+				Name='Column3'
+				Width=1.40229
+			End
+			Item
+				Name='Column4'
+				Width=1.40229
+			End
+			Item
+				Name='Column5'
+				Width=4.20688
+			End
+			Item
+				Name='Column6'
+				Width=6.58813
+			End
+		End
+		Object ColumnContent
+			Height=1.00542
+			FormatScript='function Report.DetailGrid.ColumnContent.FormatScript(Report, Sender)\r\n{\r\n   \r\n    var AmountField = Report.FieldByName("ReforenceValue");\r\n  var ResultField = Report.FieldByName("ItemResult");\r\n  var  ResulltContentCell = Sender.ContentCells.Item("ItemResult");\r\n    var FontBold;\r\n    var FontItalic;\r\n    var TextColor;\r\n    var BackColor;\r\n\r\n    if (AmountField.AsString!=ResultField.AsString)\r\n    {\r\n        FontBold = true;\r\n        FontItalic = false;\r\n        TextColor = GetColorValue(0, 255, 0);\r\n        BackColor = GetColorValue(255, 255, 255);\r\n    }\r\n    else\r\n    {\r\n        FontBold = false;\r\n        FontItalic = true;\r\n        TextColor = GetColorValue(255, 0, 0);\r\n        BackColor = GetColorValue(255, 255, 255);\r\n    }\r\n\r\n\r\n\r\n    ResulltContentCell .Font.Bold = FontBold;\r\n    ResulltContentCell .Font.Italic = FontItalic;\r\n    ResulltContentCell.ForeColor = TextColor;\r\n    AResulltContentCell.BackColor = BackColor;\r\n\r\n    //根据三原色求出颜色值\r\n\r\n    function GetColorValue(r,g,b)\r\n    {\r\n       return r + g*256 + b*256*256;\r\n    }\r\n}'
+			Items ColumnContentCell
+				Item
+					Column='Column1'
+					WordWrap=T
+					TextAlign=MiddleCenter
+					CanGrow=T
+					CanShrink=T
+					DataField='RiskNames'
+				End
+				Item
+					Column='Column2'
+					WordWrap=T
+					TextAlign=MiddleCenter
+					CanGrow=T
+					DataField='ChckType'
+				End
+				Item
+					Column='Column3'
+					TextAlign=MiddleCenter
+					DataField='AllCount'
+				End
+				Item
+					Column='Column4'
+					TextAlign=MiddleCenter
+					DataField='HasCount'
+				End
+				Item
+					Column='Column5'
+					WordWrap=T
+					TextAlign=MiddleCenter
+					CanGrow=T
+					DataField='Groups'
+				End
+				Item
+					Column='Column6'
+					WordWrap=T
+					TextAlign=MiddleCenter
+					CanGrow=T
+					CanShrink=T
+					DataField='Target'
+				End
+			End
+		End
+		Object ColumnTitle
+			Height=1.19063
+			RepeatStyle=OnGroupHeader
+			Items ColumnTitleCell
+				Item
+					GroupTitle=F
+					Column='Column1'
+					BackColor=Silver
+					WordWrap=T
+					TextAlign=MiddleCenter
+					Text='接触职业病危害因素种类'
+				End
+				Item
+					GroupTitle=F
+					Column='Column2'
+					BackColor=Silver
+					WordWrap=T
+					TextAlign=MiddleCenter
+					Text='健康检查类别'
+				End
+				Item
+					GroupTitle=F
+					Column='Column3'
+					BackColor=Silver
+					TextAlign=MiddleCenter
+					Text='应检\r\n人数'
+				End
+				Item
+					GroupTitle=F
+					Column='Column4'
+					BackColor=Silver
+					TextAlign=MiddleCenter
+					Text='实检\r\n人数'
+				End
+				Item
+					GroupTitle=F
+					Column='Column5'
+					BackColor=Silver
+					TextAlign=MiddleCenter
+					Text='检查项目'
+				End
+				Item
+					GroupTitle=F
+					Column='Column6'
+					BackColor=Silver
+					TextAlign=MiddleCenter
+					Text='目标疾病'
+				End
+			End
+		End
+		Items Group
+			Item
+				Name='Group1'
+				Object GroupHeader
+					Height=0.211667
+				End
+				Object GroupFooter
+					Height=0
+				End
+			End
+		End
+	End
+	Items ReportHeader
+		Item
+			Name='ReportHeader1'
+			CanGrow=T
+			Height=1.40229
+			Items Control
+				Item
+					Type=StaticBox
+					Name='StaticBox17'
+					Top=0.211667
+					Width=8.81062
+					Height=1.00542
+					Object Font
+						Name='宋体'
+						Size=142500,0
+						Bold=T
+						Charset=134
+					End
+					Text='（二）危害因素及体检实施情况'
+				End
+			End
+			NewPage=Before
+		End
+	End
+	Items ReportFooter
+		Item
+			Name='ReportFooter1'
+			Height=0
+			Items Control
+				Item
+					Type=RichTextBox
+					Name='RichTextBox3'
+					Top=-3.96875
+					Width=17.9917
+					Height=2.19604
+					RTF='{\\rtf1\\ansi\\ansicpg936\\deff0\\deflang1033\\deflangfe2052{\\fonttbl{\\f0\\fswiss\\fprq2\\fcharset134 System;}}\r\n{\\*\\generator Msftedit 5.41.21.2510;}\\viewkind4\\uc1\\pard\\lang2052\\b\\f0\\fs24\\par\r\n}\r\n'
+				End
+			End
+		End
+	End
+End
+				End
+				Item
+					Type=SubReport
+					Name='复查人员名单'
+					Top=8.81062
+					Width=18.5
+					Height=0.79375
+					CanShrink=T
+					HideOnRecordsetEmpty=T
+Object Report
+	Version='6.3.0.1'
+	Title='你的报表标题'
+	PrintAsDesignPaper=F
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+		LeftMargin=1.2
+		TopMargin=2
+		RightMargin=1.2
+		BottomMargin=2
+	End
+	Object DetailGrid
+		CenterView=T
+		Object Recordset
+			Items Field
+				Item
+					Name='RiskNames'
+				End
+				Item
+					Name='CustomerBM'
+				End
+				Item
+					Name='Name'
+				End
+				Item
+					Name='Sex'
+				End
+				Item
+					Name='Age'
+				End
+				Item
+					Name='Conlutions'
+				End
+				Item
+					Name='OccDiss'
+				End
+				Item
+					Name='Opton'
+				End
+				Item
+					Name='RevGroups'
+				End
+				Item
+					Name='NoCheckGroups'
+				End
+				Item
+					Name='CheckType'
+				End
+				Item
+					Name='TypeWork'
+				End
+				Item
+					Name='MedicalAdvice'
+				End
+				Item
+					Name='Description'
+				End
+				Item
+					Name='InjuryAge'
+				End
+				Item
+					Name='OccIll'
+				End
+				Item
+					Name='OtherIll'
+				End
+			End
+		End
+		Items Column
+			Item
+				Name='Column10'
+				Width=0.978958
+			End
+			Item
+				Name='Column1'
+				Width=2.98979
+			End
+			Item
+				Name='Column3'
+				Width=2.16958
+			End
+			Item
+				Name='Column8'
+				Width=9.23396
+			End
+			Item
+				Name='Column12'
+			End
+			Item
+				Name='Column13'
+			End
+		End
+		Object ColumnContent
+			Height=6.19125
+			Items ColumnContentCell
+				Item
+					Column='Column10'
+					FreeCell=T
+					Items Control
+						Item
+							Type=MemoBox
+							Name='MemoBox1'
+							Dock=Fill
+							Center=Horizontal
+							TextAlign=MiddleCenter
+							Text='[#SystemVar(RowNo)#]'
+						End
+					End
+				End
+				Item
+					Column='Column1'
+					WordWrap=T
+					TextAlign=MiddleCenter
+					CanGrow=T
+					CanShrink=T
+					DataField='RiskNames'
+				End
+				Item
+					Column='Column3'
+					TextAlign=MiddleCenter
+					DataField='Name'
+				End
+				Item
+					Column='Column8'
+					FreeCell=T
+					CanGrow=T
+					CanShrink=T
+					Items Control
+						Item
+							Type=MemoBox
+							Name='MemoBox2'
+							Width=9.2075
+							Height=2.98979
+							Object Border
+								Styles=[DrawBottom]
+							End
+							CanGrow=T
+							WordWrap=T
+							Text='[#OccIll#]'
+						End
+						Item
+							Type=MemoBox
+							Name='MemoBox3'
+							Top=2.98979
+							Width=9.2075
+							Height=3.01625
+							CanGrow=T
+							WordWrap=T
+							Text='[#OtherIll#]'
+						End
+					End
+				End
+				Item
+					Column='Column12'
+					DataField='MedicalAdvice'
+				End
+				Item
+					Column='Column13'
+					DataField='InjuryAge'
+				End
+			End
+		End
+		Object ColumnTitle
+			Height=1.00542
+			Items ColumnTitleCell
+				Item
+					GroupTitle=F
+					Column='Column10'
+					BackColor=00CCCCCC
+					TextAlign=MiddleCenter
+					Text='序号'
+				End
+				Item
+					GroupTitle=F
+					Column='Column1'
+					BackColor=LtGray
+					TextAlign=MiddleCenter
+					Text='接触职业\r\n危害名称'
+				End
+				Item
+					GroupTitle=F
+					Column='Column3'
+					BackColor=LtGray
+					TextAlign=MiddleCenter
+					Text='姓名'
+				End
+				Item
+					GroupTitle=F
+					Column='Column8'
+					BackColor=LtGray
+					TextAlign=MiddleCenter
+					Text='疾病'
+				End
+				Item
+					GroupTitle=F
+					Column='Column12'
+					TextAlign=MiddleCenter
+					Text='医学建议'
+				End
+				Item
+					GroupTitle=F
+					Column='Column13'
+					TextAlign=MiddleCenter
+					Text='接害工龄'
+				End
+			End
+		End
+		Items Group
+			Item
+				Name='Group1'
+				Object GroupHeader
+					Height=0
+					Items Control
+						Item
+							Type=FieldBox
+							Name='FieldBox1'
+							Width=2.2225
+							Height=0.608542
+						End
+					End
+				End
+				Object GroupFooter
+					Height=0
+				End
+			End
+		End
+	End
+	Object PageFooter
+		Height=0
+	End
+	Items Parameter
+		Item
+			Name='Parameter1'
+		End
+	End
+	Items ReportHeader
+		Item
+			Name='headsy'
+			Height=0
+			Object Font
+				Name='宋体'
+				Size=105000,0
+				Bold=T
+				Charset=134
+			End
+		End
+	End
+	Items ReportFooter
+		Item
+			Name='footsy'
+			Height=0
+		End
+	End
+End
+				End
+				Item
+					Type=SubReport
+					Name='职业禁忌证人员名单'
+					Top=6.79979
+					Width=18.6002
+					Height=0.79375
+					CanShrink=T
+					HideOnRecordsetEmpty=T
+Object Report
+	Version='6.3.0.1'
+	Title='你的报表标题'
+	PrintAsDesignPaper=F
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+		LeftMargin=1.2
+		TopMargin=2
+		RightMargin=1.2
+		BottomMargin=2
+	End
+	Object DetailGrid
+		CenterView=T
+		Object Recordset
+			Items Field
+				Item
+					Name='Name'
+				End
+				Item
+					Name='Sex'
+				End
+				Item
+					Name='Age'
+				End
+				Item
+					Name='Conlutions'
+				End
+				Item
+					Name='OccDiss'
+				End
+				Item
+					Name='Opton'
+				End
+				Item
+					Name='RevGroups'
+				End
+				Item
+					Name='NoCheckGroups'
+				End
+				Item
+					Name='CustomerBM'
+				End
+				Item
+					Name='RiskNames'
+				End
+				Item
+					Name='CheckType'
+				End
+				Item
+					Name='Description'
+				End
+				Item
+					Name='MedicalAdvice'
+				End
+				Item
+					Name='TypeWork'
+				End
+			End
+		End
+		Items Column
+			Item
+				Name='Column10'
+				Width=0.978958
+			End
+			Item
+				Name='Column1'
+				Width=1.98438
+			End
+			Item
+				Name='Column3'
+				Width=1.5875
+			End
+			Item
+				Name='Column4'
+				Width=1.00542
+			End
+			Item
+				Name='Column5'
+				Width=1.03188
+			End
+			Item
+				Name='Column6'
+				Width=1.95792
+			End
+			Item
+				Name='Column7'
+				Width=1.98438
+			End
+			Item
+				Name='Column8'
+				Width=4.04813
+			End
+			Item
+				Name='Column9'
+				Width=4.02167
+			End
+			Item
+				Name='Column11'
+			End
+			Item
+				Name='Column12'
+			End
+		End
+		Object ColumnContent
+			Height=0.608542
+			Items ColumnContentCell
+				Item
+					Column='Column10'
+					FreeCell=T
+					Items Control
+						Item
+							Type=MemoBox
+							Name='MemoBox1'
+							Dock=Fill
+							Center=Horizontal
+							TextAlign=MiddleCenter
+							Text='[#SystemVar(RowNo)#]'
+						End
+					End
+				End
+				Item
+					Column='Column1'
+					WordWrap=T
+					TextAlign=MiddleCenter
+					CanGrow=T
+					CanShrink=T
+					DataField='RiskNames'
+				End
+				Item
+					Column='Column3'
+					TextAlign=MiddleCenter
+					DataField='Name'
+				End
+				Item
+					Column='Column4'
+					TextAlign=MiddleCenter
+					DataField='Sex'
+				End
+				Item
+					Column='Column5'
+					TextAlign=MiddleCenter
+					DataField='Age'
+				End
+				Item
+					Column='Column6'
+					TextAlign=MiddleCenter
+					DataField='CheckType'
+				End
+				Item
+					Column='Column7'
+					WordWrap=T
+					TextAlign=MiddleCenter
+					CanGrow=T
+					CanShrink=T
+					DataField='Conlutions'
+				End
+				Item
+					Column='Column8'
+					WordWrap=T
+					CanGrow=T
+					CanShrink=T
+					DataField='Description'
+				End
+				Item
+					Column='Column9'
+					WordWrap=T
+					CanGrow=T
+					CanShrink=T
+					DataField='Opton'
+				End
+				Item
+					Column='Column11'
+					DataField='TypeWork'
+				End
+				Item
+					Column='Column12'
+					DataField='MedicalAdvice'
+				End
+			End
+		End
+		Object ColumnTitle
+			Height=1.00542
+			Items ColumnTitleCell
+				Item
+					GroupTitle=F
+					Column='Column10'
+					BackColor=00CCCCCC
+					TextAlign=MiddleCenter
+					Text='序号'
+				End
+				Item
+					GroupTitle=F
+					Column='Column1'
+					BackColor=00CCCCCC
+					TextAlign=MiddleCenter
+					Text='接触职业\r\n危害名称'
+				End
+				Item
+					GroupTitle=F
+					Column='Column3'
+					BackColor=00CCCCCC
+					TextAlign=MiddleCenter
+					Text='姓名'
+				End
+				Item
+					GroupTitle=F
+					Column='Column4'
+					BackColor=00CCCCCC
+					TextAlign=MiddleCenter
+					Text='性别'
+				End
+				Item
+					GroupTitle=F
+					Column='Column5'
+					BackColor=00CCCCCC
+					TextAlign=MiddleCenter
+					Text='年龄'
+				End
+				Item
+					GroupTitle=F
+					Column='Column6'
+					BackColor=00CCCCCC
+					TextAlign=MiddleCenter
+					Text='体检类别'
+				End
+				Item
+					GroupTitle=F
+					Column='Column7'
+					BackColor=00CCCCCC
+					TextAlign=MiddleCenter
+					Text='检查结论'
+				End
+				Item
+					GroupTitle=F
+					Column='Column8'
+					BackColor=00CCCCCC
+					TextAlign=MiddleCenter
+					Text='结论描述'
+				End
+				Item
+					GroupTitle=F
+					Column='Column9'
+					BackColor=00CCCCCC
+					TextAlign=MiddleCenter
+					Text='处理意见'
+				End
+				Item
+					GroupTitle=F
+					Column='Column11'
+					TextAlign=MiddleCenter
+					Text='工种'
+				End
+				Item
+					GroupTitle=F
+					Column='Column12'
+					TextAlign=MiddleCenter
+					Text='医学建议'
+				End
+			End
+		End
+		Items Group
+			Item
+				Name='Group1'
+				Object GroupHeader
+					Height=0
+					Items Control
+						Item
+							Type=FieldBox
+							Name='FieldBox1'
+							Width=2.2225
+							Height=0.608542
+						End
+					End
+				End
+				Object GroupFooter
+					Height=0
+				End
+			End
+		End
+	End
+	Object PageFooter
+		Height=0
+	End
+	Items Parameter
+		Item
+			Name='Parameter1'
+		End
+	End
+	Items ReportHeader
+		Item
+			Name='ReportHeader1'
+			Height=0
+			Object Font
+				Name='宋体'
+				Size=105000,0
+				Bold=T
+				Charset=134
+			End
+		End
+	End
+	Items ReportFooter
+		Item
+			Name='ReportFooter1'
+			Height=0
+		End
+	End
+End
+				End
+				Item
+					Type=SubReport
+					Name='有未检项目名单'
+					Top=11.2183
+					Width=18.5
+					Height=0.79375
+					CanShrink=T
+					HideOnRecordsetEmpty=T
+Object Report
+	Version='6.3.0.1'
+	Title='你的报表标题'
+	PrintAsDesignPaper=F
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+		LeftMargin=1.2
+		TopMargin=2
+		RightMargin=1.2
+		BottomMargin=2
+	End
+	Object DetailGrid
+		CenterView=T
+		Object Recordset
+			Items Field
+				Item
+					Name='RiskNames'
+				End
+				Item
+					Name='CustomerBM'
+				End
+				Item
+					Name='Name'
+				End
+				Item
+					Name='Sex'
+				End
+				Item
+					Name='Age'
+				End
+				Item
+					Name='Conlutions'
+				End
+				Item
+					Name='OccDiss'
+				End
+				Item
+					Name='Opton'
+				End
+				Item
+					Name='RevGroups'
+				End
+				Item
+					Name='NoCheckGroups'
+				End
+			End
+		End
+		Items Column
+			Item
+				Name='Column10'
+				Width=0.978958
+			End
+			Item
+				Name='Column3'
+				Width=3.38667
+			End
+			Item
+				Name='Column4'
+				Width=1.79917
+			End
+			Item
+				Name='Column5'
+				Width=2.38125
+			End
+			Item
+				Name='Column8'
+				Width=10.0277
+			End
+		End
+		Object ColumnContent
+			Height=0.608542
+			Items ColumnContentCell
+				Item
+					Column='Column10'
+					FreeCell=T
+					Items Control
+						Item
+							Type=MemoBox
+							Name='MemoBox1'
+							Dock=Fill
+							Center=Horizontal
+							TextAlign=MiddleCenter
+							Text='[#SystemVar(RowNo)#]'
+						End
+					End
+				End
+				Item
+					Column='Column3'
+					TextAlign=MiddleCenter
+					DataField='Name'
+				End
+				Item
+					Column='Column4'
+					TextAlign=MiddleCenter
+					DataField='Sex'
+				End
+				Item
+					Column='Column5'
+					TextAlign=MiddleCenter
+					DataField='Age'
+				End
+				Item
+					Column='Column8'
+					WordWrap=T
+					TextAlign=MiddleCenter
+					CanGrow=T
+					CanShrink=T
+					DataField='NoCheckGroups'
+				End
+			End
+		End
+		Object ColumnTitle
+			Height=1.00542
+			Items ColumnTitleCell
+				Item
+					GroupTitle=F
+					Column='Column10'
+					BackColor=00CCCCCC
+					TextAlign=MiddleCenter
+					Text='序号'
+				End
+				Item
+					GroupTitle=F
+					Column='Column3'
+					BackColor=00CCCCCC
+					TextAlign=MiddleCenter
+					Text='姓名'
+				End
+				Item
+					GroupTitle=F
+					Column='Column4'
+					BackColor=00CCCCCC
+					TextAlign=MiddleCenter
+					Text='性别'
+				End
+				Item
+					GroupTitle=F
+					Column='Column5'
+					BackColor=00CCCCCC
+					TextAlign=MiddleCenter
+					Text='年龄'
+				End
+				Item
+					GroupTitle=F
+					Column='Column8'
+					BackColor=00CCCCCC
+					TextAlign=MiddleCenter
+					Text='有未检项目'
+				End
+			End
+		End
+		Items Group
+			Item
+				Name='Group1'
+				Object GroupHeader
+					Height=0
+					Items Control
+						Item
+							Type=FieldBox
+							Name='FieldBox1'
+							Width=2.2225
+							Height=0.608542
+						End
+					End
+				End
+				Object GroupFooter
+					Height=0
+				End
+			End
+		End
+	End
+	Object PageFooter
+		Height=0
+	End
+	Items Parameter
+		Item
+			Name='Parameter1'
+		End
+	End
+	Items ReportHeader
+		Item
+			Name='ReportHeader1'
+			Height=1.5875
+			Object Font
+				Name='宋体'
+				Size=105000,0
+				Bold=T
+				Charset=134
+			End
+			Items Control
+				Item
+					Type=StaticBox
+					Name='StaticBox17'
+					Top=0.21
+					Width=8.59896
+					Height=1.00542
+					Object Font
+						Name='宋体'
+						Size=142500,0
+						Bold=T
+						Charset=134
+					End
+					CanGrow=T
+					Text='（九）有未检项目名单'
+				End
+			End
+		End
+	End
+	Items ReportFooter
+		Item
+			Name='ReportFooter1'
+			Height=0
+		End
+	End
+End
+				End
+				Item
+					Type=SubReport
+					Name='首页'
+					Width=18.5
+					Height=1.00542
+Object Report
+	Version='6.3.0.1'
+	Title='你的报表标题'
+	PrintAsDesignPaper=F
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+		LeftMargin=1.2
+		TopMargin=2
+		RightMargin=1.2
+		BottomMargin=2
+	End
+	Object DetailGrid
+		CenterView=T
+		Object Recordset
+			Items Field
+				Item
+					Name='ClientBM'
+				End
+				Item
+					Name='ClientName'
+				End
+				Item
+					Name='ClientAbbreviation'
+				End
+				Item
+					Name='StartCheckDate'
+				End
+				Item
+					Name='EndCheckDate'
+				End
+				Item
+					Name='linkMan'
+				End
+				Item
+					Name='sgq'
+				End
+				Item
+					Name='zgs'
+				End
+				Item
+					Name='lgs'
+				End
+				Item
+					Name='lgh'
+				End
+				Item
+					Name='yj'
+				End
+			End
+		End
+		Object ColumnContent
+			Height=0
+		End
+		Object ColumnTitle
+			Height=0
+		End
+	End
+	Items ReportHeader
+		Item
+			Name='ReportHeader1'
+			CanGrow=T
+			Height=23.3892
+			Items Control
+				Item
+					Type=StaticBox
+					Name='StaticBox17'
+					Left=0.211667
+					Top=4.10104
+					Width=18.071
+					Height=1.40229
+					Object Font
+						Name='宋体'
+						Size=240000,0
+						Bold=T
+						Charset=134
+					End
+					TextAlign=MiddleCenter
+					Text='职业健康检查总结报告'
+				End
+				Item
+					Type=PictureBox
+					Name='PictureBox1'
+					Top=9.60438
+					Width=18.3885
+					Height=6.40292
+					Picture=-24049
+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
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox20'
+					Top=20.32
+					Width=18.6002
+					Height=0.608542
+					Object Font
+						Name='宋体'
+						Size=180000,0
+						Bold=T
+						Charset=134
+					End
+					TextAlign=MiddleCenter
+					Text='浠水县疾病预防控制中心'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox1'
+					Top=21.5635
+					Width=18.6002
+					Height=0.608542
+					Object Font
+						Name='宋体'
+						Size=157500,0
+						Bold=T
+						Charset=134
+					End
+					TextAlign=MiddleCenter
+					Text='[#SystemVar(CurrentDateTime):yyyy年M月d日#]'
+				End
+				Item
+					Type=FieldBox
+					Name='FieldBox10'
+					Left=0.211667
+					Top=2.48708
+					Width=18.1769
+					Height=1.61396
+					Object Font
+						Name='宋体'
+						Size=240000,0
+						Bold=T
+						Charset=134
+					End
+					TextAlign=MiddleCenter
+					DataField='ClientName'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox62'
+					Left=7.01146
+					Top=6.0325
+					Width=11.3771
+					Height=0.582083
+					Text='湖北省职业健康检查机构批准文号：鄂卫职健字（2009）第0075号'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox2'
+					Left=3.81
+					Top=16.5894
+					Width=12.7794
+					Height=1.79917
+					Text='口上岗前 口在岗期间 口离岗时 口应急体检'
+				End
+				Item
+					Type=FieldBox
+					Name='FieldBox11'
+					Left=3.81
+					Top=17.1979
+					Width=0.582083
+					Height=0.608542
+					DataField='sgq'
+				End
+				Item
+					Type=FieldBox
+					Name='FieldBox12'
+					Left=5.3975
+					Top=17.1979
+					Width=0.608542
+					Height=0.608542
+					DataField='zgs'
+				End
+				Item
+					Type=FieldBox
+					Name='FieldBox13'
+					Left=7.40833
+					Top=17.1979
+					Width=0.582083
+					Height=0.608542
+					DataField='lgs'
+				End
+			End
+		End
+		Item
+			Name='目录'
+			Height=18.6002
+			Items Control
+				Item
+					Type=StaticBox
+					Name='StaticBox33'
+					Left=0.873125
+					Top=0.211667
+					Width=1.5875
+					Height=0.79375
+					Object Font
+						Name='宋体'
+						Size=217500,0
+						Bold=T
+						Charset=134
+					End
+					Text='目录'
+				End
+				Item
+					Type=Line
+					Name='Line1'
+					Left=0.661458
+					Top=1.00542
+					Width=17.1979
+					Object Pen
+						Width=5
+						Color=Green
+					End
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox39'
+					Left=1.40229
+					Top=1.77271
+					Width=9.2075
+					Height=1.00542
+					Object Font
+						Name='宋体'
+						Size=142500,0
+						Bold=T
+						Charset=134
+					End
+					Text='一、职业健康检查报告说明'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox40'
+					Left=1.40229
+					Top=2.83104
+					Width=9.2075
+					Height=1.00542
+					Object Font
+						Name='宋体'
+						Size=142500,0
+						Bold=T
+						Charset=134
+					End
+					Text='二、职业健康检查机构信息'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox41'
+					Left=1.40229
+					Top=3.88938
+					Width=9.2075
+					Height=1.00542
+					Object Font
+						Name='宋体'
+						Size=142500,0
+						Bold=T
+						Charset=134
+					End
+					Text='三、资质证明'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox43'
+					Left=1.40229
+					Top=5.08
+					Width=9.2075
+					Height=1.00542
+					Object Font
+						Name='宋体'
+						Size=142500,0
+						Bold=T
+						Charset=134
+					End
+					Text='四、职业健康体检汇总分析'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox44'
+					Left=1.40229
+					Top=15.0813
+					Width=9.2075
+					Height=1.00542
+					Object Font
+						Name='宋体'
+						Size=142500,0
+						Bold=T
+						Charset=134
+					End
+					Text='五、建议'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox51'
+					Left=2.40771
+					Top=6.27063
+					Width=9.2075
+					Height=0.79375
+					Object Font
+						Name='宋体'
+						Size=105000,0
+						Bold=T
+						Charset=134
+					End
+					Text='（一）职业健康检查基本情况'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox52'
+					Left=2.40771
+					Top=7.06438
+					Width=9.2075
+					Height=0.79375
+					Object Font
+						Name='宋体'
+						Size=105000,0
+						Bold=T
+						Charset=134
+					End
+					Text='（二）危害因素及体检实施情况'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox53'
+					Left=2.40771
+					Top=7.85813
+					Width=9.2075
+					Height=0.79375
+					Object Font
+						Name='宋体'
+						Size=105000,0
+						Bold=T
+						Charset=134
+					End
+					Text='（三）体检结果分析与结论统计'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox54'
+					Left=2.43417
+					Top=8.67833
+					Width=9.2075
+					Height=0.79375
+					Object Font
+						Name='宋体'
+						Size=105000,0
+						Bold=T
+						Charset=134
+					End
+					Text='（四）疑似职业病人员名单'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox55'
+					Left=2.43417
+					Top=11.8798
+					Width=11.0067
+					Height=0.79375
+					Object Font
+						Name='宋体'
+						Size=105000,0
+						Bold=T
+						Charset=134
+					End
+					Text='（八）体检目前未见异常人员名单'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox56'
+					Left=2.43417
+					Top=10.2658
+					Width=9.2075
+					Height=0.79375
+					Object Font
+						Name='宋体'
+						Size=105000,0
+						Bold=T
+						Charset=134
+					End
+					Text='（六）复查人员名单'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox57'
+					Left=2.43417
+					Top=13.4673
+					Width=10.9802
+					Height=0.79375
+					Object Font
+						Name='宋体'
+						Size=105000,0
+						Bold=T
+						Charset=134
+					End
+					Text='（十）与职业危害因素无关的其它疾病异常处理建议	'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox59'
+					Left=2.43417
+					Top=9.47208
+					Width=9.2075
+					Height=0.79375
+					Object Font
+						Name='宋体'
+						Size=105000,0
+						Bold=T
+						Charset=134
+					End
+					Text='（五）职业禁忌证人员名单'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox60'
+					Left=2.43417
+					Top=11.086
+					Width=9.57792
+					Height=0.79375
+					Object Font
+						Name='宋体'
+						Size=105000,0
+						Bold=T
+						Charset=134
+					End
+					Text='（七）与职业危害因素无关的其它疾病异常人员名单'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox61'
+					Left=2.40771
+					Top=12.6735
+					Width=11.0067
+					Height=0.79375
+					Object Font
+						Name='宋体'
+						Size=105000,0
+						Bold=T
+						Charset=134
+					End
+					Text='（九）有未检项目人员名单'
+				End
+				Item
+					Type=StaticBox
+					Name='StaticBox66'
+					Left=1.40229
+					Top=16.2719
+					Width=9.2075
+					Height=1.00542
+					Object Font
+						Name='宋体'
+						Size=142500,0
+						Bold=T
+						Charset=134
+					End
+					Text='六、结束语'
+				End
+			End
+		End
+		Item
+			Name='职业健康检查报告书签字页'
+			Visible=F
+			Height=0
+		End
+	End
+End
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox3'
+					Top=3.99521
+					Width=7.40833
+					Height=0.79375
+					Object Font
+						Name='宋体'
+						Size=105000,0
+						Bold=T
+						Charset=134
+					End
+					Text='（四）疑似职业病人员名单 [#No4#]'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox4'
+					Top=5.79438
+					Width=7.80521
+					Height=1.00542
+					Text='（五）职业禁忌证人员名单[#No5#]'
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox5'
+					Left=0.211667
+					Top=7.80521
+					Width=8.38729
+					Height=1.00542
+					Text='（六）复查人员名单[#No6#]'
+				End
+				Item
+					Type=SubReport
+					Name='与职业危害因素无关的其它疾病异常人员名单'
+					Top=9.78958
+					Width=18.3885
+					Height=0.820208
+					CanShrink=T
+					HideOnRecordsetEmpty=T
+Object Report
+	Version='6.3.0.1'
+	Title='你的报表标题'
+	PrintAsDesignPaper=F
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+		LeftMargin=1.2
+		TopMargin=2
+		RightMargin=1.2
+		BottomMargin=2
+	End
+	Object DetailGrid
+		CenterView=T
+		Object Recordset
+			Items Field
+				Item
+					Name='RiskNames'
+				End
+				Item
+					Name='CustomerBM'
+				End
+				Item
+					Name='Name'
+				End
+				Item
+					Name='Sex'
+				End
+				Item
+					Name='Age'
+				End
+				Item
+					Name='Conlutions'
+				End
+				Item
+					Name='OccDiss'
+				End
+				Item
+					Name='Opton'
+				End
+				Item
+					Name='RevGroups'
+				End
+				Item
+					Name='NoCheckGroups'
+				End
+				Item
+					Name='CheckType'
+				End
+				Item
+					Name='TypeWork'
+				End
+				Item
+					Name='MedicalAdvice'
+				End
+				Item
+					Name='Description'
+				End
+				Item
+					Name='InjuryAge'
+				End
+			End
+		End
+		Items Column
+			Item
+				Name='Column10'
+				Width=0.978958
+			End
+			Item
+				Name='Column1'
+				Width=2.98979
+			End
+			Item
+				Name='Column3'
+				Width=2.16958
+			End
+			Item
+				Name='Column4'
+				Width=1.00542
+			End
+			Item
+				Name='Column5'
+				Width=1.00542
+			End
+			Item
+				Name='Column6'
+				Width=2.61938
+			End
+			Item
+				Name='Column7'
+				Width=3.59833
+			End
+			Item
+				Name='Column8'
+				Width=4.20688
+			End
+			Item
+				Name='Column11'
+			End
+			Item
+				Name='Column12'
+			End
+			Item
+				Name='Column13'
+			End
+			Item
+				Name='Column14'
+			End
+		End
+		Object ColumnContent
+			Height=0.608542
+			Items ColumnContentCell
+				Item
+					Column='Column10'
+					FreeCell=T
+					Items Control
+						Item
+							Type=MemoBox
+							Name='MemoBox1'
+							Dock=Fill
+							Center=Horizontal
+							TextAlign=MiddleCenter
+							Text='[#SystemVar(RowNo)#]'
+						End
+					End
+				End
+				Item
+					Column='Column1'
+					WordWrap=T
+					TextAlign=MiddleCenter
+					CanGrow=T
+					CanShrink=T
+					DataField='RiskNames'
+				End
+				Item
+					Column='Column3'
+					TextAlign=MiddleCenter
+					DataField='Name'
+				End
+				Item
+					Column='Column4'
+					TextAlign=MiddleCenter
+					DataField='Sex'
+				End
+				Item
+					Column='Column5'
+					TextAlign=MiddleCenter
+					DataField='Age'
+				End
+				Item
+					Column='Column6'
+					WordWrap=T
+					TextAlign=MiddleCenter
+					CanGrow=T
+					CanShrink=T
+					DataField='Conlutions'
+				End
+				Item
+					Column='Column7'
+					WordWrap=T
+					TextAlign=MiddleCenter
+					CanGrow=T
+					CanShrink=T
+					DataField='RevGroups'
+				End
+				Item
+					Column='Column8'
+					WordWrap=T
+					CanGrow=T
+					CanShrink=T
+					DataField='Opton'
+				End
+				Item
+					Column='Column11'
+					DataField='TypeWork'
+				End
+				Item
+					Column='Column12'
+					DataField='MedicalAdvice'
+				End
+				Item
+					Column='Column13'
+					DataField='InjuryAge'
+				End
+				Item
+					Column='Column14'
+				End
+			End
+		End
+		Object ColumnTitle
+			Height=1.00542
+			Items ColumnTitleCell
+				Item
+					GroupTitle=F
+					Column='Column10'
+					BackColor=00CCCCCC
+					TextAlign=MiddleCenter
+					Text='序号'
+				End
+				Item
+					GroupTitle=F
+					Column='Column1'
+					BackColor=LtGray
+					TextAlign=MiddleCenter
+					Text='接触职业\r\n危害名称'
+				End
+				Item
+					GroupTitle=F
+					Column='Column3'
+					BackColor=LtGray
+					TextAlign=MiddleCenter
+					Text='姓名'
+				End
+				Item
+					GroupTitle=F
+					Column='Column4'
+					BackColor=LtGray
+					TextAlign=MiddleCenter
+					Text='性别'
+				End
+				Item
+					GroupTitle=F
+					Column='Column5'
+					BackColor=LtGray
+					TextAlign=MiddleCenter
+					Text='年龄'
+				End
+				Item
+					GroupTitle=F
+					Column='Column6'
+					BackColor=LtGray
+					TextAlign=MiddleCenter
+					Text='检查结论'
+				End
+				Item
+					GroupTitle=F
+					Column='Column7'
+					BackColor=LtGray
+					TextAlign=MiddleCenter
+					Text='复查项目'
+				End
+				Item
+					GroupTitle=F
+					Column='Column8'
+					BackColor=LtGray
+					TextAlign=MiddleCenter
+					Text='处理意见'
+				End
+				Item
+					GroupTitle=F
+					Column='Column11'
+					TextAlign=MiddleCenter
+					Text='工种'
+				End
+				Item
+					GroupTitle=F
+					Column='Column12'
+					TextAlign=MiddleCenter
+					Text='医学建议'
+				End
+				Item
+					GroupTitle=F
+					Column='Column13'
+					TextAlign=MiddleCenter
+					Text='接害工龄'
+				End
+				Item
+					GroupTitle=F
+					Column='Column14'
+					TextAlign=MiddleCenter
+					Text='Column14'
+				End
+			End
+		End
+		Items Group
+			Item
+				Name='Group1'
+				Object GroupHeader
+					Height=0
+					Items Control
+						Item
+							Type=FieldBox
+							Name='FieldBox1'
+							Width=2.2225
+							Height=0.608542
+						End
+					End
+				End
+				Object GroupFooter
+					Height=0
+				End
+			End
+		End
+	End
+	Object PageFooter
+		Height=0
+	End
+	Items Parameter
+		Item
+			Name='Parameter1'
+		End
+	End
+	Items ReportHeader
+		Item
+			Name='headsy'
+			Height=2.59292
+			Object Font
+				Name='宋体'
+				Size=105000,0
+				Bold=T
+				Charset=134
+			End
+			Items Control
+				Item
+					Type=MemoBox
+					Name='MemoBox2'
+					Left=1.19063
+					Top=0.396875
+					Width=12.8058
+					Height=1.19063
+					Text='其他疾病或异常'
+				End
+			End
+		End
+	End
+	Items ReportFooter
+		Item
+			Name='footsy'
+			Height=0
+		End
+	End
+End
+				End
+			End
+			NewPage=Before
+		End
+	End
+	Items ReportFooter
+		Item
+			Name='ReportFooter1'
+			Height=0
+		End
+	End
+End

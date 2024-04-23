@@ -1,0 +1,1579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\PdfiumViewer.Native.x86_64.v8-xfa.2018.4.8.256\build\PdfiumViewer.Native.x86_64.v8-xfa.props" Condition="Exists('..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\PdfiumViewer.Native.x86_64.v8-xfa.2018.4.8.256\build\PdfiumViewer.Native.x86_64.v8-xfa.props')" />
+  <Import Project="..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C7AC0EC6-9A24-4B60-907E-F978FB5E2443}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sw.Hospital.HealthExaminationSystem.Application</RootNamespace>
+    <AssemblyName>HealthExaminationSystem.Application</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;Application</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\HealthExaminationSystem.Application.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;Application</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;Application</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\x86\Debug\HealthExaminationSystem.Application.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Abp, Version=6.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Abp.6.4.0\lib\netstandard2.0\Abp.dll</HintPath>
+    </Reference>
+    <Reference Include="Abp.AutoMapper, Version=6.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Abp.AutoMapper.6.4.0\lib\netstandard2.0\Abp.AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Abp.Zero, Version=6.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Abp.Zero.6.4.0\lib\net461\Abp.Zero.dll</HintPath>
+    </Reference>
+    <Reference Include="Abp.Zero.Common, Version=6.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Abp.Zero.Common.6.4.0\lib\netstandard2.0\Abp.Zero.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper, Version=10.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\AutoMapper.10.1.1\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Collection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=e57c3f0a3d6646db, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\AutoMapper.Collection.7.0.1\lib\net461\AutoMapper.Collection.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.EF6, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\AutoMapper.EF6.2.0.0\lib\net461\AutoMapper.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Castle.Core.4.4.1\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core.AsyncInterceptor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=e33b67d3bb5581e4, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Castle.Core.AsyncInterceptor.2.0.0\lib\net45\Castle.Core.AsyncInterceptor.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Facilities.Logging, Version=5.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Castle.LoggingFacility.5.1.1\lib\net45\Castle.Facilities.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=5.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Castle.Windsor.5.1.1\lib\net45\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="ChnCharInfo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\CHSPinYinConv.1.0.0\lib\netstandard2.0\ChnCharInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="DelegateDecompiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=93b26a10a04705bd, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\DelegateDecompiler.0.29.1\lib\net45\DelegateDecompiler.dll</HintPath>
+    </Reference>
+    <Reference Include="DelegateDecompiler.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=93b26a10a04705bd, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\DelegateDecompiler.EntityFramework.0.27.0\lib\net45\DelegateDecompiler.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Dicom.Core">
+      <HintPath>..\..\..\..\..\03项目引用\Dicom.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Dicom.Legacy">
+      <HintPath>..\..\..\..\..\03项目引用\Dicom.Legacy.dll</HintPath>
+    </Reference>
+    <Reference Include="Dicom.Native">
+      <HintPath>..\..\..\..\..\03项目引用\Dicom.Native.dll</HintPath>
+    </Reference>
+    <Reference Include="Dicom.Native64">
+      <HintPath>..\..\..\..\..\03项目引用\Dicom.Native64.dll</HintPath>
+    </Reference>
+    <Reference Include="Dicom.Platform">
+      <HintPath>..\..\..\..\..\03项目引用\Dicom.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="JetBrains.Annotations, Version=2021.1.0.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\JetBrains.Annotations.2021.1.0\lib\net20\JetBrains.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="LisService, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\03项目引用\From\LisService.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.14.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\log4net.2.0.14\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Microsoft.AspNet.Identity.Core.2.2.3\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Microsoft.Extensions.Caching.Abstractions.5.0.0\lib\net461\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Memory, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Microsoft.Extensions.Caching.Memory.5.0.0\lib\net461\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Microsoft.Extensions.DependencyInjection.Abstractions.5.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Microsoft.Extensions.Logging.Abstractions.5.0.0\lib\net461\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Microsoft.Extensions.Options.5.0.0\lib\net461\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Microsoft.Extensions.Primitives.5.0.0\lib\net461\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Reflection, Version=1.1.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Mono.Reflection.Core.1.1.1\lib\net45\Mono.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.AsyncEx, Version=4.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Nito.AsyncEx.4.0.1\lib\net45\Nito.AsyncEx.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.AsyncEx.Concurrent, Version=4.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Nito.AsyncEx.4.0.1\lib\net45\Nito.AsyncEx.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.AsyncEx.Context, Version=5.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Nito.AsyncEx.Context.5.1.0\lib\netstandard2.0\Nito.AsyncEx.Context.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.AsyncEx.Coordination, Version=5.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Nito.AsyncEx.Coordination.5.1.0\lib\netstandard2.0\Nito.AsyncEx.Coordination.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.AsyncEx.Enlightenment, Version=4.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Nito.AsyncEx.4.0.1\lib\net45\Nito.AsyncEx.Enlightenment.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.AsyncEx.Tasks, Version=5.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Nito.AsyncEx.Tasks.5.1.0\lib\netstandard2.0\Nito.AsyncEx.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.Collections.Deque, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Nito.Collections.Deque.1.1.0\lib\netstandard2.0\Nito.Collections.Deque.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.Disposables, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Nito.Disposables.2.2.0\lib\net461\Nito.Disposables.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=8.6.1.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\FreeSpire.PDF.8.6.0\lib\net40\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Sw.His.Common.CustomTools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Sw.His.Common.CustomTools.1.0.0\lib\net40\Sw.His.Common.CustomTools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\System.Collections.Immutable.5.0.0\lib\net461\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\System.Configuration.ConfigurationManager.5.0.0\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Common, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\System.Data.Common.4.3.0\lib\net451\System.Data.Common.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Linq.Dynamic.Core, Version=1.2.10.0, Culture=neutral, PublicKeyToken=0f07ec44de6ac832, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\System.Linq.Dynamic.Core.1.2.10\lib\net46\System.Linq.Dynamic.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\System.Runtime.Serialization.Formatters.4.3.0\lib\net46\System.Runtime.Serialization.Formatters.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\System.Runtime.Serialization.Primitives.4.3.0\lib\net46\System.Runtime.Serialization.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\System.Security.AccessControl.5.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\System.Security.Claims.4.3.0\lib\net46\System.Security.Claims.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Permissions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\System.Security.Permissions.5.0.0\lib\net461\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.XmlDocument, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\System.Xml.XmlDocument.4.3.0\lib\net46\System.Xml.XmlDocument.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.XPath, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\System.Xml.XPath.4.3.0\lib\net46\System.Xml.XPath.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XmlDocument, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\System.Xml.XPath.XmlDocument.4.3.0\lib\net46\System.Xml.XPath.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="TimeZoneConverter, Version=3.5.0.0, Culture=neutral, PublicKeyToken=e20ab7d0d9479841, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\TimeZoneConverter.3.5.0\lib\net461\TimeZoneConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="Z.EntityFramework.Plus.EF6, Version=1.8.10.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Z.EntityFramework.Plus.EF6.1.8.10\lib\net45\Z.EntityFramework.Plus.EF6.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Mains\HealthExaminationSystem.Web\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="AddStatistics\AddStatisticsAppService.cs" />
+    <Compile Include="AddStatistics\Dto\AddStatisticsDto.cs" />
+    <Compile Include="AddStatistics\Dto\SearchStatisticsDto.cs" />
+    <Compile Include="AddStatistics\IAddStatisticsAppService.cs" />
+    <Compile Include="Authorization\Accounts\AccountAppService.cs" />
+    <Compile Include="Authorization\Accounts\Dto\IsTenantAvailable.cs" />
+    <Compile Include="Authorization\Accounts\Dto\IsTenantAvailableOutput.cs" />
+    <Compile Include="Authorization\Accounts\Dto\RegisterInput.cs" />
+    <Compile Include="Authorization\Accounts\Dto\RegisterOutput.cs" />
+    <Compile Include="Authorization\Accounts\Dto\TenantAvailabilityState.cs" />
+    <Compile Include="Authorization\Accounts\IAccountAppService.cs" />
+    <Compile Include="BarPrintInfoItemGroup\BarPrintInfoItemGroupAppService.cs" />
+    <Compile Include="BarPrintInfoItemGroup\Dto\CreateBarPrintInfoItemGroupDto.cs" />
+    <Compile Include="BarPrintInfoItemGroup\Dto\BarPrintInfoItemGroupQueryDto.cs" />
+    <Compile Include="BarPrintInfoItemGroup\Dto\BarPrintInfoItemGroupDto.cs" />
+    <Compile Include="BarPrintInfoItemGroup\IBarPrintInfoItemGroupAppService.cs" />
+    <Compile Include="BarPrint\Dto\CreateCustomerBarPrintInfoDto.cs" />
+    <Compile Include="BarPrint\Dto\CustomerBarPrintInfoItemDto.cs" />
+    <Compile Include="BarPrint\Dto\CustomerBarPrintInfoQueryDto.cs" />
+    <Compile Include="BarPrint\Dto\CustomerBarPrintInfoDto.cs" />
+    <Compile Include="BarPrint\Dto\DetailDto.cs" />
+    <Compile Include="BarPrint\Dto\MasterDto.cs" />
+    <Compile Include="BarPrint\Dto\ReportJsonDto.cs" />
+    <Compile Include="BarSetting\Dto\BarCodeViewDto.cs" />
+    <Compile Include="BarSetting\Dto\BarItembViewDto.cs" />
+    <Compile Include="BarSetting\Dto\CreateOrUpdateBarSettingDto.cs" />
+    <Compile Include="BarSetting\Dto\SearchBarItemDto.cs" />
+    <Compile Include="BarSetting\Dto\BarItemViewDto.cs" />
+    <Compile Include="BarSetting\Dto\SimpleBarSettingDto.cs" />
+    <Compile Include="BarSetting\Dto\ItemGroupViewDto.cs" />
+    <Compile Include="BarSetting\Dto\SearchBarSettingDto.cs" />
+    <Compile Include="BasicDictionary\Dto\CreateBasicDictionaryDto.cs" />
+    <Compile Include="BasicDictionary\Dto\UpdateBasicDictionaryDto.cs" />
+    <Compile Include="CarSend\CardSendAppService.cs" />
+    <Compile Include="CarSend\Dto\InCardSearchDto.cs" />
+    <Compile Include="CarSend\Dto\SaveTbmCardDto.cs" />
+    <Compile Include="CarSend\Dto\OutSeachCardDto.cs" />
+    <Compile Include="CarSend\Dto\SearchCardDto.cs" />
+    <Compile Include="CarSend\Dto\SimpCardListDto.cs" />
+    <Compile Include="CarSend\Dto\SimpCardTypeDto.cs" />
+    <Compile Include="CarSend\ICardSendAppService.cs" />
+    <Compile Include="Charge\Dto\BallCheckDto.cs" />
+    <Compile Include="Charge\Dto\ChargeCustmoerItemGroupDto.cs" />
+    <Compile Include="Charge\Dto\ClientDepartDto.cs" />
+    <Compile Include="Charge\Dto\ClientGroupMoneyDto.cs" />
+    <Compile Include="Charge\Dto\ClientGroupStatisDto.cs" />
+    <Compile Include="Charge\Dto\ClientInfoSimpDto.cs" />
+    <Compile Include="Charge\Dto\ClientPaymentDto.cs" />
+    <Compile Include="Charge\Dto\CountDto.cs" />
+    <Compile Include="Charge\Dto\CusChageListDto.cs" />
+    <Compile Include="Charge\Dto\CusGroupTTDto.cs" />
+    <Compile Include="Charge\Dto\CusPayListDto.cs" />
+    <Compile Include="Charge\Dto\CusPayTTDto.cs" />
+    <Compile Include="Charge\Dto\CusReceivsDto.cs" />
+    <Compile Include="Charge\Dto\CustomerGroupMoneyDto.cs" />
+    <Compile Include="Charge\Dto\CustomerSFTypeCusRegDto.cs" />
+    <Compile Include="Charge\Dto\CustomerSFTypeDto.cs" />
+    <Compile Include="Charge\Dto\CusTTDto.cs" />
+    <Compile Include="Charge\Dto\DayCusListDto.cs" />
+    <Compile Include="Charge\Dto\DoctorDeparmentDto.cs" />
+    <Compile Include="Charge\Dto\DZFPDetail.cs" />
+    <Compile Include="Charge\Dto\DZFPDout.cs" />
+    <Compile Include="Charge\Dto\DZFPInputDto.cs" />
+    <Compile Include="Charge\Dto\DZFPMain.cs" />
+    <Compile Include="Charge\Dto\GroupClientNameDto.cs" />
+    <Compile Include="Charge\Dto\GroupSQDHDto.cs" />
+    <Compile Include="Charge\Dto\GuIdDto.cs" />
+    <Compile Include="Charge\Dto\HIsInput.cs" />
+    <Compile Include="Charge\Dto\IndividualitiesDto.cs" />
+    <Compile Include="Charge\Dto\IndividualityDto.cs" />
+    <Compile Include="Charge\Dto\INTJSQDto.cs" />
+    <Compile Include="Charge\Dto\InYKCarNumDto.cs" />
+    <Compile Include="Charge\Dto\OutErrDto.cs" />
+    <Compile Include="Charge\Dto\ReceiptClientDto.cs" />
+    <Compile Include="Charge\Dto\SearchChagelistDto.cs" />
+    <Compile Include="Charge\Dto\SearchClientGroupDto.cs" />
+    <Compile Include="Charge\Dto\searchIDListDto.cs" />
+    <Compile Include="Charge\Dto\SearchSFTypeDto.cs" />
+    <Compile Include="Charge\Dto\SFDto.cs" />
+    <Compile Include="Charge\Dto\showCustomerItemGroupsDto.cs" />
+    <Compile Include="Charge\Dto\SqlWhereDto.cs" />
+    <Compile Include="Charge\Dto\ThreeBallCheckDto.cs" />
+    <Compile Include="Charge\Dto\TJSQMXDto.cs" />
+    <Compile Include="Charge\Dto\WebChargeDto.cs" />
+    <Compile Include="Charge\Dto\WebChargeInputDto.cs" />
+    <Compile Include="Charge\Dto\WebChargeOutDto.cs" />
+    <Compile Include="Charge\Dto\WebChargeShow.cs" />
+    <Compile Include="Charge\Dto\YHCustomerDto.cs" />
+    <Compile Include="Charge\Dto\ZFDZFP.cs" />
+    <Compile Include="Charge\Dto\ZFDZFPOUt.cs" />
+    <Compile Include="Charge\DZFPService.cs" />
+    <Compile Include="Charge\HttpRequestClient.cs" />
+    <Compile Include="Charge\Dto\OutMessDto.cs" />
+    <Compile Include="Charge\RSAUtil.cs" />
+    <Compile Include="Charge\WebChange.cs" />
+    <Compile Include="ClearData\ClearDataAppService.cs" />
+    <Compile Include="ClearData\Dto\ClearDataDto.cs" />
+    <Compile Include="ClearData\Dto\DataBaseDto.cs" />
+    <Compile Include="ClearData\Dto\DataBaseNameDto.cs" />
+    <Compile Include="ClearData\Dto\InputClearData.cs" />
+    <Compile Include="ClearData\IClearDataAppService.cs" />
+    <Compile Include="ClientInfoes\Dto\ClientInfoCacheDto.cs" />
+    <Compile Include="Common\Dto\CreateOpLogDto.cs" />
+    <Compile Include="Common\Dto\SearchOpLogDto.cs" />
+    <Compile Include="Common\Dto\ShowOpLogDto.cs" />
+    <Compile Include="Company\CompanyRelatedAppService.cs" />
+    <Compile Include="Company\Dto\ApplicationfromDto.cs" />
+    <Compile Include="Company\Dto\ClientCusMoneyListDto.cs" />
+    <Compile Include="Company\Dto\ClientCustomerRegDto.cs" />
+    <Compile Include="Company\Dto\ClientRegLQDto.cs" />
+    <Compile Include="Company\Dto\ClientRegNameComDto.cs" />
+    <Compile Include="Company\Dto\ClientTeamCusListDto.cs" />
+    <Compile Include="Company\Dto\CompanyFilterInput.cs" />
+    <Compile Include="Company\Dto\CompanyInformationDto.cs" />
+    <Compile Include="Company\Dto\CompanyInformationDtoNo2.cs" />
+    <Compile Include="Company\Dto\CompanyInformationDtoNo3.cs" />
+    <Compile Include="Company\Dto\CompanyRegisterDtoNo1.cs" />
+    <Compile Include="Company\Dto\CompanyRegisterForPrintDto.cs" />
+    <Compile Include="Company\Dto\CompanyRegisterTeamInformationDtoForComboBox.cs" />
+    <Compile Include="Company\Dto\CompanyReportPrintRecordDto.cs" />
+    <Compile Include="Company\Dto\CreateCompanyReportPrintRecordDto.cs" />
+    <Compile Include="Company\Dto\GetClientVerSionDto.cs" />
+    <Compile Include="Company\Dto\InquireGroupCustomerRegDto.cs" />
+    <Compile Include="Company\Dto\ItemGroupNameDto.cs" />
+    <Compile Include="Company\Dto\MonrySummaryDto.cs" />
+    <Compile Include="Company\Dto\SearchClientRegLQDto.cs" />
+    <Compile Include="Company\Dto\SearchGroupCustomerRegDto.cs" />
+    <Compile Include="Company\Dto\ShortMessageDto.cs" />
+    <Compile Include="Company\Dto\UpClientMZDto.cs" />
+    <Compile Include="Company\ICompanyRelatedAppService.cs" />
+    <Compile Include="Crisis\CrisisAppService.cs" />
+    <Compile Include="Crisis\Dto\AddCris.cs" />
+    <Compile Include="Crisis\Dto\CallBackDto.cs" />
+    <Compile Include="Crisis\Dto\CrisisCusInfoDto.cs" />
+    <Compile Include="Crisis\Dto\CrisisCustomerDto.cs" />
+    <Compile Include="Crisis\Dto\CrisisItemDto.cs" />
+    <Compile Include="Crisis\Dto\CrisisSetViewDto.cs" />
+    <Compile Include="Crisis\Dto\CrisVisitDto.cs" />
+    <Compile Include="Crisis\Dto\CrisVisitSelectDto.cs" />
+    <Compile Include="Crisis\Dto\CustomerServiceCrisisViewDto.cs" />
+    <Compile Include="Crisis\Dto\ReviewSetDto.cs" />
+    <Compile Include="Crisis\Dto\SearchCrisisInfosDto.cs" />
+    <Compile Include="Crisis\Dto\SetCrisisDto.cs" />
+    <Compile Include="Crisis\Dto\TjlCrisisSetDto.cs" />
+    <Compile Include="Crisis\ICrisisAppService.cs" />
+    <Compile Include="Critical\CriticalAppService.cs" />
+    <Compile Include="Critical\Dto\CrisisMessageDto.cs" />
+    <Compile Include="Critical\Dto\CriticalDetailDto.cs" />
+    <Compile Include="Critical\Dto\CriticalDto.cs" />
+    <Compile Include="Critical\Dto\SearchCriticalDto.cs" />
+    <Compile Include="Critical\Dto\SearchtCrisisMessageDto.cs" />
+    <Compile Include="Critical\Dto\UpCricalStateDto.cs" />
+    <Compile Include="Critical\ICriticalAppService.cs" />
+    <Compile Include="CrossTable\Dto\SetItemGroupAddMinusDto.cs" />
+    <Compile Include="CusReg\Dto\AbpTenantsDto.cs" />
+    <Compile Include="CusReg\Dto\AbpUsersDto.cs" />
+    <Compile Include="CusReg\Dto\ApplicationDto.cs" />
+    <Compile Include="CusReg\Dto\BdSatticDto.cs" />
+    <Compile Include="CusReg\Dto\BusiCusGRDtocs.cs" />
+    <Compile Include="CusReg\Dto\BusiCusRegDto.cs" />
+    <Compile Include="CusReg\Dto\BusiRSDto.cs" />
+    <Compile Include="CusReg\Dto\CardSuitNameDto.cs" />
+    <Compile Include="CusReg\Dto\CardToSuitNameDto.cs" />
+    <Compile Include="CusReg\Dto\CardTypeNameDto.cs" />
+    <Compile Include="CusReg\Dto\CusCardDto.cs" />
+    <Compile Include="CusReg\Dto\CustomerAddPackageDto.cs" />
+    <Compile Include="CusReg\Dto\CustomerAddPackageItemDto.cs" />
+    <Compile Include="CusReg\Dto\CustomerOCCPicDto.cs" />
+    <Compile Include="CusReg\Dto\CustomerQuestionDto.cs" />
+    <Compile Include="CusReg\Dto\CustomerRegCostDto.cs" />
+    <Compile Include="CusReg\Dto\CustomerRegRosterDto.cs" />
+    <Compile Include="CusReg\Dto\DepartMentCustomerRegOutPut.cs" />
+    <Compile Include="CusReg\Dto\DisageSumDTO.cs" />
+    <Compile Include="CusReg\Dto\FaceDto.cs" />
+    <Compile Include="CusReg\Dto\GBloodFatDto.cs" />
+    <Compile Include="CusReg\Dto\GBloodPressureDto.cs" />
+    <Compile Include="CusReg\Dto\GBloodSugarDto.cs" />
+    <Compile Include="CusReg\Dto\GBoDto.cs" />
+    <Compile Include="CusReg\Dto\GCholDto.cs" />
+    <Compile Include="CusReg\Dto\GCustomerResultDto.cs" />
+    <Compile Include="CusReg\Dto\getAuthKeyGetDto.cs" />
+    <Compile Include="CusReg\Dto\getAuthKeyReturnDto.cs" />
+    <Compile Include="CusReg\Dto\GHbDto.cs" />
+    <Compile Include="CusReg\Dto\GHeightDto.cs" />
+    <Compile Include="CusReg\Dto\GMedicalInfoDto.cs" />
+    <Compile Include="CusReg\Dto\GMemberDto.cs" />
+    <Compile Include="CusReg\Dto\GMinFatDto.cs" />
+    <Compile Include="CusReg\Dto\GPEEcgDto.cs" />
+    <Compile Include="CusReg\Dto\GroupPriceDto.cs" />
+    <Compile Include="CusReg\Dto\GsearchCustomerDto.cs" />
+    <Compile Include="CusReg\Dto\GTemperatureDto.cs" />
+    <Compile Include="CusReg\Dto\GUaDto.cs" />
+    <Compile Include="CusReg\Dto\GUrinalysisDto.cs" />
+    <Compile Include="CusReg\Dto\GWhrDto.cs" />
+    <Compile Include="CusReg\Dto\HisPriceInfoDto.cs" />
+    <Compile Include="CusReg\Dto\ImportDataDto.cs" />
+    <Compile Include="CusReg\Dto\InCardChageDto.cs" />
+    <Compile Include="CusReg\Dto\InSearchBusiCusDto.cs" />
+    <Compile Include="CusReg\Dto\OccQueCusDto.cs" />
+    <Compile Include="CusReg\Dto\OneAddQuestionsDto.cs" />
+    <Compile Include="CusReg\Dto\OutApplicationDto.cs" />
+    <Compile Include="CusReg\Dto\OutOldRegDto.cs" />
+    <Compile Include="CusReg\Dto\PersonTypeDto.cs" />
+    <Compile Include="CusReg\Dto\QueryAllForNumberDto.cs" />
+    <Compile Include="CusReg\Dto\QueryAllForNumberInput.cs" />
+    <Compile Include="CusReg\Dto\QueryAllForPayMoneyDto.cs" />
+    <Compile Include="CusReg\Dto\QueryAllForPersonDto.cs" />
+    <Compile Include="CusReg\Dto\QueryDepartCustomerRegDto.cs" />
+    <Compile Include="CusReg\Dto\ReportHSCusDto.cs" />
+    <Compile Include="CusReg\Dto\SaveCusGroupsDto.cs" />
+    <Compile Include="CusReg\Dto\SaveCusInfoDto.cs" />
+    <Compile Include="CusReg\Dto\SaveCusRegInfoDto.cs" />
+    <Compile Include="CusReg\Dto\SaveDJDto.cs" />
+    <Compile Include="CusReg\Dto\SearchApplyListDto.cs" />
+    <Compile Include="CusReg\Dto\SearchImportData.cs" />
+    <Compile Include="CusReg\Dto\SearchOccQueCus.cs" />
+    <Compile Include="CusReg\Dto\SearchOldRegDto.cs" />
+    <Compile Include="CusReg\Dto\SickNessDto.cs" />
+    <Compile Include="CusReg\Dto\SimBasicDictionariesDto.cs" />
+    <Compile Include="CusReg\Dto\StartupAlertCusRegDto.cs" />
+    <Compile Include="CusReg\Dto\StartupAlertDto.cs" />
+    <Compile Include="CusReg\Dto\StartupAlertGetDto.cs" />
+    <Compile Include="CusReg\TestService.cs" />
+    <Compile Include="CusReSultStatus\CusReSultStatusAppService.cs" />
+    <Compile Include="CusReSultStatus\Dto\AddResultSetDto.cs" />
+    <Compile Include="CusReSultStatus\Dto\FullReSultSetDto.cs" />
+    <Compile Include="CusReSultStatus\Dto\ReSultCusDepartDto.cs" />
+    <Compile Include="CusReSultStatus\Dto\ReSultCusDepartMentDto.cs" />
+    <Compile Include="CusReSultStatus\Dto\ReSultCusGroupDto.cs" />
+    <Compile Include="CusReSultStatus\Dto\ReSultCusInfoDto.cs" />
+    <Compile Include="CusReSultStatus\Dto\ReSultCusOccSumDto.cs" />
+    <Compile Include="CusReSultStatus\Dto\ReSultCusSumDto.cs" />
+    <Compile Include="CusReSultStatus\Dto\ReSultDepartDto.cs" />
+    <Compile Include="CusReSultStatus\Dto\ReSultCusItemDto.cs" />
+    <Compile Include="CusReSultStatus\Dto\ReSultSetDto.cs" />
+    <Compile Include="CusReSultStatus\Dto\ShowResultSetDto.cs" />
+    <Compile Include="CusReSultStatus\ICusReSultStatusAppService.cs" />
+    <Compile Include="CustomerRegisterItemPicture\CustomerRegisterItemPictureAppService.cs" />
+    <Compile Include="CustomerRegisterItemPicture\Dto\CustomerRegisterItemPictureDto.cs" />
+    <Compile Include="CustomerRegisterItemPicture\ICustomerRegisterItemPictureAppService.cs" />
+    <Compile Include="CustomerRegisterSummarize\CustomerRegisterSummarizeAppService.cs" />
+    <Compile Include="CustomerRegisterSummarize\Dto\CustomerRegisterSummarizeDto.cs" />
+    <Compile Include="CustomerRegisterSummarize\Dto\CustomerRegisterSummarizeSuggestDto.cs" />
+    <Compile Include="CustomerRegisterSummarize\ICustomerRegisterSummarizeAppService.cs" />
+    <Compile Include="CustomerRegister\CustomerRegisterAppService.cs" />
+    <Compile Include="CustomerRegister\CustomerRegisterItemGroupAppService.cs" />
+    <Compile Include="CustomerRegister\CustomerRegisterSummarizeAdviceAppService.cs" />
+    <Compile Include="CustomerRegister\Dto\CustomerInformationDtoNo1.cs" />
+    <Compile Include="CustomerRegister\Dto\CustomerRegisterAppServiceDot\CustomerRegister1Dto.cs" />
+    <Compile Include="CustomerRegister\Dto\CustomerRegisterDtoNo3.cs" />
+    <Compile Include="CustomerRegister\Dto\CustomerRegisterItemGroupDtoNo4.cs" />
+    <Compile Include="CustomerRegister\Dto\CustomerRegisterSummarizeAdviceDtoNo1.cs" />
+    <Compile Include="CustomerRegister\Dto\UserDtoNo1.cs" />
+    <Compile Include="CustomerRegister\ICustomerRegisterAppService.cs" />
+    <Compile Include="CustomerRegister\ICustomerRegisterItemGroupAppService.cs" />
+    <Compile Include="CustomerRegister\ICustomerRegisterSummarizeAdviceAppService.cs" />
+    <Compile Include="CustomerReport\Dto\ClientCabitCRDto.cs" />
+    <Compile Include="CustomerReport\Dto\ClientInfoOfPrintPreviewDto.cs" />
+    <Compile Include="CustomerReport\Dto\ClientRegForPrintPreviewDto.cs" />
+    <Compile Include="CustomerReport\Dto\ClientRegUpCatDto.cs" />
+    <Compile Include="CustomerReport\Dto\CusCabitLQDto.cs" />
+    <Compile Include="CustomerReport\Dto\CustomerForPrintPreviewDto.cs" />
+    <Compile Include="CustomerReport\Dto\CustomerRegForPrintPreviewDto.cs" />
+    <Compile Include="CustomerReport\Dto\CustomerUpCatDto.cs" />
+    <Compile Include="CustomerReport\Dto\ReportOccQueAllDto.cs" />
+    <Compile Include="CustomerReport\Dto\ReportOccQuesDto.cs" />
+    <Compile Include="CustomerReport\Dto\ReportOccQuesFamilyHistoryDto.cs" />
+    <Compile Include="CustomerReport\Dto\ReportOccQuesHisHazardDto.cs" />
+    <Compile Include="CustomerReport\Dto\ReportOccQuesHisProtectiveDto.cs" />
+    <Compile Include="CustomerReport\Dto\ReportOccQuesPastHistoryDto.cs" />
+    <Compile Include="CustomerReport\Dto\ReportOccQuesSymNameDto.cs" />
+    <Compile Include="CustomerReport\Dto\ReportOccQuesSymptomDto.cs" />
+    <Compile Include="CustomerReport\Dto\ReportQuesCareerHistoryDto.cs" />
+    <Compile Include="CustomerReport\Dto\SeachCusCabDto.cs" />
+    <Compile Include="CustomerReport\Dto\SearchCustomerRegForPrintPreviewDto.cs" />
+    <Compile Include="CustomerReport\Dto\TbmCabinetDto.cs" />
+    <Compile Include="CustomerReport\Dto\TjlCusCabitCRDto.cs" />
+    <Compile Include="CustomerReport\Dto\TjlCusCabitDto.cs" />
+    <Compile Include="DefinedProfiles\CustomerRegisterDepartmentSummaryProfile.cs" />
+    <Compile Include="DefinedProfiles\CustomerRegisterItemPictureProfile.cs" />
+    <Compile Include="DefinedProfiles\CustomerRegisterItemProfile.cs" />
+    <Compile Include="DefinedProfiles\CustomerRegisterProfile.cs" />
+    <Compile Include="DefinedProfiles\CustomerRegisterSummarizeProfile.cs" />
+    <Compile Include="DefinedProfiles\CustomerRegisterSummarizeSuggestProfile.cs" />
+    <Compile Include="Diagnosis\Dto\CusRegInfoDetailDto.cs" />
+    <Compile Include="Diagnosis\Dto\CusRegInfoMainDto.cs" />
+    <Compile Include="Diagnosis\Dto\CusRegInfoDto.cs" />
+    <Compile Include="Diagnosis\Dto\SearchItem.cs" />
+    <Compile Include="DoctorStation\Dto\CheckCusRegGroupDto.cs" />
+    <Compile Include="DoctorStation\Dto\CriticalCusDto.cs" />
+    <Compile Include="DoctorStation\Dto\CriticalItemDto.cs" />
+    <Compile Include="DoctorStation\Dto\CusGroupStateDto.cs" />
+    <Compile Include="DoctorStation\Dto\CusLockDto.cs" />
+    <Compile Include="DoctorStation\Dto\INCusItemPIcDto.cs" />
+    <Compile Include="DoctorStation\Dto\OutStateDto.cs" />
+    <Compile Include="DoctorStation\Dto\SaveCustomerQusTionDto.cs" />
+    <Compile Include="DoctorStation\Dto\SearchClientInfoDto.cs" />
+    <Compile Include="DoctorStation\Dto\SearchCusGroupDto.cs" />
+    <Compile Include="DoctorStation\Dto\TjlCustomerRegForDoctorDto.cs" />
+    <Compile Include="DynamicColumnDirectory\Dto\DynamicColumnConfigurationDtoNo1.cs" />
+    <Compile Include="DynamicColumnDirectory\Dto\DynamicColumnConfigurationDtoNo2.cs" />
+    <Compile Include="DynamicColumnDirectory\DynamicColumnAppService.cs" />
+    <Compile Include="DynamicColumnDirectory\IDynamicColumnAppService.cs" />
+    <Compile Include="Foreground\BloodWorkstationAppService.cs" />
+    <Compile Include="Foreground\Dto\BarSettingsDto.cs" />
+    <Compile Include="Foreground\Dto\CompanyInformation52Dto.cs" />
+    <Compile Include="Foreground\Dto\Customer52Dto.cs" />
+    <Compile Include="Foreground\Dto\CustomerCount.cs" />
+    <Compile Include="Foreground\Dto\CustomerRegister52Dto.cs" />
+    <Compile Include="Foreground\Dto\CustomerRegister52Dto1.cs" />
+    <Compile Include="Foreground\Dto\CustomerRegisterBarCodePrintInformationConditionInput.cs" />
+    <Compile Include="Foreground\Dto\CustomerRegisterBarCodePrintInformationDto.cs" />
+    <Compile Include="Foreground\Dto\UpdateBarCodeHaveBloodInput.cs" />
+    <Compile Include="Foreground\IBloodWorkstationAppService.cs" />
+    <Compile Include="FrmMakeCollect\Dto\InIdDto.cs" />
+    <Compile Include="FrmMakeCollect\Dto\InseachCusRegDto.cs" />
+    <Compile Include="FrmMakeCollect\Dto\ClientInfoMakeCollectDto.cs" />
+    <Compile Include="FrmMakeCollect\Dto\OutDepartCusDto.cs" />
+    <Compile Include="FrmMakeCollect\Dto\OutRegCusListDto.cs" />
+    <Compile Include="FrmMakeCollect\Dto\ShowMakeCollectDto.cs" />
+    <Compile Include="FrmMakeCollect\FrmMakeCollectAppService.cs" />
+    <Compile Include="FrmMakeCollect\IFrmMakeCollectAppService.cs" />
+    <Compile Include="GroupReport\Dto\ClientRegIdDto.cs" />
+    <Compile Include="GroupReport\Dto\CusRegBMDto.cs" />
+    <Compile Include="GroupReport\Dto\CusReviewGroupDto.cs" />
+    <Compile Include="GroupReport\Dto\HistoryGroupClientSumDto.cs" />
+    <Compile Include="GroupReport\Dto\ReGroupCusReg.cs" />
+    <Compile Include="GroupReport\Dto\SumClientDto.cs" />
+    <Compile Include="GroupReport\Dto\DepartTypeDto.cs" />
+    <Compile Include="GroupReport\Dto\GroupClientGroupDto.cs" />
+    <Compile Include="GroupReport\Dto\GroupCusGroupDto.cs" />
+    <Compile Include="GroupReport\Dto\GroupNoCheckCusDtocs.cs" />
+    <Compile Include="GroupReport\Dto\GroupSumBMDto.cs" />
+    <Compile Include="GroupReport\Dto\InOcccCusIDDto.cs" />
+    <Compile Include="HisInterface\HisCusInfoDto.cs" />
+    <Compile Include="HisInterface\HisPriceDtos.cs" />
+    <Compile Include="HisInterface\InCarNumDto.cs" />
+    <Compile Include="HisInterface\InCarNumPriceDto.cs" />
+    <Compile Include="HisInterface\TJSQDto.cs" />
+    <Compile Include="HisInterface\TJSQMXDto.cs" />
+    <Compile Include="HistoryComparison\Dto\DistinctDepartment.cs" />
+    <Compile Include="HistoryComparison\Dto\DistinctItem.cs" />
+    <Compile Include="HistoryComparison\Dto\DistinctItemGroup.cs" />
+    <Compile Include="HistoryComparison\Dto\HisDbDto.cs" />
+    <Compile Include="HistoryComparison\Dto\HisDepartSumDto.cs" />
+    <Compile Include="HistoryComparison\Dto\HisSumDto.cs" />
+    <Compile Include="HistoryComparison\Dto\HistoryItemDBDto.cs" />
+    <Compile Include="HistoryComparison\Dto\HistoryItemValueDto.cs" />
+    <Compile Include="HistoryComparison\Dto\HistoryResultDetailDto.cs" />
+    <Compile Include="HistoryComparison\Dto\HistoryResultDto.cs" />
+    <Compile Include="HistoryComparison\Dto\HistoryResultMainDto.cs" />
+    <Compile Include="HistoryComparison\Dto\InSerchHIsDto.cs" />
+    <Compile Include="HistoryComparison\Dto\OutHisValuesDto.cs" />
+    <Compile Include="HistoryComparison\Dto\SearchHisClassDto.cs" />
+    <Compile Include="HistoryComparison\HistoryComparisonAppService.cs" />
+    <Compile Include="HistoryComparison\Dto\SearchClass.cs" />
+    <Compile Include="HistoryComparison\Dto\SearchCustomerDepSummaryDto.cs" />
+    <Compile Include="HistoryComparison\Dto\SearchCustomerItemGroupDto.cs" />
+    <Compile Include="HistoryComparison\Dto\SearchCustomerRegDto.cs" />
+    <Compile Include="HistoryComparison\Dto\SearchCustomerRegItemDto.cs" />
+    <Compile Include="HistoryComparison\Dto\SearchCustomerSummaryDto.cs" />
+    <Compile Include="HistoryComparison\Dto\SrachCustomerItemPicDto.cs" />
+    <Compile Include="HistoryComparison\IHistoryComparisonAppService.cs" />
+    <Compile Include="Charge\Dto\ChargeClientDto.cs" />
+    <Compile Include="Charge\Dto\ChargeClientRegDto.cs" />
+    <Compile Include="Charge\Dto\ChargeCusDto.cs" />
+    <Compile Include="Charge\Dto\ChargeCusInfoDto.cs" />
+    <Compile Include="Charge\Dto\ChargeCusRegDto.cs" />
+    <Compile Include="Charge\Dto\ChargeCusShowDto.cs" />
+    <Compile Include="Charge\Dto\ChargeCusStateDto.cs" />
+    <Compile Include="Charge\Dto\ChargeTeamListViewDto.cs" />
+    <Compile Include="Charge\Dto\ChargeTeamMoneyViewDto.cs" />
+    <Compile Include="Charge\Dto\ChargeTeamNameDto.cs" />
+    <Compile Include="Charge\Dto\ChargeTypeDto.cs" />
+    <Compile Include="Charge\Dto\ChargQueryCusDto.cs" />
+    <Compile Include="Charge\Dto\ClientPayCusLisViewDto.cs" />
+    <Compile Include="Charge\Dto\ClientPayMoneyViewDto.cs" />
+    <Compile Include="Charge\Dto\CreateInvoiceRecordDto.cs" />
+    <Compile Include="Charge\Dto\CreateMReceiptInfoDetailedDto.cs" />
+    <Compile Include="Charge\Dto\CreatePaymentDto.cs" />
+    <Compile Include="Charge\Dto\CreateReceiptInfoDto.cs" />
+    <Compile Include="Charge\Dto\CreateTjlMDiurnalTableDto.cs" />
+    <Compile Include="Charge\Dto\CusGroupMoneyDto.cs" />
+    <Compile Include="Charge\Dto\CusPayMoneyViewDto.cs" />
+    <Compile Include="Charge\Dto\CusRegSimpleDto.cs" />
+    <Compile Include="Charge\Dto\InBackMoneyDto.cs" />
+    <Compile Include="Charge\Dto\InvoiceRecordViewDto.cs" />
+    <Compile Include="Charge\Dto\InvoiceViewDto.cs" />
+    <Compile Include="Charge\Dto\MReceiptClientDto.cs" />
+    <Compile Include="Charge\Dto\MReceiptInfoDetailedViewDto.cs" />
+    <Compile Include="Charge\Dto\MReceiptInfoPerDto.cs" />
+    <Compile Include="Charge\Dto\MReceiptInfoPerViewDto.cs" />
+    <Compile Include="Charge\Dto\MReceiptOrCustomerViewDto.cs" />
+    <Compile Include="Charge\Dto\PersonnelCategoryDto.cs" />
+    <Compile Include="Charge\Dto\PushMessageDto.cs" />
+    <Compile Include="Charge\Dto\ReceiptInfoPerViewDto.cs" />
+    <Compile Include="Charge\Dto\ReceiptInfoViewDto.cs" />
+    <Compile Include="Charge\Dto\SeachChargrDto.cs" />
+    <Compile Include="Charge\Dto\SearchGuidsDto.cs" />
+    <Compile Include="Charge\Dto\SearchInvoiceDto.cs" />
+    <Compile Include="Charge\Dto\SearchMLGroupDto.cs" />
+    <Compile Include="Charge\Dto\SearchPayMoneyDto.cs" />
+    <Compile Include="Charge\Dto\SettlementInfoViewDto.cs" />
+    <Compile Include="Charge\Dto\UpdateChargeStateDto.cs" />
+    <Compile Include="Charge\Dto\UpdateTjlMcusMoneyDto.cs" />
+    <Compile Include="ClientInfoes\Dto\ClientInfoesDto.cs" />
+    <Compile Include="ClientInfoes\Dto\ClientInfosNameDto.cs" />
+    <Compile Include="ClientInfoes\Dto\ClientInfosViewDto.cs" />
+    <Compile Include="Common\Dto\AdministrativeDivisionDto.cs" />
+    <Compile Include="Common\PageHelper.cs" />
+    <Compile Include="Company\Dto\ClientInfoRegDto.cs" />
+    <Compile Include="Company\Dto\ClientTeamRegDto.cs" />
+    <Compile Include="Company\Dto\ClientRegSelectDto.cs" />
+    <Compile Include="Company\Dto\ClientTeamInfoesViewDto.cs" />
+    <Compile Include="Company\Dto\ClientTeamInfosDto.cs" />
+    <Compile Include="Company\Dto\ClientTeamRegitemViewDto.cs" />
+    <Compile Include="Company\Dto\CreateClientTeamInfoesDto.cs" />
+    <Compile Include="Company\Dto\CreateClientTeamRegItemDto.cs" />
+    <Compile Include="Company\Dto\CustomerRegsInputDto.cs" />
+    <Compile Include="Company\Dto\CustomerRegsViewDto.cs" />
+    <Compile Include="Company\Dto\CustomersViewDto.cs" />
+    <Compile Include="Company\Dto\StatisticsTTJZDDepartmentDto.cs" />
+    <Compile Include="Company\Dto\StatisticsTTJZDPersonalTTJZDDto.cs" />
+    <Compile Include="Company\Dto\StatisticsTTJZDTeamTTJZDDto.cs" />
+    <Compile Include="CusReg\Dto\BatchRegInputDto.cs" />
+    <Compile Include="CusReg\Dto\CusRegListViewDto.cs" />
+    <Compile Include="CusReg\Dto\CustomerInfoXmlDto.cs" />
+    <Compile Include="CusReg\Dto\SearchCusRegListDto.cs" />
+    <Compile Include="DailyNewspaper\DailyNewspaperAppService.cs" />
+    <Compile Include="DailyNewspaper\Dto\QuerySunMoon.cs" />
+    <Compile Include="DailyNewspaper\Dto\SearchCustomerDto.cs" />
+    <Compile Include="DailyNewspaper\Dto\SearchCustomerRegDto.cs" />
+    <Compile Include="DailyNewspaper\Dto\SearchMPaymentDto.cs" />
+    <Compile Include="DailyNewspaper\Dto\SearchMReceiptDetailsDto.cs" />
+    <Compile Include="DailyNewspaper\Dto\SearchMReceiptInfoDto.cs" />
+    <Compile Include="DailyNewspaper\IDailyNewspaperAppService.cs" />
+    <Compile Include="DoctorStation\Dto\CreateConclusionDto.cs" />
+    <Compile Include="DoctorStation\Dto\InterfaceBack.cs" />
+    <Compile Include="GroupReport\Dto\GroupClientSumDto.cs" />
+    <Compile Include="Company\Dto\RegsChargeCusDto.cs" />
+    <Compile Include="Company\Dto\SearchClientTeamIdorTeamRegDto.cs" />
+    <Compile Include="Company\Dto\SearchClientTeamInfoDto.cs" />
+    <Compile Include="Compose\ComposeAppService.cs" />
+    <Compile Include="Compose\Dto\ComposeGroupItemDto.cs" />
+    <Compile Include="Compose\Dto\CreateOrUpdateComposeGroupItemDto.cs" />
+    <Compile Include="Compose\Dto\CreateOrUpdateComposeDto.cs" />
+    <Compile Include="Compose\Dto\CreateOrUpdateComposeGroupDto.cs" />
+    <Compile Include="Compose\Dto\CreateOrUpdateComposeGroupInput.cs" />
+    <Compile Include="Compose\Dto\CreateOrUpdateComposeInput.cs" />
+    <Compile Include="Compose\Dto\FullComposeGroupDto.cs" />
+    <Compile Include="Compose\Dto\FullComposeDto.cs" />
+    <Compile Include="Compose\Dto\ComposeDto.cs" />
+    <Compile Include="Compose\Dto\ComposeGroupDto.cs" />
+    <Compile Include="Compose\Dto\SearchComposeInput.cs" />
+    <Compile Include="Compose\IComposeAppService.cs" />
+    <Compile Include="CrossTable\Dto\CrossTableViewDto.cs" />
+    <Compile Include="CrossTable\Dto\CusGiveUpDto.cs" />
+    <Compile Include="CrossTable\Dto\CustomerRegForCrossTableDto.cs" />
+    <Compile Include="CrossTable\Dto\CustomerRegForCrossTableViewDto.cs" />
+    <Compile Include="CrossTable\Dto\EditItemGroupStateInput.cs" />
+    <Compile Include="CrossTable\Dto\QuerCustomerItemsDto.cs" />
+    <Compile Include="CrossTable\Dto\QueryGiveUpDto.cs" />
+    <Compile Include="Company\Dto\SearchClientRegStatisticsOverTheYearsDto.cs" />
+    <Compile Include="Company\Dto\ViewClientRegStatisticsOverTheYearsDto.cs" />
+    <Compile Include="CusReg\Dto\CustomerRegSimpleViewDto.cs" />
+    <Compile Include="CusReg\Dto\CustomerRegOrItemViewDto.cs" />
+    <Compile Include="CusReg\Dto\EditCustomerRegStatesDto.cs" />
+    <Compile Include="CusReg\Dto\GuideUpdateCustomerItemGroupDto.cs" />
+    <Compile Include="CusReg\Dto\GuideUpdateCustomerRegDto.cs" />
+    <Compile Include="CusReg\Dto\ViewQueryRegNumbersDto.cs" />
+    <Compile Include="CusReg\Dto\CustomerItemGroupBarItemDto.cs" />
+    <Compile Include="CusReg\Dto\CustomerRegViewDto.cs" />
+    <Compile Include="CusReg\Dto\SearchCustomerDto.cs" />
+    <Compile Include="CustomerReport\Dto\CustomerPrintInfoOutput.cs" />
+    <Compile Include="CustomerReport\Dto\CustomerReportByNumber.cs" />
+    <Compile Include="CustomerReport\IPrintPreviewAppService.cs" />
+    <Compile Include="CustomerReport\PrintPreviewAppService.cs" />
+    <Compile Include="Department\Dto\DepartmentSimpleDto.cs" />
+    <Compile Include="Dictionary\DictionaryAppService.cs" />
+    <Compile Include="Dictionary\Dto\DictionaryDepartmentDto.cs" />
+    <Compile Include="Dictionary\Dto\DictionaryItemDictionaryDto.cs" />
+    <Compile Include="Dictionary\Dto\DictionaryItemInfoDto.cs" />
+    <Compile Include="Dictionary\IDictionaryAppService.cs" />
+    <Compile Include="DoctorStation\Dto\InterfaceCustomerRegDto.cs" />
+    <Compile Include="DoctorStation\Dto\CreateSectionSummary.cs" />
+    <Compile Include="DoctorStation\Dto\CustomerItemGroupPrintViewDto.cs" />
+    <Compile Include="DoctorStation\Dto\ATjlCustomerItemGroupPrintGuidanceDto.cs" />
+    <Compile Include="DoctorStation\Dto\CustomerDepSummaryViewDto.cs" />
+    <Compile Include="DoctorStation\Dto\CreateCustomerDepSummary.cs" />
+    <Compile Include="DoctorStation\Dto\CustomerItemPicDto.cs" />
+    <Compile Include="DoctorStation\Dto\SearchCustomerRegIdDto.cs" />
+    <Compile Include="DoctorStation\Dto\SearchItemStandardDto.cs" />
+    <Compile Include="DoctorStation\Dto\SearchItemSuitStatisticsDto.cs" />
+    <Compile Include="DoctorStation\Dto\SearchKSGZLItemStatisticsDto.cs" />
+    <Compile Include="DoctorStation\Dto\SearchKSGZLStatisticsDto.cs" />
+    <Compile Include="DoctorStation\Dto\SearchTbmSummarizeAdviceDto.cs" />
+    <Compile Include="DoctorStation\Dto\SearchTjlCustomerSummaryDto.cs" />
+    <Compile Include="DoctorStation\Dto\TdbInterfaceWhere.cs" />
+    <Compile Include="DoctorStation\Dto\TjlCustomerRegItemReoprtDto.cs" />
+    <Compile Include="DoctorStation\Dto\UpdateCustomerItemGroupDto.cs" />
+    <Compile Include="DoctorStation\Dto\UpdateCustomerRegItemDto.cs" />
+    <Compile Include="FrmSeleteItemGroup\Dto\SelectDepartmentDto.cs" />
+    <Compile Include="FrmSeleteItemGroup\Dto\SeleteItemGroupDto.cs" />
+    <Compile Include="FrmSeleteItemGroup\ISeleteItemGroupAppService.cs" />
+    <Compile Include="FrmSeleteItemGroup\SeleteItemGroupAppService.cs" />
+    <Compile Include="GroupReport\Dto\GroupClientCusDto.cs" />
+    <Compile Include="GroupReport\Dto\GroupClientInfoDto.cs" />
+    <Compile Include="GroupReport\Dto\GroupClientItemsDto.cs" />
+    <Compile Include="GroupReport\Dto\GroupClientRegDto.cs" />
+    <Compile Include="GroupReport\Dto\GroupClientTeamInfoDto.cs" />
+    <Compile Include="GroupReport\Dto\GroupCusReg.cs" />
+    <Compile Include="GroupReport\Dto\GroupCustomerDto.cs" />
+    <Compile Include="GroupReport\Dto\GroupCustomerRegDto.cs" />
+    <Compile Include="GroupReport\Dto\SelectClientRewDto.cs" />
+    <Compile Include="GroupReport\Dto\SelectGroupClientInfoDto.cs" />
+    <Compile Include="GroupReport\GroupReportAppService.cs" />
+    <Compile Include="GroupReport\IGroupReportAppService.cs" />
+    <Compile Include="GuideListCollection\Dto\CustomerQuery.cs" />
+    <Compile Include="GuideListCollection\Dto\CustomerRegQuery.cs" />
+    <Compile Include="GuideListCollection\GuideListCollectionAppService.cs" />
+    <Compile Include="GuideListCollection\IGuideListCollectionAppService.cs" />
+    <Compile Include="IDNumber\Dto\CreateIdNumberDto.cs" />
+    <Compile Include="IDNumber\Dto\NameDto.cs" />
+    <Compile Include="InspectionTotal\CustomerRegisterDepartmentSummaryAppService.cs" />
+    <Compile Include="InspectionTotal\CustomerRegisterItemAppService.cs" />
+    <Compile Include="InspectionTotal\Dto\BeforSaveSumDto.cs" />
+    <Compile Include="InspectionTotal\Dto\CusGiveUpShowDto.cs" />
+    <Compile Include="InspectionTotal\Dto\CusGroupShowDto.cs" />
+    <Compile Include="InspectionTotal\Dto\CusReViewGroupDto.cs" />
+    <Compile Include="InspectionTotal\Dto\CustomerGroupSumDto.cs" />
+    <Compile Include="InspectionTotal\Dto\BeforSumCustomerRegDto.cs" />
+    <Compile Include="InspectionTotal\Dto\CustomerItemGroupZYBDto.cs" />
+    <Compile Include="InspectionTotal\Dto\CustomerRegInspectGroupDto.cs" />
+    <Compile Include="InspectionTotal\Dto\CustomerRegisterItemAppServiceDto\CustomerRegisterItemDto.cs" />
+    <Compile Include="InspectionTotal\Dto\CusTypeGroupStateDto.cs" />
+    <Compile Include="InspectionTotal\Dto\DepartCategoryDto.cs" />
+    <Compile Include="InspectionTotal\Dto\DepartmentOrderDto.cs" />
+    <Compile Include="InspectionTotal\Dto\INCusSumSateDto.cs" />
+    <Compile Include="InspectionTotal\Dto\ItemGroupOrderDto.cs" />
+    <Compile Include="InspectionTotal\Dto\JKZCusDto.cs" />
+    <Compile Include="InspectionTotal\Dto\LockStateDto.cs" />
+    <Compile Include="InspectionTotal\Dto\OccCustomerHazardSumDto.cs" />
+    <Compile Include="InspectionTotal\Dto\OccEditCustomerRegStateDto.cs" />
+    <Compile Include="InspectionTotal\Dto\OutMesDto.cs" />
+    <Compile Include="InspectionTotal\Dto\preCusGroupDto.cs" />
+    <Compile Include="InspectionTotal\Dto\reportCusReSumDto.cs" />
+    <Compile Include="InspectionTotal\Dto\SumAdviseDto.cs" />
+    <Compile Include="InspectionTotal\Dto\TjlCustomerRegForInspectionTotalSearchDto.cs" />
+    <Compile Include="InspectionTotal\Dto\UpCusIllStateDto.cs" />
+    <Compile Include="InspectionTotal\ICustomerRegisterItemAppService.cs" />
+    <Compile Include="InspectionTotal\Dto\CustomerRegisterDepartmentSummaryAppServiceDto\CustomerRegisterDepartmentSummaryDto.cs" />
+    <Compile Include="InspectionTotal\ICustomerRegisterDepartmentSummaryAppService.cs" />
+    <Compile Include="InspectionTotal\Dto\CraetOccCustomerOccDiseasesDto.cs" />
+    <Compile Include="InspectionTotal\Dto\CreateCustomerSummarizeDto.cs" />
+    <Compile Include="InspectionTotal\Dto\CreatOccCustomerContraindicationDto.cs" />
+    <Compile Include="InspectionTotal\Dto\CusReViewDto.cs" />
+    <Compile Include="InspectionTotal\Dto\CustomerRegDateDto.cs" />
+    <Compile Include="InspectionTotal\Dto\CustomerRegInspectItemDto.cs" />
+    <Compile Include="InspectionTotal\Dto\EditCustomerRegStateDto.cs" />
+    <Compile Include="InspectionTotal\Dto\InputOccCusSumDto.cs" />
+    <Compile Include="InspectionTotal\Dto\InSearchCusDto.cs" />
+    <Compile Include="InspectionTotal\Dto\OccCusDiseaseDto.cs" />
+    <Compile Include="InspectionTotal\Dto\CreatOccCustomerSumDto.cs" />
+    <Compile Include="InspectionTotal\Dto\OccTargetDiseaseByRisk.cs" />
+    <Compile Include="InspectionTotal\Dto\OccCusContraindicationDto.cs" />
+    <Compile Include="InspectionTotal\Dto\OutCusListDto.cs" />
+    <Compile Include="InspectionTotal\Dto\OutOccCustomerSumDto.cs" />
+    <Compile Include="InspectionTotal\Dto\reportCusReViewDto.cs" />
+    <Compile Include="InspectionTotal\Dto\SearchCustomerRegDto.cs" />
+    <Compile Include="InspectionTotal\Dto\TbmSumHideDto.cs" />
+    <Compile Include="InspectionTotal\Dto\TjlCustomerItemGroupDto.cs" />
+    <Compile Include="InspectionTotal\Dto\TjlClientInfoDto.cs" />
+    <Compile Include="InspectionTotal\Dto\InspectionTotalListDto.cs" />
+    <Compile Include="InspectionTotal\Dto\TjlCustomerSummBackDto.cs" />
+    <Compile Include="InspectionTotal\Dto\TjlCustomerRegItemDto.cs" />
+    <Compile Include="InspectionTotal\Dto\TjlCustomerSummarizeBMViewDto.cs" />
+    <Compile Include="InterfaceEmployeeComparison\Dto\InterfaceEmployeeComparisonDto.cs" />
+    <Compile Include="InterfaceEmployeeComparison\IInterfaceEmployeeComparisonAppService.cs" />
+    <Compile Include="InterfaceEmployeeComparison\InterfaceEmployeeComparisonAppService.cs" />
+    <Compile Include="InterfaceItemComparison\Dto\InsertInterfaceEmpDto.cs" />
+    <Compile Include="InterfaceItemComparison\Dto\InsertInterfaceItemDto.cs" />
+    <Compile Include="InterfaceItemComparison\Dto\InsertInterfaceItemGroupDto.cs" />
+    <Compile Include="InterfaceItemComparison\Dto\InterfaceDepartmentDto.cs" />
+    <Compile Include="InterfaceItemComparison\Dto\InterfaceGroupDto.cs" />
+    <Compile Include="InterfaceItemComparison\Dto\InterfaceItemDto.cs" />
+    <Compile Include="InterfaceItemComparison\Dto\InterfaceItemsDto.cs" />
+    <Compile Include="InterfaceItemComparison\Dto\InterfaceUserDto.cs" />
+    <Compile Include="InterfaceItemComparison\Dto\SearchInterfaceEmpDto.cs" />
+    <Compile Include="InterfaceItemComparison\Dto\SearchInterfaceItemDto.cs" />
+    <Compile Include="InterfaceItemComparison\Dto\SearchInterIFaceItemComparisonDto.cs" />
+    <Compile Include="InterfaceItemComparison\IInterfaceItemAppService.cs" />
+    <Compile Include="InterfaceItemComparison\InterfaceItemAppService.cs" />
+    <Compile Include="InterfaceItemGroupComparison\Dto\InterfaceItemGroupComparisonDto.cs" />
+    <Compile Include="InterfaceItemComparison\Dto\InterfaceItemGroupsDto.cs" />
+    <Compile Include="InterfaceItemGroupComparison\IInterfaceItemGroupComparisonAppService.cs" />
+    <Compile Include="InterfaceItemGroupComparison\InterfaceItemGroupComparisonAppService.cs" />
+    <Compile Include="InterfaceItemComparison\Dto\InterfaceItemComparisonDto.cs" />
+    <Compile Include="InterfaceItemComparison\IInterfaceItemComparisonAppService.cs" />
+    <Compile Include="InterfaceItemComparison\InterfaceItemComparisonAppService.cs" />
+    <Compile Include="ItemGroup\Dto\ConfiITemDto.cs" />
+    <Compile Include="ItemGroup\Dto\ConfiStrDto.cs" />
+    <Compile Include="ItemGroup\Dto\CreateOrUpdateItemGroup.cs" />
+    <Compile Include="ItemGroup\Dto\priceSynDto.cs" />
+    <Compile Include="ItemGroup\Dto\SearchItemGroupDto.cs" />
+    <Compile Include="ItemGroup\Dto\SearIdsDto.cs" />
+    <Compile Include="ItemGroup\Dto\TbmGroupRePriceSynchronizesDto.cs" />
+    <Compile Include="ItemInfo\Dto\CreateItemProExpressDto.cs" />
+    <Compile Include="ItemInfo\Dto\ItemProcExpressDto.cs" />
+    <Compile Include="ItemInfo\Dto\SimpItemInfoDto.cs" />
+    <Compile Include="ItemInfo\Dto\UpItemUnit.cs" />
+    <Compile Include="ItemSuit\Dto\CreateOrUpdateItemSuitDto.cs" />
+    <Compile Include="ItemSuit\Dto\ItemSuitGroupSimpDto.cs" />
+    <Compile Include="ItemSuit\Dto\SearchItemSuitDto.cs" />
+    <Compile Include="ItemSuit\Dto\SimpleSubsetItemSuitDto.cs" />
+    <Compile Include="Market\ComplaintAppService.cs" />
+    <Compile Include="Market\ContractAppService.cs" />
+    <Compile Include="Market\Dto\CompanyDtoForComboBox.cs" />
+    <Compile Include="Market\Dto\CompanyDtoForComplaint.cs" />
+    <Compile Include="Market\Dto\CompanyRegisterDtoForComboBox.cs" />
+    <Compile Include="Market\Dto\CompanyRegisterDtoForComplaint.cs" />
+    <Compile Include="Market\Dto\CompanyRegisterTeamDtoForComplaint.cs" />
+    <Compile Include="Market\Dto\ComplaintInformationDto.cs" />
+    <Compile Include="Market\Dto\ContractAdjunctDto.cs" />
+    <Compile Include="Market\Dto\ContractCategoryDto.cs" />
+    <Compile Include="Market\Dto\ContractInformationDto.cs" />
+    <Compile Include="Market\Dto\ContractInformationFullDto.cs" />
+    <Compile Include="Market\Dto\ContractInvoiceDto.cs" />
+    <Compile Include="Market\Dto\ContractProceedsDto.cs" />
+    <Compile Include="Market\Dto\CustomerDtoForComplaint.cs" />
+    <Compile Include="Market\Dto\CustomerRegisterDtoForComplaint.cs" />
+    <Compile Include="Market\Dto\QueryComplaintConditionInput.cs" />
+    <Compile Include="Market\Dto\QueryContractCategoryConditionInput.cs" />
+    <Compile Include="Market\Dto\QueryContractConditionInput.cs" />
+    <Compile Include="Market\Dto\UpdateComplaintInformationDto.cs" />
+    <Compile Include="Market\IComplaintAppService.cs" />
+    <Compile Include="Market\IContractAppService.cs" />
+    <Compile Include="MemberShipCard\Dto\FullTbmCardTypeDto.cs" />
+    <Compile Include="MemberShipCard\Dto\ItemSuitsDto.cs" />
+    <Compile Include="MemberShipCard\Dto\SearchTbmCardTypeDto.cs" />
+    <Compile Include="MemberShipCard\Dto\ShowTbmCardTypeDto.cs" />
+    <Compile Include="MemberShipCard\Dto\TbmCardTypeDto.cs" />
+    <Compile Include="MemberShipCard\Dto\TbmItemSuitDto.cs" />
+    <Compile Include="MemberShipCard\IMemberShipCardAppService.cs" />
+    <Compile Include="MemberShipCard\MemberShipCardAppService.cs" />
+    <Compile Include="MRise\IMRiseAppService.cs" />
+    <Compile Include="MRise\MRiseAppService.cs" />
+    <Compile Include="OAApproval\Dto\CreateClientXKSetDto.cs" />
+    <Compile Include="OAApproval\Dto\CreatOAApproValcsDto.cs" />
+    <Compile Include="OAApproval\Dto\SearchOAApproValcsDto.cs" />
+    <Compile Include="OAApproval\Dto\UpOAApproValcsDto.cs" />
+    <Compile Include="OAApproval\IOAApprovalAppService.cs" />
+    <Compile Include="OAApproval\OAApprovalAppService.cs" />
+    <Compile Include="OccAbnormalResult\Dto\OutOccAbnormalResult.cs" />
+    <Compile Include="OccAbnormalResult\IOccAbnormalResultAppService.cs" />
+    <Compile Include="OccAbnormalResult\OccAbnormalResultAppService.cs" />
+    <Compile Include="OccConclusioncontraindication\Dto\OccConclusioncontraindicationShowDto.cs" />
+    <Compile Include="OccConclusioncontraindication\Dto\OccContraindicationGet.cs" />
+    <Compile Include="OccConclusioncontraindication\IOccupationalcontraindicationAppService.cs" />
+    <Compile Include="OccConclusioncontraindication\OccupationalcontraindicationAppService.cs" />
+    <Compile Include="OccConclusionStatistics\Dto\OccConclusionStatisticsShowDto.cs" />
+    <Compile Include="OccConclusionStatistics\Dto\OccStatisticsShowGet.cs" />
+    <Compile Include="OccConclusionStatistics\Dto\OccYearsAllStaticsDto.cs" />
+    <Compile Include="OccConclusionStatistics\Dto\OccYearsSaticsDto.cs" />
+    <Compile Include="OccConclusionStatistics\Dto\OccZYBStatisticsDto.cs" />
+    <Compile Include="OccConclusionStatistics\Dto\OccYearsStatisticsDto.cs" />
+    <Compile Include="OccConclusionStatistics\Dto\TjlCustomerDto.cs" />
+    <Compile Include="OccConclusionStatistics\Dto\TjlCustomerRegDto.cs" />
+    <Compile Include="OccConclusionStatistics\IOccConclusionStatisticsAppService.cs" />
+    <Compile Include="OccConclusionStatistics\OccConclusionStatisticsAppService.cs" />
+    <Compile Include="OccConclusionSuspected\Dto\OccConclusionSuspectedShow.cs" />
+    <Compile Include="OccConclusionSuspected\Dto\OccSuspectedGet.cs" />
+    <Compile Include="OccConclusionSuspected\IOccConclusionSuspectedAppService.cs" />
+    <Compile Include="OccConclusionSuspected\OccConclusionSuspectedAppService.cs" />
+    <Compile Include="OccConclusionTarget\Dto\OccConclusionTargetDto.cs" />
+    <Compile Include="OccConclusionTarget\Dto\TargetGetDto.cs" />
+    <Compile Include="OccConclusionTarget\IOccConclusionTargetAppService.cs" />
+    <Compile Include="OccConclusionTarget\OccConclusionTargetAppService.cs" />
+    <Compile Include="OccConclusionYear\Dto\OccConclusionYearShowDto.cs" />
+    <Compile Include="OccConclusionYear\IOccConclusionYearAppService.cs" />
+    <Compile Include="OccConclusionYear\OccConclusionYearAppService.cs" />
+    <Compile Include="OccCusInfoOut\Dto\OutOccAllDto.cs" />
+    <Compile Include="OccCusInfoOut\Dto\OutOccClientInfoDto.cs" />
+    <Compile Include="OccCusInfoOut\Dto\OutOccCusInfoDto.cs" />
+    <Compile Include="OccCusInfoOut\Dto\OutOccCusItemDto.cs" />
+    <Compile Include="OccCusInfoOut\Dto\OutOccCusSumDto.cs" />
+    <Compile Include="OccCusInfoOut\Dto\OutOccRiskSDto.cs" />
+    <Compile Include="OccCusInfoOut\Dto\OutOccRiskSTimeDto.cs" />
+    <Compile Include="OccCusInfoOut\IOccCusInfoOutAppService.cs" />
+    <Compile Include="OccCusInfoOut\OccCusInfoOutAppService.cs" />
+    <Compile Include="OccDayStatic\Dto\INOccMothDto.cs" />
+    <Compile Include="OccDayStatic\Dto\OutOccDayDto.cs" />
+    <Compile Include="OccDayStatic\Dto\OutOccMothDto.cs" />
+    <Compile Include="OccDayStatic\IOccDayStaticAppService.cs" />
+    <Compile Include="OccDayStatic\OccDayStaticAppService.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\fullOccupationHistoryDto.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\OccdieaseBasicGet.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\OccdieaseBasicInformationDto.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\occdieaseCarrerrucan.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\OccReportQuesMerriyHistoryDto.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\OccQuesMerriyHistoryDto.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\OccQuesRadioactiveCareerHistoryDto.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\OccQuestionCareerrucanDto.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\OccdieaseHistoryRucan.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\OccdieaseHurtDto.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\OccdieaseProtectDto.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\OccQuesFamilyHistoryDto.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\OccQuesPastHistoryDto.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\OccQuesSymptomDto.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\OccQuestionFamilyrucan.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\OccQuestionCareerrucanDtos.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\OccQuestionFamilyrucanDto.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\OccQuestionnaireDto.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\OccQuestionPastAddrucan.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\OccQustionSymptomrucan.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\OccQustionSymptomrucanDto.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\OccReportQuesRadioactiveCareerHistoryDto.cs.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\OccupationHistoryDto.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\SaveCusDto.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\SimpOccHazardFactorDto.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\SimpOccHazardFactorsProtectiveDto.cs" />
+    <Compile Include="OccdiseaseConsulitation\Dto\TjlCusomerDto.cs" />
+    <Compile Include="OccdiseaseConsulitation\IOccdiseaseConsulitationAppService.cs" />
+    <Compile Include="OccdiseaseConsulitation\OccdiseaseConsulitationAppService.cs" />
+    <Compile Include="OccdiseaseSet\OccdiseaseMain\Dto\CreatOccDiseaseDto.cs" />
+    <Compile Include="OccdiseaseSet\OccdiseaseMain\Dto\OccCreateOrUpdateDto.cs" />
+    <Compile Include="OccdiseaseSet\OccdiseaseMain\Dto\OccDieaseAndStandardDto.cs" />
+    <Compile Include="OccdiseaseSet\OccdiseaseMain\Dto\Occdieaserucan.cs" />
+    <Compile Include="OccdiseaseSet\OccdiseaseMain\Dto\OccDiseaseDto.cs" />
+    <Compile Include="OccdiseaseSet\OccdiseaseMain\Dto\OccDiseaseInput.cs" />
+    <Compile Include="OccdiseaseSet\OccdiseaseMain\Dto\OccDiseaseStandardDto.cs" />
+    <Compile Include="OccdiseaseSet\OccdiseaseMain\Dto\OccStandrdGetDto.cs" />
+    <Compile Include="OccdiseaseSet\OccdiseaseMain\Dto\OutOccDiseaseDto.cs" />
+    <Compile Include="OccdiseaseSet\OccdiseaseMain\Dto\ParentDicDto.cs" />
+    <Compile Include="OccdiseaseSet\OccdiseaseMain\IOccDiseaseAppService.cs" />
+    <Compile Include="OccdiseaseSet\OccdiseaseMain\OccDiseaseAppService.cs" />
+    <Compile Include="OccDisProposalNew\Dto\OutOccDictionaryDto.cs" />
+    <Compile Include="OccDisProposalNew\Dto\SerachOccdictionary.cs" />
+    <Compile Include="OccDisProposalNew\Dto\ShowOccDictionary.cs" />
+    <Compile Include="OccDisProposalNew\Dto\TbmOccDictionaryDto.cs" />
+    <Compile Include="OccDisProposalNew\IOccDisProposalNewAppService.cs" />
+    <Compile Include="OccDisProposalNew\OccDisProposalNewAppService.cs" />
+    <Compile Include="OccDisRequisition\Dto\OutOccCustomerSumDto.cs" />
+    <Compile Include="OccDisRequisition\IOccDisRequisitionAppService.cs" />
+    <Compile Include="OccDisRequisition\OccDisRequisitionAppService.cs" />
+    <Compile Include="OccDisRequisition\Dto\OccNameDto.cs" />
+    <Compile Include="OccGroupReport\Dto\cusSumRevITemsDto.cs" />
+    <Compile Include="OccCusInfoOut\Dto\InOccSearchDto.cs" />
+    <Compile Include="OccGroupReport\Dto\OccCusInfoDto.cs" />
+    <Compile Include="OccGroupReport\Dto\OccCusRegDto.cs" />
+    <Compile Include="OccGroupReport\Dto\OccCustomerContraindicationDto.cs" />
+    <Compile Include="OccGroupReport\Dto\OccCustomerRegHazardSumDto.cs" />
+    <Compile Include="OccGroupReport\Dto\OccCustomerItemDto.cs" />
+    <Compile Include="OccGroupReport\Dto\OccCustomerOccDiseasesDto.cs" />
+    <Compile Include="OccGroupReport\Dto\OccCustomerSumDto.cs" />
+    <Compile Include="OccGroupReport\Dto\OccTargetCountDto.cs" />
+    <Compile Include="OccGroupReport\Dto\SimGroupClientCusDto.cs" />
+    <Compile Include="OccGroupReport\IOccGroupReportAppService.cs" />
+    <Compile Include="OccGroupReport\OccGroupReportAppService.cs" />
+    <Compile Include="OccHarmFul\Dto\OutOccFactoryDto.cs" />
+    <Compile Include="OccHarmFul\IOccHarmFulAppService.cs" />
+    <Compile Include="OccHarmFul\OccHarmFulAppService.cs" />
+    <Compile Include="OccHazardFactor\Dto\CreateOrUpdateHazardFactorDto.cs" />
+    <Compile Include="OccHazardFactor\Dto\FullHarardFactor.cs" />
+    <Compile Include="OccHazardFactor\Dto\HazardFactorsProtective.cs" />
+    <Compile Include="OccHazardFactor\Dto\RadiationDto.cs" />
+    <Compile Include="OccHazardFactor\Dto\OutOccHazardFactorDto.cs" />
+    <Compile Include="OccHazardFactor\Dto\ParentHazardFactorDto.cs" />
+    <Compile Include="OccHazardFactor\Dto\ShowOccHazardFactorDto.cs" />
+    <Compile Include="OccHazardFactor\IOccHazardFactorAppService.cs" />
+    <Compile Include="OccHazardFactor\OccHazardFactorAppService.cs" />
+    <Compile Include="OccNationalDisease\Dto\CHECK_RESULTDto.cs" />
+    <Compile Include="OccNationalDisease\Dto\CHECK_RESULT_LISTDto.cs" />
+    <Compile Include="OccNationalDisease\Dto\CreateCountrySet.cs" />
+    <Compile Include="OccNationalDisease\Dto\DataNodeDto.cs" />
+    <Compile Include="OccNationalDisease\Dto\ENTERPRISE_INFO_EMPLOYERDto.cs" />
+    <Compile Include="OccNationalDisease\Dto\ENTERPRISE_INFO_LISTDto.cs" />
+    <Compile Include="OccNationalDisease\Dto\EventBodyDto.cs" />
+    <Compile Include="OccNationalDisease\Dto\EXAM_ITEM_RESULTDto.cs" />
+    <Compile Include="OccNationalDisease\Dto\DETECTION_INFODto.cs" />
+    <Compile Include="OccNationalDisease\Dto\DETECTION_INFO_LISTDto.cs" />
+    <Compile Include="OccNationalDisease\Dto\ENTERPRISE_INFO1Dto.cs" />
+    <Compile Include="OccNationalDisease\Dto\ENTERPRISE_INFODto.cs" />
+    <Compile Include="OccNationalDisease\Dto\AUDIT_INFODto.cs" />
+    <Compile Include="OccNationalDisease\Dto\EXAM_CONCLUSIONDto.cs" />
+    <Compile Include="OccNationalDisease\Dto\EXAM_CONCLUSION_LISTDto.cs" />
+    <Compile Include="OccNationalDisease\Dto\EXAM_ITEM_RESULT_LISTDto.cs" />
+    <Compile Include="OccNationalDisease\Dto\HeaderDto.cs" />
+    <Compile Include="OccNationalDisease\Dto\HEALTH_EXAM_RECORDDto.cs" />
+    <Compile Include="OccNationalDisease\Dto\HEALTH_EXAM_RECORD_LISTDto.cs" />
+    <Compile Include="OccNationalDisease\Dto\InSearchDto.cs" />
+    <Compile Include="OccNationalDisease\Dto\WORKER_INFODto.cs" />
+    <Compile Include="OccNationalDisease\Dto\XMLDataNodeDto.cs" />
+    <Compile Include="OccNationalDisease\Dto\XmlEventBodyDto.cs" />
+    <Compile Include="OccNationalDisease\IOccNationalDiseaseAppService.cs" />
+    <Compile Include="OccNationalDisease\OccNationalDiseaseAppService.cs" />
+    <Compile Include="OccReview\Dto\CusVisitDto.cs" />
+    <Compile Include="OccReview\Dto\OutOccReviewDto.cs" />
+    <Compile Include="OccReview\Dto\SaveCusVisitManageDto.cs" />
+    <Compile Include="OccReview\Dto\searchVisitDto.cs" />
+    <Compile Include="OccReview\Dto\ShowCusVisitDtocs.cs" />
+    <Compile Include="OccReview\Dto\VisiteCusRegDto.cs" />
+    <Compile Include="OccReview\Dto\VisiteCustomerDto.cs" />
+    <Compile Include="OccReview\IOccReviewAppService.cs" />
+    <Compile Include="OccReview\OccReviewAppService.cs" />
+    <Compile Include="OccTargetDisease\Dto\CreateOrUpdateTargetDiseaseDto.cs" />
+    <Compile Include="OccTargetDisease\Dto\FullItemGroup.cs" />
+    <Compile Include="OccTargetDisease\Dto\FullTargetDiseaseDto.cs" />
+    <Compile Include="OccTargetDisease\Dto\InputRisksDto.cs" />
+    <Compile Include="OccTargetDisease\Dto\OutIItemGroupsDto.cs" />
+    <Compile Include="OccTargetDisease\Dto\OutOccTargetDiseaseExcel.cs" />
+    <Compile Include="OccTargetDisease\Dto\OutTbmOccTargetDiseaseDto.cs" />
+    <Compile Include="OccTargetDisease\Dto\ParentTargetDiseaseDto.cs" />
+    <Compile Include="OccTargetDisease\Dto\SeachOccTargetDiseaseDto.cs" />
+    <Compile Include="OccTargetDisease\Dto\TbmItemGroupDto.cs" />
+    <Compile Include="OccTargetDisease\Dto\TbmOccDiseaseDto.cs" />
+    <Compile Include="OccTargetDisease\Dto\TbmOccTargetDiseaseContraindicationDto.cs" />
+    <Compile Include="OccTargetDisease\Dto\TbmOccTargetDiseaseSymptomsDto.cs" />
+    <Compile Include="OccTargetDisease\IOccTargetDiseaseAppService.cs" />
+    <Compile Include="OccTargetDisease\OccTargetDiseaseAppService.cs" />
+    <Compile Include="OccupationalDiseases\OConDictionary\Dto\OccupationalStandardDto.cs" />
+    <Compile Include="OccupationalDiseases\OConDictionary\Dto\OConDictionaryDto.cs" />
+    <Compile Include="OccupationalDiseases\OConDictionary\Dto\ORisItemGroupDto.cs" />
+    <Compile Include="OccupationalDiseases\OConDictionary\Dto\ZYBTypeDto.cs" />
+    <Compile Include="OccupationalDiseases\OConDictionary\IOConDictionaryAppService.cs" />
+    <Compile Include="OccupationalDiseases\OConDictionary\OConDictionaryAppService.cs" />
+    <Compile Include="OccupationalDiseases\OPostState\Dto\JobCategoryDto.cs" />
+    <Compile Include="OutInspects\Dto\ListGuideDto.cs" />
+    <Compile Include="OutInspects\Dto\ListGuideInfoDto.cs" />
+    <Compile Include="OutInspects\Dto\OutCusInfoDto.cs" />
+    <Compile Include="OutInspects\Dto\OutinspectsQueryDto.cs" />
+    <Compile Include="OutInspects\IOutInspectsQueryAppService.cs" />
+    <Compile Include="OutInspects\OutInspectsQueryAppService.cs" />
+    <Compile Include="PaymentMethod\Dto\InvoiceDto.cs" />
+    <Compile Include="PaymentMethod\Dto\MDiurnalTableDto.cs" />
+    <Compile Include="PaymentMethod\Dto\SearchReceiptInfoDto.cs" />
+    <Compile Include="PaymentMethod\Dto\ViewChargeTypeListDto.cs" />
+    <Compile Include="PaymentMethod\Dto\ViewDailyReportDto.cs" />
+    <Compile Include="PaymentMethod\Dto\ViewInvalidInvoiceListDto.cs" />
+    <Compile Include="PersonnelCategorys\Dto\PersonnelCategoryViewDto.cs" />
+    <Compile Include="PersonnelCategorys\IPersonnelCategoryAppService.cs" />
+    <Compile Include="PersonnelCategorys\PersonnelCategoryAppService.cs" />
+    <Compile Include="PhysicalExamination\Dto\ClientTeamPhysicalDto.cs" />
+    <Compile Include="Picture\Dto\CreateOrUpdatePictureTenIdDto.cs" />
+    <Compile Include="Questionnaire\Dto\QuestionBomDto.cs" />
+    <Compile Include="Questionnaire\Dto\QuestionnaireDto.cs" />
+    <Compile Include="Questionnaire\Dto\QuestionnaireSearchInput.cs" />
+    <Compile Include="Questionnaire\Dto\QuestiontemReportDto.cs" />
+    <Compile Include="Questionnaire\Dto\QuestiontemDto.cs" />
+    <Compile Include="Questionnaire\IQuestionnaireAppService.cs" />
+    <Compile Include="Questionnaire\QuestionnaireAppService.cs" />
+    <Compile Include="Regist\Dto\TbmRegsitDto.cs" />
+    <Compile Include="Regist\IRegistAppService.cs" />
+    <Compile Include="Regist\RegistAppService.cs" />
+    <Compile Include="ReVisitTime\Dto\InsertReVisitTimeDto.cs" />
+    <Compile Include="ReVisitTime\Dto\QueryCheckReview.cs" />
+    <Compile Include="ReVisitTime\Dto\QueryData.cs" />
+    <Compile Include="ReVisitTime\Dto\SearchItemGroupDto.cs" />
+    <Compile Include="ReVisitTime\Dto\SearchReVisitTimeDto.cs" />
+    <Compile Include="ReVisitTime\Dto\TbmItemGroupDto.cs" />
+    <Compile Include="ReVisitTime\IReVisitTimeAppService.cs" />
+    <Compile Include="ReVisitTime\ReVisitTimeAppService.cs" />
+    <Compile Include="SchedulingSecondEdition\Dto\CompanyInformationDtoNo1.cs" />
+    <Compile Include="SchedulingSecondEdition\Dto\DepartmentDtoNo1.cs" />
+    <Compile Include="SchedulingSecondEdition\Dto\ManualSchedulingDtoNo1.cs" />
+    <Compile Include="SchedulingSecondEdition\Dto\ManualSchedulingDtoNo2.cs" />
+    <Compile Include="SchedulingSecondEdition\IManualSchedulingAppService.cs" />
+    <Compile Include="SchedulingSecondEdition\ManualSchedulingAppService.cs" />
+    <Compile Include="Scheduling\Dto\ItemGroupOfScheduleDto.cs" />
+    <Compile Include="Scheduling\Dto\SchedulingNewDto.cs" />
+    <Compile Include="Scheduling\Dto\SearchSchedulingNewDto.cs" />
+    <Compile Include="Scheduling\Dto\SearchSchedulingNewDtoForMonth.cs" />
+    <Compile Include="Scheduling\Dto\SearchSchedulingStartEndDto.cs" />
+    <Compile Include="Scheduling\Dto\SimpleClientRegDto.cs" />
+    <Compile Include="Scheduling\Dto\SimpleClientInfoDto.cs" />
+    <Compile Include="Scheduling\Dto\SimpleClientRegTeamDto.cs" />
+    <Compile Include="Common\Dto\PageInputDto.cs" />
+    <Compile Include="Common\Dto\PageResultDto.cs" />
+    <Compile Include="CusReg\Dto\CustomerRegDto.cs" />
+    <Compile Include="CusReg\Dto\CustomerEssentialInfoViewDto.cs" />
+    <Compile Include="CusReg\Dto\CustomerRegEssentialInfoViewDto.cs" />
+    <Compile Include="CrossTable\CrossTableAppService.cs" />
+    <Compile Include="CrossTable\Dto\CustomerBloodNumDto.cs" />
+    <Compile Include="CrossTable\Dto\CustomerItemGroupDto.cs" />
+    <Compile Include="CrossTable\Dto\CustomerRegItemDto.cs" />
+    <Compile Include="CrossTable\Dto\QueryInfoDto.cs" />
+    <Compile Include="CrossTable\ICrossTableAppService.cs" />
+    <Compile Include="ItemInfo\Dto\ItemInfoSimpleDto.cs" />
+    <Compile Include="ItemGroup\Dto\SimpleItemGroupDto.cs" />
+    <Compile Include="ItemInfo\Dto\ItemInfoDiagnosisDto.cs" />
+    <Compile Include="ItemSuit\Dto\SimpleItemSuitDto.cs" />
+    <Compile Include="PaymentMethod\IPaymentStatisticAppService.cs" />
+    <Compile Include="PaymentMethod\PaymentStatisticAppService.cs" />
+    <Compile Include="PhysicalExamination\Dto\ClientInfoPhysicalDto.cs" />
+    <Compile Include="PhysicalExamination\Dto\ClientRegPhysicalDto.cs" />
+    <Compile Include="PhysicalExamination\Dto\CustomerPhysicalDto.cs" />
+    <Compile Include="PhysicalExamination\Dto\CustomerRegPhysicalDto.cs" />
+    <Compile Include="PhysicalExamination\IPhysicalExaminationAppService.cs" />
+    <Compile Include="PhysicalExamination\PhysicalExaminationAppService.cs" />
+    <Compile Include="Scheduling\Dto\ClientTeamInfoInput.cs" />
+    <Compile Include="Scheduling\Dto\SimpleCustomerRegDto.cs" />
+    <Compile Include="Scheduling\Dto\CustomerSchedulingInput.cs" />
+    <Compile Include="Scheduling\Dto\ClientTeamSchedulingInput.cs" />
+    <Compile Include="Scheduling\Dto\SchedulingDto.cs" />
+    <Compile Include="Scheduling\Dto\SimpleCustomerDto.cs" />
+    <Compile Include="Scheduling\Dto\SearchCustomerOrClientRegDto.cs" />
+    <Compile Include="Scheduling\Dto\SearchSchedulingDto.cs" />
+    <Compile Include="Scheduling\SchedulingAppService.cs" />
+    <Compile Include="Scheduling\ISchedulingAppService.cs" />
+    <Compile Include="SummarizeAdvice\Dto\TbmSummHBDto.cs" />
+    <Compile Include="Users\Dto\LoginlistDto.cs" />
+    <Compile Include="SetSysSetting\Dto\QuerySetSysSettingDto.cs" />
+    <Compile Include="SetSysSetting\Dto\SetSysSettingDto.cs" />
+    <Compile Include="SetSysSetting\SetSysSettingAppService.cs" />
+    <Compile Include="SetSysSetting\ISetSysSettingAppService.cs" />
+    <Compile Include="IDNumber\IDNumberAppService.cs" />
+    <Compile Include="IDNumber\Dto\IDNumberDto.cs" />
+    <Compile Include="IDNumber\IIDNumberAppService.cs" />
+    <Compile Include="BarPrint\BarPrintAppService.cs" />
+    <Compile Include="BarPrint\IBarPrintAppService.cs" />
+    <Compile Include="BarSetting\BarSettingAppService.cs" />
+    <Compile Include="BarSetting\Dto\BarItemDto.cs" />
+    <Compile Include="BarSetting\Dto\FullBarItemDto.cs" />
+    <Compile Include="BarSetting\Dto\BarSettingInput.cs" />
+    <Compile Include="BarSetting\Dto\FullBarSettingDto.cs" />
+    <Compile Include="BarSetting\Dto\BarSettingDto.cs" />
+    <Compile Include="BarSetting\IBarSettingAppService.cs" />
+    <Compile Include="BaseModule\Dto\FindNameDto.cs" />
+    <Compile Include="BaseModule\Dto\FormModuleDto.cs" />
+    <Compile Include="BaseModule\Dto\NameDto.cs" />
+    <Compile Include="BaseModule\FormModuleAppService.cs" />
+    <Compile Include="BaseModule\IFormModuleAppService.cs" />
+    <Compile Include="BasicDictionary\BasicDictionaryAppService.cs" />
+    <Compile Include="BasicDictionary\Dto\BasicDictionaryDto.cs" />
+    <Compile Include="BasicDictionary\Dto\BasicDictionaryInput.cs" />
+    <Compile Include="BasicDictionary\IBasicDictionaryAppService.cs" />
+    <Compile Include="Charge\ChargeAppService.cs" />
+    <Compile Include="Charge\Dto\ChargeBM.cs" />
+    <Compile Include="Charge\Dto\ChargeGroupsDto.cs" />
+    <Compile Include="Charge\Dto\ChargeInfoDto.cs" />
+    <Compile Include="Charge\Dto\GroupMoneyDto.cs" />
+    <Compile Include="Charge\Dto\MDiurnalTableDto.cs" />
+    <Compile Include="Charge\Dto\MInvoiceRecordDto.cs" />
+    <Compile Include="Charge\Dto\MReceiptInfoDto.cs" />
+    <Compile Include="Charge\Dto\MRiseDto.cs" />
+    <Compile Include="Charge\IChargeAppService.cs" />
+    <Compile Include="ClientInfoes\Dto\ClientInfoesListInput.cs" />
+    <Compile Include="Common\ChineseHelper.cs" />
+    <Compile Include="Common\CommonAppService.cs" />
+    <Compile Include="Common\Dto\ChineseDto.cs" />
+    <Compile Include="Common\Dto\TimeDto.cs" />
+    <Compile Include="Common\ICommonAppService.cs" />
+    <Compile Include="Company\ClientRegAppService.cs" />
+    <Compile Include="Company\Dto\CreateClientRegDto.cs" />
+    <Compile Include="Company\Dto\FullClientRegDto.cs" />
+    <Compile Include="Company\IClientRegAppService.cs" />
+    <Compile Include="CusReg\CustomerAppService.cs" />
+    <Compile Include="CusReg\Dto\ClientRegDto.cs" />
+    <Compile Include="CusReg\Dto\ClientTeamInfoDto.cs" />
+    <Compile Include="CusReg\Dto\CusNameInput.cs" />
+    <Compile Include="CusReg\Dto\QueryClientInfoDto.cs" />
+    <Compile Include="CusReg\Dto\QueryClientTeamDto.cs" />
+    <Compile Include="CusReg\Dto\QueryCustomerDto.cs" />
+    <Compile Include="CusReg\Dto\QueryCustomerRegDto.cs" />
+    <Compile Include="CusReg\Dto\TjlCustomerDto.cs" />
+    <Compile Include="CusReg\Dto\TjlCustomerItemGroupDto.cs" />
+    <Compile Include="CusReg\Dto\TjlCustomerRegDto.cs" />
+    <Compile Include="CusReg\ICustomerAppService.cs" />
+    <Compile Include="CustomerReport\CustomerReportAppService.cs" />
+    <Compile Include="CustomerReport\Dto\CustomerReportDto.cs" />
+    <Compile Include="CustomerReport\Dto\CustomerReportFullDto.cs" />
+    <Compile Include="CustomerReport\Dto\CustomerReportHandoverInput.cs" />
+    <Compile Include="CustomerReport\Dto\CustomerReportQuery.cs" />
+    <Compile Include="CustomerReport\ICustomerReportAppService.cs" />
+    <Compile Include="Department\DepartmentAppService.cs" />
+    <Compile Include="Department\Dto\CreateDepartmentDto.cs" />
+    <Compile Include="Department\Dto\DepartmentIdNameDto.cs" />
+    <Compile Include="Department\Dto\SearchDepartmentNameDto.cs" />
+    <Compile Include="Department\Dto\TbmDepartmentDto.cs" />
+    <Compile Include="Department\Dto\UpdateDepartmentDto.cs" />
+    <Compile Include="Diagnosis\DiagnosisAppService.cs" />
+    <Compile Include="Diagnosis\Dto\ItemInfoGroupDto.cs" />
+    <Compile Include="Diagnosis\Dto\TbmDiagnosisDataDto.cs" />
+    <Compile Include="Diagnosis\Dto\TbmDiagnosisDto.cs" />
+    <Compile Include="Department\IDepartmentAppService.cs" />
+    <Compile Include="Configuration\ConfigurationAppService.cs" />
+    <Compile Include="Configuration\Dto\ChangeUiThemeInput.cs" />
+    <Compile Include="Configuration\IConfigurationAppService.cs" />
+    <Compile Include="Configuration\Ui\UiThemeInfo.cs" />
+    <Compile Include="Configuration\Ui\UiThemes.cs" />
+    <Compile Include="Diagnosis\IDiagnosisAppService.cs" />
+    <Compile Include="DoctorStation\DoctorStationAppService.cs" />
+    <Compile Include="DoctorStation\Dto\ATbmDepartmentDto.cs" />
+    <Compile Include="DoctorStation\Dto\ATjlClientInfoDto.cs" />
+    <Compile Include="DoctorStation\Dto\ATjlClientRegDto.cs" />
+    <Compile Include="DoctorStation\Dto\BTbmDepartmentDto.cs" />
+    <Compile Include="DoctorStation\Dto\CTbmDepartmentDto.cs" />
+    <Compile Include="DoctorStation\Dto\QueryClass.cs" />
+    <Compile Include="DoctorStation\Dto\BTbmItemDictionaryDto.cs" />
+    <Compile Include="DoctorStation\Dto\BTbmItemInfoDto.cs" />
+    <Compile Include="DoctorStation\Dto\ATjlClientTeamInfoDto.cs" />
+    <Compile Include="DoctorStation\Dto\ATjlCustomerDepSummaryDto.cs" />
+    <Compile Include="DoctorStation\Dto\ATjlCustomerDto.cs" />
+    <Compile Include="DoctorStation\Dto\ATjlCustomerItemGroupDto.cs" />
+    <Compile Include="DoctorStation\Dto\ATjlCustomerRegDto.cs" />
+    <Compile Include="DoctorStation\Dto\ATjlCustomerRegItemDto.cs" />
+    <Compile Include="DoctorStation\Dto\ATjlOAHistoryDto.cs" />
+    <Compile Include="DoctorStation\Dto\ATjlOHistoryDto.cs" />
+    <Compile Include="DoctorStation\Dto\CTbmSummarizeAdviceDto.cs" />
+    <Compile Include="DoctorStation\IDoctorStationAppService.cs" />
+    <Compile Include="ClientInfoes\Dto\ClientInfoesInput.cs" />
+    <Compile Include="ClientInfoes\Dto\ClientInfoesListOutput.cs" />
+    <Compile Include="ClientInfoes\Dto\ClientInfoesOutput.cs" />
+    <Compile Include="ClientInfoes\IClientInfoesAppService.cs" />
+    <Compile Include="ClientInfoes\ClientInfoesAppService.cs" />
+    <Compile Include="InspectionTotal\Dto\TjlCustomerSummarizeBMDto.cs" />
+    <Compile Include="InspectionTotal\Dto\TjlCustomerSummarizeDto.cs" />
+    <Compile Include="InspectionTotal\Dto\TjlCustomerQuery.cs" />
+    <Compile Include="InspectionTotal\Dto\TjlCustomerForInspectionTotalDto.cs" />
+    <Compile Include="InspectionTotal\Dto\TjlCustomerRegForInspectionTotalDto.cs" />
+    <Compile Include="InspectionTotal\IInspectionTotalAppService.cs" />
+    <Compile Include="InspectionTotal\InspectionTotalAppService.cs" />
+    <Compile Include="InvoiceManagement\Dto\AddReceiptManageDto.cs" />
+    <Compile Include="InvoiceManagement\Dto\MReceiptManagerDto.cs" />
+    <Compile Include="InvoiceManagement\IInvoiceManagementAppService.cs" />
+    <Compile Include="InvoiceManagement\InvoiceManagementAppService.cs" />
+    <Compile Include="ItemGroup\Dto\ItemGroupInput.cs" />
+    <Compile Include="ItemGroup\Dto\ItemGroupDto.cs" />
+    <Compile Include="ItemGroup\Dto\FullItemGroupDto.cs" />
+    <Compile Include="ItemGroup\IItemGroupAppService.cs" />
+    <Compile Include="ItemGroup\ItemGroupAppService.cs" />
+    <Compile Include="ItemInfo\Dto\ItemInfoDto.cs" />
+    <Compile Include="ItemInfo\Dto\ItemInfoViewDto.cs" />
+    <Compile Include="ItemInfo\Dto\ItemStandardDto.cs" />
+    <Compile Include="ItemInfo\Dto\SearchItemInfoDto.cs" />
+    <Compile Include="ItemInfo\IItemInfoAppService.cs" />
+    <Compile Include="ItemInfo\ItemInfoAppService.cs" />
+    <Compile Include="ItemSuit\Dto\FullItemSuitDto.cs" />
+    <Compile Include="ItemSuit\Dto\ItemSuitDto.cs" />
+    <Compile Include="ItemSuit\Dto\ItemSuitInput.cs" />
+    <Compile Include="ItemSuit\Dto\ItemSuitItemGroupContrastFullDto.cs" />
+    <Compile Include="ItemSuit\Dto\ItemSuitItemGroupContrastDto.cs" />
+    <Compile Include="ItemSuit\Dto\ItemSuitOutput.cs" />
+    <Compile Include="ItemSuit\IItemSuitAppService.cs" />
+    <Compile Include="ItemSuit\ItemSuitAppService.cs" />
+    <Compile Include="MultiTenancy\Dto\CreateTenantDto.cs" />
+    <Compile Include="MultiTenancy\Dto\EditTenantDto.cs" />
+    <Compile Include="MultiTenancy\Dto\TenantDto.cs" />
+    <Compile Include="MultiTenancy\ITenantAppService.cs" />
+    <Compile Include="MultiTenancy\TenantAppService.cs" />
+    <Compile Include="MyProjectApplicationModule.cs" />
+    <Compile Include="MyProjectAppServiceBase.cs" />
+    <Compile Include="OccupationalDiseases\OPostState\Dto\PostStateDto.cs" />
+    <Compile Include="OccupationalDiseases\OPostState\IPostStateAppService.cs" />
+    <Compile Include="OccupationalDiseases\OPostState\PostStateAppService.cs" />
+    <Compile Include="OccupationalDiseases\ORiskFactor\Dto\ORiskFactorDto.cs" />
+    <Compile Include="OccupationalDiseases\ORiskFactor\IRiskFactorAppService.cs" />
+    <Compile Include="OccupationalDiseases\ORiskFactor\RiskFactorAppService.cs" />
+    <Compile Include="OccupationalDiseases\proposal\Dto\OProposalDto.cs" />
+    <Compile Include="OccupationalDiseases\proposal\IProposalAppService.cs" />
+    <Compile Include="OccupationalDiseases\proposal\ProposalAppService.cs" />
+    <Compile Include="OccupationalDiseases\WorkType\Dto\WorkTypeDto.cs" />
+    <Compile Include="OccupationalDiseases\WorkType\IWorkTypeAppService.cs" />
+    <Compile Include="OccupationalDiseases\WorkType\WorkTypeAppService.cs" />
+    <Compile Include="PaymentMethod\Dto\MChargeTypeDto.cs" />
+    <Compile Include="PaymentMethod\IPaymentMethodAppService.cs" />
+    <Compile Include="PaymentMethod\PaymentMethodAppService.cs" />
+    <Compile Include="Picture\Dto\CreateOrUpdatePictureDto.cs" />
+    <Compile Include="Picture\Dto\PictureDto.cs" />
+    <Compile Include="Picture\IPictureAppService.cs" />
+    <Compile Include="Picture\PictureAppService.cs" />
+    <Compile Include="Roles\Dto\CreateRoleDto.cs" />
+    <Compile Include="Roles\Dto\PermissionDto.cs" />
+    <Compile Include="Roles\Dto\RoleDto.cs" />
+    <Compile Include="Roles\IRoleAppService.cs" />
+    <Compile Include="Roles\RoleAppService.cs" />
+    <Compile Include="Sessions\Dto\GetCurrentLoginInformationsOutput.cs" />
+    <Compile Include="Sessions\Dto\TenantLoginInfoDto.cs" />
+    <Compile Include="Sessions\Dto\UserLoginInfoDto.cs" />
+    <Compile Include="Sessions\ISessionAppService.cs" />
+    <Compile Include="Sessions\SessionAppService.cs" />
+    <Compile Include="SummarizeAdvice\Dto\CreateOrUpdateSummarizeAdviceDto.cs" />
+    <Compile Include="SummarizeAdvice\Dto\InputSearchSumm.cs" />
+    <Compile Include="SummarizeAdvice\Dto\SearchSummarizeAdvice.cs" />
+    <Compile Include="SummarizeAdvice\Dto\SearchSummarizeAdviceDto.cs" />
+    <Compile Include="SummarizeAdvice\Dto\SumConflictDto.cs" />
+    <Compile Include="SummarizeAdvice\Dto\SummarizeAdviceDto.cs" />
+    <Compile Include="SummarizeAdvice\Dto\FullSummarizeAdviceDto.cs" />
+    <Compile Include="SummarizeAdvice\Dto\SummarizeAdviceInput.cs" />
+    <Compile Include="SummarizeAdvice\Dto\SimpleSummarizeAdviceDto.cs" />
+    <Compile Include="SummarizeAdvice\ISummarizeAdviceAppService.cs" />
+    <Compile Include="SummarizeAdvice\SummarizeAdviceAppService.cs" />
+    <Compile Include="TargetDisease\Dto\DiseaseContraindicationExplainDto.cs" />
+    <Compile Include="TargetDisease\Dto\QueryTargetDisease.cs" />
+    <Compile Include="TargetDisease\Dto\QueryTargetDiseaseDto.cs" />
+    <Compile Include="TargetDisease\Dto\SearchOccupationalDiseaseIncludeItemGroupDto.cs" />
+    <Compile Include="TargetDisease\Dto\UpdateDiseaseOrContraindicationDto.cs" />
+    <Compile Include="TargetDisease\Dto\UpdateHumanBodySystemDto.cs" />
+    <Compile Include="TargetDisease\Dto\UpdateSymptomDto.cs" />
+    <Compile Include="TargetDisease\ITargetDiseaseAppService.cs" />
+    <Compile Include="TargetDisease\TargetDiseaseAppService.cs" />
+    <Compile Include="Test\Dto\TestTable11Dto.cs" />
+    <Compile Include="Test\Dto\TestTable1Dto.cs" />
+    <Compile Include="Test\ITestTable1AppService.cs" />
+    <Compile Include="Test\TestTable1AppService.cs" />
+    <Compile Include="Users\Dto\CreateFormRoleDto.cs" />
+    <Compile Include="Users\Dto\CreateOrUpdatePersonnelIndividuationConfigDto.cs" />
+    <Compile Include="Users\Dto\CreateUserDto.cs" />
+    <Compile Include="Users\Dto\CreateUserFormDto.cs" />
+    <Compile Include="Users\Dto\CreateUserFormTeandIDDto.cs" />
+    <Compile Include="Users\Dto\FormModuleViewDto.cs" />
+    <Compile Include="Users\Dto\FormRoleDto.cs" />
+    <Compile Include="Users\Dto\FormRoleViewDto.cs" />
+    <Compile Include="Users\Dto\PersonnelIndividuationConfigDto.cs" />
+    <Compile Include="Users\Dto\SearchUserDto.cs" />
+    <Compile Include="Users\Dto\SearchUserIndividuationConfigDto.cs" />
+    <Compile Include="Users\Dto\StartupMenuBarDto.cs" />
+    <Compile Include="Users\Dto\UpdateFormRoleDto.cs" />
+    <Compile Include="Users\Dto\UpdateUserDto.cs" />
+    <Compile Include="Users\Dto\UpdateUserFormDto.cs" />
+    <Compile Include="Users\Dto\UserClientZKDto.cs" />
+    <Compile Include="Users\Dto\UserDto.cs" />
+    <Compile Include="Users\Dto\UserFormDto.cs" />
+    <Compile Include="Users\Dto\UserIndividuationConfigsDto.cs" />
+    <Compile Include="Users\Dto\UserRegsDto.cs" />
+    <Compile Include="Users\Dto\UserForComboDto.cs" />
+    <Compile Include="Users\Dto\UpdatePwdDto.cs" />
+    <Compile Include="Users\Dto\UserViewDto.cs" />
+    <Compile Include="Users\Dto\VerificationUserDto.cs" />
+    <Compile Include="Users\FormRoleAppService.cs" />
+    <Compile Include="Users\IFormRoleAppService.cs" />
+    <Compile Include="Users\IPersonnelIndividuationConfigAppService.cs" />
+    <Compile Include="Users\IUserAppService.cs" />
+    <Compile Include="Users\PersonnelIndividuationConfigAppService.cs" />
+    <Compile Include="Users\UserAppService.cs" />
+    <Compile Include="WeChat\Dto\AnswerjsonDto.cs" />
+    <Compile Include="WeChat\Dto\answerlistDto.cs" />
+    <Compile Include="WeChat\Dto\ClientInfoDto.cs" />
+    <Compile Include="WeChat\Dto\ClientRegBMDto.cs" />
+    <Compile Include="WeChat\Dto\cusdt.cs" />
+    <Compile Include="WeChat\Dto\CusMBSumBMDtocs.cs" />
+    <Compile Include="WeChat\Dto\CusStateDto.cs" />
+    <Compile Include="WeChat\Dto\CusSumBMLisDto.cs" />
+    <Compile Include="WeChat\Dto\CustomerJson.cs" />
+    <Compile Include="WeChat\Dto\DepDto.cs" />
+    <Compile Include="WeChat\Dto\ErrList.cs" />
+    <Compile Include="WeChat\Dto\fee_chargeDto.cs" />
+    <Compile Include="WeChat\Dto\fee_infoDto.cs" />
+    <Compile Include="WeChat\Dto\InCusPayDto.cs" />
+    <Compile Include="WeChat\Dto\InCusRegBMDto.cs" />
+    <Compile Include="WeChat\Dto\NCusAddPacksDto.cs" />
+    <Compile Include="WeChat\Dto\NCusGroupsDto.cs" />
+    <Compile Include="WeChat\Dto\NInCusInfoDto.cs" />
+    <Compile Include="WeChat\Dto\PayGroupDto.cs" />
+    <Compile Include="WeChat\Dto\questionlistDto.cs" />
+    <Compile Include="WeChat\Dto\ReceiptIdDto.cs" />
+    <Compile Include="WeChat\Dto\ReceiveCosPrice.cs" />
+    <Compile Include="WeChat\Dto\Refee_chargeDto.cs" />
+    <Compile Include="WeChat\Dto\RepCustomerRegDto.cs" />
+    <Compile Include="WeChat\Dto\CustomerSummarizeDto.cs" />
+    <Compile Include="WeChat\Dto\INCusAddPackItems.cs" />
+    <Compile Include="WeChat\Dto\InCusBMDto.cs" />
+    <Compile Include="WeChat\Dto\InCusQusTionDto.cs" />
+    <Compile Include="WeChat\Dto\InCusAddPacksDto.cs" />
+    <Compile Include="WeChat\Dto\InCusGroupsDto.cs" />
+    <Compile Include="WeChat\Dto\InCusInfoDto.cs" />
+    <Compile Include="WeChat\Dto\OutResult.cs" />
+    <Compile Include="WeChat\Dto\PicDto.cs" />
+    <Compile Include="WeChat\Dto\PictureDto.cs" />
+    <Compile Include="WeChat\Dto\ReportCusDto.cs" />
+    <Compile Include="WeChat\Dto\ReportCusITemDto.cs" />
+    <Compile Include="WeChat\Dto\ReportDepartDto.cs" />
+    <Compile Include="WeChat\Dto\ReportGroupItems.cs" />
+    <Compile Include="WeChat\Dto\ReportInfoDto.cs" />
+    <Compile Include="WeChat\Dto\ReportItemGroupDto.cs" />
+    <Compile Include="WeChat\Dto\reportitemInfo.cs" />
+    <Compile Include="WeChat\Dto\ReportItemInfoDto.cs" />
+    <Compile Include="WeChat\Dto\ReportItemSuitDto.cs" />
+    <Compile Include="WeChat\Dto\ReportItemSuitItemGroupDto.cs" />
+    <Compile Include="WeChat\Dto\reportjson.cs" />
+    <Compile Include="WeChat\Dto\ReportReviewDto.cs" />
+    <Compile Include="WeChat\Dto\ReportSuggestBear.cs" />
+    <Compile Include="WeChat\Dto\ReportSummarizeAdviceDto.cs" />
+    <Compile Include="WeChat\Dto\ResultDto.cs" />
+    <Compile Include="WeChat\Dto\SeachRepot.cs" />
+    <Compile Include="WeChat\Dto\SearchBiseDto.cs" />
+    <Compile Include="WeChat\Dto\SearchClientCusDto.cs" />
+    <Compile Include="WeChat\Dto\SearchRegDateDto.cs" />
+    <Compile Include="WeChat\Dto\sett_infoDto.cs" />
+    <Compile Include="WeChat\Dto\SumBMDto.cs" />
+    <Compile Include="WeChat\Dto\TjlCusQuestionDto.cs" />
+    <Compile Include="WeChat\Dto\TjlQuestionBomDto.cs" />
+    <Compile Include="WeChat\Dto\TjlQuestiontemDto.cs" />
+    <Compile Include="WeChat\Dto\UserDto.cs" />
+    <Compile Include="WeChat\Dto\WCusDepSumDto.cs" />
+    <Compile Include="WeChat\Dto\WCusGroupDto.cs" />
+    <Compile Include="WeChat\Dto\WCusRegDto.cs" />
+    <Compile Include="WeChat\Dto\WCusRegItemDto.cs" />
+    <Compile Include="WeChat\Dto\WCusSumDto.cs" />
+    <Compile Include="WeChat\Dto\WJMainDto.cs" />
+    <Compile Include="WeChat\Dto\WXclientCusDto.cs" />
+    <Compile Include="WeChat\Dto\WXClientCusInfoDto.cs" />
+    <Compile Include="WeChat\Dto\WXClientCusListDto.cs" />
+    <Compile Include="WeChat\Dto\WXClientInfoDto.cs" />
+    <Compile Include="WeChat\Dto\WXClientRegDto.cs" />
+    <Compile Include="WeChat\Dto\WXClientTeamInfoDto.cs" />
+    <Compile Include="WeChat\Dto\WXCusGroupDto.cs" />
+    <Compile Include="WeChat\Dto\WxCusMessDto.cs" />
+    <Compile Include="WeChat\Dto\WXCusReglistDto.cs" />
+    <Compile Include="WeChat\Dto\WxCusReviewMessDto.cs" />
+    <Compile Include="WeChat\Dto\WXGroupPriceSynchronizesDto.cs" />
+    <Compile Include="WeChat\Dto\WXPriceSynchronizeDto.cs" />
+    <Compile Include="WeChat\Dto\WxReviewItemGroups.cs" />
+    <Compile Include="WeChat\Dto\WxCusReviews.cs" />
+    <Compile Include="WeChat\IWeChatAppService.cs" />
+    <Compile Include="WeChat\WeChatAppService.cs" />
+    <Compile Include="WorkType\Dto\WorkTypeDto.cs" />
+    <Compile Include="WorkType\IWorkTypeAppService.cs" />
+    <Compile Include="WorkType\WorkTypeAppService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HealthExamination.Drivers\HealthExamination.Drivers.csproj">
+      <Project>{8513FF52-66F7-4015-95A0-F2B2E7453C0C}</Project>
+      <Name>HealthExamination.Drivers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HealthExaminationSystem.BaCommon\HealthExaminationSystem.BaCommon.csproj">
+      <Project>{3d3251f0-9ca5-4a93-97a6-35db095bc20b}</Project>
+      <Name>HealthExaminationSystem.BaCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HealthExaminationSystem.Core\HealthExaminationSystem.Core.csproj">
+      <Project>{f34a9538-7860-475b-9f9f-e46b773cced6}</Project>
+      <Name>HealthExaminationSystem.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HealthExaminationSystem.Enumerations\HealthExaminationSystem.Enumerations.csproj">
+      <Project>{55e602fa-21e2-4eeb-ad64-a32bb93ca772}</Project>
+      <Name>HealthExaminationSystem.Enumerations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HealthExaminationSystem.UserException\HealthExaminationSystem.UserException.csproj">
+      <Project>{27556748-e766-4986-8766-2cb8f740ab5a}</Project>
+      <Name>HealthExaminationSystem.UserException</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+    <Error Condition="!Exists('..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\ImageResizer.Plugins.PdfiumRenderer.Pdfium.Dll.1.0.1\build\ImageResizer.Plugins.PdfiumRenderer.Pdfium.Dll.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\ImageResizer.Plugins.PdfiumRenderer.Pdfium.Dll.1.0.1\build\ImageResizer.Plugins.PdfiumRenderer.Pdfium.Dll.targets'))" />
+    <Error Condition="!Exists('..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\PdfiumViewer.Native.x86_64.v8-xfa.2018.4.8.256\build\PdfiumViewer.Native.x86_64.v8-xfa.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\PdfiumViewer.Native.x86_64.v8-xfa.2018.4.8.256\build\PdfiumViewer.Native.x86_64.v8-xfa.props'))" />
+  </Target>
+  <Import Project="..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\ImageResizer.Plugins.PdfiumRenderer.Pdfium.Dll.1.0.1\build\ImageResizer.Plugins.PdfiumRenderer.Pdfium.Dll.targets" Condition="Exists('..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\ImageResizer.Plugins.PdfiumRenderer.Pdfium.Dll.1.0.1\build\ImageResizer.Plugins.PdfiumRenderer.Pdfium.Dll.targets')" />
+  <Import Project="..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

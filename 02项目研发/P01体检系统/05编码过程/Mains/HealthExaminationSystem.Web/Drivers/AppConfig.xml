@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <connectionString>
+    <add>
+      <name>LisInterface</name>
+       <value>Data Source=.;Initial Catalog=TJ_Zhongjianku;User ID=sa;Password=123qwe;MultipleActiveResultSets=True</value>
+    </add>
+    <add>
+      <name>HisInterface</name>
+      <value>Data Source=.;Database=TJ_Zhongjianku;User ID=sa;Password=123qwe</value>
+      <!--<value>Data Source==(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=  服务器ip  )(PORT=1521))) (CONNECT_DATA=(SERVICE_NAME=  数据库名称  )));Database=V9kk;User ID=sa;Password=123456</value>-->
+     
+    </add>
+     <add>
+      <name>DRURL</name>
+      <value>http://172.29.241.8:7800/roc/fee-service/api/v1/fee/op/backfee/save </value>      
+    </add>
+    <add>
+      <name>REDRURL</name>
+      <value>http://172.29.241.8:7800/roc/fee-service/api/v1/fee/op/backfee/delete </value>
+    </add>
+    <add>
+      <name>OldTJInterface</name>
+      <value>Data Source=.;Database=TJData;User ID=sa;Password=123qwe</value>     
+    </add>
+    <add>
+      <name>UKInterfaceURL</name>
+      <value>http://test.ukang.cc/system/YhweCharge.ashx?</value>
+    </add>
+    <add>
+      <!--新优康医院编号-->
+      <name>NUKhospitalno</name>
+      <value>1005</value>     
+    </add>
+ <add>     
+      <!--新优康获取卡余额地址-->
+      <name>NUKInterfaceURL1</name>
+      <value>http://new.ukang.cc/DataTransfer/GetMemberCardBalance</value>     
+    </add>
+ <add>    
+      <!--新优康卡消费地址-->
+      <name>NUKInterfaceURL2</name>
+      <value>http://new.ukang.cc/DataTransfer/MemberCardConsumption</value>
+    </add>
+  </connectionString>
+</root>

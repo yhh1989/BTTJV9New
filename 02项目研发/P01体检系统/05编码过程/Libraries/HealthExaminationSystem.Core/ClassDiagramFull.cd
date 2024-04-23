@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Core.AppSystem.Picture" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAABAAAQAAAAgAAAAAAA=</HashCode>
+      <FileName>AppSystem\Picture.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Core.AppSystem.TdbIdLog" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAABAABgAAAAAgAAAAAAA=</HashCode>
+      <FileName>AppSystem\TdbIdLog.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Core.AppSystem.TdbIdNumber" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAIAAAAAAABAAAAAACBgAAAAAgAAAAAAA=</HashCode>
+      <FileName>AppSystem\TdbIdNumber.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Core.AppSystem.TdbInterfaceConfig" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAIAAAAAAARBgAAAAAACAQAghAAAcAg=</HashCode>
+      <FileName>AppSystem\TdbInterfaceConfig.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Core.AppSystem.TdbInterfaceEmployeeComparison" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAgAAAAAAAAAACAAAAAAABAAgAAACAAA=</HashCode>
+      <FileName>AppSystem\TdbInterfaceEmployeeComparison.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Core.AppSystem.TdbInterfaceItemComparison" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAREAAAAAIQAgAAAAAAAIAAAEAAAAAAACAAgAEEAAAA=</HashCode>
+      <FileName>AppSystem\TdbInterfaceItemComparison.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Core.AppSystem.TdbSetSysSetting" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAiAAAAAAAAAAAAAAAAAAAAAAAgAAAAQAg=</HashCode>
+      <FileName>AppSystem\TdbSetSysSetting.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Core.AppSystem.TdbStoreManagement" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAECQRACAIECAAAAAAQIAgBACBAAAAACACAkDAAAAAA=</HashCode>
+      <FileName>AppSystem\TdbStoreManagement.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Core.AppSystem.TdbSystemLog" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAABACAAAAIAAAAACAAAIAAAAgEAACIAA=</HashCode>
+      <FileName>AppSystem\TdbSystemLog.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Core.AppSystem.TdbVersion" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAQAAAAAAgAAAAAAAAAAAACAAAAAAAAABgAAgAAAA=</HashCode>
+      <FileName>AppSystem\TdbVersion.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Core.AppSystem.TdbWorkIngStation" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAQAAAAQAAhAAAAAAAAAAAAAIAAgAAAAABA=</HashCode>
+      <FileName>AppSystem\TdbWorkIngStation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Core.AppSystem.TdbWorkStation" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAhAAAAAAAAAAAAAAAAgAAEAABA=</HashCode>
+      <FileName>AppSystem\TdbWorkStation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Core.Authorization.Users.User" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAIAJACAABFAIGAAQAQAYChCIABCiwoUABAAAIAU=</HashCode>
+      <FileName>Authorization\Users\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Core.Authorization.FormModule" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAQACAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Authorization\FormModule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Core.AppVersionHelper" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AppVersionHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Core.Market.ContractInformation" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAEAQAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Market\ContractInformation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

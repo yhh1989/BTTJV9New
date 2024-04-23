@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Charge.ChargeList" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAACABIAqoAAAAAABCIBAACWFsAAAABgUAEAAgCAAE=</HashCode>
+      <FileName>Charge\ChargeList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Charge.ClientCharge" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YSCioBQ6SKNEKkEohFPkhUIr17tAIpAEThRIsEn+kXA=</HashCode>
+      <FileName>Charge\ClientCharge.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Charge.ClientChargelist" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQhCAhYAKgBAAQIIAHKAQACEBEOAAAAxNQIABgAAAA=</HashCode>
+      <FileName>Charge\ClientChargelist.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Charge.InvalidInvoice" Collapsed="true">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwCailBkB+tAAsQSCPiIMWGneH8pQxnm/1cejgj/oTU=</HashCode>
+      <FileName>Charge\InvalidInvoice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Charge.PaymentMethod" Collapsed="true">
+    <Position X="5.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQkYAAAAACAAAAQAAACAEAACIIEAiAACAAQAAAAAAAA=</HashCode>
+      <FileName>Charge\PaymentMethod.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Charge.PersonCharge" Collapsed="true">
+    <Position X="7.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>4ZE6rkKxLmP8jFAoIXDhERw7A/sMQzohfpZSiAv+w0U=</HashCode>
+      <FileName>Charge\PersonCharge.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Comm.FrmBarPrint" Collapsed="true">
+    <Position X="14.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwCgAAAQAOJATQAQKBCAhACiECEAQhJAIIBIEMAAgAQ=</HashCode>
+      <FileName>Comm\FrmBarPrint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Comm.FrmHistory" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQAADAEAACQQHQAACBCAAAQGEgEYAAAEgGAAFBAAMIA=</HashCode>
+      <FileName>Comm\FrmHistory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Comm.FrmHistoryYearComparison" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQEAQACBBGgAAABIAACAECoCAAAAAABACGMIiAAERAA=</HashCode>
+      <FileName>Comm\FrmHistoryYearComparison.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Comm.FrmIntroduce" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gSEAAAAAACAAAAAAAASkAAACAAEAAgECEAAAAEjgACA=</HashCode>
+      <FileName>Comm\FrmIntroduce.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Comm.FrmSelectItemSuit" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CQSIAZCoADGAQAVAAGChAMiGgCEALnACwAQQgoQoDEA=</HashCode>
+      <FileName>Comm\FrmSelectItemSuit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Comm.FrmSeleteItemGroup" Collapsed="true">
+    <Position X="12.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>L4ZYotCYc/SRHMWRqAHtHJ+jvsFsc9sHNNQAKiHNJRA=</HashCode>
+      <FileName>Comm\FrmSeleteItemGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Comm.PrintClientReport" Collapsed="true">
+    <Position X="12.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SAAAAgiABMBMTABAIQgRAABAAAAggBUBCARGCBAEDAQ=</HashCode>
+      <FileName>Comm\PrintClientReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Comm.PrintGuidance" Collapsed="true">
+    <Position X="14.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIIAAiAAQAACIECBAAAAQAAKSKAAmBCKAAAAKAEaR4=</HashCode>
+      <FileName>Comm\PrintGuidance.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Comm.PrintGuidanceNew" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgIAAAAAQAAAAAAAAIIAAAAAAAAAAAAAAAIAAAEAAA=</HashCode>
+      <FileName>Comm\PrintGuidanceNew.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Comm.ReportJson" Collapsed="true">
+    <Position X="5.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Comm\PrintGuidanceNew.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Comm.Master" Collapsed="true">
+    <Position X="14.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABERAAAAIAAAAAAAEAAAAAAQAEAAAARAAAAAQAAA=</HashCode>
+      <FileName>Comm\PrintGuidanceNew.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Comm.Detail" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAgAAAQAAEAAAAAAAAAACAQBQ=</HashCode>
+      <FileName>Comm\PrintGuidanceNew.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Comm.PrintReport" Collapsed="true">
+    <Position X="4" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BACIjAgAGELASYFECBAQAkAAQCIAQEBEAAEAAIEkJBY=</HashCode>
+      <FileName>Comm\PrintReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Company.CustomerTemplate" Collapsed="true">
+    <Position X="14.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAEAAAAQEAAAAAAAAAAAAACAAAEA=</HashCode>
+      <FileName>Company\CustomerTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Company.FrmClientRegCustomerList" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AaIQgoQwAakAAIAYIFCoIACCPPEABBAkCJDBEML+gUI=</HashCode>
+      <FileName>Company\FrmClientRegCustomerList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Company.FrmClientRegList" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FURCAYAgAWEUHEAEEICAIUQHCCGCAoYgSFGAAAT4QUI=</HashCode>
+      <FileName>Company\FrmClientRegList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Company.FrmClientTeamAdd" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QQZCDCUAAC4EAEoYAADBUEACAEkWBkAAiAQAxBx+gAE=</HashCode>
+      <FileName>Company\FrmClientTeamAdd.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Company.FrmClientTeamCharge" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QRAaCAGgALAAKAcYBUmCKBATMDGA7BLAK1HAAAD/gQA=</HashCode>
+      <FileName>Company\FrmClientTeamCharge.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Company.FrmCopyTeamItem" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACEIAABCQABFFEAIHAAUADQBMABAAgRxAAAACAQgI=</HashCode>
+      <FileName>Company\FrmCopyTeamItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Company.FrmEditTjlClientInfoes" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>U0AQGQPQJCpGAAYAAAKQFIbiQCEBqgI0qskSgED/wTE=</HashCode>
+      <FileName>Company\FrmEditTjlClientInfoes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Company.FrmEditTjlClientRegs" Collapsed="true">
+    <Position X="12.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>G4r2gJD+LK/cigl0Ot6jBehPwS2kXpkQCBTBAUb+w2E=</HashCode>
+      <FileName>Company\FrmEditTjlClientRegs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Company.FrmImportExcel" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AcBkAIgQAGoCAkgQoCCUakgKYiEBAACAABhAEAAAAWE=</HashCode>
+      <FileName>Company\FrmImportExcel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Company.FrmTjlClientInfoes" Collapsed="true">
+    <Position X="14.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQACBhKAJTgEEQQQAAiAFwYLEAEAICw2DAKFQQBuoaM=</HashCode>
+      <FileName>Company\FrmTjlClientInfoes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Company.FrmTjlClientTeamAdd" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwASgDAQCC7BAwBgEfaPH0EjASkIgjAQIRAgSMAmgAI=</HashCode>
+      <FileName>Company\FrmTjlClientTeamInfoes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Compose.ComposeTool" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SyYqjhgJEPhRowaZIsGBw3CK0ScFbAYCwi0lJjH/xQM=</HashCode>
+      <FileName>Compose\ComposeTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Crisis.CustomerServiceCrisis" Collapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ZQQBAAQgAOsEMAWQAEKIAQBCACEAAIJoABAEEADAiQY=</HashCode>
+      <FileName>Crisis\CustomerServiceCrisis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Crisis.DoctorCrisis" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IQALBoAhACFAECRSAEWAAAACACuAgBkAiRiAQAL85U8=</HashCode>
+      <FileName>Crisis\DoctorCrisis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Crisis.EditCallBackList" Collapsed="true">
+    <Position X="12.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KQADoAAgAKIQACUgAACAAEAGACECihEAARAAAAIQgUI=</HashCode>
+      <FileName>Crisis\EditCallBackList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.CusReg.BatchCustomerReg" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACBAAgAKEQAAERAECAAcAGADGAAAAhABAAAIAAgEI=</HashCode>
+      <FileName>CusReg\BatchCustomerReg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.CusReg.CopyGroups" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAJCgAKEAAAcUBECAJUIGQKMBBAggjBAAEQDCkUY=</HashCode>
+      <FileName>CusReg\CopyGroups.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.CusReg.CrossTable" Collapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>PURYAASgiuOQhCIkCDDAMMAaoCECKBgkEZjgUAH+/UE=</HashCode>
+      <FileName>CusReg\CrossTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.CusReg.CusDetail" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>nQc8RwW53jOVjDVRiLOohWK3WaNTvO6G6p4QWTn/9y0=</HashCode>
+      <FileName>CusReg\CusDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.CusReg.CusList" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAABDCAGAAFsAGAFCAMRITESkGBoAASBAQQTjwQcQ=</HashCode>
+      <FileName>CusReg\CusList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.CusReg.CustomerReg" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>udv+jIWl9bfjoqXTqOLI22+2jaFEChkhot7iVLr//3U=</HashCode>
+      <FileName>CusReg\CustomerReg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.CusReg.FrmGiveUpMessage" Collapsed="true">
+    <Position X="14.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYDAAAAgAKAAAAkAAACAIAACAAkCAAAEAAAAABAAAAA=</HashCode>
+      <FileName>CusReg\FrmGiveUpMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.CusReg.SelectCusReg" Collapsed="true">
+    <Position X="2.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAIGAACEAAAEAAACAIEACAAEBBAAACBAAAAAgAMA=</HashCode>
+      <FileName>CusReg\SelectCusReg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.CustomerReport.CompanySelection" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IQACoASgECgAAoQAhACBAtJCEAEiAEAABAAAAACAQYA=</HashCode>
+      <FileName>CustomerReport\CompanySelection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.CustomerReport.CustomerReportHandover" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAgICAAmIAAAIQAACMAFEGEAECAAkEmQAhIAEGAQA=</HashCode>
+      <FileName>CustomerReport\CustomerReportHandover.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.CustomerReport.CustomerReportList" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAALAAjQAAAAUAAGMAAACAEEAABkk2QBAIADAAQA=</HashCode>
+      <FileName>CustomerReport\CustomerReportList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.CustomerReport.CustomerReportSend" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAICASCAEAAIUAEGYIBECEAEAAAkEmQBhIAAGAQA=</HashCode>
+      <FileName>CustomerReport\CustomerReportSend.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.CustomerReport.PrintPreview" Collapsed="true">
+    <Position X="2.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYAQAUJAACGRKAQoQI2IQQBGOAlQykAIkgYQIAH+8VU=</HashCode>
+      <FileName>CustomerReport\PrintPreview.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.DoctorStation.CustomerItemPicControl" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAACAAAAAAAACAAAACAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>DoctorStation\CustomerItemPicControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.DoctorStation.DepartmentCustomer" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KQAYBQMqBWEgAIACOgCBAAAChgACABCDYAIBACKAAEA=</HashCode>
+      <FileName>DoctorStation\DepartmentCustomer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.DoctorStation.DepartmentCustomerEventArgs" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DoctorStation\DepartmentCustomerEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.DoctorStation.DoctorDesk" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>Kcu+R18NJqueEm+7uM2E5OKHn7Uc/7Xv+17/1VH/36s=</HashCode>
+      <FileName>DoctorStation\DoctorDesk.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.DoctorStation.GridZhanShiLei" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACIAAAgACEAAAAAAAAAAAQBAAACAAQAEAACQAg=</HashCode>
+      <FileName>DoctorStation\DoctorDesk.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.DoctorStation.ItemDictionaryControl" Collapsed="true">
+    <Position X="11" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAACAAAQAAAACAAAAGAEAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>DoctorStation\ItemDictionaryControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.DoctorStation.PersonnelDetailsControl" Collapsed="true">
+    <Position X="9.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAIQCCAAABAQAACBAACCAAEAAAABAAIAAAL4AwA=</HashCode>
+      <FileName>DoctorStation\PersonnelDetailsControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.DoctorStation.StaffListControl" Collapsed="true">
+    <Position X="4" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAAAgACEAAABAAECAAAAGACEAQAAACBAAAAAAgEA=</HashCode>
+      <FileName>DoctorStation\StaffListControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.GroupReport.GroupReporList" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AyECAgCCACACBEAAIAWAAgACAADDgSiCTBEIGCD2xQE=</HashCode>
+      <FileName>GroupReport\GroupReporList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.GuideListCollection.GuideListCollectionSetting" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAISICAHAABEAABESIIQACQAEAQCAASBAIEAAABAQ=</HashCode>
+      <FileName>GuideListCollection\GuideListCollectionSetting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.InspectionTotal.FrmInspectionTotal" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>4UheRcvBDCNyBUQaAADUqXxvgLsARyCkurYS0bz/xXc=</HashCode>
+      <FileName>InspectionTotal\FrmInspectionTotal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.InspectionTotal.FrmInspectionTotalList" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYICAQLgCSCQBIIAAADgEMAGAAQAQAgACJBQCICAaQA=</HashCode>
+      <FileName>InspectionTotal\FrmInspectionTotalList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.InspectionTotal.InspectionReturn" Collapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IQAABQSIgKAQAAAAAAiAAAAHAEEAggAACIAEEAABAAg=</HashCode>
+      <FileName>InspectionTotal\InspectionReturn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.InspectionTotal.TotalDiagnosis" Collapsed="true">
+    <Position X="7.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQBAJACAACCABAAAIACAACACkAEAAAAACBAAABEQBAI=</HashCode>
+      <FileName>InspectionTotal\TotalDiagnosis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Properties.Resources" Collapsed="true">
+    <Position X="9.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Scheduling.CopySchedule" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QwAAAQIgFCBAAAAABACAAEICAA0EEACADAAAAAAgRgA=</HashCode>
+      <FileName>Scheduling\CopySchedule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Scheduling.ItemGroupAndPersonal" Collapsed="true">
+    <Position X="12.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scheduling\ItemGroupAndPersonal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Scheduling.MyAppointmentInstance" Collapsed="true">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Scheduling\MyAppointmentInstance.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Scheduling.ScheduleEditorOfGrid" Collapsed="true">
+    <Position X="11" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQSKEBAACbESAAoRDgDAaUiuAkEACwCdCZAAWCnkxYA=</HashCode>
+      <FileName>Scheduling\ScheduleEditorOfGrid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Scheduling.ScheduleEventArgs" Collapsed="true">
+    <Position X="12.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scheduling\ScheduleEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Scheduling.ScheduleOfGrid" Collapsed="true">
+    <Position X="14.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JQVBIAAABChAAEJAQOCAAAECswUMiQACCECIACIARQA=</HashCode>
+      <FileName>Scheduling\ScheduleOfGrid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Scheduling.ScheduleQuery" Collapsed="true">
+    <Position X="0.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwEIEQIABCDQAQAABAGAEAILIAUAgACABAAJAAAIZBQ=</HashCode>
+      <FileName>Scheduling\ScheduleQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Scheduling.ReportJson" Collapsed="true">
+    <Position X="7.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Scheduling\ScheduleQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Scheduling.Master" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Scheduling\ScheduleQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Scheduling.Detail" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Scheduling\ScheduleQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Test.DateTimeTest" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAAAAACAAAAAAAACAAAACAAEAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Test\DateTimeTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Test.MergePicture" Collapsed="true">
+    <Position X="2.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAACAAAAAAAACAQAACAAAHAAAAAAgAADgAAAA=</HashCode>
+      <FileName>Test\MergePicture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Test.PictureTest" Collapsed="true">
+    <Position X="11" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAJAAAACAAAAAAAACAQAACAMEHAAAAAAgAAPgAAAA=</HashCode>
+      <FileName>Test\PictureTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.Test.TestTable1" Collapsed="true">
+    <Position X="5.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQhAAACAACAAAAAAAAKAECACAAAABBuACAAAAAABAAA=</HashCode>
+      <FileName>Test\TestTable1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sw.Hospital.HealthExaminationSystem.frmDepartmet" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAgIAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Test\frmDepartmet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

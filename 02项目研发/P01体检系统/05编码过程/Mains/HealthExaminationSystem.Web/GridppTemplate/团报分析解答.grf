@@ -1,0 +1,151 @@
+﻿Object Report
+	Version='6.3.0.1'
+	Title='你的报表标题'
+	PrintAsDesignPaper=F
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+		LeftMargin=2
+		TopMargin=1
+		RightMargin=2
+		BottomMargin=1
+	End
+	Object DetailGrid
+		CenterView=T
+		Object Recordset
+			Items Field
+				Item
+					Name='SumName'
+				End
+				Item
+					Name='SumAdvicee'
+				End
+				Item
+					Name='CusSum'
+				End
+			End
+		End
+		Items Column
+			Item
+				Name='Column1'
+			End
+			Item
+				Name='Column2'
+				Width=7.19667
+			End
+			Item
+				Name='Column3'
+				Width=6.985
+			End
+		End
+		Object ColumnContent
+			Height=1.00542
+			Items ColumnContentCell
+				Item
+					Column='Column1'
+					WordWrap=T
+					CanGrow=T
+					DataField='SumName'
+				End
+				Item
+					Column='Column2'
+					WordWrap=T
+					CanGrow=T
+					DataField='SumAdvicee'
+				End
+				Item
+					Column='Column3'
+					WordWrap=T
+					CanGrow=T
+					DataField='CusSum'
+				End
+			End
+		End
+		Object ColumnTitle
+			Height=1.16417
+			Items ColumnTitleCell
+				Item
+					GroupTitle=F
+					Column='Column1'
+					TextAlign=MiddleCenter
+					Text='体检异常建议名称'
+				End
+				Item
+					GroupTitle=F
+					Column='Column2'
+					TextAlign=MiddleCenter
+					Text='医学建议'
+				End
+				Item
+					GroupTitle=F
+					Column='Column3'
+					TextAlign=MiddleCenter
+					Text='异常人员名单'
+				End
+			End
+		End
+	End
+	Items Parameter
+		Item
+			Name='ClientName'
+		End
+		Item
+			Name='StarTime'
+		End
+		Item
+			Name='EndTime'
+		End
+	End
+	Items ReportHeader
+		Item
+			Name='ReportHeader1'
+			CanGrow=T
+			Height=1.19063
+			Items Control
+				Item
+					Type=Line
+					Name='Line2'
+					Left=17.0127
+					Top=4.1275
+					Height=4.02167
+				End
+				Item
+					Type=Line
+					Name='Line6'
+					Top=4.10104
+					Height=4.02167
+				End
+				Item
+					Type=Line
+					Name='Line11'
+					Top=9.23396
+					Width=16.1925
+				End
+				Item
+					Type=MemoBox
+					Name='MemoBox1'
+					Left=1.40229
+					Width=13.9965
+					Height=1.00542
+					Object Font
+						Name='宋体'
+						Size=120000,0
+						Bold=T
+						Charset=134
+					End
+					Text='[#{EndTime}#]~[#{EndTime}#] [#{ClientName}#]'
+				End
+			End
+		End
+	End
+	Items ReportFooter
+		Item
+			Name='ReportFooter1'
+			Height=0
+		End
+	End
+End

@@ -1,0 +1,3266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7DE60574-B63A-454C-848B-45CEA2782273}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sw.Hospital.HealthExaminationSystem.ApiProxy</RootNamespace>
+    <AssemblyName>HealthExaminationSystem.ApiProxy</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;Proxy</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;Proxy</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;Proxy</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\x86\Debug\HealthExaminationSystem.ApiProxy.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Newtonsoft.Json.12.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Sw.His.Common.NetworkTool, Version=1.0.0.9, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\01解决方案\HealthExaminationSystem\packages\Sw.His.Common.NetworkTool.1.0.0.9\lib\net40\Sw.His.Common.NetworkTool.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Mains\HealthExaminationSystem.Win\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExamination.Drivers\Models\HisInterface\TJSQ.cs">
+      <Link>Charge\Dto\TJSQ.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExamination.Drivers\Models\HisInterface\TJSQMX.cs">
+      <Link>Charge\Dto\TJSQMX.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExamination.Drivers\Models\NYKInterface\ChargCardDto.cs">
+      <Link>Charge\Dto\ChargCardDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExamination.Drivers\Models\NYKInterface\getCardInfoDto.cs">
+      <Link>Charge\Dto\getCardInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExamination.Drivers\Models\NYKInterface\OutCardDto.cs">
+      <Link>Charge\Dto\OutCardDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\AddStatistics\Dto\AddStatisticsDto.cs">
+      <Link>AddStatistics\Dto\AddStatisticsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\AddStatistics\Dto\SearchStatisticsDto.cs">
+      <Link>AddStatistics\Dto\SearchStatisticsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\AddStatistics\IAddStatisticsAppService.cs">
+      <Link>AddStatistics\IAddStatisticsAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BarPrintInfoItemGroup\Dto\BarPrintInfoItemGroupDto.cs">
+      <Link>BarPrintInfoItemGroup\Dto\BarPrintInfoItemGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BarPrintInfoItemGroup\Dto\BarPrintInfoItemGroupQueryDto.cs">
+      <Link>BarPrintInfoItemGroup\Dto\BarPrintInfoItemGroupQueryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BarPrintInfoItemGroup\Dto\CreateBarPrintInfoItemGroupDto.cs">
+      <Link>BarPrintInfoItemGroup\Dto\CreateBarPrintInfoItemGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BarPrintInfoItemGroup\IBarPrintInfoItemGroupAppService.cs">
+      <Link>BarPrintInfoItemGroup\IBarPrintInfoItemGroupAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BarPrint\Dto\CreateCustomerBarPrintInfoDto.cs">
+      <Link>BarPrint\Dto\CreateCustomerBarPrintInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BarPrint\Dto\CustomerBarPrintInfoDto.cs">
+      <Link>BarPrint\Dto\CustomerBarPrintInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BarPrint\Dto\CustomerBarPrintInfoItemDto.cs">
+      <Link>BarPrint\Dto\CustomerBarPrintInfoItemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BarPrint\Dto\CustomerBarPrintInfoQueryDto.cs">
+      <Link>BarPrint\Dto\CustomerBarPrintInfoQueryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BarPrint\Dto\DetailDto.cs">
+      <Link>BarPrint\Dto\DetailDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BarPrint\Dto\MasterDto.cs">
+      <Link>BarPrint\Dto\MasterDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BarPrint\Dto\ReportJsonDto.cs">
+      <Link>BarPrint\Dto\ReportJsonDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BarPrint\IBarPrintAppService.cs">
+      <Link>BarPrint\IBarPrintAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BarSetting\Dto\BarCodeViewDto.cs">
+      <Link>BarSetting\Dto\BarCodeViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BarSetting\Dto\BarItembViewDto.cs">
+      <Link>BarSetting\Dto\BarItembViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BarSetting\Dto\BarItemDto.cs">
+      <Link>BarSetting\Dto\BarItemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BarSetting\Dto\BarItemViewDto.cs">
+      <Link>BarSetting\Dto\BarItemViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BarSetting\Dto\BarSettingDto.cs">
+      <Link>BarSetting\Dto\BarSettingDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BarSetting\Dto\BarSettingInput.cs">
+      <Link>BarSetting\Dto\BarSettingInput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BarSetting\Dto\CreateOrUpdateBarSettingDto.cs">
+      <Link>BarSetting\Dto\CreateOrUpdateBarSettingDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BarSetting\Dto\FullBarItemDto.cs">
+      <Link>BarSetting\Dto\FullBarItemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BarSetting\Dto\FullBarSettingDto.cs">
+      <Link>BarSetting\Dto\FullBarSettingDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BarSetting\Dto\ItemGroupViewDto.cs">
+      <Link>BarSetting\Dto\ItemGroupViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BarSetting\Dto\SearchBarItemDto.cs">
+      <Link>BarSetting\Dto\SearchBarItemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BarSetting\Dto\SearchBarSettingDto.cs">
+      <Link>BarSetting\Dto\SearchBarSettingDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BarSetting\Dto\SimpleBarSettingDto.cs">
+      <Link>BarSetting\Dto\SimpleBarSettingDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BarSetting\IBarSettingAppService.cs">
+      <Link>BarSetting\IBarSettingAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BaseModule\Dto\FindNameDto.cs">
+      <Link>BaseModule\Dto\FindNameDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BaseModule\Dto\FormModuleDto.cs">
+      <Link>BaseModule\Dto\FormModuleDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BaseModule\Dto\NameDto.cs">
+      <Link>BaseModule\Dto\NameDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BaseModule\IFormModuleAppService.cs">
+      <Link>BaseModule\IFormModuleAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BasicDictionary\Dto\BasicDictionaryDto.cs">
+      <Link>BasicDictionary\Dto\BasicDictionaryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BasicDictionary\Dto\BasicDictionaryInput.cs">
+      <Link>BasicDictionary\Dto\BasicDictionaryInput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BasicDictionary\Dto\CreateBasicDictionaryDto.cs">
+      <Link>BasicDictionary\Dto\CreateBasicDictionaryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BasicDictionary\Dto\UpdateBasicDictionaryDto.cs">
+      <Link>BasicDictionary\Dto\UpdateBasicDictionaryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\BasicDictionary\IBasicDictionaryAppService.cs">
+      <Link>BasicDictionary\IBasicDictionaryAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CarSend\Dto\InCardSearchDto.cs">
+      <Link>CarSend\Dto\InCardSearchDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CarSend\Dto\OutSeachCardDto.cs">
+      <Link>CarSend\Dto\OutSeachCardDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CarSend\Dto\SaveTbmCardDto.cs">
+      <Link>CarSend\Dto\SaveTbmCardDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CarSend\Dto\SearchCardDto.cs">
+      <Link>CarSend\Dto\SearchCardDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CarSend\Dto\SimpCardListDto.cs">
+      <Link>CarSend\Dto\SimpCardListDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CarSend\Dto\SimpCardTypeDto.cs">
+      <Link>CarSend\Dto\SimpCardTypeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CarSend\ICardSendAppService.cs">
+      <Link>CarSend\ICardSendAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\BallCheckDto.cs">
+      <Link>Charge\Dto\BallCheckDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\ChargeBM.cs">
+      <Link>Charge\Dto\ChargeBM.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\ChargeClientDto.cs">
+      <Link>Charge\Dto\ChargeClientDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\ChargeClientRegDto.cs">
+      <Link>Charge\Dto\ChargeClientRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\ChargeCusDto.cs">
+      <Link>Charge\Dto\ChargeCusDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\ChargeCusInfoDto.cs">
+      <Link>Charge\Dto\ChargeCusInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\ChargeCusRegDto.cs">
+      <Link>Charge\Dto\ChargeCusRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\ChargeCusShowDto.cs">
+      <Link>Charge\Dto\ChargeCusShowDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\ChargeCusStateDto.cs">
+      <Link>Charge\Dto\ChargeCusStateDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\ChargeCustmoerItemGroupDto.cs">
+      <Link>Charge\Dto\ChargeCustmoerItemGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\ChargeGroupsDto.cs">
+      <Link>Charge\Dto\ChargeGroupsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\ChargeInfoDto.cs">
+      <Link>Charge\Dto\ChargeInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\ChargeTeamMoneyViewDto.cs">
+      <Link>Charge\Dto\ChargeTeamMoneyViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\ChargeTeamNameDto.cs">
+      <Link>Charge\Dto\ChargeTeamNameDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\ChargeTypeDto.cs">
+      <Link>Charge\Dto\ChargeTypeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\ChargQueryCusDto.cs">
+      <Link>Charge\Dto\ChargQueryCusDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\ClientDepartDto.cs">
+      <Link>Charge\Dto\ClientDepartDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\ClientGroupMoneyDto.cs">
+      <Link>Charge\Dto\ClientGroupMoneyDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\ClientGroupStatisDto.cs">
+      <Link>Charge\Dto\ClientGroupStatisDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\ClientInfoSimpDto.cs">
+      <Link>Charge\Dto\ClientInfoSimpDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\ClientPayCusLisViewDto.cs">
+      <Link>Charge\Dto\ClientPayCusLisViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\ClientPaymentDto.cs">
+      <Link>Charge\Dto\ClientPaymentDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\ClientPayMoneyViewDto.cs">
+      <Link>Charge\Dto\ClientPayMoneyViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\CountDto.cs">
+      <Link>Charge\Dto\CountDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\CreateInvoiceRecordDto.cs">
+      <Link>Charge\Dto\CreateInvoiceRecordDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\CreateMReceiptInfoDetailedDto.cs">
+      <Link>Charge\Dto\CreateMReceiptInfoDetailedDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\CreatePaymentDto.cs">
+      <Link>Charge\Dto\CreatePaymentDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\CreateReceiptInfoDto.cs">
+      <Link>Charge\Dto\CreateReceiptInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\CreateTjlMDiurnalTableDto.cs">
+      <Link>Charge\Dto\CreateTjlMDiurnalTableDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\CusChageListDto.cs">
+      <Link>Charge\Dto\CusChageListDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\CusGroupMoneyDto.cs">
+      <Link>Charge\Dto\CusGroupMoneyDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\CusGroupTTDto.cs">
+      <Link>Charge\Dto\CusGroupTTDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\CusPayListDto.cs">
+      <Link>Charge\Dto\CusPayListDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\CusPayMoneyViewDto.cs">
+      <Link>Charge\Dto\CusPayMoneyViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\CusPayTTDto.cs">
+      <Link>Charge\Dto\CusPayTTDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\CusReceivsDto.cs">
+      <Link>Charge\Dto\CusReceivsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\CusRegSimpleDto.cs">
+      <Link>Charge\Dto\CusRegSimpleDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\CustomerGroupMoneyDto.cs">
+      <Link>Charge\Dto\CustomerGroupMoneyDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\CustomerSFTypeCusRegDto.cs">
+      <Link>Charge\Dto\CustomerSFTypeCusRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\CustomerSFTypeDto.cs">
+      <Link>Charge\Dto\CustomerSFTypeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\CusTTDto.cs">
+      <Link>Charge\Dto\CusTTDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\DayCusListDto.cs">
+      <Link>Charge\Dto\DayCusListDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\DoctorDeparmentDto.cs">
+      <Link>Charge\Dto\DoctorDeparmentDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\DZFPInputDto.cs">
+      <Link>Charge\Dto\DZFPInputDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\GroupClientNameDto.cs">
+      <Link>Charge\Dto\GroupClientNameDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\GroupMoneyDto.cs">
+      <Link>Charge\Dto\GroupMoneyDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\GroupSQDHDto.cs">
+      <Link>Charge\Dto\GroupSQDHDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\GuIdDto.cs">
+      <Link>Charge\Dto\GuIdDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\HIsInput.cs">
+      <Link>Charge\Dto\HIsInput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\InBackMoneyDto.cs">
+      <Link>Charge\Dto\InBackMoneyDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\IndividualitiesDto.cs">
+      <Link>Charge\Dto\IndividualitiesDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\IndividualityDto.cs">
+      <Link>Charge\Dto\IndividualityDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\INTJSQDto.cs">
+      <Link>Charge\Dto\INTJSQDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\InvoiceRecordViewDto.cs">
+      <Link>Charge\Dto\InvoiceRecordViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\InvoiceViewDto.cs">
+      <Link>Charge\Dto\InvoiceViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\InYKCarNumDto.cs">
+      <Link>Charge\Dto\InYKCarNumDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\MDiurnalTableDto.cs">
+      <Link>Charge\Dto\MDiurnalTableDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\MInvoiceRecordDto.cs">
+      <Link>Charge\Dto\MInvoiceRecordDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\MReceiptClientDto.cs">
+      <Link>Charge\Dto\MReceiptClientDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\MReceiptInfoDetailedViewDto.cs">
+      <Link>Charge\Dto\MReceiptInfoDetailedViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\MReceiptInfoDto.cs">
+      <Link>Charge\Dto\MReceiptInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\MReceiptInfoPerDto.cs">
+      <Link>Charge\Dto\MReceiptInfoPerDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\MReceiptInfoPerViewDto.cs">
+      <Link>Charge\Dto\MReceiptInfoPerViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\MReceiptOrCustomerViewDto.cs">
+      <Link>Charge\Dto\MReceiptOrCustomerViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\MRiseDto.cs">
+      <Link>Charge\Dto\MRiseDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\OutErrDto.cs">
+      <Link>Charge\Dto\OutErrDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\OutMessDto.cs">
+      <Link>Charge\Dto\OutMessDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\PersonnelCategoryDto.cs">
+      <Link>Charge\Dto\PersonnelCategoryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\PushMessageDto.cs">
+      <Link>Charge\Dto\PushMessageDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\ReceiptClientDto.cs">
+      <Link>Charge\Dto\ReceiptClientDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\ReceiptInfoPerViewDto.cs">
+      <Link>Charge\Dto\ReceiptInfoPerViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\ReceiptInfoViewDto.cs">
+      <Link>Charge\Dto\ReceiptInfoViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\SeachChargrDto.cs">
+      <Link>Charge\Dto\SeachChargrDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\SearchChagelistDto.cs">
+      <Link>Charge\Dto\SearchChagelistDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\SearchClientGroupDto.cs">
+      <Link>Charge\Dto\SearchClientGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\searchIDListDto.cs">
+      <Link>Charge\Dto\searchIDListDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\SearchInvoiceDto.cs">
+      <Link>Charge\Dto\SearchInvoiceDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\SearchMLGroupDto.cs">
+      <Link>Charge\Dto\SearchMLGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\SearchPayMoneyDto.cs">
+      <Link>Charge\Dto\SearchPayMoneyDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\SearchSFTypeDto.cs">
+      <Link>Charge\Dto\SearchSFTypeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\SettlementInfoViewDto.cs">
+      <Link>Charge\Dto\SettlementInfoViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\SFDto.cs">
+      <Link>Charge\Dto\SFDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\showCustomerItemGroupsDto.cs">
+      <Link>Charge\Dto\showCustomerItemGroupsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\SqlWhereDto.cs">
+      <Link>Charge\Dto\SqlWhereDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\ThreeBallCheckDto.cs">
+      <Link>Charge\Dto\ThreeBallCheckDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\TJSQMXDto.cs">
+      <Link>Charge\Dto\TJSQMXDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\UpdateChargeStateDto.cs">
+      <Link>Charge\Dto\UpdateChargeStateDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\UpdateTjlMcusMoneyDto.cs">
+      <Link>Charge\Dto\UpdateTjlMcusMoneyDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\WebChargeShow.cs">
+      <Link>Charge\Dto\WebChargeShow.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\Dto\YHCustomerDto.cs">
+      <Link>Charge\Dto\YHCustomerDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Charge\IChargeAppService.cs">
+      <Link>Charge\IChargeAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ClearData\Dto\ClearDataDto.cs">
+      <Link>ClearData\Dto\ClearDataDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ClearData\Dto\DataBaseDto.cs">
+      <Link>ClearData\Dto\DataBaseDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ClearData\Dto\InputClearData.cs">
+      <Link>ClearData\Dto\InputClearData.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ClearData\IClearDataAppService.cs">
+      <Link>ClearData\IClearDataAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ClientInfoes\Dto\ClientInfoCacheDto.cs">
+      <Link>ClientInfoes\Dto\ClientInfoCacheDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ClientInfoes\Dto\ClientInfoesDto.cs">
+      <Link>ClientInfoes\Dto\ClientInfoesDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ClientInfoes\Dto\ClientInfoesInput.cs">
+      <Link>ClientInfoes\Dto\ClientInfoesInput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ClientInfoes\Dto\ClientInfoesListInput.cs">
+      <Link>ClientInfoes\Dto\ClientInfoesListInput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ClientInfoes\Dto\ClientInfoesListOutput.cs">
+      <Link>ClientInfoes\Dto\ClientInfoesListOutput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ClientInfoes\Dto\ClientInfoesOutput.cs">
+      <Link>ClientInfoes\Dto\ClientInfoesOutput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ClientInfoes\Dto\ClientInfosNameDto.cs">
+      <Link>ClientInfoes\Dto\ClientInfosNameDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ClientInfoes\Dto\ClientInfosViewDto.cs">
+      <Link>ClientInfoes\Dto\ClientInfosViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ClientInfoes\IClientInfoesAppService.cs">
+      <Link>ClientInfoes\IClientInfoesAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Common\Dto\AdministrativeDivisionDto.cs">
+      <Link>Common\Dto\AdministrativeDivisionDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Common\Dto\ChineseDto.cs">
+      <Link>Common\Dto\ChineseDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Common\Dto\CreateOpLogDto.cs">
+      <Link>Common\Dto\CreateOpLogDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Common\Dto\PageInputDto.cs">
+      <Link>Common\Dto\PageInputDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Common\Dto\PageResultDto.cs">
+      <Link>Common\Dto\PageResultDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Common\Dto\SearchOpLogDto.cs">
+      <Link>Common\Dto\SearchOpLogDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Common\Dto\ShowOpLogDto.cs">
+      <Link>Common\Dto\ShowOpLogDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Common\Dto\TimeDto.cs">
+      <Link>Common\Dto\TimeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Common\ICommonAppService.cs">
+      <Link>Common\ICommonAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\ApplicationfromDto.cs">
+      <Link>Company\Dto\ApplicationfromDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\ClientCusMoneyListDto.cs">
+      <Link>Company\Dto\ClientCusMoneyListDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\ClientCustomerRegDto.cs">
+      <Link>Company\Dto\ClientCustomerRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\ClientInfoRegDto.cs">
+      <Link>Company\Dto\ClientInfoRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\ClientRegLQDto.cs">
+      <Link>Company\Dto\ClientRegLQDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\ClientRegNameComDto.cs">
+      <Link>Company\Dto\ClientRegNameComDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\ClientRegSelectDto.cs">
+      <Link>Company\Dto\ClientRegSelectDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\ClientTeamCusListDto.cs">
+      <Link>Company\Dto\ClientTeamCusListDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\ClientTeamInfoesViewDto.cs">
+      <Link>Company\Dto\ClientTeamInfoesViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\ClientTeamInfosDto.cs">
+      <Link>Company\Dto\ClientTeamInfosDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\ClientTeamRegDto.cs">
+      <Link>Company\Dto\ClientTeamRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\ClientTeamRegitemViewDto.cs">
+      <Link>Company\Dto\ClientTeamRegitemViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\CompanyFilterInput.cs">
+      <Link>Company\Dto\CompanyFilterInput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\CompanyInformationDto.cs">
+      <Link>Company\Dto\CompanyInformationDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\CompanyInformationDtoNo2.cs">
+      <Link>Company\Dto\CompanyInformationDtoNo2.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\CompanyInformationDtoNo3.cs">
+      <Link>Company\Dto\CompanyInformationDtoNo3.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\CompanyRegisterDtoNo1.cs">
+      <Link>Company\Dto\CompanyRegisterDtoNo1.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\CompanyRegisterForPrintDto.cs">
+      <Link>Company\Dto\CompanyRegisterForPrintDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\CompanyRegisterTeamInformationDtoForComboBox.cs">
+      <Link>Company\Dto\CompanyRegisterTeamInformationDtoForComboBox.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\CompanyReportPrintRecordDto.cs">
+      <Link>Company\Dto\CompanyReportPrintRecordDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\CreateClientRegDto.cs">
+      <Link>Company\Dto\CreateClientRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\CreateClientTeamInfoesDto.cs">
+      <Link>Company\Dto\CreateClientTeamInfoesDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\CreateClientTeamRegItemDto.cs">
+      <Link>Company\Dto\CreateClientTeamRegItemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\CreateCompanyReportPrintRecordDto.cs">
+      <Link>Company\Dto\CreateCompanyReportPrintRecordDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\CustomerRegsInputDto.cs">
+      <Link>Company\Dto\CustomerRegsInputDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\CustomerRegsViewDto.cs">
+      <Link>Company\Dto\CustomerRegsViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\CustomersViewDto.cs">
+      <Link>Company\Dto\CustomersViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\FullClientRegDto.cs">
+      <Link>Company\Dto\FullClientRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\GetClientVerSionDto.cs">
+      <Link>Company\Dto\GetClientVerSionDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\InquireGroupCustomerRegDto.cs">
+      <Link>Company\Dto\InquireGroupCustomerRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\ItemGroupNameDto.cs">
+      <Link>Company\Dto\ItemGroupNameDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\MonrySummaryDto.cs">
+      <Link>Company\Dto\MonrySummaryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\RegsChargeCusDto.cs">
+      <Link>Company\Dto\RegsChargeCusDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\SearchClientRegLQDto.cs">
+      <Link>Company\Dto\SearchClientRegLQDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\SearchClientRegStatisticsOverTheYearsDto.cs">
+      <Link>Company\Dto\SearchClientRegStatisticsOverTheYearsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\SearchClientTeamIdorTeamRegDto.cs">
+      <Link>Company\Dto\SearchClientTeamIdorTeamRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\SearchClientTeamInfoDto.cs">
+      <Link>Company\Dto\SearchClientTeamInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\SearchGroupCustomerRegDto.cs">
+      <Link>Company\Dto\SearchGroupCustomerRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\ShortMessageDto.cs">
+      <Link>Company\Dto\ShortMessageDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\StatisticsTTJZDDepartmentDto.cs">
+      <Link>Company\Dto\StatisticsTTJZDDepartmentDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\StatisticsTTJZDPersonalTTJZDDto.cs">
+      <Link>Company\Dto\StatisticsTTJZDPersonalTTJZDDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\StatisticsTTJZDTeamTTJZDDto.cs">
+      <Link>Company\Dto\StatisticsTTJZDTeamTTJZDDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\UpClientMZDto.cs">
+      <Link>Company\Dto\UpClientMZDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\Dto\ViewClientRegStatisticsOverTheYearsDto.cs">
+      <Link>Company\Dto\ViewClientRegStatisticsOverTheYearsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\IClientRegAppService.cs">
+      <Link>Company\IClientRegAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Company\ICompanyRelatedAppService.cs">
+      <Link>Company\ICompanyRelatedAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Compose\Dto\ComposeDto.cs">
+      <Link>Compose\Dto\ComposeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Compose\Dto\ComposeGroupDto.cs">
+      <Link>Compose\Dto\ComposeGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Compose\Dto\ComposeGroupItemDto.cs">
+      <Link>Compose\Dto\ComposeGroupItemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Compose\Dto\CreateOrUpdateComposeDto.cs">
+      <Link>Compose\Dto\CreateOrUpdateComposeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Compose\Dto\CreateOrUpdateComposeGroupDto.cs">
+      <Link>Compose\Dto\CreateOrUpdateComposeGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Compose\Dto\CreateOrUpdateComposeGroupInput.cs">
+      <Link>Compose\Dto\CreateOrUpdateComposeGroupInput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Compose\Dto\CreateOrUpdateComposeGroupItemDto.cs">
+      <Link>Compose\Dto\CreateOrUpdateComposeGroupItemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Compose\Dto\CreateOrUpdateComposeInput.cs">
+      <Link>Compose\Dto\CreateOrUpdateComposeInput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Compose\Dto\FullComposeDto.cs">
+      <Link>Compose\Dto\FullComposeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Compose\Dto\FullComposeGroupDto.cs">
+      <Link>Compose\Dto\FullComposeGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Compose\Dto\SearchComposeInput.cs">
+      <Link>Compose\Dto\SearchComposeInput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Compose\IComposeAppService.cs">
+      <Link>Compose\IComposeAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Crisis\Dto\CallBackDto.cs">
+      <Link>Crisis\Dto\CallBackDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Crisis\Dto\CrisisCusInfoDto.cs">
+      <Link>Crisis\Dto\CrisisCusInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Crisis\Dto\CrisisCustomerDto.cs">
+      <Link>Crisis\Dto\CrisisCustomerDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Crisis\Dto\CrisisItemDto.cs">
+      <Link>Crisis\Dto\CrisisItemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Crisis\Dto\CrisisSetViewDto.cs">
+      <Link>Crisis\Dto\CrisisSetViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Crisis\Dto\CrisVisitDto.cs">
+      <Link>Crisis\Dto\CrisVisitDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Crisis\Dto\CrisVisitSelectDto.cs">
+      <Link>Crisis\Dto\CrisVisitSelectDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Crisis\Dto\CustomerServiceCrisisViewDto.cs">
+      <Link>Crisis\Dto\CustomerServiceCrisisViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Crisis\Dto\ReviewsetDto.cs">
+      <Link>Crisis\Dto\ReviewsetDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Crisis\Dto\SearchCrisisInfosDto.cs">
+      <Link>Crisis\Dto\SearchCrisisInfosDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Crisis\Dto\SetCrisisDto.cs">
+      <Link>Crisis\Dto\SetCrisisDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Crisis\Dto\TjlCrisisSetDto.cs">
+      <Link>Crisis\Dto\TjlCrisisSetDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Crisis\ICrisisAppService.cs">
+      <Link>Crisis\ICrisisAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Critical\Dto\CrisisMessageDto.cs">
+      <Link>Critical\Dto\CrisisMessageDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Critical\Dto\CriticalDetailDto.cs">
+      <Link>Critical\Dto\CriticalDetailDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Critical\Dto\CriticalDto.cs">
+      <Link>Critical\Dto\CriticalDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Critical\Dto\SearchCriticalDto.cs">
+      <Link>Critical\Dto\SearchCriticalDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Critical\Dto\SearchtCrisisMessageDto.cs">
+      <Link>Critical\Dto\SearchtCrisisMessageDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Critical\Dto\UpCricalStateDto.cs">
+      <Link>Critical\Dto\UpCricalStateDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Critical\ICriticalAppService.cs">
+      <Link>Critical\ICriticalAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CrossTable\Dto\CrossTableViewDto.cs">
+      <Link>CrossTable\Dto\CrossTableViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CrossTable\Dto\CusGiveUpDto.cs">
+      <Link>CrossTable\Dto\CusGiveUpDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CrossTable\Dto\CustomerBloodNumDto.cs">
+      <Link>CrossTable\Dto\CustomerBloodNumDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CrossTable\Dto\CustomerItemGroupDto.cs">
+      <Link>CrossTable\Dto\CustomerItemGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CrossTable\Dto\CustomerRegForCrossTableDto.cs">
+      <Link>CrossTable\Dto\CustomerRegForCrossTableDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CrossTable\Dto\CustomerRegForCrossTableViewDto.cs">
+      <Link>CrossTable\Dto\CustomerRegForCrossTableViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CrossTable\Dto\CustomerRegItemDto.cs">
+      <Link>CrossTable\Dto\CustomerRegItemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CrossTable\Dto\EditItemGroupStateInput.cs">
+      <Link>CrossTable\Dto\EditItemGroupStateInput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CrossTable\Dto\QuerCustomerItemsDto.cs">
+      <Link>CrossTable\Dto\QuerCustomerItemsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CrossTable\Dto\QueryGiveUpDto.cs">
+      <Link>CrossTable\Dto\QueryGiveUpDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CrossTable\Dto\QueryInfoDto.cs">
+      <Link>CrossTable\Dto\QueryInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CrossTable\Dto\SetItemGroupAddMinusDto.cs">
+      <Link>CrossTable\Dto\SetItemGroupAddMinusDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CrossTable\ICrossTableAppService.cs">
+      <Link>CrossTable\ICrossTableAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\AbpTenantsDto.cs">
+      <Link>CusReg\Dto\AbpTenantsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\AbpUsersDto.cs">
+      <Link>CusReg\Dto\AbpUsersDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\ApplicationDto.cs">
+      <Link>CusReg\Dto\ApplicationDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\BatchRegInputDto.cs">
+      <Link>CusReg\Dto\BatchRegInputDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\BdSatticDto.cs">
+      <Link>CusReg\Dto\BdSatticDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\BusiCusGRDtocs.cs">
+      <Link>CusReg\Dto\BusiCusGRDtocs.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\BusiCusRegDto.cs">
+      <Link>CusReg\Dto\BusiCusRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\BusiRSDto.cs">
+      <Link>CusReg\Dto\BusiRSDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\CardSuitNameDto.cs">
+      <Link>CusReg\Dto\CardSuitNameDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\CardToSuitNameDto.cs">
+      <Link>CusReg\Dto\CardToSuitNameDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\CardTypeNameDto.cs">
+      <Link>CusReg\Dto\CardTypeNameDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\ClientRegDto.cs">
+      <Link>CusReg\Dto\ClientRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\ClientTeamInfoDto.cs">
+      <Link>CusReg\Dto\ClientTeamInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\CusCardDto.cs">
+      <Link>CusReg\Dto\CusCardDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\CusNameInput.cs">
+      <Link>CusReg\Dto\CusNameInput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\CusRegListViewDto.cs">
+      <Link>CusReg\Dto\CusRegListViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\CustomerAddPackageDto.cs">
+      <Link>CusReg\Dto\CustomerAddPackageDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\CustomerAddPackageItemDto.cs">
+      <Link>CusReg\Dto\CustomerAddPackageItemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\CustomerEssentialInfoViewDto.cs">
+      <Link>CusReg\Dto\CustomerEssentialInfoViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\CustomerItemGroupBarItemDto.cs">
+      <Link>CusReg\Dto\CustomerItemGroupBarItemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\CustomerOCCPicDto.cs">
+      <Link>CusReg\Dto\CustomerOCCPicDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\CustomerQuestionDto.cs">
+      <Link>CusReg\Dto\CustomerQuestionDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\CustomerRegCostDto.cs">
+      <Link>CusReg\Dto\CustomerRegCostDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\CustomerRegDto.cs">
+      <Link>CusReg\Dto\CustomerRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\CustomerRegEssentialInfoViewDto.cs">
+      <Link>CusReg\Dto\CustomerRegEssentialInfoViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\CustomerRegOrItemViewDto.cs">
+      <Link>CusReg\Dto\CustomerRegOrItemViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\CustomerRegRosterDto.cs">
+      <Link>CusReg\Dto\CustomerRegRosterDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\CustomerRegSimpleViewDto.cs">
+      <Link>CusReg\Dto\CustomerRegSimpleViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\CustomerRegViewDto.cs">
+      <Link>CusReg\Dto\CustomerRegViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\DepartMentCustomerRegOutPut.cs">
+      <Link>CusReg\Dto\DepartMentCustomerRegOutPut.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\DisageSumDTO.cs">
+      <Link>CusReg\Dto\DisageSumDTO.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\EditCustomerRegStatesDto.cs">
+      <Link>CusReg\Dto\EditCustomerRegStatesDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\GroupPriceDto.cs">
+      <Link>CusReg\Dto\GroupPriceDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\GsearchCustomerDto.cs">
+      <Link>CusReg\Dto\GsearchCustomerDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\GuideUpdateCustomerItemGroupDto.cs">
+      <Link>CusReg\Dto\GuideUpdateCustomerItemGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\GuideUpdateCustomerRegDto.cs">
+      <Link>CusReg\Dto\GuideUpdateCustomerRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\ImportDataDto.cs">
+      <Link>CusReg\Dto\ImportDataDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\InCardChageDto.cs">
+      <Link>CusReg\Dto\InCardChageDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\InSearchBusiCusDto.cs">
+      <Link>CusReg\Dto\InSearchBusiCusDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\OccQueCusDto.cs">
+      <Link>CusReg\Dto\OccQueCusDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\OneAddQuestionsDto.cs">
+      <Link>CusReg\Dto\OneAddQuestionsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\OutApplicationDto.cs">
+      <Link>CusReg\Dto\OutApplicationDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\OutOldRegDto.cs">
+      <Link>CusReg\Dto\OutOldRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\PersonTypeDto.cs">
+      <Link>CusReg\Dto\PersonTypeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\QueryAllForNumberDto.cs">
+      <Link>CusReg\Dto\QueryAllForNumberDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\QueryAllForNumberInput.cs">
+      <Link>CusReg\Dto\QueryAllForNumberInput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\QueryAllForPayMoneyDto.cs">
+      <Link>CusReg\Dto\QueryAllForPayMoneyDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\QueryAllForPersonDto.cs">
+      <Link>CusReg\Dto\QueryAllForPersonDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\QueryClientInfoDto.cs">
+      <Link>CusReg\Dto\QueryClientInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\QueryClientTeamDto.cs">
+      <Link>CusReg\Dto\QueryClientTeamDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\QueryCustomerDto.cs">
+      <Link>CusReg\Dto\QueryCustomerDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\QueryCustomerRegDto.cs">
+      <Link>CusReg\Dto\QueryCustomerRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\QueryDepartCustomerRegDto.cs">
+      <Link>CusReg\Dto\QueryDepartCustomerRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\ReportHSCusDto.cs">
+      <Link>CusReg\Dto\ReportHSCusDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\SaveCusGroupsDto.cs">
+      <Link>CusReg\Dto\SaveCusGroupsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\SaveCusInfoDto.cs">
+      <Link>CusReg\Dto\SaveCusInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\SaveCusRegInfoDto.cs">
+      <Link>CusReg\Dto\SaveCusRegInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\SaveDJDto.cs">
+      <Link>CusReg\Dto\SaveDJDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\SearchCusRegListDto.cs">
+      <Link>CusReg\Dto\SearchCusRegListDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\SearchCustomerDto.cs">
+      <Link>CusReg\Dto\SearchCustomerDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\SearchImportData.cs">
+      <Link>CusReg\Dto\SearchImportData.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\SearchOccQueCus.cs">
+      <Link>CusReg\Dto\SearchOccQueCus.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\SearchOldRegDto.cs">
+      <Link>CusReg\Dto\SearchOldRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\SickNessDto.cs">
+      <Link>CusReg\Dto\SickNessDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\StartupAlertCusRegDto.cs">
+      <Link>CusReg\Dto\StartupAlertCusRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\StartupAlertDto.cs">
+      <Link>CusReg\Dto\StartupAlertDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\StartupAlertGetDto.cs">
+      <Link>CusReg\Dto\StartupAlertGetDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\TjlCustomerDto.cs">
+      <Link>CusReg\Dto\TjlCustomerDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\TjlCustomerItemGroupDto.cs">
+      <Link>CusReg\Dto\TjlCustomerItemGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\TjlCustomerRegDto.cs">
+      <Link>CusReg\Dto\TjlCustomerRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\Dto\ViewQueryRegNumbersDto.cs">
+      <Link>CusReg\Dto\ViewQueryRegNumbersDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReg\ICustomerAppService.cs">
+      <Link>CusReg\ICustomerAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReSultStatus\Dto\AddResultSetDto.cs">
+      <Link>CusReSultStatus\Dto\AddResultSetDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReSultStatus\Dto\FullReSultSetDto.cs">
+      <Link>CusReSultStatus\Dto\FullReSultSetDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReSultStatus\Dto\ReSultCusDepartDto.cs">
+      <Link>CusReSultStatus\Dto\ReSultCusDepartDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReSultStatus\Dto\ReSultCusGroupDto.cs">
+      <Link>CusReSultStatus\Dto\ReSultCusGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReSultStatus\Dto\ReSultCusInfoDto.cs">
+      <Link>CusReSultStatus\Dto\ReSultCusInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReSultStatus\Dto\ReSultCusItemDto.cs">
+      <Link>CusReSultStatus\Dto\ReSultCusItemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReSultStatus\Dto\ReSultCusOccSumDto.cs">
+      <Link>CusReSultStatus\Dto\ReSultCusOccSumDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReSultStatus\Dto\ReSultCusSumDto.cs">
+      <Link>CusReSultStatus\Dto\ReSultCusSumDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReSultStatus\Dto\ReSultDepartDto.cs">
+      <Link>CusReSultStatus\Dto\ReSultDepartDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReSultStatus\Dto\ReSultSetDto.cs">
+      <Link>CusReSultStatus\Dto\ReSultSetDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReSultStatus\Dto\ShowResultSetDto.cs">
+      <Link>CusReSultStatus\Dto\ShowResultSetDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CusReSultStatus\ICusReSultStatusAppService.cs">
+      <Link>CusReSultStatus\ICusReSultStatusAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerRegisterItemPicture\Dto\CustomerRegisterItemPictureDto.cs">
+      <Link>CustomerRegisterItemPicture\Dto\CustomerRegisterItemPictureDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerRegisterItemPicture\ICustomerRegisterItemPictureAppService.cs">
+      <Link>CustomerRegisterItemPicture\ICustomerRegisterItemPictureAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerRegisterSummarize\Dto\CustomerRegisterSummarizeDto.cs">
+      <Link>CustomerRegisterSummarize\Dto\CustomerRegisterSummarizeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerRegisterSummarize\Dto\CustomerRegisterSummarizeSuggestDto.cs">
+      <Link>CustomerRegisterSummarize\Dto\CustomerRegisterSummarizeSuggestDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerRegisterSummarize\ICustomerRegisterSummarizeAppService.cs">
+      <Link>CustomerRegisterSummarize\ICustomerRegisterSummarizeAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerRegister\Dto\CustomerInformationDtoNo1.cs">
+      <Link>CustomerRegister\Dto\CustomerInformationDtoNo1.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerRegister\Dto\CustomerRegisterAppServiceDot\CustomerRegister1Dto.cs">
+      <Link>CustomerRegister\Dto\CustomerRegisterAppServiceDot\CustomerRegister1Dto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerRegister\Dto\CustomerRegisterDtoNo3.cs">
+      <Link>CustomerRegister\Dto\CustomerRegisterDtoNo3.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerRegister\Dto\CustomerRegisterItemGroupDtoNo4.cs">
+      <Link>CustomerRegister\Dto\CustomerRegisterItemGroupDtoNo4.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerRegister\Dto\CustomerRegisterSummarizeAdviceDtoNo1.cs">
+      <Link>CustomerRegister\Dto\CustomerRegisterSummarizeAdviceDtoNo1.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerRegister\Dto\UserDtoNo1.cs">
+      <Link>CustomerRegister\Dto\UserDtoNo1.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerRegister\ICustomerRegisterAppService.cs">
+      <Link>CustomerRegister\ICustomerRegisterAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerRegister\ICustomerRegisterItemGroupAppService.cs">
+      <Link>CustomerRegister\ICustomerRegisterItemGroupAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerRegister\ICustomerRegisterSummarizeAdviceAppService.cs">
+      <Link>CustomerRegister\ICustomerRegisterSummarizeAdviceAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\ClientCabitCRDto.cs">
+      <Link>CustomerReport\Dto\ClientCabitCRDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\ClientInfoOfPrintPreviewDto.cs">
+      <Link>CustomerReport\Dto\ClientInfoOfPrintPreviewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\ClientRegForPrintPreviewDto.cs">
+      <Link>CustomerReport\Dto\ClientRegForPrintPreviewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\ClientRegUpCatDto.cs">
+      <Link>CustomerReport\Dto\ClientRegUpCatDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\CusCabitLQDto.cs">
+      <Link>CustomerReport\Dto\CusCabitLQDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\CustomerForPrintPreviewDto.cs">
+      <Link>CustomerReport\Dto\CustomerForPrintPreviewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\CustomerPrintInfoOutput.cs">
+      <Link>CustomerReport\Dto\CustomerPrintInfoOutput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\CustomerRegForPrintPreviewDto.cs">
+      <Link>CustomerReport\Dto\CustomerRegForPrintPreviewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\CustomerReportByNumber.cs">
+      <Link>CustomerReport\Dto\CustomerReportByNumber.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\CustomerReportDto.cs">
+      <Link>CustomerReport\Dto\CustomerReportDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\CustomerReportFullDto.cs">
+      <Link>CustomerReport\Dto\CustomerReportFullDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\CustomerReportHandoverInput.cs">
+      <Link>CustomerReport\Dto\CustomerReportHandoverInput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\CustomerReportQuery.cs">
+      <Link>CustomerReport\Dto\CustomerReportQuery.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\CustomerUpCatDto.cs">
+      <Link>CustomerReport\Dto\CustomerUpCatDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\ReportOccQueAllDto.cs">
+      <Link>CustomerReport\Dto\ReportOccQueAllDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\ReportOccQuesDto.cs">
+      <Link>CustomerReport\Dto\ReportOccQuesDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\ReportOccQuesFamilyHistoryDto.cs">
+      <Link>CustomerReport\Dto\ReportOccQuesFamilyHistoryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\ReportOccQuesHisHazardDto.cs">
+      <Link>CustomerReport\Dto\ReportOccQuesHisHazardDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\ReportOccQuesHisProtectiveDto.cs">
+      <Link>CustomerReport\Dto\ReportOccQuesHisProtectiveDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\ReportOccQuesPastHistoryDto.cs">
+      <Link>CustomerReport\Dto\ReportOccQuesPastHistoryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\ReportOccQuesSymNameDto.cs">
+      <Link>CustomerReport\Dto\ReportOccQuesSymNameDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\ReportOccQuesSymptomDto.cs">
+      <Link>CustomerReport\Dto\ReportOccQuesSymptomDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\ReportQuesCareerHistoryDto.cs">
+      <Link>CustomerReport\Dto\ReportQuesCareerHistoryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\SeachCusCabDto.cs">
+      <Link>CustomerReport\Dto\SeachCusCabDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\SearchCustomerRegForPrintPreviewDto.cs">
+      <Link>CustomerReport\Dto\SearchCustomerRegForPrintPreviewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\TbmCabinetDto.cs">
+      <Link>CustomerReport\Dto\TbmCabinetDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\TjlCusCabitCRDto.cs">
+      <Link>CustomerReport\Dto\TjlCusCabitCRDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\Dto\TjlCusCabitDto.cs">
+      <Link>CustomerReport\Dto\TjlCusCabitDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\ICustomerReportAppService.cs">
+      <Link>CustomerReport\ICustomerReportAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\CustomerReport\IPrintPreviewAppService.cs">
+      <Link>CustomerReport\IPrintPreviewAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DailyNewspaper\Dto\QuerySunMoon.cs">
+      <Link>DailyNewspaper\Dto\QuerySunMoon.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DailyNewspaper\Dto\SearchCustomerDto.cs">
+      <Link>DailyNewspaper\Dto\SearchCustomerDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DailyNewspaper\Dto\SearchCustomerRegDto.cs">
+      <Link>DailyNewspaper\Dto\SearchCustomerRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DailyNewspaper\Dto\SearchMPaymentDto.cs">
+      <Link>DailyNewspaper\Dto\SearchMPaymentDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DailyNewspaper\Dto\SearchMReceiptDetailsDto.cs">
+      <Link>DailyNewspaper\Dto\SearchMReceiptDetailsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DailyNewspaper\Dto\SearchMReceiptInfoDto.cs">
+      <Link>DailyNewspaper\Dto\SearchMReceiptInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DailyNewspaper\IDailyNewspaperAppService.cs">
+      <Link>DailyNewspaper\IDailyNewspaperAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Department\Dto\CreateDepartmentDto.cs">
+      <Link>Department\Dto\CreateDepartmentDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Department\Dto\DepartmentIdNameDto.cs">
+      <Link>Department\Dto\DepartmentIdNameDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Department\Dto\DepartmentSimpleDto.cs">
+      <Link>Department\Dto\DepartmentSimpleDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Department\Dto\SearchDepartmentNameDto.cs">
+      <Link>Department\Dto\SearchDepartmentNameDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Department\Dto\TbmDepartmentDto.cs">
+      <Link>Department\Dto\TbmDepartmentDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Department\Dto\UpdateDepartmentDto.cs">
+      <Link>Department\Dto\UpdateDepartmentDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Department\IDepartmentAppService.cs">
+      <Link>Department\IDepartmentAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Diagnosis\Dto\CusRegInfoDetailDto.cs">
+      <Link>Diagnosis\Dto\CusRegInfoDetailDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Diagnosis\Dto\CusRegInfoDto.cs">
+      <Link>Diagnosis\Dto\CusRegInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Diagnosis\Dto\CusRegInfoMainDto.cs">
+      <Link>Diagnosis\Dto\CusRegInfoMainDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Diagnosis\Dto\ItemInfoGroupDto.cs">
+      <Link>Diagnosis\Dto\ItemInfoGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Diagnosis\Dto\SearchItem.cs">
+      <Link>Diagnosis\Dto\SearchItem.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Diagnosis\Dto\TbmDiagnosisDataDto.cs">
+      <Link>Diagnosis\Dto\TbmDiagnosisDataDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Diagnosis\Dto\TbmDiagnosisDto.cs">
+      <Link>Diagnosis\Dto\TbmDiagnosisDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Diagnosis\IDiagnosisAppService.cs">
+      <Link>Diagnosis\IDiagnosisAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Dictionary\Dto\DictionaryDepartmentDto.cs">
+      <Link>Dictionary\Dto\DictionaryDepartmentDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Dictionary\Dto\DictionaryItemDictionaryDto.cs">
+      <Link>Dictionary\Dto\DictionaryItemDictionaryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Dictionary\Dto\DictionaryItemInfoDto.cs">
+      <Link>Dictionary\Dto\DictionaryItemInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Dictionary\IDictionaryAppService.cs">
+      <Link>Dictionary\IDictionaryAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\ATbmDepartmentDto.cs">
+      <Link>DoctorStation\Dto\ATbmDepartmentDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\ATjlClientInfoDto.cs">
+      <Link>DoctorStation\Dto\ATjlClientInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\ATjlClientRegDto.cs">
+      <Link>DoctorStation\Dto\ATjlClientRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\ATjlClientTeamInfoDto.cs">
+      <Link>DoctorStation\Dto\ATjlClientTeamInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\ATjlCustomerDepSummaryDto.cs">
+      <Link>DoctorStation\Dto\ATjlCustomerDepSummaryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\ATjlCustomerDto.cs">
+      <Link>DoctorStation\Dto\ATjlCustomerDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\ATjlCustomerItemGroupDto.cs">
+      <Link>DoctorStation\Dto\ATjlCustomerItemGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\ATjlCustomerItemGroupPrintGuidanceDto.cs">
+      <Link>DoctorStation\Dto\ATjlCustomerItemGroupPrintGuidanceDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\ATjlCustomerRegDto.cs">
+      <Link>DoctorStation\Dto\ATjlCustomerRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\ATjlCustomerRegItemDto.cs">
+      <Link>DoctorStation\Dto\ATjlCustomerRegItemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\ATjlOAHistoryDto.cs">
+      <Link>DoctorStation\Dto\ATjlOAHistoryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\ATjlOHistoryDto.cs">
+      <Link>DoctorStation\Dto\ATjlOHistoryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\BTbmDepartmentDto.cs">
+      <Link>DoctorStation\Dto\BTbmDepartmentDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\BTbmItemDictionaryDto.cs">
+      <Link>DoctorStation\Dto\BTbmItemDictionaryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\BTbmItemInfoDto.cs">
+      <Link>DoctorStation\Dto\BTbmItemInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\CheckCusRegGroupDto.cs">
+      <Link>DoctorStation\Dto\CheckCusRegGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\CreateConclusionDto.cs">
+      <Link>DoctorStation\Dto\CreateConclusionDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\CreateCustomerDepSummary.cs">
+      <Link>DoctorStation\Dto\CreateCustomerDepSummary.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\CriticalCusDto.cs">
+      <Link>DoctorStation\Dto\CriticalCusDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\CriticalItemDto.cs">
+      <Link>DoctorStation\Dto\CriticalItemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\CTbmDepartmentDto.cs">
+      <Link>DoctorStation\Dto\CTbmDepartmentDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\CTbmSummarizeAdviceDto.cs">
+      <Link>DoctorStation\Dto\CTbmSummarizeAdviceDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\CusGroupStateDto.cs">
+      <Link>DoctorStation\Dto\CusGroupStateDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\CusLockDto.cs">
+      <Link>DoctorStation\Dto\CusLockDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\CustomerDepSummaryViewDto.cs">
+      <Link>DoctorStation\Dto\CustomerDepSummaryViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\CustomerItemGroupPrintViewDto.cs">
+      <Link>DoctorStation\Dto\CustomerItemGroupPrintViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\CustomerItemPicDto.cs">
+      <Link>DoctorStation\Dto\CustomerItemPicDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\InterfaceBack.cs">
+      <Link>DoctorStation\Dto\InterfaceBack.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\interfaceCustomerRegDto.cs">
+      <Link>DoctorStation\Dto\interfaceCustomerRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\OutStateDto.cs">
+      <Link>DoctorStation\Dto\OutStateDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\QueryClass.cs">
+      <Link>DoctorStation\Dto\QueryClass.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\SaveCustomerQusTionDto.cs">
+      <Link>DoctorStation\Dto\SaveCustomerQusTionDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\SearchClientInfoDto.cs">
+      <Link>DoctorStation\Dto\SearchClientInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\SearchCusGroupDto.cs">
+      <Link>DoctorStation\Dto\SearchCusGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\SearchCustomerRegIdDto.cs">
+      <Link>DoctorStation\Dto\SearchCustomerRegIdDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\SearchItemStandardDto.cs">
+      <Link>DoctorStation\Dto\SearchItemStandardDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\SearchItemSuitStatisticsDto.cs">
+      <Link>Charge\Dto\SearchItemSuitStatisticsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\SearchKSGZLItemStatisticsDto.cs">
+      <Link>DoctorStation\Dto\SearchKSGZLItemStatisticsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\SearchKSGZLStatisticsDto.cs">
+      <Link>DoctorStation\Dto\SearchKSGZLStatisticsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\SearchTbmSummarizeAdviceDto.cs">
+      <Link>DoctorStation\Dto\SearchTbmSummarizeAdviceDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\TdbInterfaceWhere.cs">
+      <Link>DoctorStation\Dto\TdbInterfaceWhere.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\TjlCustomerRegForDoctorDto.cs">
+      <Link>DoctorStation\Dto\TjlCustomerRegForDoctorDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\TjlCustomerRegItemReoprtDto.cs">
+      <Link>DoctorStation\Dto\TjlCustomerRegItemReoprtDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\UpdateCustomerItemGroupDto.cs">
+      <Link>DoctorStation\Dto\UpdateCustomerItemGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\Dto\UpdateCustomerRegItemDto.cs">
+      <Link>DoctorStation\Dto\UpdateCustomerRegItemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DoctorStation\IDoctorStationAppService.cs">
+      <Link>DoctorStation\IDoctorStationAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DynamicColumnDirectory\Dto\DynamicColumnConfigurationDtoNo1.cs">
+      <Link>DynamicColumnDirectory\Dto\DynamicColumnConfigurationDtoNo1.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DynamicColumnDirectory\Dto\DynamicColumnConfigurationDtoNo2.cs">
+      <Link>DynamicColumnDirectory\Dto\DynamicColumnConfigurationDtoNo2.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\DynamicColumnDirectory\IDynamicColumnAppService.cs">
+      <Link>DynamicColumnDirectory\IDynamicColumnAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Foreground\Dto\BarSettingsDto.cs">
+      <Link>Foreground\Dto\BarSettingsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Foreground\Dto\CompanyInformation52Dto.cs">
+      <Link>Foreground\Dto\CompanyInformation52Dto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Foreground\Dto\Customer52Dto.cs">
+      <Link>Foreground\Dto\Customer52Dto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Foreground\Dto\CustomerCount.cs">
+      <Link>Foreground\Dto\CustomerCount.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Foreground\Dto\CustomerRegister52Dto.cs">
+      <Link>Foreground\Dto\CustomerRegister52Dto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Foreground\Dto\CustomerRegister52Dto1.cs">
+      <Link>Foreground\Dto\CustomerRegister52Dto1.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Foreground\Dto\CustomerRegisterBarCodePrintInformationConditionInput.cs">
+      <Link>Foreground\Dto\CustomerRegisterBarCodePrintInformationConditionInput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Foreground\Dto\CustomerRegisterBarCodePrintInformationDto.cs">
+      <Link>Foreground\Dto\CustomerRegisterBarCodePrintInformationDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Foreground\Dto\UpdateBarCodeHaveBloodInput.cs">
+      <Link>Foreground\Dto\UpdateBarCodeHaveBloodInput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Foreground\IBloodWorkstationAppService.cs">
+      <Link>Foreground\IBloodWorkstationAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\FrmMakeCollect\Dto\ClientInfoMakeCollectDto.cs">
+      <Link>FrmMakeCollect\Dto\ClientInfoMakeCollectDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\FrmMakeCollect\Dto\InIdDto.cs">
+      <Link>FrmMakeCollect\Dto\InIdDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\FrmMakeCollect\Dto\InseachCusRegDto.cs">
+      <Link>FrmMakeCollect\Dto\InseachCusRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\FrmMakeCollect\Dto\OutDepartCusDto.cs">
+      <Link>FrmMakeCollect\Dto\OutDepartCusDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\FrmMakeCollect\Dto\OutRegCusListDto.cs">
+      <Link>FrmMakeCollect\Dto\OutRegCusListDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\FrmMakeCollect\Dto\ShowMakeCollectDto.cs">
+      <Link>FrmMakeCollect\Dto\ShowMakeCollectDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\FrmMakeCollect\IFrmMakeCollectAppService.cs">
+      <Link>FrmMakeCollect\IFrmMakeCollectAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\FrmSeleteItemGroup\Dto\SelectDepartmentDto.cs">
+      <Link>FrmSeleteItemGroup\Dto\SelectDepartmentDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\FrmSeleteItemGroup\Dto\SeleteItemGroupDto.cs">
+      <Link>FrmSeleteItemGroup\Dto\SeleteItemGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\FrmSeleteItemGroup\ISeleteItemGroupAppService.cs">
+      <Link>FrmSeleteItemGroup\ISeleteItemGroupAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\GroupReport\Dto\ClientRegIdDto.cs">
+      <Link>GroupReport\Dto\ClientRegIdDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\GroupReport\Dto\CusRegBMDto.cs">
+      <Link>GroupReport\Dto\CusRegBMDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\GroupReport\Dto\CusReviewGroupDto.cs">
+      <Link>GroupReport\Dto\CusReviewGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\GroupReport\Dto\DepartTypeDto.cs">
+      <Link>GroupReport\Dto\DepartTypeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\GroupReport\Dto\GroupClientCusDto.cs">
+      <Link>GroupReport\Dto\GroupClientCusDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\GroupReport\Dto\GroupClientInfoDto.cs">
+      <Link>GroupReport\Dto\GroupClientInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\GroupReport\Dto\GroupClientItemsDto.cs">
+      <Link>GroupReport\Dto\GroupClientItemsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\GroupReport\Dto\GroupClientRegDto.cs">
+      <Link>GroupReport\Dto\GroupClientRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\GroupReport\Dto\GroupClientSumDto.cs">
+      <Link>GroupReport\Dto\GroupClientSumDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\GroupReport\Dto\GroupClientTeamInfoDto.cs">
+      <Link>GroupReport\Dto\GroupClientTeamInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\GroupReport\Dto\GroupCusGroupDto.cs">
+      <Link>GroupReport\Dto\GroupCusGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\GroupReport\Dto\GroupCusReg.cs">
+      <Link>GroupReport\Dto\GroupCusReg.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\GroupReport\Dto\GroupCustomerDto.cs">
+      <Link>GroupReport\Dto\GroupCustomerDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\GroupReport\Dto\GroupCustomerRegDto.cs">
+      <Link>GroupReport\Dto\GroupCustomerRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\GroupReport\Dto\GroupNoCheckCusDtocs.cs">
+      <Link>GroupReport\Dto\GroupNoCheckCusDtocs.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\GroupReport\Dto\GroupSumBMDto.cs">
+      <Link>GroupReport\Dto\GroupSumBMDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\GroupReport\Dto\HistoryGroupClientSumDto.cs">
+      <Link>GroupReport\Dto\HistoryGroupClientSumDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\GroupReport\Dto\InOcccCusIDDto.cs">
+      <Link>OccGroupReport\Dto\InOcccCusIDDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\GroupReport\Dto\SelectClientRewDto.cs">
+      <Link>GroupReport\Dto\SelectClientRewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\GroupReport\Dto\SelectGroupClientInfoDto.cs">
+      <Link>GroupReport\Dto\SelectGroupClientInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\GroupReport\Dto\SumClientDto.cs">
+      <Link>GroupReport\Dto\SumClientDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\GroupReport\IGroupReportAppService.cs">
+      <Link>GroupReport\IGroupReportAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\GuideListCollection\Dto\CustomerQuery.cs">
+      <Link>GuideListCollection\Dto\CustomerQuery.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\GuideListCollection\Dto\CustomerRegQuery.cs">
+      <Link>GuideListCollection\Dto\CustomerRegQuery.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\GuideListCollection\IGuideListCollectionAppService.cs">
+      <Link>GuideListCollection\IGuideListCollectionAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HisInterface\HisCusInfoDto.cs">
+      <Link>HisInterface\HisCusInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HisInterface\HisPriceDtos.cs">
+      <Link>CusReg\Dto\HisPriceDtos.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HisInterface\InCarNumDto.cs">
+      <Link>HisInterface\InCarNumDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HisInterface\InCarNumPriceDto.cs">
+      <Link>CusReg\Dto\InCarNumPriceDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HisInterface\TJSQDto.cs">
+      <Link>HisInterface\TJSQDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HisInterface\TJSQMXDto.cs">
+      <Link>HisInterface\TJSQMXDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HistoryComparison\Dto\DistinctDepartment.cs">
+      <Link>HistoryComparison\Dto\DistinctDepartment.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HistoryComparison\Dto\DistinctItem.cs">
+      <Link>HistoryComparison\Dto\DistinctItem.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HistoryComparison\Dto\DistinctItemGroup.cs">
+      <Link>HistoryComparison\Dto\DistinctItemGroup.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HistoryComparison\Dto\HisDbDto.cs">
+      <Link>HistoryComparison\Dto\HisDbDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HistoryComparison\Dto\HisDepartSumDto.cs">
+      <Link>HistoryComparison\Dto\HisDepartSumDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HistoryComparison\Dto\HisSumDto.cs">
+      <Link>HistoryComparison\Dto\HisSumDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HistoryComparison\Dto\HistoryItemDBDto.cs">
+      <Link>HistoryComparison\Dto\HistoryItemDBDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HistoryComparison\Dto\HistoryItemValueDto.cs">
+      <Link>HistoryComparison\Dto\HistoryItemValueDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HistoryComparison\Dto\HistoryResultDetailDto.cs">
+      <Link>HistoryComparison\Dto\HistoryResultDetailDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HistoryComparison\Dto\HistoryResultDto.cs">
+      <Link>HistoryComparison\Dto\HistoryResultDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HistoryComparison\Dto\HistoryResultMainDto.cs">
+      <Link>HistoryComparison\Dto\HistoryResultMainDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HistoryComparison\Dto\InSerchHIsDto.cs">
+      <Link>HistoryComparison\Dto\InSerchHIsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HistoryComparison\Dto\OutHisValuesDto.cs">
+      <Link>HistoryComparison\Dto\OutHisValuesDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HistoryComparison\Dto\SearchClass.cs">
+      <Link>HistoryComparison\Dto\SearchClass.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HistoryComparison\Dto\SearchCustomerDepSummaryDto.cs">
+      <Link>HistoryComparison\Dto\SearchCustomerDepSummaryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HistoryComparison\Dto\SearchCustomerItemGroupDto.cs">
+      <Link>HistoryComparison\Dto\SearchCustomerItemGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HistoryComparison\Dto\SearchCustomerRegDto.cs">
+      <Link>HistoryComparison\Dto\SearchCustomerRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HistoryComparison\Dto\SearchCustomerRegItemDto.cs">
+      <Link>HistoryComparison\Dto\SearchCustomerRegItemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HistoryComparison\Dto\SearchCustomerSummaryDto.cs">
+      <Link>HistoryComparison\Dto\SearchCustomerSummaryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HistoryComparison\Dto\SearchHisClassDto.cs">
+      <Link>HistoryComparison\Dto\SearchHisClassDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HistoryComparison\Dto\SrachCustomerItemPicDto.cs">
+      <Link>HistoryComparison\Dto\SrachCustomerItemPicDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\HistoryComparison\IHistoryComparisonAppService.cs">
+      <Link>HistoryComparison\IHistoryComparisonAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\IDNumber\Dto\CreateIdNumberDto.cs">
+      <Link>IDNumber\Dto\CreateIdNumberDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\IDNumber\Dto\IDNumberDto.cs">
+      <Link>IDNumber\Dto\IDNumberDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\IDNumber\Dto\NameDto.cs">
+      <Link>IDNumber\Dto\NameDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\IDNumber\IIDNumberAppService.cs">
+      <Link>IDNumber\IIDNumberAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\BeforSaveSumDto.cs">
+      <Link>InspectionTotal\Dto\BeforSaveSumDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\BeforSumCustomerRegDto.cs">
+      <Link>InspectionTotal\Dto\BeforSumCustomerRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\CraetOccCustomerOccDiseasesDto.cs">
+      <Link>InspectionTotal\Dto\CraetOccCustomerOccDiseasesDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\CreateCustomerSummarizeDto.cs">
+      <Link>InspectionTotal\Dto\CreateCustomerSummarizeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\CreatOccCustomerContraindicationDto.cs">
+      <Link>InspectionTotal\Dto\CreatOccCustomerContraindicationDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\CreatOccCustomerSumDto.cs">
+      <Link>InspectionTotal\Dto\CreatOccCustomerSumDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\CusGiveUpShowDto.cs">
+      <Link>InspectionTotal\Dto\CusGiveUpShowDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\CusGroupShowDto.cs">
+      <Link>InspectionTotal\Dto\CusGroupShowDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\CusReViewDto.cs">
+      <Link>InspectionTotal\Dto\CusReViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\CusReViewGroupDto.cs">
+      <Link>InspectionTotal\Dto\CusReViewGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\CustomerGroupSumDto.cs">
+      <Link>InspectionTotal\Dto\CustomerGroupSumDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\CustomerItemGroupZYBDto.cs">
+      <Link>InspectionTotal\Dto\CustomerItemGroupZYBDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\CustomerRegDateDto.cs">
+      <Link>InspectionTotal\Dto\CustomerRegDateDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\CustomerRegInspectGroupDto.cs">
+      <Link>InspectionTotal\Dto\CustomerRegInspectGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\CustomerRegInspectItemDto.cs">
+      <Link>InspectionTotal\Dto\CustomerRegInspectItemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\CustomerRegisterDepartmentSummaryAppServiceDto\CustomerRegisterDepartmentSummaryDto.cs">
+      <Link>InspectionTotal\Dto\CustomerRegisterDepartmentSummaryAppServiceDto\CustomerRegisterDepartmentSummaryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\CustomerRegisterItemAppServiceDto\CustomerRegisterItemDto.cs">
+      <Link>InspectionTotal\Dto\CustomerRegisterItemAppServiceDto\CustomerRegisterItemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\CusTypeGroupStateDto.cs">
+      <Link>InspectionTotal\Dto\CusTypeGroupStateDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\DepartCategoryDto.cs">
+      <Link>InspectionTotal\Dto\DepartCategoryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\DepartmentOrderDto.cs">
+      <Link>InspectionTotal\DepartmentOrderDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\EditCustomerRegStateDto.cs">
+      <Link>InspectionTotal\Dto\EditCustomerRegStateDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\INCusSumSateDto.cs">
+      <Link>InspectionTotal\Dto\INCusSumSateDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\InputOccCusSumDto.cs">
+      <Link>InspectionTotal\Dto\InputOccCusSumDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\InSearchCusDto.cs">
+      <Link>InspectionTotal\Dto\InSearchCusDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\InspectionTotalListDto.cs">
+      <Link>InspectionTotal\Dto\InspectionTotalListDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\ItemGroupOrderDto.cs">
+      <Link>InspectionTotal\ItemGroupOrderDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\JKZCusDto.cs">
+      <Link>InspectionTotal\Dto\JKZCusDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\LockStateDto.cs">
+      <Link>InspectionTotal\Dto\LockStateDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\OccCusContraindicationDto.cs">
+      <Link>InspectionTotal\Dto\OccCusContraindicationDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\OccCusDiseaseDto.cs">
+      <Link>InspectionTotal\Dto\OccCusDiseaseDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\OccCustomerHazardSumDto.cs">
+      <Link>InspectionTotal\Dto\OccCustomerHazardSumDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\OccEditCustomerRegStateDto.cs">
+      <Link>InspectionTotal\Dto\OccEditCustomerRegStateDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\OccTargetDiseaseByRisk.cs">
+      <Link>InspectionTotal\Dto\OccTargetDiseaseByRisk.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\OutCusListDto.cs">
+      <Link>InspectionTotal\Dto\OutCusListDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\OutMesDto.cs">
+      <Link>InspectionTotal\Dto\OutMesDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\OutOccCustomerSumDto.cs">
+      <Link>InspectionTotal\Dto\OutOccCustomerSumDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\reportCusReSumDto.cs">
+      <Link>InspectionTotal\Dto\reportCusReSumDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\reportCusReViewDto.cs">
+      <Link>InspectionTotal\Dto\reportCusReViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\SearchCustomerRegDto.cs">
+      <Link>InspectionTotal\Dto\SearchCustomerRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\SumAdviseDto.cs">
+      <Link>InspectionTotal\Dto\SumAdviseDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\TbmSumHideDto.cs">
+      <Link>InspectionTotal\Dto\TbmSumHideDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\TjlClientInfoDto.cs">
+      <Link>InspectionTotal\Dto\TjlClientInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\TjlCustomerForInspectionTotalDto.cs">
+      <Link>InspectionTotal\Dto\TjlCustomerForInspectionTotalDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\TjlCustomerItemGroupDto.cs">
+      <Link>InspectionTotal\Dto\TjlCustomerItemGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\TjlCustomerQuery.cs">
+      <Link>InspectionTotal\Dto\TjlCustomerQuery.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\TjlCustomerRegForInspectionTotalDto.cs">
+      <Link>InspectionTotal\Dto\TjlCustomerRegForInspectionTotalDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\TjlCustomerRegForInspectionTotalSearchDto.cs">
+      <Link>InspectionTotal\Dto\TjlCustomerRegForInspectionTotalSearchDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\TjlCustomerRegItemDto.cs">
+      <Link>InspectionTotal\Dto\TjlCustomerRegItemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\TjlCustomerSummarizeBMDto.cs">
+      <Link>InspectionTotal\Dto\TjlCustomerSummarizeBMDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\TjlCustomerSummarizeBMViewDto.cs">
+      <Link>InspectionTotal\Dto\TjlCustomerSummarizeBMViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\TjlCustomerSummarizeDto.cs">
+      <Link>InspectionTotal\Dto\TjlCustomerSummarizeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\TjlCustomerSummBackDto.cs">
+      <Link>InspectionTotal\Dto\TjlCustomerSummBackDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\Dto\UpCusIllStateDto.cs">
+      <Link>InspectionTotal\Dto\UpCusIllStateDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\ICustomerRegisterDepartmentSummaryAppService.cs">
+      <Link>InspectionTotal\ICustomerRegisterDepartmentSummaryAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\ICustomerRegisterItemAppService.cs">
+      <Link>InspectionTotal\ICustomerRegisterItemAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InspectionTotal\IInspectionTotalAppService.cs">
+      <Link>InspectionTotal\IInspectionTotalAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InterfaceItemComparison\Dto\InsertInterfaceEmpDto.cs">
+      <Link>InterfaceItemComparison\Dto\InsertInterfaceEmpDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InterfaceItemComparison\Dto\InsertInterfaceItemDto.cs">
+      <Link>InterfaceItemComparison\Dto\InsertInterfaceItemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InterfaceItemComparison\Dto\InsertInterfaceItemGroupDto.cs">
+      <Link>InterfaceItemComparison\Dto\InsertInterfaceItemGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InterfaceItemComparison\Dto\InterfaceDepartmentDto.cs">
+      <Link>InterfaceItemComparison\Dto\InterfaceDepartmentDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InterfaceItemComparison\Dto\InterfaceGroupDto.cs">
+      <Link>InterfaceItemComparison\Dto\InterfaceGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InterfaceItemComparison\Dto\InterfaceItemDto.cs">
+      <Link>InterfaceItemComparison\Dto\InterfaceItemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InterfaceItemComparison\Dto\InterfaceItemGroupsDto.cs">
+      <Link>InterfaceItemComparison\Dto\InterfaceItemGroupsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InterfaceItemComparison\Dto\InterfaceItemsDto.cs">
+      <Link>InterfaceItemComparison\Dto\InterfaceItemsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InterfaceItemComparison\Dto\InterfaceUserDto.cs">
+      <Link>InterfaceItemComparison\Dto\InterfaceUserDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InterfaceItemComparison\Dto\SearchInterfaceEmpDto.cs">
+      <Link>InterfaceItemComparison\Dto\SearchInterfaceEmpDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InterfaceItemComparison\Dto\SearchInterfaceItemDto.cs">
+      <Link>InterfaceItemComparison\Dto\SearchInterfaceItemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InterfaceItemComparison\Dto\SearchInterIFaceItemComparisonDto.cs">
+      <Link>InterfaceItemComparison\Dto\SearchInterIFaceItemComparisonDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InterfaceItemComparison\IInterfaceItemAppService.cs">
+      <Link>InterfaceItemComparison\IInterfaceItemAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InvoiceManagement\Dto\AddReceiptManageDto.cs">
+      <Link>InvoiceManagement\Dto\AddReceiptManageDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InvoiceManagement\Dto\MReceiptManagerDto.cs">
+      <Link>InvoiceManagement\Dto\MReceiptManagerDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\InvoiceManagement\IInvoiceManagementAppService.cs">
+      <Link>InvoiceManagement\IInvoiceManagementAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemGroup\Dto\ConfiITemDto.cs">
+      <Link>ItemGroup\Dto\ConfiITemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemGroup\Dto\ConfiStrDto.cs">
+      <Link>ItemGroup\Dto\ConfiStrDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemGroup\Dto\CreateOrUpdateItemGroup.cs">
+      <Link>ItemGroup\Dto\CreateOrUpdateItemGroup.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemGroup\Dto\FullItemGroupDto.cs">
+      <Link>ItemGroup\Dto\FullItemGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemGroup\Dto\ItemGroupDto.cs">
+      <Link>ItemGroup\Dto\ItemGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemGroup\Dto\ItemGroupInput.cs">
+      <Link>ItemGroup\Dto\ItemGroupInput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemGroup\Dto\priceSynDto.cs">
+      <Link>ItemGroup\Dto\priceSynDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemGroup\Dto\SearchItemGroupDto.cs">
+      <Link>ItemGroup\Dto\SearchItemGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemGroup\Dto\SearIdsDto.cs">
+      <Link>ItemGroup\Dto\SearIdsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemGroup\Dto\SimpleItemGroupDto.cs">
+      <Link>ItemGroup\Dto\SimpleItemGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemGroup\Dto\TbmGroupRePriceSynchronizesDto.cs">
+      <Link>ItemGroup\Dto\TbmGroupRePriceSynchronizesDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemGroup\IItemGroupAppService.cs">
+      <Link>ItemGroup\IItemGroupAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemInfo\Dto\ItemInfoDiagnosisDto.cs">
+      <Link>ItemInfo\Dto\ItemInfoDiagnosisDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemInfo\Dto\ItemInfoDto.cs">
+      <Link>ItemInfo\Dto\ItemInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemInfo\Dto\ItemInfoSimpleDto.cs">
+      <Link>ItemInfo\Dto\ItemInfoSimpleDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemInfo\Dto\ItemInfoViewDto.cs">
+      <Link>ItemInfo\Dto\ItemInfoViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemInfo\Dto\ItemProcExpressDto.cs">
+      <Link>ItemInfo\Dto\ItemProcExpressDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemInfo\Dto\ItemStandardDto.cs">
+      <Link>ItemInfo\Dto\ItemStandardDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemInfo\Dto\SearchItemInfoDto.cs">
+      <Link>ItemInfo\Dto\SearchItemInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemInfo\Dto\SimpItemInfoDto.cs">
+      <Link>ItemInfo\Dto\SimpItemInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemInfo\Dto\UpItemUnit.cs">
+      <Link>ItemInfo\Dto\UpItemUnit.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemInfo\IItemInfoAppService.cs">
+      <Link>ItemInfo\IItemInfoAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemSuit\Dto\CreateOrUpdateItemSuitDto.cs">
+      <Link>ItemSuit\Dto\CreateOrUpdateItemSuitDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemSuit\Dto\FullItemSuitDto.cs">
+      <Link>ItemSuit\Dto\FullItemSuitDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemSuit\Dto\ItemSuitDto.cs">
+      <Link>ItemSuit\Dto\ItemSuitDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemSuit\Dto\ItemSuitGroupSimpDto.cs">
+      <Link>ItemSuit\Dto\ItemSuitGroupSimpDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemSuit\Dto\ItemSuitInput.cs">
+      <Link>ItemSuit\Dto\ItemSuitInput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemSuit\Dto\ItemSuitItemGroupContrastDto.cs">
+      <Link>ItemSuit\Dto\ItemSuitItemGroupContrastDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemSuit\Dto\ItemSuitItemGroupContrastFullDto.cs">
+      <Link>ItemSuit\Dto\ItemSuitItemGroupContrastFullDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemSuit\Dto\SearchItemSuitDto.cs">
+      <Link>ItemSuit\Dto\SearchItemSuitDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemSuit\Dto\SimpleItemSuitDto.cs">
+      <Link>ItemSuit\Dto\SimpleItemSuitDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemSuit\Dto\SimpleSubsetItemSuitDto.cs">
+      <Link>ItemSuit\Dto\SimpleSubsetItemSuitDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ItemSuit\IItemSuitAppService.cs">
+      <Link>ItemSuit\IItemSuitAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Market\Dto\CompanyDtoForComboBox.cs">
+      <Link>Market\Dto\CompanyDtoForComboBox.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Market\Dto\CompanyDtoForComplaint.cs">
+      <Link>Market\Dto\CompanyDtoForComplaint.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Market\Dto\CompanyRegisterDtoForComboBox.cs">
+      <Link>Market\Dto\CompanyRegisterDtoForComboBox.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Market\Dto\CompanyRegisterDtoForComplaint.cs">
+      <Link>Market\Dto\CompanyRegisterDtoForComplaint.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Market\Dto\CompanyRegisterTeamDtoForComplaint.cs">
+      <Link>Market\Dto\CompanyRegisterTeamDtoForComplaint.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Market\Dto\ComplaintInformationDto.cs">
+      <Link>Market\Dto\ComplaintInformationDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Market\Dto\ContractAdjunctDto.cs">
+      <Link>Market\Dto\ContractAdjunctDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Market\Dto\ContractCategoryDto.cs">
+      <Link>Market\Dto\ContractCategoryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Market\Dto\ContractInformationDto.cs">
+      <Link>Market\Dto\ContractInformationDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Market\Dto\ContractInformationFullDto.cs">
+      <Link>Market\Dto\ContractInformationFullDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Market\Dto\ContractInvoiceDto.cs">
+      <Link>Market\Dto\ContractInvoiceDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Market\Dto\ContractProceedsDto.cs">
+      <Link>Market\Dto\ContractProceedsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Market\Dto\CustomerDtoForComplaint.cs">
+      <Link>Market\Dto\CustomerDtoForComplaint.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Market\Dto\CustomerRegisterDtoForComplaint.cs">
+      <Link>Market\Dto\CustomerRegisterDtoForComplaint.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Market\Dto\QueryComplaintConditionInput.cs">
+      <Link>Market\Dto\QueryComplaintConditionInput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Market\Dto\QueryContractCategoryConditionInput.cs">
+      <Link>Market\Dto\QueryContractCategoryConditionInput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Market\Dto\QueryContractConditionInput.cs">
+      <Link>Market\Dto\QueryContractConditionInput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Market\Dto\UpdateComplaintInformationDto.cs">
+      <Link>Market\Dto\UpdateComplaintInformationDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Market\IComplaintAppService.cs">
+      <Link>Market\IComplaintAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Market\IContractAppService.cs">
+      <Link>Market\IContractAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\MemberShipCard\Dto\FullTbmCardTypeDto.cs">
+      <Link>MemberShipCard\Dto\FullTbmCardTypeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\MemberShipCard\Dto\ItemSuitsDto.cs">
+      <Link>MemberShipCard\Dto\ItemSuitsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\MemberShipCard\Dto\SearchTbmCardTypeDto.cs">
+      <Link>MemberShipCard\Dto\SearchTbmCardTypeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\MemberShipCard\Dto\ShowTbmCardTypeDto.cs">
+      <Link>MemberShipCard\Dto\ShowTbmCardTypeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\MemberShipCard\Dto\TbmCardTypeDto.cs">
+      <Link>MemberShipCard\Dto\TbmCardTypeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\MemberShipCard\Dto\TbmItemSuitDto.cs">
+      <Link>MemberShipCard\Dto\TbmItemSuitDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\MemberShipCard\IMemberShipCardAppService.cs">
+      <Link>MemberShipCard\IMemberShipCardAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\MRise\IMRiseAppService.cs">
+      <Link>MRise\IMRiseAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OAApproval\Dto\CreateClientXKSetDto.cs">
+      <Link>OAApproval\Dto\CreateClientXKSetDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OAApproval\Dto\CreatOAApproValcsDto.cs">
+      <Link>OAApproval\Dto\CreatOAApproValcsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OAApproval\Dto\SearchOAApproValcsDto.cs">
+      <Link>OAApproval\Dto\SearchOAApproValcsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OAApproval\Dto\upOAApproValcsDto.cs">
+      <Link>OAApproval\Dto\upOAApproValcsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OAApproval\IOAApprovalAppService.cs">
+      <Link>OAApproval\IOAApprovalAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccAbnormalResult\Dto\OutOccAbnormalResult.cs">
+      <Link>OccAbnormalResult\Dto\OutOccAbnormalResult.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccAbnormalResult\IOccAbnormalResultAppService.cs">
+      <Link>OccAbnormalResult\IOccAbnormalResultAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccConclusioncontraindication\Dto\OccConclusioncontraindicationShowDto.cs">
+      <Link>OccConclusioncontraindication\Dto\OccConclusioncontraindicationShowDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccConclusioncontraindication\Dto\OccContraindicationGet.cs">
+      <Link>OccConclusioncontraindication\Dto\OccContraindicationGet.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccConclusioncontraindication\IOccupationalcontraindicationAppService.cs">
+      <Link>OccConclusioncontraindication\IOccupationalcontraindicationAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccConclusionStatistics\Dto\OccConclusionStatisticsShowDto.cs">
+      <Link>OccConclusionStatistics\Dto\OccConclusionStatisticsShowDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccConclusionStatistics\Dto\OccStatisticsShowGet.cs">
+      <Link>OccConclusionStatistics\Dto\OccStatisticsShowGet.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccConclusionStatistics\Dto\OccYearsAllStaticsDto.cs">
+      <Link>OccConclusionStatistics\Dto\OccYearsAllStaticsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccConclusionStatistics\Dto\OccYearsSaticsDto.cs">
+      <Link>OccConclusionStatistics\Dto\OccYearsSaticsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccConclusionStatistics\Dto\OccYearsStatisticsDto.cs">
+      <Link>OccConclusionStatistics\Dto\OccYearsStatisticsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccConclusionStatistics\Dto\OccZYBStatisticsDto.cs">
+      <Link>OccConclusionStatistics\Dto\OccZYBStatisticsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccConclusionStatistics\Dto\TjlCustomerDto.cs">
+      <Link>OccConclusionStatistics\Dto\TjlCustomerDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccConclusionStatistics\Dto\TjlCustomerRegDto.cs">
+      <Link>OccConclusionStatistics\Dto\TjlCustomerRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccConclusionStatistics\IOccConclusionStatisticsAppService.cs">
+      <Link>OccConclusionStatistics\IOccConclusionStatisticsAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccConclusionSuspected\Dto\OccConclusionSuspectedShow.cs">
+      <Link>OccConclusionSuspected\Dto\OccConclusionSuspectedShow.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccConclusionSuspected\Dto\OccSuspectedGet.cs">
+      <Link>OccConclusionSuspected\Dto\OccSuspectedGet.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccConclusionSuspected\IOccConclusionSuspectedAppService.cs">
+      <Link>OccConclusionSuspected\IOccConclusionSuspectedAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccConclusionTarget\Dto\OccConclusionTargetDto.cs">
+      <Link>OccConclusionTarget\Dto\OccConclusionTargetDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccConclusionTarget\Dto\TargetGetDto.cs">
+      <Link>OccConclusionTarget\Dto\TargetGetDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccConclusionTarget\IOccConclusionTargetAppService.cs">
+      <Link>OccConclusionTarget\IOccConclusionTargetAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccConclusionYear\Dto\OccConclusionYearShowDto.cs">
+      <Link>OccConclusionYear\Dto\OccConclusionYearShowDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccConclusionYear\IOccConclusionYearAppService.cs">
+      <Link>OccConclusionYear\IOccConclusionYearAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccCusInfoOut\Dto\InOccSearchDto.cs">
+      <Link>OccCusInfoOut\Dto\InOccSearchDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccCusInfoOut\Dto\OutOccAllDto.cs">
+      <Link>OccCusInfoOut\Dto\OutOccAllDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccCusInfoOut\Dto\OutOccClientInfoDto.cs">
+      <Link>OccCusInfoOut\Dto\OutOccClientInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccCusInfoOut\Dto\OutOccCusInfoDto.cs">
+      <Link>OccCusInfoOut\Dto\OutOccCusInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccCusInfoOut\Dto\OutOccCusItemDto.cs">
+      <Link>OccCusInfoOut\Dto\OutOccCusItemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccCusInfoOut\Dto\OutOccCusSumDto.cs">
+      <Link>OccCusInfoOut\Dto\OutOccCusSumDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccCusInfoOut\Dto\OutOccRiskSDto.cs">
+      <Link>OccCusInfoOut\Dto\OutOccRiskSDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccCusInfoOut\Dto\OutOccRiskSTimeDto.cs">
+      <Link>OccCusInfoOut\Dto\OutOccRiskSTimeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccCusInfoOut\IOccCusInfoOutAppService.cs">
+      <Link>OccCusInfoOut\IOccCusInfoOutAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccDayStatic\Dto\INOccMothDto.cs">
+      <Link>OccDayStatic\Dto\INOccMothDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccDayStatic\Dto\OutOccDayDto.cs">
+      <Link>OccDayStatic\Dto\OutOccDayDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccDayStatic\Dto\OutOccMothDto.cs">
+      <Link>OccDayStatic\Dto\OutOccMothDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccDayStatic\IOccDayStaticAppService.cs">
+      <Link>OccDayStatic\IOccDayStaticAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\Dto\OccdieaseBasicGet.cs">
+      <Link>OccdiseaseConsulitation\Dto\OccdieaseBasicGet.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\Dto\OccdieaseBasicInformationDto.cs">
+      <Link>OccdiseaseConsulitation\Dto\OccdieaseBasicInformationDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\Dto\occdieaseCarrerrucan.cs">
+      <Link>OccdiseaseConsulitation\Dto\occdieaseCarrerrucan.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\Dto\OccdieaseHistoryRucan.cs">
+      <Link>OccdiseaseConsulitation\Dto\OccdieaseHistoryRucan.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\Dto\OccdieaseHurtDto.cs">
+      <Link>OccdiseaseConsulitation\Dto\OccdieaseHurtDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\Dto\OccdieaseProtectDto.cs">
+      <Link>OccdiseaseConsulitation\Dto\OccdieaseProtectDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\Dto\OccQuesFamilyHistoryDto.cs">
+      <Link>OccdiseaseConsulitation\Dto\OccQuesFamilyHistoryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\Dto\OccQuesMerriyHistoryDto.cs">
+      <Link>OccdiseaseConsulitation\Dto\OccQuesMerriyHistoryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\Dto\OccQuesPastHistoryDto.cs">
+      <Link>OccdiseaseConsulitation\Dto\OccQuesPastHistoryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\Dto\OccQuesRadioactiveCareerHistoryDto.cs">
+      <Link>OccdiseaseConsulitation\Dto\OccQuesRadioactiveCareerHistoryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\Dto\OccQuesSymptomDto.cs">
+      <Link>OccdiseaseConsulitation\Dto\OccQuesSymptomDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\Dto\OccQuestionCareerrucanDto.cs">
+      <Link>OccdiseaseConsulitation\Dto\OccQuestionCareerrucanDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\Dto\OccQuestionCareerrucanDtos.cs">
+      <Link>OccdiseaseConsulitation\Dto\OccQuestionCareerrucanDtos.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\Dto\OccQuestionFamilyrucan.cs">
+      <Link>OccdiseaseConsulitation\Dto\OccQuestionFamilyrucan.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\Dto\OccQuestionFamilyrucanDto.cs">
+      <Link>OccdiseaseConsulitation\Dto\OccQuestionFamilyrucanDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\Dto\OccQuestionnaireDto.cs">
+      <Link>OccdiseaseConsulitation\Dto\OccQuestionnaireDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\Dto\OccQuestionPastAddrucan.cs">
+      <Link>OccdiseaseConsulitation\Dto\OccQuestionPastAddrucan.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\Dto\OccQustionSymptomrucan.cs">
+      <Link>OccdiseaseConsulitation\Dto\OccQustionSymptomrucan.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\Dto\OccQustionSymptomrucanDto.cs">
+      <Link>OccdiseaseConsulitation\Dto\OccQustionSymptomrucanDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\Dto\OccReportQuesMerriyHistoryDto.cs">
+      <Link>OccdiseaseConsulitation\Dto\OccReportQuesMerriyHistoryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\Dto\OccReportQuesRadioactiveCareerHistoryDto.cs.cs">
+      <Link>OccdiseaseConsulitation\Dto\OccReportQuesRadioactiveCareerHistoryDto.cs.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\Dto\OccupationHistoryDto.cs">
+      <Link>OccdiseaseConsulitation\Dto\OccupationHistoryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\Dto\SaveCusDto.cs">
+      <Link>OccdiseaseConsulitation\Dto\SaveCusDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\Dto\SimpOccHazardFactorDto.cs">
+      <Link>OccdiseaseConsulitation\Dto\SimpOccHazardFactorDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\Dto\SimpOccHazardFactorsProtectiveDto.cs">
+      <Link>OccdiseaseConsulitation\Dto\SimpOccHazardFactorsProtectiveDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\Dto\TjlCusomerDto.cs">
+      <Link>OccdiseaseConsulitation\Dto\TjlCusomerDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseConsulitation\IOccdiseaseConsulitationAppService.cs">
+      <Link>OccdiseaseConsulitation\IOccdiseaseConsulitationAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseSet\OccdiseaseMain\Dto\CreatOccDiseaseDto.cs">
+      <Link>OccdiseaseSet\OccdiseaseMain\Dto\CreatOccDiseaseDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseSet\OccdiseaseMain\Dto\OccCreateOrUpdateDto.cs">
+      <Link>OccdiseaseSet\OccdiseaseMain\Dto\OccCreateOrUpdateDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseSet\OccdiseaseMain\Dto\OccDieaseAndStandardDto.cs">
+      <Link>OccdiseaseSet\OccdiseaseMain\Dto\OccDieaseAndStandardDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseSet\OccdiseaseMain\Dto\Occdieaserucan.cs">
+      <Link>OccdiseaseSet\OccdiseaseMain\Dto\Occdieaserucan.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseSet\OccdiseaseMain\Dto\OccDiseaseDto.cs">
+      <Link>OccdiseaseSet\OccdiseaseMain\Dto\OccDiseaseDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseSet\OccdiseaseMain\Dto\OccDiseaseInput.cs">
+      <Link>OccdiseaseSet\OccdiseaseMain\Dto\OccDiseaseInput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseSet\OccdiseaseMain\Dto\OccDiseaseStandardDto.cs">
+      <Link>OccdiseaseSet\OccdiseaseMain\Dto\OccDiseaseStandardDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseSet\OccdiseaseMain\Dto\OutOccDiseaseDto.cs">
+      <Link>OccdiseaseSet\OccdiseaseMain\Dto\OutOccDiseaseDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseSet\OccdiseaseMain\Dto\ParentDicDto.cs">
+      <Link>OccdiseaseSet\OccdiseaseMain\Dto\ParentDicDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccdiseaseSet\OccdiseaseMain\IOccDiseaseAppService.cs">
+      <Link>OccdiseaseSet\OccdiseaseMain\IOccDiseaseAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccDisProposalNew\Dto\OutOccDictionaryDto.cs">
+      <Link>OccDisProposalNew\Dto\OutOccDictionaryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccDisProposalNew\Dto\SerachOccdictionary.cs">
+      <Link>OccDisProposalNew\Dto\SerachOccdictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccDisProposalNew\Dto\ShowOccDictionary.cs">
+      <Link>OccDisProposalNew\Dto\ShowOccDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccDisProposalNew\Dto\TbmOccDictionaryDto.cs">
+      <Link>OccDisProposalNew\Dto\TbmOccDictionaryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccDisProposalNew\IOccDisProposalNewAppService.cs">
+      <Link>OccDisProposalNew\IOccDisProposalNewAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccDisRequisition\Dto\OccNameDto.cs">
+      <Link>OccDisRequisition\Dto\OccNameDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccDisRequisition\Dto\OutOccCustomerSumDto.cs">
+      <Link>OccDisRequisition\Dto\OutOccCustomerSumDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccDisRequisition\IOccDisRequisitionAppService.cs">
+      <Link>OccDisRequisition\IOccDisRequisitionAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccGroupReport\Dto\cusSumRevITemsDto.cs">
+      <Link>OccGroupReport\Dto\cusSumRevITemsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccGroupReport\Dto\OccCusInfoDto.cs">
+      <Link>OccGroupReport\Dto\OccCusInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccGroupReport\Dto\OccCusRegDto.cs">
+      <Link>OccGroupReport\Dto\OccCusRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccGroupReport\Dto\OccCustomerContraindicationDto.cs">
+      <Link>OccGroupReport\Dto\OccCustomerContraindicationDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccGroupReport\Dto\OccCustomerItemDto.cs">
+      <Link>OccGroupReport\Dto\OccCustomerItemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccGroupReport\Dto\OccCustomerOccDiseasesDto.cs">
+      <Link>OccGroupReport\Dto\OccCustomerOccDiseasesDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccGroupReport\Dto\OccCustomerRegHazardSumDto.cs">
+      <Link>OccGroupReport\Dto\OccCustomerRegHazardSumDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccGroupReport\Dto\OccCustomerSumDto.cs">
+      <Link>OccGroupReport\Dto\OccCustomerSumDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccGroupReport\Dto\OccTargetCountDto.cs">
+      <Link>OccGroupReport\Dto\OccTargetCountDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccGroupReport\Dto\SimGroupClientCusDto.cs">
+      <Link>OccGroupReport\Dto\SimGroupClientCusDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccGroupReport\IOccGroupReportAppService.cs">
+      <Link>OccGroupReport\IOccGroupReportAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccHarmFul\Dto\OutOccFactoryDto.cs">
+      <Link>OccHarmFul\Dto\OutOccFactoryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccHarmFul\IOccHarmFulAppService.cs">
+      <Link>OccHarmFul\IOccHarmFulAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccHazardFactor\Dto\CreateOrUpdateHazardFactorDto.cs">
+      <Link>OccHazardFactor\Dto\CreateOrUpdateHazardFactorDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccHazardFactor\Dto\FullHarardFactor.cs">
+      <Link>OccHazardFactor\Dto\FullHarardFactor.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccHazardFactor\Dto\HazardFactorsProtective.cs">
+      <Link>OccHazardFactor\Dto\HazardFactorsProtective.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccHazardFactor\Dto\OutOccHazardFactorDto.cs">
+      <Link>OccHazardFactor\Dto\OutOccHazardFactorDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccHazardFactor\Dto\ParentHazardFactorDto.cs">
+      <Link>OccHazardFactor\Dto\ParentHazardFactorDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccHazardFactor\Dto\RadiationDto.cs">
+      <Link>OccHazardFactor\Dto\RadiationDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccHazardFactor\Dto\ShowOccHazardFactorDto.cs">
+      <Link>OccHazardFactor\Dto\ShowOccHazardFactorDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccHazardFactor\IOccHazardFactorAppService.cs">
+      <Link>OccHazardFactor\IOccHazardFactorAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccNationalDisease\Dto\AUDIT_INFODto.cs">
+      <Link>OccNationalDisease\Dto\AUDIT_INFODto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccNationalDisease\Dto\CHECK_RESULTDto.cs">
+      <Link>OccNationalDisease\Dto\CHECK_RESULTDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccNationalDisease\Dto\CHECK_RESULT_LISTDto.cs">
+      <Link>OccNationalDisease\Dto\CHECK_RESULT_LISTDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccNationalDisease\Dto\CreateCountrySet.cs">
+      <Link>OccNationalDisease\Dto\CreateCountrySet.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccNationalDisease\Dto\DataNodeDto.cs">
+      <Link>OccNationalDisease\Dto\DataNodeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccNationalDisease\Dto\DETECTION_INFODto.cs">
+      <Link>OccNationalDisease\Dto\DETECTION_INFODto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccNationalDisease\Dto\DETECTION_INFO_LISTDto.cs">
+      <Link>OccNationalDisease\Dto\DETECTION_INFO_LISTDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccNationalDisease\Dto\ENTERPRISE_INFO1Dto.cs">
+      <Link>OccNationalDisease\Dto\ENTERPRISE_INFO1Dto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccNationalDisease\Dto\ENTERPRISE_INFODto.cs">
+      <Link>OccNationalDisease\Dto\ENTERPRISE_INFODto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccNationalDisease\Dto\ENTERPRISE_INFO_EMPLOYERDto.cs">
+      <Link>OccNationalDisease\Dto\ENTERPRISE_INFO_EMPLOYERDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccNationalDisease\Dto\ENTERPRISE_INFO_LISTDto.cs">
+      <Link>OccNationalDisease\Dto\ENTERPRISE_INFO_LISTDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccNationalDisease\Dto\EventBodyDto.cs">
+      <Link>OccNationalDisease\Dto\EventBodyDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccNationalDisease\Dto\EXAM_CONCLUSIONDto.cs">
+      <Link>OccNationalDisease\Dto\EXAM_CONCLUSIONDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccNationalDisease\Dto\EXAM_CONCLUSION_LISTDto.cs">
+      <Link>OccNationalDisease\Dto\EXAM_CONCLUSION_LISTDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccNationalDisease\Dto\EXAM_ITEM_RESULTDto.cs">
+      <Link>OccNationalDisease\Dto\EXAM_ITEM_RESULTDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccNationalDisease\Dto\EXAM_ITEM_RESULT_LISTDto.cs">
+      <Link>OccNationalDisease\Dto\EXAM_ITEM_RESULT_LISTDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccNationalDisease\Dto\HeaderDto.cs">
+      <Link>OccNationalDisease\Dto\HeaderDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccNationalDisease\Dto\HEALTH_EXAM_RECORDDto.cs">
+      <Link>OccNationalDisease\Dto\HEALTH_EXAM_RECORDDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccNationalDisease\Dto\HEALTH_EXAM_RECORD_LISTDto.cs">
+      <Link>OccNationalDisease\Dto\HEALTH_EXAM_RECORD_LISTDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccNationalDisease\Dto\InSearchDto.cs">
+      <Link>OccNationalDisease\Dto\InSearchDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccNationalDisease\Dto\WORKER_INFODto.cs">
+      <Link>OccNationalDisease\Dto\WORKER_INFODto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccNationalDisease\Dto\XMLDataNodeDto.cs">
+      <Link>OccNationalDisease\Dto\XMLDataNodeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccNationalDisease\Dto\XmlEventBodyDto.cs">
+      <Link>OccNationalDisease\Dto\XmlEventBodyDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccNationalDisease\IOccNationalDiseaseAppService.cs">
+      <Link>OccNationalDisease\IOccNationalDiseaseAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccReview\Dto\CusVisitDto.cs">
+      <Link>OccReview\Dto\CusVisitDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccReview\Dto\OutOccReviewDto.cs">
+      <Link>OccReview\Dto\OutOccReviewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccReview\Dto\SaveCusVisitManageDto.cs">
+      <Link>OccReview\Dto\SaveCusVisitManageDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccReview\Dto\searchVisitDto.cs">
+      <Link>OccReview\Dto\searchVisitDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccReview\Dto\ShowCusVisitDtocs.cs">
+      <Link>OccReview\Dto\ShowCusVisitDtocs.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccReview\Dto\VisiteCusRegDto.cs">
+      <Link>OccReview\Dto\VisiteCusRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccReview\Dto\VisiteCustomerDto.cs">
+      <Link>OccReview\Dto\VisiteCustomerDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccReview\IOccReviewAppService.cs">
+      <Link>OccReview\IOccReviewAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccTargetDisease\Dto\CreateOrUpdateTargetDiseaseDto.cs">
+      <Link>OccTargetDisease\Dto\CreateOrUpdateTargetDiseaseDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccTargetDisease\Dto\FullItemGroup.cs">
+      <Link>OccTargetDisease\Dto\FullItemGroup.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccTargetDisease\Dto\FullTargetDiseaseDto.cs">
+      <Link>OccTargetDisease\Dto\FullTargetDiseaseDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccTargetDisease\Dto\InputRisksDto.cs">
+      <Link>OccTargetDisease\Dto\InputRisksDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccTargetDisease\Dto\OutIItemGroupsDto.cs">
+      <Link>OccTargetDisease\Dto\OutIItemGroupsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccTargetDisease\Dto\OutOccTargetDiseaseExcel.cs">
+      <Link>OccTargetDisease\Dto\OutOccTargetDiseaseExcel.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccTargetDisease\Dto\OutTbmOccTargetDiseaseDto.cs">
+      <Link>OccTargetDisease\Dto\OutTbmOccTargetDiseaseDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccTargetDisease\Dto\ParentTargetDiseaseDto.cs">
+      <Link>OccTargetDisease\Dto\ParentTargetDiseaseDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccTargetDisease\Dto\SeachOccTargetDiseaseDto.cs">
+      <Link>OccTargetDisease\Dto\SeachOccTargetDiseaseDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccTargetDisease\Dto\TbmItemGroupDto.cs">
+      <Link>OccTargetDisease\Dto\TbmItemGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccTargetDisease\Dto\TbmOccDiseaseDto.cs">
+      <Link>OccTargetDisease\Dto\TbmOccDiseaseDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccTargetDisease\Dto\TbmOccTargetDiseaseContraindicationDto.cs">
+      <Link>OccTargetDisease\Dto\TbmOccTargetDiseaseContraindicationDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccTargetDisease\Dto\TbmOccTargetDiseaseSymptomsDto.cs">
+      <Link>OccTargetDisease\Dto\TbmOccTargetDiseaseSymptomsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccTargetDisease\IOccTargetDiseaseAppService.cs">
+      <Link>OccTargetDisease\IOccTargetDiseaseAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccupationalDiseases\OConDictionary\Dto\OConDictionaryDto.cs">
+      <Link>OccupationalDiseases\OConDictionary\Dto\OConDictionaryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccupationalDiseases\OConDictionary\Dto\ORisItemGroupDto.cs">
+      <Link>OccupationalDiseases\OConDictionary\Dto\ORisItemGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccupationalDiseases\OConDictionary\Dto\ZYBTypeDto.cs">
+      <Link>OccupationalDiseases\OConDictionary\Dto\ZYBTypeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccupationalDiseases\OConDictionary\IOConDictionaryAppService.cs">
+      <Link>OccupationalDiseases\OConDictionary\IOConDictionaryAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccupationalDiseases\OPostState\Dto\JobCategoryDto.cs">
+      <Link>OccupationalDiseases\OPostState\Dto\JobCategoryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccupationalDiseases\OPostState\IPostStateAppService.cs">
+      <Link>OccupationalDiseases\OPostState\Dto\IPostStateAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccupationalDiseases\ORiskFactor\Dto\ORiskFactorDto.cs">
+      <Link>OccupationalDiseases\ORiskFactor\Dto\ORiskFactorDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccupationalDiseases\ORiskFactor\IRiskFactorAppService.cs">
+      <Link>OccupationalDiseases\ORiskFactor\IRiskFactorAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OccupationalDiseases\WorkType\Dto\WorkTypeDto.cs">
+      <Link>OccupationalDiseases\WorkType\Dto\WorkTypeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OutInspects\Dto\OutCusInfoDto.cs">
+      <Link>OutInspects\Dto\OutCusInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OutInspects\Dto\OutinspectsQueryDto.cs">
+      <Link>OutInspects\Dto\OutinspectsQueryDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\OutInspects\IOutInspectsQueryAppService.cs">
+      <Link>OutInspects\IOutInspectsQueryAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\PaymentMethod\Dto\MChargeTypeDto.cs">
+      <Link>PaymentMethod\Dto\MChargeTypeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\PaymentMethod\Dto\MDiurnalTableDto.cs">
+      <Link>PaymentMethod\Dto\MDiurnalTableDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\PaymentMethod\Dto\SearchReceiptInfoDto.cs">
+      <Link>PaymentMethod\Dto\SearchReceiptInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\PaymentMethod\Dto\ViewChargeTypeListDto.cs">
+      <Link>PaymentMethod\Dto\ViewChargeTypeListDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\PaymentMethod\Dto\ViewDailyReportDto.cs">
+      <Link>PaymentMethod\Dto\ViewDailyReportDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\PaymentMethod\Dto\ViewInvalidInvoiceListDto.cs">
+      <Link>PaymentMethod\Dto\ViewInvalidInvoiceListDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\PaymentMethod\IPaymentMethodAppService.cs">
+      <Link>PaymentMethod\IPaymentMethodAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\PaymentMethod\IPaymentStatisticAppService.cs">
+      <Link>PaymentMethod\IPaymentStatisticAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\PersonnelCategorys\Dto\PersonnelCategoryViewDto.cs">
+      <Link>PersonnelCategorys\Dto\PersonnelCategoryViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\PersonnelCategorys\IPersonnelCategoryAppService.cs">
+      <Link>PersonnelCategorys\IPersonnelCategoryAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\PhysicalExamination\Dto\ClientInfoPhysicalDto.cs">
+      <Link>PhysicalExamination\Dto\ClientInfoPhysicalDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\PhysicalExamination\Dto\ClientRegPhysicalDto.cs">
+      <Link>PhysicalExamination\Dto\ClientRegPhysicalDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\PhysicalExamination\Dto\ClientTeamPhysicalDto.cs">
+      <Link>PhysicalExamination\Dto\ClientTeamPhysicalDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\PhysicalExamination\Dto\CustomerPhysicalDto.cs">
+      <Link>PhysicalExamination\Dto\CustomerPhysicalDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\PhysicalExamination\Dto\CustomerRegPhysicalDto.cs">
+      <Link>PhysicalExamination\Dto\CustomerRegPhysicalDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\PhysicalExamination\IPhysicalExaminationAppService.cs">
+      <Link>PhysicalExamination\IPhysicalExaminationAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Picture\Dto\PictureDto.cs">
+      <Link>Controllers\Dto\PictureDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Questionnaire\Dto\QuestionBomDto.cs">
+      <Link>Questionnaire\Dto\QuestionBomDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Questionnaire\Dto\QuestionnaireDto.cs">
+      <Link>Questionnaire\Dto\QuestionnaireDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Questionnaire\Dto\QuestionnaireSearchInput.cs">
+      <Link>Questionnaire\Dto\QuestionnaireSearchInput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Questionnaire\Dto\QuestiontemDto.cs">
+      <Link>Questionnaire\Dto\QuestiontemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Questionnaire\Dto\QuestiontemReportDto.cs">
+      <Link>Questionnaire\Dto\QuestiontemReportDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Questionnaire\IQuestionnaireAppService.cs">
+      <Link>Questionnaire\IQuestionnaireAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Regist\Dto\TbmRegsitDto.cs">
+      <Link>Regist\Dto\TbmRegsitDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Regist\IRegistAppService.cs">
+      <Link>Regist\IRegistAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ReVisitTime\Dto\InsertReVisitTimeDto.cs">
+      <Link>ReVisitTime\Dto\InsertReVisitTimeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ReVisitTime\Dto\QueryCheckReview.cs">
+      <Link>ReVisitTime\Dto\QueryCheckReview.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ReVisitTime\Dto\QueryData.cs">
+      <Link>ReVisitTime\Dto\QueryData.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ReVisitTime\Dto\SearchItemGroupDto.cs">
+      <Link>ReVisitTime\Dto\SearchItemGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ReVisitTime\Dto\SearchReVisitTimeDto.cs">
+      <Link>ReVisitTime\Dto\SearchReVisitTimeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ReVisitTime\Dto\TbmItemGroupDto.cs">
+      <Link>ReVisitTime\Dto\TbmItemGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\ReVisitTime\IReVisitTimeAppService.cs">
+      <Link>ReVisitTime\IReVisitTimeAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\SchedulingSecondEdition\Dto\CompanyInformationDtoNo1.cs">
+      <Link>SchedulingSecondEdition\Dto\CompanyInformationDtoNo1.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\SchedulingSecondEdition\Dto\DepartmentDtoNo1.cs">
+      <Link>SchedulingSecondEdition\Dto\DepartmentDtoNo1.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\SchedulingSecondEdition\Dto\ManualSchedulingDtoNo1.cs">
+      <Link>SchedulingSecondEdition\Dto\ManualSchedulingDtoNo1.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\SchedulingSecondEdition\Dto\ManualSchedulingDtoNo2.cs">
+      <Link>SchedulingSecondEdition\Dto\ManualSchedulingDtoNo2.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\SchedulingSecondEdition\IManualSchedulingAppService.cs">
+      <Link>SchedulingSecondEdition\IManualSchedulingAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Scheduling\Dto\ClientTeamInfoInput.cs">
+      <Link>Scheduling\Dto\ClientTeamInfoInput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Scheduling\Dto\ClientTeamSchedulingInput.cs">
+      <Link>Scheduling\Dto\ClientTeamSchedulingInput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Scheduling\Dto\CustomerSchedulingInput.cs">
+      <Link>Scheduling\Dto\CustomerSchedulingInput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Scheduling\Dto\ItemGroupOfScheduleDto.cs">
+      <Link>Scheduling\Dto\ItemGroupOfScheduleDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Scheduling\Dto\SchedulingDto.cs">
+      <Link>Scheduling\Dto\SchedulingDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Scheduling\Dto\SchedulingNewDto.cs">
+      <Link>Scheduling\Dto\SchedulingNewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Scheduling\Dto\SearchCustomerOrClientRegDto.cs">
+      <Link>Scheduling\Dto\SearchCustomerOrClientRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Scheduling\Dto\SearchSchedulingDto.cs">
+      <Link>Scheduling\Dto\SearchSchedulingDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Scheduling\Dto\SearchSchedulingNewDto.cs">
+      <Link>Scheduling\Dto\SearchSchedulingNewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Scheduling\Dto\SearchSchedulingNewDtoForMonth.cs">
+      <Link>Scheduling\Dto\SearchSchedulingNewDtoForMonth.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Scheduling\Dto\SearchSchedulingStartEndDto.cs">
+      <Link>Scheduling\Dto\SearchSchedulingStartEndDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Scheduling\Dto\SimpleClientInfoDto.cs">
+      <Link>Scheduling\Dto\SimpleClientInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Scheduling\Dto\SimpleClientRegDto.cs">
+      <Link>Scheduling\Dto\SimpleClientRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Scheduling\Dto\SimpleClientRegTeamDto.cs">
+      <Link>Scheduling\Dto\SimpleClientRegTeamDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Scheduling\Dto\SimpleCustomerDto.cs">
+      <Link>Scheduling\Dto\SimpleCustomerDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Scheduling\Dto\SimpleCustomerRegDto.cs">
+      <Link>Scheduling\Dto\SimpleCustomerRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Scheduling\ISchedulingAppService.cs">
+      <Link>Scheduling\ISchedulingAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\SetSysSetting\Dto\QuerySetSysSettingDto.cs">
+      <Link>SetSysSetting\Dto\QuerySetSysSettingDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\SetSysSetting\Dto\SetSysSettingDto.cs">
+      <Link>SetSysSetting\Dto\SetSysSettingDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\SetSysSetting\ISetSysSettingAppService.cs">
+      <Link>SetSysSetting\ISetSysSettingAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\SummarizeAdvice\Dto\CreateOrUpdateSummarizeAdviceDto.cs">
+      <Link>SummarizeAdvice\Dto\CreateOrUpdateSummarizeAdviceDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\SummarizeAdvice\Dto\FullSummarizeAdviceDto.cs">
+      <Link>SummarizeAdvice\Dto\FullSummarizeAdviceDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\SummarizeAdvice\Dto\InputSearchSumm.cs">
+      <Link>SummarizeAdvice\Dto\InputSearchSumm.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\SummarizeAdvice\Dto\SearchSummarizeAdvice.cs">
+      <Link>SummarizeAdvice\Dto\SearchSummarizeAdvice.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\SummarizeAdvice\Dto\SearchSummarizeAdviceDto.cs">
+      <Link>SummarizeAdvice\Dto\SearchSummarizeAdviceDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\SummarizeAdvice\Dto\SimpleSummarizeAdviceDto.cs">
+      <Link>SummarizeAdvice\Dto\SimpleSummarizeAdviceDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\SummarizeAdvice\Dto\SumConflictDto.cs">
+      <Link>SummarizeAdvice\Dto\SumConflictDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\SummarizeAdvice\Dto\SummarizeAdviceDto.cs">
+      <Link>SummarizeAdvice\Dto\SummarizeAdviceDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\SummarizeAdvice\Dto\SummarizeAdviceInput.cs">
+      <Link>SummarizeAdvice\Dto\SummarizeAdviceInput.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\SummarizeAdvice\Dto\TbmSummHBDto.cs">
+      <Link>SummarizeAdvice\Dto\TbmSummHBDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\SummarizeAdvice\ISummarizeAdviceAppService.cs">
+      <Link>SummarizeAdvice\ISummarizeAdviceAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\TargetDisease\Dto\DiseaseContraindicationExplainDto.cs">
+      <Link>TargetDisease\Dto\DiseaseContraindicationExplainDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\TargetDisease\Dto\QueryTargetDisease.cs">
+      <Link>TargetDisease\Dto\QueryTargetDisease.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\TargetDisease\Dto\QueryTargetDiseaseDto.cs">
+      <Link>TargetDisease\Dto\QueryTargetDiseaseDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\TargetDisease\Dto\SearchOccupationalDiseaseIncludeItemGroupDto.cs">
+      <Link>TargetDisease\Dto\SearchOccupationalDiseaseIncludeItemGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\TargetDisease\Dto\UpdateDiseaseOrContraindicationDto.cs">
+      <Link>TargetDisease\Dto\UpdateDiseaseOrContraindicationDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\TargetDisease\Dto\UpdateHumanBodySystemDto.cs">
+      <Link>TargetDisease\Dto\UpdateHumanBodySystemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\TargetDisease\Dto\UpdateSymptomDto.cs">
+      <Link>TargetDisease\Dto\UpdateSymptomDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\TargetDisease\ITargetDiseaseAppService.cs">
+      <Link>TargetDisease\ITargetDiseaseAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Test\Dto\TestTable11Dto.cs">
+      <Link>Test\Dto\TestTable11Dto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Test\Dto\TestTable1Dto.cs">
+      <Link>Test\Dto\TestTable1Dto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Test\ITestTable1AppService.cs">
+      <Link>Test\ITestTable1AppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Users\Dto\CreateFormRoleDto.cs">
+      <Link>Users\Dto\CreateFormRoleDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Users\Dto\CreateOrUpdatePersonnelIndividuationConfigDto.cs">
+      <Link>Users\Dto\CreateOrUpdatePersonnelIndividuationConfigDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Users\Dto\CreateUserFormDto.cs">
+      <Link>Users\Dto\CreateUserFormDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Users\Dto\CreateUserFormTeandIDDto.cs">
+      <Link>Users\Dto\CreateUserFormTeandIDDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Users\Dto\FormModuleViewDto.cs">
+      <Link>Users\Dto\FormModuleViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Users\Dto\FormRoleDto.cs">
+      <Link>Users\Dto\FormRoleDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Users\Dto\FormRoleViewDto.cs">
+      <Link>Users\Dto\FormRoleViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Users\Dto\LoginlistDto.cs">
+      <Link>Users\Dto\LoginlistDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Users\Dto\PersonnelIndividuationConfigDto.cs">
+      <Link>Users\Dto\PersonnelIndividuationConfigDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Users\Dto\SearchUserDto.cs">
+      <Link>Users\Dto\SearchUserDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Users\Dto\SearchUserIndividuationConfigDto.cs">
+      <Link>Users\Dto\SearchUserIndividuationConfigDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Users\Dto\StartupMenuBarDto.cs">
+      <Link>Users\Dto\StartupMenuBarDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Users\Dto\UpdateFormRoleDto.cs">
+      <Link>Users\Dto\UpdateFormRoleDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Users\Dto\UpdatePwdDto.cs">
+      <Link>Users\Dto\UpdatePwdDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Users\Dto\UpdateUserFormDto.cs">
+      <Link>Users\Dto\UpdateUserFormDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Users\Dto\UserClientZKDto.cs">
+      <Link>Users\Dto\UserClientZKDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Users\Dto\UserForComboDto.cs">
+      <Link>Users\Dto\UserForComboDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Users\Dto\UserFormDto.cs">
+      <Link>Users\Dto\UserFormDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Users\Dto\UserIndividuationConfigsDto.cs">
+      <Link>Users\Dto\UserIndividuationConfigsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Users\Dto\UserRegsDto.cs">
+      <Link>Users\Dto\UserRegsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Users\Dto\UserViewDto.cs">
+      <Link>Users\Dto\UserViewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Users\Dto\VerificationUserDto.cs">
+      <Link>Users\Dto\VerificationUserDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Users\IFormRoleAppService.cs">
+      <Link>Users\IFormRoleAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Users\IPersonnelIndividuationConfigAppService.cs">
+      <Link>Users\IPersonnelIndividuationConfigAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\Users\IUserAppService.cs">
+      <Link>Users\IUserAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\AnswerjsonDto.cs">
+      <Link>WeChat\Dto\AnswerjsonDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\answerlistDto.cs">
+      <Link>WeChat\Dto\answerlistDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\ClientInfoDto.cs">
+      <Link>WeChat\Dto\ClientInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\ClientRegBMDto.cs">
+      <Link>WeChat\Dto\ClientRegBMDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\cusdt.cs">
+      <Link>WeChat\Dto\cusdt.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\CusMBSumBMDtocs.cs">
+      <Link>WeChat\Dto\CusMBSumBMDtocs.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\CusStateDto.cs">
+      <Link>WeChat\Dto\CusStateDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\CusSumBMLisDto.cs">
+      <Link>WeChat\Dto\CusSumBMLisDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\CustomerJson.cs">
+      <Link>WeChat\Dto\CustomerJson.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\CustomerSummarizeDto.cs">
+      <Link>WeChat\Dto\CustomerSummarizeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\DepDto.cs">
+      <Link>WeChat\Dto\DepDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\ErrList.cs">
+      <Link>WeChat\Dto\ErrList.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\fee_chargeDto.cs">
+      <Link>WeChat\Dto\fee_chargeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\fee_infoDto.cs">
+      <Link>WeChat\Dto\fee_infoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\INCusAddPackItems.cs">
+      <Link>WeChat\Dto\INCusAddPackItems.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\InCusAddPacksDto.cs">
+      <Link>WeChat\Dto\InCusAddPacksDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\InCusBMDto.cs">
+      <Link>WeChat\Dto\InCusBMDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\InCusGroupsDto.cs">
+      <Link>WeChat\Dto\InCusGroupsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\InCusInfoDto.cs">
+      <Link>WeChat\Dto\InCusInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\InCusPayDto.cs">
+      <Link>WeChat\Dto\InCusPayDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\InCusQusTionDto.cs">
+      <Link>WeChat\Dto\InCusQusTionDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\InCusRegBMDto.cs">
+      <Link>WeChat\Dto\InCusRegBMDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\NCusAddPacksDto.cs">
+      <Link>WeChat\Dto\NCusAddPacksDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\NCusGroupsDto.cs">
+      <Link>WeChat\Dto\NCusGroupsDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\NInCusInfoDto.cs">
+      <Link>WeChat\Dto\NInCusInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\OutResult.cs">
+      <Link>CusReg\Dto\OutResult.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\PayGroupDto.cs">
+      <Link>WeChat\Dto\PayGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\PicDto.cs">
+      <Link>WeChat\Dto\PicDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\PictureDto.cs">
+      <Link>WeChat\Dto\PictureDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\questionlistDto.cs">
+      <Link>WeChat\Dto\questionlistDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\ReceiptIdDto.cs">
+      <Link>WeChat\Dto\ReceiptIdDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\ReceiveCosPrice.cs">
+      <Link>WeChat\Dto\ReceiveCosPrice.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\Refee_chargeDto.cs">
+      <Link>WeChat\Dto\Refee_chargeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\RepCustomerRegDto.cs">
+      <Link>WeChat\Dto\RepCustomerRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\ReportCusDto.cs">
+      <Link>WeChat\Dto\ReportCusDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\ReportCusITemDto.cs">
+      <Link>WeChat\Dto\ReportCusITemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\ReportDepartDto.cs">
+      <Link>WeChat\Dto\ReportDepartDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\ReportGroupItems.cs">
+      <Link>WeChat\Dto\ReportGroupItems.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\ReportInfoDto.cs">
+      <Link>WeChat\Dto\ReportInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\ReportItemGroupDto.cs">
+      <Link>WeChat\Dto\ReportItemGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\reportitemInfo.cs">
+      <Link>WeChat\Dto\reportitemInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\ReportItemInfoDto.cs">
+      <Link>WeChat\Dto\ReportItemInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\ReportItemSuitDto.cs">
+      <Link>WeChat\Dto\ReportItemSuitDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\ReportItemSuitItemGroupDto.cs">
+      <Link>WeChat\Dto\ReportItemSuitItemGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\reportjson.cs">
+      <Link>WeChat\Dto\reportjson.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\ReportReviewDto.cs">
+      <Link>WeChat\Dto\ReportReviewDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\ReportSuggestBear.cs">
+      <Link>WeChat\Dto\ReportSuggestBear.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\ReportSummarizeAdviceDto.cs">
+      <Link>WeChat\Dto\ReportSummarizeAdviceDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\ResultDto.cs">
+      <Link>WeChat\Dto\ResultDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\SeachRepot.cs">
+      <Link>WeChat\Dto\SeachRepot.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\SearchBiseDto.cs">
+      <Link>WeChat\Dto\SearchBiseDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\SearchClientCusDto.cs">
+      <Link>WeChat\Dto\SearchClientCusDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\SearchRegDateDto.cs">
+      <Link>WeChat\Dto\SearchRegDateDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\sett_infoDto.cs">
+      <Link>WeChat\Dto\sett_infoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\SumBMDto.cs">
+      <Link>WeChat\Dto\SumBMDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\TjlCusQuestionDto.cs">
+      <Link>WeChat\Dto\TjlCusQuestionDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\TjlQuestionBomDto.cs">
+      <Link>WeChat\Dto\TjlQuestionBomDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\TjlQuestiontemDto.cs">
+      <Link>WeChat\Dto\TjlQuestiontemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\UserDto.cs">
+      <Link>WeChat\Dto\UserDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\WCusDepSumDto.cs">
+      <Link>WeChat\Dto\WCusDepSumDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\WCusGroupDto.cs">
+      <Link>WeChat\Dto\WCusGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\WCusRegDto.cs">
+      <Link>WeChat\Dto\WCusRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\WCusRegItemDto.cs">
+      <Link>WeChat\Dto\WCusRegItemDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\WCusSumDto.cs">
+      <Link>WeChat\Dto\WCusSumDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\WJMainDto.cs">
+      <Link>WeChat\Dto\WJMainDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\WXclientCusDto.cs">
+      <Link>WeChat\Dto\WXclientCusDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\WXClientCusInfoDto.cs">
+      <Link>WeChat\Dto\WXClientCusInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\WXClientCusListDto.cs">
+      <Link>WeChat\Dto\WXClientCusListDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\WXClientInfoDto.cs">
+      <Link>WeChat\Dto\WXClientInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\WXClientRegDto.cs">
+      <Link>WeChat\Dto\WXClientRegDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\WXClientTeamInfoDto.cs">
+      <Link>WeChat\Dto\WXClientTeamInfoDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\WXCusGroupDto.cs">
+      <Link>WeChat\Dto\WXCusGroupDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\WxCusMessDto.cs">
+      <Link>WeChat\Dto\WxCusMessDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\WXCusReglistDto.cs">
+      <Link>WeChat\Dto\WXCusReglistDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\WxCusReviewMessDto.cs">
+      <Link>WeChat\Dto\WxCusReviewMessDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\WxCusReviews.cs">
+      <Link>WeChat\Dto\WxCusReviews.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\WXGroupPriceSynchronizesDto.cs">
+      <Link>WeChat\Dto\WXGroupPriceSynchronizesDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\WXPriceSynchronizeDto.cs">
+      <Link>WeChat\Dto\WXPriceSynchronizeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\Dto\WxReviewItemGroups.cs">
+      <Link>WeChat\Dto\WxReviewItemGroups.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WeChat\IWeChatAppService.cs">
+      <Link>WeChat\IWeChatAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WorkType\Dto\WorkTypeDto.cs">
+      <Link>WorkType\Dto\WorkTypeDto.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Application\WorkType\IWorkTypeAppService.cs">
+      <Link>WorkType\IWorkTypeAppService.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.Core\Illness\Enums\DiseaseContraindicationType.cs">
+      <Link>TargetDisease\Enums\DiseaseContraindicationType.cs</Link>
+    </Compile>
+    <Compile Include="..\HealthExaminationSystem.WebApi\Api\Models\LoginModel.cs">
+      <Link>Api\Models\LoginModel.cs</Link>
+    </Compile>
+    <Compile Include="AddStatistics\AddStatisticsAppService.cs" />
+    <Compile Include="ApiError.cs" />
+    <Compile Include="ApiResponse.cs" />
+    <Compile Include="Api\Controllers\AccountController.cs" />
+    <Compile Include="AppServiceApiProxyBase.cs" />
+    <Compile Include="BarPrintInfoItemGroup\BarPrintInfoItemGroupAppService.cs" />
+    <Compile Include="BarPrint\BarPrintAppService.cs" />
+    <Compile Include="BarSetting\BarSettingAppService.cs" />
+    <Compile Include="BaseModule\FormModuleAppService.cs" />
+    <Compile Include="BasicDictionary\BasicDictionaryAppService.cs" />
+    <Compile Include="CarSend\CardSendAppService.cs" />
+    <Compile Include="ClearData\ClearDataAppService.cs" />
+    <Compile Include="Company\CompanyRelatedAppService.cs" />
+    <Compile Include="Controllers\ContractAdjunctController.cs" />
+    <Compile Include="Crisis\CrisisAppService.cs" />
+    <Compile Include="Critical\CriticalAppService.cs" />
+    <Compile Include="CusReSultStatus\CusReSultStatusAppService.cs" />
+    <Compile Include="CustomerRegisterItemPicture\CustomerRegisterItemPictureAppService.cs" />
+    <Compile Include="CustomerRegisterSummarize\CustomerRegisterSummarizeAppService.cs" />
+    <Compile Include="CustomerRegister\CustomerRegisterAppService.cs" />
+    <Compile Include="CustomerRegister\CustomerRegisterItemGroupAppService.cs" />
+    <Compile Include="CustomerRegister\CustomerRegisterSummarizeAdviceAppService.cs" />
+    <Compile Include="DynamicColumnDirectory\DynamicColumnAppService.cs" />
+    <Compile Include="Foreground\BloodWorkstationAppService.cs" />
+    <Compile Include="FrmMakeCollect\FrmMakeCollectAppService.cs" />
+    <Compile Include="HistoryComparison\HistoryComparisonAppService.cs" />
+    <Compile Include="Charge\ChargeAppService.cs" />
+    <Compile Include="ClientInfoes\ClientInfoesAppService.cs" />
+    <Compile Include="Common\CommonAppService.cs" />
+    <Compile Include="Company\ClientRegAppService.cs" />
+    <Compile Include="Compose\ComposeAppService.cs" />
+    <Compile Include="Controllers\PictureController.cs" />
+    <Compile Include="CrossTable\CrossTableAppService.cs" />
+    <Compile Include="CusReg\CustomerAppService.cs" />
+    <Compile Include="CustomerReport\CustomerReportAppService.cs" />
+    <Compile Include="CustomerReport\PrintPreviewAppService.cs" />
+    <Compile Include="DailyNewspaper\DailyNewspaperAppService.cs" />
+    <Compile Include="Department\DepartmentAppService.cs" />
+    <Compile Include="Diagnosis\DiagnosisAppService.cs" />
+    <Compile Include="Dictionary\DictionaryAppService.cs" />
+    <Compile Include="DoctorStation\DoctorStationAppService.cs" />
+    <Compile Include="DoctorStation\Dto\SearchTjlCustomerSummaryDto.cs" />
+    <Compile Include="EntityDto.cs" />
+    <Compile Include="FrmSeleteItemGroup\SeleteItemGroupAppService.cs" />
+    <Compile Include="FullAuditedEntityDto.cs" />
+    <Compile Include="GroupReport\GroupReportAppService.cs" />
+    <Compile Include="GuideListCollection\GuideListCollectionAppService.cs" />
+    <Compile Include="IApplicationService.cs" />
+    <Compile Include="IDNumber\IDNumberAppService.cs" />
+    <Compile Include="InspectionTotal\CustomerRegisterDepartmentSummaryAppService.cs" />
+    <Compile Include="InspectionTotal\CustomerRegisterItemAppService.cs" />
+    <Compile Include="InspectionTotal\InspectionTotalAppService.cs" />
+    <Compile Include="InterfaceItemComparison\InterfaceItemAppService.cs" />
+    <Compile Include="InvoiceManagement\InvoiceManagementAppService.cs" />
+    <Compile Include="ItemGroup\Entity.cs" />
+    <Compile Include="ItemGroup\ItemGroupAppService.cs" />
+    <Compile Include="ItemInfo\ItemInfoAppService.cs" />
+    <Compile Include="ItemSuit\ItemSuitAppService.cs" />
+    <Compile Include="ListResultDto.cs" />
+    <Compile Include="Market\ComplaintAppService.cs" />
+    <Compile Include="Market\ContractAppService.cs" />
+    <Compile Include="MemberShipCard\MemberShipCardAppService.cs" />
+    <Compile Include="MRise\MRiseAppService.cs" />
+    <Compile Include="OAApproval\OAApprovalAppService.cs" />
+    <Compile Include="OccAbnormalResult\OccAbnormalResultAppService.cs" />
+    <Compile Include="OccConclusioncontraindication\OccupationalcontraindicationAppService.cs" />
+    <Compile Include="OccConclusionStatistics\OccConclusionStatisticsAppService.cs" />
+    <Compile Include="OccConclusionSuspected\OccConclusionSuspectedAppService.cs" />
+    <Compile Include="OccConclusionTarget\OccConclusionTargetAppService.cs" />
+    <Compile Include="OccConclusionYear\OccConclusionYearAppService.cs" />
+    <Compile Include="OccCusInfoOut\OccCusInfoOutAppService.cs" />
+    <Compile Include="OccDayStatic\OccDayStaticAppService.cs" />
+    <Compile Include="OccdiseaseConsulitation\OccdiseaseConsulitationAppService.cs" />
+    <Compile Include="OccdiseaseSet\OccdiseaseMain\OccDiseaseAppService.cs" />
+    <Compile Include="OccDisProposalNew\OccDisProposalNewAppService.cs" />
+    <Compile Include="OccDisRequisition\OccDisRequisitionAppService.cs" />
+    <Compile Include="OccGroupReport\OccGroupReportAppService.cs" />
+    <Compile Include="OccHarmFul\OccHarmFulAppService.cs" />
+    <Compile Include="OccHazardFactor\OccHazardFactorAppService.cs" />
+    <Compile Include="OccNationalDisease\OccNationalDiseaseAppService.cs" />
+    <Compile Include="OccReview\OccReviewAppService.cs" />
+    <Compile Include="OccTargetDisease\OccTargetDiseaseAppService.cs" />
+    <Compile Include="OccupationalDiseases\OConDictionary\OConDictionaryAppService.cs" />
+    <Compile Include="OccupationalDiseases\OPostState\PostStateAppService.cs" />
+    <Compile Include="OccupationalDiseases\ORiskFactor\RiskFactorAppService.cs" />
+    <Compile Include="OutInspects\OutInspectsQueryAppService.cs" />
+    <Compile Include="PaymentMethod\PaymentMethodAppService.cs" />
+    <Compile Include="PaymentMethod\PaymentStatisticAppService.cs" />
+    <Compile Include="PersonnelCategorys\PersonnelCategoryAppService.cs" />
+    <Compile Include="PhysicalExamination\PhysicalExaminationAppService.cs" />
+    <Compile Include="Questionnaire\QuestionnaireAppService.cs" />
+    <Compile Include="Regist\RegistAppService.cs" />
+    <Compile Include="ReVisitTime\ReVisitTimeAppService.cs" />
+    <Compile Include="SchedulingSecondEdition\ManualSchedulingAppService.cs" />
+    <Compile Include="Scheduling\SchedulingAppService.cs" />
+    <Compile Include="SetSysSetting\SetSysSettingAppService.cs" />
+    <Compile Include="SummarizeAdvice\SummarizeAdviceAppService.cs" />
+    <Compile Include="TargetDisease\TargetDiseaseAppService.cs" />
+    <Compile Include="Test\TestTable1AppService.cs" />
+    <Compile Include="UserFriendlyException.cs" />
+    <Compile Include="Users\FormRoleAppService.cs" />
+    <Compile Include="Users\PersonnelIndividuationConfigAppService.cs" />
+    <Compile Include="Users\UserAppService.cs" />
+    <Compile Include="ValidationError.cs" />
+    <Compile Include="WeChat\WeChatAppService.cs" />
+    <Compile Include="WorkType\WorkTypeAppService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MRise\Dto\" />
+    <Folder Include="OccupationalDiseases\proposal\Dto\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Others\HealthExaminationSystem.DataTransmission\HealthExaminationSystem.DataTransmission.csproj">
+      <Project>{3D13FD6C-95BF-4FA8-AD63-93CB3F46A4C8}</Project>
+      <Name>HealthExaminationSystem.DataTransmission</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HealthExaminationSystem.BaCommon\HealthExaminationSystem.BaCommon.csproj">
+      <Project>{3d3251f0-9ca5-4a93-97a6-35db095bc20b}</Project>
+      <Name>HealthExaminationSystem.BaCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HealthExaminationSystem.Enumerations\HealthExaminationSystem.Enumerations.csproj">
+      <Project>{55e602fa-21e2-4eeb-ad64-a32bb93ca772}</Project>
+      <Name>HealthExaminationSystem.Enumerations</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
