@@ -4983,6 +4983,14 @@ namespace Sw.Hospital.HealthExaminationSystem.DoctorStation
         {
             setWJZ(1);
         }
+        private void barButtonItem8_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            setWJZ(3);
+        }
+        private void barButtonItem9_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            setWJZ(4);
+        }
 
         private void barButtonItem7_ItemClick(object sender, ItemClickEventArgs e)
         {

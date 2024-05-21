@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoctorDesk));
@@ -66,6 +67,7 @@
             this.colWeiJiZhiCheckSate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colWeiJiZhiSummSate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemLookUpEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
+            this.colDangTianCheckSate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumnGridXiangMuBiaoShi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colXMJieGuo = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemMemoEditJieguo = new DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit();
@@ -105,12 +107,12 @@
             this.labelIdNumber = new DevExpress.XtraEditors.LabelControl();
             this.layoutzyb = new DevExpress.XtraLayout.LayoutControlItem();
             this.labzyb = new DevExpress.XtraEditors.LabelControl();
-            this.barManager1 = new DevExpress.XtraBars.BarManager();
+            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager();
+            this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
             this.hideContainerLeft = new DevExpress.XtraBars.Docking.AutoHideContainer();
             this.dockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
             this.controlContainer2 = new DevExpress.XtraBars.Docking.ControlContainer();
@@ -171,7 +173,6 @@
             this.colDangTianXingMing = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDangTianXingBie = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDangTianNianLing = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDangTianCheckSate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDangTianShiJian = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDangTianId = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDangTianSummSate = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -276,6 +277,8 @@
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             this.tabPane1 = new DevExpress.XtraBars.Navigation.TabPane();
             this.labelts = new DevExpress.XtraEditors.LabelControl();
             this.labInfo = new DevExpress.XtraEditors.LabelControl();
@@ -380,9 +383,9 @@
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem6 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu();
-            this.alertControl = new DevExpress.XtraBars.Alerter.AlertControl();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip();
+            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.alertControl = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroupBase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlBase)).BeginInit();
@@ -884,6 +887,17 @@
             this.permissionManager.SetIsVisable(this.repositoryItemLookUpEdit1, false);
             this.repositoryItemLookUpEdit1.Name = "repositoryItemLookUpEdit1";
             this.permissionManager.SetPermissionId(this.repositoryItemLookUpEdit1, "");
+            // 
+            // colDangTianCheckSate
+            // 
+            this.colDangTianCheckSate.Caption = "状态";
+            this.permissionManager.SetEnabled(this.colDangTianCheckSate, false);
+            this.colDangTianCheckSate.FieldName = "CheckSateFormat";
+            this.permissionManager.SetIsVisable(this.colDangTianCheckSate, false);
+            this.colDangTianCheckSate.Name = "colDangTianCheckSate";
+            this.permissionManager.SetPermissionId(this.colDangTianCheckSate, "");
+            this.colDangTianCheckSate.Visible = true;
+            this.colDangTianCheckSate.VisibleIndex = 4;
             // 
             // gridColumnGridXiangMuBiaoShi
             // 
@@ -1448,8 +1462,10 @@
             this.barButtonItem4,
             this.barButtonItem5,
             this.barButtonItem6,
-            this.barButtonItem7});
-            this.barManager1.MaxItemId = 11;
+            this.barButtonItem7,
+            this.barButtonItem8,
+            this.barButtonItem9});
+            this.barManager1.MaxItemId = 13;
             this.permissionManager.SetPermissionId(this.barManager1, "");
             // 
             // barDockControlTop
@@ -2431,17 +2447,6 @@
             this.colDangTianNianLing.Visible = true;
             this.colDangTianNianLing.VisibleIndex = 3;
             this.colDangTianNianLing.Width = 35;
-            // 
-            // colDangTianCheckSate
-            // 
-            this.colDangTianCheckSate.Caption = "状态";
-            this.permissionManager.SetEnabled(this.colDangTianCheckSate, false);
-            this.colDangTianCheckSate.FieldName = "CheckSateFormat";
-            this.permissionManager.SetIsVisable(this.colDangTianCheckSate, false);
-            this.colDangTianCheckSate.Name = "colDangTianCheckSate";
-            this.permissionManager.SetPermissionId(this.colDangTianCheckSate, "");
-            this.colDangTianCheckSate.Visible = true;
-            this.colDangTianCheckSate.VisibleIndex = 4;
             // 
             // colDangTianShiJian
             // 
@@ -3845,6 +3850,26 @@
             this.barButtonItem7.Name = "barButtonItem7";
             this.permissionManager.SetPermissionId(this.barButtonItem7, "");
             this.barButtonItem7.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem7_ItemClick_1);
+            // 
+            // barButtonItem8
+            // 
+            this.barButtonItem8.Caption = "设置重要异常结果（C类）";
+            this.permissionManager.SetEnabled(this.barButtonItem8, false);
+            this.barButtonItem8.Id = 11;
+            this.permissionManager.SetIsVisable(this.barButtonItem8, false);
+            this.barButtonItem8.Name = "barButtonItem8";
+            this.permissionManager.SetPermissionId(this.barButtonItem8, "");
+            this.barButtonItem8.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8_ItemClick);
+            // 
+            // barButtonItem9
+            // 
+            this.barButtonItem9.Caption = "设置重要异常结果（D类）";
+            this.permissionManager.SetEnabled(this.barButtonItem9, false);
+            this.barButtonItem9.Id = 12;
+            this.permissionManager.SetIsVisable(this.barButtonItem9, false);
+            this.barButtonItem9.Name = "barButtonItem9";
+            this.permissionManager.SetPermissionId(this.barButtonItem9, "");
+            this.barButtonItem9.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem9_ItemClick);
             // 
             // tabPane1
             // 
@@ -5367,6 +5392,8 @@
             new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItemDaiJian),
             new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItemInCriticalValue),
             new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem5),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem8),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem9),
             new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItemOutCriticalValue),
             new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem1),
             new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem2),
@@ -6008,5 +6035,7 @@
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem6;
         private DevExpress.XtraGrid.Columns.GridColumn conWeiJiZhiLeibie;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem8;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem9;
     }
 }
