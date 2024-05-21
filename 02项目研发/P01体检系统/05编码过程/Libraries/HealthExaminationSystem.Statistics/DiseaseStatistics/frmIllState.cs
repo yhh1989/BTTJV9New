@@ -27,7 +27,7 @@ namespace Sw.Hospital.HealthExaminationSystem.Statistics.DiseaseStatistics
     public partial class frmIllState : UserBaseForm
     {
         private readonly ICommonAppService _commonAppService;
-        private  readonly DiagnosisAppService _diagnosisAppService;
+        private readonly DiagnosisAppService _diagnosisAppService;
         private Dictionary<string, CustomColumnValue> CustomColumns { get; set; }
 
         private List<GridColumn> OldColumns = new List<GridColumn>();
@@ -41,18 +41,13 @@ namespace Sw.Hospital.HealthExaminationSystem.Statistics.DiseaseStatistics
 
         private void frmIllState_Load(object sender, EventArgs e)
         {
-          
+
             // 初始化时间框
             var date = _commonAppService.GetDateTimeNow().Now;
             dtEnd.DateTime = date;
             dtStar.DateTime = date;
-
-            
-            checkedItem.Properties.DataSource = DefinedCacheHelper.GetItemInfos();
-            checkedItem.Properties.DisplayMember = "Name";
-            checkedItem.Properties.ValueMember = "Id";
             sleDW.Properties.DataSource = DefinedCacheHelper.GetClientRegNameComDto();
-            InitTreeFunction( "");
+            InitTreeFunction("");
         }
         #region 初始化树
         /// <summary>
@@ -67,15 +62,15 @@ namespace Sw.Hospital.HealthExaminationSystem.Statistics.DiseaseStatistics
 
             //初始化全部功能树
             TreeNode parentNode = this.treeFunction.Nodes.Add("", "项目名称");
-           // var itemlist = DefinedCacheHelper.GetItemInfos();
+            // var itemlist = DefinedCacheHelper.GetItemInfos();
 
-            var depr = DefinedCacheHelper.GetItemInfos().Where(p=>p.Department !=null).Select(p => p.Department.Id).Distinct().ToList();
+            var depr = DefinedCacheHelper.GetItemInfos().Where(p => p.Department != null).Select(p => p.Department.Id).Distinct().ToList();
             foreach (var typeInfo in depr)
             {
                 var deparName = DefinedCacheHelper.GetItemInfos().Where(p => p.Department != null).FirstOrDefault(p => p.Department.Id == typeInfo);
                 TreeNode ptNode = new TreeNode(deparName.Department.Name);
                 parentNode.Nodes.Add(ptNode);
-                var itemslist= DefinedCacheHelper.GetItemInfos().Where(p => p.Department != null).Where(p => p.Department.Id== typeInfo).ToList();
+                var itemslist = DefinedCacheHelper.GetItemInfos().Where(p => p.Department != null).Where(p => p.Department.Id == typeInfo).ToList();
                 AddFunctionNode(ptNode, itemslist, strname);
             }
             treeFunction.Nodes[0].Expand();
@@ -92,8 +87,8 @@ namespace Sw.Hospital.HealthExaminationSystem.Statistics.DiseaseStatistics
         /// </summary>
         private void AddFunctionNode(TreeNode node, List<ItemInfoSimpleDto> drs, string strname)
         {
-         
-            foreach (var  info in drs)
+
+            foreach (var info in drs)
             {
                 if (info.Name.Contains(strname) || strname == "")
                 {
@@ -132,20 +127,6 @@ namespace Sw.Hospital.HealthExaminationSystem.Statistics.DiseaseStatistics
             {
                 searchItem.ClientRegId = (Guid)sleDW.EditValue;
             }
-            //if (!string.IsNullOrEmpty(checkedItem.EditValue?.ToString()))
-            //{
-            //    var ItemStr = checkedItem.EditValue?.ToString();
-            //    var itemIdlist = ItemStr.Split(',').ToList();
-            //    List<Guid> ItmIDlist = new List<Guid>();
-            //    foreach (var ItmID in itemIdlist)
-            //    {
-            //        if (!string.IsNullOrEmpty(ItmID))
-            //        {
-            //            ItmIDlist.Add(Guid.Parse(ItmID));
-            //        }
-            //    }
-            //    searchItem.ItemID = ItmIDlist;
-            //}
             List<Guid> ItmIDlist = new List<Guid>();
             foreach (TreeNode item in this.treeFunction.Nodes[0].Nodes)
             {
@@ -154,35 +135,18 @@ namespace Sw.Hospital.HealthExaminationSystem.Statistics.DiseaseStatistics
 
                     foreach (TreeNode itemnode in item.Nodes)
                     {
-                        if (itemnode.Checked == true && itemnode.Tag!=null)
+                        if (itemnode.Checked == true && itemnode.Tag != null)
                         {
-                            var itemnodels =Guid.Parse(itemnode.Tag.ToString());
+                            var itemnodels = Guid.Parse(itemnode.Tag.ToString());
                             ItmIDlist.Add(itemnodels);
                         }
                     }
                 }
             }
             searchItem.ItemID = ItmIDlist;
+            searchItem.ISIll = !checkEdit1.Checked;
 
-            if ((!string.IsNullOrEmpty(temin.EditValue?.ToString()) && temin.Value!=0 )
-                || ( !string.IsNullOrEmpty(teMax.EditValue?.ToString()) && teMax.Value!=0))
-            {
-                searchItem.MinValue = temin.Value;
-                searchItem.MaxValue = teMax.Value;
-            }
-            //if (!string.IsNullOrEmpty(teMax.EditValue?.ToString()))
-            //{
-            //    searchItem.MaxValue = teMax.Value;
-            //}
-            if (!string.IsNullOrEmpty(searchIllNmame.EditValue?.ToString()))
-            {
-                searchItem.IllStr = searchIllNmame.EditValue?.ToString();
-            }
-            if (checkEdit1.Checked==true)
-            {
-                searchItem.ISIll = checkEdit1.Checked;
-            }
-            
+
 
             var resultdt = _diagnosisAppService.getIllCount(searchItem);
             if (resultdt.Count > 0)
@@ -206,8 +170,8 @@ namespace Sw.Hospital.HealthExaminationSystem.Statistics.DiseaseStatistics
                         Symbol = n.Symbol
                     }).ToList()
                 }).ToList();
-                var itemname = resultdt.OrderBy(p=>p.DepartOrderNum).
-                    ThenBy(p=>p.GrouptOrderNum).ThenBy(p=>p.ItemOrderNum).
+                var itemname = resultdt.OrderBy(p => p.DepartOrderNum).
+                    ThenBy(p => p.GrouptOrderNum).ThenBy(p => p.ItemOrderNum).
                     Select(p => p.ItemName).Distinct().ToList();
                 foreach (var depar in itemname)
                 {
@@ -241,7 +205,7 @@ namespace Sw.Hospital.HealthExaminationSystem.Statistics.DiseaseStatistics
             try
             {
                 ExcelHelper.GridViewToExcel(gridView1, "阳性统计", "阳性统计");
-                
+
             }
             catch (Exception ex)
             {
@@ -327,7 +291,7 @@ namespace Sw.Hospital.HealthExaminationSystem.Statistics.DiseaseStatistics
                 if (gridControl1.DataSource is List<CusRegInfoMainDto> rows)
                 {
                     if (rows.Count > e.ListSourceRowIndex)
-                    {                       
+                    {
                         var sum2 = rows[e.ListSourceRowIndex].CusRegInfoDetail
                             ?.Where(r => r.ItemName == CustomColumns[e.Column.Name].Text)
                             .Select(r => r.ItemValue).ToList();
@@ -338,7 +302,7 @@ namespace Sw.Hospital.HealthExaminationSystem.Statistics.DiseaseStatistics
                                 e.DisplayText = i.ToString();
                             }
 
-                        }                      
+                        }
 
                     }
                 }
