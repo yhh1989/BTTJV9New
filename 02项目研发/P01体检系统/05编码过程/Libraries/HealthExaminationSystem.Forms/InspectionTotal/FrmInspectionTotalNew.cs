@@ -5629,7 +5629,15 @@ namespace Sw.Hospital.HealthExaminationSystem.InspectionTotal
         {
             setWJZ(2);
         }
-
+        private void simpleButton17_Click(object sender, EventArgs e)
+        {
+            setWJZ(3);
+        }
+        private void simpleButton18_Click(object sender, EventArgs e)
+        {
+            setWJZ(4);
+        }
+        
         private void simpleButton8_Click(object sender, EventArgs e)
         {
             var cusGroup = gridControl3.GetFocusedRowDto<CustomerRegisterItemDto>();

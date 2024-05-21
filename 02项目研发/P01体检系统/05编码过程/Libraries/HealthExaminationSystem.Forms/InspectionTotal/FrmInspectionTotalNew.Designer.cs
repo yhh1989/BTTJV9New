@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule11 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue11 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule12 = new DevExpress.XtraGrid.GridFormatRule();
@@ -48,10 +49,6 @@
             DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue9 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule10 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue10 = new DevExpress.XtraEditors.FormatConditionRuleValue();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule20 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue20 = new DevExpress.XtraEditors.FormatConditionRuleValue();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule21 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue21 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule22 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue22 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule23 = new DevExpress.XtraGrid.GridFormatRule();
@@ -66,6 +63,14 @@
             DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue27 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule28 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue28 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule29 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue29 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule30 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue30 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule31 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue31 = new DevExpress.XtraEditors.FormatConditionRuleValue();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule32 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue32 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions11 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions12 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions13 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
@@ -104,12 +109,12 @@
             this.gridColumn27 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.layoutControl2 = new DevExpress.XtraLayout.LayoutControl();
             this.progressBarControl1 = new DevExpress.XtraEditors.ProgressBarControl();
-            this.barManager1 = new DevExpress.XtraBars.BarManager();
+            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager();
+            this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
             this.hideContainerLeft = new DevExpress.XtraBars.Docking.AutoHideContainer();
             this.dockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
@@ -301,7 +306,7 @@
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemLookUpEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.gridColumn35 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.toolTipController1 = new DevExpress.Utils.ToolTipController();
+            this.toolTipController1 = new DevExpress.Utils.ToolTipController(this.components);
             this.gridControl3 = new DevExpress.XtraGrid.GridControl();
             this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -317,6 +322,31 @@
             this.gridColumn34 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.layoutControlItem27 = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem26 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem29 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.checkEdit3 = new DevExpress.XtraEditors.CheckEdit();
+            this.layoutControlItem79 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.layoutControlItem78 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.splitterItem2 = new DevExpress.XtraLayout.SplitterItem();
+            this.layoutControlItem93 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.butYX = new DevExpress.XtraEditors.SimpleButton();
+            this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.butA = new DevExpress.XtraEditors.SimpleButton();
+            this.layoutControlItem83 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
+            this.layoutControlItem84 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
+            this.layoutControlItem94 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.butCancel = new DevExpress.XtraEditors.SimpleButton();
+            this.layoutControlItem28 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.checkEdit4 = new DevExpress.XtraEditors.CheckEdit();
+            this.layoutControlItem105 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.simpleButton17 = new DevExpress.XtraEditors.SimpleButton();
+            this.layoutControlItem106 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.simpleButton18 = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem30 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -438,36 +468,19 @@
             this.simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControlItem102 = new DevExpress.XtraLayout.LayoutControlItem();
             this.simpleButton15 = new DevExpress.XtraEditors.SimpleButton();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem26 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem29 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.checkEdit3 = new DevExpress.XtraEditors.CheckEdit();
-            this.layoutControlItem79 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.layoutControlItem78 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.splitterItem2 = new DevExpress.XtraLayout.SplitterItem();
-            this.layoutControlItem93 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.butYX = new DevExpress.XtraEditors.SimpleButton();
-            this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.butA = new DevExpress.XtraEditors.SimpleButton();
-            this.layoutControlItem83 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
-            this.layoutControlItem84 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
-            this.layoutControlItem94 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.butCancel = new DevExpress.XtraEditors.SimpleButton();
-            this.layoutControlItem28 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.checkEdit4 = new DevExpress.XtraEditors.CheckEdit();
-            this.alertInfo = new DevExpress.XtraBars.Alerter.AlertControl();
-            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu();
+            this.alertInfo = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
+            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.radioGroup1 = new DevExpress.XtraEditors.RadioGroup();
             this.labelFPNo = new DevExpress.XtraEditors.LabelControl();
             this.layoutControlItem62 = new DevExpress.XtraLayout.LayoutControlItem();
             this.txtCusBM = new DevExpress.XtraEditors.TextEdit();
             this.layoutControlItem74 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.popupMenu2 = new DevExpress.XtraBars.PopupMenu();
-            this.popupMenu3 = new DevExpress.XtraBars.PopupMenu();
+            this.popupMenu2 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.popupMenu3 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
+            this.layoutControlItem107 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
+            this.layoutControlItem108 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroupBase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlBase)).BeginInit();
             this.layoutControlBase.SuspendLayout();
@@ -630,6 +643,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem27)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem79)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem78)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem93)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem83)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem84)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem94)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem105)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem106)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem30)).BeginInit();
@@ -702,20 +731,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem100)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem102)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem79)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem78)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem93)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem83)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem84)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem94)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem62)).BeginInit();
@@ -723,6 +738,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem74)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem107)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem108)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControlGroupBase
@@ -743,13 +760,17 @@
             this.layoutControlItem20,
             this.layoutControlItem62,
             this.layoutControlItem24});
-            this.layoutControlGroupBase.Location = new System.Drawing.Point(-16, 0);
+            this.layoutControlGroupBase.Location = new System.Drawing.Point(-106, 0);
             this.layoutControlGroupBase.OptionsItemText.TextToControlDistance = 4;
             this.permissionManager.SetPermissionId(this.layoutControlGroupBase, "");
             this.layoutControlGroupBase.Size = new System.Drawing.Size(961, 619);
             // 
             // layoutControlBase
             // 
+            this.layoutControlBase.Controls.Add(this.labelControl15);
+            this.layoutControlBase.Controls.Add(this.labelControl14);
+            this.layoutControlBase.Controls.Add(this.simpleButton18);
+            this.layoutControlBase.Controls.Add(this.simpleButton17);
             this.layoutControlBase.Controls.Add(this.simpleButton16);
             this.layoutControlBase.Controls.Add(this.simpleButton15);
             this.layoutControlBase.Controls.Add(this.simpleButton13);
@@ -3684,7 +3705,7 @@
             // 
             this.permissionManager.SetEnabled(this.labName, false);
             this.permissionManager.SetIsVisable(this.labName, false);
-            this.labName.Location = new System.Drawing.Point(166, 12);
+            this.labName.Location = new System.Drawing.Point(76, 12);
             this.labName.Margin = new System.Windows.Forms.Padding(9, 22, 9, 22);
             this.labName.Name = "labName";
             this.permissionManager.SetPermissionId(this.labName, "");
@@ -3713,7 +3734,7 @@
             // 
             this.permissionManager.SetEnabled(this.labSex, false);
             this.permissionManager.SetIsVisable(this.labSex, false);
-            this.labSex.Location = new System.Drawing.Point(270, 12);
+            this.labSex.Location = new System.Drawing.Point(180, 12);
             this.labSex.Margin = new System.Windows.Forms.Padding(9, 22, 9, 22);
             this.labSex.Name = "labSex";
             this.permissionManager.SetPermissionId(this.labSex, "");
@@ -3739,7 +3760,7 @@
             // 
             this.permissionManager.SetEnabled(this.labAge, false);
             this.permissionManager.SetIsVisable(this.labAge, false);
-            this.labAge.Location = new System.Drawing.Point(353, 12);
+            this.labAge.Location = new System.Drawing.Point(263, 12);
             this.labAge.Margin = new System.Windows.Forms.Padding(9, 22, 9, 22);
             this.labAge.Name = "labAge";
             this.permissionManager.SetPermissionId(this.labAge, "");
@@ -3765,7 +3786,7 @@
             // 
             this.permissionManager.SetEnabled(this.labSumState, false);
             this.permissionManager.SetIsVisable(this.labSumState, false);
-            this.labSumState.Location = new System.Drawing.Point(450, 12);
+            this.labSumState.Location = new System.Drawing.Point(360, 12);
             this.labSumState.Margin = new System.Windows.Forms.Padding(9, 22, 9, 22);
             this.labSumState.Name = "labSumState";
             this.permissionManager.SetPermissionId(this.labSumState, "");
@@ -3791,7 +3812,7 @@
             // 
             this.permissionManager.SetEnabled(this.labClient, false);
             this.permissionManager.SetIsVisable(this.labClient, false);
-            this.labClient.Location = new System.Drawing.Point(310, 36);
+            this.labClient.Location = new System.Drawing.Point(220, 36);
             this.labClient.Margin = new System.Windows.Forms.Padding(9, 22, 9, 22);
             this.labClient.Name = "labClient";
             this.permissionManager.SetPermissionId(this.labClient, "");
@@ -3818,7 +3839,7 @@
             // 
             this.permissionManager.SetEnabled(this.labType, false);
             this.permissionManager.SetIsVisable(this.labType, false);
-            this.labType.Location = new System.Drawing.Point(547, 12);
+            this.labType.Location = new System.Drawing.Point(457, 12);
             this.labType.Margin = new System.Windows.Forms.Padding(9, 22, 9, 22);
             this.labType.Name = "labType";
             this.permissionManager.SetPermissionId(this.labType, "");
@@ -3844,7 +3865,7 @@
             // 
             this.permissionManager.SetEnabled(this.labRemart, false);
             this.permissionManager.SetIsVisable(this.labRemart, false);
-            this.labRemart.Location = new System.Drawing.Point(643, 12);
+            this.labRemart.Location = new System.Drawing.Point(553, 12);
             this.labRemart.Margin = new System.Windows.Forms.Padding(9, 22, 9, 22);
             this.labRemart.Name = "labRemart";
             this.permissionManager.SetPermissionId(this.labRemart, "");
@@ -3870,7 +3891,7 @@
             // 
             this.permissionManager.SetEnabled(this.labLoginDate, false);
             this.permissionManager.SetIsVisable(this.labLoginDate, false);
-            this.labLoginDate.Location = new System.Drawing.Point(72, 36);
+            this.labLoginDate.Location = new System.Drawing.Point(-18, 36);
             this.labLoginDate.Margin = new System.Windows.Forms.Padding(9, 22, 9, 22);
             this.labLoginDate.Name = "labLoginDate";
             this.permissionManager.SetPermissionId(this.labLoginDate, "");
@@ -3897,7 +3918,7 @@
             this.gridControl2.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(9, 22, 9, 22);
             this.permissionManager.SetEnabled(this.gridControl2, false);
             this.permissionManager.SetIsVisable(this.gridControl2, false);
-            this.gridControl2.Location = new System.Drawing.Point(8, 66);
+            this.gridControl2.Location = new System.Drawing.Point(-82, 66);
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Margin = new System.Windows.Forms.Padding(9, 22, 9, 22);
             this.gridControl2.Name = "gridControl2";
@@ -3906,7 +3927,7 @@
             this.repositoryItemLookUpEdit1,
             this.repositoryItemLookUpEdit2,
             this.repositoryItemMemoEdit3});
-            this.gridControl2.Size = new System.Drawing.Size(281, 506);
+            this.gridControl2.Size = new System.Drawing.Size(100, 506);
             this.gridControl2.TabIndex = 1;
             this.gridControl2.ToolTipController = this.toolTipController1;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -4053,7 +4074,7 @@
             this.gridControl3.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(9, 22, 9, 22);
             this.permissionManager.SetEnabled(this.gridControl3, false);
             this.permissionManager.SetIsVisable(this.gridControl3, false);
-            this.gridControl3.Location = new System.Drawing.Point(298, 92);
+            this.gridControl3.Location = new System.Drawing.Point(27, 92);
             this.gridControl3.MainView = this.gridView3;
             this.gridControl3.Margin = new System.Windows.Forms.Padding(9, 22, 9, 22);
             this.gridControl3.Name = "gridControl3";
@@ -4068,7 +4089,7 @@
             this.repositoryItemTextEdit1,
             this.repositoryItemMemoEdit5,
             this.repositoryItemMemoEdit6});
-            this.gridControl3.Size = new System.Drawing.Size(623, 480);
+            this.gridControl3.Size = new System.Drawing.Size(804, 480);
             this.gridControl3.TabIndex = 1;
             this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView3});
@@ -4093,82 +4114,96 @@
             this.gridColumn34,
             this.gridColumn48});
             this.permissionManager.SetEnabled(this.gridView3, false);
-            gridFormatRule20.Column = this.gridColumn37;
-            gridFormatRule20.Name = "Format7";
-            formatConditionRuleValue20.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            formatConditionRuleValue20.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue20.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue20.Value1 = "4";
-            gridFormatRule20.Rule = formatConditionRuleValue20;
-            gridFormatRule21.Column = this.gridColumn37;
-            gridFormatRule21.Name = "Format1";
-            formatConditionRuleValue21.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            formatConditionRuleValue21.Appearance.ForeColor = System.Drawing.Color.Transparent;
-            formatConditionRuleValue21.Appearance.Options.UseBackColor = true;
-            formatConditionRuleValue21.Appearance.Options.UseForeColor = true;
-            formatConditionRuleValue21.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue21.Value1 = ((short)(5));
-            gridFormatRule21.Rule = formatConditionRuleValue21;
-            gridFormatRule22.Column = this.gridColumn30;
-            gridFormatRule22.ColumnApplyTo = this.gridColumn12;
-            gridFormatRule22.Name = "Format2";
-            formatConditionRuleValue22.Appearance.ForeColor = System.Drawing.Color.Red;
-            formatConditionRuleValue22.Appearance.Options.UseForeColor = true;
+            gridFormatRule22.Column = this.gridColumn37;
+            gridFormatRule22.Name = "Format7";
+            formatConditionRuleValue22.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            formatConditionRuleValue22.Appearance.Options.UseBackColor = true;
             formatConditionRuleValue22.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue22.Value1 = "H";
+            formatConditionRuleValue22.Value1 = "4";
             gridFormatRule22.Rule = formatConditionRuleValue22;
-            gridFormatRule22.StopIfTrue = true;
-            gridFormatRule23.Column = this.gridColumn30;
-            gridFormatRule23.ColumnApplyTo = this.gridColumn12;
-            gridFormatRule23.Name = "Format3";
-            formatConditionRuleValue23.Appearance.ForeColor = System.Drawing.Color.Green;
+            gridFormatRule23.Column = this.gridColumn37;
+            gridFormatRule23.Name = "Format1";
+            formatConditionRuleValue23.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            formatConditionRuleValue23.Appearance.ForeColor = System.Drawing.Color.Transparent;
+            formatConditionRuleValue23.Appearance.Options.UseBackColor = true;
             formatConditionRuleValue23.Appearance.Options.UseForeColor = true;
             formatConditionRuleValue23.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue23.Value1 = "L";
+            formatConditionRuleValue23.Value1 = ((short)(5));
             gridFormatRule23.Rule = formatConditionRuleValue23;
-            gridFormatRule23.StopIfTrue = true;
             gridFormatRule24.Column = this.gridColumn30;
             gridFormatRule24.ColumnApplyTo = this.gridColumn12;
-            gridFormatRule24.Name = "Format4";
+            gridFormatRule24.Name = "Format2";
             formatConditionRuleValue24.Appearance.ForeColor = System.Drawing.Color.Red;
             formatConditionRuleValue24.Appearance.Options.UseForeColor = true;
             formatConditionRuleValue24.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue24.Value1 = "P";
+            formatConditionRuleValue24.Value1 = "H";
             gridFormatRule24.Rule = formatConditionRuleValue24;
+            gridFormatRule24.StopIfTrue = true;
             gridFormatRule25.Column = this.gridColumn30;
             gridFormatRule25.ColumnApplyTo = this.gridColumn12;
-            gridFormatRule25.Name = "Format5";
-            formatConditionRuleValue25.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            formatConditionRuleValue25.Appearance.Options.UseBackColor = true;
+            gridFormatRule25.Name = "Format3";
+            formatConditionRuleValue25.Appearance.ForeColor = System.Drawing.Color.Green;
+            formatConditionRuleValue25.Appearance.Options.UseForeColor = true;
             formatConditionRuleValue25.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue25.Value1 = "HH";
+            formatConditionRuleValue25.Value1 = "L";
             gridFormatRule25.Rule = formatConditionRuleValue25;
             gridFormatRule25.StopIfTrue = true;
             gridFormatRule26.Column = this.gridColumn30;
             gridFormatRule26.ColumnApplyTo = this.gridColumn12;
-            gridFormatRule26.Name = "Format6";
+            gridFormatRule26.Name = "Format4";
+            formatConditionRuleValue26.Appearance.ForeColor = System.Drawing.Color.Red;
+            formatConditionRuleValue26.Appearance.Options.UseForeColor = true;
             formatConditionRuleValue26.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue26.Value1 = "LL";
+            formatConditionRuleValue26.Value1 = "P";
             gridFormatRule26.Rule = formatConditionRuleValue26;
-            gridFormatRule26.StopIfTrue = true;
-            gridFormatRule27.ApplyToRow = true;
-            gridFormatRule27.Column = this.gridColumn48;
-            gridFormatRule27.Name = "Format0";
-            formatConditionRuleValue27.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            gridFormatRule27.Column = this.gridColumn30;
+            gridFormatRule27.ColumnApplyTo = this.gridColumn12;
+            gridFormatRule27.Name = "Format5";
+            formatConditionRuleValue27.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             formatConditionRuleValue27.Appearance.Options.UseBackColor = true;
             formatConditionRuleValue27.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue27.Value1 = 1;
+            formatConditionRuleValue27.Value1 = "HH";
             gridFormatRule27.Rule = formatConditionRuleValue27;
-            gridFormatRule28.ApplyToRow = true;
-            gridFormatRule28.Column = this.gridColumn48;
-            gridFormatRule28.Name = "Format8";
-            formatConditionRuleValue28.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            formatConditionRuleValue28.Appearance.Options.UseBackColor = true;
+            gridFormatRule27.StopIfTrue = true;
+            gridFormatRule28.Column = this.gridColumn30;
+            gridFormatRule28.ColumnApplyTo = this.gridColumn12;
+            gridFormatRule28.Name = "Format6";
             formatConditionRuleValue28.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
-            formatConditionRuleValue28.Value1 = 2;
+            formatConditionRuleValue28.Value1 = "LL";
             gridFormatRule28.Rule = formatConditionRuleValue28;
-            this.gridView3.FormatRules.Add(gridFormatRule20);
-            this.gridView3.FormatRules.Add(gridFormatRule21);
+            gridFormatRule28.StopIfTrue = true;
+            gridFormatRule29.ApplyToRow = true;
+            gridFormatRule29.Column = this.gridColumn48;
+            gridFormatRule29.Name = "Format0";
+            formatConditionRuleValue29.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            formatConditionRuleValue29.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue29.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
+            formatConditionRuleValue29.Value1 = 1;
+            gridFormatRule29.Rule = formatConditionRuleValue29;
+            gridFormatRule30.ApplyToRow = true;
+            gridFormatRule30.Column = this.gridColumn48;
+            gridFormatRule30.Name = "Format8";
+            formatConditionRuleValue30.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            formatConditionRuleValue30.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue30.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
+            formatConditionRuleValue30.Value1 = 2;
+            gridFormatRule30.Rule = formatConditionRuleValue30;
+            gridFormatRule31.ApplyToRow = true;
+            gridFormatRule31.Column = this.gridColumn48;
+            gridFormatRule31.Name = "Format9";
+            formatConditionRuleValue31.Appearance.BackColor = System.Drawing.Color.Yellow;
+            formatConditionRuleValue31.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue31.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
+            formatConditionRuleValue31.Value1 = "3";
+            gridFormatRule31.Rule = formatConditionRuleValue31;
+            gridFormatRule32.ApplyToRow = true;
+            gridFormatRule32.Column = this.gridColumn48;
+            gridFormatRule32.Name = "Format10";
+            formatConditionRuleValue32.Appearance.BackColor = System.Drawing.Color.Blue;
+            formatConditionRuleValue32.Appearance.Options.UseBackColor = true;
+            formatConditionRuleValue32.Condition = DevExpress.XtraEditors.FormatCondition.Equal;
+            formatConditionRuleValue32.Value1 = "4";
+            gridFormatRule32.Rule = formatConditionRuleValue32;
             this.gridView3.FormatRules.Add(gridFormatRule22);
             this.gridView3.FormatRules.Add(gridFormatRule23);
             this.gridView3.FormatRules.Add(gridFormatRule24);
@@ -4176,6 +4211,10 @@
             this.gridView3.FormatRules.Add(gridFormatRule26);
             this.gridView3.FormatRules.Add(gridFormatRule27);
             this.gridView3.FormatRules.Add(gridFormatRule28);
+            this.gridView3.FormatRules.Add(gridFormatRule29);
+            this.gridView3.FormatRules.Add(gridFormatRule30);
+            this.gridView3.FormatRules.Add(gridFormatRule31);
+            this.gridView3.FormatRules.Add(gridFormatRule32);
             this.gridView3.GridControl = this.gridControl3;
             this.gridView3.GroupCount = 2;
             this.permissionManager.SetIsVisable(this.gridView3, false);
@@ -4333,10 +4372,10 @@
             this.layoutControlItem27.Control = this.gridControl3;
             this.permissionManager.SetEnabled(this.layoutControlItem27, false);
             this.permissionManager.SetIsVisable(this.layoutControlItem27, false);
-            this.layoutControlItem27.Location = new System.Drawing.Point(290, 26);
+            this.layoutControlItem27.Location = new System.Drawing.Point(109, 26);
             this.layoutControlItem27.Name = "layoutControlItem27";
             this.permissionManager.SetPermissionId(this.layoutControlItem27, "");
-            this.layoutControlItem27.Size = new System.Drawing.Size(627, 484);
+            this.layoutControlItem27.Size = new System.Drawing.Size(808, 484);
             this.layoutControlItem27.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem27.TextVisible = false;
             // 
@@ -4347,13 +4386,355 @@
             this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 42);
             this.tabbedControlGroup1.Name = "tabbedControlGroup1";
             this.permissionManager.SetPermissionId(this.tabbedControlGroup1, "");
-            this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup2;
-            this.tabbedControlGroup1.SelectedTabPageIndex = 1;
+            this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup1;
+            this.tabbedControlGroup1.SelectedTabPageIndex = 0;
             this.tabbedControlGroup1.Size = new System.Drawing.Size(941, 557);
             this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup1,
             this.layoutControlGroup2});
             this.tabbedControlGroup1.TextLocation = DevExpress.Utils.Locations.Bottom;
+            // 
+            // layoutControlGroup1
+            // 
+            this.layoutControlGroup1.AppearanceTabPage.Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.layoutControlGroup1.AppearanceTabPage.Header.Options.UseBackColor = true;
+            this.layoutControlGroup1.AppearanceTabPage.HeaderActive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.layoutControlGroup1.AppearanceTabPage.HeaderActive.Options.UseBackColor = true;
+            this.permissionManager.SetEnabled(this.layoutControlGroup1, false);
+            this.permissionManager.SetIsVisable(this.layoutControlGroup1, false);
+            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem26,
+            this.layoutControlItem29,
+            this.layoutControlItem78,
+            this.layoutControlItem27,
+            this.splitterItem2,
+            this.layoutControlItem93,
+            this.layoutControlItem14,
+            this.layoutControlItem83,
+            this.layoutControlItem84,
+            this.layoutControlItem94,
+            this.layoutControlItem28,
+            this.layoutControlItem105,
+            this.layoutControlItem106,
+            this.layoutControlItem107,
+            this.layoutControlItem108,
+            this.layoutControlItem79});
+            this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup1.Name = "layoutControlGroup1";
+            this.permissionManager.SetPermissionId(this.layoutControlGroup1, "");
+            this.layoutControlGroup1.Size = new System.Drawing.Size(917, 510);
+            this.layoutControlGroup1.Text = "科室结果";
+            // 
+            // layoutControlItem26
+            // 
+            this.layoutControlItem26.Control = this.gridControl2;
+            this.permissionManager.SetEnabled(this.layoutControlItem26, false);
+            this.permissionManager.SetIsVisable(this.layoutControlItem26, false);
+            this.layoutControlItem26.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem26.Name = "layoutControlItem26";
+            this.permissionManager.SetPermissionId(this.layoutControlItem26, "");
+            this.layoutControlItem26.Size = new System.Drawing.Size(104, 510);
+            this.layoutControlItem26.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem26.TextVisible = false;
+            // 
+            // layoutControlItem29
+            // 
+            this.layoutControlItem29.Control = this.checkEdit3;
+            this.permissionManager.SetEnabled(this.layoutControlItem29, false);
+            this.permissionManager.SetIsVisable(this.layoutControlItem29, false);
+            this.layoutControlItem29.Location = new System.Drawing.Point(616, 0);
+            this.layoutControlItem29.Name = "layoutControlItem29";
+            this.permissionManager.SetPermissionId(this.layoutControlItem29, "");
+            this.layoutControlItem29.Size = new System.Drawing.Size(131, 26);
+            this.layoutControlItem29.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem29.TextVisible = false;
+            // 
+            // checkEdit3
+            // 
+            this.permissionManager.SetEnabled(this.checkEdit3, false);
+            this.permissionManager.SetIsVisable(this.checkEdit3, false);
+            this.checkEdit3.Location = new System.Drawing.Point(534, 66);
+            this.checkEdit3.Margin = new System.Windows.Forms.Padding(9, 22, 9, 22);
+            this.checkEdit3.Name = "checkEdit3";
+            this.permissionManager.SetPermissionId(this.checkEdit3, "");
+            this.checkEdit3.Properties.Caption = "未检项目（个）";
+            this.checkEdit3.Size = new System.Drawing.Size(127, 19);
+            this.checkEdit3.StyleController = this.layoutControlBase;
+            this.checkEdit3.TabIndex = 1;
+            this.checkEdit3.CheckedChanged += new System.EventHandler(this.checkEdit3_CheckedChanged);
+            // 
+            // layoutControlItem79
+            // 
+            this.layoutControlItem79.Control = this.labelControl9;
+            this.permissionManager.SetEnabled(this.layoutControlItem79, false);
+            this.permissionManager.SetIsVisable(this.layoutControlItem79, false);
+            this.layoutControlItem79.Location = new System.Drawing.Point(847, 0);
+            this.layoutControlItem79.Name = "layoutControlItem79";
+            this.permissionManager.SetPermissionId(this.layoutControlItem79, "");
+            this.layoutControlItem79.Size = new System.Drawing.Size(23, 26);
+            this.layoutControlItem79.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem79.TextVisible = false;
+            // 
+            // labelControl9
+            // 
+            this.labelControl9.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.labelControl9.Appearance.Options.UseBackColor = true;
+            this.permissionManager.SetEnabled(this.labelControl9, false);
+            this.permissionManager.SetIsVisable(this.labelControl9, false);
+            this.labelControl9.Location = new System.Drawing.Point(765, 66);
+            this.labelControl9.Margin = new System.Windows.Forms.Padding(8, 13, 8, 13);
+            this.labelControl9.Name = "labelControl9";
+            this.permissionManager.SetPermissionId(this.labelControl9, "");
+            this.labelControl9.Size = new System.Drawing.Size(19, 14);
+            this.labelControl9.StyleController = this.layoutControlBase;
+            this.labelControl9.TabIndex = 1;
+            this.labelControl9.Text = "B类";
+            // 
+            // layoutControlItem78
+            // 
+            this.layoutControlItem78.Control = this.labelControl8;
+            this.layoutControlItem78.CustomizationFormText = "重要异常结果";
+            this.permissionManager.SetEnabled(this.layoutControlItem78, false);
+            this.permissionManager.SetIsVisable(this.layoutControlItem78, false);
+            this.layoutControlItem78.Location = new System.Drawing.Point(747, 0);
+            this.layoutControlItem78.Name = "layoutControlItem78";
+            this.permissionManager.SetPermissionId(this.layoutControlItem78, "");
+            this.layoutControlItem78.Size = new System.Drawing.Size(100, 26);
+            this.layoutControlItem78.Text = "重要异常结果";
+            this.layoutControlItem78.TextSize = new System.Drawing.Size(72, 14);
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.labelControl8.Appearance.Options.UseBackColor = true;
+            this.permissionManager.SetEnabled(this.labelControl8, false);
+            this.permissionManager.SetIsVisable(this.labelControl8, false);
+            this.labelControl8.Location = new System.Drawing.Point(741, 66);
+            this.labelControl8.Margin = new System.Windows.Forms.Padding(8, 13, 8, 13);
+            this.labelControl8.Name = "labelControl8";
+            this.permissionManager.SetPermissionId(this.labelControl8, "");
+            this.labelControl8.Size = new System.Drawing.Size(20, 14);
+            this.labelControl8.StyleController = this.layoutControlBase;
+            this.labelControl8.TabIndex = 1;
+            this.labelControl8.Text = "A类";
+            // 
+            // splitterItem2
+            // 
+            this.splitterItem2.AllowHotTrack = true;
+            this.permissionManager.SetEnabled(this.splitterItem2, false);
+            this.permissionManager.SetIsVisable(this.splitterItem2, false);
+            this.splitterItem2.Location = new System.Drawing.Point(104, 0);
+            this.splitterItem2.Name = "splitterItem2";
+            this.permissionManager.SetPermissionId(this.splitterItem2, "");
+            this.splitterItem2.Size = new System.Drawing.Size(5, 510);
+            // 
+            // layoutControlItem93
+            // 
+            this.layoutControlItem93.Control = this.butYX;
+            this.permissionManager.SetEnabled(this.layoutControlItem93, false);
+            this.permissionManager.SetIsVisable(this.layoutControlItem93, false);
+            this.layoutControlItem93.Location = new System.Drawing.Point(109, 0);
+            this.layoutControlItem93.Name = "layoutControlItem93";
+            this.permissionManager.SetPermissionId(this.layoutControlItem93, "");
+            this.layoutControlItem93.Size = new System.Drawing.Size(61, 26);
+            this.layoutControlItem93.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem93.TextVisible = false;
+            // 
+            // butYX
+            // 
+            this.butYX.AutoWidthInLayoutControl = true;
+            this.permissionManager.SetEnabled(this.butYX, false);
+            this.permissionManager.SetIsVisable(this.butYX, false);
+            this.butYX.Location = new System.Drawing.Point(27, 66);
+            this.butYX.Name = "butYX";
+            this.permissionManager.SetPermissionId(this.butYX, "");
+            this.butYX.Size = new System.Drawing.Size(57, 22);
+            this.butYX.StyleController = this.layoutControlBase;
+            this.butYX.TabIndex = 1;
+            this.butYX.Text = "设置阳性";
+            this.butYX.Click += new System.EventHandler(this.simpleButton9_Click);
+            // 
+            // layoutControlItem14
+            // 
+            this.layoutControlItem14.Control = this.butA;
+            this.permissionManager.SetEnabled(this.layoutControlItem14, false);
+            this.permissionManager.SetIsVisable(this.layoutControlItem14, false);
+            this.layoutControlItem14.Location = new System.Drawing.Point(231, 0);
+            this.layoutControlItem14.Name = "layoutControlItem14";
+            this.permissionManager.SetPermissionId(this.layoutControlItem14, "");
+            this.layoutControlItem14.Size = new System.Drawing.Size(57, 26);
+            this.layoutControlItem14.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem14.TextVisible = false;
+            // 
+            // butA
+            // 
+            this.butA.AutoWidthInLayoutControl = true;
+            this.permissionManager.SetEnabled(this.butA, false);
+            this.permissionManager.SetIsVisable(this.butA, false);
+            this.butA.Location = new System.Drawing.Point(149, 66);
+            this.butA.Name = "butA";
+            this.permissionManager.SetPermissionId(this.butA, "");
+            this.butA.Size = new System.Drawing.Size(53, 22);
+            this.butA.StyleController = this.layoutControlBase;
+            this.butA.TabIndex = 1;
+            this.butA.Text = "设置A类";
+            this.butA.Click += new System.EventHandler(this.butA_Click);
+            // 
+            // layoutControlItem83
+            // 
+            this.layoutControlItem83.Control = this.simpleButton7;
+            this.permissionManager.SetEnabled(this.layoutControlItem83, false);
+            this.permissionManager.SetIsVisable(this.layoutControlItem83, false);
+            this.layoutControlItem83.Location = new System.Drawing.Point(288, 0);
+            this.layoutControlItem83.Name = "layoutControlItem83";
+            this.permissionManager.SetPermissionId(this.layoutControlItem83, "");
+            this.layoutControlItem83.Size = new System.Drawing.Size(56, 26);
+            this.layoutControlItem83.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem83.TextVisible = false;
+            // 
+            // simpleButton7
+            // 
+            this.simpleButton7.AutoWidthInLayoutControl = true;
+            this.permissionManager.SetEnabled(this.simpleButton7, false);
+            this.permissionManager.SetIsVisable(this.simpleButton7, false);
+            this.simpleButton7.Location = new System.Drawing.Point(206, 66);
+            this.simpleButton7.Name = "simpleButton7";
+            this.permissionManager.SetPermissionId(this.simpleButton7, "");
+            this.simpleButton7.Size = new System.Drawing.Size(52, 22);
+            this.simpleButton7.StyleController = this.layoutControlBase;
+            this.simpleButton7.TabIndex = 1;
+            this.simpleButton7.Text = "设置B类";
+            this.simpleButton7.Click += new System.EventHandler(this.simpleButton7_Click);
+            // 
+            // layoutControlItem84
+            // 
+            this.layoutControlItem84.Control = this.simpleButton8;
+            this.permissionManager.SetEnabled(this.layoutControlItem84, false);
+            this.permissionManager.SetIsVisable(this.layoutControlItem84, false);
+            this.layoutControlItem84.Location = new System.Drawing.Point(457, 0);
+            this.layoutControlItem84.Name = "layoutControlItem84";
+            this.permissionManager.SetPermissionId(this.layoutControlItem84, "");
+            this.layoutControlItem84.Size = new System.Drawing.Size(85, 26);
+            this.layoutControlItem84.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem84.TextVisible = false;
+            // 
+            // simpleButton8
+            // 
+            this.simpleButton8.AutoWidthInLayoutControl = true;
+            this.permissionManager.SetEnabled(this.simpleButton8, false);
+            this.permissionManager.SetIsVisable(this.simpleButton8, false);
+            this.simpleButton8.Location = new System.Drawing.Point(375, 66);
+            this.simpleButton8.Name = "simpleButton8";
+            this.permissionManager.SetPermissionId(this.simpleButton8, "");
+            this.simpleButton8.Size = new System.Drawing.Size(81, 22);
+            this.simpleButton8.StyleController = this.layoutControlBase;
+            this.simpleButton8.TabIndex = 1;
+            this.simpleButton8.Text = "取消重要异常";
+            this.simpleButton8.Click += new System.EventHandler(this.simpleButton8_Click);
+            // 
+            // layoutControlItem94
+            // 
+            this.layoutControlItem94.Control = this.butCancel;
+            this.permissionManager.SetEnabled(this.layoutControlItem94, false);
+            this.permissionManager.SetIsVisable(this.layoutControlItem94, false);
+            this.layoutControlItem94.Location = new System.Drawing.Point(170, 0);
+            this.layoutControlItem94.Name = "layoutControlItem94";
+            this.permissionManager.SetPermissionId(this.layoutControlItem94, "");
+            this.layoutControlItem94.Size = new System.Drawing.Size(61, 26);
+            this.layoutControlItem94.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem94.TextVisible = false;
+            // 
+            // butCancel
+            // 
+            this.butCancel.AutoWidthInLayoutControl = true;
+            this.permissionManager.SetEnabled(this.butCancel, false);
+            this.permissionManager.SetIsVisable(this.butCancel, false);
+            this.butCancel.Location = new System.Drawing.Point(88, 66);
+            this.butCancel.Name = "butCancel";
+            this.permissionManager.SetPermissionId(this.butCancel, "");
+            this.butCancel.Size = new System.Drawing.Size(57, 22);
+            this.butCancel.StyleController = this.layoutControlBase;
+            this.butCancel.TabIndex = 1;
+            this.butCancel.Text = "取消阳性";
+            this.butCancel.Click += new System.EventHandler(this.butCancel_Click);
+            // 
+            // layoutControlItem28
+            // 
+            this.layoutControlItem28.Control = this.checkEdit4;
+            this.permissionManager.SetEnabled(this.layoutControlItem28, false);
+            this.permissionManager.SetIsVisable(this.layoutControlItem28, false);
+            this.layoutControlItem28.Location = new System.Drawing.Point(542, 0);
+            this.layoutControlItem28.Name = "layoutControlItem28";
+            this.permissionManager.SetPermissionId(this.layoutControlItem28, "");
+            this.layoutControlItem28.Size = new System.Drawing.Size(74, 26);
+            this.layoutControlItem28.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem28.TextVisible = false;
+            // 
+            // checkEdit4
+            // 
+            this.permissionManager.SetEnabled(this.checkEdit4, false);
+            this.permissionManager.SetIsVisable(this.checkEdit4, false);
+            this.checkEdit4.Location = new System.Drawing.Point(460, 66);
+            this.checkEdit4.Margin = new System.Windows.Forms.Padding(9, 22, 9, 22);
+            this.checkEdit4.Name = "checkEdit4";
+            this.permissionManager.SetPermissionId(this.checkEdit4, "");
+            this.checkEdit4.Properties.Caption = "异常项目";
+            this.checkEdit4.Size = new System.Drawing.Size(70, 19);
+            this.checkEdit4.StyleController = this.layoutControlBase;
+            this.checkEdit4.TabIndex = 1;
+            this.checkEdit4.CheckedChanged += new System.EventHandler(this.checkEdit4_CheckedChanged);
+            // 
+            // layoutControlItem105
+            // 
+            this.layoutControlItem105.Control = this.simpleButton17;
+            this.permissionManager.SetEnabled(this.layoutControlItem105, false);
+            this.permissionManager.SetIsVisable(this.layoutControlItem105, false);
+            this.layoutControlItem105.Location = new System.Drawing.Point(344, 0);
+            this.layoutControlItem105.Name = "layoutControlItem105";
+            this.permissionManager.SetPermissionId(this.layoutControlItem105, "");
+            this.layoutControlItem105.Size = new System.Drawing.Size(56, 26);
+            this.layoutControlItem105.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem105.TextVisible = false;
+            // 
+            // simpleButton17
+            // 
+            this.simpleButton17.AutoWidthInLayoutControl = true;
+            this.permissionManager.SetEnabled(this.simpleButton17, false);
+            this.permissionManager.SetIsVisable(this.simpleButton17, false);
+            this.simpleButton17.Location = new System.Drawing.Point(262, 66);
+            this.simpleButton17.Name = "simpleButton17";
+            this.permissionManager.SetPermissionId(this.simpleButton17, "");
+            this.simpleButton17.Size = new System.Drawing.Size(52, 22);
+            this.simpleButton17.StyleController = this.layoutControlBase;
+            this.simpleButton17.TabIndex = 33;
+            this.simpleButton17.Text = "设置C类";
+            this.simpleButton17.Click += new System.EventHandler(this.simpleButton17_Click);
+            // 
+            // layoutControlItem106
+            // 
+            this.layoutControlItem106.Control = this.simpleButton18;
+            this.permissionManager.SetEnabled(this.layoutControlItem106, false);
+            this.permissionManager.SetIsVisable(this.layoutControlItem106, false);
+            this.layoutControlItem106.Location = new System.Drawing.Point(400, 0);
+            this.layoutControlItem106.Name = "layoutControlItem106";
+            this.permissionManager.SetPermissionId(this.layoutControlItem106, "");
+            this.layoutControlItem106.Size = new System.Drawing.Size(57, 26);
+            this.layoutControlItem106.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem106.TextVisible = false;
+            // 
+            // simpleButton18
+            // 
+            this.simpleButton18.AutoWidthInLayoutControl = true;
+            this.permissionManager.SetEnabled(this.simpleButton18, false);
+            this.permissionManager.SetIsVisable(this.simpleButton18, false);
+            this.simpleButton18.Location = new System.Drawing.Point(318, 66);
+            this.simpleButton18.Name = "simpleButton18";
+            this.permissionManager.SetPermissionId(this.simpleButton18, "");
+            this.simpleButton18.Size = new System.Drawing.Size(53, 22);
+            this.simpleButton18.StyleController = this.layoutControlBase;
+            this.simpleButton18.TabIndex = 34;
+            this.simpleButton18.Text = "设置D类";
+            this.simpleButton18.Click += new System.EventHandler(this.simpleButton18_Click);
             // 
             // layoutControlGroup2
             // 
@@ -4423,7 +4804,7 @@
             this.memoEditHuiZong.ActiveViewType = DevExpress.XtraRichEdit.RichEditViewType.Simple;
             this.permissionManager.SetEnabled(this.memoEditHuiZong, false);
             this.permissionManager.SetIsVisable(this.memoEditHuiZong, false);
-            this.memoEditHuiZong.Location = new System.Drawing.Point(20, 147);
+            this.memoEditHuiZong.Location = new System.Drawing.Point(-70, 147);
             this.memoEditHuiZong.Margin = new System.Windows.Forms.Padding(9, 22, 9, 22);
             this.memoEditHuiZong.MenuManager = this.barManager1;
             this.memoEditHuiZong.Name = "memoEditHuiZong";
@@ -4452,7 +4833,7 @@
             this.gridReview.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(1553, 341307, 1553, 341307);
             this.permissionManager.SetEnabled(this.gridReview, false);
             this.permissionManager.SetIsVisable(this.gridReview, false);
-            this.gridReview.Location = new System.Drawing.Point(20, 463);
+            this.gridReview.Location = new System.Drawing.Point(-70, 463);
             this.gridReview.MainView = this.gridView4;
             this.gridReview.Margin = new System.Windows.Forms.Padding(1553, 341307, 1553, 341307);
             this.gridReview.Name = "gridReview";
@@ -4635,7 +5016,7 @@
             this.permissionManager.SetEnabled(this.simpleButton5, false);
             this.simpleButton5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
             this.permissionManager.SetIsVisable(this.simpleButton5, false);
-            this.simpleButton5.Location = new System.Drawing.Point(20, 97);
+            this.simpleButton5.Location = new System.Drawing.Point(-70, 97);
             this.simpleButton5.Name = "simpleButton5";
             this.permissionManager.SetPermissionId(this.simpleButton5, "");
             this.simpleButton5.Size = new System.Drawing.Size(52, 22);
@@ -4662,7 +5043,7 @@
             this.permissionManager.SetEnabled(this.simpleButton6, false);
             this.simpleButton6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
             this.permissionManager.SetIsVisable(this.simpleButton6, false);
-            this.simpleButton6.Location = new System.Drawing.Point(144, 97);
+            this.simpleButton6.Location = new System.Drawing.Point(54, 97);
             this.simpleButton6.Name = "simpleButton6";
             this.permissionManager.SetPermissionId(this.simpleButton6, "");
             this.simpleButton6.Size = new System.Drawing.Size(76, 22);
@@ -4689,7 +5070,7 @@
             this.permissionManager.SetEnabled(this.simpleButton4, false);
             this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
             this.permissionManager.SetIsVisable(this.simpleButton4, false);
-            this.simpleButton4.Location = new System.Drawing.Point(224, 97);
+            this.simpleButton4.Location = new System.Drawing.Point(134, 97);
             this.simpleButton4.Name = "simpleButton4";
             this.permissionManager.SetPermissionId(this.simpleButton4, "");
             this.simpleButton4.Size = new System.Drawing.Size(52, 22);
@@ -4726,7 +5107,7 @@
             // 
             this.permissionManager.SetEnabled(this.labelShenHeYiSheng, false);
             this.permissionManager.SetIsVisable(this.labelShenHeYiSheng, false);
-            this.labelShenHeYiSheng.Location = new System.Drawing.Point(96, 123);
+            this.labelShenHeYiSheng.Location = new System.Drawing.Point(6, 123);
             this.labelShenHeYiSheng.Margin = new System.Windows.Forms.Padding(334511, 0, 334511, 0);
             this.labelShenHeYiSheng.Name = "labelShenHeYiSheng";
             this.permissionManager.SetPermissionId(this.labelShenHeYiSheng, "");
@@ -4753,7 +5134,7 @@
             this.customyiSheng.DisableAddNew = false;
             this.permissionManager.SetEnabled(this.customyiSheng, false);
             this.permissionManager.SetIsVisable(this.customyiSheng, false);
-            this.customyiSheng.Location = new System.Drawing.Point(183, 123);
+            this.customyiSheng.Location = new System.Drawing.Point(93, 123);
             this.customyiSheng.Margin = new System.Windows.Forms.Padding(1865726, 0, 1865726, 0);
             this.customyiSheng.MaximumSize = new System.Drawing.Size(70266, 0);
             this.customyiSheng.Name = "customyiSheng";
@@ -4817,7 +5198,7 @@
             this.permissionManager.SetEnabled(this.simpleButton9, false);
             this.simpleButton9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton9.ImageOptions.Image")));
             this.permissionManager.SetIsVisable(this.simpleButton9, false);
-            this.simpleButton9.Location = new System.Drawing.Point(76, 97);
+            this.simpleButton9.Location = new System.Drawing.Point(-14, 97);
             this.simpleButton9.Name = "simpleButton9";
             this.permissionManager.SetPermissionId(this.simpleButton9, "");
             this.simpleButton9.Size = new System.Drawing.Size(64, 22);
@@ -4844,7 +5225,7 @@
             this.permissionManager.SetEnabled(this.simpleButton16, false);
             this.simpleButton16.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton16.ImageOptions.Image")));
             this.permissionManager.SetIsVisable(this.simpleButton16, false);
-            this.simpleButton16.Location = new System.Drawing.Point(280, 97);
+            this.simpleButton16.Location = new System.Drawing.Point(190, 97);
             this.simpleButton16.Name = "simpleButton16";
             this.permissionManager.SetPermissionId(this.simpleButton16, "");
             this.simpleButton16.Size = new System.Drawing.Size(52, 22);
@@ -4876,7 +5257,7 @@
             this.simpleButtonYuLan.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButtonYuLan.ImageOptions.Image")));
             this.simpleButtonYuLan.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.permissionManager.SetIsVisable(this.simpleButtonYuLan, false);
-            this.simpleButtonYuLan.Location = new System.Drawing.Point(653, 546);
+            this.simpleButtonYuLan.Location = new System.Drawing.Point(563, 546);
             this.simpleButtonYuLan.Margin = new System.Windows.Forms.Padding(1865726, 0, 1865726, 0);
             this.simpleButtonYuLan.Name = "simpleButtonYuLan";
             this.permissionManager.SetPermissionId(this.simpleButtonYuLan, "");
@@ -4909,7 +5290,7 @@
             this.simpleButtonQingChu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButtonQingChu.ImageOptions.Image")));
             this.simpleButtonQingChu.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.permissionManager.SetIsVisable(this.simpleButtonQingChu, false);
-            this.simpleButtonQingChu.Location = new System.Drawing.Point(506, 546);
+            this.simpleButtonQingChu.Location = new System.Drawing.Point(416, 546);
             this.simpleButtonQingChu.Margin = new System.Windows.Forms.Padding(1865726, 0, 1865726, 0);
             this.simpleButtonQingChu.Name = "simpleButtonQingChu";
             this.permissionManager.SetPermissionId(this.simpleButtonQingChu, "");
@@ -4942,7 +5323,7 @@
             this.simpleButtonShengCheng.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButtonShengCheng.ImageOptions.Image")));
             this.simpleButtonShengCheng.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.permissionManager.SetIsVisable(this.simpleButtonShengCheng, false);
-            this.simpleButtonShengCheng.Location = new System.Drawing.Point(8, 546);
+            this.simpleButtonShengCheng.Location = new System.Drawing.Point(-82, 546);
             this.simpleButtonShengCheng.Margin = new System.Windows.Forms.Padding(1865726, 0, 1865726, 0);
             this.simpleButtonShengCheng.Name = "simpleButtonShengCheng";
             this.permissionManager.SetPermissionId(this.simpleButtonShengCheng, "");
@@ -4975,7 +5356,7 @@
             this.BtnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnSave.ImageOptions.Image")));
             this.BtnSave.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.permissionManager.SetIsVisable(this.BtnSave, false);
-            this.BtnSave.Location = new System.Drawing.Point(74, 546);
+            this.BtnSave.Location = new System.Drawing.Point(-16, 546);
             this.BtnSave.Margin = new System.Windows.Forms.Padding(1865726, 0, 1865726, 0);
             this.BtnSave.Name = "BtnSave";
             this.permissionManager.SetPermissionId(this.BtnSave, "");
@@ -5008,7 +5389,7 @@
             this.simpleButtonShenHe.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButtonShenHe.ImageOptions.Image")));
             this.simpleButtonShenHe.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.permissionManager.SetIsVisable(this.simpleButtonShenHe, false);
-            this.simpleButtonShenHe.Location = new System.Drawing.Point(140, 546);
+            this.simpleButtonShenHe.Location = new System.Drawing.Point(50, 546);
             this.simpleButtonShenHe.Margin = new System.Windows.Forms.Padding(1865726, 0, 1865726, 0);
             this.simpleButtonShenHe.Name = "simpleButtonShenHe";
             this.permissionManager.SetPermissionId(this.simpleButtonShenHe, "");
@@ -5039,7 +5420,7 @@
             this.permissionManager.SetEnabled(this.butUpdate, false);
             this.butUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("butUpdate.ImageOptions.Image")));
             this.permissionManager.SetIsVisable(this.butUpdate, false);
-            this.butUpdate.Location = new System.Drawing.Point(206, 546);
+            this.butUpdate.Location = new System.Drawing.Point(116, 546);
             this.butUpdate.Margin = new System.Windows.Forms.Padding(9, 22, 9, 22);
             this.butUpdate.Name = "butUpdate";
             this.permissionManager.SetPermissionId(this.butUpdate, "");
@@ -5072,7 +5453,7 @@
             this.simpleButtonPrint.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButtonPrint.ImageOptions.Image")));
             this.simpleButtonPrint.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.permissionManager.SetIsVisable(this.simpleButtonPrint, false);
-            this.simpleButtonPrint.Location = new System.Drawing.Point(719, 546);
+            this.simpleButtonPrint.Location = new System.Drawing.Point(629, 546);
             this.simpleButtonPrint.Margin = new System.Windows.Forms.Padding(1865726, 0, 1865726, 0);
             this.simpleButtonPrint.Name = "simpleButtonPrint";
             this.permissionManager.SetPermissionId(this.simpleButtonPrint, "");
@@ -5150,7 +5531,7 @@
             this.permissionManager.SetEnabled(this.butTop, false);
             this.butTop.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("butTop.ImageOptions.Image")));
             this.permissionManager.SetIsVisable(this.butTop, false);
-            this.butTop.Location = new System.Drawing.Point(721, 78);
+            this.butTop.Location = new System.Drawing.Point(631, 78);
             this.butTop.Margin = new System.Windows.Forms.Padding(1360, 236091, 1360, 236091);
             this.butTop.Name = "butTop";
             this.permissionManager.SetPermissionId(this.butTop, "");
@@ -5180,7 +5561,7 @@
             this.permissionManager.SetEnabled(this.butDel, false);
             this.butDel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("butDel.ImageOptions.Image")));
             this.permissionManager.SetIsVisable(this.butDel, false);
-            this.butDel.Location = new System.Drawing.Point(833, 78);
+            this.butDel.Location = new System.Drawing.Point(743, 78);
             this.butDel.Margin = new System.Windows.Forms.Padding(1360, 236091, 1360, 236091);
             this.butDel.Name = "butDel";
             this.permissionManager.SetPermissionId(this.butDel, "");
@@ -5219,7 +5600,7 @@
             this.permissionManager.SetEnabled(this.treeListZhenDuan, false);
             this.permissionManager.SetIsVisable(this.treeListZhenDuan, false);
             this.treeListZhenDuan.KeyFieldName = "Id";
-            this.treeListZhenDuan.Location = new System.Drawing.Point(375, 127);
+            this.treeListZhenDuan.Location = new System.Drawing.Point(285, 127);
             this.treeListZhenDuan.Margin = new System.Windows.Forms.Padding(3128, 3648560, 3128, 3648560);
             this.treeListZhenDuan.Name = "treeListZhenDuan";
             this.treeListZhenDuan.OptionsView.ShowCheckBoxes = true;
@@ -5449,7 +5830,7 @@
             this.permissionManager.SetEnabled(this.customGridZhenDuan2, false);
             this.customGridZhenDuan2.EnterMoveNextControl = true;
             this.permissionManager.SetIsVisable(this.customGridZhenDuan2, false);
-            this.customGridZhenDuan2.Location = new System.Drawing.Point(440, 78);
+            this.customGridZhenDuan2.Location = new System.Drawing.Point(350, 78);
             this.customGridZhenDuan2.Margin = new System.Windows.Forms.Padding(287714, 0, 287714, 0);
             this.customGridZhenDuan2.MaximumSize = new System.Drawing.Size(123695, 0);
             this.customGridZhenDuan2.Name = "customGridZhenDuan2";
@@ -5562,7 +5943,7 @@
             this.permissionManager.SetEnabled(this.butUp, false);
             this.butUp.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("butUp.ImageOptions.Image")));
             this.permissionManager.SetIsVisable(this.butUp, false);
-            this.butUp.Location = new System.Drawing.Point(609, 78);
+            this.butUp.Location = new System.Drawing.Point(519, 78);
             this.butUp.Margin = new System.Windows.Forms.Padding(1360, 236091, 1360, 236091);
             this.butUp.Name = "butUp";
             this.permissionManager.SetPermissionId(this.butUp, "");
@@ -5591,7 +5972,7 @@
             this.permissionManager.SetEnabled(this.butDown, false);
             this.butDown.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("butDown.ImageOptions.Image")));
             this.permissionManager.SetIsVisable(this.butDown, false);
-            this.butDown.Location = new System.Drawing.Point(665, 78);
+            this.butDown.Location = new System.Drawing.Point(575, 78);
             this.butDown.Margin = new System.Windows.Forms.Padding(1360, 236091, 1360, 236091);
             this.butDown.Name = "butDown";
             this.permissionManager.SetPermissionId(this.butDown, "");
@@ -5617,7 +5998,7 @@
             // 
             this.permissionManager.SetEnabled(this.labelControl7, false);
             this.permissionManager.SetIsVisable(this.labelControl7, false);
-            this.labelControl7.Location = new System.Drawing.Point(452, 104);
+            this.labelControl7.Location = new System.Drawing.Point(362, 104);
             this.labelControl7.Margin = new System.Windows.Forms.Padding(8, 13, 8, 13);
             this.labelControl7.Name = "labelControl7";
             this.permissionManager.SetPermissionId(this.labelControl7, "");
@@ -5667,7 +6048,7 @@
             this.gridSelectAdvice.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(8, 13, 8, 13);
             this.permissionManager.SetEnabled(this.gridSelectAdvice, false);
             this.permissionManager.SetIsVisable(this.gridSelectAdvice, false);
-            this.gridSelectAdvice.Location = new System.Drawing.Point(509, 459);
+            this.gridSelectAdvice.Location = new System.Drawing.Point(419, 459);
             this.gridSelectAdvice.MainView = this.gridViewSelectAdvice;
             this.gridSelectAdvice.Margin = new System.Windows.Forms.Padding(8, 13, 8, 13);
             this.gridSelectAdvice.MenuManager = this.barManager1;
@@ -5734,7 +6115,7 @@
             // 
             this.permissionManager.SetEnabled(this.richTextBoxAdvice, false);
             this.permissionManager.SetIsVisable(this.richTextBoxAdvice, false);
-            this.richTextBoxAdvice.Location = new System.Drawing.Point(387, 459);
+            this.richTextBoxAdvice.Location = new System.Drawing.Point(297, 459);
             this.richTextBoxAdvice.Margin = new System.Windows.Forms.Padding(8, 13, 8, 13);
             this.richTextBoxAdvice.Name = "richTextBoxAdvice";
             this.permissionManager.SetPermissionId(this.richTextBoxAdvice, "");
@@ -5763,7 +6144,7 @@
             this.permissionManager.SetEnabled(this.simpleButtonAddAd, false);
             this.simpleButtonAddAd.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButtonAddAd.ImageOptions.Image")));
             this.permissionManager.SetIsVisable(this.simpleButtonAddAd, false);
-            this.simpleButtonAddAd.Location = new System.Drawing.Point(777, 78);
+            this.simpleButtonAddAd.Location = new System.Drawing.Point(687, 78);
             this.simpleButtonAddAd.Margin = new System.Windows.Forms.Padding(51518, 0, 51518, 0);
             this.simpleButtonAddAd.Name = "simpleButtonAddAd";
             this.permissionManager.SetPermissionId(this.simpleButtonAddAd, "");
@@ -5800,7 +6181,7 @@
             // 
             this.permissionManager.SetEnabled(this.allCheck, false);
             this.permissionManager.SetIsVisable(this.allCheck, false);
-            this.allCheck.Location = new System.Drawing.Point(375, 104);
+            this.allCheck.Location = new System.Drawing.Point(285, 104);
             this.allCheck.MenuManager = this.barManager1;
             this.allCheck.Name = "allCheck";
             this.permissionManager.SetPermissionId(this.allCheck, "");
@@ -5878,7 +6259,7 @@
             this.permissionManager.SetEnabled(this.radioQualified, false);
             this.radioQualified.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.permissionManager.SetIsVisable(this.radioQualified, false);
-            this.radioQualified.Location = new System.Drawing.Point(461, 78);
+            this.radioQualified.Location = new System.Drawing.Point(371, 78);
             this.radioQualified.Margin = new System.Windows.Forms.Padding(9, 22, 9, 22);
             this.radioQualified.MenuManager = this.barManager1;
             this.radioQualified.Name = "radioQualified";
@@ -5929,7 +6310,7 @@
             this.richEditOpinion.ActiveViewType = DevExpress.XtraRichEdit.RichEditViewType.Simple;
             this.permissionManager.SetEnabled(this.richEditOpinion, false);
             this.permissionManager.SetIsVisable(this.richEditOpinion, false);
-            this.richEditOpinion.Location = new System.Drawing.Point(375, 408);
+            this.richEditOpinion.Location = new System.Drawing.Point(285, 408);
             this.richEditOpinion.Margin = new System.Windows.Forms.Padding(9, 22, 9, 22);
             this.richEditOpinion.MenuManager = this.barManager1;
             this.richEditOpinion.Name = "richEditOpinion";
@@ -5968,7 +6349,7 @@
             this.simpleButton1.AutoWidthInLayoutControl = true;
             this.permissionManager.SetEnabled(this.simpleButton1, false);
             this.permissionManager.SetIsVisable(this.simpleButton1, false);
-            this.simpleButton1.Location = new System.Drawing.Point(572, 546);
+            this.simpleButton1.Location = new System.Drawing.Point(482, 546);
             this.simpleButton1.Margin = new System.Windows.Forms.Padding(49, 441, 49, 441);
             this.simpleButton1.Name = "simpleButton1";
             this.permissionManager.SetPermissionId(this.simpleButton1, "");
@@ -6006,7 +6387,7 @@
             // 
             this.permissionManager.SetEnabled(this.listBoxControlTemplates, false);
             this.permissionManager.SetIsVisable(this.listBoxControlTemplates, false);
-            this.listBoxControlTemplates.Location = new System.Drawing.Point(861, 546);
+            this.listBoxControlTemplates.Location = new System.Drawing.Point(771, 546);
             this.listBoxControlTemplates.Margin = new System.Windows.Forms.Padding(38, 297, 38, 297);
             this.listBoxControlTemplates.MaximumSize = new System.Drawing.Size(582, 0);
             this.listBoxControlTemplates.Name = "listBoxControlTemplates";
@@ -6051,7 +6432,7 @@
             this.permissionManager.SetEnabled(this.simpleButton13, false);
             this.simpleButton13.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton13.ImageOptions.Image")));
             this.permissionManager.SetIsVisable(this.simpleButton13, false);
-            this.simpleButton13.Location = new System.Drawing.Point(406, 546);
+            this.simpleButton13.Location = new System.Drawing.Point(316, 546);
             this.simpleButton13.Name = "simpleButton13";
             this.permissionManager.SetPermissionId(this.simpleButton13, "");
             this.simpleButton13.Size = new System.Drawing.Size(96, 26);
@@ -6080,7 +6461,7 @@
             this.permissionManager.SetEnabled(this.simpleButton15, false);
             this.simpleButton15.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton15.ImageOptions.Image")));
             this.permissionManager.SetIsVisable(this.simpleButton15, false);
-            this.simpleButton15.Location = new System.Drawing.Point(306, 546);
+            this.simpleButton15.Location = new System.Drawing.Point(216, 546);
             this.simpleButton15.Name = "simpleButton15";
             this.permissionManager.SetPermissionId(this.simpleButton15, "");
             this.simpleButton15.Size = new System.Drawing.Size(96, 26);
@@ -6088,292 +6469,6 @@
             this.simpleButton15.TabIndex = 25;
             this.simpleButton15.Text = "更新建议";
             this.simpleButton15.Click += new System.EventHandler(this.simpleButton15_Click);
-            // 
-            // layoutControlGroup1
-            // 
-            this.layoutControlGroup1.AppearanceTabPage.Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.layoutControlGroup1.AppearanceTabPage.Header.Options.UseBackColor = true;
-            this.layoutControlGroup1.AppearanceTabPage.HeaderActive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.layoutControlGroup1.AppearanceTabPage.HeaderActive.Options.UseBackColor = true;
-            this.permissionManager.SetEnabled(this.layoutControlGroup1, false);
-            this.permissionManager.SetIsVisable(this.layoutControlGroup1, false);
-            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem26,
-            this.layoutControlItem29,
-            this.layoutControlItem79,
-            this.layoutControlItem78,
-            this.layoutControlItem27,
-            this.splitterItem2,
-            this.layoutControlItem93,
-            this.layoutControlItem14,
-            this.layoutControlItem83,
-            this.layoutControlItem84,
-            this.layoutControlItem94,
-            this.layoutControlItem28});
-            this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.permissionManager.SetPermissionId(this.layoutControlGroup1, "");
-            this.layoutControlGroup1.Size = new System.Drawing.Size(917, 510);
-            this.layoutControlGroup1.Text = "科室结果";
-            // 
-            // layoutControlItem26
-            // 
-            this.layoutControlItem26.Control = this.gridControl2;
-            this.permissionManager.SetEnabled(this.layoutControlItem26, false);
-            this.permissionManager.SetIsVisable(this.layoutControlItem26, false);
-            this.layoutControlItem26.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem26.Name = "layoutControlItem26";
-            this.permissionManager.SetPermissionId(this.layoutControlItem26, "");
-            this.layoutControlItem26.Size = new System.Drawing.Size(285, 510);
-            this.layoutControlItem26.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem26.TextVisible = false;
-            // 
-            // layoutControlItem29
-            // 
-            this.layoutControlItem29.Control = this.checkEdit3;
-            this.permissionManager.SetEnabled(this.layoutControlItem29, false);
-            this.permissionManager.SetIsVisable(this.layoutControlItem29, false);
-            this.layoutControlItem29.Location = new System.Drawing.Point(684, 0);
-            this.layoutControlItem29.Name = "layoutControlItem29";
-            this.permissionManager.SetPermissionId(this.layoutControlItem29, "");
-            this.layoutControlItem29.Size = new System.Drawing.Size(110, 26);
-            this.layoutControlItem29.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem29.TextVisible = false;
-            // 
-            // checkEdit3
-            // 
-            this.permissionManager.SetEnabled(this.checkEdit3, false);
-            this.permissionManager.SetIsVisable(this.checkEdit3, false);
-            this.checkEdit3.Location = new System.Drawing.Point(692, 66);
-            this.checkEdit3.Margin = new System.Windows.Forms.Padding(9, 22, 9, 22);
-            this.checkEdit3.Name = "checkEdit3";
-            this.permissionManager.SetPermissionId(this.checkEdit3, "");
-            this.checkEdit3.Properties.Caption = "未检项目（个）";
-            this.checkEdit3.Size = new System.Drawing.Size(106, 19);
-            this.checkEdit3.StyleController = this.layoutControlBase;
-            this.checkEdit3.TabIndex = 1;
-            this.checkEdit3.CheckedChanged += new System.EventHandler(this.checkEdit3_CheckedChanged);
-            // 
-            // layoutControlItem79
-            // 
-            this.layoutControlItem79.Control = this.labelControl9;
-            this.permissionManager.SetEnabled(this.layoutControlItem79, false);
-            this.permissionManager.SetIsVisable(this.layoutControlItem79, false);
-            this.layoutControlItem79.Location = new System.Drawing.Point(894, 0);
-            this.layoutControlItem79.Name = "layoutControlItem79";
-            this.permissionManager.SetPermissionId(this.layoutControlItem79, "");
-            this.layoutControlItem79.Size = new System.Drawing.Size(23, 26);
-            this.layoutControlItem79.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem79.TextVisible = false;
-            // 
-            // labelControl9
-            // 
-            this.labelControl9.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.labelControl9.Appearance.Options.UseBackColor = true;
-            this.permissionManager.SetEnabled(this.labelControl9, false);
-            this.permissionManager.SetIsVisable(this.labelControl9, false);
-            this.labelControl9.Location = new System.Drawing.Point(902, 66);
-            this.labelControl9.Margin = new System.Windows.Forms.Padding(8, 13, 8, 13);
-            this.labelControl9.Name = "labelControl9";
-            this.permissionManager.SetPermissionId(this.labelControl9, "");
-            this.labelControl9.Size = new System.Drawing.Size(19, 14);
-            this.labelControl9.StyleController = this.layoutControlBase;
-            this.labelControl9.TabIndex = 1;
-            this.labelControl9.Text = "B类";
-            // 
-            // layoutControlItem78
-            // 
-            this.layoutControlItem78.Control = this.labelControl8;
-            this.layoutControlItem78.CustomizationFormText = "重要异常结果";
-            this.permissionManager.SetEnabled(this.layoutControlItem78, false);
-            this.permissionManager.SetIsVisable(this.layoutControlItem78, false);
-            this.layoutControlItem78.Location = new System.Drawing.Point(794, 0);
-            this.layoutControlItem78.Name = "layoutControlItem78";
-            this.permissionManager.SetPermissionId(this.layoutControlItem78, "");
-            this.layoutControlItem78.Size = new System.Drawing.Size(100, 26);
-            this.layoutControlItem78.Text = "重要异常结果";
-            this.layoutControlItem78.TextSize = new System.Drawing.Size(72, 14);
-            // 
-            // labelControl8
-            // 
-            this.labelControl8.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.labelControl8.Appearance.Options.UseBackColor = true;
-            this.permissionManager.SetEnabled(this.labelControl8, false);
-            this.permissionManager.SetIsVisable(this.labelControl8, false);
-            this.labelControl8.Location = new System.Drawing.Point(878, 66);
-            this.labelControl8.Margin = new System.Windows.Forms.Padding(8, 13, 8, 13);
-            this.labelControl8.Name = "labelControl8";
-            this.permissionManager.SetPermissionId(this.labelControl8, "");
-            this.labelControl8.Size = new System.Drawing.Size(20, 14);
-            this.labelControl8.StyleController = this.layoutControlBase;
-            this.labelControl8.TabIndex = 1;
-            this.labelControl8.Text = "A类";
-            // 
-            // splitterItem2
-            // 
-            this.splitterItem2.AllowHotTrack = true;
-            this.permissionManager.SetEnabled(this.splitterItem2, false);
-            this.permissionManager.SetIsVisable(this.splitterItem2, false);
-            this.splitterItem2.Location = new System.Drawing.Point(285, 0);
-            this.splitterItem2.Name = "splitterItem2";
-            this.permissionManager.SetPermissionId(this.splitterItem2, "");
-            this.splitterItem2.Size = new System.Drawing.Size(5, 510);
-            // 
-            // layoutControlItem93
-            // 
-            this.layoutControlItem93.Control = this.butYX;
-            this.permissionManager.SetEnabled(this.layoutControlItem93, false);
-            this.permissionManager.SetIsVisable(this.layoutControlItem93, false);
-            this.layoutControlItem93.Location = new System.Drawing.Point(290, 0);
-            this.layoutControlItem93.Name = "layoutControlItem93";
-            this.permissionManager.SetPermissionId(this.layoutControlItem93, "");
-            this.layoutControlItem93.Size = new System.Drawing.Size(61, 26);
-            this.layoutControlItem93.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem93.TextVisible = false;
-            // 
-            // butYX
-            // 
-            this.butYX.AutoWidthInLayoutControl = true;
-            this.permissionManager.SetEnabled(this.butYX, false);
-            this.permissionManager.SetIsVisable(this.butYX, false);
-            this.butYX.Location = new System.Drawing.Point(298, 66);
-            this.butYX.Name = "butYX";
-            this.permissionManager.SetPermissionId(this.butYX, "");
-            this.butYX.Size = new System.Drawing.Size(57, 22);
-            this.butYX.StyleController = this.layoutControlBase;
-            this.butYX.TabIndex = 1;
-            this.butYX.Text = "设置阳性";
-            this.butYX.Click += new System.EventHandler(this.simpleButton9_Click);
-            // 
-            // layoutControlItem14
-            // 
-            this.layoutControlItem14.Control = this.butA;
-            this.permissionManager.SetEnabled(this.layoutControlItem14, false);
-            this.permissionManager.SetIsVisable(this.layoutControlItem14, false);
-            this.layoutControlItem14.Location = new System.Drawing.Point(412, 0);
-            this.layoutControlItem14.Name = "layoutControlItem14";
-            this.permissionManager.SetPermissionId(this.layoutControlItem14, "");
-            this.layoutControlItem14.Size = new System.Drawing.Size(57, 26);
-            this.layoutControlItem14.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem14.TextVisible = false;
-            // 
-            // butA
-            // 
-            this.butA.AutoWidthInLayoutControl = true;
-            this.permissionManager.SetEnabled(this.butA, false);
-            this.permissionManager.SetIsVisable(this.butA, false);
-            this.butA.Location = new System.Drawing.Point(420, 66);
-            this.butA.Name = "butA";
-            this.permissionManager.SetPermissionId(this.butA, "");
-            this.butA.Size = new System.Drawing.Size(53, 22);
-            this.butA.StyleController = this.layoutControlBase;
-            this.butA.TabIndex = 1;
-            this.butA.Text = "设置A类";
-            this.butA.Click += new System.EventHandler(this.butA_Click);
-            // 
-            // layoutControlItem83
-            // 
-            this.layoutControlItem83.Control = this.simpleButton7;
-            this.permissionManager.SetEnabled(this.layoutControlItem83, false);
-            this.permissionManager.SetIsVisable(this.layoutControlItem83, false);
-            this.layoutControlItem83.Location = new System.Drawing.Point(469, 0);
-            this.layoutControlItem83.Name = "layoutControlItem83";
-            this.permissionManager.SetPermissionId(this.layoutControlItem83, "");
-            this.layoutControlItem83.Size = new System.Drawing.Size(56, 26);
-            this.layoutControlItem83.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem83.TextVisible = false;
-            // 
-            // simpleButton7
-            // 
-            this.simpleButton7.AutoWidthInLayoutControl = true;
-            this.permissionManager.SetEnabled(this.simpleButton7, false);
-            this.permissionManager.SetIsVisable(this.simpleButton7, false);
-            this.simpleButton7.Location = new System.Drawing.Point(477, 66);
-            this.simpleButton7.Name = "simpleButton7";
-            this.permissionManager.SetPermissionId(this.simpleButton7, "");
-            this.simpleButton7.Size = new System.Drawing.Size(52, 22);
-            this.simpleButton7.StyleController = this.layoutControlBase;
-            this.simpleButton7.TabIndex = 1;
-            this.simpleButton7.Text = "设置B类";
-            this.simpleButton7.Click += new System.EventHandler(this.simpleButton7_Click);
-            // 
-            // layoutControlItem84
-            // 
-            this.layoutControlItem84.Control = this.simpleButton8;
-            this.permissionManager.SetEnabled(this.layoutControlItem84, false);
-            this.permissionManager.SetIsVisable(this.layoutControlItem84, false);
-            this.layoutControlItem84.Location = new System.Drawing.Point(525, 0);
-            this.layoutControlItem84.Name = "layoutControlItem84";
-            this.permissionManager.SetPermissionId(this.layoutControlItem84, "");
-            this.layoutControlItem84.Size = new System.Drawing.Size(85, 26);
-            this.layoutControlItem84.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem84.TextVisible = false;
-            // 
-            // simpleButton8
-            // 
-            this.simpleButton8.AutoWidthInLayoutControl = true;
-            this.permissionManager.SetEnabled(this.simpleButton8, false);
-            this.permissionManager.SetIsVisable(this.simpleButton8, false);
-            this.simpleButton8.Location = new System.Drawing.Point(533, 66);
-            this.simpleButton8.Name = "simpleButton8";
-            this.permissionManager.SetPermissionId(this.simpleButton8, "");
-            this.simpleButton8.Size = new System.Drawing.Size(81, 22);
-            this.simpleButton8.StyleController = this.layoutControlBase;
-            this.simpleButton8.TabIndex = 1;
-            this.simpleButton8.Text = "取消重要异常";
-            this.simpleButton8.Click += new System.EventHandler(this.simpleButton8_Click);
-            // 
-            // layoutControlItem94
-            // 
-            this.layoutControlItem94.Control = this.butCancel;
-            this.permissionManager.SetEnabled(this.layoutControlItem94, false);
-            this.permissionManager.SetIsVisable(this.layoutControlItem94, false);
-            this.layoutControlItem94.Location = new System.Drawing.Point(351, 0);
-            this.layoutControlItem94.Name = "layoutControlItem94";
-            this.permissionManager.SetPermissionId(this.layoutControlItem94, "");
-            this.layoutControlItem94.Size = new System.Drawing.Size(61, 26);
-            this.layoutControlItem94.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem94.TextVisible = false;
-            // 
-            // butCancel
-            // 
-            this.butCancel.AutoWidthInLayoutControl = true;
-            this.permissionManager.SetEnabled(this.butCancel, false);
-            this.permissionManager.SetIsVisable(this.butCancel, false);
-            this.butCancel.Location = new System.Drawing.Point(359, 66);
-            this.butCancel.Name = "butCancel";
-            this.permissionManager.SetPermissionId(this.butCancel, "");
-            this.butCancel.Size = new System.Drawing.Size(57, 22);
-            this.butCancel.StyleController = this.layoutControlBase;
-            this.butCancel.TabIndex = 1;
-            this.butCancel.Text = "取消阳性";
-            this.butCancel.Click += new System.EventHandler(this.butCancel_Click);
-            // 
-            // layoutControlItem28
-            // 
-            this.layoutControlItem28.Control = this.checkEdit4;
-            this.permissionManager.SetEnabled(this.layoutControlItem28, false);
-            this.permissionManager.SetIsVisable(this.layoutControlItem28, false);
-            this.layoutControlItem28.Location = new System.Drawing.Point(610, 0);
-            this.layoutControlItem28.Name = "layoutControlItem28";
-            this.permissionManager.SetPermissionId(this.layoutControlItem28, "");
-            this.layoutControlItem28.Size = new System.Drawing.Size(74, 26);
-            this.layoutControlItem28.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem28.TextVisible = false;
-            // 
-            // checkEdit4
-            // 
-            this.permissionManager.SetEnabled(this.checkEdit4, false);
-            this.permissionManager.SetIsVisable(this.checkEdit4, false);
-            this.checkEdit4.Location = new System.Drawing.Point(618, 66);
-            this.checkEdit4.Margin = new System.Windows.Forms.Padding(9, 22, 9, 22);
-            this.checkEdit4.Name = "checkEdit4";
-            this.permissionManager.SetPermissionId(this.checkEdit4, "");
-            this.checkEdit4.Properties.Caption = "异常项目";
-            this.checkEdit4.Size = new System.Drawing.Size(70, 19);
-            this.checkEdit4.StyleController = this.layoutControlBase;
-            this.checkEdit4.TabIndex = 1;
-            this.checkEdit4.CheckedChanged += new System.EventHandler(this.checkEdit4_CheckedChanged);
             // 
             // alertInfo
             // 
@@ -6412,7 +6507,7 @@
             // 
             this.permissionManager.SetEnabled(this.labelFPNo, false);
             this.permissionManager.SetIsVisable(this.labelFPNo, false);
-            this.labelFPNo.Location = new System.Drawing.Point(550, 36);
+            this.labelFPNo.Location = new System.Drawing.Point(460, 36);
             this.labelFPNo.Margin = new System.Windows.Forms.Padding(8, 13, 8, 13);
             this.labelFPNo.Name = "labelFPNo";
             this.permissionManager.SetPermissionId(this.labelFPNo, "");
@@ -6438,7 +6533,7 @@
             // 
             this.permissionManager.SetEnabled(this.txtCusBM, false);
             this.permissionManager.SetIsVisable(this.txtCusBM, false);
-            this.txtCusBM.Location = new System.Drawing.Point(-4, 12);
+            this.txtCusBM.Location = new System.Drawing.Point(-94, 12);
             this.txtCusBM.Margin = new System.Windows.Forms.Padding(8, 13, 8, 13);
             this.txtCusBM.MenuManager = this.barManager1;
             this.txtCusBM.Name = "txtCusBM";
@@ -6481,6 +6576,58 @@
             this.popupMenu3.Manager = this.barManager1;
             this.popupMenu3.Name = "popupMenu3";
             this.permissionManager.SetPermissionId(this.popupMenu3, "");
+            // 
+            // labelControl14
+            // 
+            this.labelControl14.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.labelControl14.Appearance.Options.UseBackColor = true;
+            this.permissionManager.SetEnabled(this.labelControl14, false);
+            this.permissionManager.SetIsVisable(this.labelControl14, false);
+            this.labelControl14.Location = new System.Drawing.Point(788, 66);
+            this.labelControl14.Name = "labelControl14";
+            this.permissionManager.SetPermissionId(this.labelControl14, "");
+            this.labelControl14.Size = new System.Drawing.Size(19, 14);
+            this.labelControl14.StyleController = this.layoutControlBase;
+            this.labelControl14.TabIndex = 35;
+            this.labelControl14.Text = "C类";
+            // 
+            // layoutControlItem107
+            // 
+            this.layoutControlItem107.Control = this.labelControl14;
+            this.permissionManager.SetEnabled(this.layoutControlItem107, false);
+            this.permissionManager.SetIsVisable(this.layoutControlItem107, false);
+            this.layoutControlItem107.Location = new System.Drawing.Point(870, 0);
+            this.layoutControlItem107.Name = "layoutControlItem107";
+            this.permissionManager.SetPermissionId(this.layoutControlItem107, "");
+            this.layoutControlItem107.Size = new System.Drawing.Size(23, 26);
+            this.layoutControlItem107.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem107.TextVisible = false;
+            // 
+            // labelControl15
+            // 
+            this.labelControl15.Appearance.BackColor = System.Drawing.Color.Blue;
+            this.labelControl15.Appearance.Options.UseBackColor = true;
+            this.permissionManager.SetEnabled(this.labelControl15, false);
+            this.permissionManager.SetIsVisable(this.labelControl15, false);
+            this.labelControl15.Location = new System.Drawing.Point(811, 66);
+            this.labelControl15.Name = "labelControl15";
+            this.permissionManager.SetPermissionId(this.labelControl15, "");
+            this.labelControl15.Size = new System.Drawing.Size(20, 14);
+            this.labelControl15.StyleController = this.layoutControlBase;
+            this.labelControl15.TabIndex = 36;
+            this.labelControl15.Text = "D类";
+            // 
+            // layoutControlItem108
+            // 
+            this.layoutControlItem108.Control = this.labelControl15;
+            this.permissionManager.SetEnabled(this.layoutControlItem108, false);
+            this.permissionManager.SetIsVisable(this.layoutControlItem108, false);
+            this.layoutControlItem108.Location = new System.Drawing.Point(893, 0);
+            this.layoutControlItem108.Name = "layoutControlItem108";
+            this.permissionManager.SetPermissionId(this.layoutControlItem108, "");
+            this.layoutControlItem108.Size = new System.Drawing.Size(24, 26);
+            this.layoutControlItem108.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem108.TextVisible = false;
             // 
             // FrmInspectionTotalNew
             // 
@@ -6670,6 +6817,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem27)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem79)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem78)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem93)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem83)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem84)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem94)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem105)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem106)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem30)).EndInit();
@@ -6742,20 +6905,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem100)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem102)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem79)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem78)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem93)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem83)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem84)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem94)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem62)).EndInit();
@@ -6763,6 +6912,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem74)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem107)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem108)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -7161,5 +7312,13 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem103;
         private DevExpress.XtraEditors.SimpleButton simpleButton16;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem104;
+        private DevExpress.XtraEditors.SimpleButton simpleButton18;
+        private DevExpress.XtraEditors.SimpleButton simpleButton17;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem105;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem106;
+        private DevExpress.XtraEditors.LabelControl labelControl15;
+        private DevExpress.XtraEditors.LabelControl labelControl14;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem107;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem108;
     }
 }
