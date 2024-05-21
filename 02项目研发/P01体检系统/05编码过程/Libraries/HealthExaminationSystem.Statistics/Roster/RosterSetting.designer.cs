@@ -966,7 +966,7 @@
             this.CustomerAge.AppearanceCell.Options.UseTextOptions = true;
             this.CustomerAge.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.CustomerAge.Caption = "年龄";
-            this.CustomerAge.FieldName = "RegAge";
+            this.CustomerAge.FieldName = "Customer.Age";
             this.CustomerAge.Name = "CustomerAge";
             this.CustomerAge.Visible = true;
             this.CustomerAge.VisibleIndex = 4;
