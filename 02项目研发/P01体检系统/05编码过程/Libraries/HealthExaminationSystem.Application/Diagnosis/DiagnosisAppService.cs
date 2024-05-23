@@ -53,7 +53,7 @@ namespace Sw.Hospital.HealthExaminationSystem.Application.Diagnosis
         {
             var paDtoList = _tbmItemGroup.GetAllIncluding(r => r.Department, r => r.ItemInfos);
 
-            if (input.ItemGroupName != null&& input.ItemGroupName != "")
+            if (input.ItemGroupName != null && input.ItemGroupName != "")
             { //组合项目名称
                 paDtoList = paDtoList.Where(o => o.ItemGroupName.Contains(input.ItemGroupName));
             }
@@ -81,7 +81,7 @@ namespace Sw.Hospital.HealthExaminationSystem.Application.Diagnosis
 
             if (query.Count() != 0)
             {
-                query = query.OrderBy(o => o.OrderNum).ThenByDescending(o=>o.CreationTime);
+                query = query.OrderBy(o => o.OrderNum).ThenByDescending(o => o.CreationTime);
 
                 var result = new PageResultDto<TbmDiagnosisDto>();
                 result.CurrentPage = input.CurentPage;
@@ -214,8 +214,8 @@ namespace Sw.Hospital.HealthExaminationSystem.Application.Diagnosis
         /// <returns></returns>
         public List<CusRegInfoDto> getIllCount(SearchItem intput)
         {
-            var que = _CustomerRegItemRepository.GetAll().Where(p=>p.CustomerItemGroupBM.IsAddMinus
-            !=3 && p.ProcessState==2);
+            var que = _CustomerRegItemRepository.GetAll().Where(p => p.CustomerItemGroupBM.IsAddMinus
+            != 3 );
             if (intput.ClientRegId.HasValue)
             {
                 que = que.Where(p => p.CustomerRegBM.ClientRegId == intput.ClientRegId);
@@ -246,12 +246,12 @@ namespace Sw.Hospital.HealthExaminationSystem.Application.Diagnosis
             if (intput.MaxValue.HasValue)
             {
                 var max = intput.MaxValue.ToString();
-                que = que.Where(p => (p.ItemTypeBM == (int)ItemType.Calculation || p.ItemTypeBM == (int)ItemType.Number) &&   p.ItemResultChar.CompareTo(max) <0);
+                que = que.Where(p => (p.ItemTypeBM == (int)ItemType.Calculation || p.ItemTypeBM == (int)ItemType.Number) && p.ItemResultChar.CompareTo(max) < 0);
             }
-          
-            if (intput.ISIll==true)
+
+            if (intput.ISIll)
             {
-                que = que.Where(p => p.Symbol=="H" || p.Symbol == "P" || p.Symbol == "L") ;
+                que = que.Where(p => p.Symbol!="M" && p.Symbol != null);
             }
             var reglist = que.Select(p => new CusRegInfoDto
             {
@@ -259,8 +259,8 @@ namespace Sw.Hospital.HealthExaminationSystem.Application.Diagnosis
                 CustomerBM = p.CustomerRegBM.CustomerBM,
                 ItemDiag = p.ItemDiagnosis,
                 ItemName = p.ItemName,
-                ItemValue =(p.ItemBM!=null && p.ItemBM.moneyType == (int)ItemType.Explain && 
-                p.ItemDiagnosis !=null && p.ItemDiagnosis!="") ? p.ItemDiagnosis: p.ItemResultChar,
+                ItemValue = (p.ItemBM != null && p.ItemBM.moneyType == (int)ItemType.Explain &&
+                p.ItemDiagnosis != null && p.ItemDiagnosis != "") ? p.ItemDiagnosis : p.ItemResultChar,
                 LoginDate = p.CustomerRegBM.LoginDate,
                 Name = p.CustomerRegBM.Customer.Name,
                 Sex = p.CustomerRegBM.Customer.Sex,
